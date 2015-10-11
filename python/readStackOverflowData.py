@@ -63,7 +63,7 @@ def strip_tags(html):
     s.feed(html)
     return s.get_data()
 mycompile = lambda pat:  re.compile(pat,  re.UNICODE)
-WS_RE = mycompile(r' +')
+WS_RE = mycompile(r'  +')
 def squeeze_whitespace(s):
   new_string = WS_RE.sub(" ",s)
   return new_string.strip()
@@ -78,8 +78,8 @@ class DataReader:
 
 	def generate_postid(self):
 		rand = randint(0, 28922954)
-		rand = 18779580
-		row_count = self.cur.execute("SELECT Id FROM posts where Id=%s" % (rand))
+		rand = 218384
+		row_count = self.cur.execute("SELECT Id FROM posts where Id=%s and PostTypeId=1" % (rand))
 		if row_count > 0: 
 			postid = self.cur.fetchall()[0][0]
 
@@ -88,17 +88,25 @@ class DataReader:
 
 			self.cur.execute("SELECT Body FROM posts where Id=%s" %(postid))
 			body = self.cur.fetchall()
-			
 			if title[0][0] is None:
 				all = body 
 			else: 
-				all = title + body  
+				all = title + body  	
+			
+			self.cur.execute("SELECT Id FROM posts where ParentId=%s" %(postid))
+			answers = self.cur.fetchall()
+			for row in answers:
+				answer_id = row[0]
+				self.cur.execute("SELECT Body FROM posts where Id=%s" %(answer_id))
+				ans_body = self.cur.fetchall()
+				all += ans_body
+
 			
 			f = open( str(postid)+'.txt', 'w' )
 			for row in all: 
 				content = strip_tags(row[0])+'\n'
-				content = squeeze_whitespace(content)
-				content = re.sub(r'\n ', '\n',content)
+				content = re.sub(r'^ +', '', content)
+				content = re.sub(r'\n +', '\n', content)
 				content = re.sub(r'[\n]+', '\n',content)
 
 				f.write(content)
@@ -134,4 +142,4 @@ class DataReader:
 
 if __name__ ==  '__main__':
 	r = DataReader()
-	print r.generate_postid()
+	r.generate_postid()
