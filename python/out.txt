@@ -1,0 +1,14 @@
+why	O
+so	O
+$asdf	O
+?	O
+
+printf()	O
+c++	O
+c#	O
+.net	O
+are	O
+languages	O
+system.out.println	O
+system.out()	O
+.	O

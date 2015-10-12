@@ -1,3 +1,5 @@
+
+# -*- coding: utf-8 -*-
 import sys
 import re
 import os
@@ -7,7 +9,19 @@ sys.path.append('.')
 from sentencesplit import sentencebreaks_to_newlines
 
 
-TOKENIZATION_REGEX = re.compile(r'([0-9a-zA-Z]+|[^0-9a-zA-Z])')
+
+
+def regex_or(*items):
+  r = '|'.join(items)
+  r = '(' + r + ')'
+  return r
+
+
+#API = regex_or(r'((\w+)\.)+\w+\(\)', r'\w+\(\)', r'((\w+)\.)+(\w+)')
+PunctSeq = r"""['`\"“”‘’)]+|[.?!,…]+|[:;/(]+"""
+#API = r'((?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)|[+$#0-9a-zA-Z\-]+|[^0-9a-zA-Z+$#\-])'
+API = regex_or(r'(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)', r'[a-zA-Z0-9]+\(\)', r'(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+', r'\.[a-z]+', r'[+$#0-9a-zA-Z\-]+',   r'[^0-9a-zA-Z+$#\-]')
+TOKENIZATION_REGEX = re.compile(API)
 NEWLINE_TERM_REGEX = re.compile(r'(.*?\n)')
 
 def text_to_conll(f):
@@ -17,31 +31,25 @@ def text_to_conll(f):
         l = sentencebreaks_to_newlines(l)
         sentences.extend([s for s in NEWLINE_TERM_REGEX.split(l) if s])
 
-    # lines = []
+    lines = []
+    for s in sentences:
+    	print s
+        nonspace_token_seen = False
+        print TOKENIZATION_REGEX.split(s)
+        tokens = [t for t in TOKENIZATION_REGEX.split(s) if t]
+        for t in tokens:
+            if not t.isspace():
+                lines.append([t, 'O'])
+                nonspace_token_seen = True
+        # sentences delimited by empty lines
+        if nonspace_token_seen:
+            lines.append([])
 
-    # offset = 0
-    # for s in sentences:
-    #     nonspace_token_seen = False
-
-    #     tokens = [t for t in TOKENIZATION_REGEX.split(s) if t]
-
-    #     for t in tokens:
-    #         if not t.isspace():
-    #             lines.append(['O', offset, offset+len(t), t])
-    #             nonspace_token_seen = True
-    #         offset += len(t)
-
-    #     # sentences delimited by empty lines
-    #     if nonspace_token_seen:
-    #         lines.append([])
-
-    # # add labels (other than 'O') from standoff annotation if specified
-    # if options.annsuffix:
-    #     lines = relabel(lines, get_annotations(f.name))
-
-    # lines = [[l[0], str(l[1]), str(l[2]), l[3]] if l else l for l in lines]
-    # return StringIO('\n'.join(('\t'.join(l) for l in lines)))
-
+    lines = [[l[0], l[1]] if l else l for l in lines]
+    return StringIO('\n'.join(('\t'.join(l) for l in lines)))
 
 if __name__ == '__main__':
-	text_to_conll('example.txt')
+	f = open('example.txt', 'r')
+	lines = text_to_conll(f)
+	with open('out.txt', 'wt') as of:
+		of.write(''.join(lines))
