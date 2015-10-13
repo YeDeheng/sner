@@ -61,7 +61,7 @@ Email = EmailName + "@" + EmailDomain
 
 Email_RE = mycompile(Email)
 
-API = regex_or(r'((\w+)\.)+\w+\(\)', r'\w+\(\)', r'((\w+)\.)+(\w+)')
+API = regex_or(r'((\w+)\.)+\w+\(\)', r'\w+\(\)', r'((\w+)\.)+(\w+)', r'\.\w+')
 API_RE = mycompile(API)
 plural = r'\w+\(s\)'
 plural_RE = mycompile(plural)

@@ -10,6 +10,23 @@ from random import randint
 import codecs
 codecs.register_error('replace_against_space', lambda e: (u' ',e.start + 1))
 #print unicode('ABC\x97ab\x99c上午', 'utf-8', errors='replace_against_space')
+pl = ['java']
+# ['java', 
+# 	   'javascript', 
+# 	   'c#', 
+# 	   'php', 
+# 	   'android', 
+# 	   'jquery', 
+# 	   'python', 
+# 	   'html', 
+# 	   'c++']
+
+def file_len(fname):
+    with open(fname) as f:
+        for i, l in enumerate(f):
+            pass
+    f.close()
+    return i 
 
 def my_encoder(my_string):
    for i in my_string:
@@ -77,63 +94,82 @@ class DataReader:
 		self.cur = self.db.cursor() 
 
 	def generate_postid(self):
-		rand = randint(0, 28922954)
-		rand = 218384
-		row_count = self.cur.execute("SELECT Id FROM posts where Id=%s and PostTypeId=1" % (rand))
-		if row_count > 0: 
-			postid = self.cur.fetchall()[0][0]
+		for name in pl: 
+			fname = './postid/' + name + 'postid.txt'
+			flen = file_len(fname)
 
-			self.cur.execute("SELECT Title FROM posts where Id=%s" % (postid))
-			title = self.cur.fetchall()
+			for i in range(30):
+				f=open(fname, 'r')
+				lines=f.readlines()
+				index = randint(0, flen)
+				rand = lines[index] 
+				f.close()
 
-			self.cur.execute("SELECT Body FROM posts where Id=%s" %(postid))
-			body = self.cur.fetchall()
-			if title[0][0] is None:
-				all = body 
-			else: 
-				all = title + body  	
-			
-			self.cur.execute("SELECT Id FROM posts where ParentId=%s" %(postid))
-			answers = self.cur.fetchall()
-			for row in answers:
-				answer_id = row[0]
-				self.cur.execute("SELECT Body FROM posts where Id=%s" %(answer_id))
-				ans_body = self.cur.fetchall()
-				all += ans_body
+				row_count = self.cur.execute("SELECT Id FROM posts where Id=%s" % (rand))
+				if row_count > 0: 
+					postid = self.cur.fetchall()[0][0]
 
-			
-			f = open( str(postid)+'.txt', 'w' )
-			for row in all: 
-				content = strip_tags(row[0])+'\n'
-				content = re.sub(r'^ +', '', content)
-				content = re.sub(r'\n +', '\n', content)
-				content = re.sub(r'[\n]+', '\n',content)
+					self.cur.execute("SELECT Title FROM posts where Id=%s" % (postid))
+					title = self.cur.fetchall()
 
-				f.write(content)
-			f.close()
+					self.cur.execute("SELECT Body FROM posts where Id=%s" %(postid))
+					body = self.cur.fetchall()
+					if title[0][0] is None:
+						all = body 
+					else: 
+						all = title + body  	
+					
+					self.cur.execute("SELECT Id FROM posts where ParentId=%s" %(postid))
+					answers = self.cur.fetchall()
+					for row in answers:
+						answer_id = row[0]
+						self.cur.execute("SELECT Body FROM posts where Id=%s" %(answer_id))
+						ans_body = self.cur.fetchall()
+						all += ans_body
+
+					
+					f = open('./rawdata/' + str(name) + str(postid)+'.txt', 'w' )
+					for row in all: 
+						content = strip_tags(row[0])+'\n'
+						content = re.sub(r'^ +', '', content)
+						content = re.sub(r'\n +', '\n', content)
+						content = re.sub(r'[\n]+', '\n',content)
+
+						f.write(content)
+					f.close()
 
 	def read_post(self, post_id):
-		db = MySQLdb.connect(host="localhost", 
-		                     user="root", 
-		                     passwd="ydh0114", 
-		                     db="stackoverflow201503")
-		cur = db.cursor() 
-		cur.execute("SELECT Title FROM posts where Id=%s" % (post_id))
-		title = cur.fetchall()
+		self.cur.execute("SELECT Title FROM posts where Id=%s" % (post_id))
+		title = self.cur.fetchall()
 
-		cur.execute("SELECT Body FROM posts where Id=%s" %(post_id))
-		body = cur.fetchall()
-		cur.execute("SELECT Text FROM comments where PostId=%s" % (post_id))
-		comments = cur.fetchall()
-
+		self.cur.execute("SELECT Body FROM posts where Id=%s" %(post_id))
+		body = self.cur.fetchall()
+		#self.cur.execute("SELECT Text FROM comments where PostId=%s" % (post_id))
+		#comments = self.cur.fetchall()
+		
 		if title[0][0] is None:
-			all = body + comments
+			all = body 
 		else: 
-			all = title + body + comments 
+			all = title + body 
+			
+		self.cur.execute("SELECT Id FROM posts where ParentId=%s" %(post_id))
+		answers = self.cur.fetchall()
+		for row in answers:
+			answer_id = row[0]
+			self.cur.execute("SELECT Body FROM posts where Id=%s" %(answer_id))
+			ans_body = self.cur.fetchall()
+			all += ans_body
 
-		f = open('out.txt', 'w')
+
+
+		f = open('./rawdata/' + str(post_id)+'.txt', 'w' )
 		for row in all: 
-			f.write(strip_tags(row[0])+'\n')
+			content = strip_tags(row[0])+'\n'
+			content = re.sub(r'^ +', '', content)
+			content = re.sub(r'\n +', '\n', content)
+			content = re.sub(r'[\n]+', '\n',content)
+
+			f.write(content)
 		f.close()
 
 		return all
@@ -142,4 +178,5 @@ class DataReader:
 
 if __name__ ==  '__main__':
 	r = DataReader()
-	r.generate_postid()
+	#r.generate_postid()
+	r.read_post('123')

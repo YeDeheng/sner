@@ -1,4 +1,4 @@
-why so $asdf? printf() c++ c# .net are languages. 
+why so $asdf? printf() c++ c# .net #are languages. 
 system.out.println http://github.com system.out() 
 As described in the linked posts, I am not satisfied with the built in AuthorizeAttribute, because it always redirects to the declared login-page. I need different behaviour between 401-NotAuthenticated (I know it is called Unauthorized) and 403-Forbidden. Forbidden shouldn't link to the login-page. 
 As in  this  or  this  solutions suggested, I implemented a custom attribute called AuthenticateAndAuthorizeAttribute inheriting from AuthorizeAttribute.  

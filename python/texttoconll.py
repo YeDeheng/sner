@@ -15,12 +15,31 @@ def regex_or(*items):
   r = '|'.join(items)
   r = '(' + r + ')'
   return r
+def pos_lookahead(r):
+  return '(?=' + r + ')'
+def optional(r):
+  return '(%s)?' % r
 
+PunctChars = r'''['“".?!,(/:;]'''
+Entity = '&(amp|lt|gt|quot);'
+# more complex version:
+UrlStart1 = regex_or('https?://', r'www\.')
+CommonTLDs = regex_or('com','co\\.uk','org','net','info','ca','edu','gov')
+UrlStart2 = r'[a-z0-9\.-]+?' + r'\.' + CommonTLDs + pos_lookahead(r'[/ \W\b]')
+UrlBody = r'[^ \t\r\n<>]*?'  # * not + for case of:  "go to bla.com." -- don't want period
+UrlExtraCrapBeforeEnd = '%s+?' % regex_or(PunctChars, Entity)
+UrlEnd = regex_or( r'\.\.+', r'[<>]', r'\s', '$') # / added by Deheng
 
+# Url = (r'\b' +
+#     regex_or(UrlStart1, UrlStart2) +
+#     UrlBody +
+#     pos_lookahead( optional(UrlExtraCrapBeforeEnd) + UrlEnd))
+# print Url
 #API = regex_or(r'((\w+)\.)+\w+\(\)', r'\w+\(\)', r'((\w+)\.)+(\w+)')
 PunctSeq = r"""['`\"“”‘’)]+|[.?!,…]+|[:;/(]+"""
 #API = r'((?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)|[+$#0-9a-zA-Z\-]+|[^0-9a-zA-Z+$#\-])'
-API = regex_or(r'(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)', r'[a-zA-Z0-9]+\(\)', r'(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+', r'\.[a-z]+', r'[+$#0-9a-zA-Z\-]+',   r'[^0-9a-zA-Z+$#\-]')
+API = regex_or(r'(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)', r'[a-zA-Z0-9]+\(\)', r'(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+', r'\.[a-zA-Z]+', r'[a-z]+\'[a-z]+', r'[+$#0-9a-zA-Z_\-]+',  r'[^0-9a-zA-Z+$#_\-]', r"""((?:[a-z][\w-]+:(?:/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.‌​][a-z]{2,4}/)(?:[^\s()<>]+|(([^\s()<>]+|(([^\s()<>]+)))*))+(?:(([^\s()<>]+|(‌​([^\s()<>]+)))*)|[^\s`!()[]{};:'".,<>?«»“”‘’]))""")
+
 TOKENIZATION_REGEX = re.compile(API)
 NEWLINE_TERM_REGEX = re.compile(r'(.*?\n)')
 

@@ -1,0 +1,61 @@
+How would you access Object properties from within an object method?
+What is the "purist" or "correct" way to access an object's properties from within an object method that is not a getter/setter method? 
+I know that from outside of the object you should use a getter/setter, but from within would you just do: 
+Java: 
+PHP: 
+or would you do: 
+Java: 
+PHP: 
+Forgive me if my Java is a little off, it's been a year since I programmed in Java... 
+EDIT:  
+It seems people are assuming I am talking about private or protected variables/properties only. When I learned OO I was taught to use getters/setters for every single property even if it was public (and actually I was told never to make any variable/property public). So, I may be starting off from a false assumption from the get go. It appears that people answering this question are maybe saying that you should have public properties and that those don't need getters and setters, which goes against what I was taught, and what I was talking about, although maybe that needs to be discussed as well. That's probably a good topic for a different question though... 
+This has religious war potential, but it seems to me that if you're using a getter/setter, you should use it internally as well - using both will lead to maintenance problems down the road (e.g. somebody adds code to a setter that  needs  to run every time that property is set, and the property is being set internally w/o that setter being called). 
+It depends on how the property is used. For example, say you have a student object that has a name property. You could use your Get method to pull the name from the database, if it hasn't been retrieved already. This way you are reducing unnecessary calls to the database. 
+Now let's say you have a private integer counter in your object that counts the number of times the name has been called. You may want to not use the Get method from inside the object because it would produce an invalid count. 
+
+Am I just going overboard here? 
+Perhaps ;) 
+Another approach would be to utilize a private/protected method to actually do the getting (caching/db/etc), and a public wrapper for it that increments the count: 
+PHP: 
+and then from within the object itself: 
+PHP: 
+This way you can still use that first argument for something else (like sending a flag for whether or not to used cached data here perhaps).  
+Well, it seems with C# 3.0 properties' default implementation, the decision is taken for you; you HAVE to set the property using the (possibly private) property setter. 
+I personally only use the private member-behind when not doing so would cause the object to fall in an less than desirable state, such as when initializing or when caching/lazy loading is involved. 
+As stated in some of the comments: Sometimes you should, sometimes you shouldn't. The great part about private variables is that you are able to see all the places they are used when you change something. If your getter/setter does something you need, use it. If it doesn't matter you decide. 
+The opposite case could be made that if you use the getter/setter and somebody changes the getter/setter they have to analyze all the places the getter and setter is used internally to see if it messes something up.  
+Personally, I feel like it's important to remain consistent.  If you have getters and setters, use them.  The only time I would access a field directly is when the accessor has a lot of overhead.  It may feel like you're bloating your code unnecessarily, but it can certainly save a whole lot of headache in the future.  The classic example: 
+Later on, you may desire to change the way that field works.  Maybe it should be calculated on-the-fly or maybe you would like to use a different type for the backing store.  If you are accessing properties directly, a change like that can break an awful lot of code in one swell foop. 
+I rarely feel the need for getters/setters when programming, it really depends what you are doing... 
+I will sometimes use getters/setters if the member variable is far away. 
+Ex. Instead of  Player.Position.X  I'd use  
+Side note:  Private member variables take longer to access than public 
+i can be wrong because i'm autodidact, but i NEVER user public properties in my Java clases, they are allways private or protected, so that outside code must access by getters/setters. it's better for mainteance / modification purposes. And for inside class code... if getter method is trivial i use the property directly, but i allways use the setter methods because i could easily add code to fire events if i wish 
+i've found using setters/getters made my code easier to read. I also like the control it gives when other classes use the methods and if i change the data the property will store. 
+Private fields with public or protected properties.  Access to the values should go through the properties, and be copied to a local variable if they will be used more than once in a method.  If and ONLY if you have the rest of your application so totally tweaked, rocked out, and otherwise optimized to where accessing values by going through their assosciated properties has become a bottleneck (And that will never EVER happen, I guarantee) should you even begin to consider letting anything other than the properties touch their backing variables directly. 
+.NET developers can use automatic properties to enforce this since you can't even see the backing variables at design time. 
+If by "purist" you mean "most encapsulation", then I typically declare all my fields as private and then use this.field from within the class itself, but all other classes, including subclasses, access instance state using the getters. 
+If I won't edit the property I'll use a  get_property()  public method unless it's a special occasion such as a MySQLi object inside another object in which case I'll just public the property and refer to it as  $obj- object_property . 
+Inside the object it's always $this->property for me. 
+I like the answer by  cmcculloh , but it seems like the most correct is the answer by  Greg Hurlman . Use getter/setters all the time if you started using them from the getgo and/or are used to working with them. 
+As an aside, I personally find that using getter/setters makes the code easier to read and to debug later on. 
+I'm fairly surprised at how unanimous the sentiment is that getters and setters are fine and good. I suggest the incendiary article by Allen Holub " Getters And Setters Are Evil ". Granted, the title is for shock value, but the author makes valid points. 
+Essentially, if you have getters and setters for each and every private field, you are making those fields as good as public. You'd be very hard-pressed to change the type of a private field without ripple effects to every class that calls that getter. 
+Moreover, from a strictly OO point of view, objects should be responding to messages (methods) that correspond to their (hopefully) single responsibility. The vast majority of getters and setters don't make sense for their constituent objects; Pen.dispenseInkOnto(Surface) makes more sense to me than Pen.getColor(). 
+Getters and setters also encourage users of the class to ask the object for some data, perform a calculation, and then set some other value in the object, better known as procedural programming. You'd be better served to simply tell the object to do what you were going to in the first place; also known as the  Information Expert  idiom. 
+Getters and setters, however, are necessary evils at the boundary of layers -- UI, persistence, and so forth. Restricted access to a class's internals, such as C++'s friend keyword, Java's package protected access, .NET's internal access, and the  Friend Class Pattern  can help you reduce the visibility of getters and setters to only those who need them. 
+The 'purist' OO way is to avoid both and use a "Tell Don't Ask" approach.  Instead of getting the value of the object and doing something with it either directly, use the object as a parameter e.g. 
+Where the property was a native type, e.g. int, use an access method, because these will allow you to maintain any post-conditions or dependent invariants.  You should also use the setter method to maintain any pre-conditions or dependent invariants. 
+PHP offers a myriad of ways to handle this, including magic methods  __get  and  __set , but I prefer explicit getters and setters. Here's why: 
+Validation can be placed in setters (and getters for that matter) 
+Intellisense works with explicit methods 
+No question whether a property is read only, write only or read-write 
+Retrieving virtual properties (ie, calculated values) looks the same as regular properties  
+You can easily set an object property that is never actually defined anywhere, which then goes undocumented  
+It depends. It's more a style issue than anything else, and there is no hard rule. 
+i would say its better to use the accessor methods even within the object. Here are the points that come to my mind immediately: 
+1) It should be done in the interest of maintaining consistency with accesses made outside the object. 
+2) In some cases, these accessor methods could be doing more than just accessing the field; they could be doing some additional processing (its rare though). If this is the case, by accessing the field directly you would missing out that additional processing and your program could go awry if this processing is always to be done during those accesses 
+I must be missing the point here, why would you use a getter inside an object to access a property of that object? 
+Taking this to its conclusion the getter should call a getter, which should call a getter. 
+So I'd say inside an object method access a property directly, especially seeing as calling another method in that object (which will just access the property directly anyway then return it) is just a pointless, wasteful exercise (or have I misunderstood the question). 
