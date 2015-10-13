@@ -1,7 +1,0 @@
-why so $asdf? printf() c++ c# .net are languages. 
-system.out.println http://github.com system.out() 
-As described in the linked posts, I am not satisfied with the built in AuthorizeAttribute, because it always redirects to the declared login-page. I need different behaviour between 401-NotAuthenticated (I know it is called Unauthorized) and 403-Forbidden. Forbidden shouldn't link to the login-page. 
-As in  this  or  this  solutions suggested, I implemented a custom attribute called AuthenticateAndAuthorizeAttribute inheriting from AuthorizeAttribute.  
-All in all it does what it is supposed to do. But, because only the HttpStatusCode of the response is changed, I get an empty page. I know it is because there is no custom error page defined in the web.config. Instead we use the  solution  with "overriding" the method  protected void Application_Error(object sender, EventArgs e)  in the global.asax. This enables us, to create different error pages for default requests and ajax requests.
-Unfortunatly this does not work when just setting the status code of the response. So I implemented the attribute, with throw HttpExceptions. 
-Now I wonder, if this is a common/correct way to deal with authentication and authorization or if I break some built-in (security)features of asp.net? Could someone see any problems with this solution? 

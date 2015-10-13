@@ -12,11 +12,11 @@ pl = ['java',
 	   'python', 
 	   'html', 
 	   'c++', 
-	   'c', 
-	   'ruby', 
-	   'ios', 
-	   'objective-c', 
-	   'mysql']
+	   'ios' ] 
+	   # 'objective-c', 
+	   # 'mysql', 
+	   # 'c', 
+	   # 'ruby']
 for name in pl:
 	exe_str = "SELECT Id FROM posts where Tags like '%<" + name + ">%'"
 	row_count = cur.execute(exe_str)

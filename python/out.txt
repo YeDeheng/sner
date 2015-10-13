@@ -1,7 +1,0 @@
-Java lib or app to convert CSV to XML file?
- Is there an existing application or library in Java which will allow me to convert a CSV data file to XML file?   
- The XML tags would be provided through possibly the first row containing column headings. 
-
-This is the possible dupliate http://stackoverflow.com/questions/12120055/conversion-of-csv-to-xml-with-java
-It seems that this is the first question with the tag of Java in SO.
-@Paul Not only that, It's also 123!
