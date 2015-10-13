@@ -1,9 +1,15 @@
+Java	B-PL
+Android	B-Plat
+C++	B-PL
+thi	O
+.	O
+
 why	O
 so	O
 $asdf	O
 ?	O
 
-printf()	O
+printf()	B-API
 c++	B-PL
 c#	B-PL
 .net	O
@@ -11,9 +17,9 @@ c#	B-PL
 languages	O
 .	O
 
-system.out.println	O
+system.out.println	B-API
 http://github.com	O
-system.out()	O
+this-system.out()	O
 
 As	O
 described	O
@@ -30,7 +36,7 @@ with	O
 the	O
 built	O
 in	O
-AuthorizeAttribute	O
+AuthorizeAttribute	B-API
 ,	O
 because	O
 it	O
@@ -85,7 +91,7 @@ called	O
 AuthenticateAndAuthorizeAttribute	O
 inheriting	O
 from	O
-AuthorizeAttribute	O
+AuthorizeAttribute	B-API
 .	O
 
 All	O
@@ -134,7 +140,7 @@ page	O
 defined	O
 in	O
 the	O
-web.config	O
+web.config	B-API
 .	O
 
 Instead	O
@@ -155,12 +161,12 @@ Application_Error	O
 object	O
 sender	O
 ,	O
-EventArgs	O
+EventArgs	B-API
 e	O
 )	O
 in	O
 the	O
-global.asax	O
+global.asax	B-API
 .	O
 
 This	O
@@ -204,7 +210,7 @@ attribute	O
 ,	O
 with	O
 throw	O
-HttpExceptions	O
+HttpExceptions	B-API
 .	O
 
 Now	O
@@ -236,7 +242,7 @@ security	O
 )	O
 features	O
 of	O
-asp.net	O
+asp.net	B-API
 ?	O
 
 Could	O

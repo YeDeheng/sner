@@ -17,10 +17,12 @@ PLs = ['java',
        'c++' ] 
 Plats = ['android', 'ios']
 Frams = ['jquery']
-# def regex_or(*items):
-#   r = '|'.join(items)
-#   r = '(' + r + ')'
-#   return r
+
+
+def regex_or(*items):
+  r = '|'.join(items)
+  r = '(' + r + ')'
+  return r
 # def pos_lookahead(r):
 #   return '(?=' + r + ')'
 # def optional(r):
@@ -36,7 +38,14 @@ Frams = ['jquery']
 # UrlExtraCrapBeforeEnd = '%s+?' % regex_or(PunctChars, Entity)
 # UrlEnd = regex_or( r'\.\.+', r'[<>]', r'\s', '$') # / added by Deheng
 
-# API = regex_or(r'(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)', r'[a-zA-Z0-9]+\(\)', r'(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+', r'\.[a-zA-Z]+', r'[a-z]+\'[a-z]+', r'[+$#0-9a-zA-Z_\-]+',  r'[^0-9a-zA-Z+$#_\-]', r"""((?:[a-z][\w-]+:(?:/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.‌​][a-z]{2,4}/)(?:[^\s()<>]+|(([^\s()<>]+|(([^\s()<>]+)))*))+(?:(([^\s()<>]+|(‌​([^\s()<>]+)))*)|[^\s`!()[]{};:'".,<>?«»“”‘’]))""")
+API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)$', 
+    r'^[a-zA-Z0-9]+\(\)$', 
+    r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+$', 
+    r'^[A-Z][a-z]+[A-Z][a-z]+$' ))
+    # r'^\.[a-zA-Z]+$',  # this can be .net 
+    # r'^[a-z]+\'[a-z]+$',  # not sure why I added this
+    # r'^[+$#0-9a-zA-Z_\-]+$',  
+    # r'^[^0-9a-zA-Z+$#_\-]$' ))
 
 # TOKENIZATION_REGEX = re.compile(API)
 NEWLINE_TERM_REGEX = re.compile(r'(.*?\n)')
@@ -55,12 +64,14 @@ def text_to_conll(f, top_tag):
         for t in tokens:
             if not t.isspace():
                 # pre label rules designed by Deheng
-                if t in PLs:
+                if t.lower() in PLs:
                     lines.append([t, 'B-PL'])
-                elif t in Plats:
+                elif t.lower() in Plats:
                     lines.append([t, 'B-Plat'])
-                elif t in Frams:
+                elif t.lower() in Frams:
                     lines.append([t, 'B-Fram'])
+                elif API_pattern.match(t) is not None:
+                    lines.append([t, 'B-API'])
                 else:
                     lines.append([t, 'O'])
                 nonspace_token_seen = True
