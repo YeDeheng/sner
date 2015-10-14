@@ -50,7 +50,7 @@ API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)$',
 # TOKENIZATION_REGEX = re.compile(API)
 NEWLINE_TERM_REGEX = re.compile(r'(.*?\n)')
 
-def text_to_conll(f, top_tag):
+def text_to_conll(f):
     """Convert plain text into CoNLL format."""
     sentences = []
     for l in f:
@@ -85,7 +85,7 @@ def text_to_conll(f, top_tag):
 def main(arg1, arg2):
     f = open(arg1, 'r')
     top_tag = re.split(r'[0-9]+', arg1)[0]
-    lines = text_to_conll(f, top_tag)
+    lines = text_to_conll(f)
     with open(arg2, 'wt') as of:
         of.write(''.join(lines))
 

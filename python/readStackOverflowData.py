@@ -98,7 +98,7 @@ class DataReader:
 			fname = './postid/' + name + 'postid.txt'
 			flen = file_len(fname)
 
-			for i in range(30):
+			for i in range(10):
 				f=open(fname, 'r')
 				lines=f.readlines()
 				index = randint(0, flen)
@@ -178,5 +178,5 @@ class DataReader:
 
 if __name__ ==  '__main__':
 	r = DataReader()
-	#r.generate_postid()
-	r.read_post('123')
+	r.generate_postid()
+	#r.read_post('123')
