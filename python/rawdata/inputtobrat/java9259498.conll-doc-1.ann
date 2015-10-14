@@ -1,0 +1,8 @@
+T1	PL 135 139	java
+T2	PL 476 480	java
+T3	PL 1396 1400	Java
+T4	API 1466 1473	MyBatis
+T5	API 1503 1515	existsNode()
+T6	API 1621 1638	PreparedStatement
+T7	API 1646 1673	connection.prepareStatement
+T8	API 1844 1857	stmt.setArray

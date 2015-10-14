@@ -1,0 +1,6 @@
+T1	API 215 226	array.FIRST
+T2	API 230 240	array.LAST
+T3	API 383 398	ArrayDescriptor
+T4	API 410 425	ArrayDescriptor
+T5	API 503 516	stmt.setArray
+T6	API 530 550	stmt.executeUpdate()

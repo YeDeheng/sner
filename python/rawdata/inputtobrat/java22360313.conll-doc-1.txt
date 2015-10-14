@@ -1,0 +1,11 @@
+spring 4.0 .2 schema error
+I am trying to upgrade my spring 3.4 application to spring 4.0 .2
+I imported all the spring- 4.0 .2 jar files but am getting errors in the dispatcher- servlet.xml
+if I use this code, I get Referenced file contains errors (http://www.springframework.org/schema/beans/spring-beans-4.0.xsd)
+I tried to remove the - 4.0 from the xsd references but I get same error on spring-mvc-xsd now.
+I even tried to discard everything and just copy the xml from the spring reference documentation as follow
+but with this simple file I get error on
+cvc-complex- type.2.4.c : the matching wildcard is strict, but no declaration can be found of element ' mvcannotation-driven
+Any example I take from spring4.0 reference document, gives me same error.
+is this a problem with spring4.0.2 or am I missing something?
+Thank you for your help

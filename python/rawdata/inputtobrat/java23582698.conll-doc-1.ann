@@ -1,0 +1,10 @@
+T1	PL 0 4	Java
+T2	PL 94 98	Java
+T3	API 529 544	BoardPanel.java
+T4	API 547 555	Car.java
+T5	API 556 564	Map.java
+T6	API 639 653	RacerMain.java
+T7	API 692 698	draw()
+T8	API 728 742	BufferedImages
+T9	API 1103 1116	BufferedImage
+T10	API 1439 1449	BoardPanel
