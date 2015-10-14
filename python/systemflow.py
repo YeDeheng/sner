@@ -16,4 +16,4 @@ for file in os.listdir(rawdatadir):
 		
 	texttoconll.main(tokenfile, conllfile)
 	
-	subprocess.Popen("python conll02tostandoff.py -o ./rawdata/brat %s" % (conllfile), shell=True )
+	#subprocess.Popen("python conll02tostandoff.py -o ./rawdata/brat %s" % (conllfile), shell=True )
