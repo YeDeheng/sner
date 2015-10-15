@@ -8,16 +8,19 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'lib'))
 sys.path.append('.')
 from sentencesplit import sentencebreaks_to_newlines
 
-PLs = ['java', 
-       'javascript', 
-       'c#', 
-       'php', 
-       'python', 
-       'html', 
-       'c++' ] 
-Plats = ['android', 'ios']
-Frams = ['jquery']
+# IDE? Products? Companies?
+PLs = ['java', 'javascript', 'c#', 'php', 'python','html', 'c++', 'css', 'c', 'objective-c', 'sql', 'html5']
 
+Plats = ['android', 'ios', 'java-ee', 'java-se', 'windows', 'linux', 'ubuntu']
+
+Frams = ['jquery', 'swing', 'spring', 'hibernate', 'maven', 'tomcat',
+         'angularjs', 'node.js', 'asp.net', 'd3.js', 'backbone.js',
+         '.net', 'wpf', 'linq']  # framework, framework component and subsystems(wpf, linq), library, development environment
+
+DatF = ['jar', 'json', 'http', 'xml'] # DataFormat, protocols,
+
+MISC = ['jsp', 'servlet', 'jpa', 'jdbc',
+        'ajax'] # software technology, unique software concept, etc..
 
 def regex_or(*items):
   r = '|'.join(items)
@@ -38,13 +41,13 @@ def regex_or(*items):
 # UrlExtraCrapBeforeEnd = '%s+?' % regex_or(PunctChars, Entity)
 # UrlEnd = regex_or( r'\.\.+', r'[<>]', r'\s', '$') # / added by Deheng
 
-API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)$', 
-    r'^[a-zA-Z0-9]+\(\)$', 
-    r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+$', 
+API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)$',
+    r'^[a-zA-Z0-9]+\(\)$',
+    r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+$',
     r'^[A-Z][a-z]+[A-Z][a-z]+$' ))
-    # r'^\.[a-zA-Z]+$',  # this can be .net 
+    # r'^\.[a-zA-Z]+$',  # this can be .net
     # r'^[a-z]+\'[a-z]+$',  # not sure why I added this
-    # r'^[+$#0-9a-zA-Z_\-]+$',  
+    # r'^[+$#0-9a-zA-Z_\-]+$',
     # r'^[^0-9a-zA-Z+$#_\-]$' ))
 
 # TOKENIZATION_REGEX = re.compile(API)
@@ -70,6 +73,8 @@ def text_to_conll(f):
                     lines.append([t, 'B-Plat'])
                 elif t.lower() in Frams:
                     lines.append([t, 'B-Fram'])
+                elif t.lower() in DatF:
+                    lines.append([t, 'B-DatF'])
                 elif API_pattern.match(t) is not None:
                     lines.append([t, 'B-API'])
                 else:
