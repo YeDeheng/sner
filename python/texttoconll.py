@@ -8,19 +8,20 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'lib'))
 sys.path.append('.')
 from sentencesplit import sentencebreaks_to_newlines
 
-# IDE? Products? Companies?
-PLs = ['java', 'javascript', 'c#', 'php', 'python','html', 'c++', 'css', 'c', 'objective-c', 'sql', 'html5']
+# IDE? Products?
+PLs = ['java', 'javascript', 'c#', 'php', 'python','html', 'c++', 'css', 'c', 'objective-c', 'sql', 'html5', 'r', 'ruby', 'matlab']
 
 Plats = ['android', 'ios', 'java-ee', 'java-se', 'windows', 'linux', 'ubuntu']
 
 Frams = ['jquery', 'swing', 'spring', 'hibernate', 'maven', 'tomcat',
          'angularjs', 'node.js', 'asp.net', 'd3.js', 'backbone.js',
-         '.net', 'wpf', 'linq']  # framework, framework component and subsystems(wpf, linq), library, development environment
+         '.net', 'wpf', 'linq', 'wordpress', 'codeigniter', 'laravel', 'curl', 'symfony', 'symfony2', 'sqlite', 'django', 'qt']  # framework, framework component and subsystem(wpf, linq), software system, library, development environment
 
-DatF = ['jar', 'json', 'http', 'xml'] # DataFormat, protocols,
+DatF = ['jar', 'json', 'http', 'xml'] # DataFormat, protocols, software models
 
-MISC = ['jsp', 'servlet', 'jpa', 'jdbc',
-        'ajax'] # software technology, unique software concept, etc..
+Orgs = ['apache', 'google', 'facebook', 'apple', 'github', 'oracle', 'microsoft', 'amazon', 'ibm', 'zend'] # software companies, organizations
+
+MISC = ['jsp', 'servlet', 'jpa', 'jdbc', 'ajax', 'regex', 'eclipse', 'chrome', 'firefox', 'netbeans'] # software technology, UNIQUE software concept, Common APPs(IDE, browser)
 
 def regex_or(*items):
   r = '|'.join(items)
@@ -75,6 +76,10 @@ def text_to_conll(f):
                     lines.append([t, 'B-Fram'])
                 elif t.lower() in DatF:
                     lines.append([t, 'B-DatF'])
+                elif t.lower() in Orgs:
+                    lines.append([t, 'B-Orgs'])
+                elif t.lower() in MISC:
+                    lines.append([t, 'B-MISC'])
                 elif API_pattern.match(t) is not None:
                     lines.append([t, 'B-API'])
                 else:
