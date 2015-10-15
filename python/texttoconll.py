@@ -15,13 +15,13 @@ Plats = ['android', 'ios', 'java-ee', 'java-se', 'windows', 'linux', 'ubuntu']
 
 Frams = ['jquery', 'swing', 'spring', 'hibernate', 'maven', 'tomcat',
          'angularjs', 'node.js', 'asp.net', 'd3.js', 'backbone.js',
-         '.net', 'wpf', 'linq', 'wordpress', 'codeigniter', 'laravel', 'curl', 'symfony', 'symfony2', 'sqlite', 'django', 'qt']  # framework, framework component and subsystem(wpf, linq), software system, library, development environment
+         '.net', 'wpf', 'linq', 'wordpress', 'codeigniter', 'laravel', 'curl', 'symfony', 'symfony2', 'sqlite', 'django', 'qt', 'play']  # framework, framework component and subsystem(wpf, linq), software system, library, development environment
 
-DatF = ['jar', 'json', 'http', 'xml'] # DataFormat, protocols, software models
+Stans = ['jar', 'json', 'http', 'xml', 'rest'] # DataFormat, protocols, software models, standards, architecture style
 
 Orgs = ['apache', 'google', 'facebook', 'apple', 'github', 'oracle', 'microsoft', 'amazon', 'ibm', 'zend'] # software companies, organizations
 
-MISC = ['jsp', 'servlet', 'jpa', 'jdbc', 'ajax', 'regex', 'eclipse', 'chrome', 'firefox', 'netbeans'] # software technology, UNIQUE software concept, Common APPs(IDE, browser)
+MISC = ['jsp', 'servlet', 'jpa', 'jdbc', 'ajax', 'regex', 'eclipse', 'chrome', 'firefox', 'netbeans', 'oracle stored procedure'] # software technology, UNIQUE software concept, Common APPs(IDE, browser)
 
 def regex_or(*items):
   r = '|'.join(items)
@@ -45,7 +45,7 @@ def regex_or(*items):
 API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+\(\)$',
     r'^[a-zA-Z0-9]+\(\)$',
     r'^(?:[a-zA-Z0-9]+\.)+[a-zA-Z0-9]+$',
-    r'^[A-Z][a-z]+[A-Z][a-z]+$' ))
+    r'^(?:[A-Z][a-z]+)+[A-Z][a-z]+$' ))
     # r'^\.[a-zA-Z]+$',  # this can be .net
     # r'^[a-z]+\'[a-z]+$',  # not sure why I added this
     # r'^[+$#0-9a-zA-Z_\-]+$',
@@ -74,8 +74,8 @@ def text_to_conll(f):
                     lines.append([t, 'B-Plat'])
                 elif t.lower() in Frams:
                     lines.append([t, 'B-Fram'])
-                elif t.lower() in DatF:
-                    lines.append([t, 'B-DatF'])
+                elif t.lower() in Stans:
+                    lines.append([t, 'B-Stan'])
                 elif t.lower() in Orgs:
                     lines.append([t, 'B-Orgs'])
                 elif t.lower() in MISC:
