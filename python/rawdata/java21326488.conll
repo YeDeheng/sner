@@ -59,19 +59,19 @@ them	O
 1-	O
 )	O
 In	O
-eclipse	O
+eclipse	B-MISC
 ,	O
 when	O
 i	O
 use	O
 export	O
 -->	O
-Jar	O
+Jar	B-Stan
 or	O
 export	O
 -->	O
 Executable	O
-Jar	O
+Jar	B-Stan
 options	O
 .	O
 
@@ -80,7 +80,7 @@ wraps	O
 everything	O
 in	O
 one	O
-jar	O
+jar	B-Stan
 and	O
 my	O
 program	O
@@ -111,7 +111,7 @@ as	O
 it	O
 is	O
 using	O
-eclipse	O
+eclipse	B-MISC
 but	O
 cannot	O
 find	O
@@ -239,7 +239,7 @@ is	O
 
 export	O
 runnable	O
-jar	O
+jar	B-Stan
 ,	O
 and	O
 selected	O
@@ -273,7 +273,7 @@ the	O
 folder	O
 where	O
 my	O
-jar	O
+jar	B-Stan
 file	O
 is	O
 .	O
@@ -330,7 +330,7 @@ clicking	O
 relative	O
 folder	O
 in	O
-eclipse	O
+eclipse	B-MISC
 )	O
 as	O
 recommended	O
@@ -353,7 +353,7 @@ once	O
 you	O
 start	O
 using	O
-maven	O
+maven	B-Fram
 as	O
 your	O
 build	O
@@ -394,7 +394,7 @@ load	O
 resources	O
 inside	O
 your	O
-Jar	O
+Jar	B-Stan
 (	O
 as	O
 I	O
@@ -424,7 +424,7 @@ and	O
 resources	O
 outside	O
 regarding	O
-maven	O
+maven	B-Fram
 and	O
 it	O
 will	O

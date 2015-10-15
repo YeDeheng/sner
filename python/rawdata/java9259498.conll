@@ -1,4 +1,4 @@
-Oracle	O
+Oracle	B-Orgs
 Stored	O
 procedure	O
 Structured	O
@@ -17,12 +17,12 @@ unknown	O
 values	O
 to	O
 an	O
-Oracle	O
+Oracle	B-Orgs
 stored	O
 procedure	O
 from	O
 a	O
-spring	O
+spring	B-Fram
 java	B-PL
 application	O
 .	O
@@ -117,7 +117,7 @@ I	O
 have	O
 looked	O
 into	O
-Oracle	O
+Oracle	B-Orgs
 record	O
 structures	O
 ,	O
@@ -215,7 +215,7 @@ such	O
 data	O
 to	O
 the	O
-Oracle	O
+Oracle	B-Orgs
 stored	O
 proc	O
 ?	O
@@ -264,13 +264,13 @@ the	O
 stored	O
 procedure	O
 as	O
-XML	O
+XML	B-Stan
 ?	O
 
-Oracle	O
+Oracle	B-Orgs
 can	O
 handle	O
-XML	O
+XML	B-Stan
 data	O
 types	O
 .	O
@@ -288,29 +288,29 @@ Overflow	O
 
 Java	B-PL
 :	O
-Oracle	O
+Oracle	B-Orgs
 XMLType	O
 +	O
-JDBC	O
+JDBC	B-MISC
 
 How	O
 to	O
-Oracle	O
+Oracle	B-Orgs
 XMLTYPE	O
 in	O
-Hibernate	O
+Hibernate	B-Fram
 
 Using	O
 MyBatis	B-API
 with	O
-Oracle	O
+Oracle	B-Orgs
 XMLType	O
 function	O
 existsNode()	B-API
 
 However	O
 ,	O
-XML	O
+XML	B-Stan
 may	O
 be	O
 a	O
@@ -548,7 +548,7 @@ EN	O
 D;	O
 
 The	O
-JDBC	O
+JDBC	B-MISC
 binding	O
 would	O
 then	O
@@ -571,7 +571,7 @@ b	O
 "	O
 ,	O
 "	O
-c	O
+c	B-PL
 "	O
 }	O
 ;	O
@@ -586,7 +586,7 @@ ArrayDescriptor	B-API
 ORA_MINING_VARCHAR2_NT	O
 "	O
 ,	O
-c	O
+c	B-PL
 );	O
 
 ARRAY	O
@@ -597,7 +597,7 @@ ARRAY	O
 (	O
 desc	O
 ,	O
-c	O
+c	B-PL
 ,	O
 strings	O
 );	O

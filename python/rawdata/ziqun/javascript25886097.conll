@@ -1,0 +1,99 @@
+Why	O
+this	O
+promise	O
+does	O
+not	O
+work	O
+?	O
+
+I'm	O
+playing	O
+with	O
+Promise	O
+.	O
+
+This	O
+is	O
+my	O
+code	O
+:	O
+
+And	O
+used	O
+so	O
+:	O
+
+Only	O
+works	O
+one	O
+time	O
+....	O
+
+OK1	O
+
+Anybody	O
+can	O
+fix	O
+my	O
+code	O
+?	O
+
+TH	O
+
+What	O
+you	O
+have	O
+here	O
+in	O
+PROMISES	O
+isn't	O
+an	O
+array	O
+of	O
+promises	O
+but	O
+an	O
+array	O
+of	O
+functions	O
+.	O
+
+If	O
+your	O
+goal	O
+is	O
+to	O
+have	O
+all	O
+those	O
+functions	O
+executed	O
+(	O
+possibly	O
+in	O
+parallel	O
+)	O
+then	O
+to	O
+have	O
+another	O
+function	O
+executed	O
+with	O
+the	O
+result	O
+of	O
+each	O
+one	O
+,	O
+you	O
+can	O
+do	O
+this	O
+:	O
+
+Disclaimer	O
+:	O
+tested	O
+with	O
+Bluebird	O

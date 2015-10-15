@@ -1,0 +1,96 @@
+adding	O
+cookie	O
+to	O
+angular	O
+$http	O
+requests	O
+(	O
+post	O
+and	O
+get	O
+)	O
+in	O
+an	O
+iframe	O
+
+i	O
+have	O
+an	O
+angular	O
+application	O
+that	O
+runs	O
+in	O
+an	O
+iFrame	O
+
+the	O
+outer	O
+application	O
+is	O
+doing	O
+authentication	O
+and	O
+saving	O
+a	O
+cookie	O
+with	O
+jsessionid	O
+.	O
+
+i	O
+need	O
+my	O
+iFrame	O
+application	O
+to	O
+send	O
+requests	O
+with	O
+the	O
+cookie	O
+that	O
+the	O
+outer	O
+application	O
+saved	O
+.	O
+
+i'm	O
+using	O
+
+$	O
+http.post	B-API
+
+$	O
+http.get	B-API
+
+i	O
+have	O
+tried	O
+to	O
+include	O
+this	O
+on	O
+my	O
+service	O
+module	O
+
+$	O
+http.defaults.withCredentials	B-API
+=	O
+true	O
+;	O
+
+doesnt	O
+seem	O
+to	O
+work	O
+.	O
+
+any	O
+help	O
+would	O
+be	O
+apreciated	O
+.	O

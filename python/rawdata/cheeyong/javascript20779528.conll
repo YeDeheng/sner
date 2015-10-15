@@ -1,0 +1,86 @@
+Highcharts	O
+with	O
+Custom	O
+Background	O
+in	O
+Cross	O
+Platform	O
+app	O
+development	O
+
+I	O
+have	O
+a	O
+strange	O
+Problem	O
+with	O
+Highcharts	O
+display	O
+:(	O
+
+I	O
+am	O
+using	O
+Highcharts	O
+in	O
+Cross	O
+Platform	O
+app	O
+development	O
+.	O
+
+I	O
+am	O
+using	O
+a	O
+custom	O
+background	O
+for	O
+highchart	O
+.	O
+
+It	O
+is	O
+working	O
+very	O
+well	O
+in	O
+iOS	B-Plat
+but	O
+not	O
+appearing	O
+in	O
+Android	B-Plat
+.	O
+
+Though	O
+chart	O
+is	O
+there	O
+but	O
+not	O
+visible	O
+.	O
+
+When	O
+I	O
+remove	O
+the	O
+background	O
+it	O
+is	O
+working	O
+well	O
+.	O
+
+Following	O
+is	O
+my	O
+Code	O
+:	O
+
+Any	O
+Idea	O
+about	O
+this	O
+?	O

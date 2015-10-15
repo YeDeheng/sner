@@ -1,9 +1,9 @@
-REST	O
+REST	B-Stan
 Authentication	O
 With	O
-Spring	O
+Spring	B-Fram
 And	O
-Spring	O
+Spring	B-Fram
 Security	O
 
 I	O
@@ -16,9 +16,9 @@ service	O
 with	O
 authentication	O
 using	O
-Spring	O
+Spring	B-Fram
 and	O
-Spring	O
+Spring	B-Fram
 Security	O
 .	O
 
@@ -80,7 +80,7 @@ need	O
 to	O
 create	O
 a	O
-spring	O
+spring	B-Fram
 security	O
 context	O
 and	O
@@ -134,10 +134,10 @@ look	O
 at	O
 Jersey	O
 with	O
-Spring	O
+Spring	B-Fram
 and	O
 its	O
-ContextSecurityFilter	O
+ContextSecurityFilter	B-API
 ,	O
 I	O
 do	O
@@ -145,7 +145,7 @@ not	O
 suggest	O
 to	O
 use	O
-spring	O
+spring	B-Fram
 security	O
 .	O
 

@@ -10,7 +10,7 @@ from random import randint
 import codecs
 codecs.register_error('replace_against_space', lambda e: (u' ',e.start + 1))
 #print unicode('ABC\x97ab\x99c上午', 'utf-8', errors='replace_against_space')
-pl = ['java']
+pl = ['java', 'javascript']
 # ['java', 
 # 	   'javascript', 
 # 	   'c#', 
@@ -93,12 +93,12 @@ class DataReader:
 		                     db="stackoverflow201503")
 		self.cur = self.db.cursor() 
 
-	def generate_postid(self):
+	def generate_postid(self, annotator):
 		for name in pl: 
 			fname = './postid/' + name + 'postid.txt'
 			flen = file_len(fname)
 
-			for i in range(10):
+			for i in range(5):
 				f=open(fname, 'r')
 				lines=f.readlines()
 				index = randint(0, flen)
@@ -128,7 +128,7 @@ class DataReader:
 						all += ans_body
 
 					
-					f = open('./rawdata/' + str(name) + str(postid)+'.txt', 'w' )
+					f = open('./rawdata/' + str(annotator) + '/' + str(name) + str(postid)+'.txt', 'w' )
 					for row in all: 
 						content = strip_tags(row[0])+'\n'
 						content = re.sub(r'^ +', '', content)
@@ -178,5 +178,7 @@ class DataReader:
 
 if __name__ ==  '__main__':
 	r = DataReader()
-	r.generate_postid()
+	annotators = ['zhenchang']
+	for anno in annotators: 
+		r.generate_postid(anno)
 	#r.read_post('123')

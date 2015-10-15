@@ -1,4 +1,4 @@
-spring	O
+spring	B-Fram
 4.0.2	B-API
 schema	O
 error	O
@@ -9,11 +9,11 @@ trying	O
 to	O
 upgrade	O
 my	O
-spring	O
+spring	B-Fram
 3.4	B-API
 application	O
 to	O
-spring	O
+spring	B-Fram
 4.0.2	B-API
 
 I	O
@@ -21,7 +21,7 @@ imported	O
 all	O
 the	O
 spring-4.0.2	O
-jar	O
+jar	B-Stan
 files	O
 but	O
 am	O
@@ -78,10 +78,10 @@ and	O
 just	O
 copy	O
 the	O
-xml	O
+xml	B-Stan
 from	O
 the	O
-spring	O
+spring	B-Fram
 reference	O
 documentation	O
 as	O

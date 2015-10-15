@@ -1,0 +1,3 @@
+passing and read javascript variable to smarty
+How can i read a javascript var from smarty?? like this 
+THanks!! 

@@ -7,7 +7,7 @@ customized	O
 error	O
 page	O
 in	O
-Play	O
+Play	B-Fram
 Framework	O
 
 How	O
@@ -26,7 +26,7 @@ their	O
 error	O
 pages	O
 using	O
-Play	O
+Play	B-Fram
 ?	O
 
 You	O
@@ -54,7 +54,7 @@ errors	O
 .	O
 
 For	O
-play	O
+play	B-Fram
 2.X	B-API
 you	O
 can	O
