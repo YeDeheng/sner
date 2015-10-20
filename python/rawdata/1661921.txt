@@ -1,0 +1,90 @@
+Java Programming - Where should SQL statements be stored?
+Where should an JDBC-compliant application store its SQL statements and why? 
+So far, I managed to identify these options: 
+Hardcoded in business objects  Embedded in  SQLJ  clauses  Encapsulate in separate classes e.g. Data Access Objects   Metadata driven (decouple the objectschema from the data schema -describe the mappings between them inmetadata)  External files (e.g. Properties orResource files)  Stored Procedures  
+What are the “Pros” and “Cons” for each one? 
+Should SQL code be considered “code” or “metadata”? 
+Should stored procedures be used only for performance optimisation or they are a legitimate abstraction of the database structure? 
+Is performance a key factor the decision? What about  vendor lock-in ? 
+What is better – loose coupling or tight coupling and why? 
+EDITED: Thank you everyone for the answers – here is a summary:  
+Metadata driven i.e. Object Relational Mappings (ORM)  
+Pros: 
+Very abstract - DB server can beswitched without the need to changethe model  Wide-spread - practically a standard  Cuts down the amount of SQL needed  Can store SQL in resource files  Performance is (usually) acceptable  Metadata driven approach  (Database) vendor independence  
+Cons: 
+Hides SQL and true developersintentions  SQL difficult to be reviewed/changedby DBA  SQL might still be needed for oddcases  Can force usage of a proprietaryquery language e.g. HQL  Does not lend itself to optimisation(abstraction)  Can lack referential integrity  Substitutes for lack of SQL knowledgeor lack of care to code in the DB  Never match native databaseperformance (even if it comes close)  Model code is very tight coupled withthe database model  
+Hardcoded/encapsulated in DAO layer  
+Pros: 
+SQL is kept in the objects thataccess data (encapsulation)  SQL is easy to write (speed ofdevelopment)  SQL is easy to track down whenchanges are required  Simple solution (no messyarchitecture)  
+Cons: 
+SQL cannot be reviewed/changed by DBA  SQL is likely to become DB-specific  SQL can become hard to maintain  
+Stored Procedures  
+Pros: 
+SQL kept in the database (close todata)  SQL is parsed, compiled and optimisedby the DBMS  SQL is easy for DBA to review/change  Reduces network traffic  Increased security  
+Cons: 
+SQL is tied to the database (vendorlock-in)  SQL code is harder to maintain  
+External files (e.g. Properties or Resource files)  
+Pros 
+SQL can be changed without a need torebuild the application  Decouples the SQL logic from theapplication business logic  Central repository of all SQLstatements – easier to maintain  Easier to understand  
+Cons: 
+SQL code can become un-maintainable  Harder to check the SQL code for(syntax) errors  
+Embedded in SQLJ clauses  
+Pros: 
+Better syntax checking  
+Cons: 
+Ties too closely to Java  Lower performance than JDBC  Lack of dynamic queries  Not so popular  
+By using an ORM (such as hibernate) you hopefully will have  no  SQL statements to worry about. Performance is usually acceptable and you get vendor independence as well. 
+I don't know if this is optimal, but in my experience they end up hardcoded (i.e. String literals) in the DAO layer.  
+We happen to use the iBatis SQL mapper, which is closer to the metal than ORMs like Hibernate.  In iBatis you put the SQL statements into resource files (XML), which need to be in the classpath.   
+Your list of approaches seems pretty comprehensive if you add @ocdecio's ORM option.  I would say that using an ORM and using an SQL mapper and resource files are the two best approaches.  I'd steer clear from SQLJ, which hasn't seen much uptake and ties you too closely to Java.  Also stay away from stored procedures, since they tie you to a specific database vendor (standards are almost non-existent for stored procedures).   
+Usually, the more the application grows in terms of size and/or reusability, the more the need is to externalize/abstractize the SQL statements. 
+Hardcoded (as static final constants) is the first step.Stored in a file (properties/xml file) is the next step.Metadata driven (as done by an ORM like Hibernate/JPA) is the last step. 
+Hardcoded has the disadvantage that your code is likely to become DB-specific and that you need to rewrite/rebuild/redistribute on every change. Advantage is that you have it in 1 place. 
+Stored in a file has the disadvantage that it can become unmaintainable when the application grows. Advantage is that you don't need to rewrite/rebuild the app, unless you need to add an extra DAO method. 
+Metadata driven has the disadvantage that your model code is very tight coupled with the database model. For every change in the database model you'll need to rewrite/rebuild/redistribute code. Advantage is that it is very abstract and that you can easily switch from DB server without the need to change your model (but ask yourself now: how often would a company switch from DB server? likely at least only once per 3 years, isn't it?). 
+I won't call stored procedures a "good" solution for this. They have an entirely different purpose. Even though, your code would be dependent on the DB / configuration used. 
+I suggest using DAOs with a factory layout.  So the example objects you need would be: 
+This style layers the data interaction, so you should only have to change one layer of code if you switch databases, or move to ORM technologies. 
+I don't think anyone will give you the pro/con break down you want as it is a rather large question. So instead here is what I've used in the past, and what I will be using going forward. 
+I use to use SQL hardcoded in the DAL. I thought this was fine until the DBAs wanted to play with the SQL. Then you have to dig it out, format it and fire it over to the DBAs. Who will laugh at it and replace it all. But without the nice question marks, or the question marks in the wrong order and leave you to stick it back in the Java code. 
+We have also used a ORM, and while this is great for developers our DBAs hated it as there is no SQL for them to laugh at. We also used a odd ORM (a custom one from 3rd party supplier) which had a habit of killing the database. I've used JPA since and was great, but getting anything complicated using it past the DBAs is a up hill battle. 
+We now use Stored Procedures (with the call statement hardcoded). Now the first thing everyone will complain about is that you are tied to the database. You are. However how often have you changed database? I know for a fact that we simply could not even attempt it, the amount of other code dependent on it plus retraining our DBAs plus migrating the data. It would be a very expensive operation. However if in your world changing DBs at a drop of a hat is required SPs are likely out. 
+Going forward I would like to use stored procedures with code generation tools to create Java classes from Oracle packages.  
+Edit 2013-01-31 : A few years and DBAs later and we now use Hibernate, going to SQL (stored procs in the DB) only when absolutely required. This I think is the best solution. 99% of the times the DBs don't need to worry about the SQL, and the 1% they do it is in a place they are already comfortable with. 
+Should SQL code be considered “code” or “metadata”?  
+Code. 
+Should stored procedures be used only for performance optimization or they are a legitimate abstraction of the database structure?  
+Stored procedures allow for reuse, including inside of other stored procedures.  This means that you can make one trip to the database   have it execute supporting instructions - the least amount of traffic is ideal.  ORM or sproc, the time on the wire going to the db   back is something you can't recoup. 
+ORM doesn't lend itself to optimization because of its abstraction.  IME, ORM also means a lack of referencial integrity - make a database difficult to report from.  What was saved in complexity, has now increased to be able to get the data out in a workable fashion. 
+Is performance a key factor the decision? What about vendor lock-in?  
+No, simplicity is.  Vendor lockin happens with the database as well - SQL is relatively standardized, but there are still vendor specific ways of doing things. 
+From what experience , I have had, hard coding sql statements in the DAO objects is what is widely used, though , I think it should be the least preferred method.The best practice should be to store the sql statements in a properties file. And get the statements in the DAO object through an interface to properties files, say  java.util.Properties . The sql statements can be interspersed with '?'s to pass parameters , through a  Prepared Statement  approach. 
+Such an approach helps decouple the sql logic from the application business logic. This makes available a central repository of all sql statements , which makes modification easier, eliminating the need to search for database statements within application logic.Understandability improves too. 
+Like most of us, I've seen the whole gammut but we need to consider SQL a first-class language.  I've even seen SQL stored in the DB that is pulled down then executed back up. 
+The most successful systems I've seen employ stored procedures, functions and views.   
+Stored procs keep the SQL text back at the DB and allow for relatively immediate change by those DEPLOYING and CUSTOMIZING (which requires a lot of proper design to support it). 
+All projections should be via views and simple selects for the same reasons, all projection logic should be contained within the view. 
+The only question you ask that has a definite answer is "Is SQL code or metadata?" It is most definitely code and as such should be kept in some kind of source code control and have a system for easily updating to the latest version and rolling back  when  not if things go wrong. 
+I've seen three ways of doing SQL in an application and each has their pros   cons. There is no best way, but the best thing is just pick one that works well with your application and stick with it. 
+ORM - this cuts down on the amount of SQL you need to write and handles lots of details for you. You will need to do some custom SQL. Make sure you have an ORM that handles this gracefully.  Data Access Objects - keep the SQL in the objects that access the data. This encapsulates your database and makes it so the rest of your application doesn't need to know about the underlying DB structure, just the interface to these objects.   Stored Procedures - this keeps all your SQL in your database and makes it easy for your DBA's to know what is going on. All you need to do is have your code call the stored procs  
+SQL inside Stored Procedures is optimized by the database system and compiled for speed - that's its natural home. SQL is understood by the database system, parsed by the database system. Keep your SQL in the database if you can; wrap it in stored procedures or functions or whatever units of logic the database system provides, and make simple calls to it using any one of the tools you or anybody else has mentioned. 
+Why store SQL code for the database system outside the db? Often for speed of development. Why use ORM mapping? - Some say ORM mapping provides compatibility across different database systems; however rarely in the real world does an application ever shift away from the database platform upon it was built especially when it starts using advanced features like replication, and for the rare occasion it does happen that the database system is swapped out, some work is warranted. I believe one of ORM's drawbacks it often substitutes for lack of SQL knowledge or lack of care to code in the db. Also ORM will never match native database performance even if it comes close. 
+I'm standing on the side of keeping SQL code in the database and making simple calls to it through any API or interface you wish to use. Also abstract away the point at which your database calls are made by putting those calls behind an abstract class or OO interface (expressed by methods), so if you ever do swap in a new kind of data source it will be seamless to the business layer. 
+Mine end up in resource bundles. I know it's not normal but it's the easiest for me and anyone "other than me" to maintain. It's straightforward and logical. 
+I'm actually curious to see if anyone uses my approach also. 
+As a  rexem  wrote SQL statments are code - they should be treated like code, not externalized (unles you have good reason) but placed with code that process SQL data from/to that statements. Todays framework ORMs/iBatis offer a lot of simplifications for day-to-day JDBC development. 
+Some answers to your question you'll find in  this question :) The problem how your SQL statments will be stored depends of king of your application. What are your needs? High security, ease of writing code or maintenance, crossplatform or vendor lock-in? The next question do you need pure SQL or ORM framework will be good? 
+Simplest solution (P), hard to maintain (C) 
+Beter syntax checking (P), lack od dynamic queries (C), lower perfomance than JDBC (C), no so popular (C)  
+It must be specific case you should do that (C) or if you mean ORM (P) ;) 
+Easy to mantain (P) but harder to check for errors (C) 
+High secuirty (P), code hard to mantain an vendor lock-in problems (C) 
+The fear of vendor lock-in in the java world is interesting.  
+I hope you haven't paid $50000 pr CPU for Oracle Enterprise, and then only used the least common denominator in order to switch to Mysql any minute. As any good DBA will tell you, there are subtle differences between the different big name databases, especially with regard to locking models and how they achieve consistency. 
+So, don't make a decision on how to implement your SQL calls only based on the principle of vendor agnostic SQL - have a real (business) reason for doing so. 
+There isn't really any substantial difference between these three: 
+Hardcoded in business objects  Embedded in  SQLJ  clauses  Encapsulate in separate classes e.g.  Data Access Objects   
+I'm assuming that you're going to embed SQL code in a string form directly into your Java code. While 1 and 3 will probably use JDBC directly (or some tool like  Apache DbUtils ), 2 adds a preprocessor technology to the stack, generating the relevant JDBC code prior to compilation. 
+So, essentially, if these solutions involve embedding SQL, you might as well use any of these technologies: 
+JPA Criteria API , modelling JPQL as an internal domain-specific language in Java   jOOQ , modelling SQL as an internal domain-specific language in Java  
+There might also be other tools to help you embed SQL in Java in a more typesafe manner than through SQLJ or through actual string concatenation. 

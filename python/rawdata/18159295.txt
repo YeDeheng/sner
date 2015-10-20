@@ -1,0 +1,11 @@
+Use of auto increment in JavaScript and jquery
+I have this code @codeSnippetRemoved
+I want to be able to replace  @codeSnippetRemoved
+with  @codeSnippetRemoved
+and that way to simplify the code. 
+I have used @codeSnippetRemoved
+but i get "TypeError: this.submenu[i] is undefined" in Firebug. 
+I am a beginner in javascript and jquery so this is not easy for me. 
+Assuming what you're really trying to do is to avoid repeating code and use  [i]  as an index to access each variable, then you can do that by putting your jQuery objects into an array instead of individual variables.  You can replace this: @codeSnippetRemoved
+With something like this, you can access them by index. @codeSnippetRemoved
+Note: if your first object doesn't have a  "0"  suffix, then you will have to special case the code for that object. 

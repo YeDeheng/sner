@@ -1,2 +1,2 @@
-.out() system.out-abc   
+@code-snippet-removed .out() system.out-abc   
 abc-cdcd-cd  spring 4.0.2 spring-4.0.2 dispatcher-servlet.xml 
