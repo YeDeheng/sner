@@ -1,0 +1,15 @@
+Dividing a list into two lists
+Below is my current training_list ; @codeSnippetRemoved
+I need to divide the list into two lists based on the last attribute ' =50K ' or ' > 50K ' I want to exclude the last attribute as well from both lists.
+I tried the below code and i'm getting the following : @codeSnippetRemoved
+Code is as follows ; @codeSnippetRemoved
+Any help greatly appreciated.
+You're using lstrip().
+lstrip() will remove leading whitespace.
+The string "=50K" has leading whitespace.
+So we might try to compare against a string that has no leading whitespace : @codeSnippetRemoved
+Or perhaps : @codeSnippetRemoved
+My solution is : @codeSnippetRemoved
+And the output is : @codeSnippetRemoved
+if you want optimization : one for can do that @codeSnippetRemoved
+using itertools.groupby : @codeSnippetRemoved

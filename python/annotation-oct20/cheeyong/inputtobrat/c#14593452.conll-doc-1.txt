@@ -1,0 +1,10 @@
+How do I perpetuate private field data from a Component object into an Entity object using NHibernate?
+Lets say we have an Entity class that has many fields and methods but also has a Component object.
+We have kept Component data encapsulated in a separate class for an arbitrary reason.
+@codeSnippetRemoved
+Lets say our Component has many responsibilities but only 3 fields all of which are private fields.
+We have kept the fields private for an arbitrary reason.
+@codeSnippetRemoved
+Now, lets say that our Entity corresponds with a Table in the database.We want that table to have a column for each field on the Component.We call them "columnName1", "columnName2", and "columnName3" respectively.
+The question is : how can we use Fluent NHibernate to perpetuate private field data from a Component object which belongs to an Entity (that corresponds with a table in your database)?
+You override the auto mapping for your entity like this : @codeSnippetRemoved

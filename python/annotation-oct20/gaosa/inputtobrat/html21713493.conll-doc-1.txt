@@ -1,0 +1,18 @@
+HTML multi-level templating (HTML and JS only)
+Hi I wanna do something really simple : a multi-level template system using only HTML and JS.
+I would have like to do that with HTML only, I tried with object and embed tags but I can't make it work properly (embed doesn't display and object generates a new HTML document with and, plus it ' s pretty ugly).
+So, next I tried handlebars.js but I didn't manage to use it to put HTML from a file into another one.
+I just want to separate the distinct components of my page into different HTML-like documents (but not full HTML-valid documents, just one with the header only, one with the navigation menu only, and so on).
+Then on "level 2" I would have a "structure" HTML-body document which would arrange the previous elements as I want (one structure could have a menu on the left, content on the right and a footer, another would have menu on top, full-size content and a header, etc. like the different themes of a CMS only much simpler).
+Then on "level 3" finally, my "real" pages would use a "structure" template and then I guess I should use something like handlebars to pass content, titles etc. to level 2 and again to level 1.
+So, is there any easy way to do this?
+Without having to rewrite a whole JS library :P And if you think handlebars.js would suit my needs (but I really don't need dynamic parts, just a title and a content for each page, maybe something to handle the current position on the website to manage menus and breadcrumb), could you please tell me how to use it to include HTML from one file to another?
+Thank you very much :)
+EDIT
+Well after a little bit of struggling, I dit it really easily with only jQuery.
+I'm really not familiar with javascript (but I'm still a little ashamed) here is the way to go : @codeSnippetRemoved
+with structure.html containing just empty tags in the order you want them like this :
+and section, nav and footer.html contining what should be inside the respective tags.
+Wouldn't it be easier to simply use a couple iframes?
+Something like : @codeSnippetRemoved
+Or am I misunderstanding your question?

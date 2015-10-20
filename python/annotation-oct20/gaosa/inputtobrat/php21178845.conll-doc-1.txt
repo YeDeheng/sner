@@ -1,0 +1,18 @@
+PHP check if a radio button is clicked
+I want to know if the user clicks the submit button, it will check if the user checks all radiobuttons.
+This is what I've tried so far : @codeSnippetRemoved
+CheckQuiz.php @codeSnippetRemoved
+Im a newbie so I really need your help.
+I want check first if all radio buttons have been checked and then check if the user ' s answers.
+Can you give me sample implementations of this?
+Your help will truly be appreciated Thanks.
+if (isset ($_POST[ "radioBoxName" ] )) { // It was checked echo $_POST[ "radioBoxName" ]; // This is the value of the checked option }
+Edit based on comments
+If you have lets say 10 questions with 4 different answers for each you can then name your radio boxes like this @codeSnippetRemoved
+Then you can check them in PHP like @codeSnippetRemoved
+First you have name all your radio buttons with the same name.
+Say its name is question. example below @codeSnippetRemoved
+Then you can access its value from server as @codeSnippetRemoved
+edited as per needed by user
+if you have multiple questions then you could use like below @codeSnippetRemoved
+Then you could iterate as below : @codeSnippetRemoved

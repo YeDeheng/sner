@@ -1,0 +1,14 @@
+WebSphere 8.5.5 not returning JAR signers
+WebSphere 8.5.5 is not returning signers at run-time.
+We have an issue with a deployed environment and code that verifies that a JAR is signed with an expected key.
+Running : public static int checkSigning (Class cl) { Object [] signers = cl.getSigners() ; @codeSnippetRemoved
+Against a known-signed JAR (verified against Jarsigner) is returning -1 (meaning getSigners is null), but only when deployed in the WebSphere 8.5.5 instance.
+Running in other servlet containers (GlassFish, WebLogic, JBoss) all returns the signers correctly.
+To complicate this further, I am not directly in control of the WebSphere instance and have not gotten any clear answers regarding any whether the JAR is being unpacked or any other reasons that could account for this.
+TL ;D R :
+1) Does WebSphere 8.5.5 have any known issues regarding getSigners on a class?
+2) If not, are there any low-hanging fruit configuration / deployment settings to check to ensure the JAR is not being mangled during deployment?
+I have spent several hours trying to dig and everything I've found that could explain this behavior supposedly doesn't apply to WebSphere 8.5.5.
+The application class loader of WebSphere Application Server does not use signing information when defining the class.
+If you really need this, your best option is probably to open an RFE.
+Otherwise, you might choose a different workaround if you're just trying to get metadata.

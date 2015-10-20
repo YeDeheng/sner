@@ -1,0 +1,8 @@
+JPA navigate unidirectional relationship
+I have an unidirectional relationship.
+Here i have Employee and Andress entities.
+In Employee entity i have the following code : @codeSnippetRemoved
+What is the correct way to find the Employee entity when i have only the Adress entity.
+Can I only do that via jpql?
+You could do it like this if you have, for example, the id of the address @codeSnippetRemoved
+Using Hibernate criteria API, it would look like this @codeSnippetRemoved

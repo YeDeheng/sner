@@ -1,0 +1,18 @@
+PHP mysqli query returns empty error message
+I have a username input field on my website.
+When a name is entered, I call the code underneath with ajax.
+Unfortunatley the ' or die ' executes every time and its output is not helping :
+An error occured (1 ):
+Why is mysqli_error() empty?
+If I replace ' or die ' with or ' trigger_error ' it echoes the username only.
+The db_connex is working everywhere else.
+I dumbed it down quite a bit in order to find the error.
+@codeSnippetRemoved
+Many thanks in advance!
+I included this script in my index.php and took that one as origin for my path.
+But this php file is living in my php folder.
+This led to some weird behaviour.
+So my path is wrong ...
+Oh my god.
+This took me 2 hours.
+Nontheless i am so happy, that i can move on now :) Thank you so much, Fred!

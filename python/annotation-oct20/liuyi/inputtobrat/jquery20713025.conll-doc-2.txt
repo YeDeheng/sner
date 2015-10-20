@@ -1,0 +1,2 @@
+switch (true) means "choose the first case that evaluates to true using strict equality (= )".
+None of your cases evaluates to true using strict equality.

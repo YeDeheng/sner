@@ -1,0 +1,13 @@
+javascript or ajax function when someone clicks on browser close button
+I want to call a function when someone click on close button of browser.
+I gone through many posts and questions on stackoverlow and google groups.
+But couldn't find a way to accomplish this task.
+I want to send an ajax request when someone click on browser close button. now I am using window.onbeforeunload java script method but it is called each time when I click on a link or change web page.
+@codeSnippetRemoved
+but i want to call the method only on browser close button click.Is there anyway by which i can catch browser close button clicked event?
+Help will be appreciable
+window.onclick = function() { var win = window.open ("/ ") ; win.onload = function() { console.log (" onload ") ; win.onunload = function() { alert ("Close onunload ") ; }}
+}
+Demo
+$ (window) .unload (function() { alert ("Handler for .unload() called." ); } );
+you can use this code

@@ -1,0 +1,27 @@
+Iframe header location
+I've a problem with iframe.
+My first file filtre.html contain iframe with a basic code like this : @codeSnippetRemoved
+This file filtre.php is a drop down dynamic list with 3 levels (PHP / MYSQL).
+Filtre.php this file is actually a dynamic dropdown 3 levels and will find info in a DB.
+The submit sent to a URL and all working fine.
+My problem is with iframe.
+When I click on submit, target page is found in this part of 220x220 instead of reloading the parent page.
+I tried several solutions to no avail.
+Here is part of my php file (I deliberately truncated several parts) including the header location and the form : @codeSnippetRemoved
+I also tried with javascript but without success.
+In this configuration there I removed the line : @codeSnippetRemoved
+Here is the javascript code in the header : @codeSnippetRemoved
+The problems in this case is that the document load loop.
+Anyway, I'm stuck, I thank you in advance for your help.
+Vincent
+If I understand what ' s happening, the buttons are targeting the contents of the iframe and loading the page inside that, instead of the actual window?
+If that ' s the case, set the target attribute the either _parent or _top and that should target the actual window.
+You can try this javascript code :
+? php
+/ * ------- Your Php Code ----- * /
+\\Replace this code @header (location)
+echo "script" ;
+echo "window.location='yourloation .php ' ;" ;
+echo "/ script" ;
+/ * ------- Your Php Code ----- * /
+?

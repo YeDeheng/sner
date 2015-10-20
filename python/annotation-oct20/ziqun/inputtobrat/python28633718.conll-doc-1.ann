@@ -1,0 +1,7 @@
+T1	PL 0 6	python
+T2	PL 40 46	Python
+T3	Plat 74 81	Windows
+T4	API 100 115	statsmodels.api
+T5	API 173 181	fblas.py
+T6	API 182 191	fblas.pyc
+T7	PL 223 224	C

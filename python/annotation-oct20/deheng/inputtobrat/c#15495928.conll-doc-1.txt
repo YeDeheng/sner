@@ -1,0 +1,10 @@
+check distinct values in datarowview.row.itemarray other than empty string
+I am getting datarowview through the following code @codeSnippetRemoved
+how can i check here that all values in s.Row.ItemArray is distinct.
+If value is null or empty string it should skip the distinct nature ie there can be multiple null values or empty string in ItemArray but no other same values.
+you can use LINQ GroupBy to check the distinct : @codeSnippetRemoved
+How it works :
+To simplify, assume your item array has : [ 1, 1, 3, 3].
+GroupBy (x = x) will group your array in two group : @codeSnippetRemoved
+To know whether it is distinct or not, you just check whether any group has Count > 1, if yes, it is not distinct.
+Example in here is not distinct

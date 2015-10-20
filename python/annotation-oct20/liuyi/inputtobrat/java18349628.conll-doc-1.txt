@@ -1,0 +1,20 @@
+How to convert xml to .json file in java
+public class ConvertXMLtoJSON {
+public static void main (String [] args) throws Exception { InputStream in = ConvertXMLtoJSON.class.getResourceAsStream ("D: \\ sample.xml ") ; String xml = IOUtils.toString (in ); XMLSerializer xmlSerializer = new XMLSerializer() ; JSON json = xmlSerializer.read (xml ); System.out.println (json.toString (2 )); } }
+but i am getting error @codeSnippetRemoved
+can u please help me to resolve itThis is my xml format ac3 AC3 Phone ACME phone 200.0 1.0 true
+i have generated this xml from my excel file and i have convert this xml file to json file
+You are trying to read physical File as a classpath Resource, which is wrong @codeSnippetRemoved
+Change it to @codeSnippetRemoved
+String xml = IOUtils.toString (in );
+Here InputStream in is null so it raise NullPointerException.
+Class #getResourceAsStream (String name) it use to load resource from classpath and normally use in web-based project, and an absolute resource name is constructed from the given resource name using this algorithm :
+If the name begins with a ' / ' (' \u002f '), then the absolute name ofthe resource is the portion of the name following the ' / '.
+Otherwise, the absolute name is of the following form : modified_package_name / name
+As Documentation
+As your file exists in local hard-drive (D: \\ sample.xml) better use FileInputStream to load the resouce.
+@codeSnippetRemoved
+Find a good related question -
+getResourceAsStream() vs FileInputStream
+Hi Anil This is the code which is used to convert xml to json @codeSnippetRemoved
+}

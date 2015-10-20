@@ -1,0 +1,12 @@
+Android : Loop to pick a random images from ArrayList
+Right now my program randomly displays 5 random images from my Array List and here ' s the main part of what I have now : @codeSnippetRemoved
+I'm now getting an error in my render method here that is causing the app to crash : @codeSnippetRemoved
+What I'm trying to do is make each drawable image have an integer value such as : R.drawable.one equal to 1, R.drawable.two equal to 2 .....
+R.drawable.five equal to 5.
+And have a loop repeat until the images displayed equals a total value of 50 (they all add up to 50) and then stop.
+I'm trying to get myImgCount and totalImgCount to keep track of the value of the image that is randomly chosen and I know it isn't right but I can't find any info on how to complete this task.
+Thanks in advance to anyone who can help, I'm new to coding so if you can explain why you used your code it would help even more!
+Thanks!
+You can use the drawable naming convention as R.drawable.image1, R.drawable.image2 and use @codeSnippetRemoved
+Details on getIdentifier method here :
+Hope this helps

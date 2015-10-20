@@ -1,0 +1,19 @@
+Is salting with a hashed version of the user ' s password just as secure as salting with a pre-defined string?
+Basically, what I'm asking is if salting a password by appending a hashed version of it to the end of it is just as secure as salting with a different string.
+So :
+Is this : @codeSnippetRemoved
+As secure as this?
+@codeSnippetRemoved
+The first example is as secure as hashing without using any salt at all, because it still just requires the password and nothing more to crack.
+In other words, you are just applying the hashing functions to the same thing a few times more.
+A better bet is still to create a salt for each user and store it alongside, separately.
+A fixed salt for everyone is alright, I guess, because you cannot use the password to determine the salt.
+However, generating a unique salt for each user is even better because then it would take more information than just the password to crack it (e.g. username, date registered, or some other info).
+If the salt is based on the value to be hashed, then you lose the value of the salt.
+If a password hash salt is based only on the value of the password, then two users using the same password is very visible in the database, for example.
+You should instead add a salt on a different determinable value.
+Common options are fields like the username, email, etc.
+You shouldn't use md5 anyway as it ' s been cracked.
+sha256 is more secure and just as easy to implement.How about using, when storing the data : @codeSnippetRemoved
+Therefore $salt is not based on any user entered data, but random data.
+You then store $salt in the db as it is, or reverse the string for obfuscation.

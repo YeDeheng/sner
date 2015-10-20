@@ -1,0 +1,13 @@
+Convert a html div to a pdf
+I have a sort of bill generated in my web page which gets displayed in a div id "bill".
+I want that when the user clicks print, everything that is displayed in the "bill" div gets converted to pdf and it opens up automatically in another web page (tab) so that the user can print it?
+Can anyone help me with the code for it?
+You can do it using jsPDF
+Sample usage :
+HTML : @codeSnippetRemoved
+JavaScript : @codeSnippetRemoved
+DEMO
+I sugest you use a PDF Utitlity to generate the pdf server side.
+What is the best PDF open source library for Java?
+you can use open the page in a new window and write the bianary to the http response
+You can also use a Javascript library called jsPDF for generating PDF files purely in client-side JavaScript.

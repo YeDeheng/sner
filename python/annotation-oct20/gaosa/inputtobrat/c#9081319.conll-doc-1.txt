@@ -1,0 +1,21 @@
+Can my .Net app reference two different versions of a .net framework library?
+Say I have two projects, P4 and P3, targetting .net 4.0 and 3.5 respectively.
+Each project also has a reference to System.Data.In the case of P4, it will be to System.Data v4.0.0.0In the case of P3, it will be to System.Data v2.0.0.0
+Project P4 also references P3.
+If P4 is loaded and executed, it uses the .net 4.0 CLR.
+At runtime, references to System.Data seem to resolve to v4.0 inside both P4 and P3.
+I can override this by using assemblyBinding redirects, but then both P4 and P3 resolve to v2.0.
+Is there any way I can configure my application so that P4 uses v4.0 and P3 uses v2.0?
+If you have control over P3, yes.
+Go to the references section of the project, find the System.Data reference, and view it ' s properties window (right-click -> Properties).
+Select "True" for the "Specific Version" property.
+Recompile, redeploy, etc.
+Note that this will cause all sorts of runtime failures if .NET 2, 3, or 3.5 are not installed on the machine when the assembly attempts to load.
+Edit
+I've tried this, but with no luck.
+P3 still runs v4.0.
+Do you know if this setting would have any visible effect in the assembly generated for P3?
+E.g.
+The manifest says ".ver 2:0 : 0:0" whether "Specific Version" is set to true or not.
+Try adding this to your app.config : @codeSnippetRemoved
+Have a look at this : In-Process Side-by-Side It might be of some help.

@@ -1,0 +1,28 @@
+Jquery hover not fast enough
+when i leave the selector, the unhover will not occur if i move too fast : @codeSnippetRemoved
+You can use .live to set up the eventhandlers before you create the item.
+or @codeSnippetRemoved
+or @codeSnippetRemoved
+I was unable to reproduce it.
+Wrote this in Firebug in this very page : @codeSnippetRemoved
+Always works even if I move really fast.
+Maybe it ' s because you forgot a comma before the second function, in your code?
+What browser do you use?
+Here ' s a solution :
+CSS : @codeSnippetRemoved
+Javascript : @codeSnippetRemoved
+This code makes your edge case thinner.
+Decent browsers which have good CSS support shouldn't be slowed down with Javascript calls just because IE is faulty.
+If someone insists on using IE, then they'll still get hover effects, but sometimes it might stick.
+Do you really care about these people that much?
+The issue with the hover getting stuck is dependant on which browser you are using.
+The newer the browser the faster the javascript engine.
+How you are calling the jQuery library also makes a difference (I suggest either calling a local copy of the lib or using Google libraries API).
+With each new release of the library it gets faster and faster as they slim down the code and make things more efficent, so I suggest calling in the latest release.
+With the realease of jQuery 1.4.2 and above the .toggle() function can be called instead of specifying the mouse functions that are contained within the hover function.
+What your doing with your code is basically the same as .hover (mouseover, mouseout) (in its basic form that is).
+Each function you called (with the .removeClass and .addClass) is calling each mouse action.
+Using this it will speed up your code becuase toggle has been optimized to replace the mouse functions : @codeSnippetRemoved
+EDIT :
+However if you are wanting to add animation or specify attributes to the .hover() function then you would end up calling each mouse function as you have in your original code.
+Though you can also just use the code I used above and use functions within .toggleClass().

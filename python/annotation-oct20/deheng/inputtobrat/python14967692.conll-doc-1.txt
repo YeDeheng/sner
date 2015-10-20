@@ -1,0 +1,8 @@
+C++ : various encodings getters like in Python
+My question is about encodings under C++.
+When I've worked with Python, I've sometimes had to use such encodings for various needs : @codeSnippetRemoved
+Now there is a question : is there a cross-platform way to to something like it in C++?
+I know that I could see Python ' s sources, but probably there are some solutions which are famous to people who use C++ and there is no need to see Python ' s sources.
+I think that for locale I can use #include locale or #include clocale ; under Linux I can also use getenv ("LANG ") from cstdlib.
+Is there anything else?
+If it can help, I have working ICU library.

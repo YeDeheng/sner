@@ -1,0 +1,8 @@
+T1	Plat 17 24	android
+T2	API 29 41	FileTransfer
+T3	Plat 123 130	android
+T4	API 312 328	options.fileName
+T5	API 331 346	imageURI.substr
+T6	API 348 368	imageURI.lastIndexOf
+T7	PL 755 758	PHP
+T8	PL 1026 1029	PHP

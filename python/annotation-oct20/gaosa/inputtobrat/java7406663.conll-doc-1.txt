@@ -1,0 +1,11 @@
+Inverse Fourier Transform in Android
+Are there any Java / Android libraries that have implemented the inverse fourier transform?
+I've found a few that implement the fourier transform but none that implement its inverse.
+A Fourier transform is almost its own inverse.
+Specifically, if F [] is your Fourier transform, @codeSnippetRemoved
+(where K depends on the exact definition of your transform ; see the relevant section of the wikipedia article on DFT ' s)
+The wikipedia article suggests a number of ways to get an inverse transform.
+One way is to reverse the order of the input (specifically, swap x[n ] with x[ N-n ]) before performing the transform.
+Another is to conjugate your data before and after you perform the transform.
+In any case, you will generally need to multiply by a constant factor, to recover your signal at its original amplitude.
+In summary : it is quick and easy to use the regular transform to get the inverse, which is probably why they don't specifically provide one.

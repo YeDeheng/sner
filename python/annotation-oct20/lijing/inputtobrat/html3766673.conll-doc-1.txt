@@ -1,0 +1,15 @@
+How to make my button into an Image button?
+I have a default button.
+So now how do I make it a button image?
+So when you click on the button the normal thing happens.
+What I just want is an Image on the button.
+Thanks.
+Try putting an image instead of a button and handle its onclick event.
+You can use an image as a button by specifying the src property : @codeSnippetRemoved
+you can use javascript with some logic.
+create one button with style attribute style= "display :b lock" also create required image just next to button with style= "display : none"
+onclick of button call javascript function.
+@codeSnippetRemoved
+This should work
+you could try : @codeSnippetRemoved
+You may try this : @codeSnippetRemoved

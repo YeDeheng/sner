@@ -1,0 +1,5 @@
+Recalculation of datetime in Java Thread
+What ' s the best way determining the datetime inside a Java Thread (in Android)?
+I have the following snippet : @codeSnippetRemoved
+Time 1 repeatedly prints the same time, but Time 2 updates on every iteration.
+Do I really have to get a new instance of GregorianCalendar every time I want to check what the time is?

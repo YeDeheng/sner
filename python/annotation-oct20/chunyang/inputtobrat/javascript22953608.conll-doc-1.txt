@@ -1,0 +1,11 @@
+Jquery - Read input from Text Field
+I have a form which will populate a select box "city" based on the selections of another select box "suburb".
+This works for my data.
+@codeSnippetRemoved
+Instead of having the select id= "suburb" box I would like to make it a text input input type= "text" name= "suburb" and use the value in the input text field to populate the city select box.
+I have tried changing it to
+@codeSnippetRemoved
+But this doesn't return anything.
+Im sure Im not reading the input in the "suburb" field correctly
+Since you give your input name attribute, you can target it by name instead of id : @codeSnippetRemoved
+try this @codeSnippetRemoved

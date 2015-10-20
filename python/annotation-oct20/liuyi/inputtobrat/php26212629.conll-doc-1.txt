@@ -1,0 +1,36 @@
+How can I prevent memory exhaustion using a CakePHP application?
+I am on a VPS server (Quad core with 768MB of RAM. I am running Apache and using APC as my default caching engine).
+I get around 2000 visitors per day with a maximum of 100 concurrent visitors.
+According to CakePHP DebugKit, my most memory intensive pages use around 16MB and the other pages average at around 10MB.
+Is this memory usage normal?
+Is it normal for my memory to bottleneck at 2000 visitors per page?
+Should I consider upgrading my plan to 2GB RAM?
+I also noticed that the View rendering is taking up most of the memory, around 70% on most pages.
+I am monitoring my resource usage, when I have around 50 or more concurrent users, I am getting 0 free MB left.
+Thank you
+Is this memory usage normal?
+Yes, it doesn't seem to be high for a normal CakePHP application.
+Is it normal for my memory to bottleneck at 2000 visitors per page?
+I guess yes, I'm not a "server guy".
+Should I consider upgrading my plan to 2GB RAM?
+I would try switching to Nginx first.
+Apache is a memory eating monster compared to Nginx, just search for a few banchmarks, a random one I've picked by a quick search is from this page.
+Overall Nginx should provide you a much better performance.
+At some stage I would consider updating the memory but try Nginx first.
+You should also check your other processes.
+From my experience, MySQL takes up more memory than anything else on any stack that I run.
+You should also implement better page caching so that PHP doesn't need to be touched when it isn't absolutely necessary.
+But Apache is also a memory hog that needs to be fine tuned.
+If you want to stick with Apache, then run Varnish in front of it.
+Also, keep APC, but also add Memcached.
+It ' s much faster.
+If your site has a spike-load that brings it to zero memory, then, if you can, consider launching extra instances of the server and doing a sort of round-robin (if the VPS is cloud-hosted and this is possible).
+If the load is constant, then definitely upgrade.
+@burzum is completely right, however, that you should just switch to nginx.
+It ' s far, far better than Apache at this point.
+But, just to put you on the right track, quite a few people run nginx as a reverse proxy in front of Apache, and while that does speed up the server, it ' s entirely unnecessary because nginx can do pretty much anything you need it to do without Apache.
+Don't bother using Varnish in front of nginx either because nginx can act as its own reverse proxy.
+Your best bet is to implement nginx with apcu (upgrade php to 5.5 if possible for better performance) and use memcached, and implement nginx ' s native microcaching abilities.
+If your site is heavy on read and light on write, then you might notice that everything is taken care of by nginx just retrieving a cached copy from memcache.
+While this helps with memory, it also helps with processing.
+My servers ' CPUs usually have a 3-5 % usage during peaks.

@@ -1,0 +1,12 @@
+would JustWork (tm)!
+-)
+Now wrt to local bindings / namespaces, the usual solution is to use ... functions - eventually nested.
+While 100% object (as in "everything is an object "), Python is not pure object, and plain functions are just fine.
+FWIW, even for "scripts", you should put your logic in a function then call it - function ' s local namespace access is faster than "global" (really : module level) namespace access.
+The canonical pattern is @codeSnippetRemoved
+Note also that nested functions can also access the enclosing namespace, ie @codeSnippetRemoved
+HTH
+You could combine a function decorator and default parameters to get something like let and block scoped variables : @codeSnippetRemoved
+But this isn't a popular idiom in Python so I advise you avoid it to make your code easier to understand for others.
+Just use regular local variables : @codeSnippetRemoved
+If this becomes a real problem it ' s a good sign you are trying to do too much in a single function.

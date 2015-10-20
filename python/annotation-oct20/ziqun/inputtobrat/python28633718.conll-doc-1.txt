@@ -1,0 +1,5 @@
+python DLL load failed (statsmodels)
+My Python version is 2.7.9 and OS is Windows 8.
+Writing import statsmodels.api @codeSnippetRemoved
+How can I solve this problem?
+I find fblas.py fblas.pyc _fblas.pyd but no _fblas.py in C :\ Python27\lib\ site-packages \scipy\linalg Is this where the problem is?

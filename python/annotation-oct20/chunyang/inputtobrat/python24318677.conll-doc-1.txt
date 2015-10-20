@@ -1,0 +1,20 @@
+Drawing a custom diagram in python
+I wanna draw something like this :
+The closest thing to this I could find was NetworkX Edge Colormap :
+http://networkx.github.io/documentation/latest/examples/drawing/edge_colormap.html
+and here is the source code : @codeSnippetRemoved
+After playing around with their source code, I can't figure out how to hardcode distance of the edge circles from the centre.
+Right now its random.
+Also how do I label the edge circles and their distance from the centre?
+I know for position comes from pos= nx.spring_layout (G).
+So I looked at the spring_layout attribute and found that position can be specified by using a pos variable which is a dictionary with nodes as keys and values as a list.
+(https://networkx.github.io/documentation/latest/reference/generated/networkx.drawing.layout.spring_layout.html)
+But even when I do the following result is random edges : @codeSnippetRemoved
+I'm trying to be as helpful as I can.
+I wouldn't try to keep them static.
+You'll want to add and remove things, and the algorithm ' s automatic placement is something you don't want to lose.
+According to the docs, you should probably tweak k.
+It looks like n is 20, so multiply k times some factor to increase the distance.
+@codeSnippetRemoved
+should maybe be this : @codeSnippetRemoved
+You can set the node positions explicitly with the pos dictionary.For example @codeSnippetRemoved

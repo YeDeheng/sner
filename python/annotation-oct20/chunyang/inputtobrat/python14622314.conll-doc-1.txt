@@ -1,0 +1,15 @@
+python inserting variable string as file name
+I'm trying to create a file file a unique file name, every time my script is ran, it ' s only intended to be weekly or monthly.
+so I chose to use the date for the file name.
+@codeSnippetRemoved
+is where I'm getting this error.
+@codeSnippetRemoved
+it works if I use a static filename, is there an issue with the open function, that means you can't pass a string like this?
+name is a string and has values such as : @codeSnippetRemoved
+Many thanks for any help
+you can do something like @codeSnippetRemoved
+or f = open (' % s.csv ' % name, ' wb ')
+You need to put % name straight after the string : @codeSnippetRemoved
+The reason your code doesn't work is because you are trying to % a file, which isn't string formatting, and is also invalid.
+And with the new string formatting method ...
+@codeSnippetRemoved

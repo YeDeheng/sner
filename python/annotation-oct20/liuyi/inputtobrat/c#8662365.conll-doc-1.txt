@@ -1,0 +1,23 @@
+.Skip() .Take() on Entity Framework Navigation Properties is executing SELECT * on my SQL Server
+I have a method on my generated partial class like this : @codeSnippetRemoved
+When I look at my SQL Server, I can see the generated code is doing a SELECT *.
+* FROM Children This code is taken directly from my class, I have verified that the order of my Skip / Take is BEFORE my .ToList.
+If I remove the .ToList, that line is fast (and no SQL is sent to my DB), but the moment I try to foreach over the results, I get the same SQL sent to my DB : SELECT *.
+* FROM Children.
+Is there something special I need to do when using .Skip and .Take on the navigation properties of my entities?
+update
+I'll try to get the actual SQL generated, I'm not currently setup for that.
+I found the first one because it shows up in SSMS ' s "recenty expensive queries" list.
+Running this : @codeSnippetRemoved
+returns ~ 4,000,000 rows and takes ~25 seconds.
+Running this : @codeSnippetRemoved
+returns ~ 4,000,000 rows and takes ~25 seconds.
+As I said, I'll grab the SQL generated for these and pose them up as well.
+Does it help if you call Skip on the result of Take?
+i.e. @codeSnippetRemoved
+Also, see
+TOP / LIMIT Support for LINQ?
+The problem is that you are performing a LINQ-to-Object query when you query a child collection like that.
+EF will load the whole collection and perform the query in memory.
+If you are using EF 4 you can query like this @codeSnippetRemoved
+In EF 4.1 @codeSnippetRemoved

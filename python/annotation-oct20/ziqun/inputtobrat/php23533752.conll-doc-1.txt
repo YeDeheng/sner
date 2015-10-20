@@ -1,0 +1,13 @@
+Unable to pass test with Mock
+i'm testing laravel controller.Here ' s the respective route @codeSnippetRemoved
+Here ' s the controller : @codeSnippetRemoved
+In the view dashboard.showcategories, i have used foreach to loop through the $categories variable and have then used it.
+Now i was trying to test this controller.
+@codeSnippetRemoved
+But it ' s showing an error @codeSnippetRemoved
+However, if i delete following code from the test, it passes.
+@codeSnippetRemoved
+How to make this test pass with mockery?
+In case you need Category model @codeSnippetRemoved
+your mock does not return anything, and your foreach loop is expecting an array to loop over.
+try setting a return value of an empty array @codeSnippetRemoved

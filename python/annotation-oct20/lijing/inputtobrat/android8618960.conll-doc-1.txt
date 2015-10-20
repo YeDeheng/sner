@@ -1,0 +1,10 @@
+INSTALL_FAILED_OLDER_SDK - Error Message
+I am trying out the basic "hello world" program on my LG Thrive phone that uses Android 2.2.1.
+I have used an API level of 8 for the application, but still get the above error.
+Any other possible reason that this error is flagged?
+EDIT : I overcame this problem when I ran the application in my virtual emulator and then in the phone.
+The reason I did this was - I had to earlier change my API level from 15 to 8, and by merely modifying and saving the manifest file and the project properties - the apk file did not get updated.
+However it got updated once I ran the program on the virtual emulator.
+Any reason why the apk file did not get updated earlier?
+If you are installing the apk on a phone using the shell, and you have already checked wheter you compiled it to a correct target (Api 8 o lesser), create another emulator to the Api 8 and try to compile it.
+If it fails, you are not configuring it correctly.

@@ -1,0 +1,26 @@
+use of session and cookies what is better
+I want to get the current time when a page loads for first time and then to compare that time to the current time only if the difference is more than 30 minutes from the first time the page was loaded, a new window should be opened.
+I wanted to ask that to do all this what should i use session or cookies?
+I have tired using the following : @codeSnippetRemoved
+But it is not working, could someone try to find a problem in what I have coded?
+Thank you!
+i also tried this @codeSnippetRemoved
+y this simple piece of code not working?
+can any1 tell?
+client side.cookies is the way to go.
+it will let the server un-aware (in terms of memory and processing time) of the whats going on, on the client.
+if the window is supposed to be opened on the client through javascript and you don't have anything to do with the stored time on the server.
+Sessions are generally used to identify client uniquely (something like user login session) for your application logic.
+If you don't have to identify a user uniquely, I'd suggest you use Cookies.
+You can use sessions as well but that will unnecessarily do some processing at the server end which looks like will not be of any use to you.
+Its up to you to decide.
+But if it is not required for you to identify a user uniquely, then just go for Cookies.
+"i will compare that time to the current time if the difference is more than 30 minutes new window will be opened".
+I didn't quite get what you exactly mean by this so I will try to answer your question generally.
+New window will be opened can mean two things : open a new window (target= "_blank ") or redirect to a new URL.
+If you want to do the first one, then the time processing that you want to do will have to be done and handled by a Javascript because you cannot open a new window in the browser from server side.
+If you want to do the second one, you can implement that either on the client side using JS or on server side using whatever language you are using.
+As for your code snippet, I think you are not using strtotime() properly.
+Read this : http://php.net/manual/en/function.strtotime.php
+I have made a minor change in your code.
+This should work but I have not tried it by myself : "> @codeSnippetRemoved

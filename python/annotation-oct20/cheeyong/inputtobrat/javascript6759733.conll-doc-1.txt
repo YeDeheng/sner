@@ -1,0 +1,19 @@
+why doesn't JavaScript toLowerCase work?
+In this fiddle http://jsfiddle.net/CBxbT/29, if you click the black box, a random color is selected, and then after its id is stripped down and changed to lowercase, the random color ' s id is compared to whatever color you "guess" by clicking on one of the three boxes.
+The fiddle works, but the same concept (i.e same code but different element names) is not working on my live site.
+One my live site, I get an alert for the variable guess, but then I don't get anymore alerts, whereas in the fiddle, it keeps going and gives me an alert after ran is changed to lower case.
+Is there a problem with the way I did that might be causing the problem on my live site.
+@codeSnippetRemoved
+code from fiddle @codeSnippetRemoved
+My live site my actual site
+Click the start button.
+It will show an audio player that is randomly selected.
+Click one of the spelled-out numbers from the bottom row of numbers.
+That is your "guess"
+It should, according to the code, give you an alert of the randomly selected audio player number, but it doesn't.
+relevant code from live site @codeSnippetRemoved
+If you look at the JavaScript error console, you'll see this : @codeSnippetRemoved
+I suggest you start using Firebug or something similar so that you'll see the error console while you're developing.
+On your live site the event for clicking on the "start" button has this line : @codeSnippetRemoved
+The var keyword creates a local variable called ran, so you're creating a new variable and not initializing the global one.
+Remove var from that line and it should work.

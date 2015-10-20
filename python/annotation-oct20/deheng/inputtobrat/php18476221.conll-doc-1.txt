@@ -1,0 +1,18 @@
+PHP send array to another PHP file
+This may be a stupid question but I'm lost here.
+I need to send array with some data in it to another PHP file using POST variable.
+This is my form : @codeSnippetRemoved
+And this is test.php @codeSnippetRemoved
+So this is what I tried, but it ' s not displaying anything. please help
+You need to create a number of input elements with the same name, each of which will have one array item as its value : @codeSnippetRemoved
+Important points to keep in mind :
+$item must always be a scalar value (string, integer, etc).
+You cannot pass in arrays piecemeal with this technique.
+Never forget that since you are injecting variables into HTML output you must escape and / or sanitize them properly.
+In this case this is done with htmlspecialchars, which must know about your output encoding to work correctly in general (look up its third parameter).
+There is also an alternative approach that can be used to pass arrays piecemeal through serialization : @codeSnippetRemoved
+And you would then unserialize it on the receiving end : @codeSnippetRemoved
+I ' m mostly including this option for completeness, as in practice session variables are a much better way of passing complex state between requests.
+Is it necessary to put the data of the array in a hidden field?
+You can store the array in $_SESSION and access it.
+Btw, I think you have a problem, labels can be submitted, in that case you must put the data into an input field with type= "hidden".

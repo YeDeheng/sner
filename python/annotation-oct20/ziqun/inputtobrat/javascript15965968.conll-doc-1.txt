@@ -1,0 +1,11 @@
+I want to add mouseover event to my code using raphael?
+var raphael = new Raphael (document.body, 500,500 ); raphael.setStart() ; var d3_raphael = d3.raphael (raphael ); var stuff = { className : "", children :[ {className : "TVI", packageName:'aa ', value : 2000}, {className : "SIC", packageName:'aa ', value : 1520}, {className : "RTP1", packageName:'bb ', value : 1400}, {className : "SIC", packageName:'aa ', value : 1220}, {className : "RTP1", packageName:'bb ', value : 1100}, {className : "SIC", packageName:'aa ', value : 920}, {className : "RTP1", packageName:'bb ', value : 800}, {className : "SIC", packageName:'aa ', value : 1520}, {className : "RTP1", packageName:'bb ', value : 1400}, {className : "SIC", packageName:'aa ', value : 1220}, {className : "RTP1", packageName:'bb ', value : 1100}, {className : "SIC", packageName:'aa ', value : 920}, {className : "RTP2 manoj", packageName:'bb ', value : 550}]} ;
+var r = 400, format = d3.format (", d "), fill = d3.scale.category10() ;
+var bubble = d3.layout.pack() .sort (function (a, b) { return b.value - a.value ; }) .size ([r, r ]);
+var chart = d3_raphael.select ("body ") .append (" svg : svg ") .attr ("width", r) .attr ("height", r) .attr ("class", "bubble ") ; var node = chart.selectAll (" circle ") .data (bubble.nodes (stuff )) .enter() .append ("circle ") .attr (" class "," node ") .attr ("cx", function (d) { return d.x ; }) .attr ("cy", function (d) { return d.y ; }) .attr ("r", function (d) { return d.r ; }) .attr ("fill", function (d) { return fill (d.packageName ); }) .mouseover (function() { circle.append ("p MouseOver / p ") ; } );
+but it ' s giving me error that Uncaught TypeError : Object [ object Array ] has no method ' mouseover '.
+i want to add all the mouse over events on it
+How to resolve this issue.
+The way to do this in d3 is to use the on() function : @codeSnippetRemoved
+Note that p tags won't work in SVG -- you could however use foreignObject.
+See for example here.

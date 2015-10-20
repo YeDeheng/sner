@@ -1,0 +1,6 @@
+Twitter Widget Loading Slowly
+Is there something I can do about the Twitter official widget loading slowly?
+It pops up as a hyperlink when I first refresh the webpage, and then after a full second or so, the actual widget pops up.
+Would I want to load it first or maybe "reserve" the area for the widget so that the entire page doesn't bump down when it opens?
+@codeSnippetRemoved
+Thank you in advance!

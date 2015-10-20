@@ -1,0 +1,13 @@
+jQuery library-like pattern
+I'm wanting to develop a library following some interesting patterns of jQuery (Builder and Prototype, basically).
+I tried to read the jQuery source and search for tutorials but did not get anywhere.
+My idea is to allow access of this type :
+grace (...) is callable directly grace.set (...) can have methods grace.fn.get = ... can set new methods
+The most I got was this : @codeSnippetRemoved
+It is callable directly, but their methods are not accessible.
+An extend method is supposed to add to grace and grance.fn, and when you want to add new methods to grace, use grace.extend ; when you want to add new methods to instances that grace() creates, use grace.fn.extend.
+Take a look at code below : @codeSnippetRemoved
+Note : grace.fn.init.prototype = grance.fn is needed because new grace.fn.init (options) will get an object inherits methods from grace.init.prototype.
+Without that line of code, you won't get these methods of grace.fn.
+Sorry for my poor english, and sorry for not having runnable code.
+Hope code above will inspire you.

@@ -1,0 +1,37 @@
+Messenger to Remote Service Causing Memory Leak
+I have an application that communicates with a Service in a remote process using the Messenger interface.
+Here is the basic architecture of how things are set up :
+The application generates several "Operation" objects that require access to the service.
+Each "Operation" contains a Handler wrapped in a Messenger used to receive the response data back from the Service When the operation executes, it wraps its Messenger into an Intent and calls startService() to pass the message to the remote service The remote service does some work based on the parameters of the Intent and then returns the response by sending a Message to the Messenger for that operation.
+Here is the basic code present in the operation : @codeSnippetRemoved
+And a snippet of how the Service is structured (it ' s basically an IntentService that doesn't shut down when the queue is empty ): @codeSnippetRemoved
+This all works fantastically well.
+I can send tons of operations from several different applications to the same service and they all process and send their response to just the right place.
+However ...
+I noticed that if the application ran long enough and with enough activity it would crash with an OutOfMemoryError.
+Upon looking at the HPROF data in MAT, I noticed that all these operations where staying in memory, and they were held hostage from the Garbage Collector because of the Messenger.
+Apparently, the Messenger instance is creating a long-term native connection to Binder that counts as a GC Root, which is keeping each "Operation" object in memory indefinitely.
+Does anyone know if there is a way to clear or disable the Messenger when the "Operation" is over so it doesn't create this memory leak?
+Is there perhaps another way to implement the IPC to the Service in the same fashion, so that multiple disparate objects can make a request and get a result asynchronously?
+Thanks in advance!
+I am not sure if this is the best way since, even if Activity is in the background you will get the message from Service.
+I think you should bind to the service and register a messenger to the service as soon as Service is connected.
+And then unregister the messenger when you disconnect.
+Check ExportVcardActivity in AOSP.
+It is following something along these lines.
+Looks like you starting a lot of services instead of binding to currently running.
+It is difficult to judge from your quotes, but I can suppose it from context.startService (serviceIntent ); That could be the reason of memory leak.IMHO you should read carefully Bound Services to check you code.
+Thanks to some very helpful insight from Dianne Hackborn on the Android team, the issue is because the remote service process has not yet Garbage Collected it ' s instance of the Messenger which, in effect, held the instances in the application ' s process hostage until that time.
+This is the text of her reply :
+It is true that sending a messenger across processes will require holding a GREF on it for the other process to communicate with it.
+Barring bugs (which have happened but I am not sure if in any released platform versions), the GREF will be released when the other process itself no longer holds a reference on this.
+When we are talking about things in Dalvik "no longer holds a reference" generally means "the other side has garbage collected the Java proxy object.
+"What this means is that when you throw a Messenger (or any IBinder object) across to another process, the Dalvik VM in your own process can no longer manage the memory of that object itself and is dependent on all remote objects releasing it until it can be released locally.
+And this will include all objects that the IBinder has any references to as well.
+A common pattern to deal with this is to use a WeakReference in your IBinder / Messenger that holds the references to the rest of your objects that it will access.
+This allows your local garbage collector to clean up all of those other objects (which may be quite heavy, holding big things like bitmaps and such) even though a remote process still has a reference on your IBinder.
+Of course if you do this, there needs to be something else holding a reference on these other objects until they are no longer needed, or else the garbage collector could clean them up before they are no longer needed.
+Something else I would recommend is to not do a design where you instantiate Messenger objects for each IPC you do.
+Create one Messenger that you pass in to each IPC call.
+Otherwise you can generate a lot of remoted objects that are being kept around due to other processes continuing to hold references because the other side is not aggressively garbage collecting since all the objects it is creating due to these calls are small.
+More Info : https://groups.google.com/d/msg/android-developers/aK2o1W2xrMU/Z0-QujnU3wUJ

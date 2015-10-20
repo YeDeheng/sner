@@ -1,0 +1,7 @@
+T1	API 28 39	InputStream
+T2	API 62 74	OutputStream
+T3	PL 109 113	Java
+T4	API 164 176	OutputStream
+T5	API 545 555	input.read
+T6	API 705 716	InputStream
+T7	API 733 745	OutputStream

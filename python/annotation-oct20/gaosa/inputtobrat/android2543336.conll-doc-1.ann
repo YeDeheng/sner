@@ -1,0 +1,10 @@
+T1	API 0 9	TabWidget
+T2	API 86 95	TabWidget
+T3	API 590 615	android.graphics.drawable
+T4	Plat 750 757	Android
+T5	API 928 938	styles.xml
+T6	Plat 1018 1025	android
+T7	API 1045 1052	MyTheme
+T8	API 1089 1108	AndroidManifest.xml
+T9	API 1251 1264	setTabColor()
+T10	API 1362 1373	onCreated()

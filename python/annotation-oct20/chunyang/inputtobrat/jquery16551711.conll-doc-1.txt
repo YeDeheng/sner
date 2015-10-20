@@ -1,0 +1,14 @@
+jQuery Multiple conditionals with isNumeric
+I'm trying to figure out what the best practice is with a couple of things.
+Whether having if statements inside of if statements is a bad thing.
+If there is a better way to condense my code so I'm not chaining a bunch of logical operators chained together.
+Also I can't figure out why my isNumeric is not working, I've got a really simple form with a couple of input boxes and I'm looping around them in myjquery.
+What happens is I can input a string of letters that is > 5 and it won'thit the isNumeric conditional.
+Ideally a user has to enter numbers for this.Any ideas?
+@codeSnippetRemoved
+You're passing a wrong parameter to the isNumeric function.
+This line @codeSnippetRemoved
+should be @codeSnippetRemoved
+As for the long list of conditionals, you can refactor them into a separate function with a name that reflects its purpose.
+In this case for example, you could create a function like this : @codeSnippetRemoved
+Then it looks cleaner like this : @codeSnippetRemoved

@@ -1,0 +1,5 @@
+I need to get Facebook photo stream into my application using their Facebook id javascript
+I am developing a web page default in an mvc application .I need to get Facebook photo stream into my application using their Facebook id.
+I am unable to get suitable solution.Please help me the complete solution for the same .i am using c#
+This example should help you.
+https://graph.facebook.com/JaramSieBrunetkami/photos @codeSnippetRemoved

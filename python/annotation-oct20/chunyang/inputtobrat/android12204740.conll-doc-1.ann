@@ -1,0 +1,10 @@
+T1	API 494 508	startService()
+T2	API 849 862	IntentService
+T3	API 1234 1250	OutOfMemoryError
+T4	API 2234 2253	ExportVcardActivity
+T5	API 2460 2480	context.startService
+T6	API 2534 2543	leak.IMHO
+T7	Plat 2668 2675	Android
+T8	PL 3366 3370	Java
+T9	API 3791 3804	WeakReference
+T10	Stan 3866 3870	rest

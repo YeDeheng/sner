@@ -1,0 +1,8 @@
+what are the main differences between jquery ' s official templating plugin and ICanHaz.js?
+So far I've had nothing but good things to say about the jQuery plugin.
+It ' s been easy to use and has done what I need, and while that should be all I need to formulate an answer I'd like to hear from naysayers and users of other comparable templating engines to see what I might get annoyed with further down the track.
+I have been using the official jQuery templating plugin and have loved it.
+Their feature sets currently look pretty comparable.
+However, since ICanHaz is open-source if you are looking for more features down the road it might develop faster than the official jQuery template engine.
+However, if you are going for stability the official templating engine would likely be the better choice.
+Just my 2 cents.

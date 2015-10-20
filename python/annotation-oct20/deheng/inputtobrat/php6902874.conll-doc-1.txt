@@ -1,0 +1,8 @@
+Deleting a file from folder using PHP
+I am trying to implement a way for user to delete files.
+I am using the code below but it doesn't delete the files.
+This file is under the root and i checked and made sure that it has permissions to allow users to do what they want, so i am thinking its the script : @codeSnippetRemoved
+unlink ($file) is the correct function to delete a file.
+Check if the $fn is filled.
+And try to use.
+@codeSnippetRemoved

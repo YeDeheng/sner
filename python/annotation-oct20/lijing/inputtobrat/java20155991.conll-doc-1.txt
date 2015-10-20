@@ -1,0 +1,20 @@
+Java Recursion Over A Text File
+I have a text file that represents a building.
+A building has floors, and floors have rooms.
+The first floor is floor 0.
+The text file is structured like so : @codeSnippetRemoved
+Where North, East, South, West, Up and Down are integers denoting the room that direction leads to.
+The integer -1 is used to denote that there is no exit in that direction.
+This is repeated for the number of rooms the building has.
+So for four rooms the contents of the text file may be : @codeSnippetRemoved
+I'm trying to write a recursive function that will allow me to calculate the number of floors in the building based on the up values.
+For example, if we have a room that goes up to room 1, and room 1 goes up to room 2 and that no other rooms go higher than this then we know that there are 3 floors.
+I know how to use either a BufferedReader or Scanner object to read the text file but the recursion is what I'm concerned about.
+I want to say thank-you in advance, the community here is amazing.
+My method to calculate the number of floors (incomplete and may be wrong ): @codeSnippetRemoved
+Ok I edited my idea :
+So what we need to do : We visit each room and follow all possible ways from that room.
+If we go up we add +1, if we go down we substract -1 and if we stay on the same level we dont add a value.Also we need to keep track for the rooms already visited to not go in cycles.
+@codeSnippetRemoved
+This should work (just add the code to find the directions values of the current room) in my opinioin.
+public int calculateFloors (int count) { Scanner scanner ; int count=1 ; try { scanner = new Scanner (currentMap ); // uses count to work out what rooms we can skip for (int i=0 ; i count*6) scanner.nextLine() ; // gets the value of up int up = Integer.parseInt (scanner.nextLine() ); // our base case --- if there are no more floors, return the number --- otherwise perform the recursive call.

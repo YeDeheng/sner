@@ -1,0 +1,22 @@
+Trouble with web.xml url pattern
+In my web.xml I have URL pattern for servlet like this :
+url-pattern / * / myservice / url-pattern
+So I want to call it using blablabla / myservice also as anyWord / myservice.
+But it doesn't work.
+It work only if I call it using this URL : / * / myservice (with asterisk in URL).
+You can't do that.According to the Servlet 2.5 Specification (and things aren't that different in other levels of the specification), chapter SRV.11.2 :
+A string beginning with a / character and ending with a / * suffixis used for path mapping.
+A string beginning with a *. prefix is used as an extension mapping.
+A string containing only the / character indicates the "default" servlet of the application.
+In this case the servlet path is the request URI minus the context path andthe path info is null.
+All other strings are used for exact matches only.
+Your case falls under the 4th bullet, so exact mapping is used.
+To circumvent that, use a mapping of / (third case).
+Map all requests to go to a particular servlet, and have that servlet re-route requests to handlers of some sort (either other servlets, or some custom classes).
+For example : @codeSnippetRemoved
+And then, within MyServlet ' s code, inspect the URL that you received in the request (using request.getPathInfo()) and use the value to forward the request to other handlers.
+You could use a filter while your url pattern is / * and inside the filter decide which redirection you required.
+@codeSnippetRemoved
+@codeSnippetRemoved
+What about two ULR-mapping sections?
+@codeSnippetRemoved

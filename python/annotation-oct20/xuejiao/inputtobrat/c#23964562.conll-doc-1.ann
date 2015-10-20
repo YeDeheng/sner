@@ -1,0 +1,11 @@
+T1	API 25 32	WaitAll
+T2	API 83 99	GetAllCandidates
+T3	API 189 210	Task.Factory.StartNew
+T4	API 597 604	WaitAll
+T5	API 733 742	WaitAll()
+T6	API 795 815	OutOfMemoryException
+T7	API 1587 1603	GetAllCandidates
+T8	API 1778 1790	Task.WhenAll
+T9	Fram 1813 1817	.NET
+T10	API 1971 1987	GetAllCandidates
+T11	Fram 2106 2110	LINQ

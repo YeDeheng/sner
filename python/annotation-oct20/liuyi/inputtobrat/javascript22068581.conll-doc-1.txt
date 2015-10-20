@@ -1,0 +1,4 @@
+I am making a web app that will be sealed with phonegap so it will run natively, my app is a game needed to be landscape
+I'm building a native web app that will be secured with phone gap
+it ' s a game that require landscape mode.
+Is there any code I can use to force it landscape or is this impossible?

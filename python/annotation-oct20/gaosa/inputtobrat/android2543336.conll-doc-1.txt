@@ -1,0 +1,21 @@
+TabWidget white foreground color?
+I don't know what I did but for a period of time my TabWidget had white colored tabs which looked really nice.
+I never set a theme or background / foreground color in my project at all.
+The next time I compiled it it reverted back to the gray tabs.
+My application is using the default dark theme.
+Even if I set the application theme to light, the tabs are still gray.
+So obviously it was something else that changed the tabs ' color.
+Anyone know how to do this?
+Check this answer of mine : Background in tab widget ignore scaling
+You can also refer to the android.graphics.drawable package
+In your code, you can set the background for your tabs like this : @codeSnippetRemoved
+I was having a problem due to a bug in Android 1.6 ' s light theme (tab indicator text is white).
+I was able to override the default theme as follows :
+I created a custom theme that inherited from the default theme :
+styles.xml : @codeSnippetRemoved
+Then I just apply that theme to my application by adding android : theme= "@style / MyTheme" to the application / element of my AndroidManifest.xml.
+in the public void onCreate (Bundle savedInstanceState) @codeSnippetRemoved
+than in the listener :
+public void onTabChanged (String tabId) { setTabColor() ;
+finally the function, which set the foreground and the background too : @codeSnippetRemoved
+In onCreated() : @codeSnippetRemoved

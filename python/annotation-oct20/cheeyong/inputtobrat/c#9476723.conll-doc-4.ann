@@ -1,0 +1,9 @@
+T1	API 32 52	document.SetPageSize
+T2	API 54 84	reader.GetPageSizeWithRotation
+T3	API 92 110	document.NewPage()
+T4	API 120 142	writer.GetImportedPage
+T5	API 168 190	reader.GetPageRotation
+T6	API 232 246	cb.AddTemplate
+T7	API 272 302	reader.GetPageSizeWithRotation
+T8	API 327 341	cb.AddTemplate
+T9	API 412 441	context.response.Outputstream

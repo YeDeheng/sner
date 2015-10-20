@@ -1,0 +1,10 @@
+How to get listview selected id and a href text?
+I have a dynamic listview which the id and text are dynamic from server.
+For simplicity, let ' s say something like this : @codeSnippetRemoved
+I need the get the list id and product name.
+(I don't know the id value since it'll be dynamic)
+Any suggestions?
+@codeSnippetRemoved
+Use .on() @codeSnippetRemoved
+Fiddle Demo @codeSnippetRemoved
+Put this code in head or at the end of the page @codeSnippetRemoved

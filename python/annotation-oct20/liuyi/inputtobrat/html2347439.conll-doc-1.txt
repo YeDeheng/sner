@@ -1,0 +1,11 @@
+Loading off screen, Ajaxload
+Hi,
+I have a question on how I would go about to show an Ajaxloader .gif until a page is loaded.
+The trick for me is that ; The page currently is built so that the page loads one time, I have a tab system, so it loads everything, and then go between the divs.
+Because this site is made so that even users with low bandwidth can enter it, you have to click "Load gallery" for the page to start loading the thumbnails.
+So what I'm looking for now is ; How do I display a Ajaxload where the gallery is supposed to be, from when a user clicks on the "load gallery" and until all the thumbnails are loaded?
+Thanks in advance, Olsson
+Assuming you use jQuery ajax.
+You can us ajaxStart (callback) to display the loading .gif ajaxStop (callback) again to hide it.
+@codeSnippetRemoved
+Here is link

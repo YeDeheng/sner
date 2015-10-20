@@ -1,0 +1,6 @@
+T1	API 50 61	Math.Random
+T2	API 168 179	Math.Random
+T3	API 335 346	Math.Random
+T4	API 562 588	java.security.SecureRandom
+T5	PL 688 692	Java
+T6	API 724 740	java.util.Random

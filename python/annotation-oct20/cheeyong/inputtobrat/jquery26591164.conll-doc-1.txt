@@ -1,0 +1,7 @@
+How to tell if an element is before another element in DOM
+How can you check if an element is before another element in DOM?
+For example @codeSnippetRemoved
+second element is after first and before third.
+How can you check this with jQuery?
+There isn't a jQuery funciton for this, however you can easily implement it by adding the following code : @codeSnippetRemoved
+Afterwards you can call @codeSnippetRemoved

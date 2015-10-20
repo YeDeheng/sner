@@ -1,0 +1,41 @@
+Batch insert using JPA / Toplink
+I have a web application that receives messages through an HTTP interface, e.g. : @codeSnippetRemoved
+This request contains the ID of the sender, the ID of the recipient and the text of the message.
+This message should be processed like :
+finding the matching User object for both the source and the destination from the database creating a tree of objects : a Message that contains a field for the message text and two User objects for the source and the destination persisting this tree to a database.
+The tree will be loaded by other applications that I can't touch.
+I use Oracle as the backing database and JPA with Toplink for the database handling tasks.
+If possible, I'd stay with these.
+Without much optimization I can achieve ~30 requests / sec throughput in my environment.
+That ' s not much, I'd require ~300 requests / sec.
+So I measured where the performance bottleneck is and found that the calls to em.persist() takes most of the time.
+If I simply comment out that line, the throughput go well over 1000 requests / sec.
+I tried to write a small test application that used simple JDBC calls to persist 1 million messages to the same database.
+I used batching, meaning I did 100 inserts then a commit, and repeated until all the records was in the database.
+I measured ~500 requests / sec throughput in this scenario, that would meet my needs.
+It is clear that I need to optimize insert performance here.
+However as I mentioned earlier I would like to keep using JPA and Toplink for this, not pure JDBC.
+Do you know a way to create batch inserts with JPA and Toplink?
+Can you recommend any other technique for improving JPA persist performance?
+ADDITIONAL INFO :
+"requests / sec" means here : total number of requests / total time from beginning of test to last record written to database.
+I tried to make the calls to em.persist() asynchronous by creating an in-memory queue between the servlet stuff and the persister.
+It helped the performance greatly.
+However the queue did grow really fast and as the application will receive ~200 requests / second continuously, It is not an acceptable solution for me.
+In this decoupled approach I collected requests for 100 msec and called em.persist() on all collected items before commiting the transaction.
+The EntityManagerFactory is cached between each transaction.
+What is your measure of "requests / sec"?
+In other words, what happens for the 31st request?
+What resource is being blocked?
+If it is the front-end / servlet / web portion, can you run em.persist() in another thread and return immediately?
+Also, are you creating transactions each time?
+Are you creating EntityManagerFactory objects with each request?
+You should decouple from the JPA interface and use the bare TopLink API.
+You can probably chuck the objects you're persisting into a UnitOfWork and commit the UnitOfWork on your schedule (sync or async).
+Note that one of the costs of em.persist() is the implicit clone that happens of the whole object graph.
+TopLink will work rather better if you uow.registerObject() your two user objects yourself, saving itself the identity tests it has to otherwise do.
+So you'll end up with : @codeSnippetRemoved
+This is very old school TopLink btw ;)
+Note that the batch will help a lot, because batch writing and more especially batch writing with parameter binding will kick in which for this simple example will probably have a very large impact on your performance.
+Other things to look for : your sequencing size.
+A lot of the time spent writing objects in TopLink is actually spent reading sequencing information from the database, especially with the small defaults (I would probably have several hundred or even more as my sequence size).

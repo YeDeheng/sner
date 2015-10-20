@@ -1,0 +1,10 @@
+T1	API 11 28	GetWindowHandle()
+T2	API 114 134	GetCurrentThreadId()
+T3	API 169 193	GetWindowThreadProcessId
+T4	API 231 242	IntPtr.Zero
+T5	API 294 311	AttachThreadInput
+T6	API 356 375	SetForegroundWindow
+T7	API 426 443	AttachThreadInput
+T8	API 669 680	pressed.The
+T9	API 1021 1031	press.Also
+T10	API 1068 1076	SetFocus

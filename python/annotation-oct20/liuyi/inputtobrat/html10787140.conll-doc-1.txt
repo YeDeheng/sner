@@ -1,0 +1,13 @@
+How to detect HTML elements movements?
+I need to detect when an image is moved.
+The point is that my page has a related HTML element (another image) to the first one that depends on its position.
+I though that a plugin like Watch can help, but the only properties I know involved with position (top and left) are not changed never to this plugin (keep its original value to ' auto ').
+How can I get an event triggered when there is a page element move?
+UPDATE : In order to avoid missunderstandigs, I'll explain what really happens.
+I have an image (call it AUX, position absolute) that is situated in function of another image position (image BASE).
+BASE and AUX don't share anything in the HTML except the BODY element, so it ' s not possible to use position relative or similar.
+So, I have a function that gets BASE position and computes AUX position.
+The problem is when the page is loaded : function is called when document is loaded and BASE has a position different from the final position (when other elements are loaded, like other images, javascript functions, etc, BASE changes its position).
+This makes AUX have an invalid position (it was valid, but not yet).
+Instead of using javascript to set the position, I would use javascript to make them both a child of a minimal common element so that relative positioning schemes could be used.
+Because otherwise, you would need to poll for the position and update, and at best you can only do that every 10-15 ms or so.

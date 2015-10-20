@@ -1,0 +1,13 @@
+Execute While in SQl Script in Java
+i want to execute the SQL Script below, therefore i used ibatis Script Runner @codeSnippetRemoved
+But there is the Problem, that While loops will not be completely executed.I pointed out that the problem comes because the Script Runner didn t wait until he while loop is completely done.
+So there are only 386 and not 1000 rows created.I got the same Problem using the Java Statement execute method (http://docs.oracle.com/javase/6/docs/api/java/sql/Statement.html ): @codeSnippetRemoved
+But if i set @codeSnippetRemoved
+behind stmnt.execute the while loop is completeley done and i get 1000 rows like i wanted.So my question is, if it is possible to execute the complete While loop whitout using Thread.sleep .?
+Thank you in advance!
+@codeSnippetRemoved
+You can refer to below example from MKYONG for same.
+Hope this helps you out.
+@codeSnippetRemoved
+Without having ScriptRunner at hand, a possible solution might be to use a procedure and then calling the procedure in the script.
+@codeSnippetRemoved

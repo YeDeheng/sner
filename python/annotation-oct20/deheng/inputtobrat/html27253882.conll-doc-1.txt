@@ -1,0 +1,25 @@
+How to avoid repeatedly adding the checked value to the input text box
+I am working on a project where I want to add the radio button value to the input field.
+The input field is to add a name, and radio button is used to select the sex.
+By default it should be "My Name" on the input field, and when the user checks the radio button, it should add the text "I am a { radio button value}".
+I've managed to do some of this, but the problem is :
+When I switch the radio button it keeps on adding the text, and it looks silly.
+By default it shows the value "I am a undefined" where it should be "my Name" How can I validate that the user has selected the sex when they submit?
+@codeSnippetRemoved
+Jquery Script @codeSnippetRemoved
+Link to the fiddle example is
+http://jsfiddle.net/ssbrbsfp/2
+Thanks for the help.
+First you execute the function displayVals() ; on dom ready without a radio is selected so the input text get the vaule of undefined.
+Second you add the old value everytime on radio change.
+Take a look here :
+function displayVals() { var a = $("input[type='radio ' ]: checked ") .val() ; var b = "I am a" ; var checkedValue = $ ("p ") .html (" b I am a / b "+" "+ a ); var input = $("input[type='text ' ] ") ; // you want to add only the value of radio each time. input.val(a);}$("input[type='radio ' ] ") .change (displayVals ); // why execute this one on dom ready ??
+// displayVals() ; script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" / script input type= "text" onblur= "this.placeholder = ' my name '" onfocus=" this.placeholder = ''" placeholder= "my name" name= "name" id= "my name" class= "InputText" input type= "submit" value= "Submit" class= "SubmitButton" br input type= "radio" id= "single" name= "sex" value= "Boy" Boy nbsp ; nbsp ; | nbsp ; nbsp ; input type= "radio" id= "single" name= "sex" value= "Girl" Girl br br br br p / p select id= "single" option Single / option option Single2 / option / select
+Here a working fiddle : http://jsfiddle.net/ssbrbsfp/6
+To avoid duplicate result, don't reappend the input.val in it : @codeSnippetRemoved
+Check if the value is undefined before filling the input and the p : @codeSnippetRemoved
+To validate before submit : @codeSnippetRemoved
+I put it on the submit button to show you the behavior but you should put it in the form submit event.
+OK, there are several things :
+Remove the onblur and onfocus from the input text definition, placeholder already behaves like that.
+Remove the call to displayVals() at the end of the script Remove the input.val() + in the reassignation of the input.val For the validation, you may add the keyword required to the definition of either input radio tags, or even both.

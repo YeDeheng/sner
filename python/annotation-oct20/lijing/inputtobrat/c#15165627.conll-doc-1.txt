@@ -1,0 +1,14 @@
+Issue parsing JSON object response to C# object
+I have the following code : @codeSnippetRemoved
+when I run it the string aRespStr is :
+"{\" addResults\ ":[ {\" objectId\ ": 28, \" globalId\ ":\" { 740490C6-77EE-4AC0-9561-5EBAACE3A0A7 } \ ", \" success\ ": true }]}"
+I created the following classes to hold the object once I deserialize it : @codeSnippetRemoved
+but when I run the code the addResult object contains the default object values not the json object values.
+The api for this particular response is here : http://help.arcgis.com/en/arcgisserver/10.0/apis/rest/fsadd.html
+any help on getting this to work is greatly appreciated
+change @codeSnippetRemoved
+to @codeSnippetRemoved
+Try this @codeSnippetRemoved
+or similary you can try this @codeSnippetRemoved
+as you are returning list of AddResult in your json Response.
+And Change the content type to application / json

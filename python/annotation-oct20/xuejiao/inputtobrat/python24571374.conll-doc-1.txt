@@ -1,0 +1,11 @@
+Pass data to imported Python program
+What I want to do is something like this :
+Script1 : @codeSnippetRemoved
+Script2 : @codeSnippetRemoved
+So I want to be able to run script2.py inside script1.py with variables set in script1.py.
+I don't think I have explained myself very clearly.
+Ask me if something is unclear.
+If user must be an object attribute, you can override the init method for the class (its constructor) and pass it the value you need it to store.
+@codeSnippetRemoved
+If, instead, it must be some static value that you share among all the instances of User, either you monkey-patch it as you did, or you define a setter method @codeSnippetRemoved
+but I guess the first way makes more sense.Are we missing something from your requirements?

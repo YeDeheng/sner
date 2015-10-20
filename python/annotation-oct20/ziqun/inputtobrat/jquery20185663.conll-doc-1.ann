@@ -1,0 +1,16 @@
+T1	PL 0 10	javascript
+T2	Stan 14 18	ajax
+T3	Orgs 205 211	google
+T4	Stan 287 291	ajax
+T5	API 359 380	window.onbeforeunload
+T6	PL 381 385	java
+T7	API 549 557	click.Is
+T8	API 653 667	window.onclick
+T9	API 670 680	function()
+T10	API 693 704	window.open
+T11	API 714 724	win.onload
+T12	API 727 737	function()
+T13	API 740 751	console.log
+T14	API 767 779	win.onunload
+T15	API 782 792	function()
+T16	API 853 863	function()

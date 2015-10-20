@@ -1,0 +1,24 @@
+Manage mousedown events with javascript when highlighting and unhighlighting text
+G'day,
+I've been working on some logic to process highlighted text by a user.
+I found a very good example by Mark Koli at http://mark.koli.ch/2009/09/use-javascript-and-jquery-to-get-user-selected-text.html.
+I've created a working example at : http://jsfiddle.net/metalskin/43c8h/8
+I have a problem with the code for a specific instance as follows :
+select some text. dialog appears. close dialog. now click without a drag to clear the highlighted text. dialog appears. close dialog. text is deselected.
+In my logic I'm not using a dialog (it ' s just easier as an example), I'm inserting a div with an image to allow the user to perform an action.
+The problem is that the second click is really to clear the text, but for some reason the browser is firing the mouse up event before the browser clears the text (well under firefox anyway).
+This is not obviously a problem with the dialog poping up, but with my logic I end up getting multiple div ' s added, and as such multiple floating images over the text.
+Is there someway to determine that the event will result in the highlighted text being removed?
+Ideally I would rather the event fire after the browser has cleared the text.
+Thanks in advance (and sorry if a newb question, I'm really rough when it comes to javascript).
+: edit :
+I should explain the use case of how I'm using it.
+user highlights text on a page an icon appears above where they just released the mouse button from highlighting the text the user selects the icon, which opens up a form to enter some details to mark against the highlighted text (the icon is removed at this point in time) the user submits the form (ajax), the form closes. page is displayed, highlighted text is now not highlighted (but extra markup is added).
+or
+user highlights text on a page an icon appears above where they just released the mouse button from highlighting the text the user clicks elsewhere on the page to both remove the highlighted text and remove the icon. the user submits the form, the form closes.
+I've no problems with the selected text being de-selected when the icon is chosen, but the problem is if they click on another part of the page, it reactivates the mouse event and thus double icons (or a dialog when it ' s not appropriate in the example provided).
+Here you go ^_^
+http://jsfiddle.net/43c8h/16
+I just changed this piece of code to clear the selection on the mouse up event.
+@codeSnippetRemoved
+Or if you wanted to keep the text highlighted after the user had selected it, you could call a mousedown function with the same window.getSelection() .removeAllRanges() ; code to clear the selection every time the mouse is clicked.

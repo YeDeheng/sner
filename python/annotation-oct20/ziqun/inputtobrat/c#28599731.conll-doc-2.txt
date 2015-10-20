@@ -1,0 +1,7 @@
+var hwnd = GetWindowHandle() ; // Custom function that returns the target window ' s handle var currentThreadId = GetCurrentThreadId() ; uint pid ; var targetThreadId = GetWindowThreadProcessId (hwnd, out pid ); if (targetThreadId IntPtr.Zero) return ; if (targetThreadId! = currentThreadId) { AttachThreadInput (currentThreadId, targetThreadId, true ); } SetForegroundWindow (hwnd ); if (currentThreadId! = targetThreadId) { AttachThreadInput (currentThreadId, targetThreadId, false ); }
+I have used the above code to put focus to another window, using the Handle of the targeted window.
+The above code is placed inside a method which is called when a shortcut key is pressed.The issue that I am facing is that for the first time focus is getting stuck at the window, i.e., the focus is not shifting to other controls in the window (on tab press).
+So I have to bring the focus inside the window, using mouse.
+On pressing the shortcut for the 2nd time, the focus is not getting stuck anymore, its moving correctly on tab press.Also please note that I have tried using SetFocus, but I am getting the same issue.
+Please suggest of there is anything wrong with the code, or if I can use any alternate method to achieve the same behavior.
+Thanks.

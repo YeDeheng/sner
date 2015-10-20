@@ -1,0 +1,27 @@
+Programmatically generating Excel workbook with pivots and charts
+I need to create a workbook which has a raw data on a sheet and a pivot table on another sheet.
+The pivot is created from the raw data.
+Then I need to create a chart with this pivot on the same or new sheet.
+How can I do this in C# - and is this possible using VSTO?
+I've done something similar to this before, but I didn't do it using C#.
+I used VBA since the language is already built in to Excel.
+My approach was this :
+Create a worksheet called "RAW DATA.
+"This worksheet has a QueryTable object in it that can be updated via code in VBA.
+I manually created a pivot table based on the QueryTable in the RAW DATA worksheet.
+I then added code in VBA so that after RAW DATA was updated, Pivot Table was refreshed with the new data.
+This method works really well if the layout of your raw data and your pivot table stays the same.
+I have a workbook that I made for a cowork that updates multiple sheets with pivot tables based on one set of data.
+She really likes it because just by clicking one button, she has a refreshed view of all of her data.
+If this approach works for you and you'd like more details as to how to implement some of those methods, let me know more details of your situation and I can try to help you out.
+One option is to connect to database from Excel and refresh the "Raw data" sheet, via VBA or defining an SQL query in Pivot data source.
+This is not so great as the user who opens the file must be able to connect to the database.
+The other option is to fill the "Raw data" sheet programatically via C#.
+There are numerous libraries that can help you with that, even some free ones, but you can also do it yourself by using the Excel XML format (SpreadsheetML).
+You can use the Excel 2003 XML format or the new Open XML Excel format.
+The latter is far more complicated, but with it you can also take advantage of the OpenXML SDK and the Excel Package API.
+Easiest way to do it?
+Use Open XML SDK 2.0
+Build a pre-generated version of the workbook with raw data, pivottable and pivotchart already created.
+Install the OpenXML SDK 2.0 setup package Use the OpenXML SDK 2.0 productivity tool from this install to open the workbook Select the root element on the left hand pane, and then right click and select Reflect Code Done - on the left pane is a complete C# class with the necessary code to generate the file.
+Well not quite done as you still need to refactor the code to take into account dynamically adding the required data content, however this will get you 97% of the way if you already know C# fairly well.

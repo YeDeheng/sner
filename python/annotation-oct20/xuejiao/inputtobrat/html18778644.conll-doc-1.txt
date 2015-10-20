@@ -1,0 +1,19 @@
+JSColor Not Working on Volusion Option Text Boxes
+I'm using the JSColor plugin (http://jscolor.com) which I've used successfully in the past but on the e-commerce platform Volusion, there are some issues with getting it to load correctly.
+I'm working on a test product.
+And you'll notice that I have an input working successfully on the left side of the site but the actual text box in the options field is not working correctly.
+I believe with Volusion, that the option text boxes don't load until the very end so I've always had to use $ (window) .load (function() {} ); on those rather than just standard jQuery.
+The working text box is just put in as HTML code and is not part of the Volusion backend.
+I've tried a couple things to trigger it.
+I first set it up like regular and then I tried this.
+I removed the script declaration in the code and then put it on the page after adding the class name ' color ' (which is required for this script) figuring that it would look for anything with class name color but that didn't work.
+Here ' s what I tried anyway : @codeSnippetRemoved
+I can confirm that the script was added successfully to the source code but it doesn't seem to work when I do that.
+Any ideas on how to change the order of the elements loading to get this to work?
+I think you are trying to load the JS file @codeSnippetRemoved
+on window.load event, Instead of loading at runtime or appending JS location at runtime, you can specify this in theme for all pages, this may add JS without using it on all pages but it should resolve the issue which you have mentioned in your post.
+Also I can see textbox name is @codeSnippetRemoved
+and you have written it as @codeSnippetRemoved
+Try above two options and see if your problem resolved.
+Volusion Design
+Volusion Design

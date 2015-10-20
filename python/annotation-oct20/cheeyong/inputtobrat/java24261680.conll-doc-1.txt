@@ -1,0 +1,14 @@
+Java JTable groupings
+I'd like to get some ordering into my JTable.
+Currently I have one large JTable containing all items.
+But since I'm dealing with (sub) selections I'd like to make some grouping.
+Expressing this in textual form : @codeSnippetRemoved
+Expressing this in HTML5 : jsfiddle
+Experimental SSCCE : @codeSnippetRemoved
+My guess is that it'll be really hard to use out of the box JTable.
+Therefore I'm looking for any other suitable options.
+My SSCCE described a possible solution, but a big drawback is that a multiple of JTableHeader ' s are all across my application.
+Does anyone have a smart idea to easily show my data as was seen in my HTML5 example?
+With or without JTable, I don't really mind.
+Turned out that a JXTreeTable suits my needs, this tip was given by @mrKorbel.
+See http://javanbswing.blogspot.nl/2013/08/swing-treetable-example-using.html for a good tutorial on how to implement a basic JXTreeTable.

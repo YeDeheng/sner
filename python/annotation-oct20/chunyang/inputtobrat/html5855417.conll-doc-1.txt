@@ -1,0 +1,7 @@
+How to getlength of a string in tcpdf?
+In TCPDF there is @codeSnippetRemoved
+for measuring the height of a cell.But how do you measure the length or width of a string (or block of string) in TCPDF?
+You can easily find this kind of answers at the http://www.tcpdf.org and official forum.
+Anyway, the method to get the string length is GetStringWidth().
+Check also the getNumLines() and getStringHeight() methods.
+The source code documentation is at http://www.tcpdf.org

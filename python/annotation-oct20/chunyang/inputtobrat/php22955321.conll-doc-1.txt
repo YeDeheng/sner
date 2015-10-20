@@ -1,0 +1,3 @@
+how to make an android application for a magento e-commerce site
+I am working as an android developer having experience of 8 months.Now I got a project that I have to make an android app for an already completed magento e-commerce site.
+I know java, some php, and I have already done an android project using google cloud messaging. but magento is new to me.So please help me by giving idea about how can I do this project.please ...

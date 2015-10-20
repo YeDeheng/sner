@@ -1,0 +1,3 @@
+T1	API 798 807	GaussFunc
+T2	API 845 858	pymc.Normal()
+T3	API 1394 1402	mc.model

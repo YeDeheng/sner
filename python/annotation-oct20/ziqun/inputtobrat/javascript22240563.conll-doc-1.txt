@@ -1,0 +1,7 @@
+req.query coming up empty in node.js after sending data in URL
+I want to push additional data to the db after user logs in, and am using Passport to handle user authentication / sessions.
+I'm passing in the data correctly in the URL, and when the user clicks on a button, it ' s redirected to the login screen with all the data.
+For some reason, when I try to parse out the brand, image, and size variables, it gives me undefined.
+Here is how I pass my URL : @codeSnippetRemoved
+When the user logs in, here is the functionality that is called : @codeSnippetRemoved
+What am I doing wrong?

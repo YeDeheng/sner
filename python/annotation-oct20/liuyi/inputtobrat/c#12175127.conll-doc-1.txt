@@ -1,0 +1,11 @@
+Find First check number in Quickbooks using QBFC
+I am using Quickbooks QBFC and want to retrive the value of "First Check Number" field programatically.
+It can be found in Quickbooks at File > Print Forms > Checks
+Please suggest how this can be done or any reference i can look at.
+You can't do this directly, but you can query for the most recent checks that have been written against the account that you are interested in.
+The default first check number will be one greater than the highest check number that ' s been written.
+As a rule, I don't write people ' s code for them, I'm making an exception today only because it ' s Friday and I'm in a crazy mood.
+The following code can be used as a starting point for a useful last check number routine.
+In order to have a realistic, usable routine you, not I, will have to deal with all of the eccentricities that attach to the way people use their checkbooks : non-numeric numbers, numbers out of sequence, etc.
+Please note : this code uses the Zombie open source library and QBFC 11.
+@codeSnippetRemoved

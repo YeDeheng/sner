@@ -1,0 +1,5 @@
+How do you make a bare minimum service for lazy loading directives in angularjs
+I want to make a service for lazy loading angularjs directives.
+I have created this plnkr http://plnkr.co/edit/g76dnMJSOhjzhBohbO0m?p=preview (don't work yet).
+Here is my thought process so far : @codeSnippetRemoved
+And you use it like this : @codeSnippetRemoved

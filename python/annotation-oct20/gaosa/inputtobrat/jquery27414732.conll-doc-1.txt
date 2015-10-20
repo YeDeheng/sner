@@ -1,0 +1,10 @@
+laravel return view :: make not working
+I am having a brain melt over something seemingly simple.I am using ajax to upload images to this code @codeSnippetRemoved
+The target page is index.blade.php which contains @codeSnippetRemoved
+In Chrome DevTools Network Preview / Response I can see the images on the page @codeSnippetRemoved
+But the page doesn't load in the browser, it stays on the upload form page.If I remove the jQuery ....
+@codeSnippetRemoved
+.... then it works.So what is going on with the jQuery that stops the return View :: make working and what can I do to get it to work?
+UPDATEDThese are some of the variations I have tried - ajaxindex is the id of the container div in index.blade.php @codeSnippetRemoved
+Add the following markup to index.blade.php : @codeSnippetRemoved
+Then use the following JavaScript / jQuery in place of the JavaScript you posted : @codeSnippetRemoved

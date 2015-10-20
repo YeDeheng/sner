@@ -1,0 +1,12 @@
+Prevent MySQL PDO from returning numbers as strings
+I am using PHP ' s PDO to query a MySQL database.
+It returns numbers and integers as strings, and is messing with my JSON.
+Is there a better way of fixing it other than type casting the values row by row?
+@codeSnippetRemoved
+If you are using php 5.3.3 or higher you can use JSON_NUMERIC_CHECK as the second argument to json_encode to do this.
+See : http://us3.php.net/manual/en/function.json-encode.php
+Although @Explosion Pills works in this case for @user1032531 ' s needs, it ' s not addressing the 1st source of the problem.
+As you can see in the original question, on the PHP side the value from sell_price is already a string, although, as the user said, in the database it ' s stored as a "number" (we don't know if it ' s a DECIMAL or a FLOAT).
+Well, when using PDO with MySQL a proper config may be required in order to get "numbers" as "numbers", as user @jameshfisher pointed out in his comment.
+You can follow his link in order to get almost everything you need to get it working.
+Appart from that, the accepted answer is working because without the use of the JSON_NUMERIC_CHECK json_encode will send everything as text no matter the type of the variable, and when using it it will convert the value to a type based on guesses rather than the type of the original var.

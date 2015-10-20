@@ -1,0 +1,12 @@
+C# Clipboard.ContainsImage() is working differently while copying file from file website and from desktop
+I was investigating an interesting thing.
+I want to get Image from Clipboard in my C# program.
+Code sample : @codeSnippetRemoved
+When I try to get an image that was copied to clipboard from any website the code above works quite good.
+But it doesn't work when I am copying an image from my computer (I mean desktop for example).
+Clipboard.ContainsImage() returns false in the second case.
+One more difference between copying from web and from desktop : In the first case I cannot paste the image from Clipboard to folder on my computer.Of course in the second case it can be done.It seems that in the second case there is one real image and one file which contains this image.
+But I am not sure whether it can be.
+So, what ' s the issue in my situation and how I can resolve it?
+The next code demonstrate an appropriate solution @codeSnippetRemoved
+You will show massagebox with the full path to the file you have copied to clipboard before.

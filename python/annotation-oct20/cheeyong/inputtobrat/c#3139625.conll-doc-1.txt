@@ -1,0 +1,13 @@
+sample to create a html page with a language translator using c#
+How can i create a simple aspx page with a dropdown have two enteries1.
+Translate to greek2.
+Translae to english
+I'll be getting the data from a db table which is in English.
+While choosing the items from the dropdown the text should change accordingly.
+How an I achieve this?
+code snippets would be helpful
+Take a look at Microsoft ' s Translator Widget
+It does what you want (if I've read your post correctly and understand what you're after) pretty easily!
+If you are storing only the English version of your site in the database you will need some language translation API.
+Google provides such service : it ' s called the Google AJAX Language API and allows you to translate text between different languages.
+Here ' s a sample in C# of how it could be used.

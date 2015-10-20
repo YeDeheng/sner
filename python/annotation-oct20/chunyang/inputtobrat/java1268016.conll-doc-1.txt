@@ -1,0 +1,27 @@
+What is synchronized statement used for?
+What is the usage of synchronized statements?
+Only 1 thread at a time can access a synchronized block.
+This is a basic language construct.
+If you're not at all familiar with it you'll need to review.
+It is a java built in form of mutual exclusion.
+This is used for multithreaded applications.
+Sun concurrency tutorial
+This has a section about synchronized, but you should read the whole thing if you are trying to use multithreaded applications.
+Wiki mutex
+These are used for when you are building a program with many "threads".
+When main starts, it starts with one thread, which executes the steps in a sequence.
+You can start many more threads, which can then execute code at the same time.
+If you're executing the same code at the same time, things might get messed up : @codeSnippetRemoved
+What you want to do is put a ' lock ' over this block of code, to make sure that no (other) ' thread ' can start executing it unless it is "synchronized on" the variable y.
+@codeSnippetRemoved
+Now, all other threads have to wait for whichever thread got there first to finish, at which point another thread grabs the lock, enters the block of code, executes it, and releases the lock.
+By the way, a has to be an object (Integer), not a primitive type.
+You can also add ' synchronized ' to methods (which synchronizes on ' this ', that is the object), or to classes (which synchronizes all methods of that class).
+Writing multi-threaded code is hard, because of problems like this.
+Synchronization is one tool, though it has one major problem - deadlocks.
+You should look this up.
+It creates a section of code which, with respect to two or more threads, can (a) only be executed by one thread at a time, and (b) forms a memory barrier.
+While understanding the concept of mutual-exclusion preventing concurrent execution of the code is quite easy, equally important is the memory barrier.
+A memory barrier forms a "happens before" relationship between two threads.
+Any changes to memory made by a thread before acquiring a lock is guaranteed to be observed by another thread after it acquires the same lock.
+Due to the effects of CPU caches and their interaction with main memory, this is critical to preventing observation and update of stale cached memory and preventing race conditions between threads.

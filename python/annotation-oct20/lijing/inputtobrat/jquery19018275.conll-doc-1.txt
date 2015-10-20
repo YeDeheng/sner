@@ -1,0 +1,28 @@
+redirect GET data to another site with PHP
+So I have a form on the front end.
+I use jQuery to collect and send the data to collect.php.
+I want collect.php to send the to another site in the following format?
+fname=tom phone=3434343.
+How do I simply send the data that is sent to collect.php to this other site?
+use get method for generating query string i.e?
+fname=tom phone=3434343.
+Set action to the site url you want the form to get submit @codeSnippetRemoved
+References
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Sending_and_retrieving_form_data
+also Read http://api.jquery.com/serialize
+Update
+How To?
+Form Post to Multiple Locations
+The best way to go about it would be to first submit the form to your local script, then use CURL to POST the (filtered) data that was received to the remote script.
+Then just watch for the response.
+Then simply send the email and process the response from the remote script in your local one.
+If you want to send it in an invisible way via PHP, you might use CURL extension (usually already integrated), you have a tutorial here : http://www.binarytides.com/php-curl-tutorial-beginners
+I understand your question like you had send the data in a form on your collect.php then you want again to send the data from collect.php to another page e.g anotherpage.php.
+Correct me if that is not what you want to do.
+If so, why not use again jquery in your collect.php @codeSnippetRemoved
+Hope it helps .....
+Since you have already collected data and sent it to collect.php, you probably will have to do something like this : @codeSnippetRemoved
+This will let send the data to another site from your PHP script.
+If you also need to provide an user agent string or refer (as in - fake a browser), then you should look in to options provided by curl_setopt().
+The alternative solution would be to use sockets, but that would need you to explore HTTP protocol itself.

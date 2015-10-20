@@ -1,0 +1,8 @@
+How can I use an installer variable on the same screen it ' s input on
+How can I get the the information that ' s entered into a screen while still on the same screen?
+For example, suppose I've got a text field that sets a variable called myVar and a button on the same screen that needs the value of myVar to work.
+Two possibilities :
+1) Your button action script can persist the input on all form components as its first action.
+To do that call @codeSnippetRemoved
+Then context.getVariable ("myVar ") will return the value that is entered on the same screen.
+2) You directly access the form component in the action script of the button : @codeSnippetRemoved

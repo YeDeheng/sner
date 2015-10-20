@@ -1,0 +1,23 @@
+Add css class to parent li and sub li
+I have a submenu like below : @codeSnippetRemoved
+What I would like to have is, when I click to the child, it will add ' opened ' class to parent and highlight the clicked element.
+My code only success on Menu 1 and failed on Menu 3.
+Notice that, in Menu 3, there are 2 parents for Sub-sub-Menu 1 and Sub-sub-Menu 2.
+So my question is, if i click on Sub-sub-Menu 1 or Sub-sub-Menu 2 it will highlight and add ' opened ' class to 2 parents li above.
+Note : I try to implement unlimited level of menu
+Here is my full code Fiddle
+you simply use the not : attribute in your closest() method to exclude all classes root-level @codeSnippetRemoved
+check the link http://jsfiddle.net/GEj4z/11
+If I understood correctly what was desired was being able to produce a menu like behavior and it is because of that I would like to present an alternate solution :
+Sample Fiddle @codeSnippetRemoved
+In this solution the parent menus are highlighted and the clicked item is marked as selected again I wanted to share my POV of this problem.
+I hope it helps.
+Inside your click event use $(this).parents('li ') to get the top level parent li of the clicked element.
+I hope this helps.
+I think you should use a different selector (for the click event).
+Look for all li a pairs, corresponding to the submenu items, inside your #main -menu list @codeSnippetRemoved
+Modifying the css to : @codeSnippetRemoved
+DEMO
+I found the solution!
+my jquery is : @codeSnippetRemoved
+Here is my full code JSFiddle

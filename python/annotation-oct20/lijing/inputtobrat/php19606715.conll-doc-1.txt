@@ -1,0 +1,12 @@
+PHP questions about inputs and checkboxes
+I have 2 questions :
+what is the best way to fill an input in php (for example in asp.net : textbox1.Text = "hello" ;), I tried input type= "text" name= "name" value= "?
+php echo $name?
+"and then in my php script : $name = $myObj['name ' ];.
+Is there any other way?
+How can I uncheck a checkbox in php and not by renedering the whole checkbox input?
+Thanks a lot
+input type= "text" name= "name" value= "?
+php echo $name?
+"
+To check the boxes, use : @codeSnippetRemoved

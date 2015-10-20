@@ -1,0 +1,26 @@
+re-attaching jquery function after dynamically loading html
+I have been searching and experimenting for a few hours now, and I think the solution lies in the .on() function in jquery.
+But I can't seem to figure out the correct implementation.
+I have a tabbed menu and I would like to add content to one of the tabs as a dropdown, the content should get loaded at document.ready @codeSnippetRemoved
+Here is the associated CSS @codeSnippetRemoved
+and the JS @codeSnippetRemoved
+all of this works fine to slide out the UL under the go_answers LI
+In firebug I run the following @codeSnippetRemoved
+which loads shite.html @codeSnippetRemoved
+and it updates the DOM (I think that ' s the correct term) however when I mouse over the Archives link it doesn't slide out.
+What am I missing to make it slide out?
+When you dynamically reload the DOM elements like that you need to reattach the events.
+You should put your mouseenter and mouseleave commands in a function and call that function on document ready and within your get.
+I set up a fiddle here to demonstrate how you could go about setting this up.
+The results that you have presented as being the return from an ajax call I just stored in a hidden div and when you click the test button it adds the div contents to your list item.
+Once the new DOM elements are in place we re-run your jquery to have the selector pick up the new elements and after manipulating the css class so you get the expected presentation your drop down works.
+The overall point is to keep in mind that the events that you're assigning to the results from your Jquery selector are only added to those elements that match the selector at the time that it runs.
+If you insert new elements into your DOM that would have matched the selector it doesn't mean that your new elements will also pick up the attached behavior.
+You clould implement .on() method that way : @codeSnippetRemoved
+I wasfacing the same problem
+jQuery @codeSnippetRemoved
+Html Before ajax @codeSnippetRemoved
+Html after ajax @codeSnippetRemoved
+It was not working then i change it to
+jQuery @codeSnippetRemoved
+It was working fine now.

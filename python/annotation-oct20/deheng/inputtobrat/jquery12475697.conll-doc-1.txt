@@ -1,0 +1,17 @@
+ajax adding information to database
+im still fairly new to the whole ruby on rails stuff, though i have read that you can easily perform ajax requests. what im trying to do is add a new row to the database table, and pass a few variables from it.
+what i have at present is @codeSnippetRemoved
+controller code
+# POST / availabilities # POST / availabilities.json def create @availability = Availability.new (params [: availability ]) @codeSnippetRemoved
+end
+though how does it know what variables to pass to the database?
+this is what is happening at present
+Processing by AvailabilitiesController #create as HTML Parameters : { "schedule_id" = "18", "team_id" = "1", "user_id" = "38" } User Load (1.6ms) SELECT "users".
+* FROM "users" WHERE "users".
+"id" = 38 LIMIT 1 (0.4ms) BEGIN SQL (20.1ms) INSERT INTO "availabilities" ("available", "created_at", "schedule_id", "team_id", "updated_at", "user_id ") VALUES ($1, $2, $3, $4, $5, $6) RETURNING" id "[[" available ", nil], [" created_at ", Tue, 18 Sep 2012 23:07 : 26 EST + 10:00 ], [" schedule_id ", nil], [" team_id ", nil], [" updated_at ", Tue, 18 Sep 2012 23:07 : 26 EST + 10:00 ], [" user_id ", nil ]] (10.5ms) COMMIT
+If you want to pass information to your rails app, you will need to place the @codeSnippetRemoved
+on to the form_for tag, then your controller will be able to pass those params on to your model.
+If you want to pass more than one variable to the server you include them in the http request.
+This is true for AJAX requests as well as regular ones.
+For example : @codeSnippetRemoved
+Often though with more complex submissions you'll want to use a remote form rather than just a simple link.

@@ -1,0 +1,4 @@
+T1	API 107 115	cell.But
+T2	API 334 350	GetStringWidth()
+T3	API 367 380	getNumLines()
+T4	API 385 402	getStringHeight()

@@ -1,0 +1,7 @@
+Is there a markdown-like system, which creates multiple output files?
+I'm looking for an easy way to create a whole number of output files in a directory structure from a single input file.
+The input syntax should be similar to Markdown, or should at least support semantic structuring and links.
+I want to use this to create small help package.
+So generating a table of content and support for Previous and Next links would be great as well.
+Is there a tool for something like this?
+Alternatively, which markdown implementation is designed to be extensible for this something like this?

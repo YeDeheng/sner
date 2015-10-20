@@ -1,0 +1,13 @@
+I cannot run Enmbedded RavenDB
+I was able to successfully run a simple test for RavenDB based on the code found at : http://ravendb.net/tutorials/hello-world
+Next I tried to run it in an Embedded Manner, but I keep on getting the following error : @codeSnippetRemoved
+Setup :
+Target framework is .NET Framework 4
+I added the following References to my project :
+\ RavenDB-Build-309 \EmbeddedClient\ Raven.Client.Embedded.dll \ RavenDB-Build-309 \Client\ Raven.Client.Lightweight.dll \ RavenDB-Build-309 \EmbeddedClient\ Raven.Storage.Esent.dll \ RavenDB-Build-309 \EmbeddedClient\ Raven.Storage.Managed.dll
+The code is : @codeSnippetRemoved
+I have tried searching for this for a few days and tried a few different variations too.
+I am not sure what ' s going on.
+Thanks to Ayende Rahien on groups.google.com/group/ravendb/topics.
+The solution was to add "Raven.Storage.Esent" reference to the main project.
+It ' s an issue with Visual Studio and indirect references.

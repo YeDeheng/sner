@@ -1,0 +1,12 @@
+How to add a base url to generated elements?
+I have a page where I want to display content from a website inside my app.
+I have a parser which in this case grab the element from their site and into mine.
+But I have this problems, the links serverside are like campaign.aspx?
+wfege, when a users clicks it, I want to add a http://example.com before so the link will result in looking like http://example.com/campaign.aspx?wfege.
+It this possible in javascript?
+If so, how?
+Please look at my fiddle, it ' s fully working and is an exact copy of my site.
+Fiddle : http://jsfiddle.net/4vdck
+Cheers
+This can be done in your HTML.
+You need to add the base tag with the appropriate href, like this @codeSnippetRemoved

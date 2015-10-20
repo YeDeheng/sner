@@ -1,0 +1,13 @@
+Read pictures from webcam in Java on Ubuntu?
+There are many questions on SO on how to read images from webcams in Java, but judging by the answers there does not seem to be a library which is actively developed and maintained.
+My question is if it would make any difference if I limited the OS to Linux only?
+I know there ' s a device representing video, / dev / video0, can that be used for reading image data from a webcam using java.io somehow?
+Thanks in advance!
+You could run a command (external program, started from your Java code) which is handling the video reading of the webcam.
+But what do you want to do with the video stream?
+EDIT : If you want to do something with the image, get opencv and its bindings, http://ubaa.net/shared/processing/opencv
+The page also has a link for Java example programs.
+OLD_ANSWER :
+You can use vlc, it has webcam support.
+As far a Java is concerned, take a look the VLCJ project for the bindings. http://code.google.com/p/vlcj
+For the OS bit of your question, on Linux webcam is implemented via v4l (video for linux), but as far as I think, it won't be an issue for having it cross platform.

@@ -1,0 +1,16 @@
+T1	Plat 20 27	Android
+T2	API 38 46	must.jpg
+T3	API 313 319	LogCat
+T4	Plat 366 373	Android
+T5	API 427 437	BakuMovies
+T6	PL 851 855	Java
+T7	API 921 935	getResources()
+T8	API 1000 1013	getDrawable()
+T9	API 1017 1040	getDrawableForDensity()
+T10	API 1129 1138	ImageView
+T11	Plat 1186 1193	android
+T12	API 1310 1319	ImageView
+T13	API 1392 1401	ImageView
+T14	API 1431 1441	onCreate()
+T15	API 2010 2019	ImageView
+T16	Stan 2069 2072	xml

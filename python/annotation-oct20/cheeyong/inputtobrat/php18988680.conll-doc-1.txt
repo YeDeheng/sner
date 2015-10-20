@@ -1,0 +1,18 @@
+insert delete button of specific row from a database displayed in table
+Hello I have the following code displaying a database results, in the 3th TD of the table I would like to insert delete button which will delete the table record of the data which is next to the button, what should be the code in the 3th TD of the tabe for the delete button?
+@codeSnippetRemoved
+You should place a link to an action which will perform the deletion of the record.
+@codeSnippetRemoved
+Than in your recetas_galetas.php you can do : @codeSnippetRemoved
+There are several ways to archive this, first and and most important is that you need a field on your database table where you can identify the record you want to delete, for example a primary key in form of an ID or a unique key.
+You can do this by creating a link with a text to a delete.php page or you can use JQuery and AJAX or you can use a inner form.
+You will also want to have only authorized users to use those pages so you will need a login page with session as well.
+You can see here an example of login page with sessions.
+The simplest one is a link to the delete page, see example here : @codeSnippetRemoved
+Then on your delete page you would have something like this : @codeSnippetRemoved
+You can make a link that passes the id to another php page which preforms the delete.
+So the link will be like : @codeSnippetRemoved
+then in your delete.php : @codeSnippetRemoved
+This is a very simple way of doing it but it might not be the best for you .If you didn't verify the user of this page, any one could manipulate this code easily and delete any row of the table.
+Other ways could be navigating to the same page and do the same process in the same page or you could use ajax but this is another issue.
+Hope this helps and excuse my English.

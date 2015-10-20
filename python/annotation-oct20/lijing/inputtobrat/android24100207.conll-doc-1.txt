@@ -1,0 +1,6 @@
+Stopping OnMyLocationChangeListener
+I want to stop the LocationListener once it has the current location and zoomed to it.
+Can you please help a newbie?
+Here ' s my code : @codeSnippetRemoved
+Set the map location listener to null to turn it off.
+@codeSnippetRemoved

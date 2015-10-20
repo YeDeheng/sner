@@ -1,0 +1,31 @@
+Covering index decision in MySQL
+My MySQL slow query log showed a query that looks rather simple as one of the slowest queries run on my server : @codeSnippetRemoved
+I'm basically trying to find the average points total for a subgroup (set of uids, e.g. based on gender or whatever) of a group.
+There are individual indexes on uid and gid, but EXPLAIN shows that they're not being used : @codeSnippetRemoved
+Now, the obvious solution, as I understand it, is to have a covering index over these fields : @codeSnippetRemoved
+And indeed, this makes it use the index : @codeSnippetRemoved
+However, I have two questions :
+In the Extra field, EXPLAIN now says "Using where ; Using index ; Using temporary ; Using filesort".
+This is bad, right?
+So should I use this index or not?
+In dummy terms, is it more important to have type=index and key=something than what happens in the "extra" field, or not?
+What are the effects of having a covering index on large inserts?
+I am inserting points in this same table by doing a JOIN - UPDATE with a quite large temporary table.
+I wouldn't want to slow this down too much.
+Using Temporary in the explain output means that a temporary table was created to satisfy the group by condition.
+This is not very bad but much better performance can be achieved if you optimise group by for "Loose Index Scan".
+In order for this query to avoid a temporary table, the gid column has to be indexed so it is the left most part of a composite key or a single column index.
+To further improve it, uid as a single column index is also a good chice : @codeSnippetRemoved
+Update :
+As @Dow correctly pointed out, the use of AVG() disqualifies the query for index access group by calculations, only MIN() and MAX() wouldn't.
+The proposed indexes nevertheless should still give better performance.
+In general, you can use an index to optimize the range predicate of IN (...), or you can use an index to optimize out the temp table caused by the GROUP BY (though you make a good point that this may not work with AVG()).
+But you can't achieve both uses of indexes in the same SELECT.
+I'm going to conclude that you can't get rid of the temp table in this particular query.
+The best you can do is try to keep it from going to disk by increasing tmp_table_size.
+Or if it does go to disk, configure a tmpfs filesystem and use that mount point as your tmpdir.
+So you have to choose, do you want to search an index for your list of uid values?
+You have a really long list of uid's, so that ' s going to be costly just to estimate the row count.
+Be sure to upgrade to MySQL 5.6, which has some new optimizations in this area (see Equality Range Optimization of Many-Valued Comparisons).
+The type=index means it ' s doing an index scan, which is costly but at least it ' s getting results from the index alone instead of having to read table rows.
+So it needs fewer buffer pool pages to satisfy this query.

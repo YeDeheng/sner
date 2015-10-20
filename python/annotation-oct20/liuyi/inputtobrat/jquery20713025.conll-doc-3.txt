@@ -1,0 +1,3 @@
+They all result in jqXHR objects, which while truthy, are not = true.
+So none of them matches.
+This works, for instance : @codeSnippetRemoved

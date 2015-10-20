@@ -1,0 +1,14 @@
+How do I left pad a byte array efficiently
+Assuming I have an array @codeSnippetRemoved
+I would like to create an array of an arbitrary length and left pad it with 0x00 @codeSnippetRemoved
+I have my current snippet here @codeSnippetRemoved
+Is there a more efficient way to do this?
+I would recommend starting with Array.Copy like this : @codeSnippetRemoved
+If you really need the speed you can do Buffer.BlockCopy too : @codeSnippetRemoved
+Note that I did not check the length of the array you provided - you should take care that it ' s big enough.
+There are some other overloads of GetBytes that you can use.
+One of them allows you to specify a starting index in the array : http://msdn.microsoft.com/en-us/library/595a8te7%28v=vs.110%29.aspx
+You can use the GetByteCount method on the encoding class to get the number of bytes that will exist after the encoding, although adding this additional call may negate any performance benefit.
+You may know that the byte count exactly matches the string length (depending upon your string source).
+Depending on how you define "more efficient" then this might be worth doing : @codeSnippetRemoved
+This may not be computationally more efficient, but in terms of making the code clear and maintainable you might consider this am efficient way to code.

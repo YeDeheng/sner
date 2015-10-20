@@ -1,0 +1,4 @@
+T1	Plat 0 7	Android
+T2	API 300 323	Canvas.drawTextOnPath()
+T3	API 597 620	Canvas.drawTextOnPath()
+T4	API 1119 1133	Path.addPath()

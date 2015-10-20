@@ -1,0 +1,23 @@
+How can I simplify C# code that sets multiple properties of an object?
+I have code that looks like this : @codeSnippetRemoved
+plus many more lines where I set values for the Question class that is inside the itemView.
+I think the answer is "not possible" but just putting it out as a question in case anyone knows a way.
+What I would like to do is to find a way to simplify this code without repeating itemView.Question in every line.
+Do you instantiate itemView.Question as part of your method?
+If so you could do : - @codeSnippetRemoved
+If that Question is a class, then you could shorten the code a bit : @codeSnippetRemoved
+If Question is a class (not a struct), then you could assign it to a local variable, and edit that : @codeSnippetRemoved
+You won't even have to assign q back to itemView.Question.
+This is because classes in C# are reference types.
+If you assign an instance of a reference type to a local variable, or pass it to a function, then changes to that instance will be reflected everywhere you have a reference to that same instance.
+Edit
+Note that the situation might be a bit murky if Question is a property of itemView, rather than a field.
+Depending on how it is implemented, you might have to assign q back to Question.
+In such a case, this code is still much preferred to avoid calling the Question property ' s getter method repeatedly.
+Depending on how much control you have over the Question class, separating the resposibility for setting that meta-data may be an idea : @codeSnippetRemoved
+One option is that you can convert your properties into methods that return ' this '.
+Then you could write : @codeSnippetRemoved
+I've heard this style called ' fluent interface ', and find it pretty handy.
+I sometimes create properties and a matching set methods returning ' this ' called SetXXXX to compliment them.
+The popular Rhino Mocks framework for unit testing uses it.
+More examples here : http://www.codeproject.com/Articles/99542/Guidelines-to-Fluent-Interface-design-in-C-Part-1

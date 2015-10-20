@@ -1,0 +1,27 @@
+Accessing property of an object whose type is known at runtime
+I have an object whose base type is exposed to be at compile time, but whose runtime type is internal and for all practical purposes I am unable to get to the type at compile time.
+However, I want to be able to access a property on its instance at runtime.
+I understand that without knowing the type at compile time, I cannot create a typed delegate.
+What is the most performant way of accessing this property?
+DynamicInvoke?
+Imagine this is a file : Hidden.cs @codeSnippetRemoved
+I can't type the following in my code Func someExpression = Expression.Lambda Func Program, string > > ...
+I just want to confirm that my only option is DynamicInvoke when I can't reference the type at compile time.
+You can always use a dynamic delegate, such as a Func dynamic, T, with T being your return type.
+But remember that dynamic dispatching is "slow", as it uses reflection behind the sc nes.
+DynamicInvoke does exactly the same thing, so it ' s just as slow.
+Now remember that "slow" is very relative.
+It is slow compared to a static invocation, which is nearly instant, but this kind of micro-optimization is hardly ever noticeable in a real program.
+Moreover, why do you need to call a property of an object of unknown type in the first place?
+It sounds to me like a symptom of a bad design decision somewhere down the road.
+Consider for instance having the relevant types inherit from a common base class / implement the same interface, and suddenly your problem disappears.
+And you get better performances as a bonus.
+edit
+I didn't realize at first that you wanted to access a member you should not be able to see.
+Then reflexion is your only hope.
+And you will need to run your code in full trust too.
+Just remember that the original creator of the class decided not to give you access to this member and he could have very good reasons for that.
+You shouldn't do that unless you really REALLY can't do otherwise.
+You can create Func object, string, then cast the object to Hidden (your type) and then access SomeProp.
+All of this can be done in Expressions like this : @codeSnippetRemoved
+Which prints "Some text" in console 100 times.

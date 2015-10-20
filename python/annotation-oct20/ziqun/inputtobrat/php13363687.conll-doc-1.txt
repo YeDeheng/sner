@@ -1,0 +1,10 @@
+Can I use Zend Dom Query to query other html attributes such as ALT
+Using Zend Dom Query I would like to search HTML to find certain attributes.
+Take the following image as an example.
+@codeSnippetRemoved
+Instead of using $this- _xhtml- query('img #active - main-image ') ; I would like to find the image by using the alt attribute.
+Pseudo -> $this- _xhtml- query('img alt Image 1234 ') ;
+I can see why this method is not conventionally popular however, when equipped with nothing but the Alt value of a certain image on a page, I see no alternative.
+Thanks
+Zend_Dom_Query has a queryXpath method that will accept valid xpath queries.
+Untested but this should work : @codeSnippetRemoved

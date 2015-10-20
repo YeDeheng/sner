@@ -1,0 +1,4 @@
+how do i force a user to go back twice on a mobile web page using php or javascript without the user clicking any link or button
+how do I force a user to go back twice on a mobile web page using PHP or jAVASCRIPT without the user clicking any link or button.something like using history.back() without a user having to click on anything
+In javascript @codeSnippetRemoved
+You may want to look into https://github.com/browserstate/history.js for a more robust client side solution.

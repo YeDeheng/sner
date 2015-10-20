@@ -1,0 +1,14 @@
+Text manipulation with sed
+I need a little help, in our class we've been playing around with GREP and SED commands in an attempt to learn how they work.
+More specifically we've been using sed commands to manipulate text and add tags.
+So, we we're given an assignment, we've been given 500 lines of CSV fake data and it is our job to create a sed command that will automatically tag the data and tag any new data added down the road (theoretically).
+Here ' s a few lines of our fake UN-TAGGED data, this is by default how we received it, as you can see all the data starts with a first name and ends with a web email : @codeSnippetRemoved
+Our teacher wanted us to create sed commands that would automatically indent the data, add TR to the front and back of the data and add TD tags to each new field.
+@codeSnippetRemoved
+So, I was messing around and I tired to create a few sed commands that would mimic the second output.
+My first attempt was : @codeSnippetRemoved
+Unfortunately, this program only outputs something like this where I get TR TD at the beginning and end, but no TD tags inside : @codeSnippetRemoved
+I've also attempted to create individual seds to tag field, but instead I've only managed to tag each word, so I'm kinda stuck.
+I'm partially on the right track, I think, but I need helping indenting and adding TD to the beginning end of every field, along with TR to the beginning and end of each new column.
+This is the main part of it : @codeSnippetRemoved
+I expect you can figure out the rest since that ' s just printing the head and tail lines.

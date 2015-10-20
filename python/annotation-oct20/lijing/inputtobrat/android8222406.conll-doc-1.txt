@@ -1,0 +1,19 @@
+Android HTTPS Post - Not working
+I've been trying for ages to get this to work - but no matter what I do, my HTTP * S * POST always yields HttpUtils : javax.net.ssl.SSLException : Not trusted server certificate
+Basically I followed this tutorial
+I successfully grabbed the public certificate (mycert.pem) from theserver.
+I successfully created a keystore from the certificate using Bouncy Castle I failed at implementing a custom Apache HttpClient.
+Here is mycode : @codeSnippetRemoved
+And in my HTTP Request class that constructs the POST : @codeSnippetRemoved
+My POST works fine for non-https websites.
+Any help would be greatly appreciated it.
+Look at the error message :
+HttpUtils : javax.net.ssl.SSLException : Not trusted server certificate
+This means exactly what it says -- the server is not using a trusted certificate.
+I bet you'll get similar errors if you try to access the same server with Firefox or IE.
+Use This Class To get Your HttpClient.And Check if it helps.
+package com.android.MyCellFamily.DAHttp ; @codeSnippetRemoved
+Sometimes https url shows blank white screen in the android webview.
+It ' s because you have to trust the ssl certification or you need to override the ssl error in your webview client.
+The following webview client provides the needed functions to access https url.here shouldOverrideUrlLoading is used for to allow the redirecting url within the webview, onReceivedSslError this oneiIgnore SSL certificate errors to access the https url.
+Webviewclient : @codeSnippetRemoved

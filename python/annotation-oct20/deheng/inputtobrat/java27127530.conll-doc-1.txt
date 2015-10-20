@@ -1,0 +1,11 @@
+java compiler error for hw
+can someone help me and see if how to fix this?
+this is the error I got can someone tell me what i did wrong
+Waypoint.java : 58 : error : ')' expected return distance (Travelable otherTravelable) / speed ; ^ Waypoint.java : 58 : error : illegal start of expression return distance (Travelable otherTravelable) / speed ; ^ Waypoint.java : 58 : error : not a statement return distance (Travelable otherTravelable) / speed ; ^3 errors @codeSnippetRemoved
+When you call a method you don't specify the types of the arguments.
+Change @codeSnippetRemoved
+to @codeSnippetRemoved
+Change this line by removing type of parameter when calling the method : @codeSnippetRemoved
+To @codeSnippetRemoved
+You have put
+Travelable otherTravelable in the return line of toTime.just return @codeSnippetRemoved

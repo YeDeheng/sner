@@ -1,0 +1,29 @@
+Converting repetative javascript statements to arrays in loops
+I am dynamically changing the options in 8 selects based on a separate selected option.The process handles counties in a state and updating all 8 selects for each county in a state is terribly repetitive as each option can only exist in one select.
+My original code was thrown together quickly but worked fine : @codeSnippetRemoved
+I tried condensing it into a series of arrays and for loops, which really shortens the code, but it breaks the page (an infinite loop somewhere I'm sure).
+New code (does not work ): @codeSnippetRemoved
+Am I missing something?
+This should execute quicker right?
+Instead its holding the page from loading indefinitely.
+Edit : I did find one glaring problem.
+The dropdowns[i] .appendChild (options[i ]); loop should not be in the loop above it.
+It should run after options has been set.
+New snippet : @codeSnippetRemoved
+Edit 2 :
+I ran into a problem when taking a step back.It stems from using the array of options in a loop.
+I knew each option element could only exist in a select once, but didn't follow that logic when writing the loop.
+The same option element (options[i ]) is being changed and reused in each iteration, which wont work, you only get the last iteration ' s results.
+I believe this worked in the old code because it redefined the element in each iteration, not just changed it ' s attributes
+Does this rule an array out for this use?
+That ' s not how you add elements to an array @codeSnippetRemoved
+should be @codeSnippetRemoved
+which you would then access like so @codeSnippetRemoved
+you may want to use an object instead (note the difference [] becomes {}) @codeSnippetRemoved
+which you can then access like so @codeSnippetRemoved
+As I noted in the comments above, when adding the options to the select, I cannot use an array.
+II ended up using a two dimensional array for the counties, and a second array for the state codes that my php script submits to the form.
+I realize that the arrays would be better defined as objects, but the deadline for the project is up and this code is efficient enough for production use.
+Here is a condensed version of my final code (until things slow down and I find time to revisit the code ): @codeSnippetRemoved
+Thank you all for your support.
+I am definitely open to suggestions for further optimizations, as the code is still 31 KB due to the size of the arrays.

@@ -1,0 +1,29 @@
+How to use relative paths in require.config?
+I'd like to distribute a piece of code as an AMD module.
+The module depends on jQuery in a noConflict mode with two jQuery plugins.
+I'd like the user to be able to use the module by simply requiring a single module file (module will be hosted on our servers), and let the dependencies be handled for them.
+However, for the dependencies to be loaded properly, I have to invoke require.config() and it seems to have the module paths relative to the web page, not to the invoking script.
+I could use the paths configuration to make all the paths absolute.
+That would solve the dependency problem, but would also make testing anywhere outside our production server a nightmare.
+To be more specific, the module file looks roughly like this : @codeSnippetRemoved
+And the jquery-wrapper.js file in the same directory looks like this : @codeSnippetRemoved
+Is there any way I can use paths relative to the module everywhere?
+I think you can use separate configs to get this to work :
+file structure
+The other / module path simulates the other server in this example.
+@codeSnippetRemoved
+other / module / main.js
+Has a dependency, using a relative module name.
+@codeSnippetRemoved
+a.js
+Has a dependency, using a relative module name.
+@codeSnippetRemoved
+b.js and c.js
+Uninteresting.
+@codeSnippetRemoved
+other / module / module-file-1.js
+Uninteresting.
+@codeSnippetRemoved
+test.html
+Set up two require contexts, use each to load their own modules, and then wait for both sets of modules to load : @codeSnippetRemoved
+Console @codeSnippetRemoved

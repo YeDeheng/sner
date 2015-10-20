@@ -1,0 +1,30 @@
+Form validation while the submit button is triggered via javascript
+I have a form that opens in the modal.
+I want to implement validation for that.
+However, I tried to implement the jQuery form validation but in vain.
+The main reason of being not able to trigger the form validation is that the form submit button is triggered using javascript.
+While the form submits it doesn't execute the validation part.
+What is the work around for this?
+here is the form :: @codeSnippetRemoved
+And the JavaScript that triggers the form submission.
+@codeSnippetRemoved
+I also tried jquery form validator but still not showing any errors while submitting the form.
+It straight away goes to the database where only null values are updated.
+Validation jQuery @codeSnippetRemoved
+You must return false ; to stop the default functionality of the click event from happening, like this : @codeSnippetRemoved
+and change your onclick : @codeSnippetRemoved
+or you could just do this : @codeSnippetRemoved
+You had a few things wrong with your code :
+Missing, after the pincode validation rules.
+This appeared twice.
+Inline events (onClick).
+jQuery makes it really easy to attach events.
+In my code I replaced your inline event on the ' close ' button with : @codeSnippetRemoved
+This is easier to read and nicely separates the HTML from your javascript.
+Read more about .on() in the documentation.
+The validation plugin is triggered when the form is submitted.
+Your original code used an ajax request in a separate event handler so the plugin was never called.
+You also had your submit button ("save changes ") outside the form tags which is another reason it wouldn't work.
+I moved your buttons inside the form and fixed / improved the other areas of your javascript so it now works : http://jsfiddle.net/U2hHH/4 - currently the formatting isn't great but it ' s validating the form correctly.
+I've combined your ajax functions into just one in the submitHandler : callback.
+The ajax should work but I can't guarantee it so if it doesn't work please check your browser ' s console.

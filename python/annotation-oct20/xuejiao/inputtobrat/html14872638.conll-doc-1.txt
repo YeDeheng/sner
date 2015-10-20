@@ -1,0 +1,21 @@
+how embed pdf document in html with out copy and print
+I am beginner of web programming, my question is how to embed pdf document in html one division tag, and that pdf we can avoid copy, print and download options.
+this following is my code.
+@codeSnippetRemoved
+Some option may be help you :
+First :
+If you do stick with the pdf embedded option, Pdf files don't look so great on a webpage.
+Anyway, be sure to be strict about the coding.
+Hence : @codeSnippetRemoved
+Should be @codeSnippetRemoved
+Second :
+You can also use Google PDF viewer for this purpose.
+You need to upload your PDF somewhere before and just use its URL : @codeSnippetRemoved
+Third :
+Best approach is to use the PDF.JS library.
+It ' s a pure HTML5 / JavaScript renderer for PDF documents without any third-party plugins.
+Online demo : http://mozilla.github.com/pdf.js/web/viewer.html
+GitHub : https://github.com/mozilla/pdf.js
+Links :
+Recommended way to embed PDF in HTML?
+How to embed a PDF file in a web site?

@@ -1,0 +1,18 @@
+Want an iPhone / iPad / iOS Webpage that is 100% width / height
+I'm trying to get a site that is simply 100% of the possible width / height of a device, after scrolling down far enough to get rid of the address bar.
+Hopefully that makes sense?
+I just need the simple dimensions so I can scroll the device to 0, 0 and see as much of my page as possible.
+e.g. simply 320x400 (320 width, 400 might = height - title bar - footer)
+The reason for this is that I'm putting a single DIV on a page that is a "viewport" into content that moves around, think google maps.
+I just want this div to fill all available space.
+The problem is that I can't seem to detect the available window height.
+I always seem to get the screen size - the title bar - the address bar - optional debug bar - footer.
+How do I detect the "largest possible size"?
+If you're using javascript, try alerting : ' innerWidth ' ;
+http://www.quirksmode.org/dom/w3c_cssom.html
+Put html, body with height : 100% ; and the div as position : absolute ; top : 0 ;b ottom : 0 ; left : 0 ; right : 0 ; and then you dont need the exact width / height of the viewport, the div will already use the maximum possible space.
+But if you still want to detect, jQuery got the $ (element_you_want) .width() and .height() also that might do the trick.
+Try with document or only body (with 100% height)
+Answering this myself : @codeSnippetRemoved
+The basic idea is that I force the window to be larger than I know it can support, remove the address bar then measure the size.
+I can now go and re-size this div appropriately.

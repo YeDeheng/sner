@@ -1,0 +1,11 @@
+JAXB Marshaling Doubled XML data
+When I'm saving 2 objects 4 are actually saved (doubled).
+Got object A and B and instead of output XML file where are saved AB I got XML where is ABAB.
+My Classes : @codeSnippetRemoved
+This is the wrapper : @codeSnippetRemoved
+and this is method used in main-app : @codeSnippetRemoved
+My output is : @codeSnippetRemoved
+But should be : @codeSnippetRemoved
+Can you help me figure this out?
+I believe the annotations on Wrapper are the problem. because you are explicitly annotating the private member with XmlElement, you are actually getting output from both the private member and the public getter / setter methods.
+if you want to use field level access, annotate the Wrapper class with @XmlAccessorType (XmlAccessType.FIELD). otherwise, move your XmlElement annotation to the getter method.

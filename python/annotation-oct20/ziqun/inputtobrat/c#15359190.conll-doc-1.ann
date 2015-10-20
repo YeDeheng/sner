@@ -1,0 +1,13 @@
+T1	PL 0 2	C#
+T2	PL 87 89	C#
+T3	API 120 131	debian.What
+T4	Plat 200 207	windows
+T5	Plat 309 316	windows
+T6	API 379 387	MyNewLog
+T7	API 485 501	MyNewService.exe
+T8	API 687 696	rogram.cs
+T9	API 717 727	Service.cs
+T10	API 794 821	System.Diagnostics.EventLog
+T11	API 920 928	EventLog
+T12	Plat 965 970	Linux
+T13	Plat 1206 1211	Linux

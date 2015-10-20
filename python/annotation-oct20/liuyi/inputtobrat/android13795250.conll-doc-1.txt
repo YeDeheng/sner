@@ -1,0 +1,15 @@
+Contacts & Autocomplete
+First post.
+I'm new to android and programming in general.
+What I'm attempting to is to have an autocomplete text box pop up with auto complete names from the contact list.
+IE, if they type in "john" it will say "John Smith" or any john in their contacts.
+The code is basic, I pulled it from a few tutorials.
+@codeSnippetRemoved
+personName is my autocompletetextbox.
+So it actually works when I use it in the emulator (4.2) with manually entered contacts through the people app, but when I use it on my device, it will not pop up with any names.
+I'm sure it ' s something ridiculous but I've tried to find the answer and I'm getting nowhere.
+Can't learn if I don't ask.
+Here is the log
+12-11 18:35 : 09.229 : I / ActivityManager (57 8) : Displayed 12-11 18:35 : 11.031 : I / ActivityManager (57 8) : START u0 { cmp= com.fthatnoise.borrow.me / .AddItem } from pid 4153
+12-11 18:35 : 11.161 : D / dalvikvm (4153 ): GC_CONCURRENT freed 1K, 2% free 9648K / 9784K, paused 5ms+2ms, total 22ms12-11 18:35 : 11.181 : D / dalvikvm (4153 ): GC_FOR_ALLOC freed 1K, 2% free 9648K / 9784K, paused 21ms, total 21ms12-11 18:35 : 11.181 : I / dalvikvm-heap (4153 ): Grow heap (frag case) to 10.359MB for 960016-byte allocation12-11 18:35 : 11.201 : D / dalvikvm (4153 ): GC_FOR_ALLOC freed 0K, 2% free 10585K / 10724K, paused 18ms, total 18ms12-11 18:35 : 11.221 : D / dalvikvm (4153 ): GC_CONCURRENT freed 1K, 1% free 10637K / 10744K, paused 3ms+1ms, total 15ms
+12-11 18:35 : 11.551 : I / ActivityManager (57 8) : Displayed com.fthatnoise.borrow.me / .AddItem : + 514ms12-11 18:35 : 11.571 : D / overlay (162 ): FROM_STATE = OV_BYPASS_3_LAYER TO_STATE = OV_CLOSED12-11 18:35 : 11.911 : D / overlay (162 ): FROM_STATE = OV_CLOSED TO_STATE = OV_BYPASS_3_LAYER12-11 18:35 : 13.073 : D / overlay (162 ): FROM_STATE = OV_BYPASS_3_LAYER TO_STATE = OV_CLOSED

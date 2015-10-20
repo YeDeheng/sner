@@ -1,0 +1,7 @@
+How to move content from QListWidget to a QStringList with PyQt4?
+I have a dialog in which a user selects the files that needs, it adds (via QPushButton) in a QListWidget, my problem it ' s that I need to recover all the files from the QListWidget in a QStringList.
+I tried like this, but something is wrong : @codeSnippetRemoved
+As I understood, you need to add the selected item text value to a QStringList.
+Here ' s how to do it.
+@codeSnippetRemoved
+I think you're missing .text() after the item : @codeSnippetRemoved

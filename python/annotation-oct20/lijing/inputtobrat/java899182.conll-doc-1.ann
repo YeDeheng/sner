@@ -1,0 +1,9 @@
+T1	Fram 0 9	Hibernate
+T2	API 206 229	criteria.uniqueResult()
+T3	API 287 323	org.hibernate.PropertyValueException
+T4	API 429 443	uniqueResult()
+T5	Fram 910 919	hibernate
+T6	Fram 985 994	hibernate
+T7	API 1118 1132	FlushMode.AUTO
+T8	Fram 1232 1241	hibernate
+T9	Fram 1319 1328	hibernate

@@ -1,0 +1,19 @@
+You should then use the get ...
+- and set ... methods on this Blob.
+Here you basically have two options :
+Work with a byte-array :
+Get hold of a byte [] containing the data through Blob.getBytes Manipulate this byte-array Set it back using Blob.setBytes.
+Work with InputStream / OutputStream :
+Get hold a an InputStream through Blob.getBinaryStream Manipulate this stream as you see fit Use Blob.setBinaryStream.
+An alternative approach is to skip messing with Blob in the first place, and instead use the second approach (with streams) directly through the ResultSet -interface.
+With Simple Java JDBC Api, you can get a java.sql.Blob back from a ResultSet.
+ResultSet.getBlob (index) or ResultSet.getBlob (String columnName).
+Both returns a Blob.
+Once you get a Blob, you can get the byte [] back from the Blob.getBytes() method or set using setBytes() method.
+Update : Seeing that some Database driver vendors don't support Blob, you can use ResultSet.getBinaryStream().
+It depends on which kind of blob contains (image, video) and it ' s extension.
+I wrote a simple program to retrieve an image from DB and show it in JSP page.
+Hope it helps.
+JSP Page @codeSnippetRemoved
+Servlet Page @codeSnippetRemoved
+Calling Procedure @codeSnippetRemoved

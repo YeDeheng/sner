@@ -1,0 +1,13 @@
+How to save trained Neural Network (Number recognitio from image)
+I have written a neural network program to train for recognition digits from image using back propagation and feed-forward.
+Its working quite good.
+I just wanted to know that how do i save this trained neural network since i don't know what to save.
+My objective is to train my neural network just once because it takes very long time to train (1000 iteration, and many training sets) and then i want to save it and load it for later use.
+I hope u understand my problem.
+I cannot reveal all my neural codes.
+But this is how execution code looks like @codeSnippetRemoved
+After your network is trained you can store (and later load) the in-memory contents of NeuralNetwork and its children using Java Serialization.
+class NeuralNetwork implements Serializable { ...
+}
+Chain ObjectOutputStream with FileOutputStream.
+Call the method writeObject (...) to write the NeuralNetwork object.

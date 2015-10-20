@@ -1,0 +1,12 @@
+T1	API 197 205	MergePdf
+T2	API 207 219	MemoryStream
+T3	API 242 251	PdfReader
+T4	API 265 274	PdfReader
+T5	API 314 323	PdfWriter
+T6	API 348 368	reader.NumberOfPages
+T7	API 417 447	reader.GetPageSizeWithRotation
+T8	API 464 485	PdfWriter.GetInstance
+T9	API 503 518	document.Open()
+T10	API 523 537	PdfContentByte
+T11	API 543 563	writer.DirectContent
+T12	API 566 581	PdfImportedPage

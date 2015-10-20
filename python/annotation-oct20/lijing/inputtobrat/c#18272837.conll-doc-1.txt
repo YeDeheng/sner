@@ -1,0 +1,26 @@
+Allow templates to be inferred
+Say I'm using an external package for storing graphs.
+A BidirectionalGraph takes two templates : a vertex and an edge type : @codeSnippetRemoved
+Unfortunately, this graph package doesn't allow you to get the edges radiating into a vertex in a single line.
+Instead, you have to provide an IEnumerable, which it will populate with the results.
+This can disrupt a good coding rhythm by making tasks like "loop through all vertices that are successors of vertex x" take far too much code.
+I wanted to use .NET ' s extensions to add a one-line solution to the graph class : @codeSnippetRemoved
+But when I call graph.IncomingEdges (vertex), for some reason C# (.NET version 4.5) can't infer the template arguments, so I have to say :
+graph.IncomingEdges GraphThatInheritsFromBidirectionalGraph VertexType, EdgeType, VertexType, EdgeType (vertex).
+Not really a great improvement.
+First, why can't the template types be estimated?
+I have a feeling it has to do with inheritance, but don't understand.
+I'm used to using C++, and for some reason feel that gcc could infer the template types.
+Second, if this can't be prevented, is the correct design choice to make a graph class for actual use, which inherits from BidirectionalGraph?
+It seems a waste to have to rewrite the constructors, but I'm sure you'd agree that calling the method with explicit template types is inelegant.
+EDIT :
+Strangely, the equivalent specification (below) does allow automatic inference of template types.
+So, even though it solves my initial problem (adding this functionality to the graph), I'd still really like to understand.
+@codeSnippetRemoved
+The first version of your extension method is able to infer TGraphType and TVertex but not TEgde, as it would require inferring the TEdge from the type constraint : @codeSnippetRemoved
+which C# compiler does not do (it does not infer generic type parameters from type constraints).
+I honestly don't know if there is a technical reason behind this or it just wasn't implemented.
+Your updated version, on the other hand, includes BidirectionalGraph TVertex, TEdge as a parameter, so for example when you call the extension method on a class like : @codeSnippetRemoved
+the compiler is able to examine the type AGraph and see that there is a unique type BidirectionalGraph AVertex, AnEdge in its inheritance hierarchy, so it is able to infer TVertex and TEdge.
+Note that if the parameter type were IGraph TVertex, TEdge (instead of BidirectionalGraph TVertex, TEdge) and AGraph implemented multiple constructed types of that generic interface, e.g. : @codeSnippetRemoved
+then type inference would fail once again because it can't tell if, for example, TVertex is AVertex or AnotherVertex.

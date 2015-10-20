@@ -1,0 +1,15 @@
+how can I get Font X offset width in java2D?
+I need print two words : "A" and "B" using java 2D
+font size = 100 ;
+"A" font family : Bodoni MT Poster Compressed
+"B" font family : Arial
+I writed below codes to do it : @codeSnippetRemoved
+I get the result image :
+but I need like this (make by PhotoShop ):
+I think the question at g.drawString ("B", FONT_SIZE, FONT_SIZE );
+How can I get the font X offset width?
+thanks for help :)
+After you do the setFont, declare a variable like @codeSnippetRemoved
+Now that you have all the dimensions of the letters, set their positions (px is distance from the left edge to the letter, py from the top to the baseline of the font) @codeSnippetRemoved
+And similarly for "B".
+Hope that helps, - M.S.

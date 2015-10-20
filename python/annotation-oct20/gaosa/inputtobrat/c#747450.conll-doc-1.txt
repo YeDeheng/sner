@@ -1,0 +1,12 @@
+Building an API library package?
+What do you guys use to build package (zip library, documentation example) of some API written in .NET?
+Right now I do it manually, building in vs, sandcastle and then zipping it together ...
+I use Nant as a build tool, not only for libraries, but also for executables (installer and stuff).
+Others use batch files as post-build events in Visual Studio (in a special configuration so that is not built every time you comile).
+MSBuild and Sandcastle for documentation.
+:)
+I use MSBuild, though using XML as a programming language is bad.
+Nevertheless, my MSBuild script checks out source from SVN repo, builds everything, packages ZIP files with sources and binaries.
+As far as documentation goes, see docu since Sandcastle is an absolutely horrible beast to use.
+One gotcha to be aware of when using MSBuild : it evaluates so-called ItemGroups at startup.
+The consequence of this is that it won't ZIP the output of your builds since at the time of starting up output folders might be empty.

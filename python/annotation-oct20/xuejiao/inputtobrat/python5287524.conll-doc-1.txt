@@ -1,0 +1,12 @@
+Python NameError : name -- syntax error
+Possible Duplicate : I have a compiler error not defined although there is a definition
+@codeSnippetRemoved
+I got this error ..
+Traceback (most recent call last ): File "chomp.py", line 110, in class Wall (Immovable ): File "chomp.py", line 124, in Wall for neighbor in neighbors : NameError : name '
+neighbors ' is not defined
+I spent lot of time still can't find what ' s wrong, need some help
+You never close the function call to Circle() two lines about line 122, that ' s probably it.
+You're probably missing an argument based on the trailing comma.
+@codeSnippetRemoved
+Circle (self.screen_point, dot_size,
+missing something at the end of that line

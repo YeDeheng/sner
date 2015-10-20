@@ -1,0 +1,16 @@
+Issue with substr based on variable MYSQL IPN
+Hello I'm having trouble trying to figure out why I'm getting no addition to my username column within my table.
+I'm trying to use the payer email within my IPN to introduce a username for login.
+Everything is being posted except for the username.
+Is there something I'm doing wrong within the placement of the username variable edits?
+Is there something I'm missing that is preventing this from being posted?
+@codeSnippetRemoved
+[ 28-Jul-2013 16:05 : 40 America / Denver ] PHP Parse error : syntax error, unexpected T_ELSE in / home / lear / public_html / storescripts / my_ipn.php on line 74 [ 28-Jul-2013 21:06 : 37 America / Denver ] PHP Warning : mysqli_query() expects parameter 1 to be mysqli, null given in / home / lear / public_html / storescripts / my_ipn.php on line 100 [ 28-Jul-2013 21:06 : 37 America / Denver ] PHP Warning : mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in / home / lear / public_html / storescripts / my_ipn.php on line 102
+Edit :
+I'vej ust updated the script.
+The error I'm receiving is as follows :
+[ 28-Jul-2013 22:18 : 33 America / Denver ] PHP Warning : mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in / home / learnsit / public_html / storescripts / my_ipn.php on line 108
+Line 108 being
+while ($name_arr = mysqli_fetch_assoc ($result )) {
+I haven't played around with this too much, but the piece of code which stands out for me as chiefly suspect is : @codeSnippetRemoved
+It should probably look more like @codeSnippetRemoved

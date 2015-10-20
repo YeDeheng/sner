@@ -1,0 +1,6 @@
+T1	API 199 207	that.Any
+T2	API 246 256	FileDialog
+T3	API 632 642	FileDialog
+T4	API 765 775	FileDialog
+T5	API 1053 1063	FileDialog
+T6	API 1155 1172	shell.getShells()

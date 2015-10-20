@@ -1,0 +1,5 @@
+T1	Fram 19 26	firefox
+T2	Fram 36 42	chrome
+T3	Fram 356 363	firefox
+T4	API 494 511	messageQueue.push
+T5	Fram 556 562	chrome

@@ -1,0 +1,5 @@
+Caching problem with a web view activity
+The activity launched is a webview activity.when i login first time then shows the login page but when logged on second time then the web view cache the pervious login and shows me the homepage instead it should be showing a login page again.i don't have a logout button in my web view.
+@codeSnippetRemoved
+This may be a little over the top for what you want to do, but should solve your problem :
+Android Webview - Completely Clear the Cache

@@ -1,0 +1,25 @@
+Use variables from other class from other file to another in java
+There are two players who will input their name in the JTextFields.
+What I want to do is that the data I entered from the Welcome frame in Enter.java will be transferred to the JLabels in ActualGame.java.
+@codeSnippetRemoved
+Main is the main class that holds the JFrame of ActualGame() and also the main class of Enter().
+@codeSnippetRemoved
+the ActualGame : @codeSnippetRemoved
+What should I do to be able to use the String variable one and two from Enter.java to ActualGame.java?I'm new and noob in programming especially java swing.
+Open to criticisms and suggestions.
+Thank you.
+Suggestions :
+Passing information from one object to another is no different with Swing as with other Java programs.
+You can call methods or constructors and pass information in via parameters.
+A key difference though is when to pass information.
+With event driven programs, this is often triggered by an event, a listener, and so use of the observer design pattern is comment.
+For your purposes, the first window could be a modal dialog such as a JOptionPane or a modal JDialog which will make it easier to figure out when to pass information.
+When using a modal dialog, all code flow in the calling program is paused while the dialog is visible, and then resumes once the dialog is no longer visible.
+It ' s easy then to have the calling program query the dialog once this occurs, because you'll know precisely where in your code this will occur.
+You'll want to avoid excessive showing of different windows in your application as it can quickly get annoying to the user.
+A few dialogs here and there are OK, especially if you need the information to be given in a modal fashion, but in general it ' s better to swap GUI "views" when needed, and a CardLayout is good for this.
+But having said this, separate views are often created by separate classes, so the problem of passing information back and forth remains a problem with similar solutions as described above.
+Specifically, give your Enter class a getText method that will allow other objects to query it for the state of its JTextField : @codeSnippetRemoved
+Also, change your ActualGame class so that it can accept String information when needed : @codeSnippetRemoved
+e.g., @codeSnippetRemoved
+Try to make ActualGam as a underclass of Enter @codeSnippetRemoved

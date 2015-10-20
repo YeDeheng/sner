@@ -1,0 +1,15 @@
+T1	Plat 0 7	Android
+T2	Stan 109 113	HTTP
+T3	API 139 148	HttpUtils
+T4	API 151 177	javax.net.ssl.SSLException
+T5	API 293 303	mycert.pem
+T6	Orgs 430 436	Apache
+T7	API 437 447	HttpClient
+T8	Stan 496 500	HTTP
+T9	API 675 684	HttpUtils
+T10	API 687 713	javax.net.ssl.SSLException
+T11	Fram 903 910	Firefox
+T12	API 945 959	HttpClient.And
+T13	API 987 1018	com.android.MyCellFamily.DAHttp
+T14	Plat 1093 1100	android
+T15	API 1302 1310	url.here

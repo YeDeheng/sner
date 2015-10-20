@@ -1,0 +1,7 @@
+Unreadable .js file?
+How to convert back?
+I have 3 files something.js, something.min.js and something.style.jsThe third is unreadable (here is in my server where I uploaded ): [ Removed link for good reasons] .I want to convert back the file to normal, or visit as readable strings.
+And it will be good if I can convert my normal js to this format.Thanks for any help and sorry for my grammatical errors :)
+It ' s a classic obfusquation error.
+I used http://jsbeautifier.org and here you are!
+http://pastebin.com/mH1x33Un

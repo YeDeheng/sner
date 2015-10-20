@@ -1,0 +1,11 @@
+Access inline JSON in Polymer
+I am making a d3.js map component with Polymer.
+The topology data needs to be loaded from a json file and since I don't want the component to be dependent on a URL / URI, I am using inline JSON instead of loading it using AJAX : @codeSnippetRemoved
+But obviously topdata element doesn't have the method html().
+Is it the right thing to do? and how vulcanize deal with this?
+You're not depending on an external resource but it ' s still in a separate file.
+I'd use core-ajax to load it : @codeSnippetRemoved
+http://www.polymer-project.org/docs/elements/core-elements.html#core-ajax
+There is no need to inline JSON file.
+Polymer ' s resolvePath function is useful here to make sure the relative path to JSON file is always correct regardless of where the component is included : @codeSnippetRemoved
+Info about resolvePath here.

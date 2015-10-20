@@ -1,0 +1,15 @@
+HTML table td ' s not properly alignt
+I'm having an weird problem.
+I've got an table with an input and some text.
+Only problem is that 1 row is shorter than the others.
+I've moved the row down, but that also didn't work.
+I've also compared them with the other rows, but i can't find the difference.
+An image says more than thousands words they say, so here ' s an screen pick from the live testing area :
+Also, here ' s an JSFiddle of the relevant code.
+And here ' s the code also : @codeSnippetRemoved
+Your first row ' s attribute colspan is wrong, change : @codeSnippetRemoved
+with : @codeSnippetRemoved
+Here is the fiddle updated : http://jsfiddle.net/D5fJa/1
+More info about colspan attribute : http://www.w3schools.com/tags/att_td_colspan.asp
+You have a small spelling error
+An extra n in colspann

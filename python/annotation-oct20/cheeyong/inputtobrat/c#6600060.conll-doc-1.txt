@@ -1,0 +1,10 @@
+Linq Pattern Matching Problem
+The code below searches through a file to see if a pattern matches and stores the file offset in the ' result ' variable.
+I then had a for each loop which cycles through the ' result ' variable to display the offsets which worked fine ...
+Untill, I had some further code to read in the file contents at each offset and perform a calculation on each read in and output it in the console.
+For some reason the for each loop is only outputing the first calculation, instead of continuing to do all the other offsets.
+Any help to why this for each loop is stopping at the first offset?
+Thanks in advance @codeSnippetRemoved
+I think your problem is with Console.ReadKey() you will need to press a key in order to continue the foreach loop
+There is only one reason possible to why the loop exits after one iteration :
+result has only one value inside

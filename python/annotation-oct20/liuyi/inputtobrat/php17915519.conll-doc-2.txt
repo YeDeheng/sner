@@ -1,0 +1,27 @@
+FYI : - PHP can handle single quotes inside of double quotes without needing a backslash () escape.
+- You don't need a semicolon (;) escape for a MySQL quote- A great way to check to see if the issue is in fact an MySQL query for your future debugging is to add or die (mysql_error ($db )) to the end of your query function, like so : @codeSnippetRemoved
+Hope this helps!
+Update :
+I've added this to the result area to try and debug, but I'm not receiving anything from it.
+Would this come up in your standard error page?
+Try @codeSnippetRemoved
+After looking even further at your code it looks like you shouldn't see anything for username = ' {$username} ', because $username is being based off of $payer_email, which has not been declared yet.
+You'll need to either put those username checks into a function and call it after you've assigned variables the $_POST index, or move the $_POST[ "payer_email" ] to before you first declare the $username variable, as well as getting rid of the $_POST[ "username" ] ...
+Although I haven't seen your form it sounds like you're creating the username through the payer email.
+Does this help more?
+Update 2 :
+Your error with mysql_fetch_assoc is because you haven't declared $result.
+I believe you may be trying to refer to $user_query, in which case your line 108 should be : @codeSnippetRemoved
+Update 3 : @codeSnippetRemoved
+First of all I notice you're using username = ' {$username}% '.
+I have a handful of points to make and I hope you listen to them.
+I'm giving you fish here but I'd like to teach you as well.
+If you want to do a comparison, it ' s going to have to be username LIKE ' {$username}% ' I wasn't clear about what you were trying to do ...
+If you want a unique identifier, I'd actually do something more like username= ' {$username} ', and then, if it returns a single result, add a unique identifier to the end.
+You see, when you do something with LIKE {$username}%, you're going to end up getting two rows if someone is trying to sign up as awesome_bob, when someone else already has awesome_bobby.
+You're going to want something more random, I would think, or to create a more complicated function.
+Or, just keep username as e-mail, which keeps it unique and is a very simple fix.
+I'm going to leave this post at that because I think it has answered your initial question and then some.
+If you have further questions, I think people would be happy to look at them in a separate topic.
+Have I answered your question enough?
+If so I would appreciate a +1 for my effort :)

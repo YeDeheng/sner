@@ -1,0 +1,36 @@
+Android testing, how to simulate multitouch (zoom in / out) using instruments?
+I can simply simulate single touches - tap, swipe, hold etc in my tests, but completely stuck with simulating multi touch on HT?
+Desire with Android 2.2.
+Could you please advise, how can I reproduce events chain to test multi-touches?
+I think I need to use some tricky kind of MotionEvent like MASK or something like this, but have no idea how do this.
+I have found here a dump of events of reproduced zooming : http://www.zdnet.com/blog/burnette/how-to-use-multi-touch-in-android-2-part-3-understanding-touch-events/1775?tag=mantle_skin;content @codeSnippetRemoved
+Here is my issue :
+event ACTION_POINTER_DOWN (pid 1) [ #0 (pid 0 )= 153,230 ; #1 (pid 1 )= 380,538 ] event ACTION_MOVE[ #0 * (pid 0 )= 153,231 * ; #1 * (pid 1 )= 380,538 *]
+How can I generate events with 4 coordinates (pid 0 x0 y0 and pid 1 x1 y1)?
+Looks like I need to find the way how to use following event :
+public static MotionEvent obtain (long downTime, long eventTime, int action, int pointers, int [] pointerIds, PointerCoords [] pointerCoords, int metaState, float xPrecision, float yPrecision, int deviceId, int edgeFlags, int source, int flags)
+Thanks to Dan for reply, I have tried this logic, but still encountering problems to add coordinates : @codeSnippetRemoved
+These events sequence are caught in my test stub and dumped like : @codeSnippetRemoved
+Here you can see, that (2 * 256) + MotionEvent.ACTION_MOVE doesn't change the pointer ID for event :( And pointerToMove MotionEvent.ACTION_POINTER_INDEX_SHIFTapproach is not working for ACTION_POINTER_DOWN, may be I'm not allowed to use such way for POINTER_DOWN?
+My issue is that I can't generate 2 pair of coords for Pointer 0 and Pointer 1 : @codeSnippetRemoved
+Here you can see, that using your logic I have added pid1 to the event, but it is still has no coordinates, cause x and y was associated with pid 0 ..
+Thank you in advance.
+Yahor
+Still have no ideas how to implement it, did somebody ever send a multitouch event?
+I believe you just need to indicate the pointer index in the ' action ' parameter passed to MotionEvent.obtain.
+Specifically, the upper 8-b its of the action is the pointer index and the lower 8-b its is the action (e.g. MotionEvent.ACTION_MOVE).
+So, if you want to move the second pointer this should work : @codeSnippetRemoved
+-Dan
+I supposed this can help you ..
+i am sorry ..
+i think i misunderstood your question.
+You may ignore the answer
+there is no event such a multi touch event.
+All you have are motion events.
+When a user touches first time, an ACTION_DOWN event is raised.
+When the second finger is also touched (dual touch) an ACTION_POINTER DOWN event is raised.
+You need to override onTouchEvent and implement multitouch.
+The code below will help you.
+It tracks mutli touch zoom, scrolling.
+@codeSnippetRemoved
+Hope this helps

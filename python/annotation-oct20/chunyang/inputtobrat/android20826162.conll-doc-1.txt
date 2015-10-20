@@ -1,0 +1,9 @@
+Stream android camera over RTMP
+I was searching in all stackoverflow posts, but not find ask for this question.I need stream video from android camera to rtmp server.
+In this time, I make rtmp packet, put in rtmp body buffer from pipe : @codeSnippetRemoved
+Settings for media : @codeSnippetRemoved
+Then reading data from inputStream into array and put this data to rtmpbodyIm understand, thats wrong, but I have no idea how make raw h264 streamable
+Maybe you already did, if not, you should take a look to these questions.
+Accessing the output video while recording
+Transfer InputStream to another Service (across process boundaries) with ParcelFileDescriptor.createPipe() failes with EBADF (Bad file number)
+I've got a small project that shows how to put raw h264 into an RTMP format here ; its not perfect, but it mostly works.

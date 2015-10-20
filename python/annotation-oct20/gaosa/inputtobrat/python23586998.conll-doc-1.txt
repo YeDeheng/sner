@@ -1,0 +1,13 @@
+python regex : extract contents of an HTML element
+I have elements in an HTML page in this format : @codeSnippetRemoved
+I want to use python to extract the "Dave Mason ' s Traffic Jam" part, the "Scottish Rite Auditorium" part etc. individually from the the text.using this regular expression '.
+* ' returns from the first tag to the last tag before the next newline.
+How can I change the expression so that it only returns the chunk between the tag pairs?
+Edit : @HenryKeiter @Hakiko that'd be grand but this for an assignment that requires me to use python regex.
+Here is a hint, not a full solution : you'll need to use a non-greedy regexp in your case.
+Basically, you'll need to use @codeSnippetRemoved
+instead of @codeSnippetRemoved
+Non-greedy means that a minimal pattern will be matched.
+By default - it ' s maximum.
+Use Beautiful Soup : @codeSnippetRemoved
+Returns @codeSnippetRemoved

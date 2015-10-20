@@ -1,0 +1,7 @@
+How to add text formate editor for a TextBox in HTML
+I am designing a Content Management System where i need to add the text formater (Editor) Am sorry i dont know the exact name.Basically under the CMS i want to give user the facility to format the text as per the requirement.Suppose the user wants to enter the First Line In BOLD or make want to show some words in Italics, he will have the facility to do.Just like while posting my Question on stackoverlow i get the facility to formate my Post.
+Please tell me hoe to integrate this functionality in Html textbox of my CMS
+You need to add ckeditor to add texteditor ..
+Try this @codeSnippetRemoved
+Scripts
+Hope you want something like this ..

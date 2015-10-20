@@ -1,0 +1,12 @@
+How can I get my submenus to disppear after a certain period?
+I want to set time for my submenus to disppear after a certain period using JavaScript.
+My code is : @codeSnippetRemoved
+and my function that I want to display after a certain time is times(), but whenever I do onmouse it calls it directly and it doesn't wait for the time to count.
+Actually, your problem is that you are not referencing the correct function in your call to setTimeout.
+In other words, the call to the function in the setTimeout parameter is executed in the context of the window object, whereas your times() function is defined in the context of your buildSubmenus object (you may not have realized this but defining you wait() function and your times() function inside of the body of buildSubmenus means that the wait() and times() functions are only defined and valid inside local scope of the buildSubmenus function)
+I was going to try to correct the code in your sample code but there are too many issues and with the rest of the context missing I think it would be best if I would just point you in the right direction.
+You need to learn and understand the concepts of closures and currying before you go about correctly implementing the code that you posted in the question.
+Also, if you don't feel inclined to understanding the inner-workings of why your example doesn't work, I would suggest you take a look at a javascript framework that can handle all that for you such as Prototype.js or jquery.
+The thing is, you told to call time onmouseout!
+@codeSnippetRemoved
+You should have done @codeSnippetRemoved

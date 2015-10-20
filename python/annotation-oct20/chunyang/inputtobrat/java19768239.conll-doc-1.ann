@@ -1,0 +1,10 @@
+T1	PL 17 20	SQl
+T2	PL 31 35	Java
+T3	PL 58 61	SQL
+T4	API 200 210	executed.I
+T5	API 364 373	created.I
+T6	PL 405 409	Java
+T7	API 564 577	stmnt.execute
+T8	API 640 649	wanted.So
+T9	API 733 745	Thread.sleep
+T10	API 904 916	ScriptRunner

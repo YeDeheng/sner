@@ -1,0 +1,8 @@
+i can't remove the item from cart when click on remove button?
+i have shopping cart page but problem is that i can't remove the item from cart when click on remove button?
+1) i want to remove item from shopping cart via product pid based?
+2) when i echo $pid=intval ($pid ); it is showing PID? on the shopping cart page?
+Product Page @codeSnippetRemoved
+Shopping Cart Page @codeSnippetRemoved
+Shopping Cart Page Javascript @codeSnippetRemoved
+Please Modify your forms : - @codeSnippetRemoved

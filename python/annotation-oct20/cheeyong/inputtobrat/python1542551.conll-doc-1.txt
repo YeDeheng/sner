@@ -1,0 +1,40 @@
+binding local variables in python
+I wonder if there is a good way to bind local variables in python.
+Most of my work involves cobbling together short data or text processing scripts with a series of expressions (when python permits), so defining object classes (to use as namespaces) and instantiating them seems a bit much.
+So what I had in mind was something like in (common) lisp, where you could do something like @codeSnippetRemoved
+In python, the best I could come up with is @codeSnippetRemoved
+These are, of course, very simple examples but might there be something that is as scalable as let or let * in lisp?
+Are defining classes the best way to go to create a local namespace ?...
+(but feels a little less interactive that way)
+Edit : So to further explain the intention (my apologies for vagueness), I want to reduce the use of global variables.
+So in the case above, I meant to use the extraction operator as a general case of any type of operation that might not want to be repeated.
+For instance, one might write either @codeSnippetRemoved
+or @codeSnippetRemoved
+to accomplish the same result.
+In essence, if the desired operation on ' data ' is more complicated then getting the second item, I wouldn't want to type it out multiple times, or let the computer compute the value of the same expression more times than necessary.
+So in most cases one would assign the result of the operation, in this case, data[2], or operator.itemgetter (2) (data), to some variable in the global space, but I have an aversion to leaving variables around in the global space if they were only necessary to store intermediate values in a computation ... hence the use of the ' del ' command immediately afterwards.
+Defining a local environment or namespace and binding intermediate results to local variables would be an ideal alternative.
+Not really knowing Lisp, I can't see what you're trying to do here.
+But I would say that in general you should not try to write Python as if it were Lisp, or indeed any language as if it were any other language.
+I've been programming in Python for five years and I've never seen a need to do what you're trying above.
+Can you give an example of a use case for the above - what are you actually trying to do, in terms of the end result?
+Maybe then we can advise you on the best way to do it in Python, rather than Lisp.
+It ' s a bit unclear what you are asking, bit I'll try to answer anyway :
+You bind variables to names with = in Python.
+So your data = [ 1, 2, 3 ] binds the list [ 1, 2, 3 ] to the name data.
+You can create local namespaces with classes and functions / methods.
+The closest you get so something as powerful as let is probably def and lambda.
+Python is (despite where some people try to tell you) not Lisp, and not particularly functional, so you will have to adapt your mindset a bit.
+Update : Ah, I see what you mean now.
+All variables are pretty much local in Python.
+The nearest you get to global variables are variables defined in module space, because you can access them with from module import variable.
+You also can access them from wherever in the module, but not modify them (unless you say that you want to modify them with the global keyword.
+Anything you define in a function / method or class definition, will only be accessible from that namespace.
+So in short : you don't have to worry about the things you worry about now.
+Python takes care of it for you.
+:)
+I can only second Lennart and Daniel - Python is not Lisp, and trying to write language X into language Y is usually inefficient and frustrating at best.
+First point : your example code @codeSnippetRemoved
+would be much more readable as : @codeSnippetRemoved
+but anyway, in this concrete case, using a lambda is total overkill, overcomplexificated, and mostly inefficient.
+A braindead @codeSnippetRemoved

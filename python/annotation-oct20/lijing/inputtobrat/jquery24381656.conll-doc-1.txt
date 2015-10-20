@@ -1,0 +1,57 @@
+Hover through js or css?
+Having a div element, I can style its bg-color through either Javascript or CSS.
+Is there any difference between the two, or which one should we use?
+@codeSnippetRemoved
+or @codeSnippetRemoved
+There are also many things that can be done through JQ and CSS.
+How do we chose which one to use?
+I'll start by answering with what I know, but I'm sure many other people know a lot more than me.
+One of the reasons to use CSS over JS is that CSS allows hardware acceleration on mobile devices.
+Javascript on the other hand, does not.
+This is not so important for a simple background-color change, but if you were doing any sort of transition and moving of an element, it will look a lot smoother and be more responsive (e.g. when the JS is locked up with a synchronous task, the animation will still run) with CSS v jQuery / JS.
+(I'm trying to find an example of this, I remember seeing one about a year ago).
+Another reason to use CSS over JS is that it keeps your code divided into different parts, the CSS for the styling, and the Javascript for the logic.
+Again, this is personal preference, but is why many frameworks are more popular than others.
+On the other hand, a reason to use JS over CSS would be if you needed to filter a list, and display a style on a few elements.
+In this case, it would make sense to do this with Javascript.
+Purists would argue that you should use .addClass('myhoverclass ') instead of .style (attr : val) as it allows you to use the benefits of CSS listed above.
+At the end of the day, it is a matter of preference.
+If you are looking for raw speed, or are using intense effects, use CSS as it will perform better on mobile, and can also be forced to use hardware acceleration on a PC.
+On the other hand, if it is easier for you to access an element with Javascript (e.g. filtering a list), then use Javascript.
+You can see this link for more.
+Well, that ' s actually a pretty interesting question.
+I'm trying to think of how you would even do a benchmark on something like this, especially since most of the time neither CSS or JavaScript are going to be doing really computationally intensive things on a web page.
+My gut feel would say that use CSS as much as possible, but don't make it into a hard and fast rule.
+@codeSnippetRemoved
+is better semantically then @codeSnippetRemoved
+BUT @codeSnippetRemoved
+would be difficult (though not impossible) in CSS.
+You could do it in this way.
+@codeSnippetRemoved
+This would really be a slightly more awkward way to do what could have been done in JavaScript directly, but I've been thinking about it for a couple of minutes, and even here, the right solution may very well be a CSS, for example if you were setting a lot of attributes when doing the hover.
+** Please note that none of this code is expected to work, these are just for demonstration purposes only.
+**
+Refer : When a task can be accomplished by either Javascript or CSS, is it better to use CSS?
+You'd normally use CSS simply because CSS was meant for this kind of stuff.
+With the JS / jQuery version is more code and it implies running the JS engine and the CSS engine.
+With CSS, it ' s just the CSS engine.
+To recap, the JS version will still need the CSS version.
+There are times, though, when you'll want to modify styles from JS, but usually for interactions more complex than a simple hover.
+Even then though, you would want to use JS just to change just the CSS class, and add styles based on those CSS classes.
+Let me give you a couple simple examples :
+1.
+Change text color on hover
+CSS properties to change : color.
+You'd use CSS here.
+In the old days this was possible just for anchor elements, so you'd have used JS here for browser like IE6.
+This is no longer the case though, so a pure CSS solution is fine.
+2.
+Show a tooltip on hover
+CSS properties to change : display, top, left, right, bottom.
+You most likely want to use JS here.
+The tooltip markup isn't probably a child of the hovered element, so you can't reference it in your CSS.
+You may go with a CSS-only solution, but that requires that every element with a tooltip to encompass markup for that tooltip.
+A lot of redundant elements.
+JS is also needed here to calculate the exact position of the toolip relative to the element and / or cursor.
+Note that this is an example where you can't use a CSS class for the listed properties.
+You will style the look feel of the tooltip in CSS, but the actual positioning has to be done in JS.

@@ -1,0 +1,14 @@
+Django : Password check returning false in view when it should return true
+As part of form validation, the password and password2 are compared.
+This is part of a simplified ajax request system for an extremely small site returning small amounts of data (so i don't use JSON).
+The idea / objective / summery of the program is that it tries to log in the user.
+If the user does not exist, it asks the client side to load / reveal the form for new users (just an added password2 field and asks for a pen name).
+Here is the file, I've marked the sport where the program freezes with #*********
+Forms.py (error is not here ): @codeSnippetRemoved
+Views.py, where the error is : @codeSnippetRemoved
+The django debug page says the following : @codeSnippetRemoved
+The post variable stuff in the error is this (I blanked out my email and ): @codeSnippetRemoved
+Just in case the problem is here, I've included the javascript file.
+@codeSnippetRemoved
+I just noticed that I used the wrong fields in the forms.py file.
+Problem solved.

@@ -1,0 +1,6 @@
+T1	Plat 0 7	Android
+T2	Plat 220 227	Android
+T3	API 356 367	MotionEvent
+T4	API 971 982	MotionEvent
+T5	API 1067 1080	PointerCoords
+T6	API 2132 2150	MotionEvent.obtain

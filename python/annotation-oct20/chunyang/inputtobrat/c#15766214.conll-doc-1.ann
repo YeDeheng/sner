@@ -1,0 +1,9 @@
+T1	PL 36 39	sql
+T2	Plat 159 166	Windows
+T3	API 315 332	System.Data.OleDb
+T4	Plat 467 474	Windows
+T5	Plat 562 569	Windows
+T6	API 690 720	Microsoft.Office.Interop.Excel
+T7	Plat 742 749	Windows
+T8	PL 962 965	SQL
+T9	Orgs 1582 1591	microsoft

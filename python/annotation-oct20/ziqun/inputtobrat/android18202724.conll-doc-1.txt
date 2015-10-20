@@ -1,0 +1,12 @@
+Google map route direction show by arrows in android v2
+I am trying to implement google map markers in android google v2.
+i can show markers in the map too using json parsing, but the problem im facing is :
+1 : the parsing just tells u-turn but it doesn't tell left u-turn or right so even if im am using some images for showing its a u-turn i don't know which way the u-turn should be.
+2 : Is it possible to draw or show an arrowhead over the polyline in map v2 as u can see in the below image
+so any tutorial or example how to do this ..
+thanks
+IF this is your only problem :
+the parsing just tells u-turn but it doesn't tell left u-turn or right so even if im am using some images for showing its a u-turn i don't know which way the u-turn should be.
+Then you can easily find out the direction - your route is built from "points" A -> B -> C -> D ... having coordinates of A B you have vector.
+And you can also have vector using B C.
+No you just need to calculate angle between these two vectors and you will know which direction it goes.

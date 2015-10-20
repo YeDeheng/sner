@@ -1,0 +1,8 @@
+How do i fire the google places autocomplete with dictionary on in android firefox browser?
+I've integrated with the google places autocomplete on my website.
+However when the dictionary is on in the firefox browser on android phones, the places are only listed when i click one of the suggested words. in a normal text box i would do @codeSnippetRemoved
+However, in this case, I don't know what event to fire.
+How should i fix this?
+Here ' s my code
+HTML : @codeSnippetRemoved
+Javascript : @codeSnippetRemoved

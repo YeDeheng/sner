@@ -1,0 +1,14 @@
+How to Change Default Path of File Open Dialog?
+I'm writing a script that allows me to do some basic imposition within InDesign CS3, and one of my tasks is to open a dialog allowing the user to select a file to place.
+I'm currently doing this with : @codeSnippetRemoved
+The problem seems to be when navigating to a network drive through a shortcut.
+For some reason, the dialog sees it as a file, and returns that path from the dialog, rather than navigating to the folder location.
+I'm assuming this is just a bug in the dialog, and my initial thought was to check to see if the returned file has a correct extension, and if not, display the dialog again, opened to the returned path location.
+However, I can't seem to find a way to change where it opens by default ; openDlg() only has parameters for String prompt, var filter, and boolean multiselect.
+I'm not familiar with Javascript, so I don't know whether this is something with a general solution, or particular to InDesign.
+EDIT : If anyone ' s interested, here ' s the final code I used to get around the problem : @codeSnippetRemoved
+Basically, checks if it ' s a shortcut (alias), and if so, resolves the target and displays the dialog again.
+Kind of a hackish way to go about it, but it works just fine.
+May want to add some null handling in there, too, though, as if the dialog is cancelled, null is returned.
+Have you tried getting a handle to a file / directory that you want by default and calling fileHandle.openDlg()?
+http://forums.adobe.com/message/1109421#1109421
