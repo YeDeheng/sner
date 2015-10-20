@@ -1,0 +1,54 @@
+python	B-PL
+DLL	O
+load	O
+failed	O
+(	O
+statsmodels	O
+)	O
+
+My	O
+Python	B-PL
+version	O
+is	O
+2.7.9	O
+and	O
+OS	O
+is	O
+Windows	B-Plat
+8	O
+.	O
+
+Writing	O
+import	O
+statsmodels.api	B-API
+@codeSnippetRemoved	O
+
+How	O
+can	O
+I	O
+solve	O
+this	O
+problem	O
+?	O
+
+I	O
+find	O
+fblas.py	B-API
+fblas.pyc	B-API
+_fblas.pyd	O
+but	O
+no	O
+_fblas.py	O
+in	O
+C	B-PL
+:\	O
+Python27\lib\	O
+site-packages	O
+\scipy\linalg	O
+Is	O
+this	O
+where	O
+the	O
+problem	O
+is	O
+?	O

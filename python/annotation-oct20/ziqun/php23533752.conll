@@ -1,0 +1,134 @@
+Unable	O
+to	O
+pass	O
+test	O
+with	O
+Mock	O
+
+i'm	O
+testing	O
+laravel	B-Fram
+controller.Here	B-API
+'	O
+s	O
+the	O
+respective	O
+route	O
+@codeSnippetRemoved	O
+
+Here	O
+'	O
+s	O
+the	O
+controller	O
+:	O
+@codeSnippetRemoved	O
+
+In	O
+the	O
+view	O
+dashboard.showcategories	B-API
+,	O
+i	O
+have	O
+used	O
+foreach	O
+to	O
+loop	O
+through	O
+the	O
+$categories	O
+variable	O
+and	O
+have	O
+then	O
+used	O
+it	O
+.	O
+
+Now	O
+i	O
+was	O
+trying	O
+to	O
+test	O
+this	O
+controller	O
+.	O
+
+@codeSnippetRemoved	O
+
+But	O
+it	O
+'	O
+s	O
+showing	O
+an	O
+error	O
+@codeSnippetRemoved	O
+
+However	O
+,	O
+if	O
+i	O
+delete	O
+following	O
+code	O
+from	O
+the	O
+test	O
+,	O
+it	O
+passes	O
+.	O
+
+@codeSnippetRemoved	O
+
+How	O
+to	O
+make	O
+this	O
+test	O
+pass	O
+with	O
+mockery	O
+?	O
+
+In	O
+case	O
+you	O
+need	O
+Category	O
+model	O
+@codeSnippetRemoved	O
+
+your	O
+mock	O
+does	O
+not	O
+return	O
+anything	O
+,	O
+and	O
+your	O
+foreach	O
+loop	O
+is	O
+expecting	O
+an	O
+array	O
+to	O
+loop	O
+over	O
+.	O
+
+try	O
+setting	O
+a	O
+return	O
+value	O
+of	O
+an	O
+empty	O
+array	O
+@codeSnippetRemoved	O

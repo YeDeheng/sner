@@ -1,0 +1,24 @@
+Issue with substr based on variable MYSQL IPN
+Hello I'm having trouble trying to figure out why I'm getting no addition to my username column within my table. I'm trying to use the payer email within my IPN to introduce a username for login. Everything is being posted except for the username. Is there something I'm doing wrong within the placement of the username variable edits? Is there something I'm missing that is preventing this from being posted? @codeSnippetRemoved
+[28-Jul-2013 16:05:40 America/Denver] PHP Parse error:  syntax error,  unexpected T_ELSE in  /home/lear/public_html/storescripts/my_ipn.php on line 74      [28-Jul-2013 21:06:37 America/Denver] PHP Warning:  mysqli_query()  expects parameter 1 to be mysqli, null given in  /home/lear/public_html/storescripts/my_ipn.php on line 100      [28-Jul-2013 21:06:37 America/Denver] PHP Warning:  mysqli_num_rows()  expects parameter 1 to be mysqli_result, null given in  /home/lear/public_html/storescripts/my_ipn.php on line 102  
+Edit:  
+I'vej ust updated the script . The error I'm receiving is as follows: 
+[28-Jul-2013 22:18:33 America/Denver] PHP Warning:   mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null  given in /home/learnsit/public_html/storescripts/my_ipn.php on line  108  
+Line 108 being  
+while ($name_arr = mysqli_fetch_assoc($result)) {  
+I haven't played around with this too much, but the piece of code which stands out for me as chiefly suspect is: @codeSnippetRemoved
+It should probably look more like @codeSnippetRemoved
+FYI:- PHP can handle single quotes inside of double quotes without needing a backslash () escape.- You don't need a semicolon (;) escape for a MySQL quote- A great way to check to see if the issue is in fact an MySQL query for your future debugging is to add or die(mysql_error($db)) to the end of your query function, like so: @codeSnippetRemoved
+Hope this helps! 
+Update: 
+I've added this to the result area to try and debug, but I'm not receiving anything from it. Would this come up in your standard error page?  
+Try @codeSnippetRemoved
+After looking even further at your code it looks like you shouldn't see anything for  username ='{$username}', because $username is being based off of $payer_email, which has not been declared yet. You'll need to either put those username checks into a function and call it after you've assigned variables the $_POST index, or move the $_POST["payer_email"] to before you first declare the $username variable, as well as getting rid of the $_POST["username"]... Although I haven't seen your form it sounds like you're creating the username through the payer email. Does this help more? 
+Update 2: 
+Your error with mysql_fetch_assoc is because you haven't declared $result. I believe you may be trying to refer to $user_query, in which case your line 108 should be: @codeSnippetRemoved
+Update 3: @codeSnippetRemoved
+First of all I notice you're using username ='{$username}%'. I have a handful of points to make and I hope you listen to them. I'm giving you fish here but I'd like to teach you as well. 
+If you want to do a comparison, it's going to have to be username LIKE '{$username}%'  I wasn't clear about what you were trying to do... If you want a unique identifier, I'd actually do something more like username='{$username}', and then, if it returns a single result, add a unique identifier to the end.   
+You see, when you do something with LIKE {$username}%, you're going to end up getting two rows if someone is trying to sign up as awesome_bob, when someone else already has awesome_bobby. You're going to want something more random, I would think, or to create a more complicated function. Or, just keep username as e-mail, which keeps it unique and is a very simple fix. 
+I'm going to leave this post at that because I think it has answered your initial question and then some. If you have further questions, I think people would be happy to look at them in a separate topic. 
+Have I answered your question enough? If so I would appreciate a +1 for my effort :) 

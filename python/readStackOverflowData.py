@@ -10,16 +10,14 @@ from random import randint
 import codecs
 codecs.register_error('replace_against_space', lambda e: (u' ',e.start + 1))
 #print unicode('ABC\x97ab\x99c上午', 'utf-8', errors='replace_against_space')
-pl = ['java', 'javascript']
-# ['java', 
-# 	   'javascript', 
-# 	   'c#', 
-# 	   'php', 
-# 	   'android', 
-# 	   'jquery', 
-# 	   'python', 
-# 	   'html', 
-# 	   'c++']
+pl = ['java', 'javascript', 'c#', 
+	   'php', 
+	   'android', 
+	   'jquery', 
+	   'python', 
+	   'html', 
+	   'c++', 
+	   'ios']
 
 def file_len(fname):
     with open(fname) as f:
@@ -59,7 +57,7 @@ class MLStripper(HTMLParser):
             entity = m.group()
             # semicolon is consumed, other chars are not.
             if entity is not None:
-            	print "entity is none"
+            	#print "entity is none"
             	if entity[-1] != ';':
                 	entity = entity[:-1]
             	self.fed.append(entity)
@@ -74,9 +72,9 @@ class MLStripper(HTMLParser):
 
 def strip_tags(html):
     s = MLStripper()
-    html = re.sub(r'<pre>.*?</pre>', ' ', html)
+    html = re.sub(r'&#xA;&#xA;<pre>.*?</pre>', '@codeSnippetRemoved', html)
     html = re.sub(r'(`(?=\S)|(?<=\S)`)', '', html)
-    html = re.sub(r'(&#xA;)+','\n', html)
+    html = re.sub(r'(&#xA;&#xA;)+','\n', html)
     s.feed(html)
     return s.get_data()
 mycompile = lambda pat:  re.compile(pat,  re.UNICODE)
@@ -98,45 +96,68 @@ class DataReader:
 			fname = './postid/' + name + 'postid.txt'
 			flen = file_len(fname)
 
-			for i in range(5):
-				f=open(fname, 'r')
-				lines=f.readlines()
+			if name in ['java', 'javascript']:
+				rand_max = 150000/2
+			elif name == 'c#':
+				rand_max = 120000/2
+			elif name in ['php', 'android', 'jquery']:
+				rand_max = 100000/2
+			elif name == 'python':
+				rand_max = 80000/2
+			elif name == 'html':
+				rand_max = 70000/2
+			elif name == 'c++':
+				rand_max = 60000/2
+			elif name == 'ios':
+				rand_max = 50000/2
+			print rand_max
+			index_list = []
+			for i in range(rand_max):
+				f = open(fname, 'r')
+				lines = f.readlines()
 				index = randint(0, flen)
-				rand = lines[index] 
-				f.close()
+				#print index_list
+				if index not in index_list:
+					try: 
+						index_list.append(index)
+						rand = lines[index] 
+						print rand
+						f.close()
 
-				row_count = self.cur.execute("SELECT Id FROM posts where Id=%s" % (rand))
-				if row_count > 0: 
-					postid = self.cur.fetchall()[0][0]
+						row_count = self.cur.execute("SELECT Id FROM posts where Id=%s" % (rand))
+						if row_count > 0: 
+							postid = self.cur.fetchall()[0][0]
 
-					self.cur.execute("SELECT Title FROM posts where Id=%s" % (postid))
-					title = self.cur.fetchall()
+							self.cur.execute("SELECT Title FROM posts where Id=%s" % (postid))
+							title = self.cur.fetchall()
 
-					self.cur.execute("SELECT Body FROM posts where Id=%s" %(postid))
-					body = self.cur.fetchall()
-					if title[0][0] is None:
-						all = body 
-					else: 
-						all = title + body  	
-					
-					self.cur.execute("SELECT Id FROM posts where ParentId=%s" %(postid))
-					answers = self.cur.fetchall()
-					for row in answers:
-						answer_id = row[0]
-						self.cur.execute("SELECT Body FROM posts where Id=%s" %(answer_id))
-						ans_body = self.cur.fetchall()
-						all += ans_body
+							self.cur.execute("SELECT Body FROM posts where Id=%s" %(postid))
+							body = self.cur.fetchall()
+							if title[0][0] is None:
+								all = body 
+							else: 
+								all = title + body  	
+							
+							self.cur.execute("SELECT Id FROM posts where ParentId=%s" %(postid))
+							answers = self.cur.fetchall()
+							for row in answers:
+								answer_id = row[0]
+								self.cur.execute("SELECT Body FROM posts where Id=%s" %(answer_id))
+								ans_body = self.cur.fetchall()
+								all += ans_body
 
-					
-					f = open('./rawdata/' + str(annotator) + '/' + str(name) + str(postid)+'.txt', 'w' )
-					for row in all: 
-						content = strip_tags(row[0])+'\n'
-						content = re.sub(r'^ +', '', content)
-						content = re.sub(r'\n +', '\n', content)
-						content = re.sub(r'[\n]+', '\n',content)
+							
+							f = open('./' + str(annotator) + '/' + str(name) + str(postid)+'.txt', 'w' )
+							for row in all: 
+								content = ''.join( my_encoder(strip_tags(row[0])) )
+								content = re.sub(r'^ +', '', content)
+								content = re.sub(r'\n +', '\n', content)
+								content = re.sub(r'[\n]+', '\n',content)
 
-						f.write(content)
-					f.close()
+								f.write(content +'\n')
+							f.close()
+					except:
+						pass
 
 	def read_post(self, post_id):
 		self.cur.execute("SELECT Title FROM posts where Id=%s" % (post_id))
@@ -178,7 +199,7 @@ class DataReader:
 
 if __name__ ==  '__main__':
 	r = DataReader()
-	annotators = ['zhenchang']
+	annotators = ['browncluster']
 	for anno in annotators: 
 		r.generate_postid(anno)
-	#r.read_post('123')
+	#r.read_post('1661921')

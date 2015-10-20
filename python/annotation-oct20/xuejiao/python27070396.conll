@@ -1,0 +1,150 @@
+Dividing	O
+a	O
+list	O
+into	O
+two	O
+lists	O
+
+Below	O
+is	O
+my	O
+current	O
+training_list	O
+;	O
+@codeSnippetRemoved	O
+
+I	O
+need	O
+to	O
+divide	O
+the	O
+list	O
+into	O
+two	O
+lists	O
+based	O
+on	O
+the	O
+last	O
+attribute	O
+'	O
+=50K	O
+'	O
+or	O
+'	O
+>	O
+50K	O
+'	O
+I	O
+want	O
+to	O
+exclude	O
+the	O
+last	O
+attribute	O
+as	O
+well	O
+from	O
+both	O
+lists	O
+.	O
+
+I	O
+tried	O
+the	O
+below	O
+code	O
+and	O
+i'm	O
+getting	O
+the	O
+following	O
+:	O
+@codeSnippetRemoved	O
+
+Code	O
+is	O
+as	O
+follows	O
+;	O
+@codeSnippetRemoved	O
+
+Any	O
+help	O
+greatly	O
+appreciated	O
+.	O
+
+You're	O
+using	O
+lstrip()	B-API
+.	O
+
+lstrip()	B-API
+will	O
+remove	O
+leading	O
+whitespace	O
+.	O
+
+The	O
+string	O
+"	O
+=50K	O
+"	O
+has	O
+leading	O
+whitespace	O
+.	O
+
+So	O
+we	O
+might	O
+try	O
+to	O
+compare	O
+against	O
+a	O
+string	O
+that	O
+has	O
+no	O
+leading	O
+whitespace	O
+:	O
+@codeSnippetRemoved	O
+
+Or	O
+perhaps	O
+:	O
+@codeSnippetRemoved	O
+
+My	O
+solution	O
+is	O
+:	O
+@codeSnippetRemoved	O
+
+And	O
+the	O
+output	O
+is	O
+:	O
+@codeSnippetRemoved	O
+
+if	O
+you	O
+want	O
+optimization	O
+:	O
+one	O
+for	O
+can	O
+do	O
+that	O
+@codeSnippetRemoved	O
+
+using	O
+itertools.groupby	B-API
+:	O
+@codeSnippetRemoved	O

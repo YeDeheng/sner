@@ -1,0 +1,202 @@
+how	O
+embed	O
+pdf	O
+document	O
+in	O
+html	B-PL
+with	O
+out	O
+copy	O
+and	O
+print	O
+
+I	O
+am	O
+beginner	O
+of	O
+web	O
+programming	O
+,	O
+my	O
+question	O
+is	O
+how	O
+to	O
+embed	O
+pdf	O
+document	O
+in	O
+html	B-PL
+one	O
+division	O
+tag	O
+,	O
+and	O
+that	O
+pdf	O
+we	O
+can	O
+avoid	O
+copy	O
+,	O
+print	O
+and	O
+download	O
+options	O
+.	O
+
+this	O
+following	O
+is	O
+my	O
+code	O
+.	O
+
+@codeSnippetRemoved	O
+
+Some	O
+option	O
+may	O
+be	O
+help	O
+you	O
+:	O
+
+First	O
+:	O
+
+If	O
+you	O
+do	O
+stick	O
+with	O
+the	O
+pdf	O
+embedded	O
+option	O
+,	O
+Pdf	O
+files	O
+don't	O
+look	O
+so	O
+great	O
+on	O
+a	O
+webpage	O
+.	O
+
+Anyway	O
+,	O
+be	O
+sure	O
+to	O
+be	O
+strict	O
+about	O
+the	O
+coding	O
+.	O
+
+Hence	O
+:	O
+@codeSnippetRemoved	O
+
+Should	O
+be	O
+@codeSnippetRemoved	O
+
+Second	O
+:	O
+
+You	O
+can	O
+also	O
+use	O
+Google	B-Orgs
+PDF	O
+viewer	O
+for	O
+this	O
+purpose	O
+.	O
+
+You	O
+need	O
+to	O
+upload	O
+your	O
+PDF	O
+somewhere	O
+before	O
+and	O
+just	O
+use	O
+its	O
+URL	O
+:	O
+@codeSnippetRemoved	O
+
+Third	O
+:	O
+
+Best	O
+approach	O
+is	O
+to	O
+use	O
+the	O
+PDF.JS	B-API
+library	O
+.	O
+
+It	O
+'	O
+s	O
+a	O
+pure	O
+HTML5	B-PL
+/	O
+JavaScript	B-PL
+renderer	O
+for	O
+PDF	O
+documents	O
+without	O
+any	O
+third-party	O
+plugins	O
+.	O
+
+Online	O
+demo	O
+:	O
+http://mozilla.github.com/pdf.js/web/viewer.html	O
+
+GitHub	B-Orgs
+:	O
+https://github.com/mozilla/pdf.js	O
+
+Links	O
+:	O
+
+Recommended	O
+way	O
+to	O
+embed	O
+PDF	O
+in	O
+HTML	B-PL
+?	O
+
+How	O
+to	O
+embed	O
+a	O
+PDF	O
+file	O
+in	O
+a	O
+web	O
+site	O
+?	O

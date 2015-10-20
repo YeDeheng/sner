@@ -1,0 +1,68 @@
+Auto	O
+complete	O
+based	O
+on	O
+value	O
+of	O
+two	O
+input	O
+textboxes	O
+
+What	O
+I'm	O
+trying	O
+is	O
+view	O
+only	O
+the	O
+records	O
+in	O
+autocomplete	O
+depending	O
+on	O
+the	O
+selected	O
+value	O
+of	O
+dropdownlist	O
+.	O
+
+I	O
+have	O
+here	O
+two	O
+textboxes	O
+,	O
+#maincopy	O
+is	O
+copy	O
+the	O
+selected	O
+value	O
+of	O
+dropdownlist	O
+and	O
+the	O
+other	O
+is	O
+textbox	O
+for	O
+autocomplete	O
+.	O
+
+But	O
+this	O
+isn't	O
+working	O
+.	O
+
+Any	O
+help	O
+will	O
+appreciate	O
+.	O
+
+@codeSnippetRemoved	O
+
+autocomplete.php	B-API
+@codeSnippetRemoved	O

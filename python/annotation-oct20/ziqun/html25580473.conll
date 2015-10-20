@@ -1,0 +1,152 @@
+How	O
+to	O
+get	O
+the	O
+echoed	O
+element	O
+in	O
+Jquery	B-Fram
+?	O
+
+I've	O
+a	O
+php	B-PL
+file	O
+that	O
+echoes	O
+an	O
+img	O
+element	O
+from	O
+a	O
+PHP	B-PL
+file	O
+with	O
+id=	O
+"	O
+uploadedPhoto	O
+"	O
+.After	O
+uploading	O
+it	O
+i	O
+have	O
+a	O
+Jquery	B-Fram
+script	O
+that	O
+changes	O
+the	O
+size	O
+of	O
+the	O
+image	O
+on	O
+button	O
+click	O
+.	O
+
+Before	O
+this	O
+it	O
+was	O
+working	O
+when	O
+i	O
+was	O
+using	O
+img	O
+as	O
+background	O
+of	O
+a	O
+div	O
+however	O
+now	O
+it	O
+isn't	O
+working	O
+.	O
+
+HTML	B-PL
+Code	O
+.	O
+
+@codeSnippetRemoved	O
+
+img	O
+is	O
+uploaded	O
+in	O
+between	O
+id=	O
+"	O
+imageDiv	O
+"	O
+.	O
+
+PHP	B-PL
+Code	O
+.	O
+
+@codeSnippetRemoved	O
+
+JScript	O
+.	O
+
+@codeSnippetRemoved	O
+
+Can	O
+you	O
+please	O
+find	O
+the	O
+problem	O
+?	O
+
+There	O
+is	O
+issue	O
+with	O
+DOM	O
+structure	O
+.	O
+
+I	O
+guess	O
+your	O
+image	O
+automatically	O
+uses	O
+the	O
+size	O
+of	O
+div	O
+tag	O
+
+you	O
+use	O
+to	O
+expand	O
+or	O
+reduce	O
+the	O
+size	O
+.	O
+
+So	O
+i	O
+recommend	O
+you	O
+to	O
+try	O
+,	O
+fix	O
+the	O
+size	O
+of	O
+this	O
+div	O
+.	O
+
+Atul	O

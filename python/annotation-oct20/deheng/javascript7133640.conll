@@ -1,0 +1,151 @@
+JavaScript	B-PL
+not	O
+working	O
+in	O
+Internet	O
+Explorer	O
+
+I	O
+am	O
+having	O
+this	O
+dynamic	O
+dropdown	O
+code	O
+.	O
+
+Here	O
+i	O
+want	O
+to	O
+load	O
+the	O
+second	O
+dropdown	O
+options	O
+dynamically	O
+by	O
+changing	O
+the	O
+first	O
+dropdown	O
+options	O
+.	O
+
+This	O
+works	O
+fine	O
+in	O
+all	O
+other	O
+browsers	O
+except	O
+IE	O
+.	O
+
+I	O
+don't	O
+know	O
+whats	O
+the	O
+reason	O
+as	O
+i'm	O
+a	O
+starter	O
+.	O
+could	O
+any	O
+one	O
+explain	O
+the	O
+reason	O
+.	O
+
+HTML	B-PL
+CODE	O
+:	O
+@codeSnippetRemoved	O
+
+JS	O
+CODE	O
+@codeSnippetRemoved	O
+
+It	O
+appears	O
+that	O
+non-IE	O
+browsers	O
+(	O
+e.g.	O
+Chrome	B-Fram
+)	O
+will	O
+set	O
+the	O
+value	O
+of	O
+an	O
+option	O
+tag	O
+implicitly	O
+using	O
+it	O
+'	O
+s	O
+inner-text	O
+,	O
+but	O
+IE	O
+does	O
+not	O
+do	O
+this	O
+.	O
+
+You	O
+have	O
+two	O
+options	O
+:	O
+
+1	O
+)	O
+Set	O
+the	O
+option	O
+value	O
+explicitly	O
+@codeSnippetRemoved	O
+
+Or	O
+,	O
+
+2	O
+)	O
+Switch	O
+on	O
+text	O
+@codeSnippetRemoved	O
+
+(	O
+Tested	O
+in	O
+Chrome	B-Fram
+and	O
+IE9	O
+.	O
+)	O
+
+Try	O
+the	O
+alternative	O
+using	O
+older	O
+method	O
+to	O
+dynamically	O
+add	O
+option	O
+
+@codeSnippetRemoved	O

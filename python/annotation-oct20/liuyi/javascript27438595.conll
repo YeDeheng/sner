@@ -1,0 +1,261 @@
+Change	O
+Row	O
+Color	O
+in	O
+PHP	B-PL
+data	O
+table	O
+by	O
+Date	O
+
+Today	O
+:	O
+?	O
+
+php	B-PL
+echo	O
+date	O
+(	O
+"	O
+m	O
+/	O
+d	O
+/	O
+Y	O
+")	O
+;	O
+?	O
+
+ph	O
+ISSUED	O
+BOOKS	O
+|	O
+DUE	O
+BOOKS	O
+/	O
+ph	O
+table	O
+border=	O
+"	O
+1	O
+"	O
+cellpadding=	O
+"	O
+3	O
+"	O
+cellspacing=	O
+"	O
+0	O
+"	O
+id=	O
+"	O
+tblissued	O
+"	O
+tr	O
+bgcolor=	O
+"	O
+#CCCCCC	O
+"	O
+th	O
+height=	O
+"	O
+39	O
+"	O
+id	O
+/	O
+th	O
+th	O
+Officer	O
+/	O
+th	O
+th	O
+Member_ID	O
+/	O
+th	O
+th	O
+Book_ID	O
+/	O
+th	O
+th	O
+Issued_date	O
+/	O
+th	O
+th	O
+Due_date	O
+/	O
+th	O
+th	O
+Remarks	O
+/	O
+th	O
+/	O
+tr	O
+?	O
+
+php	B-PL
+do	O
+{	O
+?	O
+
+tr	O
+bgcolor=	O
+"	O
+#FFFFFF	O
+"	O
+td	O
+height=	O
+"	O
+33	O
+"	O
+?	O
+
+php	B-PL
+echo	O
+$row_rsissuedbooks['id	O
+'	O
+];	O
+?	O
+
+/	O
+td	O
+td	O
+?	O
+
+php	B-PL
+echo	O
+$row_rsissuedbooks['Officer	O
+'	O
+];	O
+?	O
+
+/	O
+td	O
+td	O
+?	O
+
+php	B-PL
+echo	O
+$row_rsissuedbooks['Member_ID	O
+'	O
+];	O
+?	O
+
+/	O
+td	O
+td	O
+?	O
+
+php	B-PL
+echo	O
+$row_rsissuedbooks['Book_ID	O
+'	O
+];	O
+?	O
+
+/	O
+td	O
+td	O
+?	O
+
+php	B-PL
+echo	O
+$row_rsissuedbooks['Issued_date	O
+'	O
+];	O
+?	O
+
+/	O
+td	O
+td	O
+?	O
+
+php	B-PL
+echo	O
+$row_rsissuedbooks['Due_date	O
+'	O
+];	O
+?	O
+
+/	O
+td	O
+td	O
+?	O
+
+php	B-PL
+echo	O
+$row_rsissuedbooks['Remarks	O
+'	O
+];	O
+?	O
+
+/	O
+td	O
+/	O
+tr	O
+?	O
+
+php	B-PL
+}	O
+while	O
+(	O
+$row_rsissuedbooks	O
+=	O
+mysql_fetch_assoc	O
+(	O
+$rsissuedbooks	O
+));	O
+?	O
+
+/	O
+table	O
+
+i	O
+want	O
+to	O
+color	O
+the	O
+rows	O
+Due_date	O
+if	O
+due_date	O
+is	O
+greater	O
+than	O
+today	O
+(	O
+php	B-PL
+1st	O
+line	O
+in	O
+code	O
+)	O
+im	O
+not	O
+good	O
+in	O
+english	O
+..	O
+sorry	O
+for	O
+that	O
+,	O
+i	O
+hope	O
+you	O
+will	O
+understand	O
+..	O
+
+Something	O
+like	O
+this	O
+will	O
+work	O
+.	O
+
+@codeSnippetRemoved	O
+
+Try	O
+this	O
+:	O
+@codeSnippetRemoved	O

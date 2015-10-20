@@ -1,0 +1,182 @@
+jQuery	B-Fram
+tabs	O
+are	O
+not	O
+clicking	O
+when	O
+clicked	O
+on	O
+
+I	O
+have	O
+jQuery	B-Fram
+tabs	O
+using	O
+ui	O
+1.10.0	O
+.	O
+
+My	O
+first	O
+tab	O
+is	O
+activated	O
+by	O
+default	O
+;	O
+however	O
+,	O
+I	O
+can	O
+not	O
+get	O
+the	O
+other	O
+5	O
+tabs	O
+to	O
+work	O
+.	O
+
+When	O
+I	O
+click	O
+on	O
+them	O
+,	O
+they	O
+do	O
+nothing	O
+and	O
+the	O
+content	O
+that	O
+coordinates	O
+with	O
+tabs	O
+doesn't	O
+show	O
+.	O
+
+Here	O
+'	O
+s	O
+the	O
+basic	O
+HTML	B-PL
+code	O
+:	O
+@codeSnippetRemoved	O
+
+Here	O
+'	O
+s	O
+the	O
+Javascript	B-PL
+:	O
+@codeSnippetRemoved	O
+
+There	O
+was	O
+one	O
+typo	O
+mistake	O
+in	O
+addclass	O
+at	O
+following	O
+line	O
+.	O
+
+You	O
+have	O
+specified	O
+addclass	O
+instead	O
+of	O
+addClass	O
+.	O
+
+@codeSnippetRemoved	O
+
+Also	O
+following	O
+is	O
+updated	O
+js	O
+.	O
+
+@codeSnippetRemoved	O
+
+Here	O
+'	O
+s	O
+Demo	O
+Fiddle	O
+
+Here	O
+'	O
+s	O
+corrected	O
+HTML	B-PL
+if	O
+your	O
+are	O
+interested	O
+...	O
+
+@codeSnippetRemoved	O
+
+Have	O
+some	O
+errors	O
+in	O
+HTML	B-PL
+and	O
+JS	O
+.	O
+
+Try	O
+this	O
+
+HTML	B-PL
+:	O
+you	O
+have	O
+to	O
+put	O
+the	O
+correct	O
+'	O
+id	O
+'	O
+of	O
+div	O
+in	O
+href	O
+attribute	O
+of	O
+anchor	O
+@codeSnippetRemoved	O
+
+JS	O
+:	O
+have	O
+some	O
+syntax	O
+errors	O
+and	O
+you	O
+have	O
+to	O
+remove	O
+more	O
+classes	O
+and	O
+add	O
+more	O
+classes	O
+also	O
+.	O
+
+@codeSnippetRemoved	O

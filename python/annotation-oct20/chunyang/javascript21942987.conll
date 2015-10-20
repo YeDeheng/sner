@@ -1,0 +1,93 @@
+How	O
+to	O
+get	O
+listview	O
+selected	O
+id	O
+and	O
+a	O
+href	O
+text	O
+?	O
+
+I	O
+have	O
+a	O
+dynamic	O
+listview	O
+which	O
+the	O
+id	O
+and	O
+text	O
+are	O
+dynamic	O
+from	O
+server	O
+.	O
+
+For	O
+simplicity	O
+,	O
+let	O
+'	O
+s	O
+say	O
+something	O
+like	O
+this	O
+:	O
+@codeSnippetRemoved	O
+
+I	O
+need	O
+the	O
+get	O
+the	O
+list	O
+id	O
+and	O
+product	O
+name	O
+.	O
+
+(	O
+I	O
+don't	O
+know	O
+the	O
+id	O
+value	O
+since	O
+it'll	O
+be	O
+dynamic	O
+)	O
+
+Any	O
+suggestions	O
+?	O
+
+@codeSnippetRemoved	O
+
+Use	O
+.on()	O
+@codeSnippetRemoved	O
+
+Fiddle	O
+Demo	O
+@codeSnippetRemoved	O
+
+Put	O
+this	O
+code	O
+in	O
+head	O
+or	O
+at	O
+the	O
+end	O
+of	O
+the	O
+page	O
+@codeSnippetRemoved	O

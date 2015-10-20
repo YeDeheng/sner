@@ -1,0 +1,9 @@
+jquery case statement not working
+$ ( document ) .ready ( function ( ) { $ ( " #img -1 ") .click ( function ( ) {
+switch ( true ) { case $ ( " #div2 ") .load ( " borrower-information.html ") : alert ( hello );
+break ; case ( $ ( " #div3 ") .load ( " demo_test.html #p3 ")) : break ;
+case ( $ ( " #div4 ") .load ( " demo_test.html #p4 ")) : alert('hello ') ; } } ); } );
+guys i have make 3 div and there was one button with the id name is id= img-1 after clicking the page load from other source its ok but my query is that alert is not working why ?
+switch ( true ) means " choose the first case that evaluates to true using strict equality ( == = )" . None of your cases evaluates to true using strict equality . They all result in jqXHR objects , which while truthy , are not == = true . So none of them matches .
+This works , for instance : @codeSnippetRemoved
+... in that it makes a == 42 is true appear in the console , because the expression a == 42 is true and thus it matches switch ( true ) . But it ' s a very , very unusual use of switch . There ' s probably a better way to do whatever it is you want to do .

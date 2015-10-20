@@ -5,9 +5,9 @@ import texttoconll
 from os.path import basename
 import subprocess
 
-annotators = [ 'zhenchang']
+annotators = ['cheeyong', 'ziqun', 'xuejiao', 'lijing', 'chunyang', 'gaosa', 'deheng', 'liuyi']
 for anno in annotators:
-	rawdatadir = './rawdata/' + anno + '/'
+	rawdatadir = './annotation-oct20/' + anno + '/'
 	for file in os.listdir(rawdatadir):
 	    if file.endswith('.txt'):
 			filebase = '.'.join(file.split('.')[:-1]) if '.' in file else file

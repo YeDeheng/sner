@@ -1,0 +1,21 @@
+hide and show Div on click
+I have three div's, when user clicks on "1", div1 with id divOne12 should be displayed, when user clicks on 2 div2 with id divTwo12 should be displayed and div1 should be hidden, when user clicks 3 div3 with id divThree12 should be displayed and previous shown div should be hidden.Again if user clicks Div2 previous shown div should be hidden and div2 with id divTwo12 should be displayed.  
+Please find the fiddle : http://jsfiddle.net/0p7djjnc/7/  .Please suggest javascript changes.Thanks. 
+HTML code: @codeSnippetRemoved
+Css code to hide div's: @codeSnippetRemoved
+--EDIT--DIV id are dynamic in my application, how can i retrieve dynamic div id in javascript function, please suggest. 
+$(document).ready(function(){
+$('#divOne12').hide();  $('#divTwo12').hide();  $('#divThree12').hide();
+$('#div1').click(function(){       $('#divOne12').show();       $('#divTwo12').hide();       $('#divThree12').hide();   });
+$('#div2').click(function(){       $('#divOne12').hide();       $('#divTwo12').show();       $('#divThree12').hide();   });
+$('#div3').click(function(){       $('#divOne12').hide();       $('#divTwo12').hide();       $('#divThree12').show();   });});  
+See Updated  Fiddle  here 
+Works for dynamic divs  
+HTML @codeSnippetRemoved
+JQUERY @codeSnippetRemoved
+Simply replace show / hide with what you want to show or hide when the img is clicked. 
+Maybe you could use some  data  attribute: @codeSnippetRemoved
+UpdatedFiddle  
+HTML:   @codeSnippetRemoved
+JQUERY: @codeSnippetRemoved
+CSS: @codeSnippetRemoved

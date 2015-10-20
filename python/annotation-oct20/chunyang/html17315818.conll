@@ -1,0 +1,206 @@
+jQuery	B-Fram
+slide	O
+toggle	O
+checkbox	O
+cant	O
+change	O
+background	O
+colour	O
+
+I	O
+am	O
+trying	O
+to	O
+change	O
+the	O
+background	O
+colour	O
+of	O
+the	O
+toggle	O
+to	O
+green	O
+when	O
+it	O
+is	O
+turned	O
+on	O
+.	O
+
+I	O
+think	O
+I	O
+have	O
+done	O
+everything	O
+correctly	O
+,	O
+but	O
+the	O
+background	O
+just	O
+stays	O
+grey	O
+.	O
+
+What	O
+am	O
+I	O
+doing	O
+wrong	O
+?	O
+
+Here	O
+is	O
+my	O
+fiddle	O
+@codeSnippetRemoved	O
+
+Thanks	O
+in	O
+advance	O
+.	O
+
+Add	O
+the	O
+style	O
+@codeSnippetRemoved	O
+
+Demo	O
+:	O
+Fiddle	O
+
+If	O
+you	O
+change	O
+the	O
+following	O
+,	O
+its	O
+working	O
+:	O
+@codeSnippetRemoved	O
+
+So	O
+basically	O
+just	O
+background	O
+:	O
+instead	O
+of	O
+background-color	O
+:	O
+
+Updated	O
+fiddle	O
+:	O
+http://jsfiddle.net/84Qkz/2	O
+
+you	O
+need	O
+to	O
+add	O
+this	O
+to	O
+your	O
+css	B-PL
+.	O
+
+This	O
+will	O
+prevent	O
+the	O
+override	O
+you	O
+are	O
+currently	O
+getting	O
+@codeSnippetRemoved	O
+
+This	O
+CSS	B-PL
+will	O
+solve	O
+your	O
+problem	O
+@codeSnippetRemoved	O
+
+You	O
+are	O
+defining	O
+the	O
+colour	O
+of	O
+.slider	O
+-button	O
+as	O
+white	O
+.	O
+
+.slider	O
+-button	O
+is	O
+nested	O
+inside	O
+.slider	O
+-frame	O
+.	O
+slider-frame	O
+is	O
+given	O
+the	O
+additional	O
+CSS	B-PL
+rule	O
+that	O
+makes	O
+it	O
+green	O
+The	O
+green	O
+isn't	O
+showing	O
+because	O
+the	O
+background	O
+colour	O
+of	O
+the	O
+element	O
+within	O
+it	O
+is	O
+still	O
+white	O
+.	O
+
+Solution	O
+...	O
+
+Change	O
+@codeSnippetRemoved	O
+
+to	O
+...	O
+
+@codeSnippetRemoved	O
+
+So	O
+you	O
+are	O
+now	O
+changing	O
+the	O
+colour	O
+of	O
+.slider	O
+-button	O
+,	O
+not	O
+.slider	O
+-frame	O
+
+Fiddle	O
+me	O
+this	O
+.	O

@@ -1,0 +1,152 @@
+How	O
+to	O
+make	O
+my	O
+button	O
+into	O
+an	O
+Image	O
+button	O
+?	O
+
+I	O
+have	O
+a	O
+default	O
+button	O
+.	O
+
+So	O
+now	O
+how	O
+do	O
+I	O
+make	O
+it	O
+a	O
+button	O
+image	O
+?	O
+
+So	O
+when	O
+you	O
+click	O
+on	O
+the	O
+button	O
+the	O
+normal	O
+thing	O
+happens	O
+.	O
+
+What	O
+I	O
+just	O
+want	O
+is	O
+an	O
+Image	O
+on	O
+the	O
+button	O
+.	O
+
+Thanks	O
+.	O
+
+Try	O
+putting	O
+an	O
+image	O
+instead	O
+of	O
+a	O
+button	O
+and	O
+handle	O
+its	O
+onclick	O
+event	O
+.	O
+
+You	O
+can	O
+use	O
+an	O
+image	O
+as	O
+a	O
+button	O
+by	O
+specifying	O
+the	O
+src	O
+property	O
+:	O
+@codeSnippetRemoved	O
+
+you	O
+can	O
+use	O
+javascript	B-PL
+with	O
+some	O
+logic	O
+.	O
+
+create	O
+one	O
+button	O
+with	O
+style	O
+attribute	O
+style=	O
+"	O
+display	O
+:b	O
+lock	O
+"	O
+also	O
+create	O
+required	O
+image	O
+just	O
+next	O
+to	O
+button	O
+with	O
+style=	O
+"	O
+display	O
+:	O
+none	O
+"	O
+
+onclick	O
+of	O
+button	O
+call	O
+javascript	B-PL
+function	O
+.	O
+
+@codeSnippetRemoved	O
+
+This	O
+should	O
+work	O
+
+you	O
+could	O
+try	O
+:	O
+@codeSnippetRemoved	O
+
+You	O
+may	O
+try	O
+this	O
+:	O
+@codeSnippetRemoved	O
