@@ -1,0 +1,11 @@
+Date convertion between JS and PHP
+I seem not to understand the logic between date conversions client -> server.
+I can't find a good way to handle this ...
+Background : my app will run on customers ' servers, which I (in general case) will not be able to configure.
+So I need to find out the PHP time zone offset (it ' s mostly UTC, but I assume it can be set to any) and the browser ' s time zone and save timestamps in the databank in the PHP ' s time zone.
+Any help would be appreciated.
+I have written this :
+but it doesn't work as excepted.
+For example, if I call Time.clientToServer (new Date()), the resulting timestamp is 2 hours earlier than my local time, but it should be only 1 (my timezone is UTC-1, my PHP is set to UTC).
+Still, I guess my approach is NOT the best way to do it.
+Waiting for tips ...

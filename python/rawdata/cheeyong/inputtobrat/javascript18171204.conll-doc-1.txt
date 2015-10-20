@@ -1,0 +1,18 @@
+What is the right jQuery (or javaScript) code to pause a basic slider using a simple ' setTimeOut ' funcitonality?
+I have built a basic content slider, based upon a tutorial I got from the web.
+In the example, the slides scroll on a timed interval using a setTimeout parameter, but also has a navigation functionality (of course) which allows you to go to selected slides directly.
+The slides scroll without pausing the Timeout when a slide is selected and obviously when the mouse hovers.
+The key javaScript / jQuery code which controls the scrolling is essentially (7 total slides ):
+(( Other javaScript code omitted because I was fairly certain that the key is this function, but I can certainly update my question with the precursory code if needed for clarity. ))
+The end game is a) to have the Timeout reset whenever a user selects a new slide and b) to have the Timeout pause when a mouse is rolled over the content in the slide.
+I presume that the code ought to be inserted in conjunction with the setTimeout, with some if statements or something.
+Can someone help me devise this solution for endgame a) and b)?
+Live prototype and NOT a shameless plug : HERE
+Thanks in advance for tips!
+add a check for paused and a variable to hold the timer reference
+Then in the choose slide click
+Then in mouseover
+and mouseout
+Alternatively, use a shorter timeout which does almost nothing most times it ' s invoked
+Then in the choose slide click
+Same as before for mouseover and mouseout

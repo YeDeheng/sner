@@ -1,0 +1,8 @@
+T1	PL 9 19	javaScript
+T2	MISC 277 284	Firefox
+T3	MISC 379 385	Chrome
+T4	MISC 455 461	Chrome
+T5	API 655 666	window.name
+T6	API 668 679	window.name
+T7	MISC 696 702	Chrome
+T8	API 1089 1100	window.name

@@ -1,0 +1,19 @@
+Change JLabel text from another class
+I have the following class that draws a Label.
+(I have only given part of the code here).
+Everyhting works fine, the label gets displayed.
+Now, i have another class called Caller Class.
+I have a method in that where i will use to change the value of this label. how can i do that
+later on, i will be using the following class to change the text of the above label.
+How can i do this.
+1.
+) When the methodA() is executed, the text Hello is not getting displayed on the Label field.
+it still remains as Whooo.
+How can i correct this.
+I want the label text to be Hello once that method has been executed.
+The immeditate problem I can see is to appears that you are either using a null layout or your don't understand how layout managers work.
+The following code updates the label from the main class in a sub class via a setText method call.
+This method is called every second
+If you're using a null layout, then stop it.
+Just don't.
+There are only a very small number of times you would ever use a null layout and I suspect this isn't one of them.

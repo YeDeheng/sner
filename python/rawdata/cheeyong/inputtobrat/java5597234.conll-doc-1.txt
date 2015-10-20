@@ -1,0 +1,11 @@
+HELP HELP --- java update help in java bean jsp page
+there is no one who knows how can i do this .. plz some help would be really appreciated ..
+new to this thing need to know how code works ..
+I have this code that checks duplicate name id
+and i have switch case where it saves data from the jsp page form
+my question is how can i check for gender value when particular nameid is selected .. and if user changes gender value from M to F ..
+i wanna give a warning on jsp page saying gender already exist do you want to modify it ??
+Please any help would be good .. thank you
+here is my jsp page
+You could add a piece of JavaScript that print the warning, if a user changed the gender.
+The only thing you have to do then, is to enable this java script if the nameid is already set (then the name already exists, and every change should print the warning.) If the nameid is null, then it is a new name and you must not enable the java script warning functionality.

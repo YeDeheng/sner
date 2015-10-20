@@ -1,0 +1,11 @@
+T1	API 296 306	lines.join
+T2	API 345 362	this.clientHeight
+T3	API 363 380	this.scrollHeight
+T4	API 395 412	this.clientHeight
+T5	API 413 430	this.scrollHeight
+T6	API 538 556	currFontSize.slice
+T7	API 889 907	currFontSize.slice
+T8	API 1033 1050	this.clientHeight
+T9	API 1051 1068	this.scrollHeight
+T10	PL 1253 1257	HTML
+T11	Fram 1260 1266	jQuery

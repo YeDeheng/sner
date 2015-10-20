@@ -1,0 +1,25 @@
+How can I make this transformation of an image in Android using Java
+Is there a way to process an image / drawable in Android (Java) to make the last X pixels of the image stretch or repeat to the bottom of the screen.
+I would like to know if this is possible to achieve and if there is a name for this effect or existing algorithm.
+Thank you in advance.
+Just please note that I am aware of 9patch images and it is not the way I want to go with, I explicitly need to apply this in code.
+Thank you in advance, bellow is an image
+You can take a strip from the image and use repeat like this
+EDIT : If you wanted programmatically
+1- crop from the image using this code from cut the portion of bitmap :
+2- The returned bitmap, convert it to bitmapdrawable :
+The best option to achieve that is using a Draw 9-patch image
+Tutorials :
+Android 9 Patch Image Tutorial
+Draw9patch Tutorial [ HD ]
+Possible algorithm :
+1) get Bitmap object of your image
+2) read image pixels (bitmap.getPixels (...) method) into an int [] array
+3) create a blank bitmap of desired height
+4) use setPixels() method to copy initial bitmap data to a new one
+5) use same method to copy last line to new bitmap as many times as you want (use offset parameter wisely)
+This sounds too complicated for such a small task, but you asked for a way of acheiving it programmatically, so here you go
+EDIT Easier way for your situation :
+Make use of Shader.TileMode.CLAMP
+1) Create BitmapDrawable from your bitmap or from resources
+2) Use setTileModeY (TilMode.CLAMP );

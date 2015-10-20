@@ -1,0 +1,82 @@
+Best practice for parameter naming in Java constructors and simple setters
+Is there a standard acceptable convention for parameters in Java to straightforward constructors and setters?
+(I've seen the answer for C++, but practices are often different between the two communities)
+Suppose that I have a class C with a foo field.
+I have commonly seen the following three options :
+1) Use the actual field name with an underscore :
+2) Use the actual field name, just use "this" in setting :
+3) Completely inconsistent things like :
+I tend to use 2, but I'm wondering what ' s correct practice.
+I have seen 2 and 3 used the most.
+That said, the answer is dictated by what the accepted standard is for the code base you are contributing to.
+I think it is more important to be consistent across the project than have one "right" answer for every single java developer.
+Eclipse code genration uses style #2 from your list.
+Option two is most common.
+In Java it ' s considered poor practice to use meaningless name prefixes or suffixes to distinguish instance variables from parameters from local variables.
+But there are no conventions for the names themselves.
+Use whatever names make the code easiest to understand.
+I know that when netbeans automatically creates getters and setters it uses number 2 method.
+I personally usually add temp to the variable i.e foo = tempfoo.
+But as neesh says you should try to remain consistent regardless of which method you choose
+(1) is very C / C++.
+Java doesn't tend to use leading underscores much.
+I personally use (2) almost exclusively.
+(3) is just making your life difficult because it can be hard to think of two meaningful yet concise names for the member and the parameter.
+As you code to make the interface as clear as possible, I always prefer using a field as _name internally, having it as name as a method argument, assigning it elegantly as _name = name.
+I have seen this in Fowler ' s Refactoring and other similar textbooks, though I see ugly mechanisms such as using the field as name internally then using aName as a method argument, ugh.
+I've also seen the Option 2 as the most common one :
+IDEs such as Eclipse and Netbeans will automatically write the getters and setters in the above format.
+There are a few merits to using this method :
+Does not use the underscore (_) character in the field name -- underscores are not recommended for non-constant field names.
+The use of the underscore character in an identifier is not recommended except for identifiers for constants.
+The Variables page of The Java Tutorials mentions the following about underscores :
+If your variable stores a constant
+value, such as static final int
+NUM_GEARS = 6, the convention changes
+slightly, capitalizing every letter
+and separating subsequent words with
+the underscore character.
+By
+convention, the underscore character
+is never used elsewhere.
+(Emphasis added.)
+Since field names are not constants, according to what is written on that page, one should not use underscores in non-constant fields.
+IDEs can automatically add Javadoc comments according to the name of the parameter of the method, so having the name of the field in the parameter list would be beneficial.
+The following is an example of an automatically generated Javadoc :
+Having the Javadoc reflect the name of the field has another benefit -- IDEs that have code completion can use the field name in the Javadoc in order to automatically fill out parameter names :
+Giving meaning to the field name and parameter name will make it easier to understand what the parameter actually represents.
+Those are some of the merits I can come up with at the moment, and I believe that it is most likely the most common way to naming parameters in Java.
+Option two.
+If you see a "setFoo (String foo )" definition (e.g. in javadoc or hover) you would be reasonable to expect that the field" foo "is set to the value of the parameter" foo ".
+Other names may require you to double check - e.g. would setName (String person) just set the name to person or would additional action be taken (look up the name in a table of persons etc) ?.
+The usual reason for not doing so is that you may accidentially write
+...
+foo = foo ;
+instead of
+this.foo = foo ;
+which is a self-assignment of the parameter not doing anything.
+Modern compilers catch this - modern IDE generates the "this.foo = foo" statement when creating a setter for a field.
+In Eclipse you can create the getter and setter for a field, with Ctrl-1 when the cursor is located on the field in question.
+the convention that I use is to preface member variables with m_ ; as in :
+String m_foo ;
+that way, it is very clear which variables are members and which are not.
+also, my last company prefaced all the arguments in a method with "the", as in :
+public doFoo (String theKey, String theRandom) {
+....
+}
+it made it very easy to not confuse the arguments with internal variables.
+conventions should be about making the code easier to read, and reducing errors.
+Option 2 is most common in Java but a picky Checkstyle won't let you use this option because the name of the local var shadows the other.
+Because of that most use the following :
+foo (int thatBar) {
+this.bar = thatBar ;
+}
+The only problem using this option is that others may guess that you are using a var named bar in your class because if not you wouldn't name the parameter so.
+An evil person could use that information to better understand your class only by looking at the methods.
+But for that you would use an obfuscator which renames all vars etc.
+Yes option 2 is most widely used ; although it has a severe problem : if you have a typo in the declaration of your parameter - that might go unnoticed, like :
+This code compiles fine ; and it takes you a second to understand what is wrong in there.
+Yes, nowadays you might see a warning about that, or some code checking tool tells you that this happened ; and of course, your unit tests should find it immediately.
+But : if you avoid this pattern, and use prefixes or "thatString" you will never hit this problem in the first place.
+Thus I really don't understand why it is so commonly used.
+So, we sat down in our team and when putting together our coding style guide we said : never use option 2.

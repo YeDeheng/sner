@@ -1,0 +1,9 @@
+T1	API 0 8	ListView
+T2	API 278 305	DatabaseViewerActivity.java
+T3	API 417 429	c.getCount()
+T4	API 434 452	adapter.getCount()
+T5	API 472 478	LogCat
+T6	API 561 582	startManagingCursor()
+T7	API 608 617	c.close()
+T8	API 620 636	database.close()
+T9	Plat 642 649	android

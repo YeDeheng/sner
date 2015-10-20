@@ -1,0 +1,45 @@
+why from unbounded wildcard to does not generate an unchecked conversion warning?
+Think i ask this question before but still don't understand to a certain degree.
+From raw to?
+> - no unchecked conversion warning.
+Understood since both are reifiable type.
+From raw to?
+extends Object > - unchecked conversion warning.
+Understood since?
+extends Object > is a non reifiable type.
+From?
+> to?
+extends Object > - no unchecked conversion warning.
+Why?
+Since the former is a reifiable type and the latter is not.
+I see this as similiar to clause 2.
+? means it can be any subtype.
+Every subtype of that will always extend Object.
+I believe you wouldn't have a problem if you went from?
+extends Number to?
+extends Object either.
+? and?
+extends Object are actually the same thing, and should be interchangeable.
+Actually, since List?
+extends Object is a super type of List?
+(vice versa), if it ' s safe to convert List to List?
+, it should also be safe to convert List to List?
+extends Object.
+The spec requires unbounded wildcard? in some places, while the twin brother?
+extends Object is not mentioned (therefore forbidden).
+There ' s no theoretical reason for that ; the language designers probably reasoned that?
+is enough for practical use cases.
+For example, in 5.1.9 Unchecked Conversion, converting raw G to G T1 ..
+Tn generates a mandatory compile-time warning unless all Ti=?
+. This is a little too harsh ; a counter example :
+the conversion from x to y is safe, and the warning is really unnecessary.
+It is possible to relax the rule to exempt all safe conversions.
+We know it is safe to convert raw G to G ?..?
+; furthermore, if G T1 ..
+Tn is a super type of G ?..?
+, converting G to G T1 ..
+Tn is also safe, and should be allowed without warning.
+This certainly makes sense.
+However, checking that G ?..?
+is a subtype of G T1 ..
+Tn is not a trivial task ; the language designer probably said, to hell with it, it ' s not worth the trouble to do this for unchecked conversion, which is not an important part of the type system anyway.

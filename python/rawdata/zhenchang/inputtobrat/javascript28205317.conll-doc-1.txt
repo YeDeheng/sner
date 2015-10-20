@@ -1,0 +1,11 @@
+how to render child components in react.js recursively
+I wanted to recursively add a react component from within its own component.
+I saw this example of a tree component which was mapping through the child TreeNodes and adding child nodes in the same way.
+Unfortunately it doesn't work at all for me.
+The idea was to have a simple comment component, and the replies would reuse the same component.
+I get the following error message :
+Uncaught TypeError : Failed to construct ' Comment ' : Please use the ' new ' operator, this DOM object constructor cannot be called as a function.
+here is an example of the JSON data passed to the component.
+hmm, I didn't expect to sort this issue out so quickly.
+But I found out if you create the child nodes as an object at the top of the render method, it works fine.
+Maybe someone more knowledgeable on react.js can give some more feedback on this, but happy to see that it is possible.

@@ -1,0 +1,12 @@
+store image into a folder in netbeans
+I am using a FileChooser for selectiong image from the system.Now I want to store the image into db.For this I have created a new folder image in the project, and my idea is load the folder with the opened images renamed like img1, img2 ... and store this path into the db, at a time one image.
+I used the code below for getting the image name
+But I dont know how to store the image into the folder.Hope anyone will help to solve this.
+I don't see the point of storing the images into your project jar.
+It would make more sense to save it into the system.
+But then again, why even do that?
+Just store the image directly to the database.
+To do that just do this
+UPDATE
+Saving to File system.
+You need to specify the path in this line of code

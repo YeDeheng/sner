@@ -1,0 +1,3 @@
+using a button to load a picture into my application and to a server (php) and save the link in database
+I am developing an java net-beans application, I wish to use a button to load a picture to my application and to a server (php) and save the link to my database.
+Wish any one could help.

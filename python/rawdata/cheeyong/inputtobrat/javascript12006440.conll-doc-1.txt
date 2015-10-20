@@ -1,0 +1,20 @@
+Jquery based drop-down navigational menu
+I am trying to create animated (barely) drop down menu's.
+The JS files are available if you look at the source of my page.
+I have it basically working.
+My question is : when I hover over something from the main menu, and then go directly down to the submenu that pops up (down), if I then hover over something in that menu and leave it will stay.
+http://lmiah.site11.com/slide%20down%20box%20menu%20new/mainTest.html
+To be less confusing I will give a direct example :
+If you hover over "Careers" then move straight down and over and hover over "Employee Testimonials" then move your mouse down off the menu completely, the menu still stays until you hover over "Careers" again.
+Any help would be appreciated!
+EDIT : I am finding that it has something to do with the a href= "# class=" subMenuFloat "Whenever I hover over these links (they are the ones in the hidden drop downs) my dropdown div remains.
+I cannot find why this happens, but if I simply hover over the li, and miss the link, it exits properly.
+This is a common issue when using the hover function in jquery because you the selector being used is actually moving from one element to another.
+Here is the way I did this, basically you set a div or li inside the li of your menu.
+Example :
+the jquery would be
+Basically this is saying when you hover over an li in the menu, hide all the div under that menu which would be all the menus in your dropdown then show the div that is under the li that is hovered.
+You will need to make the li position relative and the div absolute.
+So theoretically the div is contained under the li and therefore when you hover it will stay open.
+demo : http://jsbin.com/welcome/13456
+example without using the menu-plugin, this is just a proof of concept

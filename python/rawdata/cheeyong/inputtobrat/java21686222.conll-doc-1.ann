@@ -1,0 +1,10 @@
+T1	Plat 50 57	Android
+T2	PL 64 68	Java
+T3	Plat 118 125	Android
+T4	PL 127 131	Java
+T5	Plat 828 835	Android
+T6	API 964 980	bitmap.getPixels
+T7	API 1066 1077	setPixels()
+T8	API 1406 1427	Shader.TileMode.CLAMP
+T9	API 1438 1452	BitmapDrawable
+T10	API 1509 1522	TilMode.CLAMP

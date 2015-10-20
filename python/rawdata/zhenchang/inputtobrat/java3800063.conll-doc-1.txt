@@ -1,0 +1,17 @@
+Ant standard tasks
+Maven has a fairly standardized project structure and standard plugins for compilation and testing.
+Is there something widespread for Ant?
+I found the following projects so far :
+Antiplate
+Ant Script Library
+But I'm not sure whether these are widespread and are likely to be maintained in the future.
+Does someone have experience with them?
+I have never heard of them.
+I've been on 2 significant Java projects lately.
+Our ant tasks were simple and home-grown.
+Each time someone starts a new project they make a copy of the ant file and mostly just change some constants at the top.
+I know the guy who wrote Ant Script Library.
+He doesn't have any intention of stopping.
+To me, Ant ' s flexibility makes it hard for things like this to succeed.
+Ant-contrib only makes it worse IMHO as it allows people to break the model of the tool.
+Shame, as Ant is phenomenally powerful if you use it properly.
