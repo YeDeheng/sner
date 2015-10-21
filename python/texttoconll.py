@@ -15,17 +15,17 @@ Plats = ['android', 'ios', 'java-ee', 'java-se', 'windows', 'linux', 'ubuntu']
 
 Frams = ['jquery', 'swing', 'spring', 'hibernate', 'maven', 'tomcat',
          'angularjs', 'node.js', 'asp.net', 'd3.js', 'backbone.js',
-         '.net', 'wpf', 'linq', 'wordpress', 'codeigniter', 'laravel', 'curl', 'symfony', 'symfony2', 
-         'sqlite', 'django', 'qt', 'play', 'eclipse', 'chrome', 'firefox', 'netbeans']  
+         '.net', 'wpf', 'linq', 'wordpress', 'codeigniter', 'laravel', 'curl', 'symfony', 'symfony2',
+         'sqlite', 'django', 'qt', 'play', 'eclipse', 'chrome', 'firefox', 'netbeans']
 # tools and frameworks, framework component and subsystem(wpf, linq), software system, library, development environment, Common APPs(IDE, browser)
 
-Stans = ['jar', 'json', 'http', 'xml', 'rest', 'jsp', 'servlet', 'jpa', 'jdbc', 'ajax'] 
+Stans = ['jar', 'json', 'http', 'xml', 'rest', 'jsp', 'servlet', 'jpa', 'jdbc', 'ajax']
 # software technology, DataFormat, protocols, software models, standards, architecture style
 
 Orgs = ['apache', 'google', 'facebook', 'apple', 'github', 'oracle', 'microsoft', 'amazon', 'ibm', 'zend'] # software companies, organizations
 
-MISC = [ ] # 'regex', , 'oracle stored procedure' 
-#, UNIQUE software concept, 
+MISC = [ ] # 'regex', , 'oracle stored procedure'
+#, UNIQUE software concept,
 
 def regex_or(*items):
   r = '|'.join(items)
@@ -46,10 +46,10 @@ def regex_or(*items):
 # UrlExtraCrapBeforeEnd = '%s+?' % regex_or(PunctChars, Entity)
 # UrlEnd = regex_or( r'\.\.+', r'[<>]', r'\s', '$') # / added by Deheng
 
-API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z]+\.)+[a-zA-Z]+\(\)$',
-    r'^[a-zA-Z]+\(\)$',
-    r'^(?:[a-zA-Z]+\.)+[a-zA-Z]+$',
-    r'^(?:[A-Z][a-z]+)+[A-Z][a-z]+$' ))
+API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z_]+\.)+[a-zA-Z_]+\(\)$',
+    r'^[a-zA-Z\.\_]+\(\)$',
+    r'^(?:[a-zA-Z_]+\.)+[a-zA-Z_]+$',
+    r'^(?:[A-Za-z]+)+[A-Z][a-z]+$' ))
     # r'^\.[a-zA-Z]+$',  # this can be .net
     # r'^[a-z]+\'[a-z]+$',  # not sure why I added this
     # r'^[+$#0-9a-zA-Z_\-]+$',
