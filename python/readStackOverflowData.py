@@ -15,9 +15,8 @@ pl = ['java', 'javascript', 'c#',
 	   'android', 
 	   'jquery', 
 	   'python', 
-	   'html', 
-	   'c++', 
-	   'ios']
+	   'html'
+]
 
 def file_len(fname):
     with open(fname) as f:
@@ -93,25 +92,22 @@ class DataReader:
 
 	def generate_postid(self, annotator):
 		for name in pl: 
+			index_list = []
+
 			fname = './postid/' + name + 'postid.txt'
 			flen = file_len(fname)
 
 			if name in ['java', 'javascript']:
 				rand_max = 150000/2
-			elif name == 'c#':
+			elif name in ['php' 'c#']:
 				rand_max = 120000/2
-			elif name in ['php', 'android', 'jquery']:
+			elif name in ['android', 'jquery']:
 				rand_max = 100000/2
-			elif name == 'python':
+			elif name in ['python', 'html']:
 				rand_max = 80000/2
-			elif name == 'html':
-				rand_max = 70000/2
-			elif name == 'c++':
-				rand_max = 60000/2
-			elif name == 'ios':
-				rand_max = 50000/2
+
 			print rand_max
-			index_list = []
+
 			for i in range(rand_max):
 				f = open(fname, 'r')
 				lines = f.readlines()
@@ -121,7 +117,7 @@ class DataReader:
 					try: 
 						index_list.append(index)
 						rand = lines[index] 
-						print rand
+
 						f.close()
 
 						row_count = self.cur.execute("SELECT Id FROM posts where Id=%s" % (rand))
