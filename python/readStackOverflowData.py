@@ -99,7 +99,7 @@ class DataReader:
 
 			if name in ['java', 'javascript']:
 				rand_max = 150000/2
-			elif name in ['php' 'c#']:
+			elif name in ['php', 'c#']:
 				rand_max = 120000/2
 			elif name in ['android', 'jquery']:
 				rand_max = 100000/2

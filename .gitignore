@@ -45,3 +45,5 @@ Temporary Items
 # Python Binaries
 *.pyc
 python/browncluster/
+crf/test/
+java/
