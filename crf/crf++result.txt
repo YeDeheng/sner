@@ -1,0 +1,10 @@
+this	this	0	0	O	O
+is	is	0	0	O	O
+not	not	0	0	O	O
+Bryant	bryant	1	0	B-per	B-per
+.	.	0	0	O	O
+He	he	1	0	O	B-per
+is	is	0	0	O	O
+from	from	0	0	O	O
+CBA	cba	1	1	B-org	B-org
+

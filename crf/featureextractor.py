@@ -48,8 +48,8 @@ def GetOrthographicFeatures(word):
 if __name__=='__main__':
 
     # read in annotated conll file
-    fin = open('annotated.conll', 'r')
-    fout = open('train.conll', 'w')
+    fin = open(sys.argv[1], 'r')
+    fout = open(sys.argv[2], 'w')
     for line in fin:
         line = line.strip()
         (word, label) = line.split('\t')
