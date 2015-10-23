@@ -127,9 +127,9 @@ def text_to_conll(f):
         nonspace_token_seen = False
 
         tokens = [t for t in TOKENIZATION_REGEX.split(s) if t]
-        print tokens
-        tokens2 = [t for t in s.split(' ') if t]
-        print tokens2
+        #print tokens
+        #tokens2 = [t for t in s.split(' ') if t]
+        #print tokens2
 
         for t in tokens:
             if not t.isspace():
