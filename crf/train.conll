@@ -5,3 +5,6 @@ Kobe	B-per
 i	O
 love	O
 NBA	B-org
+.	O
+
+systemOutAPI	B-API
