@@ -47,7 +47,7 @@ def regex_or(*items):
 # UrlEnd = regex_or( r'\.\.+', r'[<>]', r'\s', '$') # / added by Deheng
 
 #  Oct23: overcome cases like i.e
-API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z_][a-zA-Z_]+\.)+[a-zA-Z_][a-zA-Z_]+\(\)$',  
+API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z_][a-zA-Z_]+\.)+[a-zA-Z_][a-zA-Z_]+\(\)$',
     r'^[a-zA-Z\.\_][a-zA-Z\.\_]+\(\)$',
     r'^(?:[a-zA-Z_][a-zA-Z_]+\.)+[a-zA-Z_][a-zA-Z_]+$',
     r'^(?:[A-Za-z]+)+[A-Z][a-z]+$' ))
