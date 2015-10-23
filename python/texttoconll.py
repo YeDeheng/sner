@@ -46,9 +46,10 @@ def regex_or(*items):
 # UrlExtraCrapBeforeEnd = '%s+?' % regex_or(PunctChars, Entity)
 # UrlEnd = regex_or( r'\.\.+', r'[<>]', r'\s', '$') # / added by Deheng
 
-API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z_]+\.)+[a-zA-Z_]+\(\)$',
-    r'^[a-zA-Z\.\_]+\(\)$',
-    r'^(?:[a-zA-Z_]+\.)+[a-zA-Z_]+$',
+#  Oct23: overcome cases like i.e
+API_pattern = re.compile(regex_or(r'^(?:[a-zA-Z_][a-zA-Z_]+\.)+[a-zA-Z_][a-zA-Z_]+\(\)$',  
+    r'^[a-zA-Z\.\_][a-zA-Z\.\_]+\(\)$',
+    r'^(?:[a-zA-Z_][a-zA-Z_]+\.)+[a-zA-Z_][a-zA-Z_]+$',
     r'^(?:[A-Za-z]+)+[A-Z][a-z]+$' ))
     # r'^\.[a-zA-Z]+$',  # this can be .net
     # r'^[a-z]+\'[a-z]+$',  # not sure why I added this
