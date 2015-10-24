@@ -1,0 +1,12 @@
+REST Authentication With Spring And Spring Security
+I want develop a RESTfull web service with authentication using Spring and Spring Security.
+All my users will be stored in the DB with an encrypted password and role.
+The session should be stored in the context until the session is timedout or logged out to allow consumption of other webservices.
+If someone can help me would be great.
+Thanks
+You need to create a spring security context and include in your web application.
+and you can have decision voters depending on your URL or other.
+You can have your own custom authentication entry point and add your code.
+More details could be found here.
+Have a look at Jersey with Spring and its ContextSecurityFilter, I do not suggest to use spring security.
+If you make a good Authorization try to use @RolesAllowed method.

@@ -1,0 +1,25 @@
+Finding Angle from transform matrix
+I have a transform matrix with values like this.
+Transform : xx, xy, yx, yy, tx, and ty respectively.
+How can I find the angle from the above set of gives values.
+Referring to the Wikipedia page on transformation matrices : http://en.wikipedia.org/wiki/Transformation_matrix#Affine_transformations.
+tx and ty are translations.
+The remaining elements make up a rotation matrix :
+Note that this is equivalent to
+where?
+is the clockwise rotation angle.
+From this you get that xx = yy = cos (?) and xy = -yx = sin (?).
+The angle can be calculated as Math.atan2 (xy, xx).
+This will give you a result that is between -? and?
+. Math.acos (xx), Math.acos (yy), Math.asin (xy), Math.asin (-yx) and - Math.asin (yx) all work for angles between zero than?
+/ 2.
+Those 6 numbers describe an affine transformation, which in general consists of (non-uniform) scaling, rotation and translation.
+The translation is represented by (tx, ty).
+This leaves the remaining 4 numbers, which must be decomposed into scaling and rotation.
+The easiest way to do this would be a Singular value decomposition : Here you decompose the matrix as M=UDV, where M is your original matrix
+U and V are orthogonal rotation matrices, and D is a diagonal matrix.
+This represents your affine transformation as three steps, the rotation V, followed by scaling D, and rotation U.
+The two entries of D are the two scaling coefficients for x and y.
+From U and V you can obtain the rotation angles, as described by Mad Physicist.
+The total rotation is the sum of both.
+If it ' s only about the rotation, one can transform the vector (1, 0) using the given matrix, and compute the angle between the resulting vector and the x-axis, as already mentioned in the comment to the original question

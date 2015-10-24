@@ -1,0 +1,21 @@
+Java animation does not refresh properly and uses too much CPU
+I have a problem with a simple Java game I am creating right now.
+I want a dot (a car) to be movable across the game screen, but instead of this all I can see on the screen is the long "snake" created by the dot moved by me :
+Other problem is that activity manager on my Mac shows that the game uses huge amount of CPU power - my laptop gets very hot very fast.
+I suspect that there is something wrong with my game loop, but since now I haven't found any solution :
+BoardPanel.java :
+Car.java
+Map.java (I haven't created map yet, right now only want the dot to move properly)
+RacerMain.java
+Many thanks for your help !!!
+In your draw() method you need to clear the BufferedImages background before your invoke the fillOval method.
+Something like :
+Print out your "waitTime" to make sure you are waiting a reasonable time.
+In addition to what camickr said : Be careful with your usage of the Graphics.
+A rule of thumb :
+Never call getGraphics on a Component!
+Additionally, you are never disposing the Graphics that you are fetching from the BufferedImage.
+You are instead disposing the Graphics that you obtained from the Component, which may be even worse than fetching it in the first place!
+I wonder why you are overriding the addNotify method.
+You should not implement any functionality based on averriding this method ....
+So you should change the respecive parts of your BoardPanel class roughly as follows :

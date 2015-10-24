@@ -1,0 +1,5 @@
+Creating a customized 404 / 500 error page in Play Framework
+How can one create global, custom looks for their 404 / 505 error pages using Play?
+You simply have to modify the provided app / views / errors / 404.html and app / views / errors / 500.html.
+For play 2.X you can override the appropriate methods in GlobalSettings : http://www.playframework.com/documentation/api/2.0.3/java/play/GlobalSettings.html
+http://www.playframework.com/documentation/2.0.2/ScalaGlobal
