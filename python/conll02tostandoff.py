@@ -11,8 +11,7 @@ import re
 import os
 import codecs
 
-# INPUT_ENCODING = "Latin-1"
-INPUT_ENCODING = "UTF-8"
+INPUT_ENCODING = "Latin-1"
 OUTPUT_ENCODING = "UTF-8"
 
 output_directory = None
@@ -49,6 +48,7 @@ def output(infn, docnum, sentences):
         soout = sys.stdout
     else:
         outfn = os.path.join(output_directory, os.path.basename(infn)+'-doc-'+str(docnum))
+        print outfn
         txtout = codecs.open(outfn+'.txt', 'wt', encoding=OUTPUT_ENCODING)
         soout = codecs.open(outfn+'.ann', 'wt', encoding=OUTPUT_ENCODING)
 

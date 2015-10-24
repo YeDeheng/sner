@@ -104,9 +104,14 @@ def attach_labels(labels, lines):
 # token, while any non-alnum character is separated into a
 # single-character token. TODO: non-ASCII alnum.
 #TOKENIZATION_REGEX = re.compile(r'''([0-9a-zA-Z]+|[^0-9a-zA-Z])''')
+#TOKENIZATION_REGEX = re.compile(r'''(\s|[\.,\(\)\?\!"]|\S.*?\(\))''')
 TOKENIZATION_REGEX = re.compile(r'''(\s)''')
 
 NEWLINE_TERM_REGEX = re.compile(r'(.*?\n)')
+
+
+def quote(s):
+    return s in ('"', )
 
 def text_to_conll(f):
     """Convert plain text into CoNLL format."""
@@ -126,9 +131,33 @@ def text_to_conll(f):
     for s in sentences:
         nonspace_token_seen = False
 
-        tokens = [t for t in TOKENIZATION_REGEX.split(s) if t]
-        #print tokens
-        #tokens2 = [t for t in s.split(' ') if t]
+        fake_tokens = [t for t in TOKENIZATION_REGEX.split(s) if t]
+        tokens = []
+        quote_count = 0
+
+        for i, t in enumerate(fake_tokens):
+            if quote(t):
+                quote_count += 1
+
+            if i == 0:
+                tokens.append(t)
+            if i == len(fake_tokens)-1:
+                tokens.append(t)
+
+            if i > 0 and i < len(fake_tokens)-1:
+                if fake_tokens[i]==' ':
+                    if re.match(r'^[\(]$', fake_tokens[i-1]):
+                        continue
+                    if re.match(r'^[\.,\)\?\!]$', fake_tokens[i+1]):
+                        continue
+                    if quote(fake_tokens[i-1]) and quote_count is not None and quote_count%2==1:
+                        continue
+                    if quote(fake_tokens[i+1]) and quote_count is not None and quote_count%2==1:
+                        continue
+                tokens.append(t)
+        print tokens
+
+        tokens2 = [t for t in s.split('\s') if t]
         #print tokens2
 
         for t in tokens:
@@ -171,6 +200,7 @@ def relabel(lines, annotations):
         label = None
         for o in range(start, end):
             if o in offset_label:
+                print o, start
                 if o != start:
                     print >> sys.stderr, 'Warning: annotation-token boundary mismatch: "%s" --- "%s"' % (token, offset_label[o].text)
                 label = offset_label[o].type
