@@ -1,0 +1,99 @@
+O	0	3	Why
+O	4	8	this
+B-Fram	9	16	promise
+O	17	21	does
+O	22	25	not
+O	26	30	work
+O	30	31	?
+
+O	32	35	I'm
+O	36	43	playing
+O	44	48	with
+B-Fram	49	56	Promise
+O	56	57	.
+
+O	58	62	This
+O	63	65	is
+O	66	68	my
+O	69	73	code
+O	74	75	:
+
+O	76	79	And
+O	80	84	used
+O	85	87	so
+O	88	89	:
+
+O	90	94	Only
+O	95	100	works
+O	101	104	one
+O	105	109	time
+O	110	114	....
+
+O	115	118	OK1
+
+O	119	126	Anybody
+O	127	130	can
+O	131	134	fix
+O	135	137	my
+O	138	142	code
+O	142	143	?
+
+O	144	146	TH
+
+O	147	151	What
+O	152	155	you
+O	156	160	have
+O	161	165	here
+O	166	168	in
+B-Fram	169	177	PROMISES
+O	178	183	isn't
+O	184	186	an
+O	187	192	array
+O	193	195	of
+B-Fram	196	204	promises
+O	205	208	but
+O	209	211	an
+O	212	217	array
+O	218	220	of
+O	221	230	functions
+O	230	231	.
+
+O	232	234	If
+O	235	239	your
+O	240	244	goal
+O	245	247	is
+O	248	250	to
+O	251	255	have
+O	256	259	all
+O	260	265	those
+O	266	275	functions
+O	276	284	executed
+O	285	286	(
+O	286	294	possibly
+O	295	297	in
+O	298	306	parallel
+O	306	307	)
+O	308	312	then
+O	313	315	to
+O	316	320	have
+O	321	328	another
+O	329	337	function
+O	338	346	executed
+O	347	351	with
+O	352	355	the
+O	356	362	result
+O	363	365	of
+O	366	370	each
+O	371	374	one
+O	374	375	,
+O	376	379	you
+O	380	383	can
+O	384	386	do
+O	387	391	this
+O	392	393	:
+
+O	394	404	Disclaimer
+O	405	406	:
+O	407	413	tested
+O	414	418	with
+B-Fram	419	427	Bluebird

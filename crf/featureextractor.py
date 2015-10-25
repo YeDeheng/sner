@@ -25,7 +25,7 @@ def GetOrthographicFeatures(word):
 
     # Initial capitalization
     if re.search(r'^[A-Z]', word):
-        features += '1\t'   
+        features += '1\t'
     else:
         features += '0\t'
 
@@ -40,7 +40,7 @@ def GetOrthographicFeatures(word):
         features += '1\t'
     else:
         features += '0\t'
-    
+
     # has dot
     if re.match(r'.*\..*', word):
         features += '1\t'
@@ -69,13 +69,13 @@ def GetOrthographicFeatures(word):
         features += '1\t'
     else:
         features += '0\t'
-    
+
     # has dash
     if re.match(r'.*-.*', word):
         features += '1\t'
     else:
         features += '0\t'
-    
+
     return features
 
 
@@ -92,5 +92,7 @@ if __name__=='__main__':
 
             allfeatures = word + '\t' + OrthographicFeatures + label
             fout.write(allfeatures + '\n')
+        else:
+            fout.write('\n')
     fout.close()
     fin.close()
