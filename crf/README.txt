@@ -19,3 +19,4 @@ What orthographic features do we use?
  - C14: has underscore
  - C15: has Cap inside
  - C16: has dash
+ - C17~C21: word clustering features
