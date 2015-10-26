@@ -78,7 +78,46 @@ def GetOrthographicFeatures(word):
 
     return features
 
+def GetWordClusterFeatures(word):
+    f = open('paths', 'r')  # open word cluster file
+    dict = {}
+    for line in f:
+        dict[line.split()[1]] = line.split()[0]
+    f.close()
 
+    features = ''
+    if dict.has_key(word):
+        path = str(dict.get(word))
+    else:
+        path = 'null'
+    
+    if len(path) > 6:
+        features += path[:6] + '\t'
+    else:
+        features += path + '\t'
+
+    if len(path) > 8:
+        features += path[:8] + '\t'
+    else:
+        features += path + '\t'
+
+    if len(path) > 10:
+        features += path[:10]+ '\t'
+    else:
+        features += path + '\t'
+
+    if len(path) > 12:
+        features += path[:12] + '\t'
+    else:
+        features += path + '\t'
+
+    if len(path) > 14:
+        features += path[:14] + '\t'
+    else:
+        features += path + '\t'   
+
+    #print features
+    return features     
 
 if __name__=='__main__':
     # read in annotated conll file
@@ -90,7 +129,9 @@ if __name__=='__main__':
             (word, label) = line.split('\t')
             OrthographicFeatures = GetOrthographicFeatures(word)
 
-            allfeatures = word + '\t' + OrthographicFeatures + label
+            ClusterFeatures = GetWordClusterFeatures(word)
+
+            allfeatures = word + '\t' + OrthographicFeatures + ClusterFeatures + label
             fout.write(allfeatures + '\n')
         else:
             fout.write('\n')

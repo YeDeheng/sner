@@ -1,9 +1,10 @@
-i	i	-	-	-	-	-	-	0	0	0	0	0	0	0	0	0	O
-am	am	-	-	-	-	-	-	0	0	0	0	0	0	0	0	0	O
-Kobe	kobe	k	ko	kob	e	be	obe	1	0	0	0	0	0	0	0	0	B-per
-,	,	-	-	-	-	-	-	0	0	0	0	0	0	0	0	0	O
-i	i	-	-	-	-	-	-	0	0	0	0	0	0	0	0	0	O
-love	love	l	lo	lov	e	ve	ove	0	0	0	0	0	0	0	0	0	O
-NBA	nba	-	-	-	-	-	-	1	1	0	0	0	0	0	1	0	B-org
-.	.	-	-	-	-	-	-	0	0	0	1	0	0	0	0	0	O
-systemOutAPI	systemoutapi	s	sy	sys	i	pi	api	0	0	0	0	0	0	0	1	0	B-API
+i	i	-	-	-	-	-	-	0	0	0	0	0	0	0	0	0	null	null	null	null	null	O
+am	am	-	-	-	-	-	-	0	0	0	0	0	0	0	0	0	null	null	null	null	null	O
+Kobe	kobe	k	ko	kob	e	be	obe	1	0	0	0	0	0	0	0	0	null	null	null	null	null	B-per
+,	,	-	-	-	-	-	-	0	0	0	0	0	0	0	0	0	null	null	null	null	null	O
+i	i	-	-	-	-	-	-	0	0	0	0	0	0	0	0	0	null	null	null	null	null	O
+love	love	l	lo	lov	e	ve	ove	0	0	0	0	0	0	0	0	0	null	null	null	null	null	O
+NBA	nba	-	-	-	-	-	-	1	1	0	0	0	0	0	1	0	null	null	null	null	null	B-org
+.	.	-	-	-	-	-	-	0	0	0	1	0	0	0	0	0	null	null	null	null	null	O
+
+systemOutAPI	systemoutapi	s	sy	sys	i	pi	api	0	0	0	0	0	0	0	1	0	null	null	null	null	null	B-API
