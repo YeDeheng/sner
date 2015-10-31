@@ -1,0 +1,1907 @@
+Apache Ant
+cglib
+GlassFish
+Hudson
+JavaServer Faces
+JavaServer Pages
+Apache Maven
+Bazel
+Gradle
+ASM
+Byte Buddy
+Byteman
+Javassist
+Apache Aurora
+Singularity
+Checker Framework
+Checkstyle
+Error Prone
+FindBugs
+jQAssistant
+PMD
+SonarQube
+ANTLR
+JavaCC
+config
+owner
+Choco
+JaCoP
+OptaPlanner
+Sat4J
+Bamboo
+CircleCI
+Codeship
+fabric8
+Go
+Jenkins
+TeamCity
+Travis
+uniVocity-parsers
+Apache Phoenix
+Crate
+Flyway
+H2
+HikariCP
+JDBI
+jOOQ
+Liquibase
+MapDB
+Presto
+Querydsl
+Apache Parquet
+Protobuf
+SBE
+Wire
+Joda-Time
+Time4J
+Apache DeltaSpike
+Dagger2
+Guice
+HK2
+ADT4J
+AspectJ
+Auto
+DCEVM
+HotswapAgent
+Immutables
+JHipster
+JRebel
+Lombok
+Spring Loaded
+vert.x
+Akka
+Apache Storm
+Apache ZooKeeper
+Hazelcast
+Hystrix
+JGroups
+Orbit
+Quasar
+Apache Cassandra
+Apache HBase
+Druid
+Infinispan
+Bintray
+Capsule
+Central Repository
+IzPack
+JitPack
+Launch4j
+Nexus
+packr
+Apache POI
+documents4j
+jOpenDocument
+Cyclops
+Fugue
+Functional Java
+Javaslang
+jOOλ
+jMonkeyEngine
+libGDX
+LWJGL
+JavaFX
+Scene Builder
+Agrona
+Disruptor
+fastutil
+GS Collections
+HPPC
+Javolution
+JCTools
+Koloboke
+Trove
+Eclipse
+IntelliJ IDEA
+NetBeans
+Imgscalr
+Picasso
+Thumbnailator
+ZXing
+Genson
+Gson
+Jackson
+LoganSquare
+JDK 9
+OpenJDK
+Scala
+Groovy
+Clojure
+Ceylon
+Kotlin
+Apache Log4j 2
+kibana
+Logback
+logstash
+Metrics
+SLF4J
+Apache Flink
+Apache Hadoop
+Apache Mahout
+Apache Spark
+DeepDive
+Deeplearning4j
+H2O
+Weka
+Aeron
+Apache ActiveMQ
+Apache Camel
+Apache Kafka
+Hermes
+JBoss HornetQ
+JeroMQ
+Smack
+Design Patterns
+Jimfs
+Lanterna
+LightAdmin
+OpenRefine
+RoboVM
+AppDynamics
+JavaMelody
+Kamon
+New Relic
+SPM
+Takipi
+JNA
+Apache OpenNLP
+CoreNLP
+LingPipe
+Mallet
+Async Http Client
+Grizzly
+Netty
+OkHttp
+Undertow
+Ebean
+EclipseLink
+Hibernate
+MyBatis
+OrmLite
+Apache FOP
+Apache PDFBox
+DynamicReports
+flyingsaucer
+iText
+JasperReports
+jHiccup
+JMH
+JProfiler
+LatencyUtils
+VisualVM
+YourKit Java Profiler
+Reactive Streams
+Reactor
+RxJava
+Dropwizard
+Feign
+Jersey
+RESTEasy
+RestExpress
+RestX
+Retrofit
+Spark
+Swagger
+DataMelt
+JGraphT
+JScience
+Apache Solr
+Elasticsearch
+Apache Shiro
+Bouncy Castle
+Cryptomator
+Keycloak
+PicketLink
+FlatBuffers
+Kryo
+FST
+MessagePack
+Apache Tomcat
+Apache TomEE
+Jetty
+WebSphere Liberty
+WildFly
+Apache Velocity
+FreeMarker
+Handlebars.java
+Thymeleaf
+Apache JMeter
+Arquillian
+AssertJ
+Awaitility
+Citrus
+Cucumber
+Gatling
+Hamcrest
+JGiven
+JMockit
+JUnit
+Mockito
+PowerMock
+REST Assured
+Selenide
+Selenium
+Spock
+TestNG
+Truth
+Unitils
+WireMock
+Apache Commons
+args4j
+CRaSH
+Gephi
+Guava
+JADE
+javatuples
+JCommander
+Protégé
+Apache Nutch
+Crawler4j
+JSoup
+Apache Tapestry
+Apache Wicket
+Google Web Toolkit
+Grails
+Ninja
+Pippo
+Play
+PrimeFaces
+Ratpack
+Spring Boot
+Spring
+Vaadin
+
+npm
+Bower
+component
+spm
+jam
+jspm
+Ender
+volo
+Duo
+RequireJS
+browserify
+SeaJS
+HeadJS
+curl
+lazyload
+script.js
+systemjs
+LodJS
+ESL
+browserify
+webpack
+mocha
+jasmine
+qunit
+jest
+prova
+DalekJS
+chai
+Sinon.JS
+expect.js
+istanbul
+blanket
+JSCover
+phantomjs
+slimerjs
+casperjs
+zombie
+totoro
+karma
+nightwatch
+intern
+yolpo
+JSHint
+jscs
+jsfmt
+jsinspect
+buddy.js
+ESLint
+JSLint
+angular.js
+aurelia
+backbone
+batman.js
+ember.js
+meteor
+ractive
+vue
+knockout
+spine
+espresso.js
+canjs
+react
+react-native
+riot
+thorax
+chaplin
+marionette
+ripple
+rivets
+derby
+way.js
+mithril.js
+jsblocks
+LiquidLava
+KeystoneJS
+Reaction Commerce
+Ghost
+Apostrophe
+We.js
+Hatch.js
+TaracotJS
+Nodizecms
+Cody
+PencilBlue
+mustache.js
+handlebars.js
+hogan.js
+doT
+dustjs
+eco
+JavaScript-Templates
+t.js
+Jade
+EJS
+xtemplate
+marko
+d3
+pykcharts.js
+three.js
+Chart.js
+paper.js
+fabric.js
+peity
+raphael
+echarts
+vis
+two.js
+g.raphael
+sigma.js
+arbor
+cubism
+dc.js
+vega
+processing.js
+envisionjs
+rickshaw
+flot
+morris.js
+nvd3
+svg.js
+heatmap.js
+jquery.sparkline
+xCharts
+trianglify
+d3-cloud
+d4
+dimple.js
+chartist-js
+epoch
+c3
+BabylonJS
+TimelineJS
+timesheet.js
+ace
+CodeMirror
+esprima
+quill
+medium-editor
+pen
+jquery-notebook
+bootstrap-wysiwyg
+ckeditor-releases
+editor
+EpicEditor
+jsoneditor
+vim.js
+Squire
+TinyMCE
+trix
+Papa Parse
+jBinary
+underscore
+lodash
+Sugar
+lazy.js
+ramda
+mout
+mesh
+RxJs
+Bacon
+Kefir
+Highland
+Most.js
+immutable-js
+mori
+buckets
+hashmap
+moment
+moment-timezone
+jquery-timeago
+timezone-js
+date
+ms.js
+selecting
+underscore.string
+string.js
+he
+multiline
+query-string
+URI.js
+jsurl
+sprintf.js
+url-pattern
+Numeral-js
+odometer
+accounting.js
+money.js
+Fraction.js
+Complex.js
+Polynomial.js
+store.js
+localForage
+jStorage
+cross-storage
+basket.js
+bag.js
+basil.js
+jquery-cookie
+Cookies
+DB.js
+randomColor
+chroma.js
+color
+colors
+PleaseJS
+TinyColor
+Vibrant.js
+i18next
+polyglot
+babelfish
+ClassManager
+klass
+augment
+async
+q
+step
+contra
+Bluebird
+when
+ObjectEventTarget
+director
+page.js
+pathjs
+crossroads
+davis.js
+DOMPurify
+js-xss
+log
+Conzole
+console.log-wrapper
+loglevel
+minilog
+RegEx101
+Ion.Sound
+annyang
+voix.js
+bottleneck
+oauth-signature-js
+amygdala
+jquery.rest
+tracking.js
+ocrad.js
+bowser
+Highlight.js
+PrismJS
+Mprogress.js
+NProgress
+Spin.js
+progress.js
+progressbar.js
+pace
+topbar
+nanobar
+PageLoadingEffects
+SpinKit
+Ladda
+css-loaders
+Parsley.js
+jquery-validation
+validator.js
+validate.js
+validatr
+BootstrapValidator
+is.js
+FieldVal
+mousetrap
+keymaster
+Keypress
+KeyboardJS
+jquery.hotkeys
+jwerty
+intro.js
+shepherd
+bootstrap-tour
+tourist
+chardin.js
+pageguide
+hopscotch
+joyride
+focusable
+messenger
+noty
+pnotify
+toastr
+humane-js
+smoke.js
+Swiper
+slick
+slidesJs
+FlexSlider
+unslider
+colorbox
+fancyBox
+sly
+vegas
+Sequence
+baguetteBox.js
+reveal.js
+PhotoSwipe
+jcSlider
+basic-jquery-slider
+unslider
+jQuery.adaptive-slider
+slidr
+Flickity
+Ion.RangeSlider
+jQRangeSlider
+noUiSlider
+rangeslider.js
+typeahead.js
+tag-it
+At.js
+Placeholders.js
+fancyInput
+jQuery-Tags-Input
+vanilla-masker
+Ion.CheckRadio
+pickadate.js
+bootstrap-datepicker
+Pikaday
+fullcalendar
+rome
+datedropper
+selectize.js
+select2
+chosen
+jQuery-File-Upload
+dropzone
+flow.js
+fine-uploader
+FileAPI
+plupload
+form
+Garlic.js
+Countable
+card
+stretchy
+list.js
+http://www.listjs.com
+tipsy
+opentip
+qTip2
+tooltipster
+simptip
+jquery-popup-overlay
+Magnific-Popup
+jquery-popbox
+jquery.avgrund.js
+vex
+bootstrap-modal
+css-modal
+jquery-popup-overlay
+scrollMonitor
+headroom
+onepage-scroll
+iscroll
+skrollr
+parallax
+stellar.js
+plax
+jparallax
+fullPage
+ScrollMenu
+jQuery-menu-aim
+jQuery contextMenu
+Slideout
+Slide and swipe
+jTable
+DataTables
+floatThead
+Masonry
+Packery
+Isotope
+Semantic UI
+hammer.js
+touchemulator
+Dragula
+Leaflet
+Cesium
+gmaps
+polymaps
+kartograph.js
+mapbox.js
+jqvmap
+OpenLayers3
+prettyembed.js
+html5media
+Play-em JS
+polyplayer
+flowplayer
+mediaelement
+velocity
+jquery.transit
+impess.js
+bounce.js
+GreenSock-JS
+TransitionEnd
+Dynamic.js
+lena.js
+pica
+cropper
+es6features
+es6-features
+ECMAScript 6 compatibility table
+Babel (Formerly 6to5)
+Traceur compiler
+javascript-sdk-design
+echo
+picturefill
+platform.js
+json3
+Logical Or Not
+BitSet.js
+
+Composer
+Composer Installers
+Pickle
+Melody
+Satis
+Toran Proxy
+Composition
+Version
+NameSpacer
+Patch Installer
+Composer Checker
+Symfony 2
+Zend Framework 2
+Laravel 5
+Aura PHP
+Yii2
+Nette
+PPI Framework 2
+CakePHP
+Phalcon
+Symfony CMF
+Knp RAD Bundle
+CakePHP CRUD
+Symfony2 Components
+Zend Framework 2 Components
+Aura Components
+CakePHP Plugins
+Hoa Project
+League of Extraordinary Packages
+Silex
+Slim
+Bullet PHP
+Lumen
+Proton
+Silex Skeleton
+Silex Web Profiler
+Slim Skeleton
+Slim View
+Fast Route
+Route
+Pux
+Klein
+Twig
+Twig Cache Extension
+Mustache
+Phly Mustache
+MtHaml
+PHPTAL
+Plates
+Lex
+Sculpin
+Phrozn
+Guzzle
+Buzz
+Requests
+HTTPFul
+Goutte
+PHP VCR
+Stack
+Slim Middleware
+Conduit
+Purl
+PHP Domain Parser
+Url
+SwiftMailer
+PHPMailer
+Fetch
+Email Reply Parser
+Stampie
+CssToInlineStyles
+Email Validator
+Gaufrette
+Flysystem
+Canal
+Apache MIME Types
+Ferret
+Hoa Mime
+Lurker
+PHP File Locator
+PHP FFmpeg
+CSV
+Streamer
+Pimple
+Auryn
+Container
+PHP-DI
+Acclimate
+Symfony DI
+Imagine
+PHP Image Workshop
+Intervention Image
+GIF Frame Extractor
+GIF Creator
+Image With Text
+Color Extractor
+Glide
+Image Optimizer
+PHPUnit
+DBUnit
+ParaTest
+PHPSpec
+Codeception
+AspectMock
+Atoum
+Mockery
+Phake
+Prophecy
+Faker
+Samsui
+Alice
+Behat
+Pho
+Mink
+HTTP Mock
+VFS Stream
+VFS
+Locust
+Peridot
+Travis CI
+SemaphoreCI
+PHPCI
+Sismo
+Jenkins
+JoliCi
+Sami
+APIGen
+PHP Documentor 2
+phpDox
+HTML Purifier
+RandomLib
+True Random
+SecurityMultiTool
+PHPSecLib
+TCrypto
+PHP IDS
+PHP SSH
+IniScan
+SensioLabs Security Check
+Zed
+Password Compat
+phpass
+PHP Password Lib
+Password Policy
+Password Validator
+Zxcvbn PHP
+GenPhrase
+PHP Parser
+PHPPHP
+PHPSandbox
+Dissect
+PHP Mess Detector
+PHP Code Sniffer
+PHPCPD
+PHP Analyser
+PHP CS Fixer
+PHP Manipulator
+PHP Metrics
+PHP Refactoring Browser
+UBench
+Athletic
+Mondrian
+Scrutinizer
+PHPLOC
+PHPCheckstyle
+PhpDependencyAnalysis
+Code Climate
+PHP Option
+Ruler
+Finite
+Compose
+Monad PHP
+Patchwork
+Galapagos
+Design Patterns PHP
+Functional PHP
+Lib Accessor
+Iter
+xDebug
+PHP Debug Bar
+PHP Console
+Barbushin PHP Console
+PHPDBG
+Tracy
+Z-Ray
+XHProf
+Blackfire.io
+Kint
+Go
+Bob
+Phake
+Box
+Phing
+Task
+Robo
+Bldr
+KnpMenu
+Cartographer
+Assetic
+Pipe
+Munee
+JShrink
+Puli
+GeoCoder
+GeoTools
+PHPGeo
+GeoJSON
+Carbon
+ExpressiveDate
+CalendR
+React
+Rx.PHP
+Ratchet
+Hoa WebSocket
+Elephant.io
+Hoa EventSource
+Evenement
+Event
+Cake Event
+Broadway
+Monolog
+KLogger
+Analog
+OmniPay
+Payum
+Sylius
+Thelia
+Money
+Sebastian Money
+Swap
+Snappy
+WKHTMLToPDF
+PHPPdf
+PHPWord
+PHPExcel
+PHPPowerPoint
+ExcelAnt
+Doctrine
+Doctrine Extensions
+Propel
+Eloquent
+Baum
+Spot2
+RedBean
+Pomm
+ProxyManager
+Cake ORM
+PHPMig
+Phinx
+Migrations
+Doctrine Migrations
+MongoQB
+Monga
+Predis
+Pheanstalk
+PHP AMQP
+Thumper
+Bernard
+ElasticSearch PHP
+Elastica
+Solarium
+SphinxQL query builder
+Boris
+PsySH
+Pecan
+GetOpt
+OptParse
+Commando
+GetOptionKit
+Cron Expression
+ShellWrap
+Hoa Console
+Shunt
+Cilex
+CLImate
+Sentinel
+Sentinel Social
+Opauth
+OAuth2 Server
+OAuth2 Server
+PHP oAuthLib
+TwitterOAuth
+TwitterSDK
+Hawk
+HybridAuth
+Lock
+OAuth 1.0 Client
+OAuth 2.0 Client
+Decoda
+PHP Markdown
+CommonMark PHP
+Parsedown
+Ciconia
+Cebe Markdown
+HTML5 PHP
+Emoji
+ANSI to HTML5
+Patchwork UTF-8
+Hoa String
+Stringy
+Color Jizz
+UUID
+Slugify
+Urlify
+Text
+SQL Formatter
+UA Parser
+Device Detector
+Mobile-Detect
+Numbers PHP
+Math
+ByteUnits
+PHP Units of Measure
+PHP Conversion
+LibPhoneNumber for PHP
+Filterus
+Respect Validate
+Valitron
+Cake Validation
+Upload
+DMS Filter
+MetaYaml
+ISO-codes
+Apigility
+Hateoas
+HAL
+Negotiation
+Drest
+Restler
+wsdl2phpgenerator
+Alternative PHP Cache (APC)
+Doctrine Cache
+Zend Cache
+Cake Cache
+Stash
+CacheTool
+Ardent
+PHP Collections
+Serializer
+Zend Serializer
+PHP Object Storage
+Fractal
+Totem
+PINQ
+JsonMapper
+Cake Collection
+Nod
+Notificato
+Notification Pusher
+Notificator
+Pomander
+Rocketeer
+Envoy
+Plum
+Deployer
+Aura Intl
+Cake I18n
+Amazon Web Service SDK
+S3 Stream Wrapper
+Stripe
+Campaign Monitor
+Digital Ocean
+Github
+PHP Github API
+Twitter OAuth
+Twitter REST
+Dropbox SDK
+Twilio
+Mailgun
+Zephir
+PHP CPP
+Spork
+JSON Lint
+JSONPCallbackValidator
+Pagerfanta
+LiteCQRS
+Chief
+Sslurp
+Metrics
+Sabre VObject
+Annotations
+Whoops
+LadyBug
+Symfony VarDumper
+Procrastinator
+SuperClosure
+Jumper
+Underscore
+PHP PassBook
+PHP Expression
+RMT
+Wise
+Opengraph
+Essence
+Embera
+Graphviz
+Flux
+PHPCR
+ClassPreloader
+Lib Country
+PHPStack
+Nmap
+Code Mover
+Lambda PHP
+Country List
+PHP-GPIO
+print_o
+Alias
+Cake Utility
+HomeBrew
+HomeBrew PHP
+PHP OSX
+PHP Brew
+PHP Env
+PHP Switch
+PHP Build
+VirtPHP
+Vagrant
+Ansible
+Puppet
+PuPHPet
+Protobox
+Phansible
+HipHop PHP
+HippyVM
+Hack
+Netbeans
+Eclipse for PHP Developers
+PhpStorm
+3V4L
+DBV
+PHP Queue
+Composer as a Service
+MailCatcher
+Cachet
+appserver.io
+
+AChartEngine
+EazeGraph
+WilliamChart
+HelloCharts
+MPAndroidChart
+RoboGuice
+Dagger
+Butter Knife
+AndroidAnnotations
+AndEngine
+Vuforia
+Unity
+Rajawali
+Pull to refresh
+Cardslib
+AndroidStaggeredGrid
+AQuery
+Flow
+Crouton
+DragSortListView
+MaterialProgressBar
+AndroidFillableLoaders
+ActionBarSherlock
+FadingActionBar
+SlidingMenu
+SlidingTutorial
+PagerSlidingTabStrip
+Page View indicator
+MaterialDrawer
+NineOldAndroids
+Rebound
+Android View Animations
+Android-Transition
+Android-View-Actions
+android-crop
+CircularImageView
+FloatingLabel
+MaterialEditText
+Emojicon
+Picasso
+Universal Image Loader
+Glide
+Fresco
+Gson
+Jackson JSON Processor
+Crashlytics
+HockeyApp
+Splunk MINT
+Bugsnag
+Ion
+OkHttp
+Asynchronous Http Client
+RoboSpice
+IceNet
+Android Volley
+IceSoap
+node-android
+android-remote-notifications
+Cupboard
+DbInspector
+Realm
+RestorableSQLiteDatabase
+GreeDAO
+ORMLite
+ActiveAndroid
+Sugar ORM
+DBFlow
+Retrofit
+Robotium
+Roboletric
+AssertJ Android
+MobileAppTracking
+Mixpanel
+EventBus
+Otto
+Weak handler
+Byte Buddy
+SmartGattLib
+Android Support library
+Google Play Services
+Tape
+Android Annotation framework
+Guava: Google Core Libraries for Java
+Android Scripting
+Android Priority Job Queue
+RateMeMaybe
+Easy Rating Dialog
+ZXing Android-Integration
+Gradle Retrolambda Plugin
+Caffeine
+Vogella Tutorials
+Android Design in Action Video series
+Android Design in Action slides
+Android DevBytes Video Series
+Developing for Android
+Chet Hasae
+Android Hive Tutorials
+Android Weekly
+Android Asset Studio
+Android Action Bar Style Generator
+Device Art Generator
+Android UI design resources
+Pencil Project
+Google Wear App
+How to Make Android Apps
+android-blogs
+The Android Arsenal
+DevAppsDirect - Demo Market
+Square libraries
+Android.hew.io
+Xamarin
+PhoneGap
+Titanium
+NativeScript
+React Native
+Ionic Framework
+Apache Cordova
+Reapp.io
+Corona SDK
+Scala on Android
+Scaloid
+Macroid
+Groovy on Android
+Groovy Language Support for Android
+SwissKnife
+Anko
+Kotterknife
+Android Kotlin Samples
+KAndroid
+
+Android Virtual Device Manager
+Android Emulator
+mksdcard
+android
+Hierarchy Viewer
+hierarchyviewer
+hprof-conv
+lint
+SDK Manager
+sqlite3
+adb
+Dalvik Debug Monitor Server
+DDMS
+Device Monitor
+dmtracedump
+hprof-conv
+Systrace
+traceview
+Systrace
+JOBB
+ProGuard
+zipalign
+Draw 9-patch
+Vector Asset Studio
+etc1tool
+Tracer for OpenGL ES
+bmgr
+logcat
+
+p
+pyenv
+PyRun
+Vex
+virtualenv
+virtualenvwrapper
+pip
+Python Package Index
+pip-tools
+conda
+Curdling
+wheel
+warehouse
+Warehouse
+bandersnatch
+devpi
+localshop
+PyInstaller
+dh-virtualenv
+Nuitka
+py2app
+py2exe
+pynsist
+buildout
+BitBake
+fabricate
+PlatformIO
+PyBuilder
+SCons
+IPython
+bpython
+ptpython
+imghdr
+mimetypes
+path.py
+pathlib
+python-magic
+Unipath
+watchdog
+arrow
+Chronyk
+dateutil
+delorean
+moment
+PyTime
+pytz
+when.py
+chardet
+difflib
+esmre
+ftfy
+fuzzywuzzy
+Levenshtein
+pangu.py
+pyfiglet
+shortuuid
+unidecode
+uniout
+xpinyin
+awesome-slugify
+python-slugify
+unicode-slugify
+phonenumbers
+PLY
+Pygments
+pyparsing
+python-nameparser
+python-user-agents
+sqlparse
+tablib
+Marmir
+openpyxl
+python-docx
+unoconv
+XlsxWriter
+xlwings
+xlwt
+relatorio
+PDFMiner
+PyPDF2
+ReportLab
+Mistune
+Python-Markdown
+PyYAML
+csvkit
+unp
+NLTK
+jieba
+langid.py
+Pattern
+SnowNLP
+TextBlob
+Sphinx
+awesome-sphinxdoc
+MkDocs
+pdoc
+Pycco
+config
+ConfigObj
+ConfigParser
+profig
+python-decouple
+cement
+click
+cliff
+Clime
+clint
+colorama
+docopt
+Gooey
+pyCLI
+python-prompt-toolkit
+aws-cli
+bashplotlib
+caniusepython3
+cookiecutter
+doitlive
+httpie
+PathPicker
+percol
+SAWS
+thefuck
+coursera
+s3cmd
+s4cmd
+subliminal
+WikiTeam
+you-get
+youtube-dl
+pillow
+hmap
+imgSeek
+nude.py
+pyBarcode
+pygram
+python-qrcode
+Quads
+scikit-image
+thumbor
+wand
+pyocr
+pytesseract
+python-tesseract
+audiolazy
+audioread
+beets
+dejavu
+django-elastic-transcoder
+eyeD3
+id3reader
+m3u8
+mutagen
+pydub
+pyechonest
+talkbox
+TimeSide
+tinytag
+mingus
+moviepy
+scikit-video
+GeoDjango
+GeoIP
+geojson
+geopy
+pygeoip
+django-countries
+requests
+grequests
+httplib2
+treq
+urllib3
+pickleDB
+PipelineDB
+TinyDB
+ZODB
+awesome-mysql
+mysql-python
+mysqlclient
+oursql
+PyMySQL
+psycopg2
+queries
+txpostgres
+apsw
+dataset
+pymssql
+cassandra-python-driver
+HappyBase
+Plyvel
+py2neo
+pycassa
+PyMongo
+redis-py
+telephus
+txRedis
+Django Models
+SQLAlchemy
+awesome-sqlalchemy
+Peewee
+PonyORM
+python-sql
+django-mongodb-engine
+PynamoDB
+flywheel
+MongoEngine
+hot-redis
+redisco
+butterdb
+Django
+awesome-django
+Flask
+awesome-flask
+Pyramid
+awesome-pyramid
+Bluebream
+Bottle
+CherryPy
+Grok
+guava
+TurboGears
+web.py
+web2py
+Carteblanche
+django-guardian
+django-rules
+django-cms
+djedi-cms
+FeinCMS
+Kotte
+Mezzanine
+Opps
+Plone
+Quokka
+Wagtail
+Widgy
+django-oscar
+django-shop
+Cartridge
+shoop
+alipay
+merchant
+money
+python-currencies
+django-rest-framework
+django-tastypie
+django-formapi
+flask-api
+flask-restful
+flask-restless
+flask-api-utils
+eve
+cornice
+falcon
+sandman
+restless
+ripozo
+Authomatic
+django-allauth
+django-oauth-toolkit
+django-oauth2-provider
+Flask-OAuthlib
+OAuthLib
+python-oauth2
+python-social-auth
+rauth
+sanction
+jose
+PyJWT
+python-jws
+python-jwt
+Jinja2
+Chameleon
+Genshi
+Mako
+Spitfire
+celery
+huey
+mrq
+rq
+simpleq
+django-haystack
+elasticsearch-py
+elasticsearch-dsl-py
+solrpy
+Whoosh
+django-activity-stream
+Stream-Framework
+django-compressor
+django-storages
+fanstatic
+File Conveyor
+Flask-Assets
+glue
+jinja-assets-compressor
+webassets
+Beaker
+django-cache-machine
+django-cacheops
+django-viewlet
+dogpile.cache
+HermesCache
+johnny-cache
+pylibmc
+django-celery-ses
+envelopes
+flanker
+imbox
+inbox.py
+inbox
+lamson
+mailjet
+marrow.mailer
+modoboa
+pyzmail
+Talon
+Babel
+Korean
+furl
+purl
+pyshorteners
+short_url
+webargs
+BeautifulSoup
+bleach
+cssutils
+html5lib
+lxml
+MarkupSafe
+pyquery
+untangle
+xhtml2pdf
+xmltodict
+Scrapy
+cola
+Demiurge
+feedparser
+Grab
+MechanicalSoup
+portia
+pyspider
+RoboBrowser
+Haul
+html2text
+lassie
+micawber
+newspaper
+opengraph
+python-goose
+python-readability
+sanitize
+sumy
+textract
+Deform
+django-bootstrap3
+django-crispy-forms
+django-remote-forms
+WTForms
+WTForms-JSON
+Cerberus
+colander
+kmatch
+schema
+Schematics
+valideer
+voluptuous
+django-simple-captcha
+django-simple-spam-blocker
+django-taggit
+Ajenti
+django-suit
+django-xadmin
+flask-admin
+flower
+Grappelli
+Wooey
+Pelican
+Cactus
+Hyde
+Nikola
+Tinkerer
+envoy
+sarge
+sh
+multiprocessing
+threading
+eventlet
+gevent
+Tomorrow
+asyncio
+Tornado
+Twisted
+pulsar
+diesel
+pyzmq
+txZMQ
+AutobahnPython
+Crossbar
+django-socketio
+WebSocket-for-Python
+gunicorn
+uwsgi
+bjoern
+fapws3
+meinheld
+netius
+paste
+rocket
+waitress
+Werkzeug
+SimpleJSONRPCServer
+SimpleXMLRPCServer
+zeroRPC
+cryptography
+hashids
+Paramiko
+Passlib
+PyCrypto
+PyNacl
+curses
+enaml
+kivy
+pyglet
+PyQt
+PySide
+Tkinter
+Toga
+urwid
+wxPython
+PyGObject
+Flexx
+Cocos2d
+Panda3D
+Pygame
+PyOgre
+PyOpenGL
+PySDL2
+PySFML
+RenPy
+logging
+logbook
+Eliot
+Raven
+Sentry
+unittest
+nose
+contexts
+hypothesis
+mamba
+PyAutoGUI
+pyshould
+pytest
+pyvows
+Robot Framework
+Selenium
+locust
+sixpack
+splinter
+mock
+doublex
+freezegun
+httmock
+httpretty
+responses
+VCR.py
+factory_boy
+mixer
+model_mommy
+coverage
+faker
+fake2db
+radar
+FuckIt.py
+code2flow
+pycallgraph
+pysonar2
+Flake8
+Pylint
+pylama
+ipdb
+pudb
+pyringe
+wdb
+winpdb
+django-debug-toolbar
+django-devserver
+flask-debugtoolbar
+line_profiler
+memory_profiler
+profiling
+pyelftools
+python-statsd
+astropy
+bcbio-nextgen
+bccb
+Biopython
+blaze
+cclib
+NetworkX
+Neupy
+Numba
+NumPy
+Open Babel
+Open Mining
+orange
+Pandas
+PyDy
+PyMC
+RDKit
+SciPy
+statsmodels
+SymPy
+zipline
+matplotlib
+bokeh
+ggplot
+plotly
+pygal
+pygraphviz
+PyQtGraph
+SnakeViz
+vincent
+VisPy
+OpenCV
+SimpleCV
+Crab
+gensim
+hebel
+NuPIC
+pattern
+PyBrain
+Pylearn2
+python-recsys
+scikit-learn
+vowpal_porpoise
+dpark
+dumbo
+luigi
+mrjob
+PySpark
+streamparse
+CyToolz
+fn.py
+funcy
+Toolz
+apache-libcloud
+boto
+django-wordpress
+facebook-sdk
+facepy
+gmail
+google-api-python-client
+gspread
+twython
+Ansible
+SaltStack
+OpenStack
+Docker Compose
+Fabric
+cuisine
+Fabtools
+gitapi
+hgapi
+honcho
+pexpect
+psutil
+supervisor
+APScheduler
+django-schedule
+doit
+gunnery
+Joblib
+Plan
+schedule
+Spiff
+TaskFlow
+cffi
+ctypes
+PyCUDA
+SWIG
+PeachPy
+PyPy
+Pyston
+Stackless Python
+Python(x,y)
+pythonlibs
+PythonNet
+PyWin32
+WinPython
+Mininet
+POX
+Pyretic
+SDX Platform
+ino
+Pyro
+PyUserInput
+scapy
+wifi
+Pingo
+Python-Future
+Python-Modernize
+Six
+blinker
+itsdangerous
+pluginbase
+Pychievements
+Tryton
+algorithms
+python-patterns
+sortedcontainers
+Elpy
+SublimeJEDI
+Anaconda
+YouCompleteMe
+Jedi-vim
+Python-mode
+PTVS
+PyCharm
+LiClipse
+Spyder
+Travis CI
+CircleCI
+Vexor CI
+Wercker
+Landscape
+QuantifiedCode
