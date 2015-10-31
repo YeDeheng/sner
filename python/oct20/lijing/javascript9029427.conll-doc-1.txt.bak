@@ -1,0 +1,14 @@
+checkbox operation in jsp
+I am trying this one to solve since last night but could not hence asking for help.
+There are two pages, such as name.jsp and roll.jsp.
+In name.jsp there are two input text boxes and one checkbox.I entered data in two text boxes and i checked the check box, when i checked the check box i am going to roll.jsp and in roll.jsp 2 text boxes are present.
+When I reached roll.jsp by clicking checkbox, I kept the link (name.jsp) on roll.jsp page and when i am clicking name.jsp I am not able to see my previously entered data on two textboxes.
+How can i achieve this?
+I am going to roll.jsp through a checkbox and i want to see all my previously entered data on name.jsp when i am clicking name.jsp hyperlink which is present in roll.jsp.
+How to achieve it?
+Two different forms are in these two pages.
+Any help is much appreciated
+On event of click, if that checkbox is checked, make a call for roll.jsp, which will submit the value of current 2 textbox as well as it will show in roll.jsp.
+For showing the previously entered values, accept using request.getParameter (string) and print that in roll.jsp.
+Whatever the response will come from roll.jsp, print that is one div.
+Hope your problem is solved.

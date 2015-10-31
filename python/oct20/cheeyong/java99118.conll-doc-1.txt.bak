@@ -1,0 +1,29 @@
+Would Automatic Casts be useful?
+Is there any downside or problem potential to change the Java compiler to automatically cast?
+In the example below the result of list.get (0) would automatically be casted to the type of the variable hi.
+@codeSnippetRemoved
+I know that generics allow you to reduce casting but they do so at the expense of making declaration more difficult.
+To me, the benefit of generics is that they allow you to have the complier enforce more rules -- not they they reduce casting (but I haven't used them much so I am somewhat uninformed).
+This proposal would only reduce the amount of code to type, not move it to another place.Also there are instances where generics can't be used because a collection can have different objectis.If that "looks too surprising" based on current usage maybe there could be a syntax tweak to use it.
+From : http://jamesjava.blogspot.com/2007/01/automatic-casting.html
+Casting is an explicit instruction to the Java compiler to ignore type safety so allowing automatic casts would remove one of the features purposely designed into the language.
+I personally like compiler warnings and errors, since it ' s much harder to find this type of problem at run time (assuming the compiler somehow managed to force one object type to another).
+I would avoid it, because I have a feeling it will come back and bite you later on.
+Generics are worth the hassle, in my opinion, because they save lots of headache down the road.
+Also, it ' s not too hard to use a "container" object for collections that hold different object types.
+Seems to me like having type checks is a good thing.
+An automatic cast would remove a potentially useful compile-time error.
+If you worry about the number of keystrokes, you could use an IDE like Eclipse, were the type cast can be inserted with a double-click.
+Yes, it would move errors which are currently found at compile time to being found at runtime.
+While this is not considered to be a huge drawback by some, those people are using Python, Ruby or Perl and not Java ;-).
+The biggest benefit of using generics in your example is that it changes what would be a run time error into a compile time error.
+@codeSnippetRemoved
+Because run time errors are seen by users and compile time errors are seen by programmers, compile time errors are much, much better.
+To answer your question, there would not be any drastic failures if casts were automatically made (and a ClassCastException was still thrown at runtime in your example).
+The benefit of requiring an explicit cast is that it requires the coder to think about what he ' s doing, and to realize that a cast is taking place.
+Also there are instances where generics can't be used because a collection can have different object
+You can still add different objects to a generic collection using wildcards.
+As others have said, automatic type-casting would eliminate type safety.
+Generics have multiple benefits and really aren't any harder to declare.
+With Eclipse, you can can just declare the generic variable and then use auto-complete on the instantiation and it will automatically fill in the type you used.
+Plus you (or perhaps more importantly, someone else) have the advantage of actually knowing at a glance exactly what the list or whatever contains.

@@ -1,0 +1,11 @@
+how to detect a mouse click on drawn image?
+I am new to c# Windows Form Application Development.
+I created a form with a panel in which the user can draw image on it.
+How do I check if the image is clicked?
+Just double-click on the form ' s image-panel (or whatever object you wish to detect click events on) and Visual Studio will automatically generate a OnClick() event.
+Needless to say, I'm talking about the forms designer, not the actual form you will see when testing your code.
+Alternatively, you can set which events you want to implement through the object ' s properties.
+That way you can also implement OnKeyDown() or OnFocus() or any other kind of events.
+Edit : If the image doesn't cover the entire panel, you'll have to check if the mouse position is within the image ' s dimension.
+Assuming the image is drawn at position (imgOriginX, imgOriginY) and has the size (imgWidth, imgHeight) : @codeSnippetRemoved
+In designer mode, right-click on the panel, go to Properties.In the Properties window, choose EVENTS (Lightning icon) .Double click on Click, then this code will be generated : @codeSnippetRemoved

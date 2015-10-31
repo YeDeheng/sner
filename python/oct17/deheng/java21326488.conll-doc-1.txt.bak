@@ -1,0 +1,28 @@
+Java, publish with local folders
+I have an Java desktop program which uses a "file" folder to keep logs and "image" folder to get images of its gui.
+I want to publish this program with ".class" files visible (so that i can update them).
+1-) In eclipse, when i use export --> Jar or export --> Executable Jar options.
+Its wraps everything in one jar and my program doesn't work (probably because it cannot find image files).
+I think i remember a way to publish the code as it is using eclipse but cannot find it :/.
+How can i publish my code keeping the folders i want with the program?
+2-) Is it a bad idea to keep visable ".class" files for updates?
+(i don't, also want people sneak in the code because it will have database url ' s and such).
+What are my alternatives?
+How do you make your updates?
+Thanks for the answers and pardon me if i asked something has already be asked and answered gazilion times :/ (.
+WOW, your comment sparked lights in my head =).
+Problem solved :).
+What i did is,
+export runnable jar, and selected libraries to be copied in folder.
+And then, i copied the external, namely "files" and "images" folders to the folder where my jar file is.
+And it worked!
+=).
+// For the second question, yep this way the ".jar" file is minimal so it can be updated easily.
+For the second question, i showed images as resources (can be done with right clicking relative folder in eclipse) as recommended.
+Thanks for your comment.
+A lot of these questions will vanish once you start using maven as your build environment.
+Packaging and resources handling is important if you want to deploy your java code to the outside world (sticking to standard patterns).
+A common pattern to load resources inside your Jar (as I understood, from your java code) is to use
+Or use FileIO.
+There are a lot of tutorials and resources outside regarding maven and it will help you not beeing to much concerned copying anything by hand in your build process.
+Everything else than coding should be automated by your environment.

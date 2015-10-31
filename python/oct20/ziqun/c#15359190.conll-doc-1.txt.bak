@@ -1,0 +1,18 @@
+C# service as a daemon in debian with mono-service
+I can't seem to find a way to get a C# service run as a "service" in debian.What Am I doing wrong?
+I followed this post from msdn to create a sample windows service : http://msdn.microsoft.com/en-us/library/zt39148a(v=vs.80).aspx
+I can run the service at my windows machine, Start and stop the service and see that it writes to MyNewLog.
+Then I copy it (.exe file) to my debian machine and tries to run it with (as root) mono-service MyNewService.exe
+The Syslog tell ' s me that the service have started!
+I have no errors and I can't see any newly created logfiles in the system.
+What Am I doing wrong?
+If it helps, here is the code :P rogram.cs @codeSnippetRemoved
+Service.cs @codeSnippetRemoved
+/ Cheers
+Try logging somewhere else than with System.Diagnostics.EventLog, perhaps to a text file or similar.
+I can't find anything recent, but this post suggests that the EventLog is simply discarded when running on Linux ; which would make sense.
+EDIT :
+Investigating the Mono source seems to bear this out.
+There are three possible options for event logging : win32, local and null.
+If the MONO_EVENTLOG_TYPE environment variable is set to local, then on Linux the logs should be written to / var / lib / mono / eventlog by default.
+You really need to isolate your logging code from your expectations - it seems that your service works fine, but the logging is the problem.

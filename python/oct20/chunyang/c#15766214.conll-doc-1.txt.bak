@@ -1,0 +1,24 @@
+How to load data from Excel file to sql databse?
+I'm developping an application for Honeywell Dolphin 6100, a mobile computer with a barcode scanner that uses Windows CE 5.0 like OS.
+I want to import data from excel file to the local database of the application.
+I'm following this tutoriel
+The problem is that the System.Data.OleDb can not be found which is important to read data from an external file.
+What I need to do?
+Note : I'm using VS2008 and I'm working on Windows 7.
+You have a raft of hurdles to overcome.
+Just a few are
+OLEDB is not supported under Windows CE.
+Pocket Excel has no automation object model or even any published file format specification Desktop libraries (like Microsoft.Office.Interop.Excel) will not work under Windows CE
+Basically I think you're straying down a poor choice path.
+What ' s the actual business problem you're trying to solve here?
+Do you have Pocket Excel files created on the device you need to merge into a local SQL Compact Database?
+Is there an option for not using Excel?
+Or is it that you have desktop Excel files on a PC and you want the data over on the device?
+If so, how are the files getting to the device?
+Can you convert them to CSV?
+Can you put a service on a server somewhere to do the conversion for you?
+There ' s likely a way to solve the overall problem, just not on the path you're trying.
+We'd need to understand the actual problem to help you get a better solution, though.
+some options :
+write a one off console app to do the import. use SQLserver management studio to do the one off import of an excel file use microsoft access which will allow you to open the excel file and the DB and query across them both.
+Unless you need to have your CE app accessing excel files all the time then maybe its not worth getting it to work just now.

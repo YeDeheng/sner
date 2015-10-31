@@ -1,0 +1,29 @@
+T1	PL 36 42	Python
+T2	PL 90 93	C++
+T3	PL 110 113	C++
+T4	PL 648 651	C++
+T5	Stan 827 830	jar
+T6	PL 1510 1516	Python
+T7	PL 1521 1524	C++
+T8	API 2399 2407	MakeLong
+T26	API 1304 1314	PyInt_Type
+T27	API 1324 1340	initializer_list
+T28	API 1134 1157	std :: initializer_list
+T29	API 1611 1621	std :: map
+T30	API 1640 1651	std :: pair
+T32	API 2211 2222	PyLong_Type
+T33	API 2478 2501	std :: initializer_list
+T34	API 2693 2704	PyLong_Type
+T9	API 2789 2801	PyFloat_Type
+T35	API 2841 2864	std :: initializer_list
+T10	API 140 146	Object
+T11	API 351 362	PyDict_Type
+T12	API 363 374	PyList_Type
+T13	API 375 387	PyTuple_Type
+T14	API 388 398	PySet_Type
+T15	API 526 537	PyList_Type
+T16	API 483 494	PyList_Type
+T17	API 499 510	PyDict_Type
+T18	API 539 551	PyTuple_Type
+T19	API 553 563	PySet_Type
+T20	API 585 596	PyList_Type

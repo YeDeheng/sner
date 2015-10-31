@@ -1,0 +1,11 @@
+Exception Handling : exception being handled multiple times
+I have a python script which downloads certain data from the internet (from a list of URLS) and stores it in a MySQL database.
+My code is something along these lines : @codeSnippetRemoved
+The data which I fetch could be duplicate and I don't want the duplicate data to be inserted into the database and the code should go over the next iteration etch the next data instead of storing the data.
+So I have the except mdb.IntegrityError : line there which takes care of the duplicates.
+However, after catching the exception for the duplicate entry the code, instead of going over the next iteration goes to the except which I have set for the for loop.
+Here ' s what I get : @codeSnippetRemoved
+Why does this happen?
+And how do I prevent from happening this?
+Thanks a lot!
+Your e would not be defined causing exception in your except block.Use mdb.IntegrityError, e like you did for except mdb.Error, e

@@ -1,0 +1,21 @@
+Hibernate calls flush on find- causes not-null error
+I have a process which updates a tree to the database, and in doing so, performs reads to check for duplicates entities.
+I'm finding that trying to do a criteria.uniqueResult() midway through this process causes the following error :
+org.hibernate.PropertyValueException : not-null property references a null or transient value
+Digging through the stack trace, I see that the uniqueResult() is flushing the session, attempting to perform updates that aren't ready to go to the database yet.
+@codeSnippetRemoved
+Have I set something up wrong here?
+Any help greatly appreciated.
+Marty
+Turn off auto-flushing on the Session object to fix this exception.
+@codeSnippetRemoved
+This is not your error however.
+Something earlier in your code is causing the in memory objects to be in an invalid state which is trying to be persisted to the DB during the autoflush.
+hibernate remembers with objects needs to be saved. when issuing a select, hibernate will flush these changes. this ensures the select will return the correct results.
+setting flushmode to anything else than FlushMode.AUTO will prevent this behaviour.
+But the error is in your code, where you pass an incomplete object to hibernate to persist or update.
+So the correct solution is to pass the object later to hibernate, when it is complete.
+I've pulled my hair out many times trying to get to the bottom of these issues.
+The problem being that it ' s so difficult to get to the root of the issue causing it.
+If you're nearing your wits end you can also execute the supporting queries such as findAll in a new session : @codeSnippetRemoved
+That has usually circumvented the problem for me in most cases.

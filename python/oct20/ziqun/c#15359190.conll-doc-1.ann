@@ -1,0 +1,15 @@
+T1	PL 0 2	C#
+T2	PL 87 89	C#
+T4	Plat 200 207	windows
+T5	Plat 309 316	windows
+T10	API 794 821	System.Diagnostics.EventLog
+T11	API 920 928	EventLog
+T12	Plat 965 970	Linux
+T13	Plat 1206 1211	Linux
+T3	Fram 38 50	mono-service
+T9	Plat 26 32	debian
+T6	Plat 422 428	debian
+T17	Fram 472 484	mono-service
+T7	Fram 1111 1116	win32
+T8	API 1141 1159	MONO_EVENTLOG_TYPE
+T19	Fram 1022 1033	Mono source

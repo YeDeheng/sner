@@ -1,0 +1,17 @@
+How can I do the equivalent of submitting a form twice with PHP?
+I have a problem with a form.
+I need it to perform two actions with only one submit click.
+I've read that the best solution is a server-side script, but my knowledge of PHP is pretty limited, so I'd really appreciate any help.
+The two actions I need to perform are :
+Run a script that uploads a file and sends an email (action= "uploader.php") Direct the user to a PayPal payment gateway (action= "https://www.paypal.com/cgi-bin/webscr")
+As I see it, the problem is that I don't have control over the PayPal script, but it obviously takes some data from the form (i.e. amount, concept, etc ...), so adding a simple redirect in uploader.php isn't enough.
+What do you think?
+How could I solve it?
+Thanks!
+UPDATE : I'll try to post the user-action flow :
+user fills in the form and adds a file to upload 1st form action : file is uploaded and an email is sent (action= "uploader.php") 2nd form action : user is taken to a paypal payment form (action= "https://www.paypal.com/cgi-bin/webscr") When the purchase is completed the user is taken to a purchase confirmation page.
+Your uploader.php should show the new paypal form (or the same) to user and submit it by javascript on dom ready.Don't forget about non-javascript users too.
+@codeSnippetRemoved
+You can send the form to submit.php, upload your file, perform your email action, then use CURL to send your data on to PayPal.
+This site has an example of how to send data to PayPal via CURL / PHP :
+http://curl.phptrack.com/forum/viewtopic.php?p=9643 sid=5cc0c394df6efcf73772273846430fbe

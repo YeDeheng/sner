@@ -1,0 +1,13 @@
+T1	PL 20 23	PHP
+T2	PL 52 55	php
+T3	PL 340 343	php
+T4	PL 389 392	php
+T5	PL 436 439	php
+T6	PL 488 491	php
+T7	PL 542 545	php
+T8	PL 594 597	php
+T9	PL 650 653	php
+T10	PL 703 706	php
+T11	PL 757 760	php
+T12	PL 907 910	php
+T13	API 791 808	mysql_fetch_assoc

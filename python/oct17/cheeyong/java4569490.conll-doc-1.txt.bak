@@ -1,0 +1,8 @@
+How to play video in Java Swing?
+How to play a video in Java Swing?
+Is there any Swing components for this?
+What you are looking for is JMF (Java Media Framework).
+You can find some tutorials on how to use it in the SO question below.
+where can i find Java JMF tutorial
+Have a look at FMJ - http://fmj-sf.net
+I suppose this will solve your problem : How to use JVLC (Java bindings for VLC)?

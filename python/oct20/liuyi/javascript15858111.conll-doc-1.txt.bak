@@ -1,0 +1,20 @@
+Javascript Countdown & IE
+Added :
+Ok to add some additional details as I thought you had to keep the questions concisebut it has been downvoted for lack of research.
+This script was about the third or fourththat I had tried to do what I wanted and work across the various browsers.
+When it didnot work I did search for resources to help and thought it may be the way the countdown is output in that IE doesn't like the Input ID so tried other ways to display it but couldn't get it to work hence the question.
+There is no error displayed one IE it just doesn't show anything - hence it is just a guess about the input id.
+I found this Javascript code - maybe even off here and it does exactly what I wantand shows up fine in FF Chrome.
+Unfortunately though it doesn't show the countdownat all in IE and wondered if there is any way of changing the way the countdown isoutput that would be compatible with IE.
+Here ' s the code i'm using : @codeSnippetRemoved
+And displaying it like this : @codeSnippetRemoved
+As I say the above displays fine in FF Chrome - is there any way to get it to work in IE?
+Thanks in advance.
+script type= "text / javascript" ... var minutes, seconds ; ...
+script type= "text / javascript"
+var minutes, seconds ;
+// set minutesvar mins = 5 ;
+// calculate the seconds (don't change this! unless time progresses at a different speed for you ...) var secs = mins * 60 ;
+function countdown() { setTimeout('Decrement ()', 1000 ); }function Decrement() { minutes = document.getElementById ("minutes ") ; seconds = document.getElementById (" seconds ") ; // if less than a minute remaining if (seconds 59) { seconds.value = secs ; } else { minutes.value = getminutes() ; seconds.value = getseconds() ; } secs -- ; setTimeout('Decrement ()', 1000 );
+} function getminutes() { // minutes is seconds divided by 60, rounded down mins = Math.floor (secs / 60 ); return mins ; }function getseconds() { // take mins remaining (as seconds) away from total seconds remaining return secs-Math.round (mins * 60 ); } / script div id= "timer" Time Ending In : input id= "minutes" type= "text" minutes and input id= "seconds" type= "text" seconds.
+/ div script countdown() ; / script

@@ -1,0 +1,5 @@
+focuslost event of JTextfield not work properly
+I am making an application in which I am using the jTextfield Focuslost event .It works properly.
+Now my problem is that when I click outside the form,
+the jTextfield Focuslost event takes place and it should do the whatever I write in
+Focuslost event code.so please help me.

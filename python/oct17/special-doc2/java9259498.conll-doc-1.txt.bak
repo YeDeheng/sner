@@ -1,0 +1,34 @@
+Oracle Stored procedure Structured Parameters
+I wish to pass a bunch of ' unknown ' values to an Oracle stored procedure from a spring java application.
+The data is somewhat structured, so currently we have a stored proc that has accepts 2 clobs what are key / value pairs of the data.
+The first clob represents a single record amd the second clob, represents many child records of clob 1.
+This seems a very inefficient way to pass the data as we have to construct strings in java in the forst plave and then the data has to be parsed in the stored proc.
+I have looked into Oracle record structures, however it appears as though you have to map each field in the record structure to a db table field. the problem with this approach is a) the data items that we send each time differ (although there is a core set of data that remains the same) and b) some of the data items are there for decision making purposes only and are not actualy persisted to the database.
+So my question is : what is the most efficient vehicle to pass such data to the Oracle stored proc?
+We want to maintain the flexibilty of being able to send variable parameter sets along with having some semblance of structure around the data.
+Thanks in advance.
+Barry
+Have you considered passing your data to the stored procedure as XML?
+Oracle can handle XML data types.
+There are also some related questions on Stack Overflow :
+Java : Oracle XMLType + JDBC
+How to Oracle XMLTYPE in Hibernate
+Using MyBatis with Oracle XMLType function existsNode()
+However, XML may be a performance killer in some situations.
+Another option is to use REF CURSOR types :
+PreparedStatement stmt = connection.prepareStatement (
+"DECLARE"
++ "records SYS_REFCURSOR ;"
++ "BEGIN"
++ "OPEN records FOR"
++ "SELECT * FROM TABLE (? );"
++ "my_proc (records );"
++ "EN D; ") ;
+// Set the records as an array
+stmt.setArray (1, records );
+That would be a way to somewhat structure the data and yet operate on weakly typed cursors.
+The above select could have any form.
+In this example, I'm assuming that you will be binding something like this :
+CREATE TYPE rec AS OBJECT (ID NUMBER (7), VALUE CLOB );
+CREATE TYPE tab AS TABLE OF rec ;
+A simple example procedure implementation expecting a TABLE OF VARCHAR2 REF CURSOR :

@@ -1,0 +1,5 @@
+int i = 0 ; while (i n) { i++ ; document.SetPageSize (reader.GetPageSizeWithRotation (i )); document.NewPage() ; page = writer.GetImportedPage (reader, i ); rotation = reader.GetPageRotation (i ); if (rotation 90 || rotation 270) { cb.AddTemplate (page, 0, -1f, 1f, 0, 0, reader.GetPageSizeWithRotation (i) .Height ); } else { cb.AddTemplate (page, 1f, 0, 0, 1f, 0, 0 ); } }
+}
+I write the Memory stream, back to context.response.Outputstream ; but the pdf doesnt load, the page ' Failed to load Pdf ' results ; Is there any problem in converting btwn memorystream and Pdf contents, or what may be the issue?
+I had the same problem, and it turned out that the cause was not closing the document, and adding the following line of code : @codeSnippetRemoved
+should fix the problem.

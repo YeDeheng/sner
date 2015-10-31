@@ -1,0 +1,17 @@
+using variables in place of id names in jquery
+I desire to use a variable i that is incremented in a for loop to create unique id ' s in div ' s in a mako template.
+@codeSnippetRemoved
+Result hoping for in the html when the javascript is run : @codeSnippetRemoved
+etc.Instead I get : @codeSnippetRemoved
+Any suggestions?
+Following the suggestions below, I changed the code to @codeSnippetRemoved
+Now I get an error message : SyntaxError : missing) after argument list[Break On This Error ] @codeSnippetRemoved
+with arrow on the p in photo
+FINALLY !!
+I ended up having to define the whole variable outside of the jQuery command as it kept having problems with the + sign in the jquery href.
+I used the following code to obtain the desired results.
+@codeSnippetRemoved
+Change this : @codeSnippetRemoved
+to : @codeSnippetRemoved
+Please note that if the doctype of the page is not HTML5, IDs must begin with a letter.
+@codeSnippetRemoved

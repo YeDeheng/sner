@@ -1,0 +1,7 @@
+How do I use CSS to create rounded corners in IE 8?
+How do I use CSS to create rounded corners in IE 8?
+Since the CSS rule corner-radius doesn't work is there a solution to create rounded corners in using CSS in IE8 (or IE6, and IE7).
+After a lot of research, I have found that there is a fix similar to the PNG transparancy fix available to IE6, called CSS3Pie.
+The website to the solution is found here : http://css3pie.com
+You will simply have to add behavior : url (path / to / pie_files / PIE.htc ); to your css anywhere you wish to implement rounded corners.
+@codeSnippetRemoved

@@ -1,0 +1,19 @@
+jQuery tabs are not clicking when clicked on
+I have jQuery tabs using ui 1.10.0.
+My first tab is activated by default ; however, I can not get the other 5 tabs to work.
+When I click on them, they do nothing and the content that coordinates with tabs doesn't show.
+Here ' s the basic HTML code : @codeSnippetRemoved
+Here ' s the Javascript : @codeSnippetRemoved
+There was one typo mistake in addclass at following line.
+You have specified addclass instead of addClass.
+@codeSnippetRemoved
+Also following is updated js.
+@codeSnippetRemoved
+Here ' s Demo Fiddle
+Here ' s corrected HTML if your are interested ...
+@codeSnippetRemoved
+Have some errors in HTML and JS.
+Try this
+HTML : you have to put the correct ' id ' of div in href attribute of anchor @codeSnippetRemoved
+JS : have some syntax errors and you have to remove more classes and add more classes also.
+@codeSnippetRemoved

@@ -1,0 +1,18 @@
+Google Guava TreeMultimap -- retrieve values based on sorted ordering?
+So I'm trying to implement something that requires sorting of values of a Quantity > map, such as : @codeSnippetRemoved
+The values are not necessarily distinct.
+I want to be able to retrieve the k / v pair with the largest and smallest value, similar to what a TreeMap is able to do with keys.
+I found Google Guava ' s TreeMultimap, which is an implementation of Multimap whose keys and values are ordered by their natural ordering or by supplied comparators.
+The thing is, TreeMultiMap doesn't seem to have any methods that let me retrieve k / v pairs based on the ordering of the keys or values, (like what pollFirstEntry(), for instance, does in TreeMap).
+To this extent, I'm a little confused on how to make a TreeMultimap object obtain this functionality.
+I feel like it should work, maybe it ' s just a matter of how I instantiate the object?
+Thanks, any help would be appreciated.
+TreeMultimap isn't going to support this in quite the way you're looking for, I'm fairly certain.
+What you could do is a TreeMultimap Integer, String -- swapping the role of the keys and the values -- and then TreeMultimap.asMap() .lastEntry() would get you a Map.Entry Integer, Collection String, corresponding to the greatest Integer and all the String s associated with it.
+The one thing definitely not supported by TreeMultimap is looking at the combined values for all keys as a single sorted collection.
+(You can look at them as an unsorted collection with values(), of course.)
+It ' s true that TreeMultimap does order values according to a value comparator, but that ordering is only relevant in relation to other values mapped to the same key.
+So, for example, if you had @codeSnippetRemoved
+And you iterated through the entries(), you should get [ (a, 1), (a, 3), (b, 2), (b, 4) ].
+Similarly if you iterated through the values(), you should get [ 1, 3, 2, 4 ] as it returns the values of a in order, then the values of b in order.
+Getting the first or last key is simple though, as keySet() returns a NavigableSet, meaning you can call first() and last() on it.

@@ -1,0 +1,27 @@
+function / command to retrieve web content (besides from wget or file_get_contents)
+I need to retrieve a web content.
+I usually use wget but it ' s giving me an "Internal Server Error" this time.
+I also tried using file_get_contents(), it works when I'm using MAMP installed in my Mac, but when I run it in our server, it ' s not doing anything and prints no error message.
+Is there any other way to do this?
+Below are the code that I used.
+@codeSnippetRemoved
+Thanks in advance !!
+I don't know how to reply to all of you so I just added it here.
+CURL WORKED PERFECTLY.
+Thanks a lot guys.
+I just have to ask though why file_get_contents() won't work even if it ' s enabled in the php.ini?
+I would guess that you don't have the fopen wrappers enabled.
+To test, do : @codeSnippetRemoved
+If this returns false (or 0, can't remember which), you can't use file_get_contents to open a remote file.
+If cURL is installed, you can use that to access remote files.
+allow_url_fopen may be turned off by your web host.
+You should see if this can be turned on.
+If not, cURL may still available so you should try using that instead.
+If cURL is available to you, use that.
+You can determine if cURL is installed by doing a phpinfo() ;.
+For more information on cURL : PHP : cURL
+Please reference http://davidwalsh.name/download-urls-content-php-curl for a solid example of using PHP ' s implementation of CURL to fetch the contents located at a given URL.
+I believe you'll find the process fairly straightforward.
+You can use cURL : @codeSnippetRemoved
+function curl ($url) { $ch = curl_init() ; curl_setopt ($ch, CURLOPT_URL, $url ); curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1 ); return curl_exec ($ch ); curl_close ($ch ); }
+$html = curl ("http://www4.honolulu.gov/hpdtraffic/MainPrograms/frmMain.asp?sSearch=All+Incidents sSort=I_tTimeCreate ") ;

@@ -1,0 +1,15 @@
+How can I calculate the width of individual li with varying widths within a ul
+Say I have this list below.
+Each image has a varying width and the a tag has a margin right of 15px which extends the list item a little more to give it some space from the next image.
+@codeSnippetRemoved
+How can I get jquery to give me the correct width of the items in my calculation below so I can give the UL the correct total width because currently the total is coming out much greater than it should ...
+@codeSnippetRemoved
+var ul= jQuery('ul '), finalWidth=0, finalHeight=0 ;
+ul.find('li ') .each (function() { finalWidth+=jQuery (this) .width() ; finalHeight+=jQuery (this) .height() ; } );
+ul.height (finalHeight) .width (finalWidth );
+Your solution just measures the first item and then assumes each item is that long.
+Rather iterate over all items, measuring them individually, using jQuery ' s each :
+Try @codeSnippetRemoved
+Similar to Steffen M ller ' s approach, you probably want to use .each(), but you should use the .outerWidth (true) function to pick up the margin as well.
+EDIT : Updated my code so it can replace yours.
+@codeSnippetRemoved

@@ -1,0 +1,16 @@
+Broken png image using Laravel Asset Pipeline despite 200 OK status
+I'm using Codesleeve / asset pipeline on my Laravel project to serve css, js and image files.
+It on the whole works fine but there is an issue with displaying css-loaded images.
+The image does not display and shows the browser ' s "broken image" symbol when loading it directly (http://art.ipscap.com/assets/select2.png for example ): e.g.
+Upon inspecting the page it shows the image is loaded successfully with 200 OK status (or cached) but there seems to be an error displaying it.
+Seeing as the image in question displays fine on my local machine and the problem is only in production is there a way to diagnose this issue?
+Edit : Still haven ' t managed to find a solution for this.
+For reference the live broken image url is https://art.ipscap.com/assets/select2.png.
+The image itself is in app / assets / images / select2.png and the readme in the same directory states :
+If you place an image here called foobar.png then you can access that image by going to http:// hostname / assets / foobar.png
+I find it strange as the image does not fail to load but is being broken by asset pipeline.
+The same does not seem to occur to other images in the app such as the header jpeg image.
+Do you use different server software on your local and production server?
+I see the production uses nginx.
+In that case, you might have to add something to your config as stated here :
+https://github.com/CodeSleeve/asset-pipeline#can-i-use-nginx

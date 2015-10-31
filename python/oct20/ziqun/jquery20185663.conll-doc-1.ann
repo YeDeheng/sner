@@ -1,0 +1,10 @@
+T1	PL 0 10	javascript
+T2	Stan 14 18	ajax
+T4	Stan 287 291	ajax
+T5	API 359 380	window.onbeforeunload
+T10	API 693 704	window.open
+T13	API 740 751	console.log
+T18	PL 381 392	java script
+T7	API 844 851	.unload
+T19	API 886 895	.unload()
+T3	API 653 667	window.onclick

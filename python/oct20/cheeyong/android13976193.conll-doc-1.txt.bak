@@ -1,0 +1,23 @@
+Android WebView shows plain text instead of html
+First, I am going to say this is only an issue on Android 2 and older (4 seems to be unaffected and I didn't test 3).
+I have a WebView that loads html from a string.
+The HTML looks like this : @codeSnippetRemoved
+You can see that css file looks like this : @codeSnippetRemoved
+The WebView code looks like this : @codeSnippetRemoved
+What Happens
+I see the html code in the WebView as if I had set the mime type to plain text.
+What I'd Expect (and what happens in Android 4.x
+I see the html in the WebView
+There are a few things that have to be true to show the symptoms I am seeing :
+Android 2.x (I was using 2.3.7 and 2.2) The css has to be accessed via a url href= "http://www.robotsidekick.com/test.css?rev=0" as opposed to href= "test.css" (however it doesn't matter if it ' s a real css file href= "http://www.thisisnotarealurl.fake/test.css?rev=0 causes the same problem) The css must have a get parameter?
+rev=0, but it doesn't matter what it is
+Also wanted to note that the following did not make a difference :
+Using the appropriate "instead of ' in the HTML Having the link tag close itself or not The contents of the css Adding a doctype!
+DOCTYPE html to the HTML
+Changing the webview.loadData line to this : @codeSnippetRemoved
+Solves this problem.
+It seems weird to me that a relative path with an unencoded?
+doesn't cause problems, while a fake url with an unencoded?
+does cause problems.
+Also find it odd that the WebView changed enough in subsequent versions of Android that we don't have to go encoding our html anymore?
+That sounds fishy.

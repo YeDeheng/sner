@@ -1,0 +1,16 @@
+How to get the echoed element in Jquery?
+I've a php file that echoes an img element from a PHP file with id= "uploadedPhoto" .After uploading it i have a Jquery script that changes the size of the image on button click.
+Before this it was working when i was using img as background of a div however now it isn't working.
+HTML Code.
+@codeSnippetRemoved
+img is uploaded in between id= "imageDiv".
+PHP Code.
+@codeSnippetRemoved
+JScript.
+@codeSnippetRemoved
+Can you please find the problem?
+There is issue with DOM structure.
+I guess your image automatically uses the size of div tag
+you use to expand or reduce the size.
+So i recommend you to try, fix the size of this div.
+Atul

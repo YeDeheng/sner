@@ -1,0 +1,15 @@
+Executer thread with different actions
+One of actions in Struts2 is using below code :
+Here, myTask is inner class which implements Runnable interface.
+Can I invoke the above code from other action class as well by passing parameter a shown below :
+In Run method, I'll check the action if its add, perform some activity, if its update, perform other activity ....
+Also, from another 3rd action class, can I invoke the same above thread by passing another action, say "update" ???
+Thanks!
+No - Runnable.run doesn't take any parameters, so how would you expect the "delete" part to be provided to you?
+Just use the first form - create the Runnable instance with all the information it needs to know so that it can do its work.
+Alternatively, I would probably create three different implementations of Runnable - one for add, one for delete, and one for update.
+If you want to do one of three things, why switch on data at execution time when you can use polymorphism?
+If you have a lot of different operations, you could do something like this.
+Not many Java developers know that enums can be used in this way and thus it can be confusing.
+Therefore you should use it sparingly, but when it makes sense it can be quite convenient :)
+A much simpler approach is to use an anonymous class.

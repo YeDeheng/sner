@@ -1,0 +1,13 @@
+Have iframe load when visible
+I have a page with about 100 videos on them (youtube) loading an iframe.
+They are all in an accordion style menu, I was wondering if there was a way to have them load when the accordion is open or the iframe is visible on the page.
+Right now it takes up way too much memory and lags the page a lot.
+IF you want to do this, you can set the src property of the iframe, that points to the videos, on the event that is triggered when the accordion is opened.
+I haven't worked in a while with the accordion, but pretty sure there is a init event for it.
+You haven't shown any code that allows us to include this in your code.
+Don't set the src of the video, store it in data @codeSnippetRemoved
+Using whatever triggers the accordion, $ (this) being that accordion item @codeSnippetRemoved
+Okay so it will go as follow :
+HTML @codeSnippetRemoved
+javascript @codeSnippetRemoved
+Example : AccordionLoadFrame

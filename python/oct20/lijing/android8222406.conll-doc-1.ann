@@ -1,0 +1,29 @@
+T1	Plat 0 7	Android
+T2	Stan 109 113	HTTP
+T7	API 437 447	HttpClient
+T8	Stan 496 500	HTTP
+T11	Fram 903 910	Firefox
+T12	API 945 954	HttpClien
+T13	API 987 1018	com.android.MyCellFamily.DAHttp
+T18	API 120 124	POST
+T19	API 535 539	POST
+T21	Fram 914 916	IE
+T22	API 1397 1415	onReceivedSslError
+T23	Stan 1432 1435	SSL
+T16	API 139 177	HttpUtils : javax.net.ssl.SSLException
+T3	API 565 569	POST
+T9	API 1093 1108	android webview
+T10	API 1211 1225	webview client
+T15	Stan 1296 1301	https
+T25	API 1388 1395	webview
+T26	Stan 1147 1150	ssl
+T27	Stan 1469 1474	https
+T28	API 1480 1493	Webviewclient
+T4	API 675 684	HttpUtils
+T20	API 687 713	javax.net.ssl.SSLException
+T17	API 1311 1335	shouldOverrideUrlLoading
+T29	Fram 382 395	Bouncy Castle
+T30	API 501 508	Request
+T24	Stan 8 13	HTTPS
+T31	API 14 18	Post
+T5	API 346 354	keystore

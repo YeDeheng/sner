@@ -1,0 +1,13 @@
+autosize node width for d3 tree layout
+Please suggest on how to autosize the width of the node according the node value for d3 tree layout.
+The following is the link reference I adapted and piece of code.
+@codeSnippetRemoved
+http://jsfiddle.net/augburto/YMa2y
+I haven't answered your exact question, but essentially you to need to dynamically auto size the svg rectangle.
+I've updated your fiddle to dynamically sizing the rectangle based on the number of children, using this code : @codeSnippetRemoved
+Which simply adds the length of the number of children to the rectW.
+For what you want to do you need to calculate the length of the text and set that to the width of the rectangle.
+This question might help you calculate the length of the text.
+You'll also have to recalculate the centre of the rectangle to place the label.
+Hope this gets you going.
+Cheers

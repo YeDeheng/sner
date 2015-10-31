@@ -1,0 +1,18 @@
+Weirdest javaScript array literal
+when I was on my project, I accidentally named a array "name" like this
+it generated an inconsistency in my project because as I expected name[0 ] would yield the first abc, HOWEVER !, it gives me the first letter a !!!.
+I tried this array in Firefox console and it always gave my the array instead of a String which I got from typing this into Chrome console.
+So I renamed the variable to be something else like this in Chrome again
+And foo[0 ] gave me the first "abc".
+Feel free to try this, I am guessing there is a problem with the naming "name", but have no idea why.
+Thanks
+At the top level var name is the same as window.name.
+window.name is reserved, so Chrome
+converts it to string implicitly.
+Note that converting an array to a string just comma-separates it :
+is :
+The Window object has a name property which is specified as follows :
+The name attribute of the Window object must, on getting, return the current name of the browsing context, and, on setting, set the name of the browsing context to the new value.
+(emphasis mine)
+Thus, setting window.name, by e.g. doing var window = ... in a global context, will set the name of the browsing context to the right-hand side.
+Since the name must be a string, the setter converts it to one.

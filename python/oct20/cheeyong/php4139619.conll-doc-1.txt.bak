@@ -1,0 +1,24 @@
+php, mySQL return last x rows
+I'm working on a php / mySQL / ajax shoutbox and have run into a small snag.On the page I want the content to be loaded from oldest to newest, with the newest on the bottom.
+I also want to limit the output to reduce load times once the database starts to get a lot of data in it.
+Here is the current code ; @codeSnippetRemoved
+I have tried using while ($row=array_reverse (mysql_fetch_array ($result ))) as well as $result = array_reverse (mysql_query ($q )) but both return an error that array_reverse needs to be fed an array.
+So far anything I have found on the web from the SQL side have all been answered "just use DESC or ASC accordingly.
+"
+$res = mysql_query ($q ); $shouts = array() ;
+while ($row = mysql_fetch_assoc ($res )) $shouts [] = $row ; $shouts = array_reverse ($shouts );
+foreach ($shouts as $shout) { // show them ...
+}
+$result=mysql_query ($q );
+unset ($temp_array );
+while ($row = mysql_fetch_array ($result )) $temp_array [ ]= $row ;
+$temp_array = array_reverse ($temp_array );
+foreach ($temp_array as $row) { $classColor = getClassColor($row['char_id ' ]); echo "span class= '".
+$classColor.
+"' ".$row['username ' ].
+"/ span : ",nl2br($row['shout_message ' ]).
+"br /" ; }
+If you want oldest to newest, and shout_id is auto increment just use @codeSnippetRemoved
+You have DESC / ASC mixed up
+Seems like a lit of work.
+I just used this : @codeSnippetRemoved

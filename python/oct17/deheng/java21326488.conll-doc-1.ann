@@ -1,0 +1,16 @@
+T1	PL 0 4	Java
+T2	PL 43 47	Java
+T3	Fram 244 251	eclipse
+T4	Stan 275 278	Jar
+T5	Stan 304 307	Jar
+T6	Stan 345 348	jar
+T7	Fram 484 491	eclipse
+T8	Stan 1012 1015	jar
+T9	Stan 1156 1159	jar
+T10	Fram 1391 1398	eclipse
+T11	Fram 1499 1504	maven
+T12	PL 1605 1609	java
+T13	Stan 1716 1719	Jar
+T14	PL 1748 1752	java
+T15	Fram 1845 1850	maven
+T16	API 1776 1782	FileIO

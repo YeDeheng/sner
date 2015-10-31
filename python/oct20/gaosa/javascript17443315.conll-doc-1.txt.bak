@@ -1,0 +1,43 @@
+How to pass javascript array variable through jquery $ .window url to codeigniter controller?
+I have a list of students with a corresponding check box each.
+The check box value contains students id that I need to pass to my controller function.
+I have a javascript code that detects the check box checked values and stored it to a javascript array variable.
+The javascript array variable will then be passed to the $ .window url with a url address heading to my codeigniter controller function.
+This works fine when you choose the first student, it will show the student id via var_dump method, however, if the second or third and so on student is chosen, it says the uri you submitted has disallowed character.
+The same response when you checked all check boxes.
+The javascript array variable seems to passed only a single value to my codeigniter controller function taking just the first value of the student list.
+How I would be able to pass also the 2nd, 3rd and so on checked values or even to pass javascript array variable to codeigniter controller function through javascipt url with $ .window.
+Images and codes are shown below.
+Thanks a lot.
+Image choosing just the first student list
+Controller output image after clicking send email button
+Image choosing the second student
+Controller output image after clicking send email button
+Image choosing all student list
+Controller output image after clicking send email button
+Javascript : @codeSnippetRemoved
+Controller : @codeSnippetRemoved
+url : "?
+php echo base_url()?
+student_controller / pop_val / "+checked_val,
+Try : @codeSnippetRemoved
+try this, @codeSnippetRemoved
+My revised javascript code.
+However, this changes only applies in getting the second value of the student list being checked, the same as getting the right value of the 3rd student list being checked.
+But checking all check boxes together returns a uri error saying "The URI you submitted has disallowed characters".
+@codeSnippetRemoved
+Image choosing the second student on the list
+Controller output returns the right value
+Image choosing the 3rd student on the list
+Controller output returns the right value
+Image choosing the all student on the list
+Still Controller output returns the uri error
+localhost / coursebooking / ajax_student_controller / pop_val / 338,339 This kind of url causes the uri disallowed character error.
+A comma between the numbers 338 and 339.
+To solve this is just to add comma character in config.php file in $config['permitted_uri_chars ' ] = ' a-z 0-9 ~%.
+: _+- ' ; and then use explode function in your controller function to separate the comma separated values.
+Here are the output :
+Image of a var_dump output after checking 3 check boxes and adding comma character in the config.php file $config['permitted_uri_chars ' ] = ' a-z 0-9 ~%.
+: _+-, ' ;
+Image of a var_dump output to separate comma separated values into array indexed values using explode function.
+Controller Code : @codeSnippetRemoved

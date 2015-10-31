@@ -1,0 +1,29 @@
+How do ' and ' and ' or ' act with non-boolean values in Python?
+22 and 333 / 12 or 1
+I have encountered the above line of code.
+The result is 27, but I could not quite understand what does and and or mean in this case.
+Can somebody explain to me, preferred with examples.
+Thanks in advance !!
+A and B returns A if A is false, or B otherwise : @codeSnippetRemoved
+Similarly, ' A or B ' returns A if A is true, or B otherwise : @codeSnippetRemoved
+Let ' s separate this out : @codeSnippetRemoved
+The logical operands and, or will come after division operator in this particular scenario as per the rules of precedence.
+First it will calculate 333 / 12 which is 27 and then it will become 22 and 27 or 1 which is equivalent to 27 as and, or have equal precedences.
+@codeSnippetRemoved
+But in case of Python 3.2 it ' s computing to 27.75.
+@codeSnippetRemoved
+This is the "and-or trick" -- and and or don't actually return boolean values ; instead, they return one of their input arguments.
+People used to use this for control-flow.
+As of python 2.5, it ' s not necessary anymore, because conditional expressions were introduced.
+@codeSnippetRemoved
+is equivalent to @codeSnippetRemoved
+In Python, nonzero numbers are counted as true for the purposes of boolean expressions, and zero is counted as false.
+So even though both and and or are normally used with the booleans True and False, they can be used with numbers too.
+The issue is : what is the value of an expression like 10 and 3, where both of the values evaluate to true?
+In C, which has similar integer-as-boolean semantics, the value of 10 3 is 1, the most commonly used true value.
+However, in Python the value of this expression is 3, the second half of the and expression.
+This makes sense because and short-circuits, meaning that 0 and 3 is 0, so and has "take the first value if it ' s false, the second otherwise" semantics.
+What about the expression you posted?
+By operator precedence, it ' s the same as @codeSnippetRemoved
+The value of 22 and 333 / 12 is 333 / 12, which is 27.
+Since the or operator short-circuits, the Python interpreter takes the first true value when evaluating 27 or 1, and gets 27.

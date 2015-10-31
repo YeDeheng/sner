@@ -1,0 +1,23 @@
+T2	PL 506 509	CSS
+T3	PL 532 542	Javascript
+T4	PL 637 640	CSS
+T5	PL 679 689	Javascript
+T6	PL 993 1003	javascript
+T7	Fram 1036 1042	jQuery
+T1	API 0 12	Jquery hover
+T10	API 46 54	selector
+T11	API 136 141	.live
+T12	Fram 288 295	Firebug
+T13	Fram 709 711	IE
+T14	Fram 751 753	IE
+T15	Fram 1343 1355	jQuery 1.4.2
+T9	API 1370 1379	.toggle()
+T17	API 1475 1480	hover
+T18	API 1547 1553	.hover
+T19	API 1555 1564	mouseover
+T20	API 1566 1574	mouseout
+T21	API 1640 1652	.removeClass
+T22	API 1657 1666	.addClass
+T24	API 1903 1911	.hover()
+T26	API 2082 2096	.toggleClass()
+T27	Fram 1134 1154	Google libraries API

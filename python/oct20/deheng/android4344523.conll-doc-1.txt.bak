@@ -1,0 +1,14 @@
+Popup window in any app
+i want to Popup dialog at a specific time in any app my code : @codeSnippetRemoved
+it give me @codeSnippetRemoved
+what is this permissionif i delete d.getWindow() .setType (WindowManager.LayoutParams.TYPE_SYSTEM_ALERT ); my app is correct .....
+try this in your menifest file with Activity that you want to show as pop-up.
+-->> android : theme= "@android : style / Theme.Dialog"
+Add this permission to your manifest : @codeSnippetRemoved
+First of all thanks to Mathias Lin
+I am new to Android so it was hard to me to set permission knowing from Mathias Lin ' s answer.Because I didn't know how to set permission and where in the manifest file.
+Finally I did it by help of Mathias Lin ' s answer.
+So I made the answer elaborate.
+In mainfest file use @codeSnippetRemoved
+after @codeSnippetRemoved
+as @codeSnippetRemoved

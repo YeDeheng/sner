@@ -1,0 +1,11 @@
+selected query result placing in more DIVs
+Im trying to select 3 testimonials at a stretch from the database ..
+It is ok for me.
+But my problem is I need place this 3 testimonials in 3 DIVs in the same time .. can anybody tell me how can I do this?
+@codeSnippetRemoved
+Thank you ..
+I am not very familiar with mysqli since iam still using mysql .. but i can still give you my personal approach regarding your question : @codeSnippetRemoved
+Hope this gives you the idea.
+$maxTestimonials = 3 ; $query = "SELECT * FROM testimonials ORDER BY RAND() LIMIT $maxTestimonials" ; $results = mysqli_query ($databaseConnection, $query );
+$count = 0 ; $testimonialsTemplate = ' div class= "testimonial-%d" p %s / p / div ' ; while ($row = mysql_fetch_array ($results, MYSQL_ASSOC )) { $count++ ; echo sprintf ($testimonialsTemplate, $count, $row['column_name_to_display ' ]); }
+I'd also suggest you look into separation of concerns and Model-View-Controller which will help you to structure your code in a slightly more maintainable (and reusable) fashion.

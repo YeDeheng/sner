@@ -1,0 +1,24 @@
+O	0	7	passing
+O	8	11	and
+O	12	16	read
+B-PL	17	27	javascript
+O	28	36	variable
+O	37	39	to
+B-Fram	40	46	smarty
+
+O	47	50	How
+O	51	54	can
+O	55	56	i
+O	57	61	read
+O	62	63	a
+B-PL	64	74	javascript
+O	75	78	var
+O	79	83	from
+B-Fram	84	90	smarty
+O	91	93	??
+
+O	94	98	like
+O	99	103	this
+
+O	104	110	THanks
+O	111	113	!!

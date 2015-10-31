@@ -1,0 +1,7 @@
+How to exclude an element from ng-click action
+I have an element inside a container with ng-click, that should not execute this click action.
+It has the structure similar to this : @codeSnippetRemoved
+How to prevent executing takeSomeAction() when you click the button?
+You need to stop the event propagation, which can be done very easily with another ng-click.
+@codeSnippetRemoved
+It will prevent the routine execution while following the href.

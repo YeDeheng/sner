@@ -1,0 +1,26 @@
+Change Row Color in PHP data table by Date
+Today :?
+php echo date ("m / d / Y ") ;?
+ph ISSUED BOOKS | DUE BOOKS / ph table border= "1" cellpadding= "3" cellspacing= "0" id= "tblissued" tr bgcolor= "#CCCCCC" th height= "39" id / th th Officer / th th Member_ID / th th Book_ID / th th Issued_date / th th Due_date / th th Remarks / th / tr?
+php do {?
+tr bgcolor= "#FFFFFF" td height= "33"?
+php echo $row_rsissuedbooks['id ' ];?
+/ td td?
+php echo $row_rsissuedbooks['Officer ' ];?
+/ td td?
+php echo $row_rsissuedbooks['Member_ID ' ];?
+/ td td?
+php echo $row_rsissuedbooks['Book_ID ' ];?
+/ td td?
+php echo $row_rsissuedbooks['Issued_date ' ];?
+/ td td?
+php echo $row_rsissuedbooks['Due_date ' ];?
+/ td td?
+php echo $row_rsissuedbooks['Remarks ' ];?
+/ td / tr?
+php } while ($row_rsissuedbooks = mysql_fetch_assoc ($rsissuedbooks ));?
+/ table
+i want to color the rows Due_date if due_date is greater than today (php 1st line in code) im not good in english .. sorry for that, i hope you will understand ..
+Something like this will work.
+@codeSnippetRemoved
+Try this : @codeSnippetRemoved

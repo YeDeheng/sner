@@ -1,0 +1,10 @@
+AutoCompleteTextView with custom ArrayAdapter and Filter
+I have a problem when I'm trying to Filter results in AutoCompleteTextView from LogCat I know that filtering is performed correct but it ' s not refreshing the view :/ Did I forget about something any suggestions or help?
+Here is source code of filter.
+@codeSnippetRemoved
+The missing part is that I need to set the new values from filter so I just simply changed the @codeSnippetRemoved
+and now it ' s working.
+The correct code bellow.
+@codeSnippetRemoved
+Another Update - On inputting and removing all the characters in search textbox very quickly crashes the application on newValues.size() or newValues.get (i) as newValues might be null.
+So, here ' s the code you should use : @codeSnippetRemoved

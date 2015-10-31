@@ -1,0 +1,14 @@
+Android App Restart
+I am developing a Timer based app.
+Timer runs continuously in one of the activity whether the app is in the foreground or background.
+A separate service is written to log GPS every one second using a separate timer.
+Activity timer is responsible for starting and stopping the service based on certain condition.
+I have extended the Application class and overridden the onCreate and onTerminate events.
+@codeSnippetRemoved
+and AndroidManifest.xml @codeSnippetRemoved
+service @codeSnippetRemoved
+When the app is running in background and sometimes in foreground, the onCreate is executed several times and if the service is running it also gets restarted.
+What could be the reason of frequent restart of the app and firing of onCreate of MyApplication class.
+What is the solution of this problem?
+Please help me since I am trying solve this problem for last 3 days
+This is the complete androidmanifest file @codeSnippetRemoved

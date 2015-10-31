@@ -1,0 +1,9 @@
+Highcharts with Custom Background in Cross Platform app development
+I have a strange Problem with Highcharts display :(
+I am using Highcharts in Cross Platform app development.
+I am using a custom background for highchart.
+It is working very well in iOS but not appearing in Android.
+Though chart is there but not visible.
+When I remove the background it is working well.
+Following is my Code :
+Any Idea about this?

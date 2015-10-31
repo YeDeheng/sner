@@ -1,0 +1,17 @@
+CREATE OR REPLACE PROCEDURE my_proc (cur IN SYS_REFCURSOR) IS
+-- Using a pre-existing TABLE TYPE from the SYS schema for the example
+array ORA_MINING_VARCHAR2_NT ;
+BEGIN
+FETCH cur BULK COLLECT INTO array ;
+FOR i IN array.FIRST .. array.LAST
+LOOP
+DBMS_OUTPUT.PUT_LINE (array (i ));
+END LOOP ;
+EN D;
+The JDBC binding would then be
+String [] strings = new String [] { "a", "b", "c" } ;
+ArrayDescriptor desc = new ArrayDescriptor ("ORA_MINING_VARCHAR2_NT", c );
+ARRAY array = new ARRAY (desc, c, strings );
+stmt.setArray (1, array );
+stmt.executeUpdate() ;
+With TABLE OF OBJECT data types, the binding is a bit more tricky ...

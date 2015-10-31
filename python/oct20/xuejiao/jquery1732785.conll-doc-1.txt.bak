@@ -1,0 +1,27 @@
+multiple mousehover with jquery?
+Let ' s say I have a div with a backgroundimage (my logo) and I need this div to be switched with other 4 divs which are the same image but with other colours.
+Each image will be called on a mousehover using a jquery effect so it shows up smoothly, the order will be div1, 2, 3, 4, 5 and then restarts.
+An easier explanation would be ..
+a logo that has 5 diferent colored background and each background color will be shown when you pass your mouse over the logo, like if you pass it the first time it'll be green but if u pass your mouse over the logo again it will be blue and so on.
+Now as a completely newbie on javascript and jquery ... how can I achieve this?
+can someone guide me trough some tutorial or specific article or maybe give me a snip if code to start with?I've tried to ask this before and someone answered with a snip of code that would be a variable (a counter to be exactly) but I didn't really understand how it worked and how to implement it ...
+Something along these lines : @codeSnippetRemoved
+Initialize an array, setting its elements tothe string prefixes of the variouslogo image files.
+Initialize a counter to zero, so wedon't have to do any math to use itas an array offset.
+When the mouse moves over the logoimage, change the image ' s source tothe string stored at colours[colIndex ].
+In my example Ihave concatenated the last part ofthe filename, assuming the convention [ colour name]- logo.jpeg.
+You couldjust as well put the entire filenamein the array and not follow any convention.
+I believe that your desire is a bit more complicated than the other answer posted meets -- you want the images to fade smoothly.
+This code creates a div within a div, and then, on mouseover, shows the internal (and therefore topmost) div, changes the background of the lower (outermost) div to the next one in the cycle, and then fades out the upper image.
+It also has a selective lockout mechanism, so if the user goes crazy with the mouse, it won't make the image flicker in an ugly way.
+I hope this helps, and if you want a deeper explanation of the code ' s functionality (you should be able to read it, mostly) post so in the comments.
+This code has thee parts.
+Javascript : @codeSnippetRemoved
+CSS : @codeSnippetRemoved
+HTML : @codeSnippetRemoved
+You could simply make your logo a gif / png with transparency and set it as the background and then animate the backgroundColour css attribute between these values (building off the previous script ): @codeSnippetRemoved
+Hey Dereleased.
+It ' s an absolute div with top and left fields =( here ' s the code :
+Javascript logo.js : @codeSnippetRemoved
+CSS main.css : @codeSnippetRemoved
+HTML index.html : @codeSnippetRemoved

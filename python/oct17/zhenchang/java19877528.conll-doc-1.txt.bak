@@ -1,0 +1,7 @@
+How to access downloaded jars of Java Web-Start application
+Is there any way to refer client side downloaded jars of a JavaWeb Start application in the runtime?
+JNLP file is defined as
+I would like to start a java process to execute a java command which takes the devkit jar ref in the class path.
+JAVA Program (Main.java)
+I was looking for some solutions but couldn't find any proper solution yet.
+Please help.

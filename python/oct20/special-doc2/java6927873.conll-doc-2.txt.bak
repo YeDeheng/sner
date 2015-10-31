@@ -1,0 +1,4 @@
+def doStream (total : Int = 0 ): Int = { val n = inputStream.read (buffer) if (n -1) total else { outputStream.write (buffer, 0, n) doStream (total + n) } }
+doStream() }
+If this is slow : @codeSnippetRemoved
+you can expand it : @codeSnippetRemoved

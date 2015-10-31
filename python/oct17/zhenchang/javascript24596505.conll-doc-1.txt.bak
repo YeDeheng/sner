@@ -1,0 +1,11 @@
+adding cookie to angular $http requests (post and get) in an iframe
+i have an angular application that runs in an iFrame
+the outer application is doing authentication and saving a cookie with jsessionid.
+i need my iFrame application to send requests with the cookie that the outer application saved.
+i'm using
+$ http.post
+$ http.get
+i have tried to include this on my service module
+$ http.defaults.withCredentials = true ;
+doesnt seem to work.
+any help would be apreciated.

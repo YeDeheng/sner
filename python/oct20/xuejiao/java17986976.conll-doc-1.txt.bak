@@ -1,0 +1,14 @@
+How can set location for my swt file dialog?
+I have an application where i want to display swt file dialog but in defined location (i want it display somewhere down) .I am not getting any method for that.Any help on this is appreciated ...
+Isn't FileDialog #setFilterPath () what you are looking for?
+:
+Sets the directory path that the dialog will use to the argument, which may be null.
+File names in this path will appear in the dialog, filtered according to the filter extensions.
+If the string is null, then the operating system ' s default filter path will be used.
+Currently the API doesn't support to set the location of the FileDialog .But there is a little hack / workaround for that.
+All you need is to create an invisible Shell and set the location.
+The FileDialog decides its location based on the parent.
+It seems a bit complex to know the exact coordinates to setLocation on Shell but, I leave it to you to do some Permutations and Combinations to know them.
+Here is the code which solves your problem @codeSnippetRemoved
+When showing the FileDialog on top of a shell, you may open the file dialog, then get the parent shell ' s sub-shells (shell.getShells()) to find out the file dialog ' s shell.
+Now you should be able to change its location.

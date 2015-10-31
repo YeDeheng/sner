@@ -1,0 +1,11 @@
+Game Jump in Java
+So I'm trying to get this rectangle to perform a jumping motion every time I hit the space bar.
+When I tap the space bar the motion is fine.
+It goes up and comes back down, but the motion isn't very fluid.
+It just immediately comes up to the high point and then immediately goes back to the ground.
+How do I fix this?
+Here is the code for the jumping motion (Jump is what is called upon pressing the space key and Fall is on the release of the space key) : @codeSnippetRemoved
+I'm guessing that actionPerformed() is getting called by some clock?
+I think the problem is that, within actionPerformed, you've added your own while loop.
+So, even though actionPerformed only gets called X times per second, that while loop is going to update your variables (time, py, etc.) and repaint the screen as fast as it can.
+I can't really give you the correct code without understanding the interface you're using (i.e. I don't know where "time" and "py" come from), but maybe try something like this : @codeSnippetRemoved

@@ -1,0 +1,16 @@
+Select element by tag inside a div with javascript
+I have this script which works to show image alt tags.
+@codeSnippetRemoved
+I cant understand the method you would use to specify the element to search within for images (i only want to run this script on images within my content div).
+How to implement getElementById in this instance is beyond me, can someone point me in the right direction?
+From what I can understand, you only want this click event to be bound if the image is a child of a specific container (I'll call it #container).
+Just prepend it to your selector : @codeSnippetRemoved
+Well.
+You can find all tag names within an ID by JavaScript with this method.
+@codeSnippetRemoved
+now x[0 ] will contain the first element with the tag IMG that occurs inside the div.
+OBS notice the .getElements ByTagName (elements are plural since you can get many, not just 1 like the ... ById method).
+With jQuery you can find the images in a way somewhat like CSS @codeSnippetRemoved
+If you want to find images only with a specific class name (or something else) then modify the search to this.
+@codeSnippetRemoved
+These 2 ways will give you the elements stored as an array in the variable x.

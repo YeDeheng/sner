@@ -1,0 +1,15 @@
+Restoring input / select elements from within a div after its reloaded via jquery.ajax
+I have a div that contains a variable number of inputs (text, hidden) and dropdowns (each may have an ID, a name and / or one or more classes.
+This div reloads from time to time and some new inputs may be added or old ones removed.
+What I'm trying to do is to maintain the values entered or selected before each reload without passing current values to the server.
+This here code almost does what I need except for select fields - not getting their values ; once this works I can serialize that array and store it somewhere, then decode, iterate and write the values back.
+@codeSnippetRemoved
+Would appreciate any input or perhaps a more elegant solution to such problem?
+Later edit : Benjamin was kind enough to post a link to jquery serialize() which solved the problem very nice.
+In case someone else will need a bit of code to restore values saved with that : @codeSnippetRemoved
+Forms have a .serialize method.
+This is probably the easiest to store in localStorage in your case.
+The .serialize() method creates a text string in standard URL-encoded notation.
+It operates on a jQuery object representing a set of form elements.
+The form elements can be of several types.
+(Glad it helped)

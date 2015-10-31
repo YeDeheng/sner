@@ -1,0 +1,24 @@
+T1	API 181 194	Blob.getBytes
+T2	API 240 253	Blob.setBytes
+T3	API 265 276	InputStream
+T4	API 279 291	OutputStream
+T5	API 308 319	InputStream
+T6	API 328 348	Blob.getBinaryStream
+T7	API 391 411	Blob.setBinaryStream
+T8	API 558 567	ResultSet
+T10	Stan 592 601	Java JDBC
+T11	API 621 634	java.sql.Blob
+T12	API 647 656	ResultSet
+T13	API 658 675	ResultSet.getBlob
+T14	API 687 704	ResultSet.getBlob
+T15	API 806 821	Blob.getBytes()
+T16	API 842 852	setBytes()
+T17	API 943 970	ResultSet.getBinaryStream()
+T18	Stan 1120 1123	JSP
+T19	Stan 1145 1148	JSP
+T20	Stan 1174 1181	Servlet
+T21	Stan 62 66	Blob
+T9	Stan 461 465	Blob
+T22	Stan 741 745	Blob
+T23	Stan 762 766	Blob
+T24	Stan 925 929	Blob

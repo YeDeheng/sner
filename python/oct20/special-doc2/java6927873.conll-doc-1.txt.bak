@@ -1,0 +1,10 @@
+How can I read a file to an InputStream then write it into an OutputStream in Scala?
+I'm trying to use basic Java code in Scala to read from a file and write to an OutputStream, but when I use the usual while (! = -1) in Scala gives me a warning "comparing types of Unit and Int with!
+= will always yield true ".
+The code is as follows : @codeSnippetRemoved
+How am I supposed to write from an input stream to an output stream in Scala?
+I'm mostly interested in a Scala-like solution.
+Assignment statements always return Unit in Scala, so read = input.read returns Unit, which never equals -1.
+You can do it like this : @codeSnippetRemoved
+You could do this : @codeSnippetRemoved
+def stream (inputStream : InputStream, outputStream : OutputStream) ={ val buffer = new Array[Byte] (16384)

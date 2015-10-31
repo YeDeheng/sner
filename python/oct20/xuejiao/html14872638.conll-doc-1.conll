@@ -1,0 +1,202 @@
+O	0	3	how
+O	4	9	embed
+B-Stan	10	13	pdf
+O	14	22	document
+O	23	25	in
+B-PL	26	30	html
+O	31	35	with
+O	36	39	out
+O	40	44	copy
+O	45	48	and
+O	49	54	print
+
+O	55	56	I
+O	57	59	am
+O	60	68	beginner
+O	69	71	of
+O	72	75	web
+O	76	87	programming
+O	87	88	,
+O	89	91	my
+O	92	100	question
+O	101	103	is
+O	104	107	how
+O	108	110	to
+O	111	116	embed
+B-Stan	117	120	pdf
+O	121	129	document
+O	130	132	in
+B-PL	133	137	html
+O	138	141	one
+O	142	150	division
+O	151	154	tag
+O	154	155	,
+O	156	159	and
+O	160	164	that
+B-Stan	165	168	pdf
+O	169	171	we
+O	172	175	can
+O	176	181	avoid
+O	182	186	copy
+O	186	187	,
+O	188	193	print
+O	194	197	and
+O	198	206	download
+O	207	214	options
+O	214	215	.
+
+O	216	220	this
+O	221	230	following
+O	231	233	is
+O	234	236	my
+O	237	241	code
+O	241	242	.
+
+O	243	262	@codeSnippetRemoved
+
+O	263	267	Some
+O	268	274	option
+O	275	278	may
+O	279	281	be
+O	282	286	help
+O	287	290	you
+O	291	292	:
+
+O	293	298	First
+O	299	300	:
+
+O	301	303	If
+O	304	307	you
+O	308	310	do
+O	311	316	stick
+O	317	321	with
+O	322	325	the
+B-Stan	326	329	pdf
+O	330	338	embedded
+O	339	345	option
+O	345	346	,
+B-Stan	347	350	Pdf
+O	351	356	files
+O	357	362	don't
+O	363	367	look
+O	368	370	so
+O	371	376	great
+O	377	379	on
+O	380	381	a
+O	382	389	webpage
+O	389	390	.
+
+O	391	397	Anyway
+O	397	398	,
+O	399	401	be
+O	402	406	sure
+O	407	409	to
+O	410	412	be
+O	413	419	strict
+O	420	425	about
+O	426	429	the
+O	430	436	coding
+O	436	437	.
+
+O	438	443	Hence
+O	444	445	:
+O	446	465	@codeSnippetRemoved
+
+O	466	472	Should
+O	473	475	be
+O	476	495	@codeSnippetRemoved
+
+O	496	502	Second
+O	503	504	:
+
+O	505	508	You
+O	509	512	can
+O	513	517	also
+O	518	521	use
+B-Fram	522	528	Google
+I-Fram	529	532	PDF
+I-Fram	533	539	viewer
+O	540	543	for
+O	544	548	this
+O	549	556	purpose
+O	556	557	.
+
+O	558	561	You
+O	562	566	need
+O	567	569	to
+O	570	576	upload
+O	577	581	your
+B-Stan	582	585	PDF
+O	586	595	somewhere
+O	596	602	before
+O	603	606	and
+O	607	611	just
+O	612	615	use
+O	616	619	its
+O	620	623	URL
+O	624	625	:
+O	626	645	@codeSnippetRemoved
+
+O	646	651	Third
+O	652	653	:
+
+O	654	658	Best
+O	659	667	approach
+O	668	670	is
+O	671	673	to
+O	674	677	use
+O	678	681	the
+B-Fram	682	688	PDF.JS
+O	689	696	library
+O	696	697	.
+
+O	698	700	It
+O	701	702	'
+O	703	704	s
+O	705	706	a
+O	707	711	pure
+B-PL	712	717	HTML5
+O	718	719	/
+B-PL	720	730	JavaScript
+O	731	739	renderer
+O	740	743	for
+B-Stan	744	747	PDF
+O	748	757	documents
+O	758	765	without
+O	766	769	any
+O	770	781	third-party
+O	782	789	plugins
+O	789	790	.
+
+O	791	797	Online
+O	798	802	demo
+O	803	804	:
+O	805	853	http://mozilla.github.com/pdf.js/web/viewer.html
+
+O	854	860	GitHub
+O	861	862	:
+O	863	896	https://github.com/mozilla/pdf.js
+
+O	897	902	Links
+O	903	904	:
+
+O	905	916	Recommended
+O	917	920	way
+O	921	923	to
+O	924	929	embed
+B-Stan	930	933	PDF
+O	934	936	in
+B-PL	937	941	HTML
+O	941	942	?
+
+O	943	946	How
+O	947	949	to
+O	950	955	embed
+O	956	957	a
+B-Stan	958	961	PDF
+O	962	966	file
+O	967	969	in
+O	970	971	a
+O	972	975	web
+O	976	980	site
+O	980	981	?

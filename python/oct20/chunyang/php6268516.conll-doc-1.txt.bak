@@ -1,0 +1,22 @@
+php mail duplicates
+Is there any reason why this would send duplicate emails?
+I have a PHP page with only this code on it and every time I run it it sends me two emails.
+@codeSnippetRemoved
+Maybe your page loads twice, therefore executes the code two times ...
+You could try some limitation, something like that @codeSnippetRemoved
+Is this a simple php page, or part of a CMS?
+Maybe some modules might interfere with your page ...
+You can try to debug at this way @codeSnippetRemoved
+simply put a ' exit ' there and try again.
+If it still sent twice, maybe is the server problem or could be the [ mail function ] in php.ini (sendmail_from sendmail_path)
+Thanks for the input.
+As it turns out this was a browser plugin issue, specifically ySlow 2.1.0 on Firefox 4.0.1
+I asked our server manager to look into the problem and he reported that the log was showing two hits every time I went to the page.
+He tried loading it on his machine and the script worked properly and only loaded once.
+I tried myself on Chrome and it worked, only emailing once.
+I went through my various add-ons and finally isolated ySlow as the culprit.
+Not sure if this means that ySlow is loading every page twice or what, but I'm going to have to keep it disabled.
+If anyone has any suggestions about fixing the problem with ySlow, please let me know.
+Thanks again.
+Just in case, I discovered my code had a command to spare and it generated two emails be sent : @codeSnippetRemoved
+I deleted this "\r\n", it fixed the trouble.

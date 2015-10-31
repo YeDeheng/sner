@@ -1,0 +1,12 @@
+T1	PL 0 3	C++
+T2	PL 40 46	Python
+T3	PL 84 87	C++
+T4	PL 111 117	Python
+T5	PL 283 286	C++
+T6	PL 312 318	Python
+T7	PL 405 408	C++
+T8	PL 437 443	Python
+T9	Plat 535 540	Linux
+T10	API 556 562	getenv
+T11	Fram 578 585	cstdlib
+T12	Fram 642 645	ICU

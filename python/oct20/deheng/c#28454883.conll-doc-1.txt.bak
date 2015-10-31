@@ -1,0 +1,13 @@
+Email Attachment from memory stream is coming as blank in C#
+I am able to send an attachment in a mail but the attachment content is blank and size is being shown as 0 bytes.
+After doing some search over the internet found that we need to reset the memory stream position to 0 in order to start from start.
+I tried that as well but it seems it is not working.
+Can you please help?
+Please find below my code snippet :
+NOTE : I am able to save the workbook and Data is present in the saved workbook.
+@codeSnippetRemoved
+I think the attachment is confusing the mail system.
+Microsoft ' s recommendation is to specify the content type as an octet.
+Below is a replacement for initializing the attachment.
+The reset of your code looks fine.
+@codeSnippetRemoved

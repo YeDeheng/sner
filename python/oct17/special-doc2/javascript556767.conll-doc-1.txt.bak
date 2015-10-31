@@ -1,0 +1,35 @@
+Limiting number of lines in textarea
+I'm looking for a javascript that can limit the number of lines (by line I mean some text ended by user pressing enter on the keyboard) the user is able to enter in textarea.
+I've found some solutions but they simply don't work or behave really weird.
+The best solution would be a jquery plugin that can do the work - something like CharLimit, but it should be able to limit text line count not character count.
+Thanks in advance.
+The number of visible / display lines for a given block of text would vary with different browsers, fonts used, etc.
+You'd have to set a specific font and font-size, at a minimum, to be able to semi-reliably count display lines.
+UPDATE : I see the edit.
+Then something like kevchadders code should do fine for you.
+You'll need js that counts chars and ' \r\n ' s and checks against a user-defined limit.
+Also, if you don't use his script, make sure you use one that involves either a time interval check and / or the onKeyDown / onKeyUp events of the textarea.
+This may be why some scripts you have tested seem to "behave strangely".
+did you try the rows attribute?
+This might help (probably be best using jQuery, onDomReady and unobtrusively adding the keydown event to the textarea) but tested in IE7 and FF3 :
+* Edit - explanation : It catches the keypress if the ENTER key is pressed and just doesn't add a new line if the lines in the textarea are the same number as the rows of the textarea.
+Else it increments the number of lines.
+This is basically the same as Ivan ' s answer, using jQuery.
+I tested it for a project of my own ; seems to work fine.
+How to do it with jQuery :
+Bind to keyDown event of textarea.
+(Done with jquery).
+It ' s not perfect but cares about wrapping.
+Not deppending only of the end of line (\n). jquery scroll event have problems in mozilla and firefox if css overflow property in textarea is not auto, otherwise remove the corresponding lines and set overflow hidden.
+Could help the css resize : none and fixed height.
+I extended it a bit to detect even overflow without a manual linebreak.
+This is for fixed size textarea with "overflow : hidden".
+At the moment my solution makes the font smaller if it doesn't fit to textarea.
+And makes it larger again if possible.
+var keynum, allowedLines = 5, defaultFontSize = 13 / *px* /;
+$ (document) .ready (function() {
+$ ("textarea ") .keydown (function (e, obj) {
+if (window.event)
+keynum = e.keyCode ;
+else if (e.which)
+keynum = e.which ;

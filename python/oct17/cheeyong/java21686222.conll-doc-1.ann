@@ -1,0 +1,23 @@
+T1	Plat 50 57	Android
+T2	PL 64 68	Java
+T3	Plat 118 125	Android
+T4	PL 127 131	Java
+T5	Plat 828 835	Android
+T6	API 964 980	bitmap.getPixels
+T7	API 1066 1077	setPixels()
+T8	API 1406 1427	Shader.TileMode.CLAMP
+T9	API 1438 1452	BitmapDrawable
+T11	Stan 391 397	9patch
+T12	Stan 690 696	bitmap
+T13	Stan 715 721	bitmap
+T14	Stan 914 920	Bitmap
+T15	Stan 1034 1040	bitmap
+T16	Stan 1101 1107	bitmap
+T17	Stan 1170 1176	bitmap
+T18	Stan 1463 1469	bitmap
+T19	Stan 802 809	9-patch
+T20	Stan 836 843	9 Patch
+T21	API 737 751	bitmapdrawable
+T10	API 1495 1507	setTileModeY
+T22	API 1509 1522	TilMode.CLAMP
+T23	Fram 859 869	Draw9patch

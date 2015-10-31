@@ -1,0 +1,10 @@
+T1	PL 29 39	javascript
+T2	Fram 905 912	firefox
+T3	PL 1349 1359	javascript
+T4	Stan 1723 1727	ajax
+T6	API 2637 2658	window.getSelection()
+T5	API 7 16	mousedown
+T7	API 673 676	div
+T8	API 1025 1028	div
+T9	API 2604 2613	mousedown
+T10	API 2659 2677	.removeAllRanges()

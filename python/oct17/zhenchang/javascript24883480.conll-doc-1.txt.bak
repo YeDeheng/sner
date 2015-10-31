@@ -1,0 +1,14 @@
+Canvas toDataURL() method is saving low resolution image
+I have made a polygonal background generator using HTML5 canvas over at :
+http://codepen.io/rfalor/pen/LhinJ
+This is the relevant code :
+When an user clicks the canvas, and subsequently "Prepare Image", the image that is saved on right click is of low resolution (300px x 150px), instead of the canvas resolution.
+How do I allow the user to save a higher resolution image?
+The problem is you're sizing the canvas using css rather than the width and height properties of the canvas element.
+When you do that you're only stretching the canvas not increasing the coordinate space of the element.
+I added the following to your code
+Then I had to change your randomize function a bit to accept a number since it wont always be 500 ;
+And you can now call your lineTo ' s like this
+However I realize you probably want it to be more than the width and height so you don't see the edges of the shapes but I figure you can fix that up.
+Live Demo
+Fully modified code below.

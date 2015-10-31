@@ -1,0 +1,15 @@
+Accessing views from superclass
+I am trying to centralize my code for handling navigation drawers into a superclass that all activities extend.
+The super class itself extends Activity but I can't seem to figure out how to access the subclass ' s view (findviewbyid returns null).
+How can I access the views inflated in CheckinActivity from CommonCode?
+Superclass oncreate : @codeSnippetRemoved
+SubClass @codeSnippetRemoved
+What I do is have seperate XMLs for each sub activity, but have all the xml ids of your navigation drawers be the same.
+Next, when you start any subclass of your extended activity, pass a bundle with the contextView id - R.layout.MY_SUB_ACTIVITY - in a bundle, and actually set the content view for each sub activity from within your super class.
+Afterwards, you can use findViewByID to find your drawers, set them up in the super class, and then just handle your subclass ' s views from within it ' s own class.
+Your views are likely returning null, because your running your super class ' s onCreate before your subclass ' s - therefore setContentView hasn't been called yet (so findViewByID won't work)
+EDIT :
+Also, you don't HAVE to name all the navigation drawer IDs the same -- I just think it ' s easier to use an include tag, to minimize redundancy in your xml files.
+For Example :
+Subclass - @codeSnippetRemoved
+SuperClass : @codeSnippetRemoved

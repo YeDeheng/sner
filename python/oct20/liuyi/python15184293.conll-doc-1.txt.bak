@@ -1,0 +1,20 @@
+Fit two normal distributions (histograms) with MCMC using pymc?
+I am trying to fit line profiles as detected with a spectrograph on a CCD.
+For ease of consideration, I have included a demonstration that, if solved, is very similar to the one I actually want to solve.
+I've looked at this : http://stats.stackexchange.com/questions/46626/fitting-model-for-two-normal-distributions-in-pymc and various other questions and answers, but they are doing something fundamentally different than what I want to do.
+@codeSnippetRemoved
+My question : Can PyMC (or some variant) give me the mean, amplitude, and sigma for the two components used above?
+Please note that the functions that I will actually fit on my real problem are NOT Gaussians -- so please provide the example using a generic function (like GaussFunc in my example), and not a "built-in" pymc.Normal() type function.
+Also, I understand model selection is another issue : so with the current noise, 1 component (profile) might be all that is statistically justified.
+But I'd like to see what the best solution for 1, 2, 3, etc. components would be.
+I'm also not wed to the idea of using PyMC -- if scikit-learn, astroML, or some other package seems perfect, please let me know!
+EDIT :
+I failed a number of ways, but one of the things that I think was on the right track was the following : @codeSnippetRemoved
+But I could not construct a mc.model that worked.
+Not the most concise PyMC code, but I made that decision to help the reader.
+This should run, and give (really) accurate results.
+I made the decision to use Uniform priors, with liberal ranges, because I really have no idea what we are modelling.
+But probably one has an idea about the centroid locations, and can use a better priors there.
+@codeSnippetRemoved
+Important
+Keep in mind the algorithm is agnostic to labeling, so the results might show profile1 with all the characteristics from profile2 and vice versa.

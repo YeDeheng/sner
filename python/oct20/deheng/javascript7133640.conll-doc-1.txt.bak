@@ -1,0 +1,15 @@
+JavaScript not working in Internet Explorer
+I am having this dynamic dropdown code.
+Here i want to load the second dropdown options dynamically by changing the first dropdown options.
+This works fine in all other browsers except IE.
+I don't know whats the reason as i'm a starter. could any one explain the reason.
+HTML CODE : @codeSnippetRemoved
+JS CODE @codeSnippetRemoved
+It appears that non-IE browsers (e.g. Chrome) will set the value of an option tag implicitly using it ' s inner-text, but IE does not do this.
+You have two options :
+1) Set the option value explicitly @codeSnippetRemoved
+Or,
+2) Switch on text @codeSnippetRemoved
+(Tested in Chrome and IE9.)
+Try the alternative using older method to dynamically add option
+@codeSnippetRemoved

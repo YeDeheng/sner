@@ -1,0 +1,15 @@
+How can I generate a random number without use of Math.Random?
+My project entails that I create a basic number guessing game that uses the JOptionPane and does not use Math.Random to create the random value.
+How would you go about doing this?
+I've completed everything except the random number generator.
+Thanks!
+If you don't like the Math.Random you can make your own Random object.
+import : @codeSnippetRemoved
+code : @codeSnippetRemoved
+If you need other types instead of int, Random will provide methods for boolean, double, float, long, byte.
+You could use java.security.SecureRandom.
+It has better entropy.
+Also, here is code from the book Data Structures and Algorithm Analysis in Java.
+It uses the same algorithm as java.util.Random.
+I know that for poker web sites they use things like temperature of the processor, don't know on the top of my head what to use to get this though
+Here the code for a Simple random generator : @codeSnippetRemoved

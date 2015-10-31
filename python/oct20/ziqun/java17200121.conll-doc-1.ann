@@ -1,0 +1,18 @@
+T6	Fram 545 557	TreeMultiMap
+T7	API 680 696	pollFirstEntry()
+T8	API 720 727	TreeMap
+T9	Fram 785 797	TreeMultimap
+T10	Fram 959 971	TreeMultimap
+T12	API 1169 1189	TreeMultimap.asMap()
+T13	API 1219 1228	Map.Entry
+T14	Fram 1378 1390	TreeMultimap
+T16	Fram 1561 1573	TreeMultimap
+T19	API 2051 2059	keySet()
+T20	API 2070 2082	NavigableSet
+T1	Fram 0 25	Google Guava TreeMultimap
+T2	Fram 373 402	Google Guava ' s TreeMultimap
+T5	API 1190 1202	.lastEntry()
+T17	Fram 1080 1092	TreeMultimap
+T3	API 332 339	TreeMap
+T4	API 434 442	Multimap
+T11	API 1238 1248	Collection

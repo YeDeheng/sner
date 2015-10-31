@@ -1,0 +1,25 @@
+How do I send video files that are being transcoded live with Python ' s Twisted.web?
+I'm building a video streamer using Python ' s Twisted.web with callbacks to ffmpeg.
+I'm wondering, since I'm sending the files through using ' return file.read() ' there'll be problems with sending the transcoded output since it won't be available to be read in entirety?
+Am I over thinking this and it ' s all managed by Twisted.web ' s low level management code or do I have to rethink my method?
+Additionally, how can I support people skipping ahead to parts of the video that haven't buffered for them?
+I expect it to be a really complicated, but just incase it isn't.
+Thanks
+1) Can I use file.read() in twisted?
+The short answer is "no".
+Unless you've done a bunch of other relatively complicated things, such as set O_NONBLOCK on the fd, or explicitly delegated this request to separate thread, file.read() is a blocking call, that will read the entirety of the file into memory before it returns.
+While this data is being read from disk synchronously, Twisted ' s reactor will be unable to invoke any callbacks or read or write any available data on any fds, causing any other pending requests or streaming transfers to grind to a complete halt while your file is being read into memory.
+Moreover, if the source volume of the file is under heavy load and / or there are lots of files, even the open() calls to get file objects may block for a significant amount of time.
+There is no nonblocking open, so if you need a file object, you should use reactor.deferToThread() if you need to get a regular file object in twisted.
+So here ' s what you should do :
+For reading files directly from the filesystem with twisted, you should look into twisted.web.server.Site and twisted.web.static.File.
+There ' s an interesting tutorial on them here.
+Not only will these calls stream the file content from disk, but they will also support additional HTTP features for static files, such as HTTP Range requests.
+2) How can I support people skipping ahead to parts of the video that haven't buffered for them?
+This is commonly referred to as scrubbing, and there are basically two kinds of scrubbing : HTML5 scrubbing and time-based scrubbing.
+The former (HTML5 scrubbing) is just a fancy way of saying "HTTP Range requests", and is supported by native browsers and plugins, such as Safari Mobile, Quicktime, mplayer, and all browsers that implement the html5 tag.
+This is supported by the twisted.web.static.File I mentioned in my answer to the first question.
+The latter (time-based scrubbing) is the legacy way of supporting scrubbing.
+It is basically an agreement between a custom player (such as jwplayer or OSMF) and a server that allows the player to request the video starting at a time offset specified by a certain query parameter.
+This can be done hackily by starting ffmpeg in a subprocess with the -itsoffset parameter pulled from the required query parameter, using some input file from disk, or using a module in your favorite webserver.
+Either way requires a player that understands what query parameter to send.

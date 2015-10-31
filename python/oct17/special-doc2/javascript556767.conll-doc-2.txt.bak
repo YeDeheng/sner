@@ -1,0 +1,39 @@
+if (keynum 13 allowedLines = $ (this) .val () .split ("\n ") .length)
+return false ;
+} );
+$ ("textarea ") .keyup (function (e, obj) {
+// Avoid copy-paste
+if (allowedLines $ (this) .val () .split ("\n ") .length) {
+lines = $ (this) .val () .split ("\n ") .slice (0, allowedLines );
+$ (this) .val (lines.join (' \n ') );
+}
+// Check overflow
+if (( this.clientHeight this.scrollHeight )) {
+while (( this.clientHeight this.scrollHeight )) {
+currFontSize = $(this).css('font -size ') ;
+finalNum = parseFloat (currFontSize, 11 );
+stringEnding = currFontSize.slice (-2 );
+$(this).css('font -size ', (finalNum-1) + stringEnding );
+}
+} else if ($(this).css('fontSize ')! = defaultFontSize+'px ') {
+while ($(this).css('font -size ')! = defaultFontSize+'px ') {
+// First lets increase the font size
+currFontSize = $(this).css('font -size ') ;
+finalNum = parseFloat (currFontSize, 11 );
+stringEnding = currFontSize.slice (-2 );
+$(this).css('font -size ', (finalNum+1) + stringEnding );
+// lets loop until its enough or it gets overflow again
+if (this.clientHeight this.scrollHeight) {
+// there was an overflow and we have to recover the value
+$(this).css('font -size ', currFontSize );
+break ;
+}
+}
+}
+} );
+} );
+This solution works :
+and text area would be
+in regular HTML :
+jQuery example.
+This works for both typing and pasting.

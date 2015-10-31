@@ -1,0 +1,17 @@
+ListView is populated but displays no elements
+I have googled and searched this site for answer but get nothing ;/
+So, here is my problem i have listview which i try to populate with data from database but the list displays nothing.
+I realy stuck on this one, here is my code :
+DatabaseViewerActivity.java :
+Here is my single_row_item.xml :
+And database_layout.xml :
+I don't know where the problem is, I have checked c.getCount() and adapter.getCount() don't return 0,
+my LogCat :
+Exception which i got when i removed "AS _id" from statemet
+Since you are using startManagingCursor(), you can remove the code
+c.close() ;
+database.close() ;
+as android framework will take care of closing the cursor and db when the activity is closed.
+Also the lines
+create trouble in you code is you are creating an adapter object from this cursor which you are eventually force closing, so the data set backed by the adapter gets invalidated and hence you see no results.
+Here is the sample which will work hope it helps.

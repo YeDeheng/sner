@@ -1,0 +1,51 @@
+Hide private keys etc from administrators
+Currently I take part in developing a system based on Java EE (WebLogic server, to be more precise) and I am wondering how to protect some private data from administrators.
+For example, some parts of a system stores credentials for legacy systems in a deployment descriptors as plain text and this is bad because a deployer can read application configuration file (ejb-jar.xml, for example) and steal username and password for powerfull account.
+I want to close this security hole, but don't know how.
+Now I am interested in protecting this kind of data :
+Login Password Private key for symmetric encryption
+From here I've discovered that I can use a JCEKS keystore to protect this type of information, but I can not understand how to use it.
+My application still should contain the kestore password and the key password to access it.
+So, a depoyer can steal passwords for keystores and keys, find my secure storage and steal credetials.
+Obviously, I can revoke read privileges from the deployer account, but then he can decompile my appliaction and develop his own similar app (or edit my one), that simply prints secure data to some file or send it by email ...
+And now I am stuck ...
+Can anybody give me some links that can explain how to protect a system from administrators?
+Weblogic related links will be preferable.
+I totally understand that it is not possible to protect from all administrators and there should be some security administrator that will be responsible for keystore management and so forth, but I want to secure all sensitive data from everybody else.
+RESULTS
+Both jtahlborn ' s and slim ' s answers are correct, but slims ' s answer in more interesting.
+I think that in my case it will be appropriate to accept only signed applications for installation on the server.
+This decidion can solve problem with applicatoin modifications done by a administrator.
+Administrators will have password from keystore and all keys, but they will not have access to keystore file at all.
+Access to keystore file will have only special security administrators (' rw ') and server (' r ').
+So, everybody will have the key, but nobody (except security administrators) will have access to the box.
+There is no solution to this problem unless you enter login credentials at application startup (assuming the admin cannot access the application memory, which may not be a safe assumption). any solution which involves the keys sitting in the same place as the application will result in an administrator (with application filesystem access) being able to access any sensitive data accessible by the application. this is similar to the DRM problem (you can't give someone a locked box and the keys and expect that they can't open the box).
+I think the meat of this question is in the definition of "admin".
+You've said that you're comfortable with a "security admin" who does have access to key stores.
+Traditionally, UNIX types think of "admin" as being the "root" user - someone with access to everything on the machine.
+Root can do literally anything, right down to peeking and poking at application memory, or reading / writing to raw disk addresses.
+If the server can get a private key, so can root.
+If you want to define an "admin" role with more limited access, then yes, you could set up something where such users existed.
+They would need to have fewer privileges than the server application itself, since there is at least one thing the app can do (get a private key) that the "admin" cannot.
+Such a user probably wouldn't be able to install the app either (since, if they could, they could create and install a version of the app which exposes the private key).
+Your "admin" couldn't therefore deploy the component that works with the private key.
+They could, however, potentially deploy a module that runs within that container (as long as the container cannot supply the private key to the module).
+However, it ' s not just the key you want to protect.
+The real "secret" is the data encrypted using the key.
+So we still have a problem with the approach above.
+If the module can read the encrypted data, then so can an "admin" with the same privileges as the module.
+And that includes anyone who can install the module.
+You could investigate ways to sign the module, so that an "admin" could not create their own version.
+There comes a point, though, where the measures required to enable untrustworthy admins, become more expensive (in terms of time and effort) than simply using trustworthy admins.
+So, you need to make a list of things your so called "admin" can do.
+Depending on what those things are, it may well be possible to allow a non-root user to do those things.
+On UNIX, you might use a tool like sudo to allow a non-root user to do things like start / stop the server, read logs, clean logs, etc.
+It might be possible to separate the authentication from the rest of the application.
+For example, if you communicate with the legacy systems via a TLS-secured socket, you could write a small separate application that accepts unencrypted connections from the application, then makes a secure, authenticated, connection to the legacy system, and pumps data between the application and the legacy system.
+Essentially, it ' s an authenticating proxy.
+Then, the application wouldn't need these keys.
+You could install and operate the application as a user who didn't have permission to read the files containing the key, but the application could still communicate with the legacy systems.
+Of course, now you have the problem of how to authenticate the application to the proxy.
+You might feel that the machine is secure enough that you don't need to do that at all - as long as the proxy only listens on the loopback interface.
+If not, if you could use a unix domain socket instead, then you could control access using filesystem permissions : you could run the application as some user in some particular group, then restrict access to the socket to members of that group.
+Java doesn't have unix domain socket support in the standard library, but you can add it with junixsocket or JUDS.

@@ -1,0 +1,9 @@
+jQuery : Return object with children
+Given var oJQ = $ (' #foo ') .children() ;, how would you also include foo with the children in the same assignment?
+In other words, oJQ should be a jQuery object that holds foo ' s children and foo.
+andSelf : @codeSnippetRemoved
+$ (' #foo ') .children() .andSelf()
+By combining the selector-by-id with children selector : @codeSnippetRemoved
+See here for an example :
+http://jsfiddle.net/wK3Xz
+var oJQ = $ (' #foo ') .children() .add (' #foo ') ;

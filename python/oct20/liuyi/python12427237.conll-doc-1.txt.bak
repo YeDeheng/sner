@@ -1,0 +1,10 @@
+is there a light (er) weight framework for ruby, like web.py for python?
+I've recently been seeing more and more about lighter and lighter weight web frameworks - mainly for python (flask, web.py).
+I'm just curious if there ' s anything similar for ruby.
+I haven't found anything in my travels yet but maybe i'm not travelling in the right places.
+You should use Sinatra if you want a light weight ruby web framework.
+Check out Grape if you're looking to build a REST-like API.
+Here ' s a nice primer.
+Camping is good, despite being slightly ... special.
+Ramaze can be very lightweight.
+Oh, and I should add that depending on your definition of lightweight, you can build lightweight apps in Rails.

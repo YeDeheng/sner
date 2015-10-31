@@ -1,0 +1,16 @@
+DB geography type MakeValid does not seem to be working
+I have an application where the user draws zones and later I check if a polyline crosses them.
+All of a sudden the application crashed out with the error : @codeSnippetRemoved
+I was surprised at the message ' Use MakeValid ' as I AM using ' MakeValid ' as shown below : @codeSnippetRemoved
+I later found the offending polygon (see image) has been drawn pretty badly and I guess this is causing the issue.
+So my specific questions are :
+Am I using MakeValid correctly?
+I thought MakeValid() would resolve this kind of thing ...
+Obviously I have no control over the drawing skills of my client so if MakeValid doesn't help for badly drawn polygons, is there some other way of er ... making this valid?
+Many thanks.
+OK, so the issue was indeed an invalid polygon zone held in the database.
+The ' Use MakeValid ' in the error message triggered some wrong assumptions as I was already using MakeValid.
+Actually this error was triggered from an invalid Polygon zone and not the PolyLine I was using in the query.
+To protect against this I have added ' MakeValid() ' to the INSERT SQL Statement so that no invalid polygons can ever exist within the database again.
+I have tested inserting an invalid polygon with and without ' MakeValid ' within the INSERT statement and can confirm adding ' MakeValid ' does resolve the issue.
+@codeSnippetRemoved

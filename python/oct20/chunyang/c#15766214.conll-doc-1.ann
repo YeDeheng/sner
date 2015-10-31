@@ -1,0 +1,20 @@
+T1	PL 36 39	sql
+T3	API 315 332	System.Data.OleDb
+T6	API 690 720	Microsoft.Office.Interop.Excel
+T10	Fram 22 27	Excel
+T2	Plat 159 173	Windows CE 5.0
+T11	Plat 84 106	Honeywell Dolphin 6100
+T4	Plat 467 476	Windows 7
+T12	Fram 441 447	VS2008
+T5	Plat 742 752	Windows CE
+T13	Fram 962 973	SQL Compact
+T7	Plat 562 572	Windows CE
+T8	Fram 533 538	OLEDB
+T9	Fram 1017 1022	Excel
+T14	Stan 1189 1192	CSV
+T15	Plat 1711 1713	CE
+T16	Fram 1508 1535	SQLserver management studio
+T17	Fram 1055 1060	Excel
+T18	Fram 1632 1637	excel
+T19	Fram 574 586	Pocket Excel
+T20	Fram 890 902	Pocket Excel

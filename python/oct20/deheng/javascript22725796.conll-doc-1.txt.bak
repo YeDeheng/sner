@@ -1,0 +1,17 @@
+My JavaScript loop is an infinite loop?
+I'm new to programming, so please don't be harsh with my skills.
+Anyways, here is my code, I'm attempting to make a simple countdown loop.
+@codeSnippetRemoved
+What did I do wrong?
+Javascript has function-level block execution.
+One function runs to completion before another function is given ability to execute.
+Your while loop is maintaining the execution baton, so the other functions in setTimeout are never given a chance.
+although javascript is called asynchonous in this case it does not call the subtract function until the first one is finished.
+(details http://ejohn.org/blog/how-javascript-timers-work)
+this should work @codeSnippetRemoved
+When using the setTimeout function you actualy call a function after X miliseconds (in this case X=1000, which is 1 second).
+' While ' is the function you want to do the countdown with, right?
+So in your subtract function just write : @codeSnippetRemoved
+You can also drop the subtract function and just write : @codeSnippetRemoved
+Or drop the while function : @codeSnippetRemoved
+setInterval is the function to set a function to run periodically. https://developer.mozilla.org/en-US/docs/Web/API/Window.setInterval @codeSnippetRemoved

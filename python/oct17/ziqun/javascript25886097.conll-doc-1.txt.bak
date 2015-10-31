@@ -1,0 +1,11 @@
+Why this promise does not work?
+I'm playing with Promise.
+This is my code :
+And used so :
+Only works one time ....
+OK1
+Anybody can fix my code?
+TH
+What you have here in PROMISES isn't an array of promises but an array of functions.
+If your goal is to have all those functions executed (possibly in parallel) then to have another function executed with the result of each one, you can do this :
+Disclaimer : tested with Bluebird

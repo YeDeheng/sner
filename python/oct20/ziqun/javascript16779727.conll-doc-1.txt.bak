@@ -1,0 +1,4 @@
+Is it possible to use javascript to check if a webserver is up?
+I'm working on a webapp that will list the up / down status of several remote servers on a network, and can't seem to find any sort of functionality that would enable me to query the status of these servers without ajax.
+Does such a functionality exist, or should I be looking into other languages for this?
+If the latter case is true, what should I use?

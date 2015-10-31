@@ -1,0 +1,15 @@
+change url according to the selected # href with jquery
+I have a content slider and I want that the respective link of the content navigation is always shown in the url, so that I can also link to contents of the slider that are not shown by default.
+e.g. www.example.com/#exampleLink
+I know that I can find the according link via $ (this) .attr ("href ") but I don't know how to attach it to the url .. and of course I also don't want the screen to jump to the top of the container when one of the navigation links is clicked ..
+Thanks in advance for your help!
+here is my script : @codeSnippetRemoved
+and here the html of the slider : @codeSnippetRemoved
+use : $(this).attr('href',$(this).attr('href')+'attachedContent ') ;
+window.location.hash = ' someValue '
+This will add (or change) the value after the # in the URL to someValue.
+Ok, I used now a combination of your suggestions.
+It seems to work now how I wanted it.
+BUT it does so just in Firefox, if I try Chrome it alters the url, the slider works, but the screen jumps up to the top of the slider container ..
+Any further suggestions?
+Here is the current jquery : @codeSnippetRemoved

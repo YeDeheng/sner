@@ -1,0 +1,152 @@
+O	0	3	How
+O	4	6	to
+O	7	10	get
+O	11	14	the
+O	15	21	echoed
+O	22	29	element
+O	30	32	in
+B-Fram	33	39	Jquery
+O	39	40	?
+
+O	41	45	I've
+O	46	47	a
+B-PL	48	51	php
+O	52	56	file
+O	57	61	that
+O	62	68	echoes
+O	69	71	an
+B-API	72	75	img
+O	76	83	element
+O	84	88	from
+O	89	90	a
+B-PL	91	94	PHP
+O	95	99	file
+O	100	104	with
+O	105	108	id=
+O	109	110	"
+O	110	123	uploadedPhoto
+O	123	124	"
+O	125	131	.After
+O	132	141	uploading
+O	142	144	it
+O	145	146	i
+O	147	151	have
+O	152	153	a
+B-Fram	154	160	Jquery
+O	161	167	script
+O	168	172	that
+O	173	180	changes
+O	181	184	the
+O	185	189	size
+O	190	192	of
+O	193	196	the
+O	197	202	image
+O	203	205	on
+O	206	212	button
+O	213	218	click
+O	218	219	.
+
+O	220	226	Before
+O	227	231	this
+O	232	234	it
+O	235	238	was
+O	239	246	working
+O	247	251	when
+O	252	253	i
+O	254	257	was
+O	258	263	using
+B-API	264	267	img
+O	268	270	as
+O	271	281	background
+O	282	284	of
+O	285	286	a
+B-API	287	290	div
+O	291	298	however
+O	299	302	now
+O	303	305	it
+O	306	311	isn't
+O	312	319	working
+O	319	320	.
+
+B-PL	321	325	HTML
+O	326	330	Code
+O	330	331	.
+
+O	332	351	@codeSnippetRemoved
+
+B-API	352	355	img
+O	356	358	is
+O	359	367	uploaded
+O	368	370	in
+O	371	378	between
+O	379	382	id=
+O	383	384	"
+O	384	392	imageDiv
+O	392	393	"
+O	393	394	.
+
+B-PL	395	398	PHP
+O	399	403	Code
+O	403	404	.
+
+O	405	424	@codeSnippetRemoved
+
+B-PL	425	432	JScript
+O	432	433	.
+
+O	434	453	@codeSnippetRemoved
+
+O	454	457	Can
+O	458	461	you
+O	462	468	please
+O	469	473	find
+O	474	477	the
+O	478	485	problem
+O	485	486	?
+
+O	487	492	There
+O	493	495	is
+O	496	501	issue
+O	502	506	with
+B-Stan	507	510	DOM
+O	511	520	structure
+O	520	521	.
+
+O	522	523	I
+O	524	529	guess
+O	530	534	your
+O	535	540	image
+O	541	554	automatically
+O	555	559	uses
+O	560	563	the
+O	564	568	size
+O	569	571	of
+B-API	572	575	div
+O	576	579	tag
+
+O	580	583	you
+O	584	587	use
+O	588	590	to
+O	591	597	expand
+O	598	600	or
+O	601	607	reduce
+O	608	611	the
+O	612	616	size
+O	616	617	.
+
+O	618	620	So
+O	621	622	i
+O	623	632	recommend
+O	633	636	you
+O	637	639	to
+O	640	643	try
+O	643	644	,
+O	645	648	fix
+O	649	652	the
+O	653	657	size
+O	658	660	of
+O	661	665	this
+B-API	666	669	div
+O	669	670	.
+
+O	671	675	Atul

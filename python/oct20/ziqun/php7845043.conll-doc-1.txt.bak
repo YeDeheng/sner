@@ -1,0 +1,7 @@
+loading Model causes blank / white screen CodeIgniter 2.0.3
+When i load the model blogmodel.php it causes a white screen, but if i comment out the load model, its working.
+my controller blog.php @codeSnippetRemoved
+my model blogmodel.php @codeSnippetRemoved
+I followed the user guide and I don't know what I did wrong.
+I've switched on the display error in php.ini.developing on 11.10 ubuntu.
+Tested on chrome and it gives me a server error

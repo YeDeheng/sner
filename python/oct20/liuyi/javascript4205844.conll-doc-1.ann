@@ -1,0 +1,10 @@
+T1	Fram 0 6	jQuery
+T2	Fram 186 192	jQuery
+T3	API 66 77	.children()
+T4	API 280 291	.children()
+T5	API 292 302	.andSelf()
+T6	API 455 466	.children()
+T7	API 467 471	.add
+T8	API 237 244	andSelf
+T9	API 340 348	children
+T10	API 28 36	children

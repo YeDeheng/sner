@@ -1,0 +1,39 @@
+Appropriate syntax for Initialising Python C-API container types (List Dict Tuple Set) in C++
+I'm designing a C++ Python-wrapper.
+I have an Object class to wrap a generic PyObject*, and I am providing constructors and conversion operators so that I can do things like : @codeSnippetRemoved
+I'm currently looking at how I might initialise containers : PyDict_Type PyList_Type PyTuple_Type PySet_Type (I think that ' s everything?)
+It appears I can break this down into just 2 cases : PyList_Type and PyDict_Type.
+Because for { PyList_Type, PyTuple_Type, PySet_Type } I can initialise a PyList_Type and subsequently convert it.
+My question is : What C++ syntax should I provide?
+Seeing as it is my goal to open-source my project for public consumption, I need to pay attention to providing a usable interface that isn't going to jar with existing design patterns.
+Everything that follows below is my thought process, and my own attempt to answer the question.
+I will separate it.
+Also, my apologies that this may be an open question (more than one solution).
+(THOUGHTS ...)
+Let ' s say I want to initialise a list : @codeSnippetRemoved
+std :: initializer_list Object would be one option, and it would implicitly typecast every argument to Object
+But now what would one want Object{1 } to yield?
+Probably a PyInt_Type.
+But the initializer_list constructor is going to overshadow / hide it.
+And then dictionaries : @codeSnippetRemoved
+Again, key2 might not be the same type as key1, that ' s the great thing about Python.
+In C++ I don't think there ' s any way to use :, but I could catch { {, }, {, }, {, } } with std :: map Object, Object or std :: pair
+So it seems to be the List that is the biggest problem.
+The only thing I can think of this having a first argument specify type : @codeSnippetRemoved
+This would have some advantage for typing out dictionaries, as extra braces cause clutter, although I should also allow for : @codeSnippetRemoved
+So I think my complete set of constructors-for-containers would look like this : @codeSnippetRemoved
+Then for symmetry I should provide : @codeSnippetRemoved
+...
+Allowing the user to do something like Object f{PyFloat_Type, 3 } (3 would normally get converted to PyLong_Type)
+But wait!
+3 is not going to be implicitly converted to Object, as implicit conversions only work for single-argument constructors.
+@codeSnippetRemoved
+Maybe I should create a MakeLong function, so I can do : @codeSnippetRemoved
+But wait, can't I use the std :: initializer_list constructor to my advantage here, @codeSnippetRemoved
+And then I can code : @codeSnippetRemoved
+That is going to handle everything!
+So first it would convert { 3 } into a list containing one PyLong_Type.Then it will pull out the first (and only) element.Then it will convert this into a PyFloat_Type.
+The first solution I tried was to use std :: initializer_list as follows : @codeSnippetRemoved
+However, this makes for some seriously ugly syntax, as it fails to convert arguments to Objects, appearing to require : @codeSnippetRemoved
+So I settled on using a variadic argument : @codeSnippetRemoved
+This technique allows for a tidy lightweight usage syntax : @codeSnippetRemoved

@@ -1,0 +1,18 @@
+The value of a range from another page
+I want to have a program with range and at the end I want to give the user all the results.
+First of all the range
+Javascript : @codeSnippetRemoved
+HTML @codeSnippetRemoved
+The code above is GOOD (I just write this so you know which variables I use)
+You see I give the value of the range each time it change an image.
+Then my problem, I need to take the results from above and put them in another page so i can put it in a database.
+I want to show it in that other page in a textarea so the users know what they have scored on the test.
+@codeSnippetRemoved
+I guess I need to write something between textarea but I don't know what.
+Already tried some things.
+Yes echo ' s because I do this in the else of "if($_SERVER[REQUEST_METHOD]=='POST ')".
+I really hope someone can help me with this.
+You can direct users to the properer page using the switch function : http://php.net/manual/en/control-structures.switch.php
+When it comes to saving that result to a database, maybe this will help you : http://stackoverflow.com/questions/13337807/how-to-pass-javascript-variables-to-a-database
+I would say that when you generate the link to the next page, put the post function in that link.
+Hope that helps.

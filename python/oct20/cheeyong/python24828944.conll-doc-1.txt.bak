@@ -1,0 +1,13 @@
+Use Python extension with old version of Python
+I want to use the cx_oracle module (http://cx-oracle.sourceforge.net) in a project.
+It is currently built against Python 2.7.
+However I only have 2.6.6 installed on the machine, is it possible to rebuild a module against an older version of Python?
+You'll need to build a fresh copy for your older Python version.
+cx_oracle comes with the source, all you need is the Oracle client libraries (which come with headers).
+cx_oracle 5.1.1 has a version for Python 2.6.
+You can download and use that.
+You will be missing these features in 5.1.1 by not using 5.1.2
+Added support for LONG_UNICODE which is a type used to handle long unicode strings.
+These are not explicitly supported in Oracle but can be used to bind to NCLOB, for example, without getting the error unimplemented or unreasonable conversion requested.
+Set the row number in a cursor when executing PL / SQL blocks as requested by Robert Ritchie.
+Added support for setting the module, action and client_info attributes during connection so that logon triggers will see the supplied values, as requested by Rodney Barnett.

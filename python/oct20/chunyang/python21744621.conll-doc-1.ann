@@ -1,0 +1,5 @@
+T1	PL 69 75	python
+T2	API 475 493	mdb.IntegrityError
+T4	API 901 919	mdb.IntegrityError
+T5	API 947 956	mdb.Error
+T6	PL 171 176	MySQL

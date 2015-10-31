@@ -1,0 +1,7 @@
+T1	PL 17 20	SQl
+T2	PL 31 35	Java
+T3	PL 58 61	SQL
+T7	API 564 577	stmnt.execute
+T9	API 733 745	Thread.sleep
+T5	API 904 916	ScriptRunner
+T8	API 405 427	Java Statement execute

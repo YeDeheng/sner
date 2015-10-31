@@ -1,0 +1,22 @@
+T3	Fram 128 134	spring
+T4	PL 135 139	java
+T5	PL 476 480	java
+T8	Stan 1299 1302	XML
+T10	Stan 1322 1325	XML
+T11	PL 1396 1400	Java
+T13	Stan 1420 1424	JDBC
+T14	Stan 1432 1446	Oracle XMLTYPE
+T15	Fram 1450 1459	Hibernate
+T16	Fram 1466 1473	MyBatis
+T18	API 1503 1515	existsNode()
+T19	Stan 1525 1528	XML
+T20	API 1621 1638	PreparedStatement
+T21	API 1646 1673	connection.prepareStatement
+T22	API 1844 1857	stmt.setArray
+T23	Stan 0 23	Oracle Stored procedure
+T1	Stan 97 120	Oracle stored procedure
+T2	Stan 1045 1063	Oracle stored proc
+T7	Stan 1403 1417	Oracle XMLType
+T12	Stan 1479 1493	Oracle XMLType
+T17	Stan 1602 1612	REF CURSOR
+T24	Stan 2242 2252	REF CURSOR

@@ -1,0 +1,12 @@
+How do I detect 64-bit Java from the command line?
+Is there any way to get at Java internal properties, such as sun.arch.data.model, from a command line on windows?
+I need a command to put in a batch script that will detect the java architecture type : 32-bit or 64-bit.
+Here is a prewritten property dump program for you : linky
+If you are using Sun ' s VM (and I would suppose other VMs have similar details in their version information), you can check for the string "64-Bit" in the output of "java -version" : @codeSnippetRemoved
+If you install Groovy you can use @codeSnippetRemoved
+for all properties, and @codeSnippetRemoved
+for specific properties.
+Installing Groovy is as easy as extracting a zip and add to path.
+jarnbjo ' s script is for Windows.
+In Unix shell, you can use the following script.
+@codeSnippetRemoved

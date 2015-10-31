@@ -1,0 +1,15 @@
+Insert image in textarea when button is pressed using javascript or jquery?
+i have design one textarea and button in html.
+i want to insert image in textarea when button is pressed. how it is possible in javascript or jquery?
+Textareas can only contain text.
+Textareas can only contain text, but you can overlap elements.
+Here is an example : http://jsfiddle.net/2qMb3/1
+This uses a styled div instead of an image, but you can easily use an image instead of the div.
+As other said TextArea only contains Text but, you can try something like this : @codeSnippetRemoved
+Here is a working example ; you have to manipulate it according to your requirements.
+You might want to look into using a WYSIWYG editor such as TinyMCE or CKEditor.
+You can use jQuery to add simple CSS to the textarea on click
+The HTML @codeSnippetRemoved
+The CSS : @codeSnippetRemoved
+The Javascript : @codeSnippetRemoved
+See it in action : http://jsfiddle.net/gksTQ

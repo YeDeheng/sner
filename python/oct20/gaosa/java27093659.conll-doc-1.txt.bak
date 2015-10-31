@@ -1,0 +1,28 @@
+Recieving 0.0 when multiplying two doubles in an array.
+Any help?
+(noob issue)
+I'm having quite a bit of trouble multiplying two doubles in an array.
+The result always seems to be 0.0 no matter what I do.
+I've tried casting, changing the variables from double to int, etc.
+What am I doing wrong?
+Having a hard time finding a duplicate question but I'm more than sure there is one.
+Could someone direct me to it?
+Thanks
+My code : @codeSnippetRemoved
+When I try to print any value of speedMPH the output is 0.0
+Any help would be appreciated.
+You're only modifying the first element of speedMPH (n is always 0).
+I'd recommend using a normal for-loop, because you need the current index.
+@codeSnippetRemoved
+Casting to double is not necessary.
+If you really want to use an enhanced for-loop, you need to increment n : @codeSnippetRemoved
+The value of n is never increasing.
+The program continuously changes the value of speedMPH[0 ], not other values of the array.
+Try adding a n++ ; to your loop.
+I'm not neccesarily sure why you're experiencing this issue.
+Just by looking at it, I can see that all should return 0.0, except the first index or, so called index No.
+0.
+You're using n as the iterator but you never increase it, thus all inputs you do to the speedMPH array will go into index 0.
+Here ' s my code, and it ' s working just fine.
+@codeSnippetRemoved
+Printing : @codeSnippetRemoved

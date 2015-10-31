@@ -1,0 +1,11 @@
+Storing string or integer data in PHP class properties?
+Best practice?
+When implementing classes, is it better to prefer storing integers or strings as data?
+Does it matter?
+What is the best practice for data / property storage for PHP classes?
+For a specific example, for a Poll class, there ' s a setting for logging.
+The options are IP, cookie, both, or none.
+Should these properties be saved as strings, ints, an enum, etc .?
+In general you should select the type that ' s most natural to the machine, namely integers.
+With that in mind, a single int $log_level that corresponds to some constants would fit the bill perfectly (eg. 0= none, 1= IP, 2= cookie, 3= both).
+Alternatively, you could create your own enum.

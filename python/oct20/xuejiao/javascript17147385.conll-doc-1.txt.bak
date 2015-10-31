@@ -1,0 +1,7 @@
+How to set the Object3D position and rotation same as the added mesh?
+[ three.js ]
+When I create an Object3D model and add the meshes to it, how do I set the position and rotation of the added mesh to same as the Object3D model, like when I rotate and position the Object3D there should be no difference in angle of rotation between the Object3D and the added mesh.
+How do I achieve such result?
+If your Object3D model is called obj, then after obj.add (mesh) any changes to obj (position / rotation / scale) will change mesh in the same way.
+If instead you don't want mesh to be attached to obj, but you still want them to have the same position and rotation, you could try @codeSnippetRemoved
+Hope this helps!

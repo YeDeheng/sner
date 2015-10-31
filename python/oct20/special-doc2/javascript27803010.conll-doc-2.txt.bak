@@ -1,0 +1,17 @@
+Css code to hide div's : @codeSnippetRemoved
+-- EDIT -- DIV id are dynamic in my application, how can i retrieve dynamic div id in javascript function, please suggest.
+$ (document) .ready (function() {
+$ (' #divOne12 ') .hide() ; $ (' #divTwo12 ') .hide() ; $ (' #divThree12 ') .hide() ;
+$ (' #div1 ') .click (function() { $ (' #divOne12 ') .show() ; $ (' #divTwo12 ') .hide() ; $ (' #divThree12 ') .hide() ; } );
+$ (' #div2 ') .click (function() { $ (' #divOne12 ') .hide() ; $ (' #divTwo12 ') .show() ; $ (' #divThree12 ') .hide() ; } );
+$ (' #div3 ') .click (function() { $ (' #divOne12 ') .hide() ; $ (' #divTwo12 ') .hide() ; $ (' #divThree12 ') .show() ; } ); } );
+See Updated Fiddle here
+Works for dynamic divs
+HTML @codeSnippetRemoved
+JQUERY @codeSnippetRemoved
+Simply replace show / hide with what you want to show or hide when the img is clicked.
+Maybe you could use some data attribute : @codeSnippetRemoved
+UpdatedFiddle
+HTML : @codeSnippetRemoved
+JQUERY : @codeSnippetRemoved
+CSS : @codeSnippetRemoved

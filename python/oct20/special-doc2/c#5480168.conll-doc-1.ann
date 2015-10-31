@@ -1,0 +1,9 @@
+T2	API 399 424	Raven.Client.Embedded.dll
+T3	API 454 482	Raven.Client.Lightweight.dll
+T4	API 520 543	Raven.Storage.Esent.dll
+T5	API 581 606	Raven.Storage.Managed.dll
+T6	API 855 874	Raven.Storage.Esent
+T7	Fram 23 30	RavenDB
+T8	Fram 928 941	Visual Studio
+T9	Fram 80 87	RavenDB
+T10	Fram 296 312	.NET Framework 4

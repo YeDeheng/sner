@@ -1,0 +1,11 @@
+T1	Plat 7 14	android
+T3	Plat 136 143	android
+T4	API 575 586	InputStream
+T5	API 639 672	ParcelFileDescriptor.createPipe()
+T2	Stan 433 437	h264
+T6	API 760 764	h264
+T7	Stan 773 777	RTMP
+T8	Stan 685 690	EBADF
+T9	Stan 27 31	RTMP
+T10	Stan 188 192	rtmp
+T12	Stan 208 212	rtmp

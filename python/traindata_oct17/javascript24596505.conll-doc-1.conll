@@ -1,0 +1,96 @@
+O	0	6	adding
+O	7	13	cookie
+O	14	16	to
+B-Fram	17	24	angular
+O	25	30	$http
+O	31	39	requests
+O	40	41	(
+B-API	41	45	post
+O	46	49	and
+B-API	50	53	get
+O	53	54	)
+O	55	57	in
+O	58	60	an
+B-API	61	67	iframe
+
+O	68	69	i
+O	70	74	have
+O	75	77	an
+B-Fram	78	85	angular
+O	86	97	application
+O	98	102	that
+O	103	107	runs
+O	108	110	in
+O	111	113	an
+B-API	114	120	iFrame
+
+O	121	124	the
+O	125	130	outer
+O	131	142	application
+O	143	145	is
+O	146	151	doing
+O	152	166	authentication
+O	167	170	and
+O	171	177	saving
+O	178	179	a
+O	180	186	cookie
+O	187	191	with
+O	192	202	jsessionid
+O	202	203	.
+
+O	204	205	i
+O	206	210	need
+O	211	213	my
+B-API	214	220	iFrame
+O	221	232	application
+O	233	235	to
+O	236	240	send
+O	241	249	requests
+O	250	254	with
+O	255	258	the
+O	259	265	cookie
+O	266	270	that
+O	271	274	the
+O	275	280	outer
+O	281	292	application
+O	293	298	saved
+O	298	299	.
+
+O	300	303	i'm
+O	304	309	using
+
+O	310	311	$
+O	312	321	http.post
+
+O	322	323	$
+O	324	332	http.get
+
+O	333	334	i
+O	335	339	have
+O	340	345	tried
+O	346	348	to
+O	349	356	include
+O	357	361	this
+O	362	364	on
+O	365	367	my
+O	368	375	service
+O	376	382	module
+
+O	383	384	$
+O	385	414	http.defaults.withCredentials
+O	415	416	=
+O	417	421	true
+O	422	423	;
+
+O	424	430	doesnt
+O	431	435	seem
+O	436	438	to
+O	439	443	work
+O	443	444	.
+
+O	445	448	any
+O	449	453	help
+O	454	459	would
+O	460	462	be
+O	463	473	apreciated
+O	473	474	.

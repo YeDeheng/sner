@@ -1,0 +1,8 @@
+T2	API 848 862	BufferedReader
+T4	API 1721 1739	scanner.nextLine()
+T5	API 1775 1791	Integer.parseInt
+T6	API 1793 1811	scanner.nextLine()
+T3	API 1571 1578	Scanner
+T7	API 0 14	Java Recursion
+T1	API 866 873	Scanner
+T8	API 1623 1630	Scanner

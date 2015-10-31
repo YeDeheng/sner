@@ -1,0 +1,14 @@
+JConsole Web Application
+I need to have the information and operations of my MBeans in my applications and I need this to be as a web application.
+My app server is Weblogic 10.3.2
+Actually I need an application which can do the things (only about MBeans) like JConsole does (both functionally and visually).
+ANy applications u know? or any code examples to do it easilly?
+Thanks
+Ali
+Take a look at :
+Jolokia : Deploys as a WAR or a JavaAgent and exposes JMX ops and attributes through a REST API.
+There ' s no actual console as yet, but check here and here for possible implementations.
+OpenDMK : This is the open-sourced Java Dynamic Management Kit.
+It contains, among other things, a HTML Protocol Adaptor which provides a very basic browser accessible view of your MBeanServer.
+MX4J : Also provides an HTTP Protocol Adaptor.
+The last 2 are not particularly active any more, but I can attest to their stability.

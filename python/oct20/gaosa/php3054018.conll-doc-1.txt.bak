@@ -1,0 +1,35 @@
+PHP, MySQL : Display only required parts of my website in sister website
+Now I have my website built on PHP Mysql.
+Consider this like a forum.
+Now when a user posts a reply in my website 1 (ex. www.website1.com), I want to be able to show the starting thread and it ' s related replies in a sister website of mine.
+I want to do this in a way that it does not show the rest of the page other page contents (like logo etc.).
+I don't think iframe would be a solution because an iframe would embed the whole page and the users visiting my sister website (totally different domain i.e. www.website2.com) would be able to see all the page contents, like logo etc.
+I want to avoid that.
+I want to make them see only limited information from website 1 and only the info. that I intend.
+I hope that makes sense.
+In a way, you could say that I am trying to replicate my 1 website, and show only a limited part of it.
+Users browsing 2nd website can post a reply in the 2nd website and it should automatically be posted visible to the visitors of the website 1.
+Users of website 1 should not know that a user of website 2 has posted it.
+They would feel that some user from website 1 has posted it.
+Do I have to use 2 separate mysql DB or just 1?
+I think it would be problematic if I am trying to use different DB.
+I also feel I might have to face DB connectivity issues as I can connect to only 1 DB at a time.
+It ' s basically like users of website1.com should feel that they are replying to users of website1.com users of website2.com should feel that they are replying to users of website2.com.
+(I need it this way to bridge the gap between them).
+At the same time I want to make the front end of the websites different so that they don't feel that they are replying to some other users outside the domain.
+These websites would be under my control and I will have access to the source code at any time.
+If I need to change the source code, these changes are welcome.
+Is this really possible?
+Thank you in advance.
+Make two forums which use one database.
+Both websites would put new messages in the same database.
+Make an API for website1, so that website2 can retrieve and post messages on the forum.
+Website2 would do a HTTP request to website1, which returns XML or JSON, so that website2 can request a list of posts that it can display.
+Have both sites connect to the same database and display the content they pull in whatever way is appropriate for the particular site.
+Each site can only pull the fields relevant to that site.
+If the idea is to have two websites with the same data but different presentations, then you would want to simply share a single database between them - assuming they are hosted in the same place and can both get at the database.
+You can then just create different PHP pages that both access the same database in the same way but display the data differently.
+The best way to do this would be to have a shared library of functions or classes that both sites use to manipulate the data.
+You would then build a different "presentation layer" on top of that for each site.
+I'd recommend generating RSS (might be runtime) and using it on the sister website.
+If RSS is not suitable for your needs, you can create your own XML-based format (or any other :))

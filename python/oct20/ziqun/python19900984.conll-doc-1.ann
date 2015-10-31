@@ -1,0 +1,9 @@
+T1	PL 35 41	Python
+T2	PL 117 123	python
+T7	API 17 31	BaseHTTPServer
+T8	API 207 221	BaseHTTPServer
+T3	API 349 363	BaseHTTPServer
+T10	PL 417 427	Python 2.7
+T4	PL 456 464	python 3
+T5	API 491 505	BaseHTTPServer
+T11	PL 820 828	python 3

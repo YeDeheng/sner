@@ -1,0 +1,12 @@
+readlines() cannot read lines after using readline()
+The following simple code reads a CSV file and returns the number of lines of the file.
+As you can see in the output, the file has 501 lines.
+@codeSnippetRemoved
+But if I insert a readline() before using readlines(), the latter does not reach at the end of the file.
+@codeSnippetRemoved
+Is there any basic mistake in my code?
+How can I mix readline() and readlines()?
+(actually I don't need to mix these two functions in my real program, but I am just curious ...)
+You can download the file at https://dl.dropboxusercontent.com/u/16653989/tmp/tmp.csv
+This has something to do with the codecs module.
+Because when you do the same thing with the regular python open statement, it works as expected : @codeSnippetRemoved

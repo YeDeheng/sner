@@ -1,0 +1,16 @@
+T3	Stan 487 491	REST
+T5	PL 686 690	HTML
+T6	Stan 805 809	HTTP
+T7	Fram 0 8	JConsole
+T8	API 77 83	MBeans
+T1	Fram 164 179	Weblogic 10.3.2
+T9	Fram 260 268	JConsole
+T10	API 247 253	MBeans
+T11	Stan 423 426	WAR
+T12	Stan 432 441	JavaAgent
+T2	Stan 454 457	JMX
+T13	Fram 587 594	OpenDMK
+T4	Fram 622 649	Java Dynamic Management Kit
+T14	API 768 779	MBeanServer
+T15	Fram 781 785	MX4J
+T16	Fram 400 407	Jolokia

@@ -1,0 +1,17 @@
+I can not seem to stop my own service
+I have a service that places a red rectangle on the screen and has a onDestroy() that looks like this @codeSnippetRemoved
+from one of my activities i am calling to kill this service like so : @codeSnippetRemoved
+i see the toast come up saying that the onDestroy() has been called but i still see the red rectangle and it is still running ..
+my manifest is using : @codeSnippetRemoved
+myService @codeSnippetRemoved
+Firstly you don't need to have that permission to stop a service that you create.
+I use services frequently (starting and stopping) and I assure you I don't ever use that permission.
+ie : @codeSnippetRemoved
+is all you need.
+Of course your service does need to be declared in your Android Manifest.
+Now anything that affects your activity uses the context inside that activity.
+So killing your service won't change what ' s on the UI.
+In your services on Destroy, you should need to somehow reference the rectangle object and remove it that way.
+I have no idea how you created the rectangle.
+But if it is a view, you could set it to VISIBILITY.GONE, or if it ' s a ViewStub, you can deflate it, if it ' s an object you can clear it, etc ..
+If you are saying your service is still running even after you call the stop service function, then something else is wrong.

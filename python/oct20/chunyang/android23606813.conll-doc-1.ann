@@ -1,0 +1,12 @@
+T2	API 29 41	FileTransfer
+T3	Plat 123 130	android
+T7	PL 755 758	PHP
+T8	PL 1026 1029	PHP
+T9	Fram 0 8	Phonegap
+T10	Fram 9 16	cordova
+T11	Stan 49 52	SSL
+T12	Fram 111 118	cordova
+T4	Stan 292 296	.jpg
+T5	Stan 868 873	.jpeg
+T6	Stan 490 494	.jpg
+T13	Plat 17 28	android 4.4

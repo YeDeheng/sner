@@ -1,0 +1,21 @@
+print information from the database on a predefined printed form
+I want to print information from the database on a predefined printed form.
+I have a printed form and i have got all information related to that form in the database.
+I would like to print that information at proper places on the form.
+I just want to print the information and not other predefined instructions.
+For example, in the below form only the blue text would change from the database
+Can anyone please suggest a way to do this?
+Thanks for help
+You can do this with one of many pdf classes.
+Start by putting the pdf in the background and then call the text from the database and place it where you want.
+I'm a fan of the EZPDF Class.
+It ' s easy to use, well documented, and will do exactly what you're looking for.
+I've done it many times.
+You can use CSS alignment and positioning of data on web page.
+As Ryan said before, PDF classes will help you through this.
+Is your data goes directly to printing after retrieval from database?
+Thanks Ryan for suggesting EZPDF class and everyone else for responses.
+I find EZPDF class (suggested by Ryan) little bit tricky and thought it might take much time.
+So, I went with different approach.
+I created pdf with fillable form (using Adobe Acrobat) and then used createFDF to fill in the places and print the form
+Regards

@@ -1,0 +1,10 @@
+Python : Copy content from one word document to another word document and keeping format?
+As the title says I would like to know if there is any module that will allow me to parse content from one Microsoft word document to another via python and keeping the format.
+I want to read table data and transfer it to another table in another document.
+Both doc A and B exist.
+I just want to be able to walk through the cells in both docs (not necessarily at the same time) and copy content without having to worry about if the text is formatted (font, italic, bold) or contains bullets.
+I'm asking for python since it ' s my favorite language ...
+Following Kasra advice to use python-docx :
+Rough example code.
+Query document for table : @codeSnippetRemoved
+Writing to another document : @codeSnippetRemoved

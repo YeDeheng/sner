@@ -1,0 +1,45 @@
+What way is better when executing queries from Java
+I have the following doubt.
+When you have to query a DB from a Java application there are several ways to do it.
+I have came up with some approaches, but each of them have a con.
+The first one is, you have a class eg.
+QueryManager which provides you with querying functionalities, like executeUpdate (...) and executeQuery (...) while hiding details of the management of connections etc.
+(Kind of a Facade Pattern).
+When you need to interact with the DB, you will pass the query as a String and manage the ResultSet.
+The problem that I see is that if the DB changes, whether the DBMS or the DB itself, you will end up going file by file modifying the SQL.
+I see this as a huge dependency.
+Also, you are exposing to everyone the stucture of your DB and you are making each class to handle the ResultSet.
+On the other hand, you could achive higher modularity by using this method, since the models (I am a fan of MVC Pattern) of your classes could have package visibility.
+The second idea that came to my mind was creating a QueryManager class that instead of providing you with the methods for querying, it will provide you with the methods you need.
+In other words, each time you need to use the DB, you will create a method in this class, with the SQL inside, that will return the information you need.
+But, the problem we are facing here is, you have to choose between returning a ResultSet or a model of the data you need.
+The former, will make your classes dependant on the DB, less than in the previous example, since now there is no widely spread dependency with the DBMS, because all the SQL is contained in one class / file.
+However it still exists a dependency with the DB structure and you are exposing, as well, your DB structure to everyone.
+The later implies that theese models no longer could be package visibility, they must be public, allowing any class to modify them, and breaking encapsulation.
+Is there any other approach that solves all the previous problems?
+If not, which do you think is a better approach?
+I do not think there is an absolute answear (maybe there is), but I must say that we are expecting changes in both the structure of the DB and in the DBMS.
+This might help in your answear.
+But try to make it as general as possible, since I could be in other project with the same doubt, but no with the same restrictions.
+I suggest to create DAO classes (http://java.sun.com/blueprints/corej2eepatterns/Patterns/DataAccessObject.html) for all entities, that will hide SQL / HQL / whatever inside.
+They will return object model, so business-logic classes will not care about queries / fetching from database / etc.
+I don't like either of your approaches.
+You can write a single interface that handles all of it : the generic DAO.
+Here ' s a simple example that is not intended to be the complete answer, because it does not allow ad hoc queries or mapping to arbitrary objects, but it ' s a start : @codeSnippetRemoved
+You should have a clear interface between persistence and model classes ; the latter need not know about the former.
+You should not allow ResultSet or Statement leak out of the persistence layer.
+You should have a service layer that obtains connections and manages transactions.
+You should write SQL in such a way that switching databases - which should happen rarely if at all - is as simple as changing the JDBC driver JAR and connection parameters.
+I think what you're after is the data access object (DAO) pattern.
+If you use a framework for object-relational mapping like Hibernate, your DAOs can actually specify the database schema directly (which I think is pretty neat).
+Otherwise, it ' s typical to provide a set of hand-rolled DAO classes which abstract away all the underlying database concerns (e.g. the DAO classes should not return ResultSet).
+The second one is the good one : you should extract your data access methods in Data Access Objects (DAOs), which isolate the rest of the application from persistence-related problems.
+And DAOs should definitely return objects, and not result sets.
+This provides the following advantages :
+decoupling of concerns and responsibilities easier evolution of the rest of the application when the schema changes easier evolution of the rest of the application when you choose to use an ORM instead of JDBC to access the database easier unit-testing of the queries (and of the persistence layer in general), since the persistence code is not mixed with functional code easier unit-testing of the business (service) layer, because it allows injecting mock DAOs to provide the data, rather than needing real data in the database to test it.
+I think we have to lookup with two approaches : updatable database and read-only database.
+If you want to insert / update / delete something in your database, I think there isn't any way to achieve this without the knowledge about how is your database : names, data types ...
+But, at the other hand, if you just want to seach in your database, there ' s a good way to achieve this : using database views.
+You can have a lot of views, and each of this view with all the data you need, but no one should need to know exactly which data do you have behind the views.
+You can restrict some users to only see the views, and not the original tables, so you can "hide" your real database structure.
+I think this is more than Java approach : it ' s a Database + java Approach.

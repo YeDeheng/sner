@@ -1,0 +1,22 @@
+Recursion with Tasks and WaitAll
+Basically here is the problem, I have a function "GetAllCandidates" that accepts a list, calculates something, alters the parameters and calls itself using Task.Factory.StartNew to calculate all possible outputs with different morphs of the original array.
+@codeSnippetRemoved
+I need to fully utilize the cores on my CPU and wait for all tasks to finish, and here is the problem.
+If I call .Wait() for the task, my cores don't get utilized (CPU usage is very low), therefore the calculations don't finish quickly.
+Creating a global list for tasks and then calling WaitAll doesn't work because its a random recursive calls, the list of tasks isn't fully populated when my program reaches the call for WaitAll(), and also since the calculations are huge, I get an OutOfMemoryException when I try add my tasks to a global task list.
+any hints, on how to proceed with such a problem?
+It sounds like your goal is to increase the performance of the entire process.
+Assuming that the order in which the for-loop is executed is not important, you can use TPL.
+It would get you a faster result I think.
+@codeSnippetRemoved
+Update : Use PLINQ to maintain order
+I have provided an example that uses PLINQ to run the operations in parallel and then return the result set in their original order.
+Unless these operations are expensive, or there are a large number of them, you might not find a big performance increase.
+If you are doing some heavy loaded work, or have a large quantity of items to run through, then this should help you out.
+@codeSnippetRemoved
+Make GetAllCandidates keep a function-local list of tasks started.
+At the end of the function wait for them.
+This still provides parallelism as long as you start more than 1 task.
+You can use the Task.WhenAll method (introduced in .NET 4.5) to unravel the parallelism at each step of your recursion : @codeSnippetRemoved
+This way, you would only need to wait on the outermost call of your GetAllCandidates method within your application (if at all), blocking just one thread.
+Edit : Equivalent formulation of for loop using LINQ : @codeSnippetRemoved

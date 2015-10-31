@@ -1,0 +1,10 @@
+T1	PL 90 94	Java
+T2	API 162 170	list.get
+T5	PL 963 967	Java
+T6	Fram 1769 1776	Eclipse
+T7	PL 2012 2018	Python
+T8	PL 2020 2024	Ruby
+T9	PL 2041 2045	Java
+T10	API 2441 2459	ClassCastException
+T11	Fram 2985 2992	Eclipse
+T3	API 1505 1514	container

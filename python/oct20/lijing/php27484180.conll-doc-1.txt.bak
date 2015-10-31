@@ -1,0 +1,15 @@
+Slow user input on firefox, but not chrome
+I have a web page with a little over 1000 text inputs and 100 check boxes created in the following way :
+echo "td input type='text ' id= '".
+$a.
+"-".
+$b.
+"-inc".
+"' autocomplete='off ' / td ";
+the input freezes momentarily when switching between input elements and typing. at first i thought the problem was that firefox retains information on refresh, but with the autocomplete property it no longer does.
+when i check the profiler the profiler says messageQueue.push is the culprit.
+I am especially confused as chrome is perfectly fine.
+any idea what is slowing the input and how to fix it?
+I think it is because you are using a table.
+Use div ' s instead of tables, that ' s a lot faster.
+@codeSnippetRemoved

@@ -1,0 +1,9 @@
+Decode html string in JQuery Mobile template
+I am using jquery templates which I populate using an ajax request.
+However, one of the values returned is encoded HTML.
+How can I encode it?
+I have tried using ${$ .mobile .html (Body) .text() } but that didn't work for me.
+My code : @codeSnippetRemoved
+Html : @codeSnippetRemoved
+After searching and searching I finally found the solution here : jQuery tmpl : How do I render Html?
+Using {{ html Body }} in my template worked like a charm.

@@ -1,0 +1,12 @@
+T3	API 632 642	FileDialog
+T4	API 765 775	FileDialog
+T5	API 1053 1063	FileDialog
+T6	API 1155 1172	shell.getShells()
+T1	API 246 256	FileDialog
+T2	API 733 738	Shell
+T7	API 874 885	setLocation
+T8	API 889 894	Shell
+T9	API 1076 1081	shell
+T10	API 1133 1138	shell
+T11	API 1206 1211	shell
+T12	Fram 28 31	swt

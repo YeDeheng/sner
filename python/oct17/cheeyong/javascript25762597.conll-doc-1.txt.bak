@@ -1,0 +1,15 @@
+How to create an JS object from scratch using a HTML button?
+Im new to coding.
+I have made a bunch of courses online and now i went to create something myself.
+This is supposed to be a Scenario Generator for a game.
+I would like to have a button on a Website.
+Once clicked, a javascript is being run.
+This script creates an object from scratch and then outputs text, assembled from the the various props of the object.
+scripts.js
+This Scenario has a bunch of methods to randomly fill in the blanks.
+However, i have not the slighest idea how i can link my HTML button to "call" in the Scenario function, especially considering i would want to be able to click the button more than once, and get a new "randomized" Scenario Output.
+Can someone help me?
+You only need to do this :
+I'd rather use jQuery anyway, like :
+Regards
+To use a constructor function, just call it as normal but prefix it with the new operator.

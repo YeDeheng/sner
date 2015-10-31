@@ -1,0 +1,6 @@
+T1	API 0 8	ListView
+T4	API 434 452	adapter.getCount()
+T5	API 472 478	LogCat
+T6	API 561 582	startManagingCursor()
+T9	Plat 642 649	android
+T2	API 145 153	listview

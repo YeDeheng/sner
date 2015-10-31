@@ -1,0 +1,10 @@
+how to play animation again and again without refreshing the page using css3
+Hi i am doing some animation effect using css3.It works fine in the browser.when i click button it runs only once in the webpage and i click again that button it remains same.if i want to play again, i need to refresh the page.i got some codes in the but its working.i dont know where i did mistake. this is my code kindly give some suggestions.
+@codeSnippetRemoved
+"myfirst" is not the class name, it ' s the animation name.with "#div1" you're searching for the id "div1", but your elements class name is "div1" (select it with a dot : $ (' .div1 ')) .You have to execute your javascript after the dom is loaded.
+Currently you're searching for the id "button" before the element is loaded.You're using jquery, so you can execute your code inside $ (function() { / * here * / } ); or just move the script to the bottom.
+here the animation part (Demo : http://jsfiddle.net/FirePanther/q4bedpdz ): @codeSnippetRemoved
+edit : without the opacity transition and without hiding the element after the animation : http://jsfiddle.net/FirePanther/L2pf5wku/1
+If u need the animation to be infinite loop, the animation iteration count should be infinite.
+@codeSnippetRemoved
+Try this CSS @codeSnippetRemoved

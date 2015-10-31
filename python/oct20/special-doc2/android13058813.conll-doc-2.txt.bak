@@ -1,0 +1,7 @@
+Even though it looks like you are stopping the service correctly.
+----------------------------- EDIT ---------------------------------------------------------------------------------------------------------- Your service might also be bound to your activity too.
+If you are doing this, you need to release the binding.
+Here ' s a link for a similar question :
+I hope this helps you!
+Cheers
+Solved, in my Service ' s onDestroy() i had to stop the timer task and the service then closed ...

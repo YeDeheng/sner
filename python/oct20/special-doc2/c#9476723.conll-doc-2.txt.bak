@@ -1,0 +1,3 @@
+// the func merges the src pdf with the memory stream, wherein the stream may contain // few othr src pdf streams in previous calls to this func // in first cal, ms would be nullpublic static void MergePdf (MemoryStream ms, string srcFile) { PdfReader reader = new PdfReader (srcFile ); Document document = null ; PdfWriter writer = null ; int n = reader.NumberOfPages ; if (document null) { document = new Document (reader.GetPageSizeWithRotation (1 ));
+writer = PdfWriter.GetInstance (document, ms );
+document.Open() ; } PdfContentByte cb = writer.DirectContent ; PdfImportedPage page ; int rotation ;

@@ -1,0 +1,22 @@
+Android Path : Merge several paths and draw text on merged path
+In my application I have to merge several short paths to create a larger one.
+Example : @codeSnippetRemoved
+This works just fine and draws a neat V-shape to the canvas.
+However if I want to use the merged path for text rendering (using Canvas.drawTextOnPath()), it only draws text along the first part of the path (i.e. the original p1).
+I'd like to use the entire path for text rendering, though.
+So is there a way to achieve that?
+Do you have to use two paths?
+You can try using one like : @codeSnippetRemoved
+and then use the the Canvas.drawTextOnPath() on p1
+Hope that helps.
+Figured this out myself ...
+The behavior described seems to be a known issue.
+I guess this is due to the fact that every path is internally seen as a separate "contour" which cannot be merged with another one.
+However I was able to get the desired behavior with a simple "hack".
+This only works for line-based paths, though.
+Here ' s the code (minimal example), just if anyone ' s interested ...
+@codeSnippetRemoved
+The usage of this is straightforward : @codeSnippetRemoved
+Path.addPath() still seems to be work-in-progress.
+You can avoid using it without extending Path by appending the multiple segments directly to the Path you will draw.
+@codeSnippetRemoved

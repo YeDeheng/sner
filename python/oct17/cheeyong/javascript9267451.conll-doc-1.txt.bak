@@ -1,0 +1,13 @@
+How to check if HTTP requests are open in browser?
+Is there an easy way to detect if an XMLHttpRequest is active in the browser window?
+Or how many are active?
+ie.
+Is there a way to detect if there are any AJAX calls active in my browser window?
+Extension of question : Using javascript is there a way I can see if any XMLHttpRequests are open?
+Such as "window.XMLisActive()" or something like that?
+Solution : Ended up writing a wrapper for XMLHttpRequest https://gist.github.com/1820380
+You can use FireBug for that.
+There is not a way to detect an open connection from JS unless you write a wrapper for XmlHttpRequest (or monkey patch it) that keeps track of opened connections.
+Here ' s kidcapital ' s monkey patch, not sure if it ' s perfect, but it ' s a good start
+By using jQuery, you can keep track if there are open requests with the global event handlers : .ajaxStart () and .ajaxComplete ()
+A global variable set on ajaxStart and reset on ajaxComplete should do the job.

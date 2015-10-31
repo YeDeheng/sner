@@ -1,0 +1,18 @@
+Getting input box values into an array in Javascript / HTML
+I'm learning Javascript for a project.
+I'm trying to try and get values from an dynamic number of text inputs into a multi-dimensional array.
+I have tried this with 1 text field and it correctly saves into the array for further manipulation later.
+However when i added an second text field and another dimension to the array, it broke.
+Eventually i will have a drop down list to give the number of inputs once i figure it out.
+Here ' s my current code, not very efficient really.
+@codeSnippetRemoved
+Btw, you have to insert ";" between function calls, not ","
+onclick= "insert (this.form.name.value ); insert2 (this.form.name2.value );
+You need to close all the td elements.
+As arunes mentioned, modify the onclick call with ' ; ' seperator.
+As mentioned in my comment, close html tag Not sure why you are using 2-d array, what you want can be done with 1-d array.
+Here ' s the modified code, just go through-
+http://jsfiddle.net/h3r9j
+Its better to make a single function to insert into array rather than 2 seperate functions.
+In case you didn't figured it out yet here is the code : @codeSnippetRemoved
+@codeSnippetRemoved

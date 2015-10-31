@@ -1,0 +1,7 @@
+How to pass ajax object data to python file
+I have written an ajax code to pass value to python file.
+I used request.GET['user ' ] but it gives compile error.
+Help me to give any method in python to catch the value.Below is python code : @codeSnippetRemoved
+Ajax code : @codeSnippetRemoved
+Compile Error : @codeSnippetRemoved
+It looks like the function does not take request as a parameter, but it is impossible to pinpoint the problem since your code snippets are not complete.

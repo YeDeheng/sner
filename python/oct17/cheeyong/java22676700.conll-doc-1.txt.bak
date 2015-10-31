@@ -1,0 +1,13 @@
+Decimals such as 0.1 and 0.2 equal 0.30000000000000004
+I have a button that, when I press it I want it to update a label (which starts at 0.0) to + 0.1
+I get the following :
+The code I have is :
+I understand that the way computers work with numbers are not exactly 0.3 but more like 0.2999999 ...
+I just wanted a way to round the number so I can easily add 0.1 (to) 0.9 together without a mass of decimal places.
+I have tried adding
+although it rounds it downwards to 0 so the label doesn't update.
+Some decimals simply can't be represented by a float or double in such way the the difference is small enough.
+Simply because a computer uses the binary number system.
+For instance a computer will always fail to represent 1 / 3rd.
+You can use a format, to round the number to one decimal using the following code :
+If you want exact decimal addition, you need to use BigDecimal in place of double.

@@ -1,0 +1,13 @@
+Visual studio 2010 and SAP crystal reports app crash
+I developed a C# (Visual Studio 2010) application in .NET Framework 4.0 in conjunction with SAP Crystal Reports Support Pack 9
+When I deployed my application on Client computer I faced the following error after my application crash
+Faulting application name : TrackingApp.exe, version : 1.0.0.0, time stamp : 0x537a1687 Faulting module name : cslibu-3-0.dll, version : 13.0.9.1312, time stamp : 0x53393fe8 Exception code : 0xc0000005 Fault offset : 0x00039a28 Faulting process id : 0xf00 Faulting application start time : 0x01cf7376d 8d f092d Faulting application path : C :\ Program Files\Tracking System\Tracking System\ TrackingApp.exe Faulting module path : C :\ Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0 \Common\SAP BusinessObjects Enterprise XI 4.0 \win32_x86\ cslibu-3-0.dll Report Id : 24b4faea-df6a-11e3-8422-d067e51beb2a
+The client has Windows 7 32-bit on his system.
+During testing I found there are two reports which made my application crash.
+These two reports contains sub reports.
+While other reports are simple reports with no sub reports.
+While checking these two reports I found that when I open (view using report viewer) my reports first time they work absolutely fine but when I close the report and re-open it second time the app crashes.
+Further I found when I open the other reports except these two faulty reports and then I open faulty reports they work fine and I can re-open multiple times
+What should be the issue.
+My code is in try catch block but it did not generate any exception @codeSnippetRemoved
+RegardsAdeel Arshad

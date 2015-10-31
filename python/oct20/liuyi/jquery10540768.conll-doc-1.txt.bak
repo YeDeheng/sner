@@ -1,0 +1,17 @@
+Jquery - Drop event not occuring if size of ' draggable div ' is greater than ' droppable div '
+Possible Duplicate : jQuery UI draggable to smaller droppable
+I have a draggable div and a droppable div.
+The draggable div is greater in height and width than droppable div.
+So the drop event is not happening.
+@codeSnippetRemoved
+When I made dimension of draggable div smaller than dropable div, then drop event triggered successfully.
+Please guide me on how can I resolve this.
+All you need to do is change the tolerance of your droppable.
+Specifies which mode to use for testing whether a draggable is ' over ' a droppable.
+Possible values : ' fit ', ' intersect ', ' pointer ', ' touch '.
+@codeSnippetRemoved
+By default it is intersect, requiring 50% overlap.
+Perhaps try pointer.
+You can change the tolerance option to touch in the droppable method
+http://jqueryui.com/demos/droppable/#option-tolerance @codeSnippetRemoved
+The default is intersect, which means your draggable div has to overlap the droppable div by 50%.

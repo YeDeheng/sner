@@ -1,0 +1,16 @@
+data access object pattern with abstract factories, creation over generic types
+I'm developing a database application for android devices.First thing I need to do is creating the data access layer.For this I want to use DAO-Pattern with abstract factories.
+For all DAOs i have one Interface witch contains the declaration that all data object needs to implement.
+(in my case : IDataObject) The specific DAOs are all represented by its own interface, extending the base interface of all DAOs.
+base interface : @codeSnippetRemoved
+a extensions : @codeSnippetRemoved
+To create an data object I want use abstract to use abstract factories, something like : @codeSnippetRemoved
+and the implementation : @codeSnippetRemoved
+I don't get any error so far, but now I want to implement an factory builder : @codeSnippetRemoved
+I get following errors (line 8) : @codeSnippetRemoved
+and (line 9) @codeSnippetRemoved
+Don't know how to fix this, any suggestions?
+I would refactor Your ' s DataFactoryBuilder to something like that : @codeSnippetRemoved
+I got following solution : @codeSnippetRemoved
+but i get an warning on : return (IDataFactory) fac ; @codeSnippetRemoved
+I think that is not a problem, I just have to supress it

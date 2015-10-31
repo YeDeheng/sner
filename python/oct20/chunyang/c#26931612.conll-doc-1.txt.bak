@@ -1,0 +1,9 @@
+Change HorizontalGridLinesBrush only for selected Row
+In a WPF DataGrid the Color of the Horizontal Grid Line can be modified by the HorizontalGridLinesBrush Property.
+Some Items have a boolean Property set to true so I want to highlight them with the Horizontal Grid Line Brush set to another Color.
+Is it possible to change the Color of the Horizontal Grid Line only for cetain Rows?
+DataGrid.HorizontalGridLinesBrush is set per DataGrid so you cannot change it per row but you could replace default horizontal line behaviour by disabling horizontal grid lines and creating custom DataGridRow style
+DataGrid ...
+GridLinesVisibility= "Vertical" DataGrid.RowStyle Style TargetType= "{x : Type DataGridRow }" Setter Property= "BorderThickness" Value= "0, 0, 0, 1" / Setter Property= "BorderBrush" Value= "Black" / Style.Triggers
+! -- this will trigger when row is selected -- Trigger Property= "IsSelected" Value= "True" Setter Property= "BorderBrush" Value= "Red" / / Trigger
+! -- this will trigger when Highlight property of the view model is true -- DataTrigger Binding= "{Binding Highlight }" Value= "True" Setter Property= "BorderBrush" Value= "Green" / / DataTrigger / Style.Triggers / Style / DataGrid.RowStyle / DataGrid

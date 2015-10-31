@@ -1,0 +1,12 @@
+T1	PL 4 10	Python
+T2	PL 41 47	Python
+T3	PL 162 172	Python 2.7
+T4	PL 289 295	Python
+T5	PL 346 352	Python
+T7	PL 500 510	Python 2.6
+T10	Fram 66 75	cx_oracle
+T11	Fram 362 371	cx_oracle
+T12	Fram 466 481	cx_oracle 5.1.1
+T13	API 624 636	LONG_UNICODE
+T14	Stan 762 767	NCLOB
+T9	PL 906 914	PL / SQL

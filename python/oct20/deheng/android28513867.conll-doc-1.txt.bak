@@ -1,0 +1,13 @@
+SKShapeNode equivalent in Cocos2D / SpriteBuilder
+I have worked on different business Apps for iOS and Android before.
+Now I am working on my fist small game.
+I made some tests with SpriteKit and it worked quite well.
+To be able to port the game to Android I am now testing Cocos2D and SpriteKit.
+It works quite well to, but there is one thing I could not solve yet :
+The game is for kids and one taks is to find a path trough a labyrinth.
+This done by connecting a series of dots with a line.
+In SpriteKit I uses SKShapeNodes to create the dots and the path between them.
+This was quite easy : @codeSnippetRemoved
+How can I do the same in Cocos2D / SpriteBuilder?
+I found CCDrawNode but according to the docs this is made for debug use and not indented for "real" projects.
+What is the right way to do this in Cocos2D?

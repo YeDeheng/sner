@@ -1,0 +1,19 @@
+T2	Stan 30 33	JAR
+T4	Stan 171 174	JAR
+T6	Stan 342 345	JAR
+T8	Stan 494 501	servlet
+T12	Stan 724 727	JAR
+T15	Stan 987 990	JAR
+T17	Fram 1208 1217	WebSphere
+T1	Fram 42 57	WebSphere 8.5.5
+T3	Fram 1159 1174	WebSphere 8.5.5
+T16	API 400 410	getSigners
+T19	Fram 451 466	WebSphere 8.5.5
+T7	Fram 814 829	WebSphere 8.5.5
+T13	API 862 872	getSigners
+T9	Fram 535 540	JBoss
+T20	Fram 0 15	WebSphere 8.5.5
+T18	Fram 641 650	WebSphere
+T5	Fram 364 373	Jarsigner
+T11	Fram 514 523	GlassFish
+T10	Fram 525 533	WebLogic

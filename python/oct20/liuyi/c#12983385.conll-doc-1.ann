@@ -1,0 +1,4 @@
+T1	API 276 294	PerformanceCounter
+T2	API 345 363	PerformanceCounter
+T3	API 534 549	GetProcessTimes
+T4	Fram 316 319	WMI

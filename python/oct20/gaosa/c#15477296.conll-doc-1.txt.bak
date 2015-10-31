@@ -1,0 +1,27 @@
+Can i use DataTable.Select() method to make simple paging?
+I quickly view this MSDN article using datacolumn.expression, but have found nothing.
+It looks like ' select expression ' syntax doesn't support paging ...
+Simple paging can be created most simply using LINQ.
+@codeSnippetRemoved
+Paging is a mechanism of how you SELECT the data.
+Consider the following test data : @codeSnippetRemoved
+if I wanted to page that data, and I didn't care how it was sorted, I could do it by ID so I could do something like this : @codeSnippetRemoved
+and that would give me the first ten rows (i.e. a page).
+Note I'm also storing the last ID into an assumed class variable named _id.
+How you store, or just recover later, that ID depends solely on your program.
+Now, if I need the next page, I could do something like this : @codeSnippetRemoved
+and that would give me the next page.
+But what if I wanted to sort that data by Name?
+That changes the game a little.
+Consider the following code : @codeSnippetRemoved
+that will give me the first page of data, sorted by Name.
+But notice I'm storing the value of Name in the assumed class variable _name for later.
+Now when I want the next page I need to do something like this : @codeSnippetRemoved
+that will get me the next page, but still ordered by Name.
+Sorting is very important when it comes to paging.
+NOTE : the code isn't quite as simple as I've put forward.
+You can't just Take (10) because there may not be 10 to take.
+Further, you may not be able to just store the last ID or Name, you may have to recover it from somewhere every time.
+Finally, you may need to support multi-sort, where it ' s sorted by more than one column, so keep that in mind too when providing the sort.
+FINAL NOTE : it is much better to leverage raw SQL for paging than the aforementioned code - I only provided that code because you asked about the Select method on the DataTable.
+It would be much better to simply construct the correct SQL statement, send it to the server, and then just display the results.

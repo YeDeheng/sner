@@ -1,0 +1,16 @@
+Appengine BulkLoader problem using development server
+I am doing something that should be simple and getting stuck over and over again.
+I am getting this error when uploading quite simple csv files to my development server : @codeSnippetRemoved
+The exact output being : @codeSnippetRemoved
+This is the app.yaml file : @codeSnippetRemoved
+This the shell call to perform the upload : @codeSnippetRemoved
+This is the uploader code : @codeSnippetRemoved
+And this the cols.csv file : @codeSnippetRemoved
+Any help will be really welcome.
+I cant figure out what I am doing wrong.
+I am using Appengine 1.5.2 on Mac Osx Leopard.
+I have tried both both python 2.5.4 and 2.6.6 (just in case).
+Thanks in advance and best regards!
+When starting dev_appserver, pass the -- default_partition= "" parameter.
+On newer SDK, use the -- application =d ev~ your-app option.
+I recently had the same problem, hence I created a script to do this : @codeSnippetRemoved

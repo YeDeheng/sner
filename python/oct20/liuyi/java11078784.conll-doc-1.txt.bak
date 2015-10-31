@@ -1,0 +1,20 @@
+Reference (not copy) a subrange of a one-dimensional array?
+Suppose I have the following method signature @codeSnippetRemoved
+and I call it like this : @codeSnippetRemoved
+then, since arrays are objects, and objects are reference types, f receives a reference to the ints, and can change their value so the caller can see the changes.
+Now how can I then call f in a way that it receives a reference to the array elements 2, 3, 4 (i.e. subrange from index 1 to 3 inclusive) without copying myValues?
+Something like @codeSnippetRemoved
+which of course does not compile (and would leave open which size the array would have) but might transport the idea I am looking for?
+In other languages, I could use pointer arithmetics to calculate the address of myValues[2 ], and treat it a the beginning of an array of integer, and pass an explicit count parameter.
+(Quite type-unsafe, of course.)
+Can I do this in Java without copying the three elements ' values to an intermediate array?
+Sub-question : Are the array elements, being value types, stored at consecutive addresses at all, or is the array composed of elements that are references to integers?
+Could it be the question does not make sense because even if the answer to the latter was "yes", I could not build on that since that would be an implementation detail that a Java source must not build upon it?
+It even cannot -- there is no semantics for it, right?
+Edit : Stupid index error
+You cannot return a range / subset of items in arrays (also Collection) without creating a new instance of the container.
+I cannot answer the second without guessing, but IF the JVM wants to allocate 2 regions of memory for one array, it can do it without you knowing.
+You can use List instead of an array.
+@codeSnippetRemoved
+In C / C++ this would be terribly easy to do with a bit of pointer arithmetic, but in Java, I am not so sure it is possible.
+The best you could do is use the copyOfRange method although that makes a deep copy.

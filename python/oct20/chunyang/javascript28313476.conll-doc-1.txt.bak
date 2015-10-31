@@ -1,0 +1,15 @@
+How to use gulp-traceur and gulp-webpack?
+I'm trying to compile ES6 js files.
+I use gulp-traceur and gulp-wepback in gulp pipe line.
+@codeSnippetRemoved
+When running gulp.
+I take error : Unexpected reserved word.
+You may need an appropriate loader to handle this file type.
+On the line which contains a "class" word.
+(ES6 Syntax)
+I can't figure out how to use these plugins together?
+This setup would pass ' js / app.js ' to traceur, but none of the related files, and webpack will then start from that transpiled file and process the rest as normal JS.
+I'm actually not even sure webpack will get the transpile version of app.js.
+The proper way is to use webpack for the main entry point, and tell webpack to transpile all files it comes across.
+I'd also recommend using Webpack ' s uglifyjs logic instead of tacking it on after-the-fact with gulp.
+@codeSnippetRemoved

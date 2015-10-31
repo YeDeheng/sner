@@ -1,0 +1,5 @@
+T3	Stan 302 306	JDBC
+T5	API 383 398	ArrayDescriptor
+T6	API 410 425	ArrayDescriptor
+T10	API 530 550	stmt.executeUpdate()
+T1	API 503 516	stmt.setArray

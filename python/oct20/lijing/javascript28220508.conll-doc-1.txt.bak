@@ -1,0 +1,13 @@
+D3 Update Multi line Chart
+I am a newcomer to both D3 and JavaScript.
+I have been working on code for a multi-line chart that would do the following :
+have focus and context via brushing have an interactive legend have a vertical line and labeled dot on hover update with new data.
+I have been able to get it to do 1 through 3 but I am really stuck when it comes to (4) updating.
+The code will load a file called data.csv of the format Date, RAW, RTX 2015-01-29 09:02 : 40, 392, 318 2015-01-29 09:03 : 39, 393, 312 2015-01-29 09:04 : 41, 396, 312
+On update it will reload data.csv which will have new data appended to it, e.g.,
+Date, RAW, RTX 2015-01-29 09:02 : 40, 392, 318 2015-01-29 09:03 : 39, 393, 312 2015-01-29 09:04 : 41, 396, 312 2015-01-29 09:05 : 40, 390, 310 2015-01-29 09:06 : 50, 392, 313
+I have written it so I don t have to know the column names or the number of columns beforehand.
+The problem is that on the update everything still works ; the axis update, the line moves, the brush works, the interactive legend works but the lines don t show the new data values.
+I am truly stuck and any suggestions would be much appreciated.
+To get this far I relied heavily on some really great pages, http://bl.ocks.org/DStruths/9c042e3a6b66048b5bd4 http://www.delimited.io/blog/2014/3/3/creating-multi-series-charts-in-d3-lines-bars-area-and-streamgraphs
+ThanksKathleen @codeSnippetRemoved

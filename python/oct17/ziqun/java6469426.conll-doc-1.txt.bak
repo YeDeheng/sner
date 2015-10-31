@@ -1,0 +1,11 @@
+What pointcut method pattern to use for interface with method that returns Collection
+A have a simple interface :
+I want to create an advice for this method when around :
+I Keep getting
+advice defined in
+org.example.aspect.TestAspect has not
+been applied [ Xlint : adviceDidNotMatch ]
+What am I doing wrong?
+After a few days i can answer my own question :
+The WARNING "advice defined in org.example.aspect.TestAspect has not been applied [ Xlint : adviceDidNotMatch ]" is given when there is no call to the mothod findAll().
+if you create a class that implements the interface test and has a main method that calls findAll(), the warning will vanish.

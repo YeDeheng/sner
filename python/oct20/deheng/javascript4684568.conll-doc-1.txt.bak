@@ -1,0 +1,22 @@
+How to connect draggable divs
+I have some divs that I clone and can drag and drop in a area, now, I want to connect by lines the divs and if I move the divs, this lines must move too.
+Something like a flow diagram, I clone the divs using drag and drop, but still don't know how to do this lines.
+Thanks!
+I've thought about this before but I've never had a need to actually try to implement it.
+Try this :
+Create a transparent GIF or PNG that has a diagonal line running from one corner to another.
+As you drag the divs around, stretch the image so that it ' s corners are always touching each div.
+You will probably need a diagonal-down image and a diagonal-up image and switch between the two based on the relative positioning of the two divs.
+This will probably take some finesse to get it working well, but it is the best thing that I can think of to get diagonal lines in HTML.
+take two divs, divA and divB. calculate the shortest distance between the closest borders of the divs determine the middle coordinates of those closest sides of each diveg :
+A : { x : 10, y : 10 }
+B : { x : 20 : y : 10 } determine the intersection-point of lines from those points (C) C = AX, BY or AY, BX (depending on divA and divB positions) create two divs, that represent AC and BC
+tip : @codeSnippetRemoved
+repaint every time you move the divs with jquery.
+note : as you can see, there are always 2 sides close and 2 sides far when the divs are not parallel.
+you can use jsplumb library to achieve this.
+if you have two divs, div1 and div2, @codeSnippetRemoved
+this should establish the connectors.
+if your divs are movables, then onmove, make a call to jsPlumb.repaint()
+Link to jsPlumb demo - http://jsplumb.org/jquery/demo.html
+Hope this helps. good luck

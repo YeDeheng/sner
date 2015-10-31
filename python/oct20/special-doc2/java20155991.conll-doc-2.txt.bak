@@ -1,0 +1,5 @@
+if (up -1) return count ; else count+=calculateFloors (count++ ); } catch (Exception e) { System.out.println (e ); } return count ; }
+Try that.
+Just do a Depth-First-Search over the rooms (you do not need a recursive function).
+You might go up and down to reach the top.
+@codeSnippetRemoved

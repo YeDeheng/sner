@@ -1,0 +1,26 @@
+Are there drawbacks to implementing onClickListener for each ListView row instead of onItemClickListener?
+It would be more convenient for me to register a unique OnClickListener for each row in the ListView, but I want to be sure that this is an acceptable practice.
+My current design is a rather convoluted way to separate the concerns of the OnClickListener from each row type.
+The reason for this is that I have multiple classes of rows in the ListView.
+Each class has a completely different responsibility and behavior.
+For example, consider a ListView that can contain both sub-categories and book titles.
+If a book title is clicked, a new activity should start that shows the cover image.
+If a sub-category is clicked, a new list of books and categories is displayed.
+I'd like the row itself to maintain knowledge about its own identity and responsibility rather than having to leak the knowledge about each row to be maintained by the implementer of onItemClickListener.
+I'd also like to know what the performance implications are of doing this vs. implementing my own logic to figure out how to handle the click.
+Are there drawbacks to implementing onClickListener for each ListView ArrayAdapter row instead of onItemClickListener?
+I'm looking for concrete data and specific drawbacks rather than vague recommendations.
+Should I expect memory use, initialization time, or steady-state speed (like scrolling through the list) to be significantly affected?
+You don't explain why you would need separate click listeners for each row, but I would recommend against it.
+Take a look at using View.setTag (Object) / View.getTag() to pass row-specific custom data by which you can customize the response of a (shared) click listener.
+EDIT
+I see from your example why you want different OnClickListener s attached to your rows.
+I was under the impression that you wanted a separate OnClickListener instance for each row.
+(That was my main reason for recommending against this.) If you have two types of rows (categories and titles) and hundreds of rows, you need only two kinds of responses, not hundreds of them.
+I also understand the point about separating concerns.
+Nevertheless, I think overriding ListActivity.onListItemClick() (or calling ListView.setOnItemClickListener() if you aren't using a ListActivity) would be cleaner and less likely to interfere with the operation of the list view.
+You can use a delegate pattern for this, as follows.
+Define an abstract class or interface : @codeSnippetRemoved
+Then create one instance of an object that implements this interface for each type of row data (not one instance for each row).
+In your adapter, use setTag (Object) to initialize the tag for each row to the appropriate MyClickHander instance.
+In your ListActivity.onListItemClick() override, use this logic : @codeSnippetRemoved

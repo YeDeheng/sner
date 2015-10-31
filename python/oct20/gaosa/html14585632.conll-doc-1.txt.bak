@@ -1,0 +1,16 @@
+Menu jumping down on resize, responsive design, certain browsers only
+I'm currently working on this site and I'm having a problem with the top menu navigation in both Safari and Chrome (latest versions).
+It works in Firefox, and even in the latest Internet Explorer!
+There are four responsive resolutions ; the standard and biggest width, iPad portrait, iPhone landscape and iPhone portrait.
+The problem doesn't occur when resizing back and forth on all the resolutions except iPhone portrait.
+When resizing up from iPhone portrait the top menu navigation jumps down below the bottom-border of the header.
+I've tried looking at my mediaquery for iPhone portrait, and haven't been able to figure out what the issue is.
+I hope you can help me with the little info I've given, it was too elaborate to throw all the code into a jsfiddle.
+I don't really see why this is happening either, but if you add overflow : hidden to your #main -header, you see what is happening.
+There ' s a bit of a float confusion, which was a common problem in IE6 if you had right floated elements after block elements in your HTML ...
+if you keep the hidden overflow on the header and add float : left to #logo it works for me, though.
+Your header should be handled in diffrent way your inner elements should have inline-block ; header should have inline-block with width : 100% which will be affected by parent widthand it should fix your responsive problem
+I dug a bit more around and did some testing with different css options, I found that I actually forgot to put a height on the main-header div, and clear the container-div below it.
+I did this and it fixed the problem.
+I know some of the code I have on i.e. the navigation isn't done exactly the way it should, but it works now on all the browsers and resolutions and that ' s the important part.
+Thanks for leading me in the right direction!

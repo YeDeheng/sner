@@ -1,0 +1,7 @@
+Auto complete based on value of two input textboxes
+What I'm trying is view only the records in autocomplete depending on the selected value of dropdownlist.
+I have here two textboxes, #maincopy is copy the selected value of dropdownlist and the other is textbox for autocomplete.
+But this isn't working.
+Any help will appreciate.
+@codeSnippetRemoved
+autocomplete.php @codeSnippetRemoved

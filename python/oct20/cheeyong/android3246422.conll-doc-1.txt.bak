@@ -1,0 +1,6 @@
+Access SQL database from Android?
+I understand that to access a SQL database from Android I need to create a web service that will run on the SQL server and will process requests from the Android application, what I need to know is how to create this web service and how to access it from Android.If anyone can point me in the right direction then this would be greatly appriciated.
+On the client side, use Apache Commons HttpClient to communicate with the web service.
+It ' s bundled with the SDK.
+Don't forget that you can also use a local DB.
+How you create the web service server-side depends on your environment and has nothing to do with Android itself.

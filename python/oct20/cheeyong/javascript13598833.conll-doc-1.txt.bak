@@ -1,0 +1,11 @@
+tab switch in js, which is faster?
+I always romoving ' current ' class of all siblings then add ' current ' class to my clicked one.
+I want to know will it be faster only removing ' current ' class of which has ' current ' .seems to be a simple question, but I really want to know.
+Yes, filtering the query to a smaller set of elements will perform faster, because there are less elements to check.
+In modern browsers, jQuery will use native methods to query the DOM, so adding the selector has a negligible performance impact.
+I don't think there ' s much difference, since there ' s only one "current".
+It doesn't matters too much for querying one more element or one less.
+Usually I'll first find out the outer element to narrow down @codeSnippetRemoved
+Depending on how many elements you are re-classing, the impact of the optimization will of course vary.
+I tested it, http://jsperf.com/reclassing-all-or-one, using 7 (seemed reasonable for for example navigation tabs) divs and I think the difference was significant (reclassing all 30% slower than only one), percentage wise.
+If one cares about actual time though it may not be, but I can't really see any reason not do be distinct.

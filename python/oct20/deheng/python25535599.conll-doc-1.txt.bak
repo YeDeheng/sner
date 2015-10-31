@@ -1,0 +1,5 @@
+Options for linting Cython code
+I have a Cython module that I would like to lint PEP8 style, however pylint syntax errors on Cython cdef syntax.
+Does anyone have a suggestion about how to maintain Python coding standards for Cython code?
+Although not command-line based, PyCharm claims to have Cython support.
+Unfortunately, it ' s only available on the paid-version "Professional Edition".

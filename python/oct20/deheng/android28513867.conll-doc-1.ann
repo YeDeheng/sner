@@ -1,0 +1,15 @@
+T1	Fram 36 49	SpriteBuilder
+T2	Plat 95 98	iOS
+T3	Plat 103 110	Android
+T4	API 182 191	SpriteKit
+T5	Plat 249 256	Android
+T6	API 286 295	SpriteKit
+T7	Fram 497 506	SpriteKit
+T8	API 650 663	SpriteBuilder
+T9	API 0 11	SKShapeNode
+T10	Fram 26 33	Cocos2D
+T11	Fram 274 281	Cocos2D
+T12	Fram 640 647	Cocos2D
+T13	Fram 811 818	Cocos2D
+T14	API 514 526	SKShapeNodes
+T15	API 673 683	CCDrawNode

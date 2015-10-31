@@ -1,0 +1,22 @@
+jQuery slide toggle checkbox cant change background colour
+I am trying to change the background colour of the toggle to green when it is turned on.
+I think I have done everything correctly, but the background just stays grey.
+What am I doing wrong?
+Here is my fiddle @codeSnippetRemoved
+Thanks in advance.
+Add the style @codeSnippetRemoved
+Demo : Fiddle
+If you change the following, its working : @codeSnippetRemoved
+So basically just background : instead of background-color :
+Updated fiddle : http://jsfiddle.net/84Qkz/2
+you need to add this to your css.
+This will prevent the override you are currently getting @codeSnippetRemoved
+This CSS will solve your problem @codeSnippetRemoved
+You are defining the colour of .slider -button as white.
+.slider -button is nested inside .slider -frame. slider-frame is given the additional CSS rule that makes it green The green isn't showing because the background colour of the element within it is still white.
+Solution ...
+Change @codeSnippetRemoved
+to ...
+@codeSnippetRemoved
+So you are now changing the colour of .slider -button, not .slider -frame
+Fiddle me this.

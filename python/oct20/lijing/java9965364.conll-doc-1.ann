@@ -1,0 +1,23 @@
+T1	API 61 73	MouseAdapter
+T2	API 125 137	MouseAdapter
+T3	API 197 209	MouseAdapter
+T4	API 352 364	MouseAdapter
+T6	API 476 490	MouseAdpater()
+T7	API 678 690	edit.getItem
+T8	API 746 770	IllegalArgumentException
+T9	API 774 791	this.edit.getItem
+T10	API 831 843	edit.getItem
+T11	API 871 885	MouseAdapter()
+T12	API 950 961	MouseEvents
+T13	API 1015 1026	ButtonModel
+T14	API 1139 1151	MenuListener
+T5	API 917 922	JMenu
+T22	API 1109 1114	JMenu
+T23	API 1120 1129	JMenuItem
+T27	Fram 2125 2128	JVM
+T28	Fram 2274 2277	JVM
+T29	API 13 26	mouse adapter
+T30	API 708 717	JMenuItem
+T31	API 848 865	.addMouseListener
+T32	API 924 933	JMenuItem
+T15	Fram 1555 1558	JVM

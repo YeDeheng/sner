@@ -1,0 +1,8 @@
+More efficient way to calculate CPU Usage
+So I'm writing a task manager clone, and right now I'm using this to calculate the CPU usage %s of each process.
+The problem is this is very slow ; I was just wondering if there is a way to speed this up.
+Also, I'm not allowed to use PerformanceCounter ' s methods and / or WMI.
+@codeSnippetRemoved
+Use PerformanceCounter components to get different performance statistics : @codeSnippetRemoved
+And here is sample of creating something like task manager.
+Also consider using Win API function GetProcessTimes.

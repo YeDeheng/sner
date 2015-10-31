@@ -1,0 +1,10 @@
+T1	PL 120 126	python
+T2	Fram 75 92	AWS data pipeline
+T3	Fram 252 254	s3
+T4	Fram 436 438	s3
+T5	Fram 514 516	s3
+T6	Fram 607 610	EC2
+T7	Fram 623 632	s3 bucket
+T8	Fram 25 42	aws data pipeline
+T9	Fram 57 66	s3 bucket
+T10	Fram 171 180	s3 bucket

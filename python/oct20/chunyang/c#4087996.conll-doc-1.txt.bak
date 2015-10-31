@@ -1,0 +1,14 @@
+Creating Multiple Forms By Combining Multiple Projects
+Assume that I have a project that contains two buttons on it.
+Each buttons generate a custom form.
+I wrote both forms manually.
+But I wonder, is there a way that I can make these forms by using toolbox in different projects and combine them in one solution.
+I mean, when I press a button I want to call another project.
+And finally if such a solution exists, is it proper way to make programs like this, or is it better to create forms manually?
+Yes you can invoke the forms even if they are in different projects.
+But you need to have references to that projects and to have defined a proper using statements.
+You can call a form from another project (if we are talking about VS project) if it is public.
+You need to add reference to the project where this form is "placed" to the project where the call is made.
+Of course, you can create forms manually, but you can as well create new windows form and add controls to it via designer.
+And about the proper way.
+If you need the same form to be called from different projects, then, yes, keeping in in some third project is alright.

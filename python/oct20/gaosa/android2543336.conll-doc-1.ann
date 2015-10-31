@@ -1,0 +1,7 @@
+T1	API 0 9	TabWidget
+T2	API 86 95	TabWidget
+T3	API 590 615	android.graphics.drawable
+T4	Plat 750 761	Android 1.6
+T10	API 1362 1373	onCreated()
+T5	API 1129 1137	onCreate
+T6	API 1221 1233	onTabChanged

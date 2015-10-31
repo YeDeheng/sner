@@ -1,0 +1,4 @@
+hide and show Div on click
+I have three div's, when user clicks on "1", div1 with id divOne12 should be displayed, when user clicks on 2 div2 with id divTwo12 should be displayed and div1 should be hidden, when user clicks 3 div3 with id divThree12 should be displayed and previous shown div should be hidden.Again if user clicks Div2 previous shown div should be hidden and div2 with id divTwo12 should be displayed.
+Please find the fiddle : http://jsfiddle.net/0p7djjnc/7 .Please suggest javascript changes.Thanks.
+HTML code : @codeSnippetRemoved

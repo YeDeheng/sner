@@ -1,0 +1,11 @@
+"Dangerous" Android permissions that don't need to be accepted by users
+Google states that permissions with dangerous as the value of protectionLevel have to be granted by the user on installation time.
+One example for such a dangerous permission is android.permission.INTERNET.
+But although apps have declared to use this permissions, it ' s treated like a normal permission, thus the user won't be asked about it.
+This is also mentioned on How-To Geek.
+Where does Google itself explain this behaviour?
+Why is the INTERNET permission still dangerous, but treated like a normal one?
+(instead of changing it to normal in the mapping file) Where does that happen?
+Is there another mapping for "dangerous, but too important to worry users" permissions?
+Or is it hardcoded?
+Are there other dangerous permissions than INTERNET where this applies?

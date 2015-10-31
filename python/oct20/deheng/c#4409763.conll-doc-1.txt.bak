@@ -1,0 +1,17 @@
+How to convert from RGB555 to RGB888 in c#?
+I need to convert 16-bit XRGB1555 into 24-bit RGB888.
+My function for this is below, but it ' s not perfect, i.e. a value of 0b11111 wil give 248 as the pixel value, not 255.
+This function is for little-endian, but can easily be modified for big-endian.
+@codeSnippetRemoved
+Any ideas how to make it work?
+Start by writing some tests : @codeSnippetRemoved
+The rest will follow!
+You would normally copy the highest bits down to the bottom bits, so if you had five bits as follows : @codeSnippetRemoved
+You would extend that to eight bits as : @codeSnippetRemoved
+That way, all zeros remains all zeros, all ones becomes all ones, and values in between scale appropriately.
+(Note that A, B, C etc aren't supposed to be hex digits - they are variables representing a single bit).
+I'd go with a lookup table.
+Since there are only 32 different values it even fits in a cache-line.
+You can get the 8 bit value from the 5 bit value with : return (x 3) || (x 2 );
+The rounding might not be perfect though.
+I.e. the result isn't always closest to the input, but it never is further away that 1 / 255.

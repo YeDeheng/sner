@@ -1,0 +1,13 @@
+Quicksort without the final merge Python
+I am new to coding and trying to implement quicksort in python.
+The following is the code but the output is not correct.
+Where am I going wrong?
+Choosing pivot as the first element and without having to merge.
+@codeSnippetRemoved
+After the changes, the code is @codeSnippetRemoved
+I am getting a error, list index out of range.
+These are making copies of slices of A @codeSnippetRemoved
+Anything you do to the copy won't affect A
+To modify A inplace, you should pass it as well as left and right indices as parameters @codeSnippetRemoved
+Now remembering that left and right are indices here (not lists as in your code).
+Modify the rest of your function to make changes to A directly

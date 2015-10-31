@@ -1,0 +1,19 @@
+How to hide / remove a class base on Bootstrap media query breakpoints?
+I just want to ask if it is possible to show / hide a class based on the screen of the device?
+I am using bootstrap default media query.
+I have this default setup : @codeSnippetRemoved
+I have a div that like this : @codeSnippetRemoved
+What I want is if the media query is in the col-xs -# the class pull-right will be hide or remove.Is it possible in bootstrap?
+Bootstrap has built-in utility classes for hiding\showing content based on the viewport.
+http://getbootstrap.com/css/#responsive-utilities
+.visible -xs-* and .hidden -xs (* = block, inline-block or inline)
+EDIT
+You won't be able to override .pull -right because it uses!
+important, and it only applies one rule (float : right ;), so its pretty easy to recreate as a custom class.
+@codeSnippetRemoved
+Edit #2
+If you want to keep with the mobile-first nature of bootstrap, it would look like this .. the sm would indicate it pulls right on sm or larger viewports (for semantics).
+@codeSnippetRemoved
+Hide or remove is not possible, but you can change the way will be rendered
+@media only screen and (max-width : 480px) { .pull -right { float : none ; }}
+So, in this way, in all media screen less then 480px, this class will not be rendered with float : right.

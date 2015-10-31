@@ -1,0 +1,10 @@
+AngularJS use ng-options to create a Set
+I have a data-model that looks like the following (there are other fields but these are the most significant ): @codeSnippetRemoved
+I want to get the following array : @codeSnippetRemoved
+in order to show it in a select something like the following : @codeSnippetRemoved
+unique isnt convenient since it does exactly the opposite of what I want.
+As mentioned in my comment above, i think you need to create a new scope var with the select options, getting the unique values of the initial object - in whatever iteration you'll be doing, you must have something to compare the values.
+So, something like that should do it : @codeSnippetRemoved
+now you will be using countryOptions in the ng-options, to get the unique values @codeSnippetRemoved
+Fiddle
+Unless I'm misinterpreting the question you want to filter by unique properties of the objects in your model array.The unique filter does this by passing in the property key : @codeSnippetRemoved

@@ -1,0 +1,5 @@
+Slow down Jquery image slider after one cycle
+i want to slow down my image slider on www.debruiloft-dj.nl after 1 cycle of the three images.
+So after one cycle it slows down for example with 50% compared the previous cycle.
+Is there a solution for this problem, thanks in advance
+use the delay : -1000 (any time u wish in milliseconds) after ur code for cycle of images

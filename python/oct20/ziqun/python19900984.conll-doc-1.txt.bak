@@ -1,0 +1,12 @@
+Why using import BaseHTTPServer in Python?
+This is the code I got from Tutorial of how to make local server by using python script to run in Terminal @codeSnippetRemoved
+I wonder why they have to import the BaseHTTPServer?
+can anyone explain me about that?
+below is the version from Python.org @codeSnippetRemoved
+You'll see that there is no import BaseHTTPServer, can anyone explain to me why?
+and these code are in Python 2.7 if I want to change it into python 3 Do I still need to import BaseHTTPServer?
+Importing it has has meaningful impact, as you have discovered.
+As for why it is there - who knows?
+Maybe the author of the tutorial intended to use it later in the tutorial, or maybe it was adapted from a larger sample.
+The point is if nothing is referencing it, you don't need to import it.
+The same applies to python 3.

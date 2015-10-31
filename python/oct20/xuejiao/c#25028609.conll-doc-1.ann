@@ -1,0 +1,4 @@
+T3	API 584 592	GetBytes
+T4	API 761 773	GetByteCount
+T1	API 314 324	Array.Copy
+T2	API 397 413	Buffer.BlockCopy

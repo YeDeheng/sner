@@ -1,0 +1,8 @@
+How to manipulate a BLOB in Java?
+I have a DB procedure which returns a BLOB.
+Can anyone tell me how to manipulate the BLOB?
+Is there any specific API for this?
+Is there any specific API for this?
+Sure, the JDBC API.
+Trail : JDBC Database Access
+You get hold of the Blob instance just as you get hold of any value from a result set.

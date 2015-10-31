@@ -1,0 +1,11 @@
+T1	Plat 0 7	Android
+T4	API 38 43	Timer
+T5	API 55 60	Timer
+T6	API 229 234	timer
+T7	Stan 191 194	GPS
+T8	API 245 250	timer
+T2	API 585 593	onCreate
+T9	API 389 397	onCreate
+T10	API 744 752	onCreate
+T11	API 402 413	onTerminate
+T12	API 352 363	Application

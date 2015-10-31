@@ -1,0 +1,206 @@
+B-API	0	6	jQuery
+I-API	7	12	slide
+I-API	13	19	toggle
+O	20	28	checkbox
+O	29	33	cant
+O	34	40	change
+O	41	51	background
+O	52	58	colour
+
+O	59	60	I
+O	61	63	am
+O	64	70	trying
+O	71	73	to
+O	74	80	change
+O	81	84	the
+O	85	95	background
+O	96	102	colour
+O	103	105	of
+O	106	109	the
+O	110	116	toggle
+O	117	119	to
+O	120	125	green
+O	126	130	when
+O	131	133	it
+O	134	136	is
+O	137	143	turned
+O	144	146	on
+O	146	147	.
+
+O	148	149	I
+O	150	155	think
+O	156	157	I
+O	158	162	have
+O	163	167	done
+O	168	178	everything
+O	179	188	correctly
+O	188	189	,
+O	190	193	but
+O	194	197	the
+O	198	208	background
+O	209	213	just
+O	214	219	stays
+O	220	224	grey
+O	224	225	.
+
+O	226	230	What
+O	231	233	am
+O	234	235	I
+O	236	241	doing
+O	242	247	wrong
+O	247	248	?
+
+O	249	253	Here
+O	254	256	is
+O	257	259	my
+B-Fram	260	266	fiddle
+O	267	286	@codeSnippetRemoved
+
+O	287	293	Thanks
+O	294	296	in
+O	297	304	advance
+O	304	305	.
+
+O	306	309	Add
+O	310	313	the
+O	314	319	style
+O	320	339	@codeSnippetRemoved
+
+O	340	344	Demo
+O	345	346	:
+B-Fram	347	353	Fiddle
+
+O	354	356	If
+O	357	360	you
+O	361	367	change
+O	368	371	the
+O	372	381	following
+O	381	382	,
+O	383	386	its
+O	387	394	working
+O	395	396	:
+O	397	416	@codeSnippetRemoved
+
+O	417	419	So
+O	420	429	basically
+O	430	434	just
+O	435	445	background
+O	446	447	:
+O	448	455	instead
+O	456	458	of
+O	459	475	background-color
+O	476	477	:
+
+O	478	485	Updated
+B-Fram	486	492	fiddle
+O	493	494	:
+O	495	522	http://jsfiddle.net/84Qkz/2
+
+O	523	526	you
+O	527	531	need
+O	532	534	to
+O	535	538	add
+O	539	543	this
+O	544	546	to
+O	547	551	your
+B-PL	552	555	css
+O	555	556	.
+
+O	557	561	This
+O	562	566	will
+O	567	574	prevent
+O	575	578	the
+O	579	587	override
+O	588	591	you
+O	592	595	are
+O	596	605	currently
+O	606	613	getting
+O	614	633	@codeSnippetRemoved
+
+O	634	638	This
+B-PL	639	642	CSS
+O	643	647	will
+O	648	653	solve
+O	654	658	your
+O	659	666	problem
+O	667	686	@codeSnippetRemoved
+
+O	687	690	You
+O	691	694	are
+O	695	703	defining
+O	704	707	the
+O	708	714	colour
+O	715	717	of
+B-API	718	725	.slider
+I-API	726	733	-button
+O	734	736	as
+O	737	742	white
+O	742	743	.
+
+B-API	744	751	.slider
+I-API	752	759	-button
+O	760	762	is
+O	763	769	nested
+O	770	776	inside
+B-API	777	784	.slider
+I-API	785	791	-frame
+O	791	792	.
+B-API	793	805	slider-frame
+O	806	808	is
+O	809	814	given
+O	815	818	the
+O	819	829	additional
+B-PL	830	833	CSS
+O	834	838	rule
+O	839	843	that
+O	844	849	makes
+O	850	852	it
+O	853	858	green
+O	859	862	The
+O	863	868	green
+O	869	874	isn't
+O	875	882	showing
+O	883	890	because
+O	891	894	the
+O	895	905	background
+O	906	912	colour
+O	913	915	of
+O	916	919	the
+O	920	927	element
+O	928	934	within
+O	935	937	it
+O	938	940	is
+O	941	946	still
+O	947	952	white
+O	952	953	.
+
+O	954	962	Solution
+O	963	966	...
+
+O	967	973	Change
+O	974	993	@codeSnippetRemoved
+
+O	994	996	to
+O	997	1000	...
+
+O	1001	1020	@codeSnippetRemoved
+
+O	1021	1023	So
+O	1024	1027	you
+O	1028	1031	are
+O	1032	1035	now
+O	1036	1044	changing
+O	1045	1048	the
+O	1049	1055	colour
+O	1056	1058	of
+B-API	1059	1066	.slider
+I-API	1067	1074	-button
+O	1074	1075	,
+O	1076	1079	not
+B-API	1080	1087	.slider
+I-API	1088	1094	-frame
+
+O	1095	1101	Fiddle
+O	1102	1104	me
+O	1105	1109	this
+O	1109	1110	.

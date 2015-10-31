@@ -1,0 +1,33 @@
+Displaying Image in Android
+I put the must.jpg in drawable-hdpi folder and created this method.
+@codeSnippetRemoved
+I want to display image on the screen by calling this method in mainActivity @codeSnippetRemoved
+But when I launch app it crashes.
+I will appreciate any help.
+activity_main.xml @codeSnippetRemoved
+LogCat : @codeSnippetRemoved
+One problem is that the Android device will most likely not have a directory named / BakuMovies / res / drawable-hdpi.
+This is the directory structure of your development environment and is not directly transferred to the device.
+Other than that, I cannot give without knowing what you are trying to do.
+Edit :
+Note that all the resources in your res directory are included in your app ' s .APK file.
+They are not loaded to the device as individual files.
+In order to access resources (other than strings) in Java code, you need to use a Resources object.
+You get one by calling getResources() on an Activity object.
+Once you have the Resources object, call getDrawable() or getDrawableForDensity() to get a drawable resource.
+Try this.
+@codeSnippetRemoved
+Updated
+First you have to add ImageView on your activity_main layout and set its id as android : id= "@+id / imageView".
+There are so many things you could avoid and very easily load the image you want into the ImageView.
+Do something like this : - @codeSnippetRemoved
+Update : - To insert an ImageView dynamically, do this in your onCreate().
+@codeSnippetRemoved
+You used drawable.
+You call setImageDrawable method and than set resource getResources () .getDrawable set id getdrawable method than image will be showing.
+The most probable cause is that your application is running out of memory while trying to decode the image in the line below @codeSnippetRemoved
+What are the dimensions of this image that you are trying to load?
+In your activity you can call this to get your Drawable resource as a Drawable object and set the image as below : @codeSnippetRemoved
+OR
+If you want to show your drawable in an ImageView you can do this : @codeSnippetRemoved
+or in your xml file @codeSnippetRemoved

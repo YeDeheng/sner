@@ -1,0 +1,6 @@
+jquery case statement not working
+$ (document) .ready (function () { $ ("#img -1 ") .click (function () {
+switch (true) { case $ ("#div2 ") .load (" borrower-information.html ") : alert (hello );
+break ; case ($ ("#div3 ") .load (" demo_test.html #p3 ")) : break ;
+case ($ ("#div4 ") .load (" demo_test.html #p4 ")) : alert('hello ') ; } } ); } );
+guys i have make 3 div and there was one button with the id name is id= img-1 after clicking the page load from other source its ok but my query is that alert is not working why?

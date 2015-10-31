@@ -1,0 +1,12 @@
+Android open an EditText link using a button
+I've searched around allot on how to open a link that you have entered in an input field (EditText) which will open when you press a button.
+But sadly, I've only found this.
+What I am aiming for is something similar to this, I want to have a default link already stated in the code however when you enter text into the input field, it will add to the default link.
+For example something like this, default link is : http://www.google.com But when I enter "design" into the input field (EditText) and hit the button it will make it : http://www.google.com/design and it'll open the link as that.
+How can I achieve this?
+I'm new to programming and I've taken a look at the AOSP browser code but it ' s far too complex for me to understand.
+Hopefully someone could explain how I can achieve something like this, please don't get angry at me because I have seen many new users getting bashed upon asking simple things.
+Thanks.
+Here is a detailed code as per your requirement.
+Please let me know if you find any problem :
+Your XML :

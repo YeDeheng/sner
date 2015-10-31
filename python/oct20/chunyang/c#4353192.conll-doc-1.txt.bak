@@ -1,0 +1,27 @@
+encrypting password
+i am about to make a ' log in ' for my app and was wondering what is the best way to encrypt a password for my user that i will enter in my database?
+I found many way on Google but don't know which is the best ..
+I would go with a one way salted hash.
+Using a SHA1 hash for example, you would have a way to store the password as a hash which cannot be reversed back to the original password.
+Then when the user enters his / her password you perform the same SHA1 hash on the password and compare that hash with what you have stored in the DB, if they match then the password is correct.
+To further secure the hashing, you can add a salt, this is essentially a randomly generated value that you generate for each user then you create the account, and store the salt value in the user record.
+When you create the hash of the password, you first combine the password with the salt and hash this combined value.
+To authenticate the user you combine the entered password with the salt stored for the user, perform the hash on the combined value and compare.
+By adding the salt to the mix, you ensure that the hash for passwords that happend to be the same have a different hash because the salted portion differs.
+So if two users have the same password "Password1234", the stored hash for the two will not be the same so it cannot be determined that two users have the same password.
+Use Cryptography algorithm provided by .net framework
+normally, many application uses MD5 algorithem
+See here
+I recommend using Rfc289 8D eriveBytes
+It uses a good standardized Key-Derivation-Function, and modern hashes.
+You need to pass in a salt in addition to the password to prevent rainbow-tables.
+And it mixes salt and password for you, so you don't need to figure out how to do that yourself.
+Use bcrypt.
+No, really, drop whatever ideas you have of building your own method, and use bcrypt.
+The world has enough homebrew insecure password hashing schemes already.
+Storing salted password hashes, with per-user salts of course, is all well and good.
+But salting only prevents rainbow table attacks, it doesn't prevent bruteforcing.
+So, paradoxically, you don't want to use a fast method to generate or verify the password hashes.
+MD5, SHA, whatever - they're all fast.
+Repeat after me : use bcrypt.
+You can use RSA Algorithm : http://www.codeproject.com/KB/security/RSACryptoPad.aspx

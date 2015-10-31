@@ -1,0 +1,5 @@
+izpack installer not getting instantiated
+I have made an installer using ANT integration and the build done is also successful.
+I tried testing the installer jar over ubuntu but it ' s not getting instantiated in windows 7.The version of Izpack that I'm using is izpack-dist-5.0.0-rc3.
+I just get a warning each time I try to execute the jar, which is ->
+Kindly provide any assistance, if possible.

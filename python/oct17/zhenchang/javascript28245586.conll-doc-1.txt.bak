@@ -1,0 +1,12 @@
+Why doesn't the .clone copy my div?
+I have a problem with my site on which I am trying to clone a div to add it to every nth article.
+(http://trollfutbol.tumblr.com)
+I have added a script that adds adWrap div to every 7th article.
+And it does clone it and it adds the ad to the 7th but then the ad won't re-add itself to the 14th article etc.
+It only adds the wrapping.
+Any ideas?
+the html is basically
+Little mistake - missed parentheses to replaceWith command and variable character - dollar.
+Correct js code is
+http://jsfiddle.net/kbqcr9vw/2
+You need to add $ and Parentheses to this you might also want to add : eq (0) I dont know how replaceWith acts when multiple elements are found

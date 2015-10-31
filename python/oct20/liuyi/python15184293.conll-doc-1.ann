@@ -1,0 +1,10 @@
+T2	API 845 858	pymc.Normal()
+T3	API 1394 1402	mc.model
+T4	Fram 58 62	pymc
+T5	API 47 51	MCMC
+T6	Fram 544 548	PyMC
+T7	Fram 1143 1147	PyMC
+T8	Fram 1437 1441	PyMC
+T9	Fram 1168 1175	astroML
+T10	Fram 1154 1166	scikit-learn
+T1	API 798 807	GaussFunc

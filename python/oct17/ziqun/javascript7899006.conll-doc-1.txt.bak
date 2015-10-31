@@ -1,0 +1,21 @@
+I have a page that uses jQuery ' s $ .post () method to get some html and inside the html is a tag.
+My code looks something like this :
+Is there a reason that the script tag will not parse in IE = 8?
+It parses just fine in every other browser.
+I've been searching around on the web for a few hours now and can't seem to find anything on this issue so I'm assuming I'm forgetting something or flat out doing something wrong?
+EDIT :
+Just found this on the jQuery site (http://api.jquery.com/jQuery.ajax) regarding the html dataType for ajax requests :
+"Returns HTML as plain text ; included script tags are evaluated when inserted in the DOM.
+"
+On a related SO question (jQuery : Cant append script element ): The answer given by @Hendra states this SHOULD be working.
+Which still leaves me wondoring why this doesn't work in IE7 / 8.
+Using DOM methods to insert a script tag results in the tag being executed.
+Just using innerHTML (or some framework that uses it) will NOT result in the script being executed.
+This is probably the cause of your problem.
+I suggest separating the HTML and JS, then running eval on the JS section.
+I found the problem.
+My site uses html5 and thus relies on innershiv (http://jdbartlett.com/innershiv) for inserting elements into the dom for non-html5 browsers (for me this would be ie7 / 8)
+I had forgotten that we have an automated script that calls innershiv on all jQuery insertion methods (.html (), .append (), etc ..)
+The reason this was failing for me is that innershiv was circumventing jQuery ' s script evaluation.
+The fix was to do the script evaluation from within the script that calls innershiv.
+JD Bartlett provides a more detailed explanation here : https://github.com/jdbartlett/innershiv/issues/4

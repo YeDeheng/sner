@@ -1,0 +1,8 @@
+Phonegap cordova android 4.4 FileTransfer upload SSL not working
+got a problem with the filetransfer upload in cordova for android ...
+i want to upload any type of file .. means images, videos, sounds ..
+the problem is, that i don t know how to get the type / ending of the file (for example .jpg), because with options.fileName = imageURI.substr (imageURI.lastIndexOf (' / ') +1 ); i only get the location but not the filename with the given type / ending ..
+i could of course just add + ".jpg" but that won t help with all other files except of images .. that s when i choose a file from the photogallery .. when i choose a file from the sd-card nothing happens -> must be a problem with the destination uri
+that s my code : @codeSnippetRemoved
+In your PHP code ensure that you return the MIME type as a header @codeSnippetRemoved
+If the client side needs to have a .jpeg extension, make your URL something like ' https://domain ....com/myfile.jpg and then on the server perform URL rewriting that maps the URL to call your PHP page.

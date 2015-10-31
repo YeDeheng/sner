@@ -1,0 +1,23 @@
+Changing Object initializer / constructor depending on method input
+So I am trying to avoid using duplicate code.
+At the moment I have several lists which contain Strings ; one list is called "images" and the other "videos" etc.
+These lists contain the properties of the content and they are in a linked list because that information was read from a text file.
+I am trying to go through these lists and create image / video objects to place in another object (later on).
+At the moment I have a method @codeSnippetRemoved
+inside of it how do I change the object declarations etc depending on the name of the list that was passed through.
+For example : If I call the method with the image list : @codeSnippetRemoved
+I want the function to create image objects : @codeSnippetRemoved
+And if I passed Videos list : @codeSnippetRemoved
+I want the function to create video objects : @codeSnippetRemoved
+Sorry if this is worded badly, I find it hard to articulate this question.
+I also understand the the concept of polymorphism ; I just don't see it viable for the content object to do this job (of reading the string etc) as the object is created depending the contents of the list.
+private void loadContent (List String content, int contentType)
+You could pass in an integer as an id for the type of media you are giving it.
+You could then use an if / else statement do only do certain things for certain content types.
+You brought up the subject of Polymorphism.
+This scenario would be a good candidate to demonstrate your understanding of how it works.
+You could create an abstract class named Media and have one method defined named Render().
+Then extend the Media class to two subclasses, ImageMedia and VideoMedia.
+Where each subclass extends class Media, they should override the method Render() with their own implementation of how to render the content.
+In the end you can just have a List of type Media like this : List Media and iterate over it while calling the Render() method on each.
+In this way you impose polymorphic behaviour and greatly simplify your code.

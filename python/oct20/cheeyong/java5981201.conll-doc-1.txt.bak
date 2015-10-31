@@ -1,0 +1,26 @@
+Double value negative after multiplication -Java
+In my code i have following line.
+@codeSnippetRemoved
+Here c12 is double and fileSizeis double c12 have a value 1700 and fileSize have a value 1944038
+but after multiplication i am getting -990102696.
+Can any one help me on it?
+Is that some size limits went wrong?
+(int) 1700 * (int) 1944038 is equal to your -990102696.
+Are you sure c12 and fileSize aren't integers?
+If they are, the multiplication occurs with integer types, integer overflow and it is being promoted to double afterwards.
+Use BigDecimal multiply method instead like this to safeguard against potential overlow issues while handling large double numbers : @codeSnippetRemoved
+Your c12 and fileSize are most likely ints (+1 Tomasz).
+Java multiplies the ints, which overflows, becoming negative, and then stores that negative value in your double.
+Cast c12 and fileSize to double before multiplying : @codeSnippetRemoved
+produces : @codeSnippetRemoved
+Make a double on the fly : @codeSnippetRemoved
+else, an c12 as int will be multiplied by another int, and the result overflows, and is later - too late - converted to double.
+@codeSnippetRemoved
+would help, but a filesize as float / double looks fishy.
+double c12 = 1700 ; double fileSize = 1944038 ; double temp =( c12*fileSize ); System.out.println (temp );
+Gives 3.3048646E9
+I bet your c12 and fileSize are ints.
+Hmm, I just tried that and I get "3.3048646E9".
+You shouldn't get any overflow wrap around on a double : if you exceed the maximum, it should turn into "Infinity".
+I suspect the problem is in whatever you're trying to do to write this number.
+Or maybe you need to show us some more code.

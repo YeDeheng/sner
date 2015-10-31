@@ -1,0 +1,9 @@
+Error in reading data in aws data pipeline activity from s3 bucket
+We have AWS data pipeline where we have an activity (python script) which reads / writes data from / to s3 bucket.
+We have noticed recently a failure in an activity where the read from s3 fails due to closing of socket connection.
+The error is intermittent.
+The failure happens exactly at the same line of the script.
+@codeSnippetRemoved
+In our code, we read data from s3 in 1KB chunks.
+The failure happens in the middle of reading from a file in s3.
+Does anyone know if there is an upper limit on the number of connections allowed from an EC2 instance to s3 bucket?

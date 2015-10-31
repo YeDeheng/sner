@@ -1,0 +1,9 @@
+How to write an efficient hit counter for websites
+I want to write a hit counter script to keep track of hits on images on a website and the originating IPs.
+Impressions are upwards of hundreds of thousands per day, so the counters will be incremented many times a second.
+I'm looking for a simple, self-hosted method (php, python scripts, etc.).
+I was thinking of using MySQL to keep track of this, but I'm guessing there ' s a more efficient way.
+What are good methods of keeping counters?
+Well if you happen to go the PHP route you could use an SQLite database, however MySQL is a perfectly reasonable way to store that info and usually (at least from the ones I've seen) is how it is done.
+If you didn't want to store IP address and any other info a simple number in atext file could work.
+A fascinating subject.

@@ -1,0 +1,12 @@
+Android Screen Share and Control
+Require some help for implementing the following use-case
+The user starts screen-share session by clicking on a screen-share button on the android app.
+The remote user is now able to see the application from his workstation web portal.
+He can Control the application remotely The remote technician is expected to see the whole of application including camera feeds from an embedded camera view in the application.
+Conditions :
+Device is not rooted.
+Need to support OS 4.2 and above Cannot use ADB.
+The app has to work in production environment
+How can I achieve this in an Android application ?.
+Any open-source implementations?
+Can WebRTC be used for this?

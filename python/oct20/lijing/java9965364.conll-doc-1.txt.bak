@@ -1,0 +1,36 @@
+scope of the mouse adapter
+I am wonder what the scope of the MouseAdapter is in this case.
+@codeSnippetRemoved
+I thought the MouseAdapter has access to the variable edit because the newly declared MouseAdapter is an inner class of the class foo.
+However, it can't find the variable edit.
+If I explicitly declare an inner class and implements, say, the MouseAdapter interface or whatever, it can detect the variable edit from within it.So my question is what the scope the new MouseAdpater() has?
+Besides, does anyone know a good read on this?
+Thank you very much.
+By the way, the error I got was the local variable was accessed from an inner class, needs to declare it final
+1) edit.getItem (0) returns fist JMenuItem if exist, otherwise returns IllegalArgumentException
+2) this.edit.getItem (0), not class that returns members
+3) edit.getItem (0) .addMouseListener (new MouseAdapter() { is contraproductive, becuase JMenu, JMenuItem has implemented MouseEvents correctly, for better workaround you have to look at ButtonModel
+4) there no reason for scope of the mouse adapter
+5) for listening of events from JMenu (not JMenuItem) look at MenuListener
+Your anonymous inner class does exist in the scope of it ' s parent object, as you expect.Scope is not the problem.
+As the error message suggests, the anonymous inner class can only access it ' s parent ' s "edit" member if that member is declared final.
+So, change @codeSnippetRemoved
+to @codeSnippetRemoved
+and it should work.
+To answer your question, you need to understand the basics, as to how the JVM use to work.When the classes are compiled which contain inner classes, the byte code which gets generated does not actually implement inner classes as a class within a class.
+WHY THE ERROR : The local variable was accessed from an inner class, needs to declare it final @codeSnippetRemoved
+When you compile your this program, two files will be created, Foo.class and Foo$ 1.class.
+So now your problem comes, since the Second class i.e. foo$ 1.class doesn't know that Variable edit is present inside the First class i.e. foo.class.
+So how to solve this problem?
+What JVM does, is that, It makes a requirement for the developer to make the variable of an outer class to be declared as final.
+Now this being done, now JVM quietly places a hidden variable with the name val$edit inside the 2nd compiled class file, here is the output as got from javap
+Ouput for foo.class @codeSnippetRemoved
+Now since, edit is local to the constructor, hence the output as above.
+@codeSnippetRemoved
+The Variable val$edit is assigned the same value which has been assigned to edit since now the compiler knows that the value cannot be changed as it has been declared final and hence it works this time.
+Now what if I change the edit Variable from being Local to being Instance.
+Now the object of the class knows everything about this variable edit, if it gets changed.
+So changing the above program likewise we get : @codeSnippetRemoved
+Here in this case, we are not suppose to declare and define it as being final, because in this case since the Variable being Local to the whole class, the Variable is send to the Inner Class along with the Object Reference i.e. this @codeSnippetRemoved
+Here is how the Variable is send in this case i.e. this$0 : @codeSnippetRemoved
+Seems like that the interpretation, how this situation works, according to me.Just now I found this wonderful explanation on the internet regarding Mystery of Accessibility in Local Inner Classes, might be this will help you understand the situation in a much better way :-)

@@ -1,0 +1,16 @@
+PHP Script Not Receiving Post Data
+I have a php script that is processing a form for me.
+However, something is strange (or I'm just a bigger noob than I think).
+The following code at the top of the script : @codeSnippetRemoved
+Results in the following "printout" when the form is submitted and form data intercepted by the script : @codeSnippetRemoved
+I've only included the post array printout to see if post data is actually being received - which, apparently, it is.
+So, why is not passing into my variable so that I can USE it?
+I know I'm just a PHP hack, but I feel like I must be losing it.
+Your code has $_Post and should be $_POST?
+Try changing $_Post to $_POST in the lower part of your code ; that may be what ' s causing the problem.
+The manual page on the HTTP POST data superglobal array describes it as $_POST.
+And, elsewhere :
+Basics Variables in PHP are represented by a dollar sign followed by the name of the variable.
+The variable name is case-sensitive.
+Thus it follows that your use of $_Post should, in fact, read $_POST.
+You should fix your error_reporting settings, because you should have seen an E_NOTICE about using a non-existent variable.

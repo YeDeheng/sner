@@ -1,0 +1,10 @@
+JavaScript insertAt position
+Assuming I have a collection with a bunch of well ordered elements, what ' s the common method to insert another new child at it ' s abstract order-position?
+Using a dom library $(new).eq($(new).data('orderPosition ')) ; doesn't work, because it ' s not a valid index.
+@codeSnippetRemoved
+My real collection contains about ~400 elements.
+why don't you just store the order-position in an array and then calculate the index using it?
+it is far better solution as reading DOM property consumes a lot more CPU than just loop through array and compare your new item with existing ones
+I think that working with an array of integers is probably the most efficient method.
+You can maintain a constant list of the sorted elements in an array somewhere (and even continue to sort as needed ): @codeSnippetRemoved
+http://jsfiddle.net/ExplosionPIlls/ULEFX

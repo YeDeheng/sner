@@ -1,0 +1,25 @@
+Magento : Is it safe to override event observer core class?
+Suppose, there is an event observer class in core.
+I can override it.
+But, is it safe?
+I mean, does it affect other functions of the observer class?
+Like, if there are two functions in core observer class and I did override only one function.
+Then, will the other function work safely as before.
+I think it is similar to model override and should be safe.
+Am I right?
+Edit : -
+For example,
+There is a class CoreClassA in core.
+There is a function coreFunctionA in CoreClassA.
+An event core_event_a is dispatched in this coreFunctionA.
+Another core module CoreModuleB is creating event observer with core_event_a.
+So, whenever core_event_a is dispatched, CoreModuleB ' s event observer is called.
+Suppose, CoreModuleB ' s event observer contains two functions.
+One for core_event_a dispatch action (let us name it eventDispatchA) and another for some other event dispatch action (let ' s say eventDispatchX).
+In my custom module, I want to override eventDispatchA.
+Basically, I want to change the some code in eventDispatchA or, I may just want to skip / omit this function.
+I can override it.
+But, will it affect eventDispatchX if I do so?
+Or, is there any other better way instead of overriding event observer?
+Most probably it will but if you override something that others might be using it ' s always worth to make something similar : @codeSnippetRemoved
+and as others have told you : "if you are in need to change / override the core then you are probably doing it wrong" and it ' s better to ask in different manner by describing what you want to do and why

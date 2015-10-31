@@ -1,0 +1,10 @@
+Different type object passing
+I am beginner of android and java.I did no understand when object pass.Object pass of course need implement Serializable.
+0.When do use Serializable?
+what is it?
+1.what is Object and Bundle Class.
+2.When use Object and Bundle for passing Object
+3.Do support Object and Bundle object all data type object?
+please help me.Thanks
+It is really vague what you are asking but serializable objects can be transformed into a stream of bits that can be deserialized back into the object.
+You can use this to clone, objects, put them in a stream, or send them over a network.
