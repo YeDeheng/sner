@@ -1,0 +1,182 @@
+B-Fram	0	6	jQuery
+O	7	11	tabs
+O	12	15	are
+O	16	19	not
+O	20	28	clicking
+O	29	33	when
+O	34	41	clicked
+O	42	44	on
+
+O	45	46	I
+O	47	51	have
+B-Fram	52	58	jQuery
+O	59	63	tabs
+O	64	69	using
+O	70	72	ui
+O	73	79	1.10.0
+O	79	80	.
+
+O	81	83	My
+O	84	89	first
+O	90	93	tab
+O	94	96	is
+O	97	106	activated
+O	107	109	by
+O	110	117	default
+O	118	119	;
+O	120	127	however
+O	127	128	,
+O	129	130	I
+O	131	134	can
+O	135	138	not
+O	139	142	get
+O	143	146	the
+O	147	152	other
+O	153	154	5
+O	155	159	tabs
+O	160	162	to
+O	163	167	work
+O	167	168	.
+
+O	169	173	When
+O	174	175	I
+O	176	181	click
+O	182	184	on
+O	185	189	them
+O	189	190	,
+O	191	195	they
+O	196	198	do
+O	199	206	nothing
+O	207	210	and
+O	211	214	the
+O	215	222	content
+O	223	227	that
+O	228	239	coordinates
+O	240	244	with
+O	245	249	tabs
+O	250	257	doesn't
+O	258	262	show
+O	262	263	.
+
+O	264	268	Here
+O	269	270	'
+O	271	272	s
+O	273	276	the
+O	277	282	basic
+B-PL	283	287	HTML
+O	288	292	code
+O	293	294	:
+O	295	314	@codeSnippetRemoved
+
+O	315	319	Here
+O	320	321	'
+O	322	323	s
+O	324	327	the
+B-PL	328	338	Javascript
+O	339	340	:
+O	341	360	@codeSnippetRemoved
+
+O	361	366	There
+O	367	370	was
+O	371	374	one
+O	375	379	typo
+O	380	387	mistake
+O	388	390	in
+O	391	399	addclass
+O	400	402	at
+O	403	412	following
+O	413	417	line
+O	417	418	.
+
+O	419	422	You
+O	423	427	have
+O	428	437	specified
+O	438	446	addclass
+O	447	454	instead
+O	455	457	of
+B-API	458	466	addClass
+O	466	467	.
+
+O	468	487	@codeSnippetRemoved
+
+O	488	492	Also
+O	493	502	following
+O	503	505	is
+O	506	513	updated
+B-PL	514	516	js
+O	516	517	.
+
+O	518	537	@codeSnippetRemoved
+
+O	538	542	Here
+O	543	544	'
+O	545	546	s
+O	547	551	Demo
+O	552	558	Fiddle
+
+O	559	563	Here
+O	564	565	'
+O	566	567	s
+O	568	577	corrected
+B-PL	578	582	HTML
+O	583	585	if
+O	586	590	your
+O	591	594	are
+O	595	605	interested
+O	606	609	...
+
+O	610	629	@codeSnippetRemoved
+
+O	630	634	Have
+O	635	639	some
+O	640	646	errors
+O	647	649	in
+B-PL	650	654	HTML
+O	655	658	and
+B-PL	659	661	JS
+O	661	662	.
+
+O	663	666	Try
+O	667	671	this
+
+B-PL	672	676	HTML
+O	677	678	:
+O	679	682	you
+O	683	687	have
+O	688	690	to
+O	691	694	put
+O	695	698	the
+O	699	706	correct
+O	707	708	'
+O	709	711	id
+O	712	713	'
+O	714	716	of
+B-API	717	720	div
+O	721	723	in
+B-API	724	728	href
+O	729	738	attribute
+O	739	741	of
+O	742	748	anchor
+O	749	768	@codeSnippetRemoved
+
+B-PL	769	771	JS
+O	772	773	:
+O	774	778	have
+O	779	783	some
+O	784	790	syntax
+O	791	797	errors
+O	798	801	and
+O	802	805	you
+O	806	810	have
+O	811	813	to
+O	814	820	remove
+O	821	825	more
+O	826	833	classes
+O	834	837	and
+O	838	841	add
+O	842	846	more
+O	847	854	classes
+O	855	859	also
+O	859	860	.
+
+O	861	880	@codeSnippetRemoved

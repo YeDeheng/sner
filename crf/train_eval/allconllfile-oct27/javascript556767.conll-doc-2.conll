@@ -1,0 +1,301 @@
+O	0	2	if
+O	3	4	(
+O	4	10	keynum
+O	11	13	13
+O	14	26	allowedLines
+O	27	28	=
+O	29	30	$
+O	31	32	(
+O	32	36	this
+O	36	37	)
+B-API	38	42	.val
+O	43	44	(
+O	44	45	)
+B-API	46	52	.split
+O	53	54	(
+O	54	55	"
+O	55	57	\n
+O	58	60	")
+O	61	68	.length
+O	68	69	)
+
+O	70	76	return
+O	77	82	false
+O	83	84	;
+
+O	85	86	}
+O	87	89	);
+
+O	90	91	$
+O	92	93	(
+O	93	94	"
+O	94	102	textarea
+O	103	105	")
+B-API	106	112	.keyup
+O	113	114	(
+O	114	122	function
+O	123	124	(
+O	124	125	e
+O	125	126	,
+O	127	130	obj
+O	130	131	)
+O	132	133	{
+
+O	134	136	//
+O	137	142	Avoid
+O	143	153	copy-paste
+
+O	154	156	if
+O	157	158	(
+O	158	170	allowedLines
+O	171	172	$
+O	173	174	(
+O	174	178	this
+O	178	179	)
+O	180	184	.val
+O	185	186	(
+O	186	187	)
+O	188	194	.split
+O	195	196	(
+O	196	197	"
+O	197	199	\n
+O	200	202	")
+O	203	210	.length
+O	210	211	)
+O	212	213	{
+
+O	214	219	lines
+O	220	221	=
+O	222	223	$
+O	224	225	(
+O	225	229	this
+O	229	230	)
+O	231	235	.val
+O	236	237	(
+O	237	238	)
+O	239	245	.split
+O	246	247	(
+O	247	248	"
+O	248	250	\n
+O	251	253	")
+O	254	260	.slice
+O	261	262	(
+O	262	263	0
+O	263	264	,
+O	265	277	allowedLines
+O	278	280	);
+
+O	281	282	$
+O	283	284	(
+O	284	288	this
+O	288	289	)
+O	290	294	.val
+O	295	296	(
+O	296	306	lines.join
+O	307	308	(
+O	308	309	'
+O	310	312	\n
+O	313	315	')
+O	316	318	);
+
+O	319	320	}
+
+O	321	323	//
+O	324	329	Check
+O	330	338	overflow
+
+O	339	341	if
+O	342	344	((
+O	345	362	this.clientHeight
+O	363	380	this.scrollHeight
+O	381	383	))
+O	384	385	{
+
+O	386	391	while
+O	392	394	((
+O	395	412	this.clientHeight
+O	413	430	this.scrollHeight
+O	431	433	))
+O	434	435	{
+
+O	436	448	currFontSize
+O	449	450	=
+O	451	468	$(this).css('font
+O	469	474	-size
+O	475	477	')
+O	478	479	;
+
+O	480	488	finalNum
+O	489	490	=
+B-API	491	501	parseFloat
+O	502	503	(
+O	503	515	currFontSize
+O	515	516	,
+O	517	519	11
+O	520	522	);
+
+O	523	535	stringEnding
+O	536	537	=
+O	538	556	currFontSize.slice
+O	557	558	(
+O	558	560	-2
+O	561	563	);
+
+O	564	581	$(this).css('font
+O	582	587	-size
+O	588	589	'
+O	589	590	,
+O	591	592	(
+O	592	602	finalNum-1
+O	602	603	)
+O	604	605	+
+O	606	618	stringEnding
+O	619	621	);
+
+O	622	623	}
+
+O	624	625	}
+O	626	630	else
+O	631	633	if
+O	634	656	($(this).css('fontSize
+O	657	659	')
+O	659	660	!
+O	661	662	=
+O	663	682	defaultFontSize+'px
+O	683	685	')
+O	686	687	{
+
+O	688	693	while
+O	694	712	($(this).css('font
+O	713	718	-size
+O	719	721	')
+O	721	722	!
+O	723	724	=
+O	725	744	defaultFontSize+'px
+O	745	747	')
+O	748	749	{
+
+O	750	752	//
+O	753	758	First
+O	759	763	lets
+O	764	772	increase
+O	773	776	the
+O	777	781	font
+O	782	786	size
+
+O	787	799	currFontSize
+O	800	801	=
+O	802	819	$(this).css('font
+O	820	825	-size
+O	826	828	')
+O	829	830	;
+
+O	831	839	finalNum
+O	840	841	=
+B-API	842	852	parseFloat
+O	853	854	(
+O	854	866	currFontSize
+O	866	867	,
+O	868	870	11
+O	871	873	);
+
+O	874	886	stringEnding
+O	887	888	=
+O	889	907	currFontSize.slice
+O	908	909	(
+O	909	911	-2
+O	912	914	);
+
+O	915	932	$(this).css('font
+O	933	938	-size
+O	939	940	'
+O	940	941	,
+O	942	943	(
+O	943	953	finalNum+1
+O	953	954	)
+O	955	956	+
+O	957	969	stringEnding
+O	970	972	);
+
+O	973	975	//
+O	976	980	lets
+O	981	985	loop
+O	986	991	until
+O	992	995	its
+O	996	1002	enough
+O	1003	1005	or
+O	1006	1008	it
+O	1009	1013	gets
+O	1014	1022	overflow
+O	1023	1028	again
+
+O	1029	1031	if
+O	1032	1033	(
+O	1033	1050	this.clientHeight
+O	1051	1068	this.scrollHeight
+O	1068	1069	)
+O	1070	1071	{
+
+O	1072	1074	//
+O	1075	1080	there
+O	1081	1084	was
+O	1085	1087	an
+O	1088	1096	overflow
+O	1097	1100	and
+O	1101	1103	we
+O	1104	1108	have
+O	1109	1111	to
+O	1112	1119	recover
+O	1120	1123	the
+O	1124	1129	value
+
+O	1130	1147	$(this).css('font
+O	1148	1153	-size
+O	1154	1155	'
+O	1155	1156	,
+O	1157	1169	currFontSize
+O	1170	1172	);
+
+O	1173	1178	break
+O	1179	1180	;
+
+O	1181	1182	}
+
+O	1183	1184	}
+
+O	1185	1186	}
+
+O	1187	1188	}
+O	1189	1191	);
+
+O	1192	1193	}
+O	1194	1196	);
+
+O	1197	1201	This
+O	1202	1210	solution
+O	1211	1216	works
+O	1217	1218	:
+
+O	1219	1222	and
+O	1223	1227	text
+O	1228	1232	area
+O	1233	1238	would
+O	1239	1241	be
+
+O	1242	1244	in
+O	1245	1252	regular
+B-PL	1253	1257	HTML
+O	1258	1259	:
+
+B-Fram	1260	1266	jQuery
+O	1267	1274	example
+O	1274	1275	.
+
+O	1276	1280	This
+O	1281	1286	works
+O	1287	1290	for
+O	1291	1295	both
+O	1296	1302	typing
+O	1303	1306	and
+O	1307	1314	pasting
+O	1314	1315	.

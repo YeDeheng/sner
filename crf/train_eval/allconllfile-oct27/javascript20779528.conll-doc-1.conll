@@ -1,0 +1,86 @@
+B-Fram	0	10	Highcharts
+O	11	15	with
+O	16	22	Custom
+O	23	33	Background
+O	34	36	in
+O	37	42	Cross
+O	43	51	Platform
+O	52	55	app
+O	56	67	development
+
+O	68	69	I
+O	70	74	have
+O	75	76	a
+O	77	84	strange
+O	85	92	Problem
+O	93	97	with
+B-Fram	98	108	Highcharts
+O	109	116	display
+O	117	119	:(
+
+O	120	121	I
+O	122	124	am
+O	125	130	using
+B-Fram	131	141	Highcharts
+O	142	144	in
+O	145	150	Cross
+O	151	159	Platform
+O	160	163	app
+O	164	175	development
+O	175	176	.
+
+O	177	178	I
+O	179	181	am
+O	182	187	using
+O	188	189	a
+O	190	196	custom
+O	197	207	background
+O	208	211	for
+B-Fram	212	221	highchart
+O	221	222	.
+
+O	223	225	It
+O	226	228	is
+O	229	236	working
+O	237	241	very
+O	242	246	well
+O	247	249	in
+B-Plat	250	253	iOS
+O	254	257	but
+O	258	261	not
+O	262	271	appearing
+O	272	274	in
+B-Plat	275	282	Android
+O	282	283	.
+
+O	284	290	Though
+O	291	296	chart
+O	297	299	is
+O	300	305	there
+O	306	309	but
+O	310	313	not
+O	314	321	visible
+O	321	322	.
+
+O	323	327	When
+O	328	329	I
+O	330	336	remove
+O	337	340	the
+O	341	351	background
+O	352	354	it
+O	355	357	is
+O	358	365	working
+O	366	370	well
+O	370	371	.
+
+O	372	381	Following
+O	382	384	is
+O	385	387	my
+O	388	392	Code
+O	393	394	:
+
+O	395	398	Any
+O	399	403	Idea
+O	404	409	about
+O	410	414	this
+O	414	415	?

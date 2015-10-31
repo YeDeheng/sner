@@ -1,0 +1,93 @@
+O	0	3	How
+O	4	6	to
+O	7	10	get
+B-API	11	19	listview
+O	20	28	selected
+O	29	31	id
+O	32	35	and
+O	36	37	a
+B-API	38	42	href
+O	43	47	text
+O	47	48	?
+
+O	49	50	I
+O	51	55	have
+O	56	57	a
+O	58	65	dynamic
+B-API	66	74	listview
+O	75	80	which
+O	81	84	the
+O	85	87	id
+O	88	91	and
+O	92	96	text
+O	97	100	are
+O	101	108	dynamic
+O	109	113	from
+O	114	120	server
+O	120	121	.
+
+O	122	125	For
+O	126	136	simplicity
+O	136	137	,
+O	138	141	let
+O	142	143	'
+O	144	145	s
+O	146	149	say
+O	150	159	something
+O	160	164	like
+O	165	169	this
+O	170	171	:
+O	172	191	@codeSnippetRemoved
+
+O	192	193	I
+O	194	198	need
+O	199	202	the
+O	203	206	get
+O	207	210	the
+O	211	215	list
+O	216	218	id
+O	219	222	and
+O	223	230	product
+O	231	235	name
+O	235	236	.
+
+O	237	238	(
+O	238	239	I
+O	240	245	don't
+O	246	250	know
+O	251	254	the
+O	255	257	id
+O	258	263	value
+O	264	269	since
+O	270	275	it'll
+O	276	278	be
+O	279	286	dynamic
+O	286	287	)
+
+O	288	291	Any
+O	292	303	suggestions
+O	303	304	?
+
+O	305	324	@codeSnippetRemoved
+
+O	325	328	Use
+B-API	329	334	.on()
+O	335	354	@codeSnippetRemoved
+
+B-Fram	355	361	Fiddle
+O	362	366	Demo
+O	367	386	@codeSnippetRemoved
+
+O	387	390	Put
+O	391	395	this
+O	396	400	code
+O	401	403	in
+O	404	408	head
+O	409	411	or
+O	412	414	at
+O	415	418	the
+O	419	422	end
+O	423	425	of
+O	426	429	the
+O	430	434	page
+O	435	454	@codeSnippetRemoved
