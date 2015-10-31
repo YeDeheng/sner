@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream:gazetteers/AndroidClassesPackages.txt
-=======
 android.accessibilityservice
 android.accounts
 android.animation
