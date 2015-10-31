@@ -91,6 +91,9 @@ class DataReader:
 		self.cur = self.db.cursor() 
 
 	def generate_postid(self, annotator):
+
+		fall = open('./' + str(annotator) + '/all-oct31.txt', 'w' )
+		
 		for name in pl: 
 			index_list = []
 
@@ -143,17 +146,18 @@ class DataReader:
 								all += ans_body
 
 							
-							f = open('./' + str(annotator) + '/' + str(name) + str(postid)+'.txt', 'w' )
 							for row in all: 
 								content = ''.join( my_encoder(strip_tags(row[0])) )
 								content = re.sub(r'^ +', '', content)
 								content = re.sub(r'\n +', '\n', content)
 								content = re.sub(r'[\n]+', '\n',content)
 
-								f.write(content +'\n')
-							f.close()
+								fall.write(content +'\n')
+							fall.write('\n')
 					except:
 						pass
+		fall.close()
+	
 
 	def read_post(self, post_id):
 		self.cur.execute("SELECT Title FROM posts where Id=%s" % (post_id))

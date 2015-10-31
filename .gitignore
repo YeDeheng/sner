@@ -45,6 +45,7 @@ Temporary Items
 # Python Binaries
 *.pyc
 python/browncluster/
+python/browncluster-oct31/
 python/test.*
 crf/test/
 java/
