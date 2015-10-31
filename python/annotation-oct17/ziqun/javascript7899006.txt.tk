@@ -1,4 +1,3 @@
-
 I have a page that uses jQuery ' s $ .post ( ) method to get some html and inside the html is a tag .
 My code looks something like this :
 Is there a reason that the script tag will not parse in IE = 8 ? It parses just fine in every other browser . I've been searching around on the web for a few hours now and can't seem to find anything on this issue so I'm assuming I'm forgetting something or flat out doing something wrong ?

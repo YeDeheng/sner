@@ -6,7 +6,6 @@ I understand that the way computers work with numbers are not exactly 0.3 but mo
 I just wanted a way to round the number so I can easily add 0.1 ( to ) 0.9 together without a mass of decimal places .
 I have tried adding
 although it rounds it downwards to 0 so the label doesn't update .
-
 Some decimals simply can't be represented by a float or double in such way the the difference is small enough . Simply because a computer uses the binary number system . For instance a computer will always fail to represent 1 / 3rd .
 You can use a format , to round the number to one decimal using the following code :
 If you want exact decimal addition , you need to use BigDecimal in place of double .

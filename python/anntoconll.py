@@ -155,7 +155,7 @@ def text_to_conll(f):
                     if quote(fake_tokens[i+1]) and quote_count is not None and quote_count%2==1:
                         continue
                 tokens.append(t)
-        print tokens
+        #print tokens
 
         tokens2 = [t for t in s.split('\s') if t]
         #print tokens2
@@ -200,7 +200,7 @@ def relabel(lines, annotations):
         label = None
         for o in range(start, end):
             if o in offset_label:
-                print o, start
+                #print o, start
                 if o != start:
                     print >> sys.stderr, 'Warning: annotation-token boundary mismatch: "%s" --- "%s"' % (token, offset_label[o].text)
                 label = offset_label[o].type

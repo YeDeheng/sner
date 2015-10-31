@@ -78,8 +78,7 @@ def GetOrthographicFeatures(word):
 
     return features
 
-def GetWordClusterFeatures(word):
-
+def GetWordClusterFeatures(word, dict):
     features = ''
     if dict.has_key(word):
         path = str(dict.get(word))
@@ -90,50 +89,99 @@ def GetWordClusterFeatures(word):
         features += path[:6] + '\t'
     else:
         features += path + '\t'
-
+    if len(path) > 7:
+        features += path[:7] + '\t'
+    else:
+        features += path + '\t'
     if len(path) > 8:
         features += path[:8] + '\t'
     else:
         features += path + '\t'
-
+    if len(path) > 9:
+        features += path[:9] + '\t'
+    else:
+        features += path + '\t'
     if len(path) > 10:
         features += path[:10]+ '\t'
     else:
         features += path + '\t'
-
+    if len(path) > 11:
+        features += path[:11] + '\t'
+    else:
+        features += path + '\t'
     if len(path) > 12:
         features += path[:12] + '\t'
     else:
         features += path + '\t'
-
+    if len(path) > 13:
+        features += path[:13] + '\t'
+    else:
+        features += path + '\t'
     if len(path) > 14:
         features += path[:14] + '\t'
     else:
         features += path + '\t'
-
+    if len(path) > 15:
+        features += path[:15] + '\t'
+    else:
+        features += path + '\t'
     #print features
     return features
+
+def GetGazetteerFeatures(word, androidAPI, platforms):
+    features = ''
+    if word in androidAPI:
+        #print word
+        features += 'inAndroid\t'
+    else:
+        features += 'outAndroid\t'
+
+    if word in platforms:
+        features += 'isPlat\t'
+    else:
+        features += 'notPlat\t'
+    return features
+
 
 if __name__=='__main__':
     # read in annotated conll file
 
     f = open('paths', 'r')  # open word cluster file
-    dict = {}
+    word_cluster_dict = {}
     for line in f:
-        dict[line.split()[1]] = line.split()[0]
+        word_cluster_dict[line.split()[1]] = line.split()[0]
+    f.close()
+
+    f = open('../gazetteers/AndroidClassesPackages.txt', 'r')
+    androidAPI = []
+    for line in f:
+        line = line.strip()
+        if line:
+            androidAPI.append(line)
+    f.close()
+
+    f = open('../gazetteers/PlatformList.txt', 'r')
+    platforms = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            platforms.append(str(line).lower())
     f.close()
 
     fin = open(sys.argv[1], 'r')
     fout = open(sys.argv[2], 'w')
+
     for line in fin:
         line = line.strip()
         if line:
             (word, label) = line.split('\t')
             OrthographicFeatures = GetOrthographicFeatures(word)
 
-            ClusterFeatures = GetWordClusterFeatures(word)
+            ClusterFeatures = GetWordClusterFeatures(word, word_cluster_dict)
 
-            allfeatures = word + '\t' + OrthographicFeatures + ClusterFeatures + label
+            GazFeatures = GetGazetteerFeatures(word, androidAPI, platforms)
+
+            allfeatures = word + '\t' + OrthographicFeatures + ClusterFeatures + GazFeatures + label
             fout.write(allfeatures + '\n')
         else:
             fout.write('\n')

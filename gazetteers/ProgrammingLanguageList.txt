@@ -38,7 +38,6 @@ Avail
 Averest
 AWK
 Axiom
-B
 Bash
 BASIC
 BAL
@@ -110,7 +109,6 @@ DiBOL
 DisCo
 DRAKON
 Dylan
-E
 Ease
 ECMAScript
 Edinburgh IMP
@@ -129,7 +127,6 @@ Euclid
 Euphoria
 Euler
 Exec
-F
 F3
 F#
 Fabric
@@ -172,7 +169,6 @@ INTERCAL
 Io
 IPL
 ISWIM
-J
 JADE
 Jal
 Janus
@@ -189,7 +185,6 @@ JOVIAL
 Joy
 JScript
 Julia
-K
 Kaleidoscope
 Korn shell
 Kotlin
@@ -294,7 +289,6 @@ P-TAC
 Pure
 Purescript
 Python
-Q
 QuakeC
 QPL
 QML
@@ -315,7 +309,6 @@ RLaB
 RSL
 Ruby
 Rust
-S
 S-algol
 Sail
 SAM76
@@ -327,7 +320,6 @@ Scala
 Scheme
 Scratch
 Scriptol
-Sed
 Seed7
 Self
 SETL
@@ -425,3 +417,5 @@ Informix-4GL
 pl/SQL
 SQL
 Visual Foxpro
+Unix Shell
+Cython
