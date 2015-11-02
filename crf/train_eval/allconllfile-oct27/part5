@@ -2549,7 +2549,7 @@ O	167	171	this
 O	172	179	program
 O	180	184	with
 O	185	186	"
-O	186	192	.class
+B-Stan	186	192	.class
 O	192	193	"
 O	194	199	files
 O	200	207	visible
@@ -2653,7 +2653,7 @@ O	607	609	to
 O	610	614	keep
 O	615	622	visable
 O	623	624	"
-O	624	630	.class
+B-Stan	624	630	.class
 O	630	631	"
 O	632	637	files
 O	638	641	for
@@ -2804,7 +2804,7 @@ O	1220	1224	this
 O	1225	1228	way
 O	1229	1232	the
 O	1233	1234	"
-O	1234	1238	.jar
+B-Stan	1234	1238	.jar
 O	1238	1239	"
 O	1240	1244	file
 O	1245	1247	is

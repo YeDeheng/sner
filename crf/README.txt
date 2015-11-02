@@ -19,6 +19,7 @@ What orthographic features do we use?
  - C14: has underscore
  - C15: has Cap inside
  - C16: has dash
- - C17~C21: word clustering features
- - C22: isAndroid
- - C23: isPlatform
+ - C17~C26: word clustering features
+ - C27: isAndroid
+ - C28: isPlatform
+ - C29: token in upper case

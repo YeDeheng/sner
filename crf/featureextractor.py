@@ -76,6 +76,9 @@ def GetOrthographicFeatures(word):
     else:
         features += '0\t'
 
+
+    features += word.upper() + '\t'
+
     return features
 
 def GetWordClusterFeatures(word, dict):
