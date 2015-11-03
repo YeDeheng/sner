@@ -8,6 +8,7 @@ import subprocess
 def GetOrthographicFeatures(word):
     features = ''
     features += word.lower() + '\t'
+    features += word.upper() + '\t'
     # prefix and suffix features
     if(len(word) >= 4):
         features += word[0:1].lower() + '\t'
@@ -77,7 +78,6 @@ def GetOrthographicFeatures(word):
         features += '0\t'
 
 
-    features += word.upper() + '\t'
 
     return features
 
@@ -131,18 +131,24 @@ def GetWordClusterFeatures(word, dict):
     #print features
     return features
 
-def GetGazetteerFeatures(word, androidAPI, platforms):
+def GetGazetteerFeatures(word, AndroidClass, platforms, frams):
     features = ''
-    if word in androidAPI:
+    if word in AndroidClass:
         #print word
-        features += 'inAndroid\t'
+        features += 'isAndroidClass\t'
     else:
-        features += 'outAndroid\t'
+        features += 'notAndroidClass\t'
 
     if word in platforms:
         features += 'isPlat\t'
     else:
         features += 'notPlat\t'
+
+    if word in frams:
+        features += 'isFram\t'
+    else:
+        features += 'notFram\t'
+
     return features
 
 
@@ -156,11 +162,11 @@ if __name__=='__main__':
     f.close()
 
     f = open('../gazetteers/AndroidClassesPackages.txt', 'r')
-    androidAPI = []
+    AndroidClass = []
     for line in f:
         line = line.strip()
         if line:
-            androidAPI.append(line)
+            AndroidClass.append(line)
     f.close()
 
     f = open('../gazetteers/PlatformList.txt', 'r')
@@ -170,6 +176,17 @@ if __name__=='__main__':
         if line:
             platforms.append(str(line).lower())
     f.close()
+
+    f = open('../gazetteers/ToolLibraryFrameworkList.txt', 'r')
+    frams = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            frams.append(str(line).lower())
+    f.close()
+
+
+
 
     fin = open(sys.argv[1], 'r')
     fout = open(sys.argv[2], 'w')
@@ -182,7 +199,7 @@ if __name__=='__main__':
 
             ClusterFeatures = GetWordClusterFeatures(word, word_cluster_dict)
 
-            GazFeatures = GetGazetteerFeatures(word, androidAPI, platforms)
+            GazFeatures = GetGazetteerFeatures(word, AndroidClass, platforms, frams)
 
             allfeatures = word + '\t' + OrthographicFeatures + ClusterFeatures + GazFeatures + label
             fout.write(allfeatures + '\n')
