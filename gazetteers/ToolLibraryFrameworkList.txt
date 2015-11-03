@@ -50,6 +50,7 @@ Hudson
 JavaServer Faces
 JavaServer Pages
 Apache Maven
+Maven
 Bazel
 Gradle
 ASM
@@ -57,6 +58,7 @@ Byte Buddy
 Byteman
 Javassist
 Apache Aurora
+Aurora
 Singularity
 Checker Framework
 Checkstyle
@@ -83,6 +85,7 @@ TeamCity
 Travis
 uniVocity-parsers
 Apache Phoenix
+Phoenix
 Crate
 Flyway
 H2
@@ -94,12 +97,14 @@ MapDB
 Presto
 Querydsl
 Apache Parquet
+Parquet
 Protobuf
 SBE
 Wire
 Joda-Time
 Time4J
 Apache DeltaSpike
+DeltaSpike
 Dagger2
 Guice
 HK2
@@ -175,15 +180,20 @@ Clojure
 Ceylon
 Kotlin
 Apache Log4j 2
+Log4j
 kibana
 Logback
 logstash
 Metrics
 SLF4J
 Apache Flink
+Flink
 Apache Hadoop
+Hadoop
 Apache Mahout
+Mahout
 Apache Spark
+Spark
 DeepDive
 Deeplearning4j
 H2O
@@ -681,6 +691,7 @@ fullPage
 ScrollMenu
 jQuery-menu-aim
 jQuery contextMenu
+contextMenu
 Slideout
 Slide and swipe
 jTable
@@ -720,7 +731,7 @@ cropper
 es6features
 es6-features
 ECMAScript 6 compatibility table
-Babel (Formerly 6to5)
+Babel
 Traceur compiler
 javascript-sdk-design
 echo
