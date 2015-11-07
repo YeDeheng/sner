@@ -1,0 +1,311 @@
+ASP.NET WebAPI
+ServiceStack
+Nelibur
+WebAPI Contrib
+ASP.NET Boilerplate
+Orleans
+CoreFX
+CSLA .NET
+Mono
+Mono-Addins
+Spring.Net
+MVC.Template
+ProjectScaffold
+Side-Waffle
+Template10
+AIMLBot (Program#)
+SIML
+dnSpy
+Fody
+Mono.Cecil
+Cassette
+NodeAssets
+Bundler
+SquishIt
+ASP.NET Identity
+DotNetOpenAuth
+Logibit Hawk
+IdentityModel
+IdentityServer
+OAuth
+Psake
+FAKE
+Invoke-Build
+MSBuild
+Cake
+CacheCow
+Akavache
+Command Line Parser
+Fluent Command Line Parser
+Power Args
+UnionArgParser
+CoreCLR
+Composite C1
+mojoPortal 
+N2CMS
+Orchard 
+Piranha CMS
+Umbraco
+CodeMaid
+StyleCop
+Gendarme
+Metrics-Net
+Bridge.NET
+ClojureCLR
+F#
+FunScript
+JSIL
+Mono-basic
+Nemerle
+Netjs
+Roslyn
+VisualFSharp
+SharpCompress
+DotNetZip.Semverd
+SharpZipLib
+TeamCity
+CruiseControl.NET
+MyGet
+AppVeyor
+BouncyCastle
+HashLib
+libsodium-net
+StreamCryptor
+BrightstarDb
+Event Store
+LiteDB
+RavenDB
+MySQL Connector
+Npgsql
+MongoDB
+ServiceStack Redis
+StackExchange Redis
+Cassandra
+Couchbase
+Firebird.NET
+ILSpy
+JustDecompile Engine
+Unfold
+SlimDX
+SharpDX
+Project Orleans
+Akka.net
+Sandcastle
+SharpDox
+Swashbuckle
+F# Formatting
+Paypal Merchant SDK
+ServiceStack.Stripe
+SmartStoreNET
+Stripe.Net
+BeYourMarket
+Virto Commerce
+DNVM
+Reactive ETL
+MonoGame
+CocosSharp
+Duality
+Paradox
+NetTopologySuite
+SharpMap
+Bonobo Git Server
+GitExtensions
+GitLink
+GitVersion
+LibGit2Sharp
+NGit
+posh-git
+Oxyplot
+OpenTK
+NGraphics
+MahApps.Metro
+Callisto
+ObjectListView
+DockPanelSuite
+AvalonEdit
+XWT
+Gtk#
+MaterialDesignInXamlToolkit
+Eto.Forms
+Dragablz
+Fluent.Ribbon
+AngleSharp
+CsQuery
+dotless
+ExCSS
+FluentBootstrap
+HtmlAgilityPack
+Http.fs
+RestSharp
+EasyHttp
+Refit
+RestEase
+SharpDevelop
+MonoDevelop
+Visual Studio Express
+Visual Studio Community
+Waf DotNetPad
+Visual Studio Code
+ImageResizer
+ImageProcessor
+DynamicImage
+MetadataExtractor
+Emgu CV
+Wix Toolset
+Squirrel
+i18n
+CefSharp
+CppSharp
+Sharpen
+CXXI
+Castle Windsor
+Unity
+Autofac
+Ninject
+StructureMap
+Spring.Net
+LightInject
+TinyIoC
+Essential Diagnostics
+NLog
+ELMAH
+Elmah MVC
+Logary
+Log4Net
+Serilog
+StackExchange.Exceptional
+Semantic Logging Application Block (SLAB)
+Accord.NET
+Accord.NET Extensions
+AForge.NET
+Deedle
+FsLab
+numl
+R Provider
+F# Data
+MarkdownSharp
+F# Formatting
+CommonMark.NET
+FluentEmail
+MailKit
+MimeKit
+PreMailer.Net
+MathNet
+TagLib#
+C# StatsD Client
+.NET Fiddle
+AzureCrawler
+BitSharp
+CSScript
+CsvHelper
+FluentValidation
+Humanizer
+LINQPad
+Polly
+Rant
+ScriptCS
+Caliburn.Micro
+MVVM Light Toolkit
+Catel
+UpdateControls
+ReactiveUI
+Okra App Framework
+WPF Application Framework (WAF)
+MVVMCross
+Stylet
+Gemini
+ClosedXML
+NPOI
+EPPlus
+Open XML SDK
+Entity Framework
+BL Toolkit
+Dapper
+Dapper Extensions
+NHibernate
+Fluent NHibernate
+FluentMigrator
+ServiceStack.OrmLite
+Massive
+LINQ to DB
+NuGet
+MyGet
+Paket
+ITextSharp
+MiniProfiler
+Glimpse
+PushSharp
+NServiceBus
+Hangfire
+RabbitMQ.NET
+NetMQ
+MassTransit
+Rebus
+EasyNetQ
+Warewolf ESB
+Rx.NET
+Dynamic Data
+QuartzNet
+AWS SDK
+Azure PowerShell
+Octokit.NET
+DropNet
+Elasticsearch .NET
+PlainElastic.Net
+SolrNet
+Lucene.net
+Protobuf.NET
+Json.NET
+ServiceStack.Text
+Msgpack-Cli
+Jil
+ProtoBuf
+F# Data
+Bond
+Stateless
+Automatonymous
+Pretzel
+Sandra.Snow
+Wyam
+C# Style Guide
+C# Coding Conventions
+RazorEngine
+Nustache
+DotLiquid
+AutoFixture
+FakeItEasy
+Fluent Assertions
+Fuchu
+Machine.Specifications
+Moq
+NBuilder
+NSubstitute
+NUnit
+Rhino Mocks
+Shouldly
+SpecFlow
+xUnit
+Lean
+StockSharp
+Web Essentials
+VsVIM
+Nuget Package Manager
+SideWaffle
+Resharper
+Refactoring Essentials
+CodeContracts
+Git Diff Margin
+Productivity Power Tools
+ASP.NET MVC
+FubuMVC
+NancyFx
+IISNode
+Suave.IO
+EmbedIO
+XSP
+SignalR
+Fleck
+Websocket-Sharp
+XSockets
+WebSocket4NET
+TopShelf

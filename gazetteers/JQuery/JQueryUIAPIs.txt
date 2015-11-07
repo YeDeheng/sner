@@ -1,0 +1,41 @@
+.disableSelection()
+.effect()
+.enableSelection()
+.focus()
+.hide()
+.position()
+.removeUniqueId()
+.scrollParent()
+.show()
+.toggle()
+.uniqueId()
+.zIndex()
+.addClass()
+.focus()
+.hide()
+.position()
+.removeClass()
+.show()
+.toggle()
+.toggleClass()
+Draggable
+Droppable
+Mouse
+Resizable
+Selectable
+Sortable
+Accordion Widget
+Autocomplete Widget
+Button Widget
+Buttonset Widget
+Datepicker Widget
+Dialog Widget
+Widget Factory
+Widget Plugin Bridge
+Menu Widget
+Progressbar Widget
+Selectmenu Widget
+Slider Widget
+Spinner Widget
+Tabs Widget
+Tooltip Widget

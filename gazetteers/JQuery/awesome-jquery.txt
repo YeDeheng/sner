@@ -1,0 +1,96 @@
+jQuery Rain
+jQuery Unheap
+Animsition
+fakeLoader.js
+jQuery Transit
+Material Design Preloader!s
+Midnight
+Scrollify
+Waves
+Froala WYSIWYG HTML Editor
+Hallo
+jQuery Notebook
+jQuery TE
+TinyMCE
+Bootstrap Multiselect
+File Upload
+Ideal Forms
+jQuery Form Plugin
+Justified Gallery
+Labelauty
+Payform
+Pickadate
+Select2
+Arbor
+Cropper
+Dense.js
+Flot
+Gridder
+jquery.sparkline
+jQuery.eraser
+jQuery Mapael
+jQueryGantt
+Nivo Slider
+Unite Gallery
+Peity
+jQuery contextMenu
+jPanelMenu
+jQuery-menu-aim
+mmenu
+Multi-level push menu
+Slidebars
+stickUp
+Superfish
+Yamm
+animatedModal.js
+Avgrund
+Bootstrap Modal
+jBox
+jQuery Modal
+jQuery Popup Overlay
+Magnific Popup
+SweetAlert
+tipso
+vex
+DataTables
+Filter Table
+FooTable
+Isotope
+HighchartTable
+jqGrid
+jQuery treetable
+jsGrid
+Stackable.js
+Stupid Table Sort
+tableExport.jquery.plugin
+jQuery Timer Plugin
+Smart Time Ago
+i18n properties
+jquery.i18n
+jquery.localize.js
+FormValidation
+h5Validate
+jQuery Form Validator
+jquery-validation
+jQuery.validationEngine
+Boilerplate
+Sisyphus
+Slugify
+Readmore.js
+jQuery mobile
+Interdimensional
+OhSnap!.js
+Dragula
+jQuery UI
+jQuery Enhanced Splitter
+tabulous.js
+X-editable
+Qunit
+Mockjax
+Bower
+Cheerio
+PHP front end setup without Node
+symfony-collection
+django-static-jquery
+jquery-rails
+jquery-ui-rails
