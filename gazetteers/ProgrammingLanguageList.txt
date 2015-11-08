@@ -251,7 +251,6 @@ Oberon
 Objective-C
 OCaml
 Objective J
-Objective Modula 2
 Obliq
 Occam
 Octave
@@ -345,7 +344,7 @@ SuperX++
 Swift
 Synergy/DBL
 T
-TACL,Tandem Advanced Command Language
+TACL
 TACPOL
 TADS
 TAL
@@ -372,7 +371,6 @@ Verilog HDL
 VHDL
 VDS
 Visual Basic
-Visual Basic .NET
 VBScript
 VTL
 Water

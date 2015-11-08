@@ -9,6 +9,7 @@ jpa
 jdbc
 ajax
 PDF
+PNG
 JPG
 JPEG
 GIF
@@ -173,7 +174,6 @@ Authentication Header
 Integrated Net Layer Security Protocol
 SwIPe
 NBMA Address Resolution Protocol
-IP Mobility (Min Encap)
 Transport Layer Security Protocol
 Simple Key-Management for Internet Protocol
 ICMP for IPv6

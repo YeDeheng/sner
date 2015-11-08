@@ -11,24 +11,21 @@
 .uniqueId()
 .zIndex()
 .addClass()
-.focus()
-.hide()
-.position()
 .removeClass()
-.show()
-.toggle()
 .toggleClass()
 Draggable
 Droppable
-Mouse
 Resizable
 Selectable
 Sortable
 Accordion Widget
+Accordion
 Autocomplete Widget
 Button Widget
 Buttonset Widget
+Buttonset
 Datepicker Widget
+Datepicker
 Dialog Widget
 Widget Factory
 Widget Plugin Bridge
@@ -36,6 +33,9 @@ Menu Widget
 Progressbar Widget
 Selectmenu Widget
 Slider Widget
+Slider
 Spinner Widget
+Spinner
 Tabs Widget
 Tooltip Widget
+Tooltip
