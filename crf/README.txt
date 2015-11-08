@@ -24,3 +24,6 @@ What orthographic features do we use?
  - C28: isAndroidClass
  - C29: isPlatform
  - C30: isFram
+ - C31: isStan
+ - C32: isPL
+ - C33: isOrgs
