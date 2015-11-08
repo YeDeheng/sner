@@ -4,5 +4,4 @@ You have listed the good alternatives - creating a new class and changing MyPeri
 If you want a bad one , you could return an array , and let your callers assume that it has two items : @codeSnippetRemoved
 If you know that all periods in List MyPeriod are different , and also that MyPeriod implements robust hashCode() and equals() , you could use LinkedHashMap MyPeriod , Integer to establish your mappings : @codeSnippetRemoved
 If you are using JDK7 or later , you can use javafx.util.Pair : @codeSnippetRemoved
-public Map MyPeriod , Integer bindNewColumn ( List MyPeriod periods ) { Map MyPeriod , Integer map = new HashMap MyPeriod , Integer ( ); for ( MyPeriod period : periods ) { map.put ( period , calculation ( period )); } return map ; }
-With a Pair . @codeSnippetRemoved
+@codeSnippetRemoved

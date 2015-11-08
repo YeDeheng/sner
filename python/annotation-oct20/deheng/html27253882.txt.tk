@@ -9,7 +9,6 @@ Link to the fiddle example is
 http://jsfiddle.net/ssbrbsfp/2
 Thanks for the help .
 First you execute the function displayVals() ; on dom ready without a radio is selected so the input text get the vaule of undefined . Second you add the old value everytime on radio change . Take a look here :
-function displayVals() { var a = $("input[type='radio ' ]: checked ") .val() ; var b = " I am a " ; var checkedValue = $ ( " p ") .html ( " b I am a / b " + " " + a ); var input = $("input[type='text ' ] ") ; // you want to add only the value of radio each time . input.val(a);}$("input[type='radio ' ] ") .change ( displayVals ); // why execute this one on dom ready ?? // displayVals() ; script src= " https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js " / script input type= " text " onblur= " this.placeholder = ' my name '" onfocus= " this.placeholder = ''" placeholder= " my name " name= " name " id= " my name " class= " InputText " input type= " submit " value= " Submit " class= " SubmitButton " br input type= " radio " id= " single " name= " sex " value= " Boy " Boy nbsp ; nbsp ; | nbsp ; nbsp ; input type= " radio " id= " single " name= " sex " value= " Girl " Girl br br br br p / p select id= " single " option Single / option option Single2 / option / select
 Here a working fiddle : http://jsfiddle.net/ssbrbsfp/6
 To avoid duplicate result , don't reappend the input.val in it : @codeSnippetRemoved
 Check if the value is undefined before filling the input and the p : @codeSnippetRemoved

@@ -6,10 +6,3 @@ Here's the code i'm using: @codeSnippetRemoved
 And displaying it like this: @codeSnippetRemoved
 As I say the above displays fine in FF   Chrome - is there any way to get it to work in IE? 
 Thanks in advance. 
-script type="text/javascript" ...  var minutes, seconds;  ...  
-script type="text/javascript" 
-var minutes, seconds;
-// set minutesvar mins = 5;
-// calculate the seconds (don't change this! unless time progresses at a different speed for you...)var secs = mins * 60;
-function countdown() {    setTimeout('Decrement()',1000);}function Decrement() {        minutes = document.getElementById("minutes");        seconds = document.getElementById("seconds");        // if less than a minute remaining        if (seconds   59) {            seconds.value = secs;        } else {            minutes.value = getminutes();            seconds.value = getseconds();        }        secs--;        setTimeout('Decrement()',1000);
-}function getminutes() {    // minutes is seconds divided by 60, rounded down    mins = Math.floor(secs / 60);    return mins;}function getseconds() {    // take mins remaining (as seconds) away from total seconds remaining    return secs-Math.round(mins *60);} /script  div id="timer" Time Ending In:  input id="minutes" type="text"  minutes and  input id="seconds" type="text"  seconds. /div     script    countdown();    /script   

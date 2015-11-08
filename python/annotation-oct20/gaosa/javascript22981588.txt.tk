@@ -11,11 +11,3 @@ Anyway , I'm stuck , I thank you in advance for your help .
 Vincent
 If I understand what ' s happening , the buttons are targeting the contents of the iframe and loading the page inside that , instead of the actual window ? If that ' s the case , set the target attribute the either _parent or _top and that should target the actual window .
 You can try this javascript code :
-? php
-/ * ------- Your Php Code ----- * /
-\\Replace this code @header ( location )
-echo " script " ;
-echo " window.location='yourloation .php ' ; " ;
-echo " / script " ;
-/ * ------- Your Php Code ----- * /
-?
