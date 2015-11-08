@@ -5,7 +5,7 @@ Update :
 I've added this to the result area to try and debug , but I'm not receiving anything from it .
 Would this come up in your standard error page ?
 Try @codeSnippetRemoved
-After looking even further at your code it looks like you shouldn't see anything for username = ' {$username } ' , because $username is being based off of $payer_email , which has not been declared yet .
+After looking even further at your code it looks like you shouldn't see anything for username = ' {$username} ' , because $username is being based off of $payer_email , which has not been declared yet .
 You'll need to either put those username checks into a function and call it after you've assigned variables the $_POST index , or move the $_POST [ " payer_email " ] to before you first declare the $username variable , as well as getting rid of the $_POST [ " username " ] ...
 Although I haven't seen your form it sounds like you're creating the username through the payer email .
 Does this help more ?

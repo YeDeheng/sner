@@ -358,7 +358,7 @@ O	1769	1770	,
 O	1771	1774	you
 O	1775	1780	could
 O	1781	1784	use
-O	1785	1793	memcache
+B-Fram	1785	1793	memcache
 O	1794	1796	as
 O	1797	1798	a
 O	1799	1808	temporary
@@ -370,7 +370,7 @@ O	1831	1832	.
 
 O	1833	1845	Incrementing
 O	1846	1847	a
-O	1848	1856	memcache
+B-Fram	1848	1856	memcache
 O	1857	1864	counter
 O	1865	1867	is
 O	1868	1874	faster
@@ -397,7 +397,7 @@ O	1951	1954	you
 O	1955	1960	could
 O	1961	1965	read
 O	1966	1969	the
-O	1970	1978	memcache
+B-Fram	1970	1978	memcache
 O	1979	1986	counter
 O	1987	1990	and
 O	1991	1996	write

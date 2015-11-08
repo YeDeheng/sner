@@ -18,4 +18,4 @@ O	70	73	add
 O	74	75	a
 O	76	85	reference
 O	86	88	to
-B-API	89	112	Raven.Storage.Esent.dll
+O	89	112	Raven.Storage.Esent.dll

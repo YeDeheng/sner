@@ -5,3 +5,6 @@ T9	PL 3624 3627	php
 T2	Fram 2470 2475	Redis
 T6	Fram 3461 3466	Redis
 T11	Plat 1273 1282	AppEngine
+T1	Fram 1785 1793	memcache
+T5	Fram 1848 1856	memcache
+T7	Fram 1970 1978	memcache

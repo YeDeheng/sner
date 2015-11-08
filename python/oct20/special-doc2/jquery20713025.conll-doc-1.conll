@@ -96,7 +96,7 @@ O	353	354	i
 O	355	359	have
 O	360	364	make
 O	365	366	3
-O	367	370	div
+B-API	367	370	div
 O	371	374	and
 O	375	380	there
 O	381	384	was

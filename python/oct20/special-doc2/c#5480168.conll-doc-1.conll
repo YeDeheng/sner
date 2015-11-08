@@ -69,19 +69,19 @@ O	360	361	:
 O	362	363	\
 O	364	381	RavenDB-Build-309
 O	382	398	\EmbeddedClient\
-B-API	399	424	Raven.Client.Embedded.dll
+O	399	424	Raven.Client.Embedded.dll
 O	425	426	\
 O	427	444	RavenDB-Build-309
 O	445	453	\Client\
-B-API	454	482	Raven.Client.Lightweight.dll
+O	454	482	Raven.Client.Lightweight.dll
 O	483	484	\
 O	485	502	RavenDB-Build-309
 O	503	519	\EmbeddedClient\
-B-API	520	543	Raven.Storage.Esent.dll
+O	520	543	Raven.Storage.Esent.dll
 O	544	545	\
 O	546	563	RavenDB-Build-309
 O	564	580	\EmbeddedClient\
-B-API	581	606	Raven.Storage.Managed.dll
+O	581	606	Raven.Storage.Managed.dll
 
 O	607	610	The
 O	611	615	code
