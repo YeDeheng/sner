@@ -1,59 +1,27 @@
-# -*- coding: utf-8 -*-
 import sys
 import re
 import os
 import string
 import subprocess
 
-def regex_or(*items):
-    r = '|'.join(items)
-    r = '(' + r + ')'
-    return r
-def pos_lookahead(r):
-  return '(?=' + r + ')'
-def optional(r):
-  return '(%s)?' % r
-
-def urlmatch(word):
-    PunctChars = r'''['“".?!,(/:;]'''
-    Entity = '&(amp|lt|gt|quot);'
-
-    UrlStart1 = regex_or('https?://', r'www\.')
-    CommonTLDs = regex_or('com','co\\.uk','org','net','info','ca','edu','gov')
-    UrlStart2 = r'[a-z0-9\.-]+?' + r'\.' + CommonTLDs + pos_lookahead(r'[/ \W\b]')
-    UrlBody = r'[^ \t\r\n<>]*?'  # * not + for case of:  "go to bla.com." -- don't want period
-    UrlExtraCrapBeforeEnd = '%s+?' % regex_or(PunctChars, Entity)
-    UrlEnd = regex_or( r'\.\.+', r'[<>]', r'\s', '$') # / added by Deheng
-
-    Url = (r'\b' +
-        regex_or(UrlStart1, UrlStart2) +
-        UrlBody +
-        pos_lookahead( optional(UrlExtraCrapBeforeEnd) + UrlEnd))
-
-    Url_RE = re.compile("(%s)" % Url, re.U|re.I)
-
-    return Url_RE.match(word)
 
 def GetOrthographicFeatures(word):
 
-    dfs = ['java', 'js', 'jsp', 'xml', 'c', 'cpp', 'py', 'htm', 'html', 'com']
-    ngram = 20
+    dfs = ['java', 'js', 'xml', 'c', 'cpp', 'py', 'htm', 'html']
 
     features = ''
     features += word.lower() + '\t'
     features += word.upper() + '\t'
     # prefix and suffix features
-    for i in range(1, ngram+1):
-        if(len(word) >= i):
-            features += word[0:i].lower() + '\t'
-        else:
-            features += '-\t'
-
-    for i in range(1, ngram+1):
-        if(len(word) >= i):
-            features += word[len(word)-i:len(word)].lower() + '\t'
-        else:
-            features += '-\t'
+    if(len(word) >= 4):
+        features += word[0:1].lower() + '\t'
+        features += word[0:2].lower() + '\t'
+        features += word[0:3].lower() + '\t'
+        features += word[len(word)-1:len(word)].lower() + '\t'
+        features += word[len(word)-2:len(word)].lower() + '\t'
+        features += word[len(word)-3:len(word)].lower() + '\t'
+    else:
+        features += '-\t-\t-\t' + '-\t-\t-\t'
     #Substring features (don't seem to help)
     #for i in range(1,len(word)-2):
     #    for j in range(i+1,len(word)-1):
@@ -91,12 +59,6 @@ def GetOrthographicFeatures(word):
     else:
         features += '0\t'
 
-    # has dot and Cap
-    if re.match(r'.*\..*', word) and re.match(r'.*[A-Z].*', word):
-        features += '1\t'
-    else:
-        features += '0\t'
-
     # has both digit and dot
     if re.match(r'.*[0-9].*', word) and re.match(r'.*\..*', word):
         features += '1\t'
@@ -104,7 +66,7 @@ def GetOrthographicFeatures(word):
         features += '0\t'
 
     # has () at the end
-    if re.match(r'.*\(\)$', word):
+    if re.match(r'\(\)$', word):
         features += '1\t'
     else:
         features += '0\t'
@@ -133,17 +95,6 @@ def GetOrthographicFeatures(word):
     else:
         features += '0\t'
 
-    # 2 API patterns
-    if re.match(r'^[a-zA-Z\.\_][a-zA-Z\.\_]+$', word):
-	features += '1\t'
-    else:
-	features += '0\t'
-
-    if re.match(r'^(?:[a-zA-Z_][a-zA-Z_]+\.)+[a-zA-Z_][a-zA-Z_]+$', word):
-	features += '1\t'
-    else:
-	features += '0\t'
-
     return features
 
 def GetWordClusterFeatures(word, dict):
@@ -153,10 +104,6 @@ def GetWordClusterFeatures(word, dict):
     else:
         path = 'null'
 
-    if len(path) > 5:
-        features += path[:5] + '\t'
-    else:
-        features += path + '\t'
     if len(path) > 6:
         features += path[:6] + '\t'
     else:
@@ -200,48 +147,38 @@ def GetWordClusterFeatures(word, dict):
     #print features
     return features
 
-def GetGazetteerFeatures(word, AndroidClass, AndroidAPI, platforms, frams, stans, PLs, orgs, jQueryUIAPIs):
+def GetGazetteerFeatures(word, AndroidClass, platforms, frams, stans, PLs, orgs):
     features = ''
-
-    if word.lower() in AndroidClass:
+    if word in AndroidClass:
+        #print word
         features += 'isAndroidClass\t'
     else:
         features += 'notAndroidClass\t'
 
-    if word.lower() in AndroidAPI:
-        features += 'isAndroidAPI\t'
-    else:
-        features += 'notAndroidAPI\t'
-
-    if word.lower() in platforms:
+    if word in platforms:
         features += 'isPlat\t'
     else:
         features += 'notPlat\t'
 
-    if word.lower() in frams:
+    if word in frams:
         features += 'isFram\t'
     else:
         features += 'notFram\t'
 
-    if word.lower() in stans:
+    if word in stans:
         features += 'isStan\t'
     else:
         features += 'notStan\t'
 
-    if word.lower() in PLs:
+    if word in PLs:
         features += 'isPL\t'
     else:
         features += 'notPL\t'
 
-    if word.lower() in orgs:
+    if word in orgs:
         features += 'isOrg\t'
     else:
         features += 'notOrg\t'
-
-    if word.lower() in jQueryUIAPIs:
-        features += 'isJQueryUI\t'
-    else:
-        features += 'notJQueryUI\t'
     return features
 
 
@@ -254,20 +191,12 @@ if __name__=='__main__':
         word_cluster_dict[line.split()[1]] = line.split()[0]
     f.close()
 
-    AndroidClass = []
     f = open('../gazetteers/AndroidClassesPackages.txt', 'r')
+    AndroidClass = []
     for line in f:
         line = line.strip()
         if line:
-            AndroidClass.append(str(line).lower())
-    f.close()
-
-    AndroidAPI = []
-    f = open('../gazetteers/AndroidMethods.txt', 'r')
-    for line in f:
-        line = line.strip()
-        if line:
-            AndroidAPI.append(str(line).lower())
+            AndroidClass.append(line)
     f.close()
 
     f = open('../gazetteers/PlatformList.txt', 'r')
@@ -283,7 +212,7 @@ if __name__=='__main__':
     for line in f:
         line = line.rstrip()
         if line:
-            frams.append(str(line).lower())
+            frams.append(line)
     f.close()
 
     f = open('../gazetteers/SoftwareStandardList.txt', 'r')
@@ -310,13 +239,7 @@ if __name__=='__main__':
             orgs.append(str(line).lower())
     f.close()
 
-    f = open('../gazetteers/JQueryUIAPIs.txt', 'r')
-    jQueryUIAPIs = []
-    for line in f:
-        line = line.rstrip()
-        if line:
-            jQueryUIAPIs.append(str(line).lower())
-    f.close()
+
 
     fin = open(sys.argv[1], 'r')
     fout = open(sys.argv[2], 'w')
@@ -324,14 +247,14 @@ if __name__=='__main__':
     for line in fin:
         line = line.strip()
         if line:
-            (word, label) = line.split('\t')
+            (word, pos, label) = line.split('\t')
             OrthographicFeatures = GetOrthographicFeatures(word)
 
             ClusterFeatures = GetWordClusterFeatures(word, word_cluster_dict)
 
-            GazFeatures = GetGazetteerFeatures(word,AndroidClass, AndroidAPI, platforms, frams, stans, pls, orgs, jQueryUIAPIs)
+            GazFeatures = GetGazetteerFeatures(word, AndroidClass, platforms, frams, stans, pls, orgs)
 
-            allfeatures = word + '\t' + OrthographicFeatures + ClusterFeatures + GazFeatures + label
+            allfeatures = word + '\t' + OrthographicFeatures + ClusterFeatures + GazFeatures + pos + '\t' + label
             fout.write(allfeatures + '\n')
         else:
             fout.write('\n')
