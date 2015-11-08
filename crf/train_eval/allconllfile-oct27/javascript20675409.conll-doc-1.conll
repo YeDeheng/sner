@@ -144,7 +144,7 @@ O	749	750	.
 
 O	751	754	The
 O	755	767	dropdowns[i]
-O	768	780	.appendChild
+B-API	768	780	.appendChild
 O	781	782	(
 O	782	791	options[i
 O	792	795	]);

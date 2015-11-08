@@ -3397,13 +3397,13 @@ cut	O
 the	O
 portion	O
 of	O
-bitmap	B-Stan
+bitmap	O
 :	O
 
 2-	O
 The	O
 returned	O
-bitmap	B-Stan
+bitmap	O
 ,	O
 convert	O
 it	O
@@ -3446,7 +3446,7 @@ algorithm	O
 1	O
 )	O
 get	O
-Bitmap	B-Stan
+Bitmap	B-API
 object	O
 of	O
 your	O
@@ -3475,7 +3475,7 @@ array	O
 create	O
 a	O
 blank	O
-bitmap	B-Stan
+bitmap	O
 of	O
 desired	O
 height	O
@@ -3488,7 +3488,7 @@ method	O
 to	O
 copy	O
 initial	O
-bitmap	B-Stan
+bitmap	O
 data	O
 to	O
 a	O
@@ -3506,7 +3506,7 @@ last	O
 line	O
 to	O
 new	O
-bitmap	B-Stan
+bitmap	O
 as	O
 many	O
 times	O
@@ -3565,7 +3565,7 @@ Create	O
 BitmapDrawable	B-API
 from	O
 your	O
-bitmap	B-Stan
+bitmap	O
 or	O
 from	O
 resources	O

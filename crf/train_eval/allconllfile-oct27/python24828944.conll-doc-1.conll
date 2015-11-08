@@ -178,9 +178,9 @@ O	882	883	a
 O	884	890	cursor
 O	891	895	when
 O	896	905	executing
-B-PL	906	908	PL
-I-PL	909	910	/
-I-PL	911	914	SQL
+O	906	908	PL
+O	909	910	/
+O	911	914	SQL
 O	915	921	blocks
 O	922	924	as
 O	925	934	requested

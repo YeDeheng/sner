@@ -170,7 +170,7 @@ O	868	887	@codeSnippetRemoved
 O	888	891	and
 O	892	898	change
 O	899	903	your
-O	904	911	onclick
+B-API	904	911	onclick
 O	912	913	:
 O	914	933	@codeSnippetRemoved
 
@@ -211,7 +211,7 @@ O	1090	1091	.
 O	1092	1098	Inline
 O	1099	1105	events
 O	1106	1107	(
-O	1107	1114	onClick
+B-API	1107	1114	onClick
 O	1114	1115	)
 O	1115	1116	.
 
@@ -261,7 +261,7 @@ O	1327	1328	.
 O	1329	1333	Read
 O	1334	1338	more
 O	1339	1344	about
-O	1345	1350	.on()
+B-API	1345	1350	.on()
 O	1351	1353	in
 O	1354	1357	the
 O	1358	1371	documentation

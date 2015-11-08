@@ -103,7 +103,7 @@ O	472	478	Please
 O	479	483	look
 O	484	486	at
 O	487	489	my
-B-Fram	490	496	fiddle
+O	490	496	fiddle
 O	496	497	,
 O	498	500	it
 O	501	502	'
@@ -120,7 +120,7 @@ O	543	545	my
 O	546	550	site
 O	550	551	.
 
-B-Fram	552	558	Fiddle
+O	552	558	Fiddle
 O	559	560	:
 O	561	586	http://jsfiddle.net/4vdck
 

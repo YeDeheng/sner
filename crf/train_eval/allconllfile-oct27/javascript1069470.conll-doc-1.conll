@@ -88,7 +88,7 @@ O	421	423	in
 O	424	428	your
 O	429	433	call
 O	434	436	to
-O	437	447	setTimeout
+B-API	437	447	setTimeout
 O	447	448	.
 
 O	449	451	In
@@ -102,7 +102,7 @@ O	477	480	the
 O	481	489	function
 O	490	492	in
 O	493	496	the
-O	497	507	setTimeout
+B-API	497	507	setTimeout
 O	508	517	parameter
 O	518	520	is
 O	521	529	executed

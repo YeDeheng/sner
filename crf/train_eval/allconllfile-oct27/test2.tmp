@@ -1552,7 +1552,7 @@ O	683	686	can
 O	687	690	use
 O	691	692	a
 B-Stan	693	698	JCEKS
-I-Stan	699	707	keystore
+O	699	707	keystore
 O	708	710	to
 O	711	718	protect
 O	719	723	this
@@ -1937,7 +1937,7 @@ O	2662	2664	is
 O	2665	2672	similar
 O	2673	2675	to
 O	2676	2679	the
-O	2680	2683	DRM
+B-Stan	2680	2683	DRM
 O	2684	2691	problem
 O	2692	2693	(
 O	2693	2696	you
@@ -2457,7 +2457,7 @@ O	5001	5008	systems
 O	5009	5012	via
 O	5013	5014	a
 O	5015	5026	TLS-secured
-B-Stan	5027	5033	socket
+O	5027	5033	socket
 O	5033	5034	,
 O	5035	5038	you
 O	5039	5044	could
@@ -2614,7 +2614,7 @@ O	5813	5816	use
 O	5817	5818	a
 B-Plat	5819	5823	unix
 O	5824	5830	domain
-B-Stan	5831	5837	socket
+O	5831	5837	socket
 O	5838	5845	instead
 O	5845	5846	,
 O	5847	5851	then
@@ -2644,7 +2644,7 @@ O	5982	5990	restrict
 O	5991	5997	access
 O	5998	6000	to
 O	6001	6004	the
-B-Stan	6005	6011	socket
+O	6005	6011	socket
 O	6012	6014	to
 O	6015	6022	members
 O	6023	6025	of
@@ -2657,7 +2657,7 @@ O	6043	6050	doesn't
 O	6051	6055	have
 B-Plat	6056	6060	unix
 O	6061	6067	domain
-B-Stan	6068	6074	socket
+O	6068	6074	socket
 O	6075	6082	support
 O	6083	6085	in
 O	6086	6089	the
@@ -5629,7 +5629,7 @@ O	534	538	with
 O	539	542	one
 O	543	545	of
 O	546	550	many
-O	551	554	pdf
+B-Stan	551	554	pdf
 O	555	562	classes
 O	562	563	.
 
@@ -5637,7 +5637,7 @@ O	564	569	Start
 O	570	572	by
 O	573	580	putting
 O	581	584	the
-O	585	588	pdf
+B-Stan	585	588	pdf
 O	589	591	in
 O	592	595	the
 O	596	606	background
@@ -5779,7 +5779,7 @@ O	1208	1209	.
 
 O	1210	1211	I
 O	1212	1219	created
-O	1220	1223	pdf
+B-Stan	1220	1223	pdf
 O	1224	1228	with
 O	1229	1237	fillable
 O	1238	1242	form
@@ -5811,7 +5811,7 @@ O	18	23	based
 O	24	26	on
 O	27	35	variable
 B-PL	36	41	MYSQL
-B-API	42	45	IPN
+B-Stan	42	45	IPN
 
 O	46	51	Hello
 O	52	55	I'm
@@ -5844,7 +5844,7 @@ O	181	186	payer
 O	187	192	email
 O	193	199	within
 O	200	202	my
-B-API	203	206	IPN
+B-Stan	203	206	IPN
 O	207	209	to
 O	210	219	introduce
 O	220	221	a

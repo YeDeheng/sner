@@ -2,7 +2,7 @@ B-PL	0	4	Java
 O	4	5	,
 B-Fram	6	12	Tomcat
 O	13	16	and
-O	17	23	Jersey
+B-Fram	17	23	Jersey
 O	24	31	hosting
 
 O	32	36	Does
@@ -26,7 +26,7 @@ O	126	127	:
 
 B-PL	128	132	Java
 B-Fram	133	139	Tomcat
-O	140	146	Jersey
+I-Fram	140	146	Jersey
 B-PL	147	152	MySQL
 
 O	153	154	I

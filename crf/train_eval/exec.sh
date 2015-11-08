@@ -7,7 +7,6 @@
 
 for i in {0..9}
 do
-	crf_learn template train${i}.data model
-	crf_test -m model test${i}.data  > crfresult$i
-	rm -f model
+	crf_learn template train${i}.data model$i -t
+	crf_test -m model$i test${i}.data  > crfresult$i
 done

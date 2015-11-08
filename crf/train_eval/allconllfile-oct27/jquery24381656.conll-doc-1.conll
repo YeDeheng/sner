@@ -310,7 +310,7 @@ O	1380	1384	that
 O	1385	1388	you
 O	1389	1395	should
 O	1396	1399	use
-B-API	1400	1423	.addClass('myhoverclass
+O	1400	1423	.addClass('myhoverclass
 O	1424	1426	')
 O	1427	1434	instead
 O	1435	1437	of

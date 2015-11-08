@@ -1,0 +1,51 @@
+O	0	8	Stopping
+B-API	9	35	OnMyLocationChangeListener
+
+O	36	37	I
+O	38	42	want
+O	43	45	to
+O	46	50	stop
+O	51	54	the
+B-API	55	71	LocationListener
+O	72	76	once
+O	77	79	it
+O	80	83	has
+O	84	87	the
+O	88	95	current
+O	96	104	location
+O	105	108	and
+O	109	115	zoomed
+O	116	118	to
+O	119	121	it
+O	121	122	.
+
+O	123	126	Can
+O	127	130	you
+O	131	137	please
+O	138	142	help
+O	143	144	a
+O	145	151	newbie
+O	151	152	?
+
+O	153	157	Here
+O	158	159	'
+O	160	161	s
+O	162	164	my
+O	165	169	code
+O	170	171	:
+O	172	191	@codeSnippetRemoved
+
+O	192	195	Set
+O	196	199	the
+O	200	203	map
+O	204	212	location
+O	213	221	listener
+O	222	224	to
+O	225	229	null
+O	230	232	to
+O	233	237	turn
+O	238	240	it
+O	241	244	off
+O	244	245	.
+
+O	246	265	@codeSnippetRemoved

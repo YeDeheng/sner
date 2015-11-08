@@ -358,8 +358,8 @@ POST	B-API
 always	O
 yields	O
 HttpUtils	B-API
-:	I-API
-javax.net.ssl.SSLException	I-API
+:	O
+javax.net.ssl.SSLException	B-API
 :	O
 Not	O
 trusted	O
@@ -389,7 +389,7 @@ I	O
 successfully	O
 created	O
 a	O
-keystore	B-API
+keystore	O
 from	O
 the	O
 certificate	O
@@ -502,7 +502,7 @@ Class	O
 To	O
 get	O
 Your	O
-HttpClient.And	B-API
+HttpClient.And	O
 Check	O
 if	O
 it	O
@@ -510,7 +510,7 @@ helps	O
 .	O
 
 package	O
-com.android.MyCellFamily.DAHttp	B-API
+com.android.MyCellFamily.DAHttp	O
 ;	O
 @codeSnippetRemoved	O
 
@@ -40535,7 +40535,7 @@ with	O
 Here	O
 is	O
 the	O
-fiddle	B-Fram
+fiddle	O
 updated	O
 :	O
 http://jsfiddle.net/D5fJa/1	O
@@ -44834,7 +44834,7 @@ I	O
 set	O
 up	O
 a	O
-fiddle	B-Fram
+fiddle	O
 here	O
 to	O
 demonstrate	O
@@ -48213,7 +48213,7 @@ can	O
 use	O
 a	O
 JCEKS	B-Stan
-keystore	I-Stan
+keystore	O
 to	O
 protect	O
 this	O
@@ -48598,7 +48598,7 @@ is	O
 similar	O
 to	O
 the	O
-DRM	O
+DRM	B-Stan
 problem	O
 (	O
 you	O
@@ -49118,7 +49118,7 @@ systems	O
 via	O
 a	O
 TLS-secured	O
-socket	B-Stan
+socket	O
 ,	O
 you	O
 could	O
@@ -49275,7 +49275,7 @@ use	O
 a	O
 unix	B-Plat
 domain	O
-socket	B-Stan
+socket	O
 instead	O
 ,	O
 then	O
@@ -49305,7 +49305,7 @@ restrict	O
 access	O
 to	O
 the	O
-socket	B-Stan
+socket	O
 to	O
 members	O
 of	O
@@ -49318,7 +49318,7 @@ doesn't	O
 have	O
 unix	B-Plat
 domain	O
-socket	B-Stan
+socket	O
 support	O
 in	O
 the	O
@@ -52290,7 +52290,7 @@ with	O
 one	O
 of	O
 many	O
-pdf	O
+pdf	B-Stan
 classes	O
 .	O
 
@@ -52298,7 +52298,7 @@ Start	O
 by	O
 putting	O
 the	O
-pdf	O
+pdf	B-Stan
 in	O
 the	O
 background	O
@@ -52440,7 +52440,7 @@ approach	O
 
 I	O
 created	O
-pdf	O
+pdf	B-Stan
 with	O
 fillable	O
 form	O
@@ -52472,7 +52472,7 @@ based	O
 on	O
 variable	O
 MYSQL	B-PL
-IPN	B-API
+IPN	B-Stan
 
 Hello	O
 I'm	O
@@ -52505,7 +52505,7 @@ payer	O
 email	O
 within	O
 my	O
-IPN	B-API
+IPN	B-Stan
 to	O
 introduce	O
 a	O
@@ -58005,13 +58005,13 @@ cut	O
 the	O
 portion	O
 of	O
-bitmap	B-Stan
+bitmap	O
 :	O
 
 2-	O
 The	O
 returned	O
-bitmap	B-Stan
+bitmap	O
 ,	O
 convert	O
 it	O
@@ -58054,7 +58054,7 @@ algorithm	O
 1	O
 )	O
 get	O
-Bitmap	B-Stan
+Bitmap	B-API
 object	O
 of	O
 your	O
@@ -58083,7 +58083,7 @@ array	O
 create	O
 a	O
 blank	O
-bitmap	B-Stan
+bitmap	O
 of	O
 desired	O
 height	O
@@ -58096,7 +58096,7 @@ method	O
 to	O
 copy	O
 initial	O
-bitmap	B-Stan
+bitmap	O
 data	O
 to	O
 a	O
@@ -58114,7 +58114,7 @@ last	O
 line	O
 to	O
 new	O
-bitmap	B-Stan
+bitmap	O
 as	O
 many	O
 times	O
@@ -58173,7 +58173,7 @@ Create	O
 BitmapDrawable	B-API
 from	O
 your	O
-bitmap	B-Stan
+bitmap	O
 or	O
 from	O
 resources	O
@@ -65237,7 +65237,7 @@ not	O
 .slider	B-API
 -frame	I-API
 
-Fiddle	B-Fram
+Fiddle	O
 me	O
 this	O
 .	O

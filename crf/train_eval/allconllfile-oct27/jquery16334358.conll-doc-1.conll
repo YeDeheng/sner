@@ -3,7 +3,7 @@ B-PL	7	11	html
 O	12	18	string
 O	19	21	in
 B-Fram	22	28	JQuery
-O	29	35	Mobile
+I-Fram	29	35	Mobile
 O	36	44	template
 
 O	45	46	I
@@ -44,12 +44,12 @@ O	189	193	have
 O	194	199	tried
 O	200	205	using
 O	206	209	${$
-O	210	217	.mobile
-O	218	223	.html
+B-API	210	217	.mobile
+I-API	218	223	.html
 O	224	225	(
 O	225	229	Body
 O	229	230	)
-O	231	238	.text()
+B-API	231	238	.text()
 O	239	240	}
 O	241	244	but
 O	245	249	that
@@ -92,7 +92,7 @@ O	427	428	?
 O	429	434	Using
 O	435	437	{{
 B-PL	438	442	html
-I-PL	443	447	Body
+O	443	447	Body
 O	448	450	}}
 O	451	453	in
 O	454	456	my

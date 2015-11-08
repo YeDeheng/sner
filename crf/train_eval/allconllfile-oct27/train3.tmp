@@ -358,8 +358,8 @@ B-API	120	124	POST
 O	125	131	always
 O	132	138	yields
 B-API	139	148	HttpUtils
-I-API	149	150	:
-I-API	151	177	javax.net.ssl.SSLException
+O	149	150	:
+B-API	151	177	javax.net.ssl.SSLException
 O	178	179	:
 O	180	183	Not
 O	184	191	trusted
@@ -389,7 +389,7 @@ O	321	322	I
 O	323	335	successfully
 O	336	343	created
 O	344	345	a
-B-API	346	354	keystore
+O	346	354	keystore
 O	355	359	from
 O	360	363	the
 O	364	375	certificate
@@ -502,7 +502,7 @@ O	927	932	Class
 O	933	935	To
 O	936	939	get
 O	940	944	Your
-B-API	945	959	HttpClient.And
+O	945	959	HttpClient.And
 O	960	965	Check
 O	966	968	if
 O	969	971	it
@@ -510,7 +510,7 @@ O	972	977	helps
 O	977	978	.
 
 O	979	986	package
-B-API	987	1018	com.android.MyCellFamily.DAHttp
+O	987	1018	com.android.MyCellFamily.DAHttp
 O	1019	1020	;
 O	1021	1040	@codeSnippetRemoved
 
@@ -40535,7 +40535,7 @@ O	586	605	@codeSnippetRemoved
 O	606	610	Here
 O	611	613	is
 O	614	617	the
-B-Fram	618	624	fiddle
+O	618	624	fiddle
 O	625	632	updated
 O	633	634	:
 O	635	662	http://jsfiddle.net/D5fJa/1
@@ -44834,7 +44834,7 @@ O	1021	1022	I
 O	1023	1026	set
 O	1027	1029	up
 O	1030	1031	a
-B-Fram	1032	1038	fiddle
+O	1032	1038	fiddle
 O	1039	1043	here
 O	1044	1046	to
 O	1047	1058	demonstrate
@@ -48213,7 +48213,7 @@ O	683	686	can
 O	687	690	use
 O	691	692	a
 B-Stan	693	698	JCEKS
-I-Stan	699	707	keystore
+O	699	707	keystore
 O	708	710	to
 O	711	718	protect
 O	719	723	this
@@ -48598,7 +48598,7 @@ O	2662	2664	is
 O	2665	2672	similar
 O	2673	2675	to
 O	2676	2679	the
-O	2680	2683	DRM
+B-Stan	2680	2683	DRM
 O	2684	2691	problem
 O	2692	2693	(
 O	2693	2696	you
@@ -49118,7 +49118,7 @@ O	5001	5008	systems
 O	5009	5012	via
 O	5013	5014	a
 O	5015	5026	TLS-secured
-B-Stan	5027	5033	socket
+O	5027	5033	socket
 O	5033	5034	,
 O	5035	5038	you
 O	5039	5044	could
@@ -49275,7 +49275,7 @@ O	5813	5816	use
 O	5817	5818	a
 B-Plat	5819	5823	unix
 O	5824	5830	domain
-B-Stan	5831	5837	socket
+O	5831	5837	socket
 O	5838	5845	instead
 O	5845	5846	,
 O	5847	5851	then
@@ -49305,7 +49305,7 @@ O	5982	5990	restrict
 O	5991	5997	access
 O	5998	6000	to
 O	6001	6004	the
-B-Stan	6005	6011	socket
+O	6005	6011	socket
 O	6012	6014	to
 O	6015	6022	members
 O	6023	6025	of
@@ -49318,7 +49318,7 @@ O	6043	6050	doesn't
 O	6051	6055	have
 B-Plat	6056	6060	unix
 O	6061	6067	domain
-B-Stan	6068	6074	socket
+O	6068	6074	socket
 O	6075	6082	support
 O	6083	6085	in
 O	6086	6089	the
@@ -52290,7 +52290,7 @@ O	534	538	with
 O	539	542	one
 O	543	545	of
 O	546	550	many
-O	551	554	pdf
+B-Stan	551	554	pdf
 O	555	562	classes
 O	562	563	.
 
@@ -52298,7 +52298,7 @@ O	564	569	Start
 O	570	572	by
 O	573	580	putting
 O	581	584	the
-O	585	588	pdf
+B-Stan	585	588	pdf
 O	589	591	in
 O	592	595	the
 O	596	606	background
@@ -52440,7 +52440,7 @@ O	1208	1209	.
 
 O	1210	1211	I
 O	1212	1219	created
-O	1220	1223	pdf
+B-Stan	1220	1223	pdf
 O	1224	1228	with
 O	1229	1237	fillable
 O	1238	1242	form
@@ -52472,7 +52472,7 @@ O	18	23	based
 O	24	26	on
 O	27	35	variable
 B-PL	36	41	MYSQL
-B-API	42	45	IPN
+B-Stan	42	45	IPN
 
 O	46	51	Hello
 O	52	55	I'm
@@ -52505,7 +52505,7 @@ O	181	186	payer
 O	187	192	email
 O	193	199	within
 O	200	202	my
-B-API	203	206	IPN
+B-Stan	203	206	IPN
 O	207	209	to
 O	210	219	introduce
 O	220	221	a
@@ -58005,13 +58005,13 @@ O	671	674	cut
 O	675	678	the
 O	679	686	portion
 O	687	689	of
-B-Stan	690	696	bitmap
+O	690	696	bitmap
 O	697	698	:
 
 O	699	701	2-
 O	702	705	The
 O	706	714	returned
-B-Stan	715	721	bitmap
+O	715	721	bitmap
 O	721	722	,
 O	723	730	convert
 O	731	733	it
@@ -58054,7 +58054,7 @@ O	905	906	:
 O	907	908	1
 O	908	909	)
 O	910	913	get
-B-Stan	914	920	Bitmap
+B-API	914	920	Bitmap
 O	921	927	object
 O	928	930	of
 O	931	935	your
@@ -58083,7 +58083,7 @@ O	1017	1018	)
 O	1019	1025	create
 O	1026	1027	a
 O	1028	1033	blank
-B-Stan	1034	1040	bitmap
+O	1034	1040	bitmap
 O	1041	1043	of
 O	1044	1051	desired
 O	1052	1058	height
@@ -58096,7 +58096,7 @@ O	1078	1084	method
 O	1085	1087	to
 O	1088	1092	copy
 O	1093	1100	initial
-B-Stan	1101	1107	bitmap
+O	1101	1107	bitmap
 O	1108	1112	data
 O	1113	1115	to
 O	1116	1117	a
@@ -58114,7 +58114,7 @@ O	1153	1157	last
 O	1158	1162	line
 O	1163	1165	to
 O	1166	1169	new
-B-Stan	1170	1176	bitmap
+O	1170	1176	bitmap
 O	1177	1179	as
 O	1180	1184	many
 O	1185	1190	times
@@ -58173,7 +58173,7 @@ O	1431	1437	Create
 B-API	1438	1452	BitmapDrawable
 O	1453	1457	from
 O	1458	1462	your
-B-Stan	1463	1469	bitmap
+O	1463	1469	bitmap
 O	1470	1472	or
 O	1473	1477	from
 O	1478	1487	resources
@@ -65237,7 +65237,7 @@ O	1076	1079	not
 B-API	1080	1087	.slider
 I-API	1088	1094	-frame
 
-B-Fram	1095	1101	Fiddle
+O	1095	1101	Fiddle
 O	1102	1104	me
 O	1105	1109	this
 O	1109	1110	.

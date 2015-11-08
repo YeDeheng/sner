@@ -3397,13 +3397,13 @@ O	671	674	cut
 O	675	678	the
 O	679	686	portion
 O	687	689	of
-B-Stan	690	696	bitmap
+O	690	696	bitmap
 O	697	698	:
 
 O	699	701	2-
 O	702	705	The
 O	706	714	returned
-B-Stan	715	721	bitmap
+O	715	721	bitmap
 O	721	722	,
 O	723	730	convert
 O	731	733	it
@@ -3446,7 +3446,7 @@ O	905	906	:
 O	907	908	1
 O	908	909	)
 O	910	913	get
-B-Stan	914	920	Bitmap
+B-API	914	920	Bitmap
 O	921	927	object
 O	928	930	of
 O	931	935	your
@@ -3475,7 +3475,7 @@ O	1017	1018	)
 O	1019	1025	create
 O	1026	1027	a
 O	1028	1033	blank
-B-Stan	1034	1040	bitmap
+O	1034	1040	bitmap
 O	1041	1043	of
 O	1044	1051	desired
 O	1052	1058	height
@@ -3488,7 +3488,7 @@ O	1078	1084	method
 O	1085	1087	to
 O	1088	1092	copy
 O	1093	1100	initial
-B-Stan	1101	1107	bitmap
+O	1101	1107	bitmap
 O	1108	1112	data
 O	1113	1115	to
 O	1116	1117	a
@@ -3506,7 +3506,7 @@ O	1153	1157	last
 O	1158	1162	line
 O	1163	1165	to
 O	1166	1169	new
-B-Stan	1170	1176	bitmap
+O	1170	1176	bitmap
 O	1177	1179	as
 O	1180	1184	many
 O	1185	1190	times
@@ -3565,7 +3565,7 @@ O	1431	1437	Create
 B-API	1438	1452	BitmapDrawable
 O	1453	1457	from
 O	1458	1462	your
-B-Stan	1463	1469	bitmap
+O	1463	1469	bitmap
 O	1470	1472	or
 O	1473	1477	from
 O	1478	1487	resources

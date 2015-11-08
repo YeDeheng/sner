@@ -82,10 +82,10 @@ O	373	377	Take
 O	378	379	a
 O	380	384	look
 O	385	387	at
-B-Fram	388	397	Microsoft
-I-Fram	398	399	'
-I-Fram	400	401	s
-I-Fram	402	412	Translator
+O	388	397	Microsoft
+O	398	399	'
+O	400	401	s
+B-Fram	402	412	Translator
 O	413	419	Widget
 
 O	420	422	It

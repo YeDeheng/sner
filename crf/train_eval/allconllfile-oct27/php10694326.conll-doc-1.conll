@@ -113,7 +113,7 @@ O	534	538	with
 O	539	542	one
 O	543	545	of
 O	546	550	many
-O	551	554	pdf
+B-Stan	551	554	pdf
 O	555	562	classes
 O	562	563	.
 
@@ -121,7 +121,7 @@ O	564	569	Start
 O	570	572	by
 O	573	580	putting
 O	581	584	the
-O	585	588	pdf
+B-Stan	585	588	pdf
 O	589	591	in
 O	592	595	the
 O	596	606	background
@@ -263,7 +263,7 @@ O	1208	1209	.
 
 O	1210	1211	I
 O	1212	1219	created
-O	1220	1223	pdf
+B-Stan	1220	1223	pdf
 O	1224	1228	with
 O	1229	1237	fillable
 O	1238	1242	form

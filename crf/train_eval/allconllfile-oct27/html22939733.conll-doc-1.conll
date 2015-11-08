@@ -1,6 +1,6 @@
 B-PL	0	4	HTML
 O	5	10	table
-O	11	13	td
+B-API	11	13	td
 O	14	15	'
 O	16	17	s
 O	18	21	not
@@ -137,7 +137,7 @@ O	586	605	@codeSnippetRemoved
 O	606	610	Here
 O	611	613	is
 O	614	617	the
-B-Fram	618	624	fiddle
+O	618	624	fiddle
 O	625	632	updated
 O	633	634	:
 O	635	662	http://jsfiddle.net/D5fJa/1

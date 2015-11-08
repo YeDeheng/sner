@@ -16,7 +16,7 @@ O	77	83	graphs
 O	83	84	.
 
 O	85	86	A
-B-API	87	105	BidirectionalGraph
+O	87	105	BidirectionalGraph
 O	106	111	takes
 O	112	115	two
 O	116	125	templates
@@ -124,7 +124,7 @@ O	620	623	But
 O	624	628	when
 O	629	630	I
 O	631	635	call
-B-API	636	655	graph.IncomingEdges
+O	636	655	graph.IncomingEdges
 O	656	657	(
 O	657	663	vertex
 O	663	664	)
@@ -151,15 +151,15 @@ O	750	752	to
 O	753	756	say
 O	757	758	:
 
-B-API	759	778	graph.IncomingEdges
-I-API	779	818	GraphThatInheritsFromBidirectionalGraph
-I-API	819	829	VertexType
+O	759	778	graph.IncomingEdges
+O	779	818	GraphThatInheritsFromBidirectionalGraph
+O	819	829	VertexType
 O	829	830	,
-B-API	831	839	EdgeType
+O	831	839	EdgeType
 O	839	840	,
-B-API	841	851	VertexType
+O	841	851	VertexType
 O	851	852	,
-B-API	853	861	EdgeType
+O	853	861	EdgeType
 O	862	863	(
 O	863	869	vertex
 O	869	870	)
@@ -244,7 +244,7 @@ O	1214	1215	,
 O	1216	1221	which
 O	1222	1230	inherits
 O	1231	1235	from
-B-API	1236	1254	BidirectionalGraph
+O	1236	1254	BidirectionalGraph
 O	1254	1255	?
 
 O	1256	1258	It
@@ -334,12 +334,12 @@ O	1694	1696	is
 O	1697	1701	able
 O	1702	1704	to
 O	1705	1710	infer
-B-API	1711	1721	TGraphType
+O	1711	1721	TGraphType
 O	1722	1725	and
-B-API	1726	1733	TVertex
+O	1726	1733	TVertex
 O	1734	1737	but
 O	1738	1741	not
-B-API	1742	1747	TEgde
+O	1742	1747	TEgde
 O	1747	1748	,
 O	1749	1751	as
 O	1752	1754	it
@@ -347,7 +347,7 @@ O	1755	1760	would
 O	1761	1768	require
 O	1769	1778	inferring
 O	1779	1782	the
-B-API	1783	1788	TEdge
+O	1783	1788	TEdge
 O	1789	1793	from
 O	1794	1797	the
 O	1798	1802	type
@@ -404,10 +404,10 @@ O	2058	2063	other
 O	2064	2068	hand
 O	2068	2069	,
 O	2070	2078	includes
-B-API	2079	2097	BidirectionalGraph
-I-API	2098	2105	TVertex
+O	2079	2097	BidirectionalGraph
+O	2098	2105	TVertex
 O	2105	2106	,
-B-API	2107	2112	TEdge
+O	2107	2112	TEdge
 O	2113	2115	as
 O	2116	2117	a
 O	2118	2127	parameter
@@ -445,7 +445,7 @@ O	2284	2286	is
 O	2287	2288	a
 O	2289	2295	unique
 O	2296	2300	type
-B-API	2301	2319	BidirectionalGraph
+O	2301	2319	BidirectionalGraph
 O	2320	2327	AVertex
 O	2327	2328	,
 O	2329	2335	AnEdge
@@ -460,9 +460,9 @@ O	2372	2374	is
 O	2375	2379	able
 O	2380	2382	to
 O	2383	2388	infer
-B-API	2389	2396	TVertex
+O	2389	2396	TVertex
 O	2397	2400	and
-B-API	2401	2406	TEdge
+O	2401	2406	TEdge
 O	2406	2407	.
 
 O	2408	2412	Note
@@ -472,17 +472,17 @@ O	2421	2424	the
 O	2425	2434	parameter
 O	2435	2439	type
 O	2440	2444	were
-B-API	2445	2451	IGraph
-I-API	2452	2459	TVertex
+O	2445	2451	IGraph
+O	2452	2459	TVertex
 O	2459	2460	,
-B-API	2461	2466	TEdge
+O	2461	2466	TEdge
 O	2467	2468	(
 O	2468	2475	instead
 O	2476	2478	of
-B-API	2479	2497	BidirectionalGraph
-I-API	2498	2505	TVertex
+O	2479	2497	BidirectionalGraph
+O	2498	2505	TVertex
 O	2505	2506	,
-B-API	2507	2512	TEdge
+O	2507	2512	TEdge
 O	2512	2513	)
 O	2514	2517	and
 O	2518	2524	AGraph
@@ -515,7 +515,7 @@ O	2684	2685	,
 O	2686	2689	for
 O	2690	2697	example
 O	2697	2698	,
-B-API	2699	2706	TVertex
+O	2699	2706	TVertex
 O	2707	2709	is
 O	2710	2717	AVertex
 O	2718	2720	or

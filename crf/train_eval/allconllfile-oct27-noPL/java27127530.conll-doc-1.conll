@@ -1,0 +1,87 @@
+O	0	4	java
+O	5	13	compiler
+O	14	19	error
+O	20	23	for
+O	24	26	hw
+
+O	27	30	can
+O	31	38	someone
+O	39	43	help
+O	44	46	me
+O	47	50	and
+O	51	54	see
+O	55	57	if
+O	58	61	how
+O	62	64	to
+O	65	68	fix
+O	69	73	this
+O	73	74	?
+
+O	75	79	this
+O	80	82	is
+O	83	86	the
+O	87	92	error
+O	93	94	I
+O	95	98	got
+O	99	102	can
+O	103	110	someone
+O	111	115	tell
+O	116	118	me
+O	119	123	what
+O	124	125	i
+O	126	129	did
+O	130	135	wrong
+
+O	136	140	When
+O	141	144	you
+O	145	149	call
+O	150	151	a
+O	152	158	method
+O	159	162	you
+O	163	168	don't
+O	169	176	specify
+O	177	180	the
+O	181	186	types
+O	187	189	of
+O	190	193	the
+O	194	203	arguments
+O	203	204	.
+
+O	205	211	Change
+O	212	231	@codeSnippetRemoved
+
+O	232	234	to
+O	235	254	@codeSnippetRemoved
+
+O	255	261	Change
+O	262	266	this
+O	267	271	line
+O	272	274	by
+O	275	283	removing
+O	284	288	type
+O	289	291	of
+O	292	301	parameter
+O	302	306	when
+O	307	314	calling
+O	315	318	the
+O	319	325	method
+O	326	327	:
+O	328	347	@codeSnippetRemoved
+
+O	348	350	To
+O	351	370	@codeSnippetRemoved
+
+O	371	374	You
+O	375	379	have
+O	380	383	put
+
+O	384	394	Travelable
+O	395	410	otherTravelable
+O	411	413	in
+O	414	417	the
+O	418	424	return
+O	425	429	line
+O	430	432	of
+O	433	444	toTime.just
+O	445	451	return
+O	452	471	@codeSnippetRemoved

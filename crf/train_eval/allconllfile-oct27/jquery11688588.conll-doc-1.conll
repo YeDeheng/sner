@@ -24,7 +24,7 @@ O	100	101	.
 
 O	102	103	I
 O	104	108	used
-B-API	109	126	request.GET['user
+O	109	126	request.GET['user
 O	127	128	'
 O	129	130	]
 O	131	134	but

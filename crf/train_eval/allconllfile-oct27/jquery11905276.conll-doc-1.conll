@@ -164,7 +164,7 @@ O	833	837	note
 O	838	842	that
 O	843	845	if
 O	846	849	the
-O	850	857	doctype
+B-API	850	857	doctype
 O	858	860	of
 O	861	864	the
 O	865	869	page

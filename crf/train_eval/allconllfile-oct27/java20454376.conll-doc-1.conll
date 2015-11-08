@@ -405,7 +405,7 @@ O	2036	2040	your
 O	2041	2046	Enter
 O	2047	2052	class
 O	2053	2054	a
-O	2055	2062	getText
+B-API	2055	2062	getText
 O	2063	2069	method
 O	2070	2074	that
 O	2075	2079	will

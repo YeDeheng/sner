@@ -2,7 +2,7 @@ B-PL	0	3	PHP
 O	4	10	Script
 O	11	14	Not
 O	15	24	Receiving
-O	25	29	Post
+B-API	25	29	Post
 O	30	34	Data
 
 O	35	36	I
@@ -172,7 +172,7 @@ O	756	760	page
 O	761	763	on
 O	764	767	the
 B-Stan	768	772	HTTP
-O	773	777	POST
+B-API	773	777	POST
 O	778	782	data
 O	783	794	superglobal
 O	795	800	array

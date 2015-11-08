@@ -358,8 +358,8 @@ POST	B-API
 always	O
 yields	O
 HttpUtils	B-API
-:	I-API
-javax.net.ssl.SSLException	I-API
+:	O
+javax.net.ssl.SSLException	B-API
 :	O
 Not	O
 trusted	O
@@ -389,7 +389,7 @@ I	O
 successfully	O
 created	O
 a	O
-keystore	B-API
+keystore	O
 from	O
 the	O
 certificate	O
@@ -502,7 +502,7 @@ Class	O
 To	O
 get	O
 Your	O
-HttpClient.And	B-API
+HttpClient.And	O
 Check	O
 if	O
 it	O
@@ -510,7 +510,7 @@ helps	O
 .	O
 
 package	O
-com.android.MyCellFamily.DAHttp	B-API
+com.android.MyCellFamily.DAHttp	O
 ;	O
 @codeSnippetRemoved	O
 

@@ -287,7 +287,7 @@ O	1504	1505	?
 
 B-PL	1506	1509	php
 O	1510	1514	echo
-O	1515	1525	base_url()
+B-API	1515	1525	base_url()
 O	1525	1526	?
 
 O	1527	1545	student_controller

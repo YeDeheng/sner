@@ -1,7 +1,7 @@
 O	0	3	How
 O	4	6	to
 O	7	14	connect
-B-Fram	15	24	draggable
+B-API	15	24	draggable
 O	25	29	divs
 
 O	30	31	I
@@ -332,7 +332,7 @@ O	1445	1446	.
 O	1447	1450	you
 O	1451	1454	can
 O	1455	1458	use
-O	1459	1466	jsplumb
+B-Fram	1459	1466	jsplumb
 O	1467	1474	library
 O	1475	1477	to
 O	1478	1485	achieve

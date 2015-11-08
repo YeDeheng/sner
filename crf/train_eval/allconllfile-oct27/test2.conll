@@ -1552,7 +1552,7 @@ can	O
 use	O
 a	O
 JCEKS	B-Stan
-keystore	I-Stan
+keystore	O
 to	O
 protect	O
 this	O
@@ -1937,7 +1937,7 @@ is	O
 similar	O
 to	O
 the	O
-DRM	O
+DRM	B-Stan
 problem	O
 (	O
 you	O
@@ -2457,7 +2457,7 @@ systems	O
 via	O
 a	O
 TLS-secured	O
-socket	B-Stan
+socket	O
 ,	O
 you	O
 could	O
@@ -2614,7 +2614,7 @@ use	O
 a	O
 unix	B-Plat
 domain	O
-socket	B-Stan
+socket	O
 instead	O
 ,	O
 then	O
@@ -2644,7 +2644,7 @@ restrict	O
 access	O
 to	O
 the	O
-socket	B-Stan
+socket	O
 to	O
 members	O
 of	O
@@ -2657,7 +2657,7 @@ doesn't	O
 have	O
 unix	B-Plat
 domain	O
-socket	B-Stan
+socket	O
 support	O
 in	O
 the	O
@@ -5629,7 +5629,7 @@ with	O
 one	O
 of	O
 many	O
-pdf	O
+pdf	B-Stan
 classes	O
 .	O
 
@@ -5637,7 +5637,7 @@ Start	O
 by	O
 putting	O
 the	O
-pdf	O
+pdf	B-Stan
 in	O
 the	O
 background	O
@@ -5779,7 +5779,7 @@ approach	O
 
 I	O
 created	O
-pdf	O
+pdf	B-Stan
 with	O
 fillable	O
 form	O
@@ -5811,7 +5811,7 @@ based	O
 on	O
 variable	O
 MYSQL	B-PL
-IPN	B-API
+IPN	B-Stan
 
 Hello	O
 I'm	O
@@ -5844,7 +5844,7 @@ payer	O
 email	O
 within	O
 my	O
-IPN	B-API
+IPN	B-Stan
 to	O
 introduce	O
 a	O

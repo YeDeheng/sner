@@ -115,7 +115,7 @@ O	514	533	@codeSnippetRemoved
 O	534	536	If
 O	537	540	you
 O	541	548	install
-B-Fram	549	555	Groovy
+B-PL	549	555	Groovy
 O	556	559	you
 O	560	563	can
 O	564	567	use
@@ -134,7 +134,7 @@ O	645	655	properties
 O	655	656	.
 
 O	657	667	Installing
-B-Fram	668	674	Groovy
+B-PL	668	674	Groovy
 O	675	677	is
 O	678	680	as
 O	681	685	easy

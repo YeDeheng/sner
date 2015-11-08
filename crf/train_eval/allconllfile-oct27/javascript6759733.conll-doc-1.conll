@@ -7,7 +7,7 @@ O	39	40	?
 
 O	41	43	In
 O	44	48	this
-B-Fram	49	55	fiddle
+O	49	55	fiddle
 O	56	84	http://jsfiddle.net/CBxbT/29
 O	84	85	,
 O	86	88	if
@@ -62,7 +62,7 @@ O	305	310	boxes
 O	310	311	.
 
 O	312	315	The
-B-Fram	316	322	fiddle
+O	316	322	fiddle
 O	323	328	works
 O	328	329	,
 O	330	333	but
@@ -112,7 +112,7 @@ O	519	520	,
 O	521	528	whereas
 O	529	531	in
 O	532	535	the
-B-Fram	536	542	fiddle
+O	536	542	fiddle
 O	542	543	,
 O	544	546	it
 O	547	552	keeps
@@ -156,7 +156,7 @@ O	706	725	@codeSnippetRemoved
 
 O	726	730	code
 O	731	735	from
-B-Fram	736	742	fiddle
+O	736	742	fiddle
 O	743	762	@codeSnippetRemoved
 
 O	763	765	My

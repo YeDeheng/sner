@@ -358,8 +358,8 @@ B-API	120	124	POST
 O	125	131	always
 O	132	138	yields
 B-API	139	148	HttpUtils
-I-API	149	150	:
-I-API	151	177	javax.net.ssl.SSLException
+O	149	150	:
+B-API	151	177	javax.net.ssl.SSLException
 O	178	179	:
 O	180	183	Not
 O	184	191	trusted
@@ -389,7 +389,7 @@ O	321	322	I
 O	323	335	successfully
 O	336	343	created
 O	344	345	a
-B-API	346	354	keystore
+O	346	354	keystore
 O	355	359	from
 O	360	363	the
 O	364	375	certificate
@@ -502,7 +502,7 @@ O	927	932	Class
 O	933	935	To
 O	936	939	get
 O	940	944	Your
-B-API	945	959	HttpClient.And
+O	945	959	HttpClient.And
 O	960	965	Check
 O	966	968	if
 O	969	971	it
@@ -510,7 +510,7 @@ O	972	977	helps
 O	977	978	.
 
 O	979	986	package
-B-API	987	1018	com.android.MyCellFamily.DAHttp
+O	987	1018	com.android.MyCellFamily.DAHttp
 O	1019	1020	;
 O	1021	1040	@codeSnippetRemoved
 
