@@ -1,0 +1,70 @@
+processed 6827 tokens with 283 phrases; found: 277 phrases; correct: 223.
+accuracy:  98.46%; precision:  80.51%; recall:  78.80%; FB1:  79.64
+              API: precision:  77.12%; recall:  77.12%; FB1:  77.12  118
+             Fram: precision:  75.00%; recall:  70.59%; FB1:  72.73  64
+               PL: precision:  88.06%; recall:  95.16%; FB1:  91.47  67
+             Plat: precision: 100.00%; recall:  70.00%; FB1:  82.35  7
+             Stan: precision:  85.71%; recall:  72.00%; FB1:  78.26  21
+processed 8130 tokens with 264 phrases; found: 241 phrases; correct: 202.
+accuracy:  98.70%; precision:  83.82%; recall:  76.52%; FB1:  80.00
+              API: precision:  76.29%; recall:  69.81%; FB1:  72.91  97
+             Fram: precision:  80.43%; recall:  77.08%; FB1:  78.72  46
+               PL: precision:  96.92%; recall: 100.00%; FB1:  98.44  65
+             Plat: precision:  87.50%; recall:  87.50%; FB1:  87.50  8
+             Stan: precision:  84.00%; recall:  53.85%; FB1:  65.62  25
+processed 7063 tokens with 206 phrases; found: 179 phrases; correct: 157.
+accuracy:  99.04%; precision:  87.71%; recall:  76.21%; FB1:  81.56
+              API: precision:  88.46%; recall:  62.16%; FB1:  73.02  52
+             Fram: precision:  80.00%; recall:  74.42%; FB1:  77.11  40
+               PL: precision:  93.33%; recall:  98.25%; FB1:  95.73  60
+             Plat: precision:  60.00%; recall:  54.55%; FB1:  57.14  10
+             Stan: precision: 100.00%; recall:  80.95%; FB1:  89.47  17
+processed 5329 tokens with 181 phrases; found: 173 phrases; correct: 138.
+accuracy:  98.72%; precision:  79.77%; recall:  76.24%; FB1:  77.97
+              API: precision:  77.59%; recall:  69.23%; FB1:  73.17  58
+             Fram: precision:  75.00%; recall:  77.59%; FB1:  76.27  60
+               PL: precision:  91.67%; recall:  91.67%; FB1:  91.67  36
+             Plat: precision:  83.33%; recall:  71.43%; FB1:  76.92  6
+             Stan: precision:  76.92%; recall:  66.67%; FB1:  71.43  13
+processed 7415 tokens with 313 phrases; found: 276 phrases; correct: 230.
+accuracy:  98.42%; precision:  83.33%; recall:  73.48%; FB1:  78.10
+              API: precision:  82.42%; recall:  57.69%; FB1:  67.87  91
+             Fram: precision:  78.26%; recall:  73.97%; FB1:  76.06  69
+               PL: precision:  87.30%; recall:  94.83%; FB1:  90.91  63
+             Plat: precision:  83.33%; recall: 100.00%; FB1:  90.91  12
+             Stan: precision:  87.80%; recall:  85.71%; FB1:  86.75  41
+processed 6330 tokens with 226 phrases; found: 208 phrases; correct: 175.
+accuracy:  98.52%; precision:  84.13%; recall:  77.43%; FB1:  80.65
+              API: precision:  78.18%; recall:  72.88%; FB1:  75.44  55
+             Fram: precision:  68.00%; recall:  68.00%; FB1:  68.00  50
+               PL: precision:  96.36%; recall:  98.15%; FB1:  97.25  55
+             Plat: precision:  81.82%; recall:  69.23%; FB1:  75.00  11
+             Stan: precision:  97.30%; recall:  72.00%; FB1:  82.76  37
+processed 7117 tokens with 258 phrases; found: 236 phrases; correct: 193.
+accuracy:  98.45%; precision:  81.78%; recall:  74.81%; FB1:  78.14
+              API: precision:  73.96%; recall:  69.61%; FB1:  71.72  96
+             Fram: precision:  81.54%; recall:  67.09%; FB1:  73.61  65
+               PL: precision:  94.23%; recall:  94.23%; FB1:  94.23  52
+             Plat: precision: 100.00%; recall:  66.67%; FB1:  80.00  4
+             Stan: precision:  84.21%; recall:  84.21%; FB1:  84.21  19
+processed 7790 tokens with 251 phrases; found: 247 phrases; correct: 181.
+accuracy:  98.25%; precision:  73.28%; recall:  72.11%; FB1:  72.69
+              API: precision:  64.52%; recall:  76.92%; FB1:  70.18  93
+             Fram: precision:  70.18%; recall:  60.61%; FB1:  65.04  57
+               PL: precision:  87.14%; recall:  88.41%; FB1:  87.77  70
+             Plat: precision:  57.14%; recall:  50.00%; FB1:  53.33  14
+             Stan: precision:  92.31%; recall:  54.55%; FB1:  68.57  13
+processed 7013 tokens with 280 phrases; found: 237 phrases; correct: 200.
+accuracy:  98.36%; precision:  84.39%; recall:  71.43%; FB1:  77.37
+              API: precision:  88.12%; recall:  67.42%; FB1:  76.39  101
+             Fram: precision:  60.47%; recall:  55.32%; FB1:  57.78  43
+               PL: precision:  92.16%; recall:  87.04%; FB1:  89.52  51
+             Plat: precision:  80.00%; recall: 100.00%; FB1:  88.89  10
+             Stan: precision:  93.75%; recall:  76.92%; FB1:  84.51  32
+processed 7556 tokens with 297 phrases; found: 253 phrases; correct: 208.
+accuracy:  98.36%; precision:  82.21%; recall:  70.03%; FB1:  75.64
+              API: precision:  68.49%; recall:  42.37%; FB1:  52.36  73
+             Fram: precision:  79.17%; recall:  65.52%; FB1:  71.70  48
+               PL: precision:  94.29%; recall:  99.00%; FB1:  96.59  105
+             Plat: precision:  66.67%; recall: 100.00%; FB1:  80.00  3
+             Stan: precision:  79.17%; recall: 100.00%; FB1:  88.37  24
