@@ -28,7 +28,7 @@ that	O
 looks	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 from	O
 one	O
@@ -45,7 +45,7 @@ service	O
 like	O
 so	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 i	O
 see	O
@@ -79,10 +79,10 @@ manifest	O
 is	O
 using	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 myService	O
-@codeSnippetRemoved	O
+@c@	O
 
 Firstly	O
 you	O
@@ -124,7 +124,7 @@ permission	O
 
 ie	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 is	O
 all	O
@@ -422,7 +422,7 @@ tabs	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 was	O
@@ -476,7 +476,7 @@ theme	O
 
 styles.xml	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 I	O
@@ -489,7 +489,7 @@ my	O
 application	O
 by	O
 adding	O
-android	B-Fram
+android	B-Plat
 :	O
 theme=	O
 "	O
@@ -516,7 +516,7 @@ onCreate	B-API
 Bundle	O
 savedInstanceState	O
 )	O
-@codeSnippetRemoved	O
+@c@	O
 
 than	O
 in	O
@@ -548,12 +548,12 @@ the	O
 background	O
 too	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 onCreated()	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 INSTALL_FAILED_OLDER_SDK	O
 -	O
@@ -711,7 +711,7 @@ you	O
 are	O
 installing	O
 the	O
-apk	B-Stan
+apk	B-Fram
 on	O
 a	O
 phone	O
@@ -1256,130 +1256,6 @@ custom	O
 DataGridRow	B-API
 style	O
 
-DataGrid	B-API
-...	O
-
-GridLinesVisibility=	O
-"	O
-Vertical	O
-"	O
-DataGrid.RowStyle	B-API
-Style	O
-TargetType=	O
-"	O
-{x	O
-:	O
-Type	O
-DataGridRow	B-API
-}	O
-"	O
-Setter	O
-Property=	O
-"	O
-BorderThickness	B-API
-"	O
-Value=	O
-"	O
-0	O
-,	O
-0	O
-,	O
-0	O
-,	O
-1	O
-"	O
-/	O
-Setter	O
-Property=	O
-"	O
-BorderBrush	B-API
-"	O
-Value=	O
-"	O
-Black	O
-"	O
-/	O
-Style.Triggers	B-API
-
-!	O
---	O
-this	O
-will	O
-trigger	O
-when	O
-row	O
-is	O
-selected	O
---	O
-Trigger	O
-Property=	O
-"	O
-IsSelected	B-API
-"	O
-Value=	O
-"	O
-True	O
-"	O
-Setter	O
-Property=	O
-"	O
-BorderBrush	B-API
-"	O
-Value=	O
-"	O
-Red	O
-"	O
-/	O
-/	O
-Trigger	O
-
-!	O
---	O
-this	O
-will	O
-trigger	O
-when	O
-Highlight	O
-property	O
-of	O
-the	O
-view	O
-model	O
-is	O
-true	O
---	O
-DataTrigger	B-API
-Binding=	O
-"	O
-{Binding	O
-Highlight	O
-}	O
-"	O
-Value=	O
-"	O
-True	O
-"	O
-Setter	O
-Property=	O
-"	O
-BorderBrush	B-API
-"	O
-Value=	O
-"	O
-Green	O
-"	O
-/	O
-/	O
-DataTrigger	B-API
-/	O
-Style.Triggers	B-API
-/	O
-Style	O
-/	O
-DataGrid.RowStyle	B-API
-/	O
-DataGrid	B-API
-
 Linq	B-Fram
 Pattern	O
 Matching	O
@@ -1511,7 +1387,7 @@ offset	O
 Thanks	O
 in	O
 advance	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 think	O
@@ -1604,12 +1480,12 @@ Home	O
 Page	O
 Search	O
 Code	O
-@codeSnippetRemoved	O
+@c@	O
 
 Search	O
 Page	O
 Code	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 someone	O
@@ -2025,7 +1901,7 @@ way	O
 to	O
 go	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 with	O
 structure.html	O
@@ -2074,7 +1950,7 @@ iframes	O
 Something	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 am	O
@@ -2171,7 +2047,7 @@ the	O
 src	O
 property	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 you	O
 can	O
@@ -2218,7 +2094,7 @@ javascript	B-PL
 function	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 should	O
@@ -2228,14 +2104,14 @@ you	O
 could	O
 try	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 may	O
 try	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Google	B-Fram
 Guava	I-Fram
@@ -2269,7 +2145,7 @@ map	O
 such	O
 as	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 values	O
@@ -2315,9 +2191,9 @@ I	O
 found	O
 Google	B-Fram
 Guava	I-Fram
-'	I-Fram
-s	I-Fram
-TreeMultimap	I-Fram
+'	O
+s	O
+TreeMultimap	O
 ,	O
 which	O
 is	O
@@ -2345,7 +2221,7 @@ The	O
 thing	O
 is	O
 ,	O
-TreeMultiMap	B-Fram
+TreeMultiMap	O
 doesn't	O
 seem	O
 to	O
@@ -2397,7 +2273,7 @@ how	O
 to	O
 make	O
 a	O
-TreeMultimap	B-Fram
+TreeMultimap	O
 object	O
 obtain	O
 this	O
@@ -2435,7 +2311,7 @@ be	O
 appreciated	O
 .	O
 
-TreeMultimap	B-Fram
+TreeMultimap	O
 isn't	O
 going	O
 to	O
@@ -2460,7 +2336,7 @@ could	O
 do	O
 is	O
 a	O
-TreeMultimap	B-Fram
+TreeMultimap	O
 Integer	O
 ,	O
 String	O
@@ -2511,7 +2387,7 @@ definitely	O
 not	O
 supported	O
 by	O
-TreeMultimap	B-Fram
+TreeMultimap	O
 is	O
 looking	O
 at	O
@@ -2551,7 +2427,7 @@ It	O
 s	O
 true	O
 that	O
-TreeMultimap	B-Fram
+TreeMultimap	O
 does	O
 order	O
 values	O
@@ -2587,7 +2463,7 @@ example	O
 if	O
 you	O
 had	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 you	O
@@ -2746,7 +2622,7 @@ in	O
 ActualGame.java	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Main	O
 is	O
@@ -2768,12 +2644,12 @@ of	O
 Enter()	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 the	O
 ActualGame	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 should	O
@@ -3099,7 +2975,7 @@ your	O
 Enter	O
 class	O
 a	O
-getText	O
+getText	B-API
 method	O
 that	O
 will	O
@@ -3116,7 +2992,7 @@ of	O
 its	O
 JTextField	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Also	O
 ,	O
@@ -3134,11 +3010,11 @@ information	O
 when	O
 needed	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 e.g.	O
 ,	O
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 to	O
@@ -3149,7 +3025,7 @@ a	O
 underclass	O
 of	O
 Enter	O
-@codeSnippetRemoved	O
+@c@	O
 
 Changing	O
 Object	O
@@ -3257,7 +3133,7 @@ I	O
 have	O
 a	O
 method	O
-@codeSnippetRemoved	O
+@c@	O
 
 inside	O
 of	O
@@ -3296,7 +3172,7 @@ the	O
 image	O
 list	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -3307,7 +3183,7 @@ create	O
 image	O
 objects	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 if	O
@@ -3316,7 +3192,7 @@ passed	O
 Videos	O
 list	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -3327,7 +3203,7 @@ create	O
 video	O
 objects	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Sorry	O
 if	O
@@ -3660,12 +3536,12 @@ DAOs	B-Stan
 base	O
 interface	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 a	O
 extensions	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 To	O
 create	O
@@ -3684,13 +3560,13 @@ factories	I-Stan
 something	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 the	O
 implementation	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 don't	O
@@ -3710,7 +3586,7 @@ an	O
 factory	O
 builder	B-Stan
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 get	O
@@ -3720,14 +3596,14 @@ errors	O
 line	O
 8)	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 (	O
 line	O
 9	O
 )	O
-@codeSnippetRemoved	O
+@c@	O
 
 Don't	O
 know	O
@@ -3752,14 +3628,14 @@ something	O
 like	O
 that	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 got	O
 following	O
 solution	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 i	O
@@ -3774,7 +3650,7 @@ IDataFactory	O
 )	O
 fac	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 think	O
@@ -4273,7 +4149,7 @@ this	O
 case	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 thought	O
@@ -4394,7 +4270,7 @@ final	O
 
 1	O
 )	O
-edit.getItem	B-API
+edit.getItem	O
 (	O
 0	O
 )	O
@@ -4410,7 +4286,7 @@ IllegalArgumentException	B-API
 
 2	O
 )	O
-this.edit.getItem	B-API
+this.edit.getItem	O
 (	O
 0	O
 )	O
@@ -4423,7 +4299,7 @@ members	O
 
 3	O
 )	O
-edit.getItem	B-API
+edit.getItem	O
 (	O
 0	O
 )	O
@@ -4541,10 +4417,10 @@ final	O
 So	O
 ,	O
 change	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 it	O
@@ -4568,7 +4444,7 @@ as	O
 to	O
 how	O
 the	O
-JVM	B-Fram
+JVM	B-Plat
 use	O
 to	O
 work.When	O
@@ -4620,7 +4496,7 @@ to	O
 declare	O
 it	O
 final	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 you	O
@@ -4678,7 +4554,7 @@ problem	O
 ?	O
 
 What	O
-JVM	B-Fram
+JVM	B-Plat
 does	O
 ,	O
 is	O
@@ -4712,7 +4588,7 @@ being	O
 done	O
 ,	O
 now	O
-JVM	B-Fram
+JVM	B-Plat
 quietly	O
 places	O
 a	O
@@ -4741,7 +4617,7 @@ javap	O
 Ouput	O
 for	O
 foo.class	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 since	O
@@ -4760,7 +4636,7 @@ as	O
 above	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 Variable	O
@@ -4845,7 +4721,7 @@ likewise	O
 we	O
 get	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 in	O
@@ -4894,7 +4770,7 @@ Object	O
 Reference	O
 i.e.	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -4909,7 +4785,7 @@ case	O
 i.e.	O
 this$0	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Seems	O
 like	O
@@ -5235,11 +5111,11 @@ button	O
 
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Controller	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 url	O
 :	O
@@ -5248,7 +5124,7 @@ url	O
 
 php	B-PL
 echo	O
-base_url()	O
+base_url()	B-API
 ?	O
 
 student_controller	O
@@ -5261,12 +5137,12 @@ pop_val	O
 
 Try	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 try	O
 this	O
 ,	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 revised	O
@@ -5330,7 +5206,7 @@ characters	O
 "	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Image	O
 choosing	O
@@ -5518,7 +5394,7 @@ function	O
 Controller	O
 Code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -5559,7 +5435,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 need	O
@@ -5590,15 +5466,15 @@ Any	O
 suggestions	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Use	O
 .on()	B-API
-@codeSnippetRemoved	O
+@c@	O
 
 Fiddle	B-Fram
 Demo	O
-@codeSnippetRemoved	O
+@c@	O
 
 Put	O
 this	O
@@ -5612,7 +5488,7 @@ end	O
 of	O
 the	O
 page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Canvas	B-Fram
 toDataURL()	B-API
@@ -6107,7 +5983,7 @@ http://bl.ocks.org/DStruths/9c042e3a6b66048b5bd4	O
 http://www.delimited.io/blog/2014/3/3/creating-multi-series-charts-in-d3-lines-bars-area-and-streamgraphs	O
 
 ThanksKathleen	O
-@codeSnippetRemoved	O
+@c@	O
 
 JavaScript	B-PL
 not	O
@@ -6176,11 +6052,11 @@ reason	O
 HTML	B-PL
 CODE	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 JS	B-PL
 CODE	O
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 appears	O
@@ -6227,7 +6103,7 @@ the	O
 option	O
 value	O
 explicitly	O
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 ,	O
@@ -6237,7 +6113,7 @@ Or	O
 Switch	O
 on	O
 text	O
-@codeSnippetRemoved	O
+@c@	O
 
 (	O
 Tested	O
@@ -6259,7 +6135,7 @@ dynamically	O
 add	O
 option	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 using	O
 variables	O
@@ -6301,7 +6177,7 @@ mako	O
 template	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Result	O
 hoping	O
@@ -6315,13 +6191,13 @@ javascript	B-PL
 is	O
 run	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 etc.Instead	O
 I	O
 get	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Any	O
 suggestions	O
@@ -6337,7 +6213,7 @@ changed	O
 the	O
 code	O
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 I	O
@@ -6357,7 +6233,7 @@ On	O
 This	O
 Error	O
 ]	O
-@codeSnippetRemoved	O
+@c@	O
 
 with	O
 arrow	O
@@ -6411,23 +6287,23 @@ desired	O
 results	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Change	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Please	O
 note	O
 that	O
 if	O
 the	O
-doctype	O
+doctype	B-API
 of	O
 the	O
 page	O
@@ -6443,7 +6319,7 @@ a	O
 letter	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 jQuery	B-Fram
 library-like	O
@@ -6528,7 +6404,7 @@ got	O
 was	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 is	O
@@ -6593,7 +6469,7 @@ at	O
 code	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Note	O
 :	O
@@ -6710,7 +6586,7 @@ this	O
 default	O
 setup	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 have	O
@@ -6720,7 +6596,7 @@ that	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 I	O
@@ -6822,7 +6698,7 @@ custom	O
 class	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Edit	O
 #2	O
@@ -6863,7 +6739,7 @@ semantics	O
 )	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Hide	O
 or	O
@@ -7096,7 +6972,7 @@ a	O
 simple	O
 number	O
 in	O
-atext	B-Fram
+atext	O
 file	O
 could	O
 work	O
@@ -7147,10 +7023,10 @@ tried	O
 so	O
 far	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 CheckQuiz.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 Im	O
 a	O
@@ -7204,38 +7080,6 @@ appreciated	O
 Thanks	O
 .	O
 
-if	O
-(	O
-isset	B-API
-(	O
-$_POST[	O
-"	O
-radioBoxName	O
-"	O
-]	O
-))	O
-{	O
-//	O
-It	O
-was	O
-checked	O
-echo	B-API
-$_POST[	O
-"	O
-radioBoxName	O
-"	O
-];	O
-//	O
-This	O
-is	O
-the	O
-value	O
-of	O
-the	O
-checked	O
-option	O
-}	O
-
 Edit	O
 based	O
 on	O
@@ -7263,7 +7107,7 @@ radio	O
 boxes	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 you	O
@@ -7273,7 +7117,7 @@ them	O
 in	O
 PHP	B-PL
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 First	O
 you	O
@@ -7297,7 +7141,7 @@ question	O
 .	O
 example	O
 below	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 you	O
@@ -7308,7 +7152,7 @@ value	O
 from	O
 server	O
 as	O
-@codeSnippetRemoved	O
+@c@	O
 
 edited	O
 as	O
@@ -7328,7 +7172,7 @@ could	O
 use	O
 like	O
 below	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 you	O
@@ -7337,7 +7181,7 @@ iterate	O
 as	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 PHP	B-PL
 ,	O
@@ -8049,7 +7893,7 @@ can	O
 create	O
 your	O
 own	O
-XML-based	B-Stan
+XML-based	O
 format	O
 (	O
 or	O
@@ -8231,7 +8075,7 @@ in	O
 this	O
 format	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -8356,11 +8200,11 @@ you'll	O
 need	O
 to	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 instead	O
 of	O
-@codeSnippetRemoved	O
+@c@	O
 
 Non-greedy	O
 means	O
@@ -8386,10 +8230,10 @@ Use	O
 Beautiful	B-Fram
 Soup	I-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Returns	O
-@codeSnippetRemoved	O
+@c@	O
 
 python	B-PL
 DLL	B-Stan
@@ -8414,7 +8258,7 @@ Windows	B-Plat
 Writing	O
 import	O
 statsmodels.api	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O

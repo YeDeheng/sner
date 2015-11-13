@@ -16,7 +16,7 @@ this	O
 method	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -32,7 +32,7 @@ this	O
 method	O
 in	O
 mainActivity	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 when	O
@@ -51,11 +51,11 @@ help	O
 .	O
 
 activity_main.xml	O
-@codeSnippetRemoved	O
+@c@	O
 
 LogCat	B-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 One	O
 problem	O
@@ -208,7 +208,7 @@ Try	O
 this	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Updated	O
 
@@ -264,7 +264,7 @@ like	O
 this	O
 :	O
 -	O
-@codeSnippetRemoved	O
+@c@	O
 
 Update	O
 :	O
@@ -282,7 +282,7 @@ your	O
 onCreate()	B-API
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 used	O
@@ -335,7 +335,7 @@ in	O
 the	O
 line	O
 below	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 are	O
@@ -375,7 +375,7 @@ image	O
 as	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 OR	O
 
@@ -394,14 +394,14 @@ can	O
 do	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
 in	O
 your	O
 xml	B-Stan
 file	O
-@codeSnippetRemoved	O
+@c@	O
 
 SKShapeNode	B-API
 equivalent	O
@@ -536,7 +536,7 @@ was	O
 quite	O
 easy	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -659,7 +659,7 @@ or	O
 WMI	B-Fram
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Use	O
 PerformanceCounter	B-API
@@ -670,7 +670,7 @@ different	O
 performance	O
 statistics	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 here	O
@@ -732,7 +732,7 @@ program	O
 Code	O
 sample	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 I	O
@@ -880,7 +880,7 @@ demonstrate	O
 an	O
 appropriate	O
 solution	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 will	O
@@ -900,86 +900,6 @@ to	O
 clipboard	O
 before	O
 .	O
-
-var	O
-hwnd	O
-=	O
-GetWindowHandle()	B-API
-;	O
-//	O
-Custom	O
-function	O
-that	O
-returns	O
-the	O
-target	O
-window	O
-'	O
-s	O
-handle	O
-var	O
-currentThreadId	O
-=	O
-GetCurrentThreadId()	B-API
-;	O
-uint	O
-pid	O
-;	O
-var	O
-targetThreadId	O
-=	O
-GetWindowThreadProcessId	B-API
-(	O
-hwnd	O
-,	O
-out	O
-pid	O
-);	O
-if	O
-(	O
-targetThreadId	O
-IntPtr.Zero	B-API
-)	O
-return	O
-;	O
-if	O
-(	O
-targetThreadId	O
-!	O
-=	O
-currentThreadId	O
-)	O
-{	O
-AttachThreadInput	B-API
-(	O
-currentThreadId	O
-,	O
-targetThreadId	O
-,	O
-true	O
-);	O
-}	O
-SetForegroundWindow	B-API
-(	O
-hwnd	O
-);	O
-if	O
-(	O
-currentThreadId	O
-!	O
-=	O
-targetThreadId	O
-)	O
-{	O
-AttachThreadInput	B-API
-(	O
-currentThreadId	O
-,	O
-targetThreadId	O
-,	O
-false	O
-);	O
-}	O
 
 I	O
 have	O
@@ -1172,7 +1092,7 @@ class	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 I	O
@@ -1340,7 +1260,7 @@ list	O
 Running	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 returns	O
 ~	O
@@ -1355,7 +1275,7 @@ seconds	O
 Running	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 returns	O
 ~	O
@@ -1401,7 +1321,7 @@ Take	O
 ?	O
 
 i.e.	O
-@codeSnippetRemoved	O
+@c@	O
 
 Also	O
 ,	O
@@ -1460,12 +1380,12 @@ can	O
 query	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 EF	O
 4.1	O
-@codeSnippetRemoved	O
+@c@	O
 
 Restoring	O
 input	B-API
@@ -1605,7 +1525,7 @@ values	O
 back	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Would	O
 appreciate	O
@@ -1661,7 +1581,7 @@ saved	O
 with	O
 that	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Forms	O
 have	O
@@ -1729,7 +1649,7 @@ helped	O
 
 HTML	B-PL
 table	O
-td	O
+td	B-API
 '	O
 s	O
 not	O
@@ -1843,7 +1763,7 @@ the	O
 code	O
 also	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Your	O
 first	O
@@ -1857,11 +1777,11 @@ wrong	O
 ,	O
 change	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 with	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -1912,7 +1832,7 @@ the	O
 following	O
 method	O
 signature	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 I	O
@@ -1921,7 +1841,7 @@ it	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 then	O
 ,	O
@@ -1999,7 +1919,7 @@ myValues	O
 
 Something	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 of	O
@@ -2260,7 +2180,7 @@ an	O
 array	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 C	B-PL
@@ -3373,7 +3293,7 @@ interface	O
 ,	O
 e.g.	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 request	O
@@ -3985,7 +3905,7 @@ end	O
 up	O
 with	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -5093,7 +5013,7 @@ of	O
 code	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 http://jsfiddle.net/augburto/YMa2y	O
 
@@ -5121,7 +5041,7 @@ rectangle	O
 I've	O
 updated	O
 your	O
-fiddle	B-Fram
+fiddle	O
 to	O
 dynamically	O
 sizing	O
@@ -5138,7 +5058,7 @@ using	O
 this	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Which	O
 simply	O
@@ -5375,7 +5295,7 @@ foo	O
 
 andSelf	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 $	O
 (	O
@@ -5393,7 +5313,7 @@ with	O
 children	B-API
 selector	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 See	O
 here	O
@@ -5921,7 +5841,7 @@ up	O
 event	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 if	O
@@ -6038,19 +5958,19 @@ get	O
 loaded	O
 at	O
 document.ready	B-API
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
 the	O
 associated	O
 CSS	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 the	O
 JS	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 all	O
 of	O
@@ -6073,12 +5993,12 @@ I	O
 run	O
 the	O
 following	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 loads	O
 shite.html	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 it	O
@@ -6334,7 +6254,7 @@ method	O
 that	O
 way	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 wasfacing	O
@@ -6343,17 +6263,17 @@ same	O
 problem	O
 
 jQuery	B-Fram
-@codeSnippetRemoved	O
+@c@	O
 
 Html	B-PL
 Before	O
 ajax	B-Stan
-@codeSnippetRemoved	O
+@c@	O
 
 Html	B-PL
 after	O
 ajax	B-Stan
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 was	O
@@ -6366,7 +6286,7 @@ it	O
 to	O
 
 jQuery	B-Fram
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 was	O
@@ -6405,7 +6325,7 @@ works	O
 for	O
 instance	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 what	O
 are	O
@@ -6646,18 +6566,18 @@ page	O
 
 Product	O
 Page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Shopping	O
 Cart	O
 Page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Shopping	O
 Cart	O
 Page	O
 Javascript	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 Please	O
 Modify	O
@@ -6665,7 +6585,7 @@ your	O
 forms	O
 :	O
 -	O
-@codeSnippetRemoved	O
+@c@	O
 
 Convert	O
 a	O
@@ -6692,7 +6612,7 @@ displayed	O
 in	O
 a	O
 div	B-API
-id	I-API
+id	O
 "	O
 bill	O
 "	O
@@ -6766,11 +6686,11 @@ usage	O
 
 HTML	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 JavaScript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 DEMO	O
 
@@ -6941,7 +6861,7 @@ I	O
 used	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Thanks	O
 in	O
@@ -7016,7 +6936,7 @@ test	O
 ,	O
 do	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 this	O
@@ -7171,7 +7091,7 @@ can	O
 use	O
 cURL	B-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 function	O
 curl	B-Fram
@@ -7255,7 +7175,7 @@ for	O
 various	O
 needs	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 there	O
@@ -7382,11 +7302,11 @@ this	O
 
 Script1	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Script2	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 So	O
 I	O
@@ -7458,7 +7378,7 @@ to	O
 store	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 ,	O
@@ -7494,7 +7414,7 @@ define	O
 a	O
 setter	O
 method	O
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 I	O
@@ -7600,7 +7520,7 @@ or	O
 B	O
 otherwise	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Similarly	O
 ,	O
@@ -7620,7 +7540,7 @@ or	O
 B	O
 otherwise	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Let	O
 '	O
@@ -7629,7 +7549,7 @@ separate	O
 this	O
 out	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 logical	O
@@ -7688,7 +7608,7 @@ equal	O
 precedences	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 in	O
@@ -7704,7 +7624,7 @@ to	O
 27.75	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -7762,12 +7682,12 @@ were	O
 introduced	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 is	O
 equivalent	O
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 Python	B-PL
@@ -7945,7 +7865,7 @@ s	O
 the	O
 same	O
 as	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 value	O

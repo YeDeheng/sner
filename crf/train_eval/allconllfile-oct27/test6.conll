@@ -679,7 +679,7 @@ class	O
 or	O
 interface	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 create	O
@@ -740,7 +740,7 @@ use	O
 this	O
 logic	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Programmatically	O
 generating	O
@@ -1423,7 +1423,7 @@ saved	O
 workbook	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 think	O
@@ -1470,7 +1470,7 @@ looks	O
 fine	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -1495,7 +1495,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 plus	O
 many	O
@@ -1582,7 +1582,7 @@ could	O
 do	O
 :	O
 -	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 that	O
@@ -1600,7 +1600,7 @@ code	O
 a	O
 bit	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 Question	O
@@ -1627,7 +1627,7 @@ and	O
 edit	O
 that	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 won't	O
@@ -1783,7 +1783,7 @@ be	O
 an	O
 idea	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 One	O
 option	O
@@ -1808,7 +1808,7 @@ you	O
 could	O
 write	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I've	O
 heard	O
@@ -2374,7 +2374,7 @@ texteditor	O
 
 Try	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 Scripts	O
 
@@ -2400,7 +2400,7 @@ In	O
 TCPDF	B-Fram
 there	O
 is	O
-@codeSnippetRemoved	O
+@c@	O
 
 for	O
 measuring	O
@@ -2630,7 +2630,7 @@ to	O
 create	O
 an	O
 invisible	O
-Shell	B-API
+Shell	O
 and	O
 set	O
 the	O
@@ -2661,7 +2661,7 @@ coordinates	O
 to	O
 setLocation	B-API
 on	O
-Shell	B-API
+Shell	O
 but	O
 ,	O
 I	O
@@ -2688,7 +2688,7 @@ which	O
 solves	O
 your	O
 problem	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 showing	O
@@ -2698,7 +2698,7 @@ on	O
 top	O
 of	O
 a	O
-shell	B-API
+shell	O
 ,	O
 you	O
 may	O
@@ -2711,7 +2711,7 @@ then	O
 get	O
 the	O
 parent	O
-shell	B-API
+shell	O
 '	O
 s	O
 sub-shells	O
@@ -2726,7 +2726,7 @@ file	O
 dialog	O
 '	O
 s	O
-shell	B-API
+shell	O
 .	O
 
 Now	O
@@ -2797,7 +2797,7 @@ signers	O
 =	O
 cl.getSigners()	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 Against	O
 a	O
@@ -3027,7 +3027,7 @@ beginner	O
 of	O
 android	B-Plat
 and	O
-java.I	B-PL
+java.I	O
 did	O
 no	O
 understand	O
@@ -3045,7 +3045,7 @@ Serializable	B-API
 0.When	O
 do	O
 use	O
-Serializable	O
+Serializable	B-API
 ?	O
 
 what	O
@@ -3240,7 +3240,7 @@ Thanks	O
 My	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 I	O
@@ -3294,7 +3294,7 @@ current	O
 index	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Casting	O
 to	O
@@ -3320,7 +3320,7 @@ to	O
 increment	O
 n	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 value	O
@@ -3443,11 +3443,11 @@ just	O
 fine	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Printing	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Double	O
 value	O
@@ -3465,7 +3465,7 @@ following	O
 line	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 c12	O
@@ -3581,7 +3581,7 @@ large	O
 double	O
 numbers	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Your	O
 c12	O
@@ -3628,11 +3628,11 @@ double	O
 before	O
 multiplying	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 produces	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Make	O
 a	O
@@ -3641,7 +3641,7 @@ on	O
 the	O
 fly	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 else	O
 ,	O
@@ -3673,7 +3673,7 @@ to	O
 double	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 would	O
 help	O
@@ -3921,7 +3921,7 @@ execution	O
 code	O
 looks	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 After	O
 your	O
@@ -4014,7 +4014,7 @@ My	O
 code	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 my	O
@@ -4068,7 +4068,7 @@ in	O
 your	O
 call	O
 to	O
-setTimeout	O
+setTimeout	B-API
 .	O
 
 In	O
@@ -4082,7 +4082,7 @@ the	O
 function	O
 in	O
 the	O
-setTimeout	O
+setTimeout	B-API
 parameter	O
 is	O
 executed	O
@@ -4278,13 +4278,13 @@ time	O
 onmouseout	B-API
 !	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 should	O
 have	O
 done	O
-@codeSnippetRemoved	O
+@c@	O
 
 how	O
 do	O
@@ -4355,7 +4355,7 @@ anything	O
 
 In	O
 javascript	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 may	O
@@ -4384,7 +4384,7 @@ will	O
 be	O
 sealed	O
 with	O
-phonegap	O
+phonegap	B-Fram
 so	O
 it	O
 will	O
@@ -4412,8 +4412,8 @@ will	O
 be	O
 secured	O
 with	O
-phone	O
-gap	O
+phone	B-Fram
+gap	I-Fram
 
 it	O
 '	O
@@ -4472,7 +4472,7 @@ the	O
 most	O
 significant	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -4482,7 +4482,7 @@ the	O
 following	O
 array	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 in	O
 order	O
@@ -4497,7 +4497,7 @@ like	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 unique	O
 isnt	O
@@ -4571,7 +4571,7 @@ should	O
 do	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 now	O
 you	O
@@ -4588,7 +4588,7 @@ get	O
 the	O
 unique	O
 values	O
-@codeSnippetRemoved	O
+@c@	O
 
 Fiddle	B-Fram
 
@@ -4622,7 +4622,7 @@ the	O
 property	O
 key	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Why	O
 doesn't	O
@@ -4726,7 +4726,7 @@ mistake	O
 missed	O
 parentheses	O
 to	O
-replaceWith	O
+replaceWith	B-API
 command	O
 and	O
 variable	O
@@ -5309,7 +5309,7 @@ i	O
 have	O
 make	O
 3	O
-div	O
+div	B-API
 and	O
 there	O
 was	O
@@ -5371,7 +5371,7 @@ images	O
 to	O
 this	O
 code	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 target	O
@@ -5380,7 +5380,7 @@ is	O
 index.blade.php	O
 which	O
 contains	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 Chrome	B-Fram
@@ -5397,7 +5397,7 @@ images	O
 on	O
 the	O
 page	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 the	O
@@ -5421,7 +5421,7 @@ the	O
 jQuery	B-Fram
 ....	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 ....	O
 then	O
@@ -5474,7 +5474,7 @@ container	O
 div	O
 in	O
 index.blade.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 Add	O
 the	O
@@ -5483,7 +5483,7 @@ markup	O
 to	O
 index.blade.php	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 use	O
@@ -5500,7 +5500,7 @@ JavaScript	B-PL
 you	O
 posted	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Incrementing	O
 a	O
@@ -6271,7 +6271,7 @@ key	O
 
 Then	O
 simply	O
-@codeSnippetRemoved	O
+@c@	O
 
 Auto	O
 complete	O
@@ -6337,10 +6337,10 @@ will	O
 appreciate	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 autocomplete.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 php	B-PL
 ,	O
@@ -6420,7 +6420,7 @@ the	O
 current	O
 code	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 have	O
@@ -6623,7 +6623,7 @@ auto	O
 increment	O
 just	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 have	O
@@ -6646,7 +6646,7 @@ just	O
 used	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 do	O
@@ -7348,7 +7348,7 @@ the	O
 script	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 our	O
@@ -7427,7 +7427,7 @@ is	O
 a	O
 definition	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 got	O
@@ -7532,7 +7532,7 @@ trailing	O
 comma	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Circle	O
 (	O

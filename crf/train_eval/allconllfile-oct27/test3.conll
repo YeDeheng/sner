@@ -6,12 +6,12 @@ I	O
 am	O
 developing	O
 a	O
-Timer	B-API
+Timer	O
 based	O
 app	O
 .	O
 
-Timer	B-API
+Timer	O
 runs	O
 continuously	O
 in	O
@@ -48,7 +48,7 @@ timer	B-API
 .	O
 
 Activity	O
-timer	B-API
+timer	O
 is	O
 responsible	O
 for	O
@@ -78,14 +78,14 @@ onTerminate	B-API
 events	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 AndroidManifest.xml	O
-@codeSnippetRemoved	O
+@c@	O
 
 service	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 the	O
@@ -167,7 +167,7 @@ the	O
 complete	O
 androidmanifest	O
 file	O
-@codeSnippetRemoved	O
+@c@	O
 
 Access	O
 SQL	B-PL
@@ -359,7 +359,7 @@ arbitrary	O
 reason	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Lets	O
 say	O
@@ -392,7 +392,7 @@ arbitrary	O
 reason	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 ,	O
@@ -485,7 +485,7 @@ entity	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -532,7 +532,7 @@ and	O
 framework	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 need	O
@@ -573,7 +573,7 @@ it	O
 gave	O
 me	O
 error	O
-@codeSnippetRemoved	O
+@c@	O
 
 khushi	O
 ,	O
@@ -586,7 +586,7 @@ to	O
 you	O
 ....	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 some	O
 references	O
@@ -677,10 +677,10 @@ Take	O
 a	O
 look	O
 at	O
-Microsoft	B-Fram
-'	I-Fram
-s	I-Fram
-Translator	I-Fram
+Microsoft	O
+'	O
+s	O
+Translator	B-Fram
 Widget	O
 
 It	O
@@ -1070,7 +1070,7 @@ to	O
 your	O
 app.config	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Have	O
 a	O
@@ -1214,7 +1214,7 @@ rounded	O
 corners	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Loading	O
 off	O
@@ -1397,7 +1397,7 @@ hide	O
 it	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -1560,10 +1560,10 @@ return	O
 ,	O
 
 my	O
-LogCat	B-API
+LogCat	B-Fram
 :	O
 
-Exception	O
+Exception	B-API
 which	O
 i	O
 got	O
@@ -2260,7 +2260,7 @@ the	O
 following	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 is	O
@@ -2308,7 +2308,7 @@ id	O
 of	O
 the	O
 address	O
-@codeSnippetRemoved	O
+@c@	O
 
 Using	O
 Hibernate	B-API
@@ -2320,7 +2320,7 @@ would	O
 look	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -2403,7 +2403,7 @@ is	O
 as	O
 follows	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 am	O
@@ -2460,14 +2460,14 @@ it	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 could	O
 do	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 def	O
 stream	O
@@ -2494,9 +2494,9 @@ Array[Byte	O
 Creating	O
 a	O
 customized	O
-404	B-Stan
+404	O
 /	O
-500	B-Stan
+500	O
 error	O
 page	O
 in	O
@@ -2513,9 +2513,9 @@ custom	O
 looks	O
 for	O
 their	O
-404	B-Stan
+404	O
 /	O
-505	B-Stan
+505	O
 error	O
 pages	O
 using	O
@@ -2724,7 +2724,7 @@ element	O
 to	O
 narrow	O
 down	O
-@codeSnippetRemoved	O
+@c@	O
 
 Depending	O
 on	O
@@ -2970,7 +2970,7 @@ roughly	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 the	O
@@ -2984,7 +2984,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Is	O
 there	O
@@ -3032,7 +3032,7 @@ this	O
 example	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 other	O
 /	O
@@ -3051,7 +3051,7 @@ module	O
 name	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 a.js	O
 
@@ -3066,7 +3066,7 @@ module	O
 name	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 b.js	O
 and	O
@@ -3075,7 +3075,7 @@ c.js	O
 Uninteresting	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 other	O
 /	O
@@ -3086,7 +3086,7 @@ module-file-1.js	O
 Uninteresting	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 test.html	O
 
@@ -3115,10 +3115,10 @@ modules	O
 to	O
 load	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Console	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 JavaScript	B-PL
@@ -3161,7 +3161,7 @@ countdown	O
 loop	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 did	O
@@ -3245,7 +3245,7 @@ http://ejohn.org/blog/how-javascript-timers-work	O
 this	O
 should	O
 work	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 using	O
@@ -3298,7 +3298,7 @@ function	O
 just	O
 write	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -3311,7 +3311,7 @@ and	O
 just	O
 write	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 drop	O
@@ -3319,7 +3319,7 @@ the	O
 while	O
 function	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 setInterval	B-API
 is	O
@@ -3334,7 +3334,7 @@ run	O
 periodically	O
 .	O
 https://developer.mozilla.org/en-US/docs/Web/API/Window.setInterval	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 do	O
@@ -3385,7 +3385,7 @@ process	O
 so	O
 far	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 you	O
@@ -3394,12 +3394,12 @@ it	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
 connect	O
-draggable	B-Fram
+draggable	B-API
 divs	O
 
 I	O
@@ -3689,7 +3689,7 @@ BC	O
 
 tip	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 repaint	O
 every	O
@@ -3730,7 +3730,7 @@ parallel	O
 you	O
 can	O
 use	O
-jsplumb	O
+jsplumb	B-Fram
 library	O
 to	O
 achieve	O
@@ -3747,7 +3747,7 @@ div1	O
 and	O
 div2	O
 ,	O
-@codeSnippetRemoved	O
+@c@	O
 
 this	O
 should	O
@@ -4035,7 +4035,7 @@ print	O
 that	O
 is	O
 one	O
-div	O
+div	B-API
 .	O
 
 Hope	O
@@ -4050,7 +4050,7 @@ html	B-PL
 string	O
 in	O
 JQuery	B-Fram
-Mobile	O
+Mobile	I-Fram
 template	O
 
 I	O
@@ -4091,12 +4091,12 @@ have	O
 tried	O
 using	O
 ${$	O
-.mobile	O
-.html	O
+.mobile	B-API
+.html	I-API
 (	O
 Body	O
 )	O
-.text()	O
+.text()	B-API
 }	O
 but	O
 that	O
@@ -4109,11 +4109,11 @@ me	O
 My	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Html	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 After	O
 searching	O
@@ -4139,7 +4139,7 @@ Html	B-PL
 Using	O
 {{	O
 html	B-PL
-Body	I-PL
+Body	O
 }}	O
 in	O
 my	O
@@ -4272,7 +4272,7 @@ next	O
 image	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -4316,7 +4316,7 @@ it	O
 should	O
 ...	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 var	O
 ul=	O
@@ -4330,7 +4330,7 @@ finalHeight=0	O
 
 ul.find('li	O
 ')	O
-.each	O
+.each	B-API
 (	O
 function()	O
 {	O
@@ -4338,13 +4338,13 @@ finalWidth+=jQuery	O
 (	O
 this	O
 )	O
-.width()	O
+.width()	B-API
 ;	O
 finalHeight+=jQuery	O
 (	O
 this	O
 )	O
-.height()	O
+.height()	B-API
 ;	O
 }	O
 );	O
@@ -4353,7 +4353,7 @@ ul.height	O
 (	O
 finalHeight	O
 )	O
-.width	O
+.width	B-API
 (	O
 finalWidth	O
 );	O
@@ -4386,14 +4386,14 @@ them	O
 individually	O
 ,	O
 using	O
-jQuery	B-API
-'	I-API
-s	I-API
-each	I-API
+jQuery	B-Fram
+'	O
+s	O
+each	B-API
 :	O
 
 Try	O
-@codeSnippetRemoved	O
+@c@	O
 
 Similar	O
 to	O
@@ -4442,7 +4442,7 @@ replace	O
 yours	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Storing	O
 string	O
@@ -4626,7 +4626,7 @@ s	O
 the	O
 respective	O
 route	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 '	O
@@ -4634,7 +4634,7 @@ s	O
 the	O
 controller	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 the	O
@@ -4668,7 +4668,7 @@ this	O
 controller	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 it	O
@@ -4677,7 +4677,7 @@ s	O
 showing	O
 an	O
 error	O
-@codeSnippetRemoved	O
+@c@	O
 
 However	O
 ,	O
@@ -4694,7 +4694,7 @@ it	O
 passes	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -4712,7 +4712,7 @@ you	O
 need	O
 Category	O
 model	O
-@codeSnippetRemoved	O
+@c@	O
 
 your	O
 mock	B-Fram
@@ -4743,9 +4743,9 @@ of	O
 an	O
 empty	O
 array	O
-@codeSnippetRemoved	O
+@c@	O
 
-Magento	O
+Magento	B-Fram
 :	O
 Is	O
 it	O
@@ -5047,7 +5047,7 @@ make	O
 something	O
 similar	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 as	O
@@ -5104,7 +5104,7 @@ distributions	O
 histograms	O
 )	O
 with	O
-MCMC	B-API
+MCMC	O
 using	O
 pymc	B-Fram
 ?	O
@@ -5182,7 +5182,7 @@ to	O
 do	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 question	O
@@ -5240,7 +5240,7 @@ generic	O
 function	O
 (	O
 like	O
-GaussFunc	B-API
+GaussFunc	O
 in	O
 my	O
 example	O
@@ -5366,7 +5366,7 @@ was	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 I	O
@@ -5374,7 +5374,7 @@ could	O
 not	O
 construct	O
 a	O
-mc.model	B-API
+mc.model	O
 that	O
 worked	O
 .	O
@@ -5455,7 +5455,7 @@ priors	O
 there	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Important	O
 
@@ -5666,9 +5666,9 @@ a	O
 cursor	O
 when	O
 executing	O
-PL	B-PL
-/	I-PL
-SQL	I-PL
+PL	O
+/	O
+SQL	O
 blocks	O
 as	O
 requested	O

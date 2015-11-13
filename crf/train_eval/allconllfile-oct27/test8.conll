@@ -138,7 +138,7 @@ in	O
 the	O
 operation	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 a	O
@@ -166,7 +166,7 @@ queue	O
 is	O
 empty	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 all	O
@@ -997,7 +997,7 @@ box	O
 i	O
 would	O
 do	O
-@codeSnippetRemoved	O
+@c@	O
 
 However	O
 ,	O
@@ -1029,11 +1029,11 @@ code	O
 
 HTML	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 AutoCompleteTextView	B-API
 with	O
@@ -1091,7 +1091,7 @@ of	O
 filter	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 missing	O
@@ -1113,7 +1113,7 @@ just	O
 simply	O
 changed	O
 the	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 now	O
@@ -1129,7 +1129,7 @@ code	O
 bellow	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Another	O
 Update	O
@@ -1174,7 +1174,7 @@ you	O
 should	O
 use	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 check	O
 distinct	O
@@ -1194,7 +1194,7 @@ through	O
 the	O
 following	O
 code	O
-@codeSnippetRemoved	O
+@c@	O
 
 how	O
 can	O
@@ -1252,7 +1252,7 @@ check	O
 the	O
 distinct	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 it	O
@@ -1292,7 +1292,7 @@ in	O
 two	O
 group	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 To	O
 know	O
@@ -1373,7 +1373,7 @@ with	O
 the	O
 error	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 was	O
@@ -1396,7 +1396,7 @@ as	O
 shown	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 later	O
@@ -1606,7 +1606,7 @@ the	O
 issue	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Thanks	O
 @Derek	O
@@ -1628,7 +1628,7 @@ add	O
 a	O
 reference	O
 to	O
-Raven.Storage.Esent.dll	B-API
+Raven.Storage.Esent.dll	O
 
 Is	O
 there	O
@@ -1910,7 +1910,7 @@ store	O
 it	O
 in	O
 data	O
-@codeSnippetRemoved	O
+@c@	O
 
 Using	O
 whatever	O
@@ -1926,7 +1926,7 @@ being	O
 that	O
 accordion	B-API
 item	O
-@codeSnippetRemoved	O
+@c@	O
 
 Okay	O
 so	O
@@ -1938,10 +1938,10 @@ follow	O
 :	O
 
 HTML	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 javascript	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 Example	O
 :	O
@@ -2223,7 +2223,7 @@ users	O
 too	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -2527,7 +2527,7 @@ classes	O
 For	O
 example	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 then	O
@@ -2587,9 +2587,9 @@ you	O
 required	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 about	O
@@ -2598,7 +2598,7 @@ ULR-mapping	O
 sections	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Android	B-Plat
 :	O
@@ -2637,7 +2637,7 @@ I	O
 have	O
 now	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I'm	O
 now	O
@@ -2657,7 +2657,7 @@ app	O
 to	O
 crash	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 I'm	O
@@ -2807,11 +2807,11 @@ R.drawable.image1	O
 R.drawable.image2	O
 and	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 Details	O
 on	O
-getIdentifier	O
+getIdentifier	B-API
 method	O
 here	O
 :	O
@@ -2932,23 +2932,23 @@ java	B-PL
 -version	O
 "	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
 install	O
-Groovy	B-Fram
+Groovy	B-PL
 you	O
 can	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 for	O
 all	O
 properties	O
 ,	O
 and	O
-@codeSnippetRemoved	O
+@c@	O
 
 for	O
 specific	O
@@ -2956,7 +2956,7 @@ properties	O
 .	O
 
 Installing	O
-Groovy	B-Fram
+Groovy	B-PL
 is	O
 as	O
 easy	O
@@ -2991,13 +2991,13 @@ following	O
 script	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Java	B-PL
 ,	O
 Tomcat	B-Fram
 and	O
-Jersey	O
+Jersey	B-Fram
 hosting	O
 
 Does	O
@@ -3021,7 +3021,7 @@ following	O
 
 Java	B-PL
 Tomcat	B-Fram
-Jersey	O
+Jersey	I-Fram
 MySQL	B-PL
 
 I	O
@@ -3117,7 +3117,7 @@ to	O
 do	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 get	O
@@ -3179,7 +3179,7 @@ declare	O
 a	O
 variable	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 that	O
@@ -3218,7 +3218,7 @@ of	O
 the	O
 font	O
 )	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 similarly	O
@@ -3468,15 +3468,15 @@ helps	O
 
 JSP	B-Stan
 Page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Servlet	B-Stan
 Page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Calling	O
 Procedure	O
-@codeSnippetRemoved	O
+@c@	O
 
 Best	O
 practice	O
@@ -4295,7 +4295,7 @@ check	O
 -	O
 e.g.	O
 would	O
-setName	O
+setName	B-API
 (	O
 String	O
 person	O
@@ -4893,7 +4893,7 @@ obj	O
 ,	O
 then	O
 after	O
-obj.add	B-API
+obj.add	O
 (	O
 mesh	O
 )	O
@@ -4945,7 +4945,7 @@ rotation	O
 you	O
 could	O
 try	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 this	O
@@ -5095,7 +5095,7 @@ it	O
 using	O
 AJAX	B-Stan
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 obviously	O
@@ -5149,7 +5149,7 @@ to	O
 load	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 http://www.polymer-project.org/docs/elements/core-elements.html#core-ajax	O
 
@@ -5191,7 +5191,7 @@ component	O
 is	O
 included	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Info	O
 about	O
@@ -5403,7 +5403,7 @@ work	O
 
 In	O
 this	O
-fiddle	B-Fram
+fiddle	O
 http://jsfiddle.net/CBxbT/29	O
 ,	O
 if	O
@@ -5458,7 +5458,7 @@ boxes	O
 .	O
 
 The	O
-fiddle	B-Fram
+fiddle	O
 works	O
 ,	O
 but	O
@@ -5508,7 +5508,7 @@ alerts	O
 whereas	O
 in	O
 the	O
-fiddle	B-Fram
+fiddle	O
 ,	O
 it	O
 keeps	O
@@ -5548,12 +5548,12 @@ live	O
 site	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 code	O
 from	O
-fiddle	B-Fram
-@codeSnippetRemoved	O
+fiddle	O
+@c@	O
 
 My	O
 live	O
@@ -5631,7 +5631,7 @@ code	O
 from	O
 live	O
 site	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -5646,7 +5646,7 @@ you'll	O
 see	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 suggest	O
@@ -5687,7 +5687,7 @@ has	O
 this	O
 line	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 var	O
@@ -5750,7 +5750,7 @@ file	O
 
 I	O
 used	O
-request.GET['user	B-API
+request.GET['user	O
 '	O
 ]	O
 but	O
@@ -5776,17 +5776,17 @@ is	O
 python	B-PL
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Ajax	B-Stan
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Compile	O
 Error	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 looks	O
@@ -5912,7 +5912,7 @@ web	O
 page	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 i	O
@@ -6043,7 +6043,7 @@ DOM	B-Stan
 
 For	O
 example	O
-@codeSnippetRemoved	O
+@c@	O
 
 second	O
 element	O
@@ -6084,13 +6084,13 @@ the	O
 following	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Afterwards	O
 you	O
 can	O
 call	O
-@codeSnippetRemoved	O
+@c@	O
 
 selected	O
 query	O
@@ -6150,7 +6150,7 @@ do	O
 this	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Thank	O
 you	O
@@ -6182,7 +6182,7 @@ regarding	O
 your	O
 question	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 this	O
@@ -6424,7 +6424,7 @@ boxes	O
 ,	O
 use	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Slow	O
 user	O
@@ -6597,7 +6597,7 @@ lot	O
 faster	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -6667,7 +6667,7 @@ something	O
 is	O
 wrong	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 I	O
@@ -6696,7 +6696,7 @@ do	O
 it	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 think	O
@@ -6707,7 +6707,7 @@ after	O
 the	O
 item	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 readlines()	B-API
 cannot	O
@@ -6751,7 +6751,7 @@ has	O
 lines	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 if	O
@@ -6776,7 +6776,7 @@ the	O
 file	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Is	O
 there	O
@@ -6858,7 +6858,7 @@ works	O
 as	O
 expected	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Appropriate	O
 syntax	O
@@ -6911,7 +6911,7 @@ do	O
 things	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I'm	O
 currently	O
@@ -7081,11 +7081,11 @@ initialise	O
 a	O
 list	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
-std	B-API
-::	I-API
-initializer_list	I-API
+std	O
+::	O
+initializer_list	B-API
 Object	O
 would	O
 be	O
@@ -7136,7 +7136,7 @@ And	O
 then	O
 dictionaries	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Again	O
 ,	O
@@ -7192,16 +7192,16 @@ catch	O
 }	O
 }	O
 with	O
-std	B-API
-::	I-API
-map	I-API
+std	O
+::	O
+map	O
 Object	O
 ,	O
 Object	O
 or	O
-std	B-API
-::	I-API
-pair	I-API
+std	O
+::	O
+pair	O
 
 So	O
 it	O
@@ -7232,7 +7232,7 @@ argument	O
 specify	O
 type	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 would	O
@@ -7257,7 +7257,7 @@ also	O
 allow	O
 for	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 So	O
 I	O
@@ -7272,7 +7272,7 @@ look	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 for	O
@@ -7281,7 +7281,7 @@ I	O
 should	O
 provide	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 ...	O
 
@@ -7332,7 +7332,7 @@ single-argument	O
 constructors	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Maybe	O
 I	O
@@ -7347,7 +7347,7 @@ I	O
 can	O
 do	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 wait	O
@@ -7356,16 +7356,16 @@ can't	O
 I	O
 use	O
 the	O
-std	B-API
-::	I-API
-initializer_list	I-API
+std	O
+::	O
+initializer_list	O
 constructor	O
 to	O
 my	O
 advantage	O
 here	O
 ,	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 then	O
@@ -7373,7 +7373,7 @@ I	O
 can	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 That	O
 is	O
@@ -7425,13 +7425,13 @@ tried	O
 was	O
 to	O
 use	O
-std	B-API
-::	I-API
-initializer_list	I-API
+std	O
+::	O
+initializer_list	B-API
 as	O
 follows	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 However	O
 ,	O
@@ -7456,7 +7456,7 @@ appearing	O
 to	O
 require	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 So	O
 I	O
@@ -7467,7 +7467,7 @@ a	O
 variadic	O
 argument	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 technique	O
@@ -7479,5 +7479,5 @@ lightweight	O
 usage	O
 syntax	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 

@@ -30,7 +30,7 @@ one	O
 
 Example	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 works	O
@@ -122,7 +122,7 @@ using	O
 one	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 then	O
@@ -229,7 +229,7 @@ s	O
 interested	O
 ...	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 usage	O
@@ -238,7 +238,7 @@ this	O
 is	O
 straightforward	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Path.addPath()	B-API
 still	O
@@ -270,7 +270,7 @@ will	O
 draw	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Stopping	O
 OnMyLocationChangeListener	B-API
@@ -307,7 +307,7 @@ s	O
 my	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Set	O
 the	O
@@ -322,7 +322,7 @@ it	O
 off	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Android	B-Plat
 HTTPS	B-Stan
@@ -410,20 +410,20 @@ Here	O
 is	O
 mycode	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 in	O
 my	O
 HTTP	B-Stan
-Request	B-API
+Request	O
 class	O
 that	O
 constructs	O
 the	O
 POST	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 POST	B-API
@@ -512,7 +512,7 @@ helps	O
 package	O
 com.android.MyCellFamily.DAHttp	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 Sometimes	O
 https	O
@@ -592,7 +592,7 @@ url	O
 
 Webviewclient	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Can	O
 i	O
@@ -644,7 +644,7 @@ using	O
 LINQ	B-Fram
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Paging	O
 is	O
@@ -664,7 +664,7 @@ following	O
 test	O
 data	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 if	O
 I	O
@@ -697,7 +697,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 that	O
@@ -765,7 +765,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 that	O
@@ -803,7 +803,7 @@ the	O
 following	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 that	O
 will	O
@@ -853,7 +853,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 that	O
 will	O
@@ -1144,7 +1144,7 @@ a	O
 file	O
 :	O
 Hidden.cs	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 can't	O
@@ -1486,7 +1486,7 @@ Expressions	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Which	O
 prints	O
@@ -1546,7 +1546,7 @@ the	O
 following	O
 error	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Setup	O
 :	O
@@ -1571,25 +1571,25 @@ project	O
 \	O
 RavenDB-Build-309	O
 \EmbeddedClient\	O
-Raven.Client.Embedded.dll	B-API
+Raven.Client.Embedded.dll	O
 \	O
 RavenDB-Build-309	O
 \Client\	O
-Raven.Client.Lightweight.dll	B-API
+Raven.Client.Lightweight.dll	O
 \	O
 RavenDB-Build-309	O
 \EmbeddedClient\	O
-Raven.Storage.Esent.dll	B-API
+Raven.Storage.Esent.dll	O
 \	O
 RavenDB-Build-309	O
 \EmbeddedClient\	O
-Raven.Storage.Managed.dll	B-API
+Raven.Storage.Managed.dll	O
 
 The	O
 code	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 have	O
@@ -2062,7 +2062,7 @@ correctly	O
 I	O
 believe	O
 with	O
-Volusion	O
+Volusion	B-Fram
 ,	O
 that	O
 the	O
@@ -2200,7 +2200,7 @@ I	O
 tried	O
 anyway	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 can	O
@@ -2256,7 +2256,7 @@ load	O
 the	O
 JS	B-PL
 file	O
-@codeSnippetRemoved	O
+@c@	O
 
 on	O
 window.load	O
@@ -2316,7 +2316,7 @@ see	O
 textbox	O
 name	O
 is	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 you	O
@@ -2324,7 +2324,7 @@ have	O
 written	O
 it	O
 as	O
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 above	O
@@ -2479,7 +2479,7 @@ a	O
 web	O
 email	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Our	O
 teacher	O
@@ -2516,7 +2516,7 @@ new	O
 field	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 So	O
 ,	O
@@ -2546,7 +2546,7 @@ first	O
 attempt	O
 was	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Unfortunately	O
 ,	O
@@ -2574,7 +2574,7 @@ TD	B-API
 tags	O
 inside	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I've	O
 also	O
@@ -2651,7 +2651,7 @@ part	O
 of	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 expect	O
@@ -2753,11 +2753,11 @@ object	O
 
 import	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -2863,7 +2863,7 @@ Simple	O
 random	O
 generator	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 if	O
 (	O
@@ -2929,7 +2929,7 @@ the	O
 top	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Decimals	O
 such	O
@@ -3219,7 +3219,7 @@ this	O
 issue	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 have	O
@@ -3261,7 +3261,7 @@ has	O
 two	O
 items	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -3297,7 +3297,7 @@ establish	O
 your	O
 mappings	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -3312,61 +3312,9 @@ can	O
 use	O
 javafx.util.Pair	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
-public	O
-Map	B-API
-MyPeriod	O
-,	O
-Integer	B-API
-bindNewColumn	O
-(	O
-List	B-API
-MyPeriod	O
-periods	O
-)	O
-{	O
-Map	B-API
-MyPeriod	O
-,	O
-Integer	B-API
-map	O
-=	O
-new	O
-HashMap	B-API
-MyPeriod	O
-,	O
-Integer	O
-(	O
-);	O
-for	O
-(	O
-MyPeriod	O
-period	O
-:	O
-periods	O
-)	O
-{	O
-map.put	B-API
-(	O
-period	O
-,	O
-calculation	O
-(	O
-period	O
-));	O
-}	O
-return	O
-map	O
-;	O
-}	O
-
-With	O
-a	O
-Pair	O
-.	O
-
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -3594,7 +3542,7 @@ variable	O
 hi	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 know	O
@@ -3982,7 +3930,7 @@ time	O
 error	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Because	O
 run	O
@@ -4349,7 +4297,7 @@ but	O
 worked	O
 fine	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 tried	O
@@ -4392,7 +4340,7 @@ does	O
 not	O
 work	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Am	O
 I	O
@@ -4429,7 +4377,7 @@ problem	O
 
 The	O
 dropdowns[i]	O
-.appendChild	O
+.appendChild	B-API
 (	O
 options[i	O
 ]);	O
@@ -4457,7 +4405,7 @@ set	O
 New	O
 snippet	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Edit	O
 2	O
@@ -4588,11 +4536,11 @@ elements	O
 to	O
 an	O
 array	O
-@codeSnippetRemoved	O
+@c@	O
 
 should	O
 be	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 you	O
@@ -4601,7 +4549,7 @@ then	O
 access	O
 like	O
 so	O
-@codeSnippetRemoved	O
+@c@	O
 
 you	O
 may	O
@@ -4619,7 +4567,7 @@ difference	O
 becomes	O
 {}	O
 )	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 you	O
@@ -4628,7 +4576,7 @@ then	O
 access	O
 like	O
 so	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 I	O
@@ -4737,7 +4685,7 @@ revisit	O
 the	O
 code	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Thank	O
 you	O
@@ -4892,7 +4840,7 @@ some	O
 animation	O
 effect	O
 using	O
-css3.It	B-PL
+css3.It	O
 works	O
 fine	O
 in	O
@@ -4954,7 +4902,7 @@ some	O
 suggestions	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 "	O
 myfirst	O
@@ -5071,7 +5019,7 @@ Demo	O
 :	O
 http://jsfiddle.net/FirePanther/q4bedpdz	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 edit	O
 :	O
@@ -5109,12 +5057,12 @@ be	O
 infinite	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 this	O
 CSS	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 Insert	O
 image	O
@@ -5229,7 +5177,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -5281,17 +5229,17 @@ click	O
 
 The	O
 HTML	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 CSS	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 See	O
 it	O
@@ -5329,7 +5277,7 @@ UI	O
 draggable	B-API
 to	O
 smaller	O
-droppable	O
+droppable	B-API
 
 I	O
 have	O
@@ -5365,7 +5313,7 @@ not	O
 happening	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 I	O
@@ -5449,7 +5397,7 @@ touch	O
 '	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 By	O
 default	O
@@ -5481,7 +5429,7 @@ droppable	B-API
 method	O
 
 http://jqueryui.com/demos/droppable/#option-tolerance	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 default	O
@@ -5600,7 +5548,7 @@ form	O
 to	O
 get	O
 submit	O
-@codeSnippetRemoved	O
+@c@	O
 
 References	O
 
@@ -5778,7 +5726,7 @@ jquery	B-Fram
 in	O
 your	O
 collect.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 it	O
@@ -5807,7 +5755,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 will	O
@@ -5918,10 +5866,10 @@ we	O
 use	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
-@codeSnippetRemoved	O
+@c@	O
 
 There	O
 are	O
@@ -6190,7 +6138,7 @@ that	O
 you	O
 should	O
 use	O
-.addClass('myhoverclass	B-API
+.addClass('myhoverclass	O
 ')	O
 instead	O
 of	O
@@ -6384,16 +6332,16 @@ fast	O
 rule	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 is	O
 better	O
 semantically	O
 then	O
-@codeSnippetRemoved	O
+@c@	O
 
 BUT	O
-@codeSnippetRemoved	O
+@c@	O
 
 would	O
 be	O
@@ -6416,7 +6364,7 @@ this	O
 way	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 would	O
@@ -6914,7 +6862,7 @@ an	O
 example	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Instead	O
 of	O
@@ -7007,7 +6955,7 @@ this	O
 should	O
 work	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 insert	O
 delete	O
@@ -7081,7 +7029,7 @@ delete	O
 button	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 should	O
@@ -7101,7 +7049,7 @@ the	O
 record	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Than	O
 in	O
@@ -7111,7 +7059,7 @@ you	O
 can	O
 do	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 There	O
 are	O
@@ -7248,7 +7196,7 @@ see	O
 example	O
 here	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 on	O
@@ -7262,7 +7210,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -7290,14 +7238,14 @@ will	O
 be	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 then	O
 in	O
 your	O
 delete.php	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -7712,12 +7660,12 @@ working	O
 my	O
 controller	O
 blog.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 my	O
 model	O
 blogmodel.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 followed	O
@@ -7803,7 +7751,7 @@ along	O
 these	O
 lines	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 data	O
@@ -7904,7 +7852,7 @@ what	O
 I	O
 get	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Why	O
 does	O
@@ -7964,7 +7912,7 @@ my	O
 current	O
 training_list	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 need	O
@@ -8013,14 +7961,14 @@ getting	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Code	O
 is	O
 as	O
 follows	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 Any	O
 help	O
@@ -8065,25 +8013,25 @@ no	O
 leading	O
 whitespace	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 perhaps	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 solution	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 the	O
 output	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 if	O
 you	O
@@ -8095,10 +8043,10 @@ for	O
 can	O
 do	O
 that	O
-@codeSnippetRemoved	O
+@c@	O
 
 using	O
 itertools.groupby	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 

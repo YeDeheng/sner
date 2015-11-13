@@ -47,13 +47,13 @@ buffer	O
 from	O
 pipe	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Settings	O
 for	O
 media	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 reading	O
@@ -265,7 +265,7 @@ reproduced	O
 zooming	O
 :	O
 http://www.zdnet.com/blog/burnette/how-to-use-multi-touch-in-android-2-part-3-understanding-touch-events/1775?tag=mantle_skin;content	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -417,7 +417,7 @@ to	O
 add	O
 coordinates	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 These	O
 events	O
@@ -432,7 +432,7 @@ and	O
 dumped	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 you	O
@@ -495,7 +495,7 @@ and	O
 Pointer	O
 1	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 you	O
@@ -621,7 +621,7 @@ this	O
 should	O
 work	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 -Dan	O
 
@@ -731,7 +731,7 @@ zoom	O
 scrolling	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 this	O
@@ -752,7 +752,7 @@ the	O
 following	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 when	O
 I	O
@@ -812,7 +812,7 @@ I	O
 deserialize	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 when	O
@@ -858,14 +858,14 @@ greatly	O
 appreciated	O
 
 change	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
 similary	O
@@ -873,7 +873,7 @@ you	O
 can	O
 try	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 as	O
 you	O
@@ -947,7 +947,7 @@ original	O
 array	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 need	O
@@ -1123,7 +1123,7 @@ I	O
 think	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Update	O
 :	O
@@ -1212,7 +1212,7 @@ you	O
 out	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Make	O
 GetAllCandidates	O
@@ -1274,7 +1274,7 @@ of	O
 your	O
 recursion	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 way	O
@@ -1318,7 +1318,7 @@ loop	O
 using	O
 LINQ	B-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 encrypting	O
 password	O
@@ -2031,7 +2031,7 @@ Please	O
 look	O
 at	O
 my	O
-fiddle	B-Fram
+fiddle	O
 ,	O
 it	O
 '	O
@@ -2048,7 +2048,7 @@ my	O
 site	O
 .	O
 
-Fiddle	B-Fram
+Fiddle	O
 :	O
 http://jsfiddle.net/4vdck	O
 
@@ -2077,7 +2077,7 @@ href	O
 ,	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -2242,11 +2242,11 @@ they	O
 submit	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Jquery	B-Fram
 Script	O
-@codeSnippetRemoved	O
+@c@	O
 
 Link	O
 to	O
@@ -2307,223 +2307,10 @@ look	O
 here	O
 :	O
 
-function	O
-displayVals()	O
-{	O
-var	O
-a	O
-=	O
-$("input[type='radio	O
-'	O
-]:	O
-checked	O
-")	O
-.val()	O
-;	O
-var	O
-b	O
-=	O
-"	O
-I	O
-am	O
-a	O
-"	O
-;	O
-var	O
-checkedValue	O
-=	O
-$	O
-(	O
-"	O
-p	O
-")	O
-.html	O
-(	O
-"	O
-b	O
-I	O
-am	O
-a	O
-/	O
-b	O
-"	O
-+	O
-"	O
-"	O
-+	O
-a	O
-);	O
-var	O
-input	O
-=	O
-$("input[type='text	O
-'	O
-]	O
-")	O
-;	O
-//	O
-you	O
-want	O
-to	O
-add	O
-only	O
-the	O
-value	O
-of	O
-radio	O
-each	O
-time	O
-.	O
-input.val(a);}$("input[type='radio	O
-'	O
-]	O
-")	O
-.change	O
-(	O
-displayVals	O
-);	O
-//	O
-why	O
-execute	O
-this	O
-one	O
-on	O
-dom	O
-ready	O
-??	O
-
-//	O
-displayVals()	O
-;	O
-script	O
-src=	O
-"	O
-https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js	O
-"	O
-/	O
-script	O
-input	O
-type=	O
-"	O
-text	O
-"	O
-onblur=	O
-"	O
-this.placeholder	O
-=	O
-'	O
-my	O
-name	O
-'"	O
-onfocus=	O
-"	O
-this.placeholder	O
-=	O
-''"	O
-placeholder=	O
-"	O
-my	O
-name	O
-"	O
-name=	O
-"	O
-name	O
-"	O
-id=	O
-"	O
-my	O
-name	O
-"	O
-class=	O
-"	O
-InputText	O
-"	O
-input	O
-type=	O
-"	O
-submit	O
-"	O
-value=	O
-"	O
-Submit	O
-"	O
-class=	O
-"	O
-SubmitButton	B-API
-"	O
-br	O
-input	O
-type=	O
-"	O
-radio	O
-"	O
-id=	O
-"	O
-single	O
-"	O
-name=	O
-"	O
-sex	O
-"	O
-value=	O
-"	O
-Boy	O
-"	O
-Boy	O
-nbsp	O
-;	O
-nbsp	O
-;	O
-|	O
-nbsp	O
-;	O
-nbsp	O
-;	O
-input	O
-type=	O
-"	O
-radio	O
-"	O
-id=	O
-"	O
-single	O
-"	O
-name=	O
-"	O
-sex	O
-"	O
-value=	O
-"	O
-Girl	O
-"	O
-Girl	O
-br	O
-br	O
-br	O
-br	O
-p	O
-/	O
-p	O
-select	O
-id=	O
-"	O
-single	O
-"	O
-option	O
-Single	O
-/	O
-option	O
-option	O
-Single2	O
-/	O
-option	O
-/	O
-select	O
-
 Here	O
 a	O
 working	O
-fiddle	B-Fram
+fiddle	O
 :	O
 http://jsfiddle.net/ssbrbsfp/6	O
 
@@ -2539,7 +2326,7 @@ input.val	O
 in	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Check	O
 if	O
@@ -2555,21 +2342,21 @@ and	O
 the	O
 p	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 To	O
 validate	O
 before	O
 submit	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 put	O
 it	O
 on	O
 the	O
-submit	O
+submit	B-API
 button	O
 to	O
 show	O
@@ -2584,7 +2371,7 @@ it	O
 in	O
 the	O
 form	O
-submit	O
+submit	B-API
 event	O
 .	O
 
@@ -2598,9 +2385,9 @@ things	O
 
 Remove	O
 the	O
-onblur	O
+onblur	B-API
 and	O
-onfocus	O
+onfocus	B-API
 from	O
 the	O
 input	O
@@ -2833,7 +2620,7 @@ get	O
 messed	O
 up	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 you	O
@@ -2879,7 +2666,7 @@ variable	O
 y	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 ,	O
@@ -3624,14 +3411,14 @@ ABAB	O
 My	O
 Classes	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
 the	O
 wrapper	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 this	O
@@ -3641,19 +3428,19 @@ used	O
 in	O
 main-app	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 output	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 should	O
 be	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Can	O
 you	O
@@ -3669,7 +3456,7 @@ believe	O
 the	O
 annotations	O
 on	O
-Wrapper	B-Fram
+Wrapper	O
 are	O
 the	O
 problem	O
@@ -3715,8 +3502,8 @@ access	O
 ,	O
 annotate	O
 the	O
-Wrapper	B-API
-class	I-API
+Wrapper	O
+class	O
 with	O
 @XmlAccessorType	O
 (	O
@@ -3767,7 +3554,7 @@ the	O
 following	O
 snippet	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Time	O
 1	O
@@ -4933,7 +4720,7 @@ the	O
 countdownat	O
 all	O
 in	O
-IE	B-API
+IE	B-Fram
 and	O
 wondered	O
 if	O
@@ -4953,8 +4740,8 @@ would	O
 be	O
 compatible	O
 with	O
-IE	O
-.	B-Fram
+IE	B-Fram
+.	O
 
 Here	O
 '	O
@@ -4964,7 +4751,7 @@ code	O
 i'm	O
 using	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 displaying	O
@@ -4972,7 +4759,7 @@ it	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 I	O
@@ -5002,229 +4789,6 @@ Thanks	O
 in	O
 advance	O
 .	O
-
-script	O
-type=	O
-"	O
-text	O
-/	O
-javascript	B-PL
-"	O
-...	O
-var	O
-minutes	O
-,	O
-seconds	O
-;	O
-...	O
-
-script	O
-type=	O
-"	O
-text	O
-/	O
-javascript	B-PL
-"	O
-
-var	O
-minutes	O
-,	O
-seconds	O
-;	O
-
-//	O
-set	O
-minutesvar	O
-mins	O
-=	O
-5	O
-;	O
-
-//	O
-calculate	O
-the	O
-seconds	O
-(	O
-don't	O
-change	O
-this	O
-!	O
-unless	O
-time	O
-progresses	O
-at	O
-a	O
-different	O
-speed	O
-for	O
-you	O
-...	O
-)	O
-var	O
-secs	O
-=	O
-mins	O
-*	O
-60	O
-;	O
-
-function	O
-countdown()	O
-{	O
-setTimeout('Decrement	O
-(	O
-)'	O
-,	O
-1000	O
-);	O
-}function	O
-Decrement()	O
-{	O
-minutes	O
-=	O
-document.getElementById	B-API
-(	O
-"	O
-minutes	O
-")	O
-;	O
-seconds	O
-=	O
-document.getElementById	B-API
-(	O
-"	O
-seconds	O
-")	O
-;	O
-//	O
-if	O
-less	O
-than	O
-a	O
-minute	O
-remaining	O
-if	O
-(	O
-seconds	O
-59	O
-)	O
-{	O
-seconds.value	O
-=	O
-secs	O
-;	O
-}	O
-else	O
-{	O
-minutes.value	O
-=	O
-getminutes()	B-API
-;	O
-seconds.value	O
-=	O
-getseconds()	B-API
-;	O
-}	O
-secs	O
---	O
-;	O
-setTimeout('Decrement	O
-(	O
-)'	O
-,	O
-1000	O
-);	O
-
-}	O
-function	O
-getminutes()	B-API
-{	O
-//	O
-minutes	O
-is	O
-seconds	O
-divided	O
-by	O
-60	O
-,	O
-rounded	O
-down	O
-mins	O
-=	O
-Math.floor	B-API
-(	O
-secs	O
-/	O
-60	O
-);	O
-return	O
-mins	O
-;	O
-}function	O
-getseconds()	B-API
-{	O
-//	O
-take	O
-mins	O
-remaining	O
-(	O
-as	O
-seconds	O
-)	O
-away	O
-from	O
-total	O
-seconds	O
-remaining	O
-return	O
-secs-Math.round	O
-(	O
-mins	O
-*	O
-60	O
-);	O
-}	O
-/	O
-script	O
-div	O
-id=	O
-"	O
-timer	O
-"	O
-Time	O
-Ending	O
-In	O
-:	O
-input	O
-id=	O
-"	O
-minutes	O
-"	O
-type=	O
-"	O
-text	O
-"	O
-minutes	O
-and	O
-input	O
-id=	O
-"	O
-seconds	O
-"	O
-type=	O
-"	O
-text	O
-"	O
-seconds	O
-.	O
-
-/	O
-div	O
-script	O
-countdown()	O
-;	O
-/	O
-script	O
 
 jQuery	B-Fram
 tabs	O
@@ -5294,7 +4858,7 @@ basic	O
 HTML	B-PL
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 '	O
@@ -5302,7 +4866,7 @@ s	O
 the	O
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 There	O
 was	O
@@ -5325,7 +4889,7 @@ of	O
 addClass	B-API
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Also	O
 following	O
@@ -5334,13 +4898,13 @@ updated	O
 js	B-PL
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 '	O
 s	O
 Demo	O
-Fiddle	B-Fram
+Fiddle	O
 
 Here	O
 '	O
@@ -5353,7 +4917,7 @@ are	O
 interested	O
 ...	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Have	O
 some	O
@@ -5385,7 +4949,7 @@ href	B-API
 attribute	O
 of	O
 anchor	O
-@codeSnippetRemoved	O
+@c@	O
 
 JS	B-PL
 :	O
@@ -5407,7 +4971,7 @@ classes	O
 also	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Iframe	B-API
 header	O
@@ -5433,7 +4997,7 @@ code	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 file	O
@@ -5546,7 +5110,7 @@ and	O
 the	O
 form	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 also	O
@@ -5567,7 +5131,7 @@ removed	O
 the	O
 line	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -5578,7 +5142,7 @@ in	O
 the	O
 header	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 problems	O
@@ -5674,61 +5238,6 @@ javascript	B-PL
 code	O
 :	O
 
-?	O
-php	B-PL
-
-/	O
-*	O
--------	O
-Your	O
-Php	B-PL
-Code	O
------	O
-*	O
-/	O
-
-\\Replace	O
-this	O
-code	O
-@header	O
-(	O
-location	O
-)	O
-
-echo	B-API
-"	O
-script	O
-"	O
-;	O
-
-echo	B-API
-"	O
-window.location='yourloation	O
-.php	O
-'	O
-;	O
-"	O
-;	O
-
-echo	B-API
-"	O
-/	O
-script	O
-"	O
-;	O
-
-/	O
-*	O
--------	O
-Your	O
-Php	B-PL
-Code	O
------	O
-*	O
-/	O
-
-?	O
-
 hide	O
 and	O
 show	O
@@ -5816,7 +5325,7 @@ displayed	O
 Please	O
 find	O
 the	O
-fiddle	B-Fram
+fiddle	O
 :	O
 http://jsfiddle.net/0p7djjnc/7	O
 .Please	O
@@ -5828,7 +5337,7 @@ changes.Thanks	O
 HTML	B-PL
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Limiting	O
 number	O
@@ -6896,7 +6405,7 @@ along	O
 these	O
 lines	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Initialize	O
 an	O
@@ -7148,15 +6657,15 @@ parts	O
 
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 CSS	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 HTML	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 could	O
@@ -7193,7 +6702,7 @@ the	O
 previous	O
 script	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hey	O
 Dereleased	O
@@ -7221,17 +6730,17 @@ code	O
 Javascript	B-PL
 logo.js	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 CSS	B-PL
 main.css	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 HTML	B-PL
 index.html	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Select	O
 element	O
@@ -7256,7 +6765,7 @@ alt	I-API
 tags	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 cant	O
@@ -7353,7 +6862,7 @@ to	O
 your	O
 selector	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Well	O
 .	O
@@ -7374,7 +6883,7 @@ this	O
 method	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 now	O
 x[0	O
@@ -7434,7 +6943,7 @@ way	O
 somewhat	O
 like	O
 CSS	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -7461,7 +6970,7 @@ to	O
 this	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 These	O
 2	O
@@ -7565,7 +7074,7 @@ using	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 it	O
@@ -7595,7 +7104,7 @@ i	O
 also	O
 tried	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 y	O
 this	O
@@ -7968,7 +7477,7 @@ myself	O
 :	O
 "	O
 >	O
-@codeSnippetRemoved	O
+@c@	O
 
 FYI	O
 :	O
@@ -8045,7 +7554,7 @@ function	O
 like	O
 so	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 this	O
@@ -8088,7 +7597,7 @@ page	O
 ?	O
 
 Try	O
-@codeSnippetRemoved	O
+@c@	O
 
 After	O
 looking	O
@@ -8108,8 +7617,7 @@ for	O
 username	O
 =	O
 '	O
-{$username	O
-}	O
+{$username}	O
 '	O
 ,	O
 because	O
@@ -8245,12 +7753,12 @@ line	O
 should	O
 be	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Update	O
 3	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 First	O
 of	O
@@ -8315,7 +7823,7 @@ have	O
 to	O
 be	O
 username	O
-LIKE	O
+LIKE	B-API
 '	O
 {$username}%	O
 '	O
@@ -8377,7 +7885,7 @@ you	O
 do	O
 something	O
 with	O
-LIKE	O
+LIKE	B-API
 {$username}%	O
 ,	O
 you're	O
@@ -8617,7 +8125,7 @@ the	O
 error	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Many	O
 thanks	O
@@ -8772,7 +8280,7 @@ its	O
 the	O
 script	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 unlink	O
 (	O
@@ -8802,7 +8310,7 @@ to	O
 use	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 would	O
 JustWork	O
@@ -8908,7 +8416,7 @@ The	O
 canonical	O
 pattern	O
 is	O
-@codeSnippetRemoved	O
+@c@	O
 
 Note	O
 also	O
@@ -8923,7 +8431,7 @@ enclosing	O
 namespace	O
 ,	O
 ie	O
-@codeSnippetRemoved	O
+@c@	O
 
 HTH	O
 
@@ -8946,7 +8454,7 @@ block	O
 scoped	O
 variables	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 this	O
@@ -8979,7 +8487,7 @@ regular	O
 local	O
 variables	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 this	O
@@ -9162,12 +8670,12 @@ document	O
 for	O
 table	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Writing	O
 to	O
 another	O
 document	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 

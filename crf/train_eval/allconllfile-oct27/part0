@@ -416,7 +416,7 @@ O	486	489	And
 O	490	492	in
 O	493	495	my
 B-Stan	496	500	HTTP
-B-API	501	508	Request
+O	501	508	Request
 O	509	514	class
 O	515	519	that
 O	520	530	constructs
@@ -1571,19 +1571,19 @@ O	360	361	:
 O	362	363	\
 O	364	381	RavenDB-Build-309
 O	382	398	\EmbeddedClient\
-B-API	399	424	Raven.Client.Embedded.dll
+O	399	424	Raven.Client.Embedded.dll
 O	425	426	\
 O	427	444	RavenDB-Build-309
 O	445	453	\Client\
-B-API	454	482	Raven.Client.Lightweight.dll
+O	454	482	Raven.Client.Lightweight.dll
 O	483	484	\
 O	485	502	RavenDB-Build-309
 O	503	519	\EmbeddedClient\
-B-API	520	543	Raven.Storage.Esent.dll
+O	520	543	Raven.Storage.Esent.dll
 O	544	545	\
 O	546	563	RavenDB-Build-309
 O	564	580	\EmbeddedClient\
-B-API	581	606	Raven.Storage.Managed.dll
+O	581	606	Raven.Storage.Managed.dll
 
 O	607	610	The
 O	611	615	code
@@ -2062,7 +2062,7 @@ O	428	429	.
 O	430	431	I
 O	432	439	believe
 O	440	444	with
-O	445	453	Volusion
+B-Fram	445	453	Volusion
 O	453	454	,
 O	455	459	that
 O	460	463	the
@@ -3314,59 +3314,7 @@ B-API	886	902	javafx.util.Pair
 O	903	904	:
 O	905	924	@codeSnippetRemoved
 
-O	925	931	public
-B-API	932	935	Map
-O	936	944	MyPeriod
-O	944	945	,
-B-API	946	953	Integer
-O	954	967	bindNewColumn
-O	968	969	(
-B-API	969	973	List
-O	974	982	MyPeriod
-O	983	990	periods
-O	990	991	)
-O	992	993	{
-B-API	994	997	Map
-O	998	1006	MyPeriod
-O	1006	1007	,
-B-API	1008	1015	Integer
-O	1016	1019	map
-O	1020	1021	=
-O	1022	1025	new
-B-API	1026	1033	HashMap
-O	1034	1042	MyPeriod
-O	1042	1043	,
-O	1044	1051	Integer
-O	1052	1053	(
-O	1053	1055	);
-O	1056	1059	for
-O	1060	1061	(
-O	1061	1069	MyPeriod
-O	1070	1076	period
-O	1077	1078	:
-O	1079	1086	periods
-O	1086	1087	)
-O	1088	1089	{
-B-API	1090	1097	map.put
-O	1098	1099	(
-O	1099	1105	period
-O	1105	1106	,
-O	1107	1118	calculation
-O	1119	1120	(
-O	1120	1126	period
-O	1127	1130	));
-O	1131	1132	}
-O	1133	1139	return
-O	1140	1143	map
-O	1144	1145	;
-O	1146	1147	}
-
-O	1148	1152	With
-O	1153	1154	a
-O	1155	1159	Pair
-O	1159	1160	.
-
-O	1161	1180	@codeSnippetRemoved
+O	925	944	@codeSnippetRemoved
 
 O	0	3	How
 O	4	6	to
@@ -4429,7 +4377,7 @@ O	749	750	.
 
 O	751	754	The
 O	755	767	dropdowns[i]
-O	768	780	.appendChild
+B-API	768	780	.appendChild
 O	781	782	(
 O	782	791	options[i
 O	792	795	]);
@@ -4892,7 +4840,7 @@ O	91	95	some
 O	96	105	animation
 O	106	112	effect
 O	113	118	using
-B-PL	119	126	css3.It
+O	119	126	css3.It
 O	127	132	works
 O	133	137	fine
 O	138	140	in
@@ -5329,7 +5277,7 @@ O	124	126	UI
 B-API	127	136	draggable
 O	137	139	to
 O	140	147	smaller
-O	148	157	droppable
+B-API	148	157	droppable
 
 O	158	159	I
 O	160	164	have
@@ -6190,7 +6138,7 @@ O	1380	1384	that
 O	1385	1388	you
 O	1389	1395	should
 O	1396	1399	use
-B-API	1400	1423	.addClass('myhoverclass
+O	1400	1423	.addClass('myhoverclass
 O	1424	1426	')
 O	1427	1434	instead
 O	1435	1437	of

@@ -2630,7 +2630,7 @@ O	710	712	to
 O	713	719	create
 O	720	722	an
 O	723	732	invisible
-B-API	733	738	Shell
+O	733	738	Shell
 O	739	742	and
 O	743	746	set
 O	747	750	the
@@ -2661,7 +2661,7 @@ O	859	870	coordinates
 O	871	873	to
 B-API	874	885	setLocation
 O	886	888	on
-B-API	889	894	Shell
+O	889	894	Shell
 O	895	898	but
 O	898	899	,
 O	900	901	I
@@ -2698,7 +2698,7 @@ O	1064	1066	on
 O	1067	1070	top
 O	1071	1073	of
 O	1074	1075	a
-B-API	1076	1081	shell
+O	1076	1081	shell
 O	1081	1082	,
 O	1083	1086	you
 O	1087	1090	may
@@ -2711,7 +2711,7 @@ O	1113	1117	then
 O	1118	1121	get
 O	1122	1125	the
 O	1126	1132	parent
-B-API	1133	1138	shell
+O	1133	1138	shell
 O	1139	1140	'
 O	1141	1142	s
 O	1143	1153	sub-shells
@@ -2726,7 +2726,7 @@ O	1190	1194	file
 O	1195	1201	dialog
 O	1202	1203	'
 O	1204	1205	s
-B-API	1206	1211	shell
+O	1206	1211	shell
 O	1211	1212	.
 
 O	1213	1216	Now
@@ -3027,7 +3027,7 @@ O	35	43	beginner
 O	44	46	of
 B-Plat	47	54	android
 O	55	58	and
-B-PL	59	65	java.I
+O	59	65	java.I
 O	66	69	did
 O	70	72	no
 O	73	83	understand
@@ -3045,7 +3045,7 @@ O	150	151	.
 O	152	158	0.When
 O	159	161	do
 O	162	165	use
-O	166	178	Serializable
+B-API	166	178	Serializable
 O	178	179	?
 
 O	180	184	what
@@ -4068,7 +4068,7 @@ O	421	423	in
 O	424	428	your
 O	429	433	call
 O	434	436	to
-O	437	447	setTimeout
+B-API	437	447	setTimeout
 O	447	448	.
 
 O	449	451	In
@@ -4082,7 +4082,7 @@ O	477	480	the
 O	481	489	function
 O	490	492	in
 O	493	496	the
-O	497	507	setTimeout
+B-API	497	507	setTimeout
 O	508	517	parameter
 O	518	520	is
 O	521	529	executed
@@ -4384,7 +4384,7 @@ O	27	31	will
 O	32	34	be
 O	35	41	sealed
 O	42	46	with
-O	47	55	phonegap
+B-Fram	47	55	phonegap
 O	56	58	so
 O	59	61	it
 O	62	66	will
@@ -4412,8 +4412,8 @@ O	156	160	will
 O	161	163	be
 O	164	171	secured
 O	172	176	with
-O	177	182	phone
-O	183	186	gap
+B-Fram	177	182	phone
+I-Fram	183	186	gap
 
 O	187	189	it
 O	190	191	'
@@ -4726,7 +4726,7 @@ O	418	419	-
 O	420	426	missed
 O	427	438	parentheses
 O	439	441	to
-O	442	453	replaceWith
+B-API	442	453	replaceWith
 O	454	461	command
 O	462	465	and
 O	466	474	variable
@@ -5309,7 +5309,7 @@ O	353	354	i
 O	355	359	have
 O	360	364	make
 O	365	366	3
-O	367	370	div
+B-API	367	370	div
 O	371	374	and
 O	375	380	there
 O	381	384	was

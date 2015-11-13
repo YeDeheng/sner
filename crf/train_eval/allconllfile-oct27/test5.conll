@@ -56,7 +56,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -68,7 +68,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 WebView	B-API
@@ -77,7 +77,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 Happens	O
@@ -250,11 +250,11 @@ the	O
 css	B-PL
 Adding	O
 a	O
-doctype	O
+doctype	B-API
 !	O
 
 DOCTYPE	B-API
-html	I-API
+html	B-PL
 to	O
 the	O
 HTML	B-PL
@@ -266,7 +266,7 @@ line	O
 to	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Solves	O
 this	O
@@ -339,8 +339,8 @@ fishy	O
 "	O
 Dangerous	O
 "	O
-Android	B-API
-permissions	I-API
+Android	B-Plat
+permissions	O
 that	O
 don't	O
 need	O
@@ -353,7 +353,7 @@ users	O
 Google	O
 states	O
 that	O
-permissions	B-API
+permissions	O
 with	O
 dangerous	O
 as	O
@@ -379,7 +379,7 @@ for	O
 such	O
 a	O
 dangerous	O
-permission	B-API
+permission	O
 is	O
 android.permission.INTERNET	B-API
 .	O
@@ -392,7 +392,7 @@ declared	O
 to	O
 use	O
 this	O
-permissions	B-API
+permissions	O
 ,	O
 it	O
 '	O
@@ -435,7 +435,7 @@ Why	O
 is	O
 the	O
 INTERNET	B-API
-permission	I-API
+permission	O
 still	O
 dangerous	O
 ,	O
@@ -493,9 +493,9 @@ Are	O
 there	O
 other	O
 dangerous	O
-permissions	B-API
+permissions	O
 than	O
-INTERNET	B-Stan
+INTERNET	B-API
 where	O
 this	O
 applies	O
@@ -723,7 +723,7 @@ QBFC	B-Fram
 11	I-Fram
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Allow	O
 templates	O
@@ -743,7 +743,7 @@ graphs	O
 .	O
 
 A	O
-BidirectionalGraph	B-API
+BidirectionalGraph	O
 takes	O
 two	O
 templates	O
@@ -755,7 +755,7 @@ an	O
 edge	O
 type	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Unfortunately	O
 ,	O
@@ -845,13 +845,13 @@ the	O
 graph	O
 class	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 when	O
 I	O
 call	O
-graph.IncomingEdges	B-API
+graph.IncomingEdges	O
 (	O
 vertex	O
 )	O
@@ -878,15 +878,15 @@ to	O
 say	O
 :	O
 
-graph.IncomingEdges	B-API
-GraphThatInheritsFromBidirectionalGraph	I-API
-VertexType	I-API
+graph.IncomingEdges	O
+GraphThatInheritsFromBidirectionalGraph	O
+VertexType	O
 ,	O
-EdgeType	B-API
+EdgeType	O
 ,	O
-VertexType	B-API
+VertexType	O
 ,	O
-EdgeType	B-API
+EdgeType	O
 (	O
 vertex	O
 )	O
@@ -971,7 +971,7 @@ use	O
 which	O
 inherits	O
 from	O
-BidirectionalGraph	B-API
+BidirectionalGraph	O
 ?	O
 
 It	O
@@ -1048,7 +1048,7 @@ to	O
 understand	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 first	O
@@ -1061,12 +1061,12 @@ is	O
 able	O
 to	O
 infer	O
-TGraphType	B-API
+TGraphType	O
 and	O
-TVertex	B-API
+TVertex	O
 but	O
 not	O
-TEgde	B-API
+TEgde	O
 ,	O
 as	O
 it	O
@@ -1074,13 +1074,13 @@ would	O
 require	O
 inferring	O
 the	O
-TEdge	B-API
+TEdge	O
 from	O
 the	O
 type	O
 constraint	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 C#	B-PL
@@ -1131,10 +1131,10 @@ other	O
 hand	O
 ,	O
 includes	O
-BidirectionalGraph	B-API
-TVertex	I-API
+BidirectionalGraph	O
+TVertex	O
 ,	O
-TEdge	B-API
+TEdge	O
 as	O
 a	O
 parameter	O
@@ -1153,7 +1153,7 @@ a	O
 class	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 the	O
 compiler	O
@@ -1172,7 +1172,7 @@ is	O
 a	O
 unique	O
 type	O
-BidirectionalGraph	B-API
+BidirectionalGraph	O
 AVertex	O
 ,	O
 AnEdge	O
@@ -1187,9 +1187,9 @@ is	O
 able	O
 to	O
 infer	O
-TVertex	B-API
+TVertex	O
 and	O
-TEdge	B-API
+TEdge	O
 .	O
 
 Note	O
@@ -1199,17 +1199,17 @@ the	O
 parameter	O
 type	O
 were	O
-IGraph	B-API
-TVertex	I-API
+IGraph	O
+TVertex	O
 ,	O
-TEdge	B-API
+TEdge	O
 (	O
 instead	O
 of	O
-BidirectionalGraph	B-API
-TVertex	I-API
+BidirectionalGraph	O
+TVertex	O
 ,	O
-TEdge	B-API
+TEdge	O
 )	O
 and	O
 AGraph	O
@@ -1224,7 +1224,7 @@ interface	O
 ,	O
 e.g.	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 then	O
 type	O
@@ -1242,7 +1242,7 @@ if	O
 for	O
 example	O
 ,	O
-TVertex	B-API
+TVertex	O
 is	O
 AVertex	O
 or	O
@@ -1524,7 +1524,7 @@ my	O
 code	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Some	O
 option	O
@@ -1572,11 +1572,11 @@ coding	O
 
 Hence	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Should	O
 be	O
-@codeSnippetRemoved	O
+@c@	O
 
 Second	O
 :	O
@@ -1607,7 +1607,7 @@ use	O
 its	O
 URL	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Third	O
 :	O
@@ -1752,7 +1752,7 @@ it	O
 opens	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Thank	O
 you	O
@@ -2397,7 +2397,7 @@ s	O
 a	O
 start	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 should	O
@@ -2900,69 +2900,12 @@ file	O
 in	O
 java	B-PL
 
-public	O
-class	O
-ConvertXMLtoJSON	O
-{	O
-
-public	O
-static	O
-void	O
-main	O
-(	O
-String	O
-[]	O
-args	O
-)	O
-throws	O
-Exception	B-API
-{	O
-InputStream	B-API
-in	O
-=	O
-ConvertXMLtoJSON.class.getResourceAsStream	O
-(	O
-"	O
-D:	O
-\\	O
-sample.xml	O
-")	O
-;	O
-String	B-API
-xml	O
-=	O
-IOUtils.toString	B-API
-(	O
-in	O
-);	O
-XMLSerializer	B-API
-xmlSerializer	O
-=	O
-new	O
-XMLSerializer()	B-API
-;	O
-JSON	B-API
-json	O
-=	O
-xmlSerializer.read	B-API
-(	O
-xml	O
-);	O
-System.out.println	B-API
-(	O
-json.toString	B-API
-(	O
-2	O
-));	O
-}	O
-}	O
-
 but	O
 i	O
 am	O
 getting	O
 error	O
-@codeSnippetRemoved	O
+@c@	O
 
 can	O
 u	O
@@ -3020,20 +2963,12 @@ Resource	O
 which	O
 is	O
 wrong	O
-@codeSnippetRemoved	O
+@c@	O
 
 Change	O
 it	O
 to	O
-@codeSnippetRemoved	O
-
-String	B-API
-xml	O
-=	O
-IOUtils.toString	B-API
-(	O
-in	O
-);	O
+@c@	O
 
 Here	O
 InputStream	B-API
@@ -3049,7 +2984,7 @@ NullPointerException	B-API
 Class	O
 #getResourceAsStream	O
 (	O
-String	B-API
+String	O
 name	O
 )	O
 it	O
@@ -3155,7 +3090,7 @@ the	O
 resouce	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Find	O
 a	O
@@ -3182,7 +3117,7 @@ convert	O
 xml	B-Stan
 to	O
 json	B-Stan
-@codeSnippetRemoved	O
+@c@	O
 
 }	O
 
@@ -3216,7 +3151,7 @@ super	O
 class	O
 itself	O
 extends	O
-Activity	O
+Activity	B-API
 but	O
 I	O
 can't	O
@@ -3255,10 +3190,10 @@ CommonCode	O
 Superclass	O
 oncreate	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 SubClass	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 I	O
@@ -3448,11 +3383,11 @@ Example	O
 
 Subclass	O
 -	O
-@codeSnippetRemoved	O
+@c@	O
 
 SuperClass	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 using	O
 a	O
@@ -3556,66 +3491,6 @@ i	O
 did	O
 wrong	O
 
-Waypoint.java	O
-:	O
-58	O
-:	O
-error	O
-:	O
-')'	O
-expected	O
-return	O
-distance	O
-(	O
-Travelable	O
-otherTravelable	O
-)	O
-/	O
-speed	O
-;	O
-^	O
-Waypoint.java	O
-:	O
-58	O
-:	O
-error	O
-:	O
-illegal	O
-start	O
-of	O
-expression	O
-return	O
-distance	O
-(	O
-Travelable	O
-otherTravelable	O
-)	O
-/	O
-speed	O
-;	O
-^	O
-Waypoint.java	O
-:	O
-58	O
-:	O
-error	O
-:	O
-not	O
-a	O
-statement	O
-return	O
-distance	O
-(	O
-Travelable	O
-otherTravelable	O
-)	O
-/	O
-speed	O
-;	O
-^3	O
-errors	O
-@codeSnippetRemoved	O
-
 When	O
 you	O
 call	O
@@ -3632,10 +3507,10 @@ arguments	O
 .	O
 
 Change	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 Change	O
 this	O
@@ -3650,10 +3525,10 @@ calling	O
 the	O
 method	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 To	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 have	O
@@ -3668,7 +3543,7 @@ line	O
 of	O
 toTime.just	O
 return	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 pointcut	O
@@ -3712,7 +3587,7 @@ advice	O
 defined	O
 in	O
 
-org.example.aspect.TestAspect	B-API
+org.example.aspect.TestAspect	O
 has	O
 not	O
 
@@ -3749,7 +3624,7 @@ WARNING	O
 advice	O
 defined	O
 in	O
-org.example.aspect.TestAspect	B-API
+org.example.aspect.TestAspect	O
 has	O
 not	O
 been	O
@@ -3897,7 +3772,7 @@ To	O
 do	O
 that	O
 call	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 context.getVariable	B-API
@@ -3934,7 +3809,7 @@ of	O
 the	O
 button	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Django	B-Fram
 :	O
@@ -4071,7 +3946,7 @@ is	O
 not	O
 here	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Views.py	O
 ,	O
@@ -4080,7 +3955,7 @@ the	O
 error	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 django	B-Fram
@@ -4090,7 +3965,7 @@ says	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 post	O
@@ -4109,7 +3984,7 @@ my	O
 email	O
 and	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Just	O
 in	O
@@ -4126,7 +4001,7 @@ javascript	B-PL
 file	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 just	O
@@ -4183,7 +4058,7 @@ similar	O
 to	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -4216,7 +4091,7 @@ another	O
 ng-click	B-API
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 will	O
@@ -4334,7 +4209,7 @@ pass	O
 my	O
 URL	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 the	O
@@ -4350,7 +4225,7 @@ that	O
 is	O
 called	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 am	O
@@ -4596,7 +4471,7 @@ pipe	O
 line	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 running	O
@@ -4750,7 +4625,7 @@ with	O
 gulp	B-Fram
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Want	O
 an	O
@@ -4862,7 +4737,7 @@ I'm	O
 putting	O
 a	O
 single	O
-DIV	O
+DIV	B-API
 on	O
 a	O
 page	O
@@ -4887,7 +4762,7 @@ I	O
 just	O
 want	O
 this	O
-div	O
+div	B-API
 to	O
 fill	O
 all	O
@@ -4972,7 +4847,7 @@ height	O
 ;	O
 and	O
 the	O
-div	O
+div	B-API
 as	O
 position	O
 :	O
@@ -5009,7 +4884,7 @@ the	O
 viewport	O
 ,	O
 the	O
-div	O
+div	B-API
 will	O
 already	O
 use	O
@@ -5061,7 +4936,7 @@ Answering	O
 this	O
 myself	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 basic	O
@@ -5099,7 +4974,7 @@ go	O
 and	O
 re-size	O
 this	O
-div	O
+div	B-API
 appropriately	O
 .	O
 
@@ -5116,9 +4991,9 @@ new	O
 to	O
 the	O
 whole	O
-ruby	B-PL
-on	I-PL
-rails	I-PL
+ruby	B-Fram
+on	I-Fram
+rails	I-Fram
 stuff	O
 ,	O
 though	O
@@ -5163,33 +5038,7 @@ have	O
 at	O
 present	O
 is	O
-@codeSnippetRemoved	O
-
-controller	O
-code	O
-
-#	O
-POST	O
-/	O
-availabilities	O
-#	O
-POST	O
-/	O
-availabilities.json	O
-def	O
-create	O
-@availability	O
-=	O
-Availability.new	B-API
-(	O
-params	O
-[:	O
-availability	O
-]	O
-)	O
-@codeSnippetRemoved	O
-
-end	O
+@c@	O
 
 though	O
 how	O
@@ -5213,192 +5062,6 @@ happening	O
 at	O
 present	O
 
-Processing	O
-by	O
-AvailabilitiesController	B-API
-#create	O
-as	O
-HTML	B-PL
-Parameters	O
-:	O
-{	O
-"	O
-schedule_id	O
-"	O
-=	O
-"	O
-18	O
-"	O
-,	O
-"	O
-team_id	O
-"	O
-=	O
-"	O
-1	O
-"	O
-,	O
-"	O
-user_id	O
-"	O
-=	O
-"	O
-38	O
-"	O
-}	O
-User	O
-Load	O
-(	O
-1.6ms	O
-)	O
-SELECT	O
-"	O
-users	O
-"	O
-.	O
-
-*	O
-FROM	O
-"	O
-users	O
-"	O
-WHERE	O
-"	O
-users	O
-"	O
-.	O
-
-"	O
-id	O
-"	O
-=	O
-38	O
-LIMIT	O
-1	O
-(	O
-0.4ms	O
-)	O
-BEGIN	O
-SQL	B-PL
-(	O
-20.1ms	O
-)	O
-INSERT	O
-INTO	O
-"	O
-availabilities	O
-"	O
-(	O
-"	O
-available	O
-"	O
-,	O
-"	O
-created_at	O
-"	O
-,	O
-"	O
-schedule_id	O
-"	O
-,	O
-"	O
-team_id	O
-"	O
-,	O
-"	O
-updated_at	O
-"	O
-,	O
-"	O
-user_id	O
-")	O
-VALUES	O
-(	O
-$1	O
-,	O
-$2	O
-,	O
-$3	O
-,	O
-$4	O
-,	O
-$5	O
-,	O
-$6	O
-)	O
-RETURNING	O
-"	O
-id	O
-"	O
-[[	O
-"	O
-available	O
-"	O
-,	O
-nil]	O
-,	O
-[	O
-"	O
-created_at	O
-"	O
-,	O
-Tue	O
-,	O
-18	O
-Sep	O
-2012	O
-23:07	O
-:	O
-26	O
-EST	O
-+	O
-10:00	O
-]	O
-,	O
-[	O
-"	O
-schedule_id	O
-"	O
-,	O
-nil]	O
-,	O
-[	O
-"	O
-team_id	O
-"	O
-,	O
-nil]	O
-,	O
-[	O
-"	O
-updated_at	O
-"	O
-,	O
-Tue	O
-,	O
-18	O
-Sep	O
-2012	O
-23:07	O
-:	O
-26	O
-EST	O
-+	O
-10:00	O
-]	O
-,	O
-[	O
-"	O
-user_id	O
-"	O
-,	O
-nil	O
-]]	O
-(	O
-10.5ms	O
-)	O
-COMMIT	O
-
 If	O
 you	O
 want	O
@@ -5407,7 +5070,7 @@ pass	O
 information	O
 to	O
 your	O
-rails	O
+rails	B-Fram
 app	O
 ,	O
 you	O
@@ -5416,7 +5079,7 @@ need	O
 to	O
 place	O
 the	O
-@codeSnippetRemoved	O
+@c@	O
 
 on	O
 to	O
@@ -5477,7 +5140,7 @@ ones	O
 For	O
 example	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Often	O
 though	O
@@ -5660,7 +5323,7 @@ is	O
 my	O
 script	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 here	O
@@ -5670,7 +5333,7 @@ of	O
 the	O
 slider	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 use	O
 :	O
@@ -5772,7 +5435,7 @@ the	O
 current	O
 jquery	B-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 value	O
@@ -5814,10 +5477,10 @@ range	O
 
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 HTML	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 code	O
@@ -5908,7 +5571,7 @@ the	O
 test	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 guess	O
@@ -5933,7 +5596,7 @@ things	O
 .	O
 
 Yes	O
-echo	B-API
+echo	O
 '	O
 s	O
 because	O
@@ -6171,7 +5834,7 @@ So	O
 Is	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 secure	O
@@ -6179,7 +5842,7 @@ as	O
 this	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 first	O
@@ -6426,7 +6089,7 @@ storing	O
 the	O
 data	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Therefore	O
 $salt	O
@@ -6515,7 +6178,7 @@ file	O
 name	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 is	O
 where	O
@@ -6525,7 +6188,7 @@ this	O
 error	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 it	O
 works	O
@@ -6566,7 +6229,7 @@ values	O
 such	O
 as	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Many	O
 thanks	O
@@ -6579,7 +6242,7 @@ can	O
 do	O
 something	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
 f	O
@@ -6608,7 +6271,7 @@ after	O
 the	O
 string	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 reason	O
@@ -6646,7 +6309,7 @@ formatting	O
 method	O
 ...	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Drawing	O
 a	O
@@ -6686,7 +6349,7 @@ the	O
 source	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 After	O
 playing	O
@@ -6798,7 +6461,7 @@ is	O
 random	O
 edges	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I'm	O
 trying	O
@@ -6875,14 +6538,14 @@ the	O
 distance	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 should	O
 maybe	O
 be	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -6896,7 +6559,7 @@ the	O
 pos	O
 dictionary.For	O
 example	O
-@codeSnippetRemoved	O
+@c@	O
 
 Appengine	B-Fram
 BulkLoader	I-Fram
@@ -6938,14 +6601,14 @@ my	O
 development	O
 server	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 exact	O
 output	O
 being	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -6953,7 +6616,7 @@ the	O
 app.yaml	O
 file	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 the	O
@@ -6964,7 +6627,7 @@ perform	O
 the	O
 upload	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -6972,7 +6635,7 @@ the	O
 uploader	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 this	O
@@ -6980,7 +6643,7 @@ the	O
 cols.csv	O
 file	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Any	O
 help	O
@@ -7078,5 +6741,5 @@ to	O
 do	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 

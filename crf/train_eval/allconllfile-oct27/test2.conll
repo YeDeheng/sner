@@ -254,12 +254,12 @@ app	O
 my	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 it	O
 give	O
 me	O
-@codeSnippetRemoved	O
+@c@	O
 
 what	O
 is	O
@@ -314,7 +314,7 @@ to	O
 your	O
 manifest	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 First	O
 of	O
@@ -386,13 +386,13 @@ In	O
 mainfest	O
 file	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 after	O
-@codeSnippetRemoved	O
+@c@	O
 
 as	O
-@codeSnippetRemoved	O
+@c@	O
 
 how	O
 to	O
@@ -586,7 +586,7 @@ imgWidth	O
 imgHeight	O
 )	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 designer	O
@@ -622,7 +622,7 @@ will	O
 be	O
 generated	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Visual	B-Fram
 studio	I-Fram
@@ -900,7 +900,7 @@ not	O
 generate	O
 any	O
 exception	O
-@codeSnippetRemoved	O
+@c@	O
 
 RegardsAdeel	O
 Arshad	O
@@ -1160,7 +1160,7 @@ alright	O
 Failed	O
 to	O
 load	O
-PDF	O
+PDF	B-Stan
 document	O
 
 Unreadable	O
@@ -1339,7 +1339,7 @@ HTML	B-PL
 Code	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 img	B-API
 is	O
@@ -1356,12 +1356,12 @@ PHP	B-PL
 Code	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 JScript	B-PL
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Can	O
 you	O
@@ -2698,7 +2698,7 @@ used	O
 ibatis	O
 Script	O
 Runner	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 there	O
@@ -2759,13 +2759,13 @@ method	O
 (	O
 http://docs.oracle.com/javase/6/docs/api/java/sql/Statement.html	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 if	O
 i	O
 set	O
-@codeSnippetRemoved	O
+@c@	O
 
 behind	O
 stmnt.execute	B-API
@@ -2808,7 +2808,7 @@ in	O
 advance	O
 !	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -2829,7 +2829,7 @@ you	O
 out	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Without	O
 having	O
@@ -2856,7 +2856,7 @@ the	O
 script	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 store	O
 image	O
@@ -3084,7 +3084,7 @@ in	O
 textual	O
 form	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Expressing	O
 this	O
@@ -3096,7 +3096,7 @@ jsfiddle	B-Fram
 Experimental	O
 SSCCE	B-Stan
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 guess	O
@@ -3497,14 +3497,14 @@ this	O
 is	O
 slow	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 you	O
 can	O
 expand	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hibernate	B-Fram
 calls	O
@@ -3601,7 +3601,7 @@ database	O
 yet	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Have	O
 I	O
@@ -3633,7 +3633,7 @@ this	O
 exception	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -3813,13 +3813,13 @@ supporting	O
 queries	O
 such	O
 as	O
-findAll	O
+findAll	B-API
 in	O
 a	O
 new	O
 session	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 That	O
 has	O
@@ -3890,7 +3890,7 @@ valid	O
 index	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 real	O
@@ -3988,7 +3988,7 @@ sort	O
 as	O
 needed	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 http://jsfiddle.net/ExplosionPIlls/ULEFX	O
 
@@ -4063,7 +4063,7 @@ you	O
 .	O
 
 https://graph.facebook.com/JaramSieBrunetkami/photos	O
-@codeSnippetRemoved	O
+@c@	O
 
 Jquery	B-Fram
 -	O
@@ -4106,7 +4106,7 @@ my	O
 data	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Instead	O
 of	O
@@ -4160,7 +4160,7 @@ changing	O
 it	O
 to	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 this	O
@@ -4202,11 +4202,11 @@ instead	O
 of	O
 id	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 try	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 Change	O
 Row	O
@@ -4217,207 +4217,6 @@ data	O
 table	O
 by	O
 Date	O
-
-Today	O
-:	O
-?	O
-
-php	B-PL
-echo	O
-date	O
-(	O
-"	O
-m	O
-/	O
-d	O
-/	O
-Y	O
-")	O
-;	O
-?	O
-
-ph	O
-ISSUED	O
-BOOKS	O
-|	O
-DUE	O
-BOOKS	O
-/	O
-ph	O
-table	O
-border=	O
-"	O
-1	O
-"	O
-cellpadding=	O
-"	O
-3	O
-"	O
-cellspacing=	O
-"	O
-0	O
-"	O
-id=	O
-"	O
-tblissued	O
-"	O
-tr	O
-bgcolor=	O
-"	O
-#CCCCCC	O
-"	O
-th	O
-height=	O
-"	O
-39	O
-"	O
-id	O
-/	O
-th	O
-th	O
-Officer	O
-/	O
-th	O
-th	O
-Member_ID	O
-/	O
-th	O
-th	O
-Book_ID	O
-/	O
-th	O
-th	O
-Issued_date	O
-/	O
-th	O
-th	O
-Due_date	O
-/	O
-th	O
-th	O
-Remarks	O
-/	O
-th	O
-/	O
-tr	O
-?	O
-
-php	B-PL
-do	O
-{	O
-?	O
-
-tr	O
-bgcolor=	O
-"	O
-#FFFFFF	O
-"	O
-td	O
-height=	O
-"	O
-33	O
-"	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['id	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Officer	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Member_ID	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Book_ID	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Issued_date	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Due_date	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Remarks	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-/	O
-tr	O
-?	O
-
-php	B-PL
-}	O
-while	O
-(	O
-$row_rsissuedbooks	O
-=	O
-mysql_fetch_assoc	B-API
-(	O
-$rsissuedbooks	O
-));	O
-?	O
-
-/	O
-table	O
 
 i	O
 want	O
@@ -4463,12 +4262,12 @@ will	O
 work	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -4524,7 +4323,7 @@ doing	O
 this	O
 with	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 problem	O
@@ -4697,7 +4496,7 @@ around	O
 the	O
 problem	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Basically	O
 ,	O
@@ -5129,7 +4928,7 @@ this.Any	O
 ideas	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You're	O
 passing	O
@@ -5144,11 +4943,11 @@ function	O
 
 This	O
 line	O
-@codeSnippetRemoved	O
+@c@	O
 
 should	O
 be	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 for	O
@@ -5189,7 +4988,7 @@ function	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 it	O
@@ -5198,7 +4997,7 @@ cleaner	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Add	O
 css	B-PL
@@ -5217,7 +5016,7 @@ submenu	O
 like	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 I	O
@@ -5329,7 +5128,7 @@ is	O
 my	O
 full	O
 code	O
-Fiddle	B-Fram
+Fiddle	O
 
 you	O
 simply	O
@@ -5347,7 +5146,7 @@ exclude	O
 all	O
 classes	O
 root-level	O
-@codeSnippetRemoved	O
+@c@	O
 
 check	O
 the	O
@@ -5387,8 +5186,8 @@ solution	O
 :	O
 
 Sample	O
-Fiddle	B-Fram
-@codeSnippetRemoved	O
+Fiddle	O
+@c@	O
 
 In	O
 this	O
@@ -5484,14 +5283,14 @@ your	O
 #main	O
 -menu	O
 list	O
-@codeSnippetRemoved	O
+@c@	O
 
 Modifying	O
 the	O
 css	B-PL
 to	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 DEMO	O
 
@@ -5505,7 +5304,7 @@ my	O
 jquery	B-Fram
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -5853,257 +5652,6 @@ for	O
 login	O
 .	O
 
-Everything	O
-is	O
-being	O
-posted	O
-except	O
-for	O
-the	O
-username	O
-.	O
-
-Is	O
-there	O
-something	O
-I'm	O
-doing	O
-wrong	O
-within	O
-the	O
-placement	O
-of	O
-the	O
-username	O
-variable	O
-edits	O
-?	O
-
-Is	O
-there	O
-something	O
-I'm	O
-missing	O
-that	O
-is	O
-preventing	O
-this	O
-from	O
-being	O
-posted	O
-?	O
-
-@codeSnippetRemoved	O
-
-[	O
-28-Jul-2013	O
-16:05	O
-:	O
-40	O
-America	O
-/	O
-Denver	O
-]	O
-PHP	B-PL
-Parse	O
-error	O
-:	O
-syntax	O
-error	O
-,	O
-unexpected	O
-T_ELSE	O
-in	O
-/	O
-home	O
-/	O
-lear	O
-/	O
-public_html	O
-/	O
-storescripts	O
-/	O
-my_ipn.php	O
-on	O
-line	O
-74	O
-[	O
-28-Jul-2013	O
-21:06	O
-:	O
-37	O
-America	O
-/	O
-Denver	O
-]	O
-PHP	B-PL
-Warning	O
-:	O
-mysqli_query()	B-API
-expects	O
-parameter	O
-1	O
-to	O
-be	O
-mysqli	B-PL
-,	O
-null	O
-given	O
-in	O
-/	O
-home	O
-/	O
-lear	O
-/	O
-public_html	O
-/	O
-storescripts	O
-/	O
-my_ipn.php	O
-on	O
-line	O
-100	O
-[	O
-28-Jul-2013	O
-21:06	O
-:	O
-37	O
-America	O
-/	O
-Denver	O
-]	O
-PHP	B-PL
-Warning	O
-:	O
-mysqli_num_rows()	B-API
-expects	O
-parameter	O
-1	O
-to	O
-be	O
-mysqli_result	B-API
-,	O
-null	O
-given	O
-in	O
-/	O
-home	O
-/	O
-lear	O
-/	O
-public_html	O
-/	O
-storescripts	O
-/	O
-my_ipn.php	O
-on	O
-line	O
-102	O
-
-Edit	O
-:	O
-
-I'vej	O
-ust	O
-updated	O
-the	O
-script	O
-.	O
-
-The	O
-error	O
-I'm	O
-receiving	O
-is	O
-as	O
-follows	O
-:	O
-
-[	O
-28-Jul-2013	O
-22:18	O
-:	O
-33	O
-America	O
-/	O
-Denver	O
-]	O
-PHP	B-PL
-Warning	O
-:	O
-mysqli_fetch_assoc()	B-API
-expects	O
-parameter	O
-1	O
-to	O
-be	O
-mysqli_result	O
-,	O
-null	O
-given	O
-in	O
-/	O
-home	O
-/	O
-learnsit	O
-/	O
-public_html	O
-/	O
-storescripts	O
-/	O
-my_ipn.php	O
-on	O
-line	O
-108	O
-
-Line	O
-108	O
-being	O
-
-while	O
-(	O
-$name_arr	O
-=	O
-mysqli_fetch_assoc	B-API
-(	O
-$result	O
-))	O
-{	O
-
-I	O
-haven't	O
-played	O
-around	O
-with	O
-this	O
-too	O
-much	O
-,	O
-but	O
-the	O
-piece	O
-of	O
-code	O
-which	O
-stands	O
-out	O
-for	O
-me	O
-as	O
-chiefly	O
-suspect	O
-is	O
-:	O
-@codeSnippetRemoved	O
-
-It	O
-should	O
-probably	O
-look	O
-more	O
-like	O
-@codeSnippetRemoved	O
-
 Covering	O
 index	O
 decision	O
@@ -6133,7 +5681,7 @@ on	O
 my	O
 server	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I'm	O
 basically	O
@@ -6182,7 +5730,7 @@ not	O
 being	O
 used	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 ,	O
@@ -6205,7 +5753,7 @@ over	O
 these	O
 fields	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 indeed	O
@@ -6217,7 +5765,7 @@ use	O
 the	O
 index	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 However	O
 ,	O
@@ -6440,7 +5988,7 @@ a	O
 good	O
 chice	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Update	O
 :	O
@@ -6771,7 +6319,7 @@ two	O
 emails	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Maybe	O
 your	O
@@ -6796,7 +6344,7 @@ limitation	O
 something	O
 like	O
 that	O
-@codeSnippetRemoved	O
+@c@	O
 
 Is	O
 this	O
@@ -6830,7 +6378,7 @@ debug	O
 at	O
 this	O
 way	O
-@codeSnippetRemoved	O
+@c@	O
 
 simply	O
 put	O
@@ -7039,7 +6587,7 @@ emails	O
 be	O
 sent	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 deleted	O
@@ -7140,7 +6688,7 @@ could	O
 do	O
 something	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 python	B-PL
@@ -7153,7 +6701,7 @@ come	O
 up	O
 with	O
 is	O
-@codeSnippetRemoved	O
+@c@	O
 
 These	O
 are	O
@@ -7272,10 +6820,10 @@ one	O
 might	O
 write	O
 either	O
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
 accomplish	O
@@ -7832,7 +7380,7 @@ point	O
 your	O
 example	O
 code	O
-@codeSnippetRemoved	O
+@c@	O
 
 would	O
 be	O
@@ -7841,7 +7389,7 @@ more	O
 readable	O
 as	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 anyway	O
@@ -7867,7 +7415,7 @@ inefficient	O
 
 A	O
 braindead	O
-@codeSnippetRemoved	O
+@c@	O
 
 Options	O
 for	O

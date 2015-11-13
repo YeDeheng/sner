@@ -508,7 +508,7 @@ O	1002	1003	:
 O	1004	1017	Investigating
 O	1018	1021	the
 B-Fram	1022	1026	Mono
-I-Fram	1027	1033	source
+O	1027	1033	source
 O	1034	1039	seems
 O	1040	1042	to
 O	1043	1047	bear
@@ -1254,8 +1254,8 @@ O	766	769	the
 O	770	777	problem
 O	777	778	.
 
-B-API	0	6	jQuery
-I-API	7	12	slide
+B-Fram	0	6	jQuery
+B-API	7	12	slide
 I-API	13	19	toggle
 O	20	28	checkbox
 O	29	33	cant
@@ -1388,20 +1388,20 @@ O	704	707	the
 O	708	714	colour
 O	715	717	of
 B-API	718	725	.slider
-I-API	726	733	-button
+O	726	733	-button
 O	734	736	as
 O	737	742	white
 O	742	743	.
 
-B-API	744	751	.slider
-I-API	752	759	-button
+O	744	751	.slider
+O	752	759	-button
 O	760	762	is
 O	763	769	nested
 O	770	776	inside
 B-API	777	784	.slider
-I-API	785	791	-frame
+O	785	791	-frame
 O	791	792	.
-B-API	793	805	slider-frame
+O	793	805	slider-frame
 O	806	808	is
 O	809	814	given
 O	815	818	the
@@ -1450,11 +1450,11 @@ O	1045	1048	the
 O	1049	1055	colour
 O	1056	1058	of
 B-API	1059	1066	.slider
-I-API	1067	1074	-button
+O	1067	1074	-button
 O	1074	1075	,
 O	1076	1079	not
 B-API	1080	1087	.slider
-I-API	1088	1094	-frame
+O	1088	1094	-frame
 
 O	1095	1101	Fiddle
 O	1102	1104	me
@@ -1633,7 +1633,7 @@ O	184	188	have
 O	189	196	another
 O	197	202	class
 O	203	209	called
-B-API	210	216	Caller
+O	210	216	Caller
 O	217	222	Class
 O	222	223	.
 
@@ -4830,7 +4830,7 @@ O	868	887	@codeSnippetRemoved
 O	888	891	and
 O	892	898	change
 O	899	903	your
-O	904	911	onclick
+B-API	904	911	onclick
 O	912	913	:
 O	914	933	@codeSnippetRemoved
 
@@ -4871,7 +4871,7 @@ O	1090	1091	.
 O	1092	1098	Inline
 O	1099	1105	events
 O	1106	1107	(
-O	1107	1114	onClick
+B-API	1107	1114	onClick
 O	1114	1115	)
 O	1115	1116	.
 
@@ -4921,7 +4921,7 @@ O	1327	1328	.
 O	1329	1333	Read
 O	1334	1338	more
 O	1339	1344	about
-O	1345	1350	.on()
+B-API	1345	1350	.on()
 O	1351	1353	in
 O	1354	1357	the
 O	1358	1371	documentation
@@ -5070,7 +5070,7 @@ O	29	33	when
 O	34	35	i
 O	36	41	leave
 O	42	45	the
-B-API	46	54	selector
+O	46	54	selector
 O	54	55	,
 O	56	59	the
 O	60	67	unhover
@@ -6718,7 +6718,7 @@ B-PL	0	3	PHP
 O	4	10	Script
 O	11	14	Not
 O	15	24	Receiving
-O	25	29	Post
+B-API	25	29	Post
 O	30	34	Data
 
 O	35	36	I
@@ -6888,7 +6888,7 @@ O	756	760	page
 O	761	763	on
 O	764	767	the
 B-Stan	768	772	HTTP
-O	773	777	POST
+B-API	773	777	POST
 O	778	782	data
 O	783	794	superglobal
 O	795	800	array

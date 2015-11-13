@@ -53,13 +53,13 @@ do
 done
 
 
-for i in {0..9}
-do
-	mv train$i.conll train$i.bakup
-	python urlrep.py train$i.bakup train$i.conll
-	mv test$i.conll test$i.bakup
-	python urlrep.py test$i.bakup test$i.conll
-done
+#for i in {0..9}
+#do
+#	mv train$i.conll train$i.bakup
+#	python urlrep.py train$i.bakup train$i.conll
+#	mv test$i.conll test$i.bakup
+#	python urlrep.py test$i.bakup test$i.conll
+#done
 
 sed -i "s/@codeSnippetRemoved/@c@/g" train*.conll
 sed -i "s/@codeSnippetRemoved/@c@/g" test*.conll

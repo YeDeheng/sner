@@ -1628,7 +1628,7 @@ O	70	73	add
 O	74	75	a
 O	76	85	reference
 O	86	88	to
-B-API	89	112	Raven.Storage.Esent.dll
+O	89	112	Raven.Storage.Esent.dll
 
 O	0	2	Is
 O	3	8	there
@@ -2811,7 +2811,7 @@ O	1008	1027	@codeSnippetRemoved
 
 O	1028	1035	Details
 O	1036	1038	on
-O	1039	1052	getIdentifier
+B-API	1039	1052	getIdentifier
 O	1053	1059	method
 O	1060	1064	here
 O	1065	1066	:
@@ -2937,7 +2937,7 @@ O	514	533	@codeSnippetRemoved
 O	534	536	If
 O	537	540	you
 O	541	548	install
-B-Fram	549	555	Groovy
+B-PL	549	555	Groovy
 O	556	559	you
 O	560	563	can
 O	564	567	use
@@ -2956,7 +2956,7 @@ O	645	655	properties
 O	655	656	.
 
 O	657	667	Installing
-B-Fram	668	674	Groovy
+B-PL	668	674	Groovy
 O	675	677	is
 O	678	680	as
 O	681	685	easy
@@ -2997,7 +2997,7 @@ B-PL	0	4	Java
 O	4	5	,
 B-Fram	6	12	Tomcat
 O	13	16	and
-O	17	23	Jersey
+B-Fram	17	23	Jersey
 O	24	31	hosting
 
 O	32	36	Does
@@ -3021,7 +3021,7 @@ O	126	127	:
 
 B-PL	128	132	Java
 B-Fram	133	139	Tomcat
-O	140	146	Jersey
+I-Fram	140	146	Jersey
 B-PL	147	152	MySQL
 
 O	153	154	I
@@ -4295,7 +4295,7 @@ O	3968	3973	check
 O	3974	3975	-
 O	3976	3980	e.g.
 O	3981	3986	would
-O	3987	3994	setName
+B-API	3987	3994	setName
 O	3995	3996	(
 O	3996	4002	String
 O	4003	4009	person
@@ -4893,7 +4893,7 @@ O	429	432	obj
 O	432	433	,
 O	434	438	then
 O	439	444	after
-B-API	445	452	obj.add
+O	445	452	obj.add
 O	453	454	(
 O	454	458	mesh
 O	458	459	)
@@ -5403,7 +5403,7 @@ O	39	40	?
 
 O	41	43	In
 O	44	48	this
-B-Fram	49	55	fiddle
+O	49	55	fiddle
 O	56	84	http://jsfiddle.net/CBxbT/29
 O	84	85	,
 O	86	88	if
@@ -5458,7 +5458,7 @@ O	305	310	boxes
 O	310	311	.
 
 O	312	315	The
-B-Fram	316	322	fiddle
+O	316	322	fiddle
 O	323	328	works
 O	328	329	,
 O	330	333	but
@@ -5508,7 +5508,7 @@ O	519	520	,
 O	521	528	whereas
 O	529	531	in
 O	532	535	the
-B-Fram	536	542	fiddle
+O	536	542	fiddle
 O	542	543	,
 O	544	546	it
 O	547	552	keeps
@@ -5552,7 +5552,7 @@ O	706	725	@codeSnippetRemoved
 
 O	726	730	code
 O	731	735	from
-B-Fram	736	742	fiddle
+O	736	742	fiddle
 O	743	762	@codeSnippetRemoved
 
 O	763	765	My
@@ -5750,7 +5750,7 @@ O	100	101	.
 
 O	102	103	I
 O	104	108	used
-B-API	109	126	request.GET['user
+O	109	126	request.GET['user
 O	127	128	'
 O	129	130	]
 O	131	134	but
@@ -7083,9 +7083,9 @@ O	1107	1111	list
 O	1112	1113	:
 O	1114	1133	@codeSnippetRemoved
 
-B-API	1134	1137	std
-I-API	1138	1140	::
-I-API	1141	1157	initializer_list
+O	1134	1137	std
+O	1138	1140	::
+B-API	1141	1157	initializer_list
 O	1158	1164	Object
 O	1165	1170	would
 O	1171	1173	be
@@ -7192,16 +7192,16 @@ O	1600	1601	,
 O	1602	1603	}
 O	1604	1605	}
 O	1606	1610	with
-B-API	1611	1614	std
-I-API	1615	1617	::
-I-API	1618	1621	map
+O	1611	1614	std
+O	1615	1617	::
+O	1618	1621	map
 O	1622	1628	Object
 O	1628	1629	,
 O	1630	1636	Object
 O	1637	1639	or
-B-API	1640	1643	std
-I-API	1644	1646	::
-I-API	1647	1651	pair
+O	1640	1643	std
+O	1644	1646	::
+O	1647	1651	pair
 
 O	1652	1654	So
 O	1655	1657	it
@@ -7356,9 +7356,9 @@ O	2462	2467	can't
 O	2468	2469	I
 O	2470	2473	use
 O	2474	2477	the
-B-API	2478	2481	std
-I-API	2482	2484	::
-I-API	2485	2501	initializer_list
+O	2478	2481	std
+O	2482	2484	::
+O	2485	2501	initializer_list
 O	2502	2513	constructor
 O	2514	2516	to
 O	2517	2519	my
@@ -7425,9 +7425,9 @@ O	2824	2829	tried
 O	2830	2833	was
 O	2834	2836	to
 O	2837	2840	use
-B-API	2841	2844	std
-I-API	2845	2847	::
-I-API	2848	2864	initializer_list
+O	2841	2844	std
+O	2845	2847	::
+B-API	2848	2864	initializer_list
 O	2865	2867	as
 O	2868	2875	follows
 O	2876	2877	:

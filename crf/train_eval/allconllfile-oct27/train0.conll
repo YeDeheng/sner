@@ -30,7 +30,7 @@ one	O
 
 Example	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 works	O
@@ -122,7 +122,7 @@ using	O
 one	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 then	O
@@ -229,7 +229,7 @@ s	O
 interested	O
 ...	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 usage	O
@@ -238,7 +238,7 @@ this	O
 is	O
 straightforward	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Path.addPath()	B-API
 still	O
@@ -270,7 +270,7 @@ will	O
 draw	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Stopping	O
 OnMyLocationChangeListener	B-API
@@ -307,7 +307,7 @@ s	O
 my	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Set	O
 the	O
@@ -322,7 +322,7 @@ it	O
 off	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Android	B-Plat
 HTTPS	B-Stan
@@ -410,20 +410,20 @@ Here	O
 is	O
 mycode	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 in	O
 my	O
 HTTP	B-Stan
-Request	B-API
+Request	O
 class	O
 that	O
 constructs	O
 the	O
 POST	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 POST	B-API
@@ -512,7 +512,7 @@ helps	O
 package	O
 com.android.MyCellFamily.DAHttp	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 Sometimes	O
 https	O
@@ -592,7 +592,7 @@ url	O
 
 Webviewclient	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Can	O
 i	O
@@ -644,7 +644,7 @@ using	O
 LINQ	B-Fram
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Paging	O
 is	O
@@ -664,7 +664,7 @@ following	O
 test	O
 data	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 if	O
 I	O
@@ -697,7 +697,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 that	O
@@ -765,7 +765,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 that	O
@@ -803,7 +803,7 @@ the	O
 following	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 that	O
 will	O
@@ -853,7 +853,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 that	O
 will	O
@@ -1144,7 +1144,7 @@ a	O
 file	O
 :	O
 Hidden.cs	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 can't	O
@@ -1486,7 +1486,7 @@ Expressions	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Which	O
 prints	O
@@ -1546,7 +1546,7 @@ the	O
 following	O
 error	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Setup	O
 :	O
@@ -1571,25 +1571,25 @@ project	O
 \	O
 RavenDB-Build-309	O
 \EmbeddedClient\	O
-Raven.Client.Embedded.dll	B-API
+Raven.Client.Embedded.dll	O
 \	O
 RavenDB-Build-309	O
 \Client\	O
-Raven.Client.Lightweight.dll	B-API
+Raven.Client.Lightweight.dll	O
 \	O
 RavenDB-Build-309	O
 \EmbeddedClient\	O
-Raven.Storage.Esent.dll	B-API
+Raven.Storage.Esent.dll	O
 \	O
 RavenDB-Build-309	O
 \EmbeddedClient\	O
-Raven.Storage.Managed.dll	B-API
+Raven.Storage.Managed.dll	O
 
 The	O
 code	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 have	O
@@ -2062,7 +2062,7 @@ correctly	O
 I	O
 believe	O
 with	O
-Volusion	O
+Volusion	B-Fram
 ,	O
 that	O
 the	O
@@ -2200,7 +2200,7 @@ I	O
 tried	O
 anyway	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 can	O
@@ -2256,7 +2256,7 @@ load	O
 the	O
 JS	B-PL
 file	O
-@codeSnippetRemoved	O
+@c@	O
 
 on	O
 window.load	O
@@ -2316,7 +2316,7 @@ see	O
 textbox	O
 name	O
 is	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 you	O
@@ -2324,7 +2324,7 @@ have	O
 written	O
 it	O
 as	O
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 above	O
@@ -2479,7 +2479,7 @@ a	O
 web	O
 email	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Our	O
 teacher	O
@@ -2516,7 +2516,7 @@ new	O
 field	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 So	O
 ,	O
@@ -2546,7 +2546,7 @@ first	O
 attempt	O
 was	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Unfortunately	O
 ,	O
@@ -2574,7 +2574,7 @@ TD	B-API
 tags	O
 inside	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I've	O
 also	O
@@ -2651,7 +2651,7 @@ part	O
 of	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 expect	O
@@ -2753,11 +2753,11 @@ object	O
 
 import	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -2863,7 +2863,7 @@ Simple	O
 random	O
 generator	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 if	O
 (	O
@@ -2929,7 +2929,7 @@ the	O
 top	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Decimals	O
 such	O
@@ -3219,7 +3219,7 @@ this	O
 issue	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 have	O
@@ -3261,7 +3261,7 @@ has	O
 two	O
 items	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -3297,7 +3297,7 @@ establish	O
 your	O
 mappings	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -3312,61 +3312,9 @@ can	O
 use	O
 javafx.util.Pair	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
-public	O
-Map	B-API
-MyPeriod	O
-,	O
-Integer	B-API
-bindNewColumn	O
-(	O
-List	B-API
-MyPeriod	O
-periods	O
-)	O
-{	O
-Map	B-API
-MyPeriod	O
-,	O
-Integer	B-API
-map	O
-=	O
-new	O
-HashMap	B-API
-MyPeriod	O
-,	O
-Integer	O
-(	O
-);	O
-for	O
-(	O
-MyPeriod	O
-period	O
-:	O
-periods	O
-)	O
-{	O
-map.put	B-API
-(	O
-period	O
-,	O
-calculation	O
-(	O
-period	O
-));	O
-}	O
-return	O
-map	O
-;	O
-}	O
-
-With	O
-a	O
-Pair	O
-.	O
-
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -3594,7 +3542,7 @@ variable	O
 hi	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 know	O
@@ -3982,7 +3930,7 @@ time	O
 error	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Because	O
 run	O
@@ -4349,7 +4297,7 @@ but	O
 worked	O
 fine	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 tried	O
@@ -4392,7 +4340,7 @@ does	O
 not	O
 work	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Am	O
 I	O
@@ -4429,7 +4377,7 @@ problem	O
 
 The	O
 dropdowns[i]	O
-.appendChild	O
+.appendChild	B-API
 (	O
 options[i	O
 ]);	O
@@ -4457,7 +4405,7 @@ set	O
 New	O
 snippet	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Edit	O
 2	O
@@ -4588,11 +4536,11 @@ elements	O
 to	O
 an	O
 array	O
-@codeSnippetRemoved	O
+@c@	O
 
 should	O
 be	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 you	O
@@ -4601,7 +4549,7 @@ then	O
 access	O
 like	O
 so	O
-@codeSnippetRemoved	O
+@c@	O
 
 you	O
 may	O
@@ -4619,7 +4567,7 @@ difference	O
 becomes	O
 {}	O
 )	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 you	O
@@ -4628,7 +4576,7 @@ then	O
 access	O
 like	O
 so	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 I	O
@@ -4737,7 +4685,7 @@ revisit	O
 the	O
 code	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Thank	O
 you	O
@@ -4892,7 +4840,7 @@ some	O
 animation	O
 effect	O
 using	O
-css3.It	B-PL
+css3.It	O
 works	O
 fine	O
 in	O
@@ -4954,7 +4902,7 @@ some	O
 suggestions	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 "	O
 myfirst	O
@@ -5071,7 +5019,7 @@ Demo	O
 :	O
 http://jsfiddle.net/FirePanther/q4bedpdz	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 edit	O
 :	O
@@ -5109,12 +5057,12 @@ be	O
 infinite	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 this	O
 CSS	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 Insert	O
 image	O
@@ -5229,7 +5177,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -5281,17 +5229,17 @@ click	O
 
 The	O
 HTML	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 CSS	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 See	O
 it	O
@@ -5329,7 +5277,7 @@ UI	O
 draggable	B-API
 to	O
 smaller	O
-droppable	O
+droppable	B-API
 
 I	O
 have	O
@@ -5365,7 +5313,7 @@ not	O
 happening	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 I	O
@@ -5449,7 +5397,7 @@ touch	O
 '	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 By	O
 default	O
@@ -5481,7 +5429,7 @@ droppable	B-API
 method	O
 
 http://jqueryui.com/demos/droppable/#option-tolerance	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 default	O
@@ -5600,7 +5548,7 @@ form	O
 to	O
 get	O
 submit	O
-@codeSnippetRemoved	O
+@c@	O
 
 References	O
 
@@ -5778,7 +5726,7 @@ jquery	B-Fram
 in	O
 your	O
 collect.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 it	O
@@ -5807,7 +5755,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 will	O
@@ -5918,10 +5866,10 @@ we	O
 use	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
-@codeSnippetRemoved	O
+@c@	O
 
 There	O
 are	O
@@ -6190,7 +6138,7 @@ that	O
 you	O
 should	O
 use	O
-.addClass('myhoverclass	B-API
+.addClass('myhoverclass	O
 ')	O
 instead	O
 of	O
@@ -6384,16 +6332,16 @@ fast	O
 rule	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 is	O
 better	O
 semantically	O
 then	O
-@codeSnippetRemoved	O
+@c@	O
 
 BUT	O
-@codeSnippetRemoved	O
+@c@	O
 
 would	O
 be	O
@@ -6416,7 +6364,7 @@ this	O
 way	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 would	O
@@ -6914,7 +6862,7 @@ an	O
 example	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Instead	O
 of	O
@@ -7007,7 +6955,7 @@ this	O
 should	O
 work	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 insert	O
 delete	O
@@ -7081,7 +7029,7 @@ delete	O
 button	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 should	O
@@ -7101,7 +7049,7 @@ the	O
 record	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Than	O
 in	O
@@ -7111,7 +7059,7 @@ you	O
 can	O
 do	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 There	O
 are	O
@@ -7248,7 +7196,7 @@ see	O
 example	O
 here	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 on	O
@@ -7262,7 +7210,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -7290,14 +7238,14 @@ will	O
 be	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 then	O
 in	O
 your	O
 delete.php	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -7712,12 +7660,12 @@ working	O
 my	O
 controller	O
 blog.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 my	O
 model	O
 blogmodel.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 followed	O
@@ -7803,7 +7751,7 @@ along	O
 these	O
 lines	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 data	O
@@ -7904,7 +7852,7 @@ what	O
 I	O
 get	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Why	O
 does	O
@@ -7964,7 +7912,7 @@ my	O
 current	O
 training_list	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 need	O
@@ -8013,14 +7961,14 @@ getting	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Code	O
 is	O
 as	O
 follows	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 Any	O
 help	O
@@ -8065,25 +8013,25 @@ no	O
 leading	O
 whitespace	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 perhaps	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 solution	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 the	O
 output	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 if	O
 you	O
@@ -8095,12 +8043,12 @@ for	O
 can	O
 do	O
 that	O
-@codeSnippetRemoved	O
+@c@	O
 
 using	O
 itertools.groupby	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Messenger	B-API
 to	O
@@ -8242,7 +8190,7 @@ in	O
 the	O
 operation	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 a	O
@@ -8270,7 +8218,7 @@ queue	O
 is	O
 empty	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 all	O
@@ -9101,7 +9049,7 @@ box	O
 i	O
 would	O
 do	O
-@codeSnippetRemoved	O
+@c@	O
 
 However	O
 ,	O
@@ -9133,11 +9081,11 @@ code	O
 
 HTML	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 AutoCompleteTextView	B-API
 with	O
@@ -9195,7 +9143,7 @@ of	O
 filter	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 missing	O
@@ -9217,7 +9165,7 @@ just	O
 simply	O
 changed	O
 the	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 now	O
@@ -9233,7 +9181,7 @@ code	O
 bellow	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Another	O
 Update	O
@@ -9278,7 +9226,7 @@ you	O
 should	O
 use	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 check	O
 distinct	O
@@ -9298,7 +9246,7 @@ through	O
 the	O
 following	O
 code	O
-@codeSnippetRemoved	O
+@c@	O
 
 how	O
 can	O
@@ -9356,7 +9304,7 @@ check	O
 the	O
 distinct	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 it	O
@@ -9396,7 +9344,7 @@ in	O
 two	O
 group	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 To	O
 know	O
@@ -9477,7 +9425,7 @@ with	O
 the	O
 error	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 was	O
@@ -9500,7 +9448,7 @@ as	O
 shown	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 later	O
@@ -9710,7 +9658,7 @@ the	O
 issue	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Thanks	O
 @Derek	O
@@ -9732,7 +9680,7 @@ add	O
 a	O
 reference	O
 to	O
-Raven.Storage.Esent.dll	B-API
+Raven.Storage.Esent.dll	O
 
 Is	O
 there	O
@@ -10014,7 +9962,7 @@ store	O
 it	O
 in	O
 data	O
-@codeSnippetRemoved	O
+@c@	O
 
 Using	O
 whatever	O
@@ -10030,7 +9978,7 @@ being	O
 that	O
 accordion	B-API
 item	O
-@codeSnippetRemoved	O
+@c@	O
 
 Okay	O
 so	O
@@ -10042,10 +9990,10 @@ follow	O
 :	O
 
 HTML	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 javascript	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 Example	O
 :	O
@@ -10327,7 +10275,7 @@ users	O
 too	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -10631,7 +10579,7 @@ classes	O
 For	O
 example	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 then	O
@@ -10691,9 +10639,9 @@ you	O
 required	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 about	O
@@ -10702,7 +10650,7 @@ ULR-mapping	O
 sections	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Android	B-Plat
 :	O
@@ -10741,7 +10689,7 @@ I	O
 have	O
 now	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I'm	O
 now	O
@@ -10761,7 +10709,7 @@ app	O
 to	O
 crash	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 I'm	O
@@ -10911,11 +10859,11 @@ R.drawable.image1	O
 R.drawable.image2	O
 and	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 Details	O
 on	O
-getIdentifier	O
+getIdentifier	B-API
 method	O
 here	O
 :	O
@@ -11036,23 +10984,23 @@ java	B-PL
 -version	O
 "	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
 install	O
-Groovy	B-Fram
+Groovy	B-PL
 you	O
 can	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 for	O
 all	O
 properties	O
 ,	O
 and	O
-@codeSnippetRemoved	O
+@c@	O
 
 for	O
 specific	O
@@ -11060,7 +11008,7 @@ properties	O
 .	O
 
 Installing	O
-Groovy	B-Fram
+Groovy	B-PL
 is	O
 as	O
 easy	O
@@ -11095,13 +11043,13 @@ following	O
 script	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Java	B-PL
 ,	O
 Tomcat	B-Fram
 and	O
-Jersey	O
+Jersey	B-Fram
 hosting	O
 
 Does	O
@@ -11125,7 +11073,7 @@ following	O
 
 Java	B-PL
 Tomcat	B-Fram
-Jersey	O
+Jersey	I-Fram
 MySQL	B-PL
 
 I	O
@@ -11221,7 +11169,7 @@ to	O
 do	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 get	O
@@ -11283,7 +11231,7 @@ declare	O
 a	O
 variable	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 that	O
@@ -11322,7 +11270,7 @@ of	O
 the	O
 font	O
 )	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 similarly	O
@@ -11572,15 +11520,15 @@ helps	O
 
 JSP	B-Stan
 Page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Servlet	B-Stan
 Page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Calling	O
 Procedure	O
-@codeSnippetRemoved	O
+@c@	O
 
 Best	O
 practice	O
@@ -12399,7 +12347,7 @@ check	O
 -	O
 e.g.	O
 would	O
-setName	O
+setName	B-API
 (	O
 String	O
 person	O
@@ -12997,7 +12945,7 @@ obj	O
 ,	O
 then	O
 after	O
-obj.add	B-API
+obj.add	O
 (	O
 mesh	O
 )	O
@@ -13049,7 +12997,7 @@ rotation	O
 you	O
 could	O
 try	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 this	O
@@ -13199,7 +13147,7 @@ it	O
 using	O
 AJAX	B-Stan
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 obviously	O
@@ -13253,7 +13201,7 @@ to	O
 load	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 http://www.polymer-project.org/docs/elements/core-elements.html#core-ajax	O
 
@@ -13295,7 +13243,7 @@ component	O
 is	O
 included	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Info	O
 about	O
@@ -13507,7 +13455,7 @@ work	O
 
 In	O
 this	O
-fiddle	B-Fram
+fiddle	O
 http://jsfiddle.net/CBxbT/29	O
 ,	O
 if	O
@@ -13562,7 +13510,7 @@ boxes	O
 .	O
 
 The	O
-fiddle	B-Fram
+fiddle	O
 works	O
 ,	O
 but	O
@@ -13612,7 +13560,7 @@ alerts	O
 whereas	O
 in	O
 the	O
-fiddle	B-Fram
+fiddle	O
 ,	O
 it	O
 keeps	O
@@ -13652,12 +13600,12 @@ live	O
 site	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 code	O
 from	O
-fiddle	B-Fram
-@codeSnippetRemoved	O
+fiddle	O
+@c@	O
 
 My	O
 live	O
@@ -13735,7 +13683,7 @@ code	O
 from	O
 live	O
 site	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -13750,7 +13698,7 @@ you'll	O
 see	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 suggest	O
@@ -13791,7 +13739,7 @@ has	O
 this	O
 line	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 var	O
@@ -13854,7 +13802,7 @@ file	O
 
 I	O
 used	O
-request.GET['user	B-API
+request.GET['user	O
 '	O
 ]	O
 but	O
@@ -13880,17 +13828,17 @@ is	O
 python	B-PL
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Ajax	B-Stan
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Compile	O
 Error	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 looks	O
@@ -14016,7 +13964,7 @@ web	O
 page	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 i	O
@@ -14147,7 +14095,7 @@ DOM	B-Stan
 
 For	O
 example	O
-@codeSnippetRemoved	O
+@c@	O
 
 second	O
 element	O
@@ -14188,13 +14136,13 @@ the	O
 following	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Afterwards	O
 you	O
 can	O
 call	O
-@codeSnippetRemoved	O
+@c@	O
 
 selected	O
 query	O
@@ -14254,7 +14202,7 @@ do	O
 this	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Thank	O
 you	O
@@ -14286,7 +14234,7 @@ regarding	O
 your	O
 question	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 this	O
@@ -14528,7 +14476,7 @@ boxes	O
 ,	O
 use	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Slow	O
 user	O
@@ -14701,7 +14649,7 @@ lot	O
 faster	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -14771,7 +14719,7 @@ something	O
 is	O
 wrong	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 I	O
@@ -14800,7 +14748,7 @@ do	O
 it	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 think	O
@@ -14811,7 +14759,7 @@ after	O
 the	O
 item	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 readlines()	B-API
 cannot	O
@@ -14855,7 +14803,7 @@ has	O
 lines	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 if	O
@@ -14880,7 +14828,7 @@ the	O
 file	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Is	O
 there	O
@@ -14962,7 +14910,7 @@ works	O
 as	O
 expected	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Appropriate	O
 syntax	O
@@ -15015,7 +14963,7 @@ do	O
 things	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I'm	O
 currently	O
@@ -15185,11 +15133,11 @@ initialise	O
 a	O
 list	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
-std	B-API
-::	I-API
-initializer_list	I-API
+std	O
+::	O
+initializer_list	B-API
 Object	O
 would	O
 be	O
@@ -15240,7 +15188,7 @@ And	O
 then	O
 dictionaries	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Again	O
 ,	O
@@ -15296,16 +15244,16 @@ catch	O
 }	O
 }	O
 with	O
-std	B-API
-::	I-API
-map	I-API
+std	O
+::	O
+map	O
 Object	O
 ,	O
 Object	O
 or	O
-std	B-API
-::	I-API
-pair	I-API
+std	O
+::	O
+pair	O
 
 So	O
 it	O
@@ -15336,7 +15284,7 @@ argument	O
 specify	O
 type	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 would	O
@@ -15361,7 +15309,7 @@ also	O
 allow	O
 for	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 So	O
 I	O
@@ -15376,7 +15324,7 @@ look	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 for	O
@@ -15385,7 +15333,7 @@ I	O
 should	O
 provide	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 ...	O
 
@@ -15436,7 +15384,7 @@ single-argument	O
 constructors	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Maybe	O
 I	O
@@ -15451,7 +15399,7 @@ I	O
 can	O
 do	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 wait	O
@@ -15460,16 +15408,16 @@ can't	O
 I	O
 use	O
 the	O
-std	B-API
-::	I-API
-initializer_list	I-API
+std	O
+::	O
+initializer_list	O
 constructor	O
 to	O
 my	O
 advantage	O
 here	O
 ,	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 then	O
@@ -15477,7 +15425,7 @@ I	O
 can	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 That	O
 is	O
@@ -15529,13 +15477,13 @@ tried	O
 was	O
 to	O
 use	O
-std	B-API
-::	I-API
-initializer_list	I-API
+std	O
+::	O
+initializer_list	B-API
 as	O
 follows	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 However	O
 ,	O
@@ -15560,7 +15508,7 @@ appearing	O
 to	O
 require	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 So	O
 I	O
@@ -15571,7 +15519,7 @@ a	O
 variadic	O
 argument	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 technique	O
@@ -15583,7 +15531,7 @@ lightweight	O
 usage	O
 syntax	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 can	O
@@ -15615,7 +15563,7 @@ that	O
 looks	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 from	O
 one	O
@@ -15632,7 +15580,7 @@ service	O
 like	O
 so	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 i	O
 see	O
@@ -15666,10 +15614,10 @@ manifest	O
 is	O
 using	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 myService	O
-@codeSnippetRemoved	O
+@c@	O
 
 Firstly	O
 you	O
@@ -15711,7 +15659,7 @@ permission	O
 
 ie	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 is	O
 all	O
@@ -16009,7 +15957,7 @@ tabs	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 was	O
@@ -16063,7 +16011,7 @@ theme	O
 
 styles.xml	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 I	O
@@ -16076,7 +16024,7 @@ my	O
 application	O
 by	O
 adding	O
-android	B-Fram
+android	B-Plat
 :	O
 theme=	O
 "	O
@@ -16103,7 +16051,7 @@ onCreate	B-API
 Bundle	O
 savedInstanceState	O
 )	O
-@codeSnippetRemoved	O
+@c@	O
 
 than	O
 in	O
@@ -16135,12 +16083,12 @@ the	O
 background	O
 too	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 onCreated()	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 INSTALL_FAILED_OLDER_SDK	O
 -	O
@@ -16298,7 +16246,7 @@ you	O
 are	O
 installing	O
 the	O
-apk	B-Stan
+apk	B-Fram
 on	O
 a	O
 phone	O
@@ -16843,130 +16791,6 @@ custom	O
 DataGridRow	B-API
 style	O
 
-DataGrid	B-API
-...	O
-
-GridLinesVisibility=	O
-"	O
-Vertical	O
-"	O
-DataGrid.RowStyle	B-API
-Style	O
-TargetType=	O
-"	O
-{x	O
-:	O
-Type	O
-DataGridRow	B-API
-}	O
-"	O
-Setter	O
-Property=	O
-"	O
-BorderThickness	B-API
-"	O
-Value=	O
-"	O
-0	O
-,	O
-0	O
-,	O
-0	O
-,	O
-1	O
-"	O
-/	O
-Setter	O
-Property=	O
-"	O
-BorderBrush	B-API
-"	O
-Value=	O
-"	O
-Black	O
-"	O
-/	O
-Style.Triggers	B-API
-
-!	O
---	O
-this	O
-will	O
-trigger	O
-when	O
-row	O
-is	O
-selected	O
---	O
-Trigger	O
-Property=	O
-"	O
-IsSelected	B-API
-"	O
-Value=	O
-"	O
-True	O
-"	O
-Setter	O
-Property=	O
-"	O
-BorderBrush	B-API
-"	O
-Value=	O
-"	O
-Red	O
-"	O
-/	O
-/	O
-Trigger	O
-
-!	O
---	O
-this	O
-will	O
-trigger	O
-when	O
-Highlight	O
-property	O
-of	O
-the	O
-view	O
-model	O
-is	O
-true	O
---	O
-DataTrigger	B-API
-Binding=	O
-"	O
-{Binding	O
-Highlight	O
-}	O
-"	O
-Value=	O
-"	O
-True	O
-"	O
-Setter	O
-Property=	O
-"	O
-BorderBrush	B-API
-"	O
-Value=	O
-"	O
-Green	O
-"	O
-/	O
-/	O
-DataTrigger	B-API
-/	O
-Style.Triggers	B-API
-/	O
-Style	O
-/	O
-DataGrid.RowStyle	B-API
-/	O
-DataGrid	B-API
-
 Linq	B-Fram
 Pattern	O
 Matching	O
@@ -17098,7 +16922,7 @@ offset	O
 Thanks	O
 in	O
 advance	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 think	O
@@ -17191,12 +17015,12 @@ Home	O
 Page	O
 Search	O
 Code	O
-@codeSnippetRemoved	O
+@c@	O
 
 Search	O
 Page	O
 Code	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 someone	O
@@ -17612,7 +17436,7 @@ way	O
 to	O
 go	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 with	O
 structure.html	O
@@ -17661,7 +17485,7 @@ iframes	O
 Something	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 am	O
@@ -17758,7 +17582,7 @@ the	O
 src	O
 property	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 you	O
 can	O
@@ -17805,7 +17629,7 @@ javascript	B-PL
 function	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 should	O
@@ -17815,14 +17639,14 @@ you	O
 could	O
 try	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 may	O
 try	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Google	B-Fram
 Guava	I-Fram
@@ -17856,7 +17680,7 @@ map	O
 such	O
 as	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 values	O
@@ -17902,9 +17726,9 @@ I	O
 found	O
 Google	B-Fram
 Guava	I-Fram
-'	I-Fram
-s	I-Fram
-TreeMultimap	I-Fram
+'	O
+s	O
+TreeMultimap	O
 ,	O
 which	O
 is	O
@@ -17932,7 +17756,7 @@ The	O
 thing	O
 is	O
 ,	O
-TreeMultiMap	B-Fram
+TreeMultiMap	O
 doesn't	O
 seem	O
 to	O
@@ -17984,7 +17808,7 @@ how	O
 to	O
 make	O
 a	O
-TreeMultimap	B-Fram
+TreeMultimap	O
 object	O
 obtain	O
 this	O
@@ -18022,7 +17846,7 @@ be	O
 appreciated	O
 .	O
 
-TreeMultimap	B-Fram
+TreeMultimap	O
 isn't	O
 going	O
 to	O
@@ -18047,7 +17871,7 @@ could	O
 do	O
 is	O
 a	O
-TreeMultimap	B-Fram
+TreeMultimap	O
 Integer	O
 ,	O
 String	O
@@ -18098,7 +17922,7 @@ definitely	O
 not	O
 supported	O
 by	O
-TreeMultimap	B-Fram
+TreeMultimap	O
 is	O
 looking	O
 at	O
@@ -18138,7 +17962,7 @@ It	O
 s	O
 true	O
 that	O
-TreeMultimap	B-Fram
+TreeMultimap	O
 does	O
 order	O
 values	O
@@ -18174,7 +17998,7 @@ example	O
 if	O
 you	O
 had	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 you	O
@@ -18333,7 +18157,7 @@ in	O
 ActualGame.java	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Main	O
 is	O
@@ -18355,12 +18179,12 @@ of	O
 Enter()	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 the	O
 ActualGame	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 should	O
@@ -18686,7 +18510,7 @@ your	O
 Enter	O
 class	O
 a	O
-getText	O
+getText	B-API
 method	O
 that	O
 will	O
@@ -18703,7 +18527,7 @@ of	O
 its	O
 JTextField	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Also	O
 ,	O
@@ -18721,11 +18545,11 @@ information	O
 when	O
 needed	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 e.g.	O
 ,	O
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 to	O
@@ -18736,7 +18560,7 @@ a	O
 underclass	O
 of	O
 Enter	O
-@codeSnippetRemoved	O
+@c@	O
 
 Changing	O
 Object	O
@@ -18844,7 +18668,7 @@ I	O
 have	O
 a	O
 method	O
-@codeSnippetRemoved	O
+@c@	O
 
 inside	O
 of	O
@@ -18883,7 +18707,7 @@ the	O
 image	O
 list	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -18894,7 +18718,7 @@ create	O
 image	O
 objects	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 if	O
@@ -18903,7 +18727,7 @@ passed	O
 Videos	O
 list	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -18914,7 +18738,7 @@ create	O
 video	O
 objects	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Sorry	O
 if	O
@@ -19247,12 +19071,12 @@ DAOs	B-Stan
 base	O
 interface	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 a	O
 extensions	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 To	O
 create	O
@@ -19271,13 +19095,13 @@ factories	I-Stan
 something	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 the	O
 implementation	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 don't	O
@@ -19297,7 +19121,7 @@ an	O
 factory	O
 builder	B-Stan
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 get	O
@@ -19307,14 +19131,14 @@ errors	O
 line	O
 8)	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 (	O
 line	O
 9	O
 )	O
-@codeSnippetRemoved	O
+@c@	O
 
 Don't	O
 know	O
@@ -19339,14 +19163,14 @@ something	O
 like	O
 that	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 got	O
 following	O
 solution	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 i	O
@@ -19361,7 +19185,7 @@ IDataFactory	O
 )	O
 fac	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 think	O
@@ -19860,7 +19684,7 @@ this	O
 case	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 thought	O
@@ -19981,7 +19805,7 @@ final	O
 
 1	O
 )	O
-edit.getItem	B-API
+edit.getItem	O
 (	O
 0	O
 )	O
@@ -19997,7 +19821,7 @@ IllegalArgumentException	B-API
 
 2	O
 )	O
-this.edit.getItem	B-API
+this.edit.getItem	O
 (	O
 0	O
 )	O
@@ -20010,7 +19834,7 @@ members	O
 
 3	O
 )	O
-edit.getItem	B-API
+edit.getItem	O
 (	O
 0	O
 )	O
@@ -20128,10 +19952,10 @@ final	O
 So	O
 ,	O
 change	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 it	O
@@ -20155,7 +19979,7 @@ as	O
 to	O
 how	O
 the	O
-JVM	B-Fram
+JVM	B-Plat
 use	O
 to	O
 work.When	O
@@ -20207,7 +20031,7 @@ to	O
 declare	O
 it	O
 final	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 you	O
@@ -20265,7 +20089,7 @@ problem	O
 ?	O
 
 What	O
-JVM	B-Fram
+JVM	B-Plat
 does	O
 ,	O
 is	O
@@ -20299,7 +20123,7 @@ being	O
 done	O
 ,	O
 now	O
-JVM	B-Fram
+JVM	B-Plat
 quietly	O
 places	O
 a	O
@@ -20328,7 +20152,7 @@ javap	O
 Ouput	O
 for	O
 foo.class	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 since	O
@@ -20347,7 +20171,7 @@ as	O
 above	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 Variable	O
@@ -20432,7 +20256,7 @@ likewise	O
 we	O
 get	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 in	O
@@ -20481,7 +20305,7 @@ Object	O
 Reference	O
 i.e.	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -20496,7 +20320,7 @@ case	O
 i.e.	O
 this$0	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Seems	O
 like	O
@@ -20822,11 +20646,11 @@ button	O
 
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Controller	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 url	O
 :	O
@@ -20835,7 +20659,7 @@ url	O
 
 php	B-PL
 echo	O
-base_url()	O
+base_url()	B-API
 ?	O
 
 student_controller	O
@@ -20848,12 +20672,12 @@ pop_val	O
 
 Try	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 try	O
 this	O
 ,	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 revised	O
@@ -20917,7 +20741,7 @@ characters	O
 "	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Image	O
 choosing	O
@@ -21105,7 +20929,7 @@ function	O
 Controller	O
 Code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -21146,7 +20970,7 @@ something	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 need	O
@@ -21177,15 +21001,15 @@ Any	O
 suggestions	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Use	O
 .on()	B-API
-@codeSnippetRemoved	O
+@c@	O
 
 Fiddle	B-Fram
 Demo	O
-@codeSnippetRemoved	O
+@c@	O
 
 Put	O
 this	O
@@ -21199,7 +21023,7 @@ end	O
 of	O
 the	O
 page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Canvas	B-Fram
 toDataURL()	B-API
@@ -21694,7 +21518,7 @@ http://bl.ocks.org/DStruths/9c042e3a6b66048b5bd4	O
 http://www.delimited.io/blog/2014/3/3/creating-multi-series-charts-in-d3-lines-bars-area-and-streamgraphs	O
 
 ThanksKathleen	O
-@codeSnippetRemoved	O
+@c@	O
 
 JavaScript	B-PL
 not	O
@@ -21763,11 +21587,11 @@ reason	O
 HTML	B-PL
 CODE	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 JS	B-PL
 CODE	O
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 appears	O
@@ -21814,7 +21638,7 @@ the	O
 option	O
 value	O
 explicitly	O
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 ,	O
@@ -21824,7 +21648,7 @@ Or	O
 Switch	O
 on	O
 text	O
-@codeSnippetRemoved	O
+@c@	O
 
 (	O
 Tested	O
@@ -21846,7 +21670,7 @@ dynamically	O
 add	O
 option	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 using	O
 variables	O
@@ -21888,7 +21712,7 @@ mako	O
 template	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Result	O
 hoping	O
@@ -21902,13 +21726,13 @@ javascript	B-PL
 is	O
 run	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 etc.Instead	O
 I	O
 get	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Any	O
 suggestions	O
@@ -21924,7 +21748,7 @@ changed	O
 the	O
 code	O
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 I	O
@@ -21944,7 +21768,7 @@ On	O
 This	O
 Error	O
 ]	O
-@codeSnippetRemoved	O
+@c@	O
 
 with	O
 arrow	O
@@ -21998,23 +21822,23 @@ desired	O
 results	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Change	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Please	O
 note	O
 that	O
 if	O
 the	O
-doctype	O
+doctype	B-API
 of	O
 the	O
 page	O
@@ -22030,7 +21854,7 @@ a	O
 letter	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 jQuery	B-Fram
 library-like	O
@@ -22115,7 +21939,7 @@ got	O
 was	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 is	O
@@ -22180,7 +22004,7 @@ at	O
 code	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Note	O
 :	O
@@ -22297,7 +22121,7 @@ this	O
 default	O
 setup	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 have	O
@@ -22307,7 +22131,7 @@ that	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 I	O
@@ -22409,7 +22233,7 @@ custom	O
 class	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Edit	O
 #2	O
@@ -22450,7 +22274,7 @@ semantics	O
 )	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Hide	O
 or	O
@@ -22683,7 +22507,7 @@ a	O
 simple	O
 number	O
 in	O
-atext	B-Fram
+atext	O
 file	O
 could	O
 work	O
@@ -22734,10 +22558,10 @@ tried	O
 so	O
 far	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 CheckQuiz.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 Im	O
 a	O
@@ -22791,38 +22615,6 @@ appreciated	O
 Thanks	O
 .	O
 
-if	O
-(	O
-isset	B-API
-(	O
-$_POST[	O
-"	O
-radioBoxName	O
-"	O
-]	O
-))	O
-{	O
-//	O
-It	O
-was	O
-checked	O
-echo	B-API
-$_POST[	O
-"	O
-radioBoxName	O
-"	O
-];	O
-//	O
-This	O
-is	O
-the	O
-value	O
-of	O
-the	O
-checked	O
-option	O
-}	O
-
 Edit	O
 based	O
 on	O
@@ -22850,7 +22642,7 @@ radio	O
 boxes	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 you	O
@@ -22860,7 +22652,7 @@ them	O
 in	O
 PHP	B-PL
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 First	O
 you	O
@@ -22884,7 +22676,7 @@ question	O
 .	O
 example	O
 below	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 you	O
@@ -22895,7 +22687,7 @@ value	O
 from	O
 server	O
 as	O
-@codeSnippetRemoved	O
+@c@	O
 
 edited	O
 as	O
@@ -22915,7 +22707,7 @@ could	O
 use	O
 like	O
 below	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 you	O
@@ -22924,7 +22716,7 @@ iterate	O
 as	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 PHP	B-PL
 ,	O
@@ -23636,7 +23428,7 @@ can	O
 create	O
 your	O
 own	O
-XML-based	B-Stan
+XML-based	O
 format	O
 (	O
 or	O
@@ -23818,7 +23610,7 @@ in	O
 this	O
 format	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -23943,11 +23735,11 @@ you'll	O
 need	O
 to	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 instead	O
 of	O
-@codeSnippetRemoved	O
+@c@	O
 
 Non-greedy	O
 means	O
@@ -23973,10 +23765,10 @@ Use	O
 Beautiful	B-Fram
 Soup	I-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Returns	O
-@codeSnippetRemoved	O
+@c@	O
 
 python	B-PL
 DLL	B-Stan
@@ -24001,7 +23793,7 @@ Windows	B-Plat
 Writing	O
 import	O
 statsmodels.api	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -24714,7 +24506,7 @@ class	O
 or	O
 interface	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 create	O
@@ -24775,7 +24567,7 @@ use	O
 this	O
 logic	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Programmatically	O
 generating	O
@@ -25458,7 +25250,7 @@ saved	O
 workbook	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 think	O
@@ -25505,7 +25297,7 @@ looks	O
 fine	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -25530,7 +25322,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 plus	O
 many	O
@@ -25617,7 +25409,7 @@ could	O
 do	O
 :	O
 -	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 that	O
@@ -25635,7 +25427,7 @@ code	O
 a	O
 bit	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 Question	O
@@ -25662,7 +25454,7 @@ and	O
 edit	O
 that	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 won't	O
@@ -25818,7 +25610,7 @@ be	O
 an	O
 idea	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 One	O
 option	O
@@ -25843,7 +25635,7 @@ you	O
 could	O
 write	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I've	O
 heard	O
@@ -26409,7 +26201,7 @@ texteditor	O
 
 Try	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 Scripts	O
 
@@ -26435,7 +26227,7 @@ In	O
 TCPDF	B-Fram
 there	O
 is	O
-@codeSnippetRemoved	O
+@c@	O
 
 for	O
 measuring	O
@@ -26665,7 +26457,7 @@ to	O
 create	O
 an	O
 invisible	O
-Shell	B-API
+Shell	O
 and	O
 set	O
 the	O
@@ -26696,7 +26488,7 @@ coordinates	O
 to	O
 setLocation	B-API
 on	O
-Shell	B-API
+Shell	O
 but	O
 ,	O
 I	O
@@ -26723,7 +26515,7 @@ which	O
 solves	O
 your	O
 problem	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 showing	O
@@ -26733,7 +26525,7 @@ on	O
 top	O
 of	O
 a	O
-shell	B-API
+shell	O
 ,	O
 you	O
 may	O
@@ -26746,7 +26538,7 @@ then	O
 get	O
 the	O
 parent	O
-shell	B-API
+shell	O
 '	O
 s	O
 sub-shells	O
@@ -26761,7 +26553,7 @@ file	O
 dialog	O
 '	O
 s	O
-shell	B-API
+shell	O
 .	O
 
 Now	O
@@ -26832,7 +26624,7 @@ signers	O
 =	O
 cl.getSigners()	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 Against	O
 a	O
@@ -27062,7 +26854,7 @@ beginner	O
 of	O
 android	B-Plat
 and	O
-java.I	B-PL
+java.I	O
 did	O
 no	O
 understand	O
@@ -27080,7 +26872,7 @@ Serializable	B-API
 0.When	O
 do	O
 use	O
-Serializable	O
+Serializable	B-API
 ?	O
 
 what	O
@@ -27275,7 +27067,7 @@ Thanks	O
 My	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 I	O
@@ -27329,7 +27121,7 @@ current	O
 index	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Casting	O
 to	O
@@ -27355,7 +27147,7 @@ to	O
 increment	O
 n	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 value	O
@@ -27478,11 +27270,11 @@ just	O
 fine	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Printing	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Double	O
 value	O
@@ -27500,7 +27292,7 @@ following	O
 line	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 c12	O
@@ -27616,7 +27408,7 @@ large	O
 double	O
 numbers	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Your	O
 c12	O
@@ -27663,11 +27455,11 @@ double	O
 before	O
 multiplying	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 produces	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Make	O
 a	O
@@ -27676,7 +27468,7 @@ on	O
 the	O
 fly	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 else	O
 ,	O
@@ -27708,7 +27500,7 @@ to	O
 double	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 would	O
 help	O
@@ -27956,7 +27748,7 @@ execution	O
 code	O
 looks	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 After	O
 your	O
@@ -28049,7 +27841,7 @@ My	O
 code	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 my	O
@@ -28103,7 +27895,7 @@ in	O
 your	O
 call	O
 to	O
-setTimeout	O
+setTimeout	B-API
 .	O
 
 In	O
@@ -28117,7 +27909,7 @@ the	O
 function	O
 in	O
 the	O
-setTimeout	O
+setTimeout	B-API
 parameter	O
 is	O
 executed	O
@@ -28313,13 +28105,13 @@ time	O
 onmouseout	B-API
 !	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 should	O
 have	O
 done	O
-@codeSnippetRemoved	O
+@c@	O
 
 how	O
 do	O
@@ -28390,7 +28182,7 @@ anything	O
 
 In	O
 javascript	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 may	O
@@ -28419,7 +28211,7 @@ will	O
 be	O
 sealed	O
 with	O
-phonegap	O
+phonegap	B-Fram
 so	O
 it	O
 will	O
@@ -28447,8 +28239,8 @@ will	O
 be	O
 secured	O
 with	O
-phone	O
-gap	O
+phone	B-Fram
+gap	I-Fram
 
 it	O
 '	O
@@ -28507,7 +28299,7 @@ the	O
 most	O
 significant	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -28517,7 +28309,7 @@ the	O
 following	O
 array	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 in	O
 order	O
@@ -28532,7 +28324,7 @@ like	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 unique	O
 isnt	O
@@ -28606,7 +28398,7 @@ should	O
 do	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 now	O
 you	O
@@ -28623,7 +28415,7 @@ get	O
 the	O
 unique	O
 values	O
-@codeSnippetRemoved	O
+@c@	O
 
 Fiddle	B-Fram
 
@@ -28657,7 +28449,7 @@ the	O
 property	O
 key	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Why	O
 doesn't	O
@@ -28761,7 +28553,7 @@ mistake	O
 missed	O
 parentheses	O
 to	O
-replaceWith	O
+replaceWith	B-API
 command	O
 and	O
 variable	O
@@ -29344,7 +29136,7 @@ i	O
 have	O
 make	O
 3	O
-div	O
+div	B-API
 and	O
 there	O
 was	O
@@ -29406,7 +29198,7 @@ images	O
 to	O
 this	O
 code	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 target	O
@@ -29415,7 +29207,7 @@ is	O
 index.blade.php	O
 which	O
 contains	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 Chrome	B-Fram
@@ -29432,7 +29224,7 @@ images	O
 on	O
 the	O
 page	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 the	O
@@ -29456,7 +29248,7 @@ the	O
 jQuery	B-Fram
 ....	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 ....	O
 then	O
@@ -29509,7 +29301,7 @@ container	O
 div	O
 in	O
 index.blade.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 Add	O
 the	O
@@ -29518,7 +29310,7 @@ markup	O
 to	O
 index.blade.php	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 use	O
@@ -29535,7 +29327,7 @@ JavaScript	B-PL
 you	O
 posted	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Incrementing	O
 a	O
@@ -30306,7 +30098,7 @@ key	O
 
 Then	O
 simply	O
-@codeSnippetRemoved	O
+@c@	O
 
 Auto	O
 complete	O
@@ -30372,10 +30164,10 @@ will	O
 appreciate	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 autocomplete.php	O
-@codeSnippetRemoved	O
+@c@	O
 
 php	B-PL
 ,	O
@@ -30455,7 +30247,7 @@ the	O
 current	O
 code	O
 ;	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 have	O
@@ -30658,7 +30450,7 @@ auto	O
 increment	O
 just	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 have	O
@@ -30681,7 +30473,7 @@ just	O
 used	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 do	O
@@ -31383,7 +31175,7 @@ the	O
 script	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 our	O
@@ -31462,7 +31254,7 @@ is	O
 a	O
 definition	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 got	O
@@ -31567,7 +31359,7 @@ trailing	O
 comma	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Circle	O
 (	O
@@ -31643,7 +31435,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -31655,7 +31447,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 WebView	B-API
@@ -31664,7 +31456,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 Happens	O
@@ -31837,11 +31629,11 @@ the	O
 css	B-PL
 Adding	O
 a	O
-doctype	O
+doctype	B-API
 !	O
 
 DOCTYPE	B-API
-html	I-API
+html	B-PL
 to	O
 the	O
 HTML	B-PL
@@ -31853,7 +31645,7 @@ line	O
 to	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Solves	O
 this	O
@@ -31926,8 +31718,8 @@ fishy	O
 "	O
 Dangerous	O
 "	O
-Android	B-API
-permissions	I-API
+Android	B-Plat
+permissions	O
 that	O
 don't	O
 need	O
@@ -31940,7 +31732,7 @@ users	O
 Google	O
 states	O
 that	O
-permissions	B-API
+permissions	O
 with	O
 dangerous	O
 as	O
@@ -31966,7 +31758,7 @@ for	O
 such	O
 a	O
 dangerous	O
-permission	B-API
+permission	O
 is	O
 android.permission.INTERNET	B-API
 .	O
@@ -31979,7 +31771,7 @@ declared	O
 to	O
 use	O
 this	O
-permissions	B-API
+permissions	O
 ,	O
 it	O
 '	O
@@ -32022,7 +31814,7 @@ Why	O
 is	O
 the	O
 INTERNET	B-API
-permission	I-API
+permission	O
 still	O
 dangerous	O
 ,	O
@@ -32080,9 +31872,9 @@ Are	O
 there	O
 other	O
 dangerous	O
-permissions	B-API
+permissions	O
 than	O
-INTERNET	B-Stan
+INTERNET	B-API
 where	O
 this	O
 applies	O
@@ -32310,7 +32102,7 @@ QBFC	B-Fram
 11	I-Fram
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Allow	O
 templates	O
@@ -32330,7 +32122,7 @@ graphs	O
 .	O
 
 A	O
-BidirectionalGraph	B-API
+BidirectionalGraph	O
 takes	O
 two	O
 templates	O
@@ -32342,7 +32134,7 @@ an	O
 edge	O
 type	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Unfortunately	O
 ,	O
@@ -32432,13 +32224,13 @@ the	O
 graph	O
 class	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 when	O
 I	O
 call	O
-graph.IncomingEdges	B-API
+graph.IncomingEdges	O
 (	O
 vertex	O
 )	O
@@ -32465,15 +32257,15 @@ to	O
 say	O
 :	O
 
-graph.IncomingEdges	B-API
-GraphThatInheritsFromBidirectionalGraph	I-API
-VertexType	I-API
+graph.IncomingEdges	O
+GraphThatInheritsFromBidirectionalGraph	O
+VertexType	O
 ,	O
-EdgeType	B-API
+EdgeType	O
 ,	O
-VertexType	B-API
+VertexType	O
 ,	O
-EdgeType	B-API
+EdgeType	O
 (	O
 vertex	O
 )	O
@@ -32558,7 +32350,7 @@ use	O
 which	O
 inherits	O
 from	O
-BidirectionalGraph	B-API
+BidirectionalGraph	O
 ?	O
 
 It	O
@@ -32635,7 +32427,7 @@ to	O
 understand	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 first	O
@@ -32648,12 +32440,12 @@ is	O
 able	O
 to	O
 infer	O
-TGraphType	B-API
+TGraphType	O
 and	O
-TVertex	B-API
+TVertex	O
 but	O
 not	O
-TEgde	B-API
+TEgde	O
 ,	O
 as	O
 it	O
@@ -32661,13 +32453,13 @@ would	O
 require	O
 inferring	O
 the	O
-TEdge	B-API
+TEdge	O
 from	O
 the	O
 type	O
 constraint	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 C#	B-PL
@@ -32718,10 +32510,10 @@ other	O
 hand	O
 ,	O
 includes	O
-BidirectionalGraph	B-API
-TVertex	I-API
+BidirectionalGraph	O
+TVertex	O
 ,	O
-TEdge	B-API
+TEdge	O
 as	O
 a	O
 parameter	O
@@ -32740,7 +32532,7 @@ a	O
 class	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 the	O
 compiler	O
@@ -32759,7 +32551,7 @@ is	O
 a	O
 unique	O
 type	O
-BidirectionalGraph	B-API
+BidirectionalGraph	O
 AVertex	O
 ,	O
 AnEdge	O
@@ -32774,9 +32566,9 @@ is	O
 able	O
 to	O
 infer	O
-TVertex	B-API
+TVertex	O
 and	O
-TEdge	B-API
+TEdge	O
 .	O
 
 Note	O
@@ -32786,17 +32578,17 @@ the	O
 parameter	O
 type	O
 were	O
-IGraph	B-API
-TVertex	I-API
+IGraph	O
+TVertex	O
 ,	O
-TEdge	B-API
+TEdge	O
 (	O
 instead	O
 of	O
-BidirectionalGraph	B-API
-TVertex	I-API
+BidirectionalGraph	O
+TVertex	O
 ,	O
-TEdge	B-API
+TEdge	O
 )	O
 and	O
 AGraph	O
@@ -32811,7 +32603,7 @@ interface	O
 ,	O
 e.g.	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 then	O
 type	O
@@ -32829,7 +32621,7 @@ if	O
 for	O
 example	O
 ,	O
-TVertex	B-API
+TVertex	O
 is	O
 AVertex	O
 or	O
@@ -33111,7 +32903,7 @@ my	O
 code	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Some	O
 option	O
@@ -33159,11 +32951,11 @@ coding	O
 
 Hence	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Should	O
 be	O
-@codeSnippetRemoved	O
+@c@	O
 
 Second	O
 :	O
@@ -33194,7 +32986,7 @@ use	O
 its	O
 URL	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Third	O
 :	O
@@ -33339,7 +33131,7 @@ it	O
 opens	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Thank	O
 you	O
@@ -33984,7 +33776,7 @@ s	O
 a	O
 start	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 should	O
@@ -34487,69 +34279,12 @@ file	O
 in	O
 java	B-PL
 
-public	O
-class	O
-ConvertXMLtoJSON	O
-{	O
-
-public	O
-static	O
-void	O
-main	O
-(	O
-String	O
-[]	O
-args	O
-)	O
-throws	O
-Exception	B-API
-{	O
-InputStream	B-API
-in	O
-=	O
-ConvertXMLtoJSON.class.getResourceAsStream	O
-(	O
-"	O
-D:	O
-\\	O
-sample.xml	O
-")	O
-;	O
-String	B-API
-xml	O
-=	O
-IOUtils.toString	B-API
-(	O
-in	O
-);	O
-XMLSerializer	B-API
-xmlSerializer	O
-=	O
-new	O
-XMLSerializer()	B-API
-;	O
-JSON	B-API
-json	O
-=	O
-xmlSerializer.read	B-API
-(	O
-xml	O
-);	O
-System.out.println	B-API
-(	O
-json.toString	B-API
-(	O
-2	O
-));	O
-}	O
-}	O
-
 but	O
 i	O
 am	O
 getting	O
 error	O
-@codeSnippetRemoved	O
+@c@	O
 
 can	O
 u	O
@@ -34607,20 +34342,12 @@ Resource	O
 which	O
 is	O
 wrong	O
-@codeSnippetRemoved	O
+@c@	O
 
 Change	O
 it	O
 to	O
-@codeSnippetRemoved	O
-
-String	B-API
-xml	O
-=	O
-IOUtils.toString	B-API
-(	O
-in	O
-);	O
+@c@	O
 
 Here	O
 InputStream	B-API
@@ -34636,7 +34363,7 @@ NullPointerException	B-API
 Class	O
 #getResourceAsStream	O
 (	O
-String	B-API
+String	O
 name	O
 )	O
 it	O
@@ -34742,7 +34469,7 @@ the	O
 resouce	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Find	O
 a	O
@@ -34769,7 +34496,7 @@ convert	O
 xml	B-Stan
 to	O
 json	B-Stan
-@codeSnippetRemoved	O
+@c@	O
 
 }	O
 
@@ -34803,7 +34530,7 @@ super	O
 class	O
 itself	O
 extends	O
-Activity	O
+Activity	B-API
 but	O
 I	O
 can't	O
@@ -34842,10 +34569,10 @@ CommonCode	O
 Superclass	O
 oncreate	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 SubClass	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 I	O
@@ -35035,11 +34762,11 @@ Example	O
 
 Subclass	O
 -	O
-@codeSnippetRemoved	O
+@c@	O
 
 SuperClass	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 using	O
 a	O
@@ -35143,66 +34870,6 @@ i	O
 did	O
 wrong	O
 
-Waypoint.java	O
-:	O
-58	O
-:	O
-error	O
-:	O
-')'	O
-expected	O
-return	O
-distance	O
-(	O
-Travelable	O
-otherTravelable	O
-)	O
-/	O
-speed	O
-;	O
-^	O
-Waypoint.java	O
-:	O
-58	O
-:	O
-error	O
-:	O
-illegal	O
-start	O
-of	O
-expression	O
-return	O
-distance	O
-(	O
-Travelable	O
-otherTravelable	O
-)	O
-/	O
-speed	O
-;	O
-^	O
-Waypoint.java	O
-:	O
-58	O
-:	O
-error	O
-:	O
-not	O
-a	O
-statement	O
-return	O
-distance	O
-(	O
-Travelable	O
-otherTravelable	O
-)	O
-/	O
-speed	O
-;	O
-^3	O
-errors	O
-@codeSnippetRemoved	O
-
 When	O
 you	O
 call	O
@@ -35219,10 +34886,10 @@ arguments	O
 .	O
 
 Change	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 Change	O
 this	O
@@ -35237,10 +34904,10 @@ calling	O
 the	O
 method	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 To	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 have	O
@@ -35255,7 +34922,7 @@ line	O
 of	O
 toTime.just	O
 return	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 pointcut	O
@@ -35299,7 +34966,7 @@ advice	O
 defined	O
 in	O
 
-org.example.aspect.TestAspect	B-API
+org.example.aspect.TestAspect	O
 has	O
 not	O
 
@@ -35336,7 +35003,7 @@ WARNING	O
 advice	O
 defined	O
 in	O
-org.example.aspect.TestAspect	B-API
+org.example.aspect.TestAspect	O
 has	O
 not	O
 been	O
@@ -35484,7 +35151,7 @@ To	O
 do	O
 that	O
 call	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 context.getVariable	B-API
@@ -35521,7 +35188,7 @@ of	O
 the	O
 button	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Django	B-Fram
 :	O
@@ -35658,7 +35325,7 @@ is	O
 not	O
 here	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Views.py	O
 ,	O
@@ -35667,7 +35334,7 @@ the	O
 error	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 django	B-Fram
@@ -35677,7 +35344,7 @@ says	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 post	O
@@ -35696,7 +35363,7 @@ my	O
 email	O
 and	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Just	O
 in	O
@@ -35713,7 +35380,7 @@ javascript	B-PL
 file	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 just	O
@@ -35770,7 +35437,7 @@ similar	O
 to	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -35803,7 +35470,7 @@ another	O
 ng-click	B-API
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 will	O
@@ -35921,7 +35588,7 @@ pass	O
 my	O
 URL	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 the	O
@@ -35937,7 +35604,7 @@ that	O
 is	O
 called	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 am	O
@@ -36183,7 +35850,7 @@ pipe	O
 line	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 running	O
@@ -36337,7 +36004,7 @@ with	O
 gulp	B-Fram
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Want	O
 an	O
@@ -36449,7 +36116,7 @@ I'm	O
 putting	O
 a	O
 single	O
-DIV	O
+DIV	B-API
 on	O
 a	O
 page	O
@@ -36474,7 +36141,7 @@ I	O
 just	O
 want	O
 this	O
-div	O
+div	B-API
 to	O
 fill	O
 all	O
@@ -36559,7 +36226,7 @@ height	O
 ;	O
 and	O
 the	O
-div	O
+div	B-API
 as	O
 position	O
 :	O
@@ -36596,7 +36263,7 @@ the	O
 viewport	O
 ,	O
 the	O
-div	O
+div	B-API
 will	O
 already	O
 use	O
@@ -36648,7 +36315,7 @@ Answering	O
 this	O
 myself	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 basic	O
@@ -36686,7 +36353,7 @@ go	O
 and	O
 re-size	O
 this	O
-div	O
+div	B-API
 appropriately	O
 .	O
 
@@ -36703,9 +36370,9 @@ new	O
 to	O
 the	O
 whole	O
-ruby	B-PL
-on	I-PL
-rails	I-PL
+ruby	B-Fram
+on	I-Fram
+rails	I-Fram
 stuff	O
 ,	O
 though	O
@@ -36750,33 +36417,7 @@ have	O
 at	O
 present	O
 is	O
-@codeSnippetRemoved	O
-
-controller	O
-code	O
-
-#	O
-POST	O
-/	O
-availabilities	O
-#	O
-POST	O
-/	O
-availabilities.json	O
-def	O
-create	O
-@availability	O
-=	O
-Availability.new	B-API
-(	O
-params	O
-[:	O
-availability	O
-]	O
-)	O
-@codeSnippetRemoved	O
-
-end	O
+@c@	O
 
 though	O
 how	O
@@ -36800,192 +36441,6 @@ happening	O
 at	O
 present	O
 
-Processing	O
-by	O
-AvailabilitiesController	B-API
-#create	O
-as	O
-HTML	B-PL
-Parameters	O
-:	O
-{	O
-"	O
-schedule_id	O
-"	O
-=	O
-"	O
-18	O
-"	O
-,	O
-"	O
-team_id	O
-"	O
-=	O
-"	O
-1	O
-"	O
-,	O
-"	O
-user_id	O
-"	O
-=	O
-"	O
-38	O
-"	O
-}	O
-User	O
-Load	O
-(	O
-1.6ms	O
-)	O
-SELECT	O
-"	O
-users	O
-"	O
-.	O
-
-*	O
-FROM	O
-"	O
-users	O
-"	O
-WHERE	O
-"	O
-users	O
-"	O
-.	O
-
-"	O
-id	O
-"	O
-=	O
-38	O
-LIMIT	O
-1	O
-(	O
-0.4ms	O
-)	O
-BEGIN	O
-SQL	B-PL
-(	O
-20.1ms	O
-)	O
-INSERT	O
-INTO	O
-"	O
-availabilities	O
-"	O
-(	O
-"	O
-available	O
-"	O
-,	O
-"	O
-created_at	O
-"	O
-,	O
-"	O
-schedule_id	O
-"	O
-,	O
-"	O
-team_id	O
-"	O
-,	O
-"	O
-updated_at	O
-"	O
-,	O
-"	O
-user_id	O
-")	O
-VALUES	O
-(	O
-$1	O
-,	O
-$2	O
-,	O
-$3	O
-,	O
-$4	O
-,	O
-$5	O
-,	O
-$6	O
-)	O
-RETURNING	O
-"	O
-id	O
-"	O
-[[	O
-"	O
-available	O
-"	O
-,	O
-nil]	O
-,	O
-[	O
-"	O
-created_at	O
-"	O
-,	O
-Tue	O
-,	O
-18	O
-Sep	O
-2012	O
-23:07	O
-:	O
-26	O
-EST	O
-+	O
-10:00	O
-]	O
-,	O
-[	O
-"	O
-schedule_id	O
-"	O
-,	O
-nil]	O
-,	O
-[	O
-"	O
-team_id	O
-"	O
-,	O
-nil]	O
-,	O
-[	O
-"	O
-updated_at	O
-"	O
-,	O
-Tue	O
-,	O
-18	O
-Sep	O
-2012	O
-23:07	O
-:	O
-26	O
-EST	O
-+	O
-10:00	O
-]	O
-,	O
-[	O
-"	O
-user_id	O
-"	O
-,	O
-nil	O
-]]	O
-(	O
-10.5ms	O
-)	O
-COMMIT	O
-
 If	O
 you	O
 want	O
@@ -36994,7 +36449,7 @@ pass	O
 information	O
 to	O
 your	O
-rails	O
+rails	B-Fram
 app	O
 ,	O
 you	O
@@ -37003,7 +36458,7 @@ need	O
 to	O
 place	O
 the	O
-@codeSnippetRemoved	O
+@c@	O
 
 on	O
 to	O
@@ -37064,7 +36519,7 @@ ones	O
 For	O
 example	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Often	O
 though	O
@@ -37247,7 +36702,7 @@ is	O
 my	O
 script	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 here	O
@@ -37257,7 +36712,7 @@ of	O
 the	O
 slider	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 use	O
 :	O
@@ -37359,7 +36814,7 @@ the	O
 current	O
 jquery	B-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 value	O
@@ -37401,10 +36856,10 @@ range	O
 
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 HTML	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 code	O
@@ -37495,7 +36950,7 @@ the	O
 test	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 guess	O
@@ -37520,7 +36975,7 @@ things	O
 .	O
 
 Yes	O
-echo	B-API
+echo	O
 '	O
 s	O
 because	O
@@ -37758,7 +37213,7 @@ So	O
 Is	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 secure	O
@@ -37766,7 +37221,7 @@ as	O
 this	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 first	O
@@ -38013,7 +37468,7 @@ storing	O
 the	O
 data	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Therefore	O
 $salt	O
@@ -38102,7 +37557,7 @@ file	O
 name	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 is	O
 where	O
@@ -38112,7 +37567,7 @@ this	O
 error	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 it	O
 works	O
@@ -38153,7 +37608,7 @@ values	O
 such	O
 as	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Many	O
 thanks	O
@@ -38166,7 +37621,7 @@ can	O
 do	O
 something	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
 f	O
@@ -38195,7 +37650,7 @@ after	O
 the	O
 string	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 reason	O
@@ -38233,7 +37688,7 @@ formatting	O
 method	O
 ...	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Drawing	O
 a	O
@@ -38273,7 +37728,7 @@ the	O
 source	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 After	O
 playing	O
@@ -38385,7 +37840,7 @@ is	O
 random	O
 edges	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I'm	O
 trying	O
@@ -38462,14 +37917,14 @@ the	O
 distance	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 should	O
 maybe	O
 be	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -38483,7 +37938,7 @@ the	O
 pos	O
 dictionary.For	O
 example	O
-@codeSnippetRemoved	O
+@c@	O
 
 Appengine	B-Fram
 BulkLoader	I-Fram
@@ -38525,14 +37980,14 @@ my	O
 development	O
 server	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 exact	O
 output	O
 being	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -38540,7 +37995,7 @@ the	O
 app.yaml	O
 file	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 the	O
@@ -38551,7 +38006,7 @@ perform	O
 the	O
 upload	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -38559,7 +38014,7 @@ the	O
 uploader	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 this	O
@@ -38567,7 +38022,7 @@ the	O
 cols.csv	O
 file	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Any	O
 help	O
@@ -38665,7 +38120,7 @@ to	O
 do	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Displaying	O
 Image	O
@@ -38685,7 +38140,7 @@ this	O
 method	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 want	O
@@ -38701,7 +38156,7 @@ this	O
 method	O
 in	O
 mainActivity	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 when	O
@@ -38720,11 +38175,11 @@ help	O
 .	O
 
 activity_main.xml	O
-@codeSnippetRemoved	O
+@c@	O
 
 LogCat	B-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 One	O
 problem	O
@@ -38877,7 +38332,7 @@ Try	O
 this	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Updated	O
 
@@ -38933,7 +38388,7 @@ like	O
 this	O
 :	O
 -	O
-@codeSnippetRemoved	O
+@c@	O
 
 Update	O
 :	O
@@ -38951,7 +38406,7 @@ your	O
 onCreate()	B-API
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 used	O
@@ -39004,7 +38459,7 @@ in	O
 the	O
 line	O
 below	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 are	O
@@ -39044,7 +38499,7 @@ image	O
 as	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 OR	O
 
@@ -39063,14 +38518,14 @@ can	O
 do	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
 in	O
 your	O
 xml	B-Stan
 file	O
-@codeSnippetRemoved	O
+@c@	O
 
 SKShapeNode	B-API
 equivalent	O
@@ -39205,7 +38660,7 @@ was	O
 quite	O
 easy	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -39328,7 +38783,7 @@ or	O
 WMI	B-Fram
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Use	O
 PerformanceCounter	B-API
@@ -39339,7 +38794,7 @@ different	O
 performance	O
 statistics	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 here	O
@@ -39401,7 +38856,7 @@ program	O
 Code	O
 sample	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 I	O
@@ -39549,7 +39004,7 @@ demonstrate	O
 an	O
 appropriate	O
 solution	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 will	O
@@ -39569,86 +39024,6 @@ to	O
 clipboard	O
 before	O
 .	O
-
-var	O
-hwnd	O
-=	O
-GetWindowHandle()	B-API
-;	O
-//	O
-Custom	O
-function	O
-that	O
-returns	O
-the	O
-target	O
-window	O
-'	O
-s	O
-handle	O
-var	O
-currentThreadId	O
-=	O
-GetCurrentThreadId()	B-API
-;	O
-uint	O
-pid	O
-;	O
-var	O
-targetThreadId	O
-=	O
-GetWindowThreadProcessId	B-API
-(	O
-hwnd	O
-,	O
-out	O
-pid	O
-);	O
-if	O
-(	O
-targetThreadId	O
-IntPtr.Zero	B-API
-)	O
-return	O
-;	O
-if	O
-(	O
-targetThreadId	O
-!	O
-=	O
-currentThreadId	O
-)	O
-{	O
-AttachThreadInput	B-API
-(	O
-currentThreadId	O
-,	O
-targetThreadId	O
-,	O
-true	O
-);	O
-}	O
-SetForegroundWindow	B-API
-(	O
-hwnd	O
-);	O
-if	O
-(	O
-currentThreadId	O
-!	O
-=	O
-targetThreadId	O
-)	O
-{	O
-AttachThreadInput	B-API
-(	O
-currentThreadId	O
-,	O
-targetThreadId	O
-,	O
-false	O
-);	O
-}	O
 
 I	O
 have	O
@@ -39841,7 +39216,7 @@ class	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 I	O
@@ -40009,7 +39384,7 @@ list	O
 Running	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 returns	O
 ~	O
@@ -40024,7 +39399,7 @@ seconds	O
 Running	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 returns	O
 ~	O
@@ -40070,7 +39445,7 @@ Take	O
 ?	O
 
 i.e.	O
-@codeSnippetRemoved	O
+@c@	O
 
 Also	O
 ,	O
@@ -40129,12 +39504,12 @@ can	O
 query	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 EF	O
 4.1	O
-@codeSnippetRemoved	O
+@c@	O
 
 Restoring	O
 input	B-API
@@ -40274,7 +39649,7 @@ values	O
 back	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Would	O
 appreciate	O
@@ -40330,7 +39705,7 @@ saved	O
 with	O
 that	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Forms	O
 have	O
@@ -40398,7 +39773,7 @@ helped	O
 
 HTML	B-PL
 table	O
-td	O
+td	B-API
 '	O
 s	O
 not	O
@@ -40512,7 +39887,7 @@ the	O
 code	O
 also	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Your	O
 first	O
@@ -40526,11 +39901,11 @@ wrong	O
 ,	O
 change	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 with	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -40581,7 +39956,7 @@ the	O
 following	O
 method	O
 signature	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 I	O
@@ -40590,7 +39965,7 @@ it	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 then	O
 ,	O
@@ -40668,7 +40043,7 @@ myValues	O
 
 Something	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 of	O
@@ -40929,7 +40304,7 @@ an	O
 array	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 C	B-PL
@@ -42042,7 +41417,7 @@ interface	O
 ,	O
 e.g.	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 request	O
@@ -42654,7 +42029,7 @@ end	O
 up	O
 with	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -43762,7 +43137,7 @@ of	O
 code	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 http://jsfiddle.net/augburto/YMa2y	O
 
@@ -43790,7 +43165,7 @@ rectangle	O
 I've	O
 updated	O
 your	O
-fiddle	B-Fram
+fiddle	O
 to	O
 dynamically	O
 sizing	O
@@ -43807,7 +43182,7 @@ using	O
 this	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Which	O
 simply	O
@@ -44044,7 +43419,7 @@ foo	O
 
 andSelf	B-API
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 $	O
 (	O
@@ -44062,7 +43437,7 @@ with	O
 children	B-API
 selector	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 See	O
 here	O
@@ -44590,7 +43965,7 @@ up	O
 event	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 if	O
@@ -44707,19 +44082,19 @@ get	O
 loaded	O
 at	O
 document.ready	B-API
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
 the	O
 associated	O
 CSS	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 the	O
 JS	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 all	O
 of	O
@@ -44742,12 +44117,12 @@ I	O
 run	O
 the	O
 following	O
-@codeSnippetRemoved	O
+@c@	O
 
 which	O
 loads	O
 shite.html	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 it	O
@@ -45003,7 +44378,7 @@ method	O
 that	O
 way	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 wasfacing	O
@@ -45012,17 +44387,17 @@ same	O
 problem	O
 
 jQuery	B-Fram
-@codeSnippetRemoved	O
+@c@	O
 
 Html	B-PL
 Before	O
 ajax	B-Stan
-@codeSnippetRemoved	O
+@c@	O
 
 Html	B-PL
 after	O
 ajax	B-Stan
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 was	O
@@ -45035,7 +44410,7 @@ it	O
 to	O
 
 jQuery	B-Fram
-@codeSnippetRemoved	O
+@c@	O
 
 It	O
 was	O
@@ -45074,7 +44449,7 @@ works	O
 for	O
 instance	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 what	O
 are	O
@@ -45315,18 +44690,18 @@ page	O
 
 Product	O
 Page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Shopping	O
 Cart	O
 Page	O
-@codeSnippetRemoved	O
+@c@	O
 
 Shopping	O
 Cart	O
 Page	O
 Javascript	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 Please	O
 Modify	O
@@ -45334,7 +44709,7 @@ your	O
 forms	O
 :	O
 -	O
-@codeSnippetRemoved	O
+@c@	O
 
 Convert	O
 a	O
@@ -45361,7 +44736,7 @@ displayed	O
 in	O
 a	O
 div	B-API
-id	I-API
+id	O
 "	O
 bill	O
 "	O
@@ -45435,11 +44810,11 @@ usage	O
 
 HTML	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 JavaScript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 DEMO	O
 
@@ -45610,7 +44985,7 @@ I	O
 used	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Thanks	O
 in	O
@@ -45685,7 +45060,7 @@ test	O
 ,	O
 do	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 this	O
@@ -45840,7 +45215,7 @@ can	O
 use	O
 cURL	B-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 function	O
 curl	B-Fram
@@ -45924,7 +45299,7 @@ for	O
 various	O
 needs	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 there	O
@@ -46051,11 +45426,11 @@ this	O
 
 Script1	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Script2	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 So	O
 I	O
@@ -46127,7 +45502,7 @@ to	O
 store	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 ,	O
@@ -46163,7 +45538,7 @@ define	O
 a	O
 setter	O
 method	O
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 I	O
@@ -46269,7 +45644,7 @@ or	O
 B	O
 otherwise	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Similarly	O
 ,	O
@@ -46289,7 +45664,7 @@ or	O
 B	O
 otherwise	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Let	O
 '	O
@@ -46298,7 +45673,7 @@ separate	O
 this	O
 out	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 logical	O
@@ -46357,7 +45732,7 @@ equal	O
 precedences	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 in	O
@@ -46373,7 +45748,7 @@ to	O
 27.75	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -46431,12 +45806,12 @@ were	O
 introduced	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 is	O
 equivalent	O
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 Python	B-PL
@@ -46614,7 +45989,7 @@ s	O
 the	O
 same	O
 as	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 value	O
@@ -46667,12 +46042,12 @@ I	O
 am	O
 developing	O
 a	O
-Timer	B-API
+Timer	O
 based	O
 app	O
 .	O
 
-Timer	B-API
+Timer	O
 runs	O
 continuously	O
 in	O
@@ -46709,7 +46084,7 @@ timer	B-API
 .	O
 
 Activity	O
-timer	B-API
+timer	O
 is	O
 responsible	O
 for	O
@@ -46739,14 +46114,14 @@ onTerminate	B-API
 events	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 AndroidManifest.xml	O
-@codeSnippetRemoved	O
+@c@	O
 
 service	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 the	O
@@ -46828,7 +46203,7 @@ the	O
 complete	O
 androidmanifest	O
 file	O
-@codeSnippetRemoved	O
+@c@	O
 
 Access	O
 SQL	B-PL
@@ -47020,7 +46395,7 @@ arbitrary	O
 reason	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Lets	O
 say	O
@@ -47053,7 +46428,7 @@ arbitrary	O
 reason	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 ,	O
@@ -47146,7 +46521,7 @@ entity	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -47193,7 +46568,7 @@ and	O
 framework	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 need	O
@@ -47234,7 +46609,7 @@ it	O
 gave	O
 me	O
 error	O
-@codeSnippetRemoved	O
+@c@	O
 
 khushi	O
 ,	O
@@ -47247,7 +46622,7 @@ to	O
 you	O
 ....	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 some	O
 references	O
@@ -47338,10 +46713,10 @@ Take	O
 a	O
 look	O
 at	O
-Microsoft	B-Fram
-'	I-Fram
-s	I-Fram
-Translator	I-Fram
+Microsoft	O
+'	O
+s	O
+Translator	B-Fram
 Widget	O
 
 It	O
@@ -47731,7 +47106,7 @@ to	O
 your	O
 app.config	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Have	O
 a	O
@@ -47875,7 +47250,7 @@ rounded	O
 corners	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Loading	O
 off	O
@@ -48058,7 +47433,7 @@ hide	O
 it	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -48221,10 +47596,10 @@ return	O
 ,	O
 
 my	O
-LogCat	B-API
+LogCat	B-Fram
 :	O
 
-Exception	O
+Exception	B-API
 which	O
 i	O
 got	O
@@ -48921,7 +48296,7 @@ the	O
 following	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 is	O
@@ -48969,7 +48344,7 @@ id	O
 of	O
 the	O
 address	O
-@codeSnippetRemoved	O
+@c@	O
 
 Using	O
 Hibernate	B-API
@@ -48981,7 +48356,7 @@ would	O
 look	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -49064,7 +48439,7 @@ is	O
 as	O
 follows	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 am	O
@@ -49121,14 +48496,14 @@ it	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 could	O
 do	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 def	O
 stream	O
@@ -49155,9 +48530,9 @@ Array[Byte	O
 Creating	O
 a	O
 customized	O
-404	B-Stan
+404	O
 /	O
-500	B-Stan
+500	O
 error	O
 page	O
 in	O
@@ -49174,9 +48549,9 @@ custom	O
 looks	O
 for	O
 their	O
-404	B-Stan
+404	O
 /	O
-505	B-Stan
+505	O
 error	O
 pages	O
 using	O
@@ -49385,7 +48760,7 @@ element	O
 to	O
 narrow	O
 down	O
-@codeSnippetRemoved	O
+@c@	O
 
 Depending	O
 on	O
@@ -49631,7 +49006,7 @@ roughly	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 the	O
@@ -49645,7 +49020,7 @@ looks	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Is	O
 there	O
@@ -49693,7 +49068,7 @@ this	O
 example	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 other	O
 /	O
@@ -49712,7 +49087,7 @@ module	O
 name	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 a.js	O
 
@@ -49727,7 +49102,7 @@ module	O
 name	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 b.js	O
 and	O
@@ -49736,7 +49111,7 @@ c.js	O
 Uninteresting	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 other	O
 /	O
@@ -49747,7 +49122,7 @@ module-file-1.js	O
 Uninteresting	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 test.html	O
 
@@ -49776,10 +49151,10 @@ modules	O
 to	O
 load	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Console	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 JavaScript	B-PL
@@ -49822,7 +49197,7 @@ countdown	O
 loop	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 did	O
@@ -49906,7 +49281,7 @@ http://ejohn.org/blog/how-javascript-timers-work	O
 this	O
 should	O
 work	O
-@codeSnippetRemoved	O
+@c@	O
 
 When	O
 using	O
@@ -49959,7 +49334,7 @@ function	O
 just	O
 write	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -49972,7 +49347,7 @@ and	O
 just	O
 write	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Or	O
 drop	O
@@ -49980,7 +49355,7 @@ the	O
 while	O
 function	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 setInterval	B-API
 is	O
@@ -49995,7 +49370,7 @@ run	O
 periodically	O
 .	O
 https://developer.mozilla.org/en-US/docs/Web/API/Window.setInterval	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 do	O
@@ -50046,7 +49421,7 @@ process	O
 so	O
 far	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 you	O
@@ -50055,12 +49430,12 @@ it	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
 connect	O
-draggable	B-Fram
+draggable	B-API
 divs	O
 
 I	O
@@ -50350,7 +49725,7 @@ BC	O
 
 tip	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 repaint	O
 every	O
@@ -50391,7 +49766,7 @@ parallel	O
 you	O
 can	O
 use	O
-jsplumb	O
+jsplumb	B-Fram
 library	O
 to	O
 achieve	O
@@ -50408,7 +49783,7 @@ div1	O
 and	O
 div2	O
 ,	O
-@codeSnippetRemoved	O
+@c@	O
 
 this	O
 should	O
@@ -50696,7 +50071,7 @@ print	O
 that	O
 is	O
 one	O
-div	O
+div	B-API
 .	O
 
 Hope	O
@@ -50711,7 +50086,7 @@ html	B-PL
 string	O
 in	O
 JQuery	B-Fram
-Mobile	O
+Mobile	I-Fram
 template	O
 
 I	O
@@ -50752,12 +50127,12 @@ have	O
 tried	O
 using	O
 ${$	O
-.mobile	O
-.html	O
+.mobile	B-API
+.html	I-API
 (	O
 Body	O
 )	O
-.text()	O
+.text()	B-API
 }	O
 but	O
 that	O
@@ -50770,11 +50145,11 @@ me	O
 My	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Html	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 After	O
 searching	O
@@ -50800,7 +50175,7 @@ Html	B-PL
 Using	O
 {{	O
 html	B-PL
-Body	I-PL
+Body	O
 }}	O
 in	O
 my	O
@@ -50933,7 +50308,7 @@ next	O
 image	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 can	O
@@ -50977,7 +50352,7 @@ it	O
 should	O
 ...	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 var	O
 ul=	O
@@ -50991,7 +50366,7 @@ finalHeight=0	O
 
 ul.find('li	O
 ')	O
-.each	O
+.each	B-API
 (	O
 function()	O
 {	O
@@ -50999,13 +50374,13 @@ finalWidth+=jQuery	O
 (	O
 this	O
 )	O
-.width()	O
+.width()	B-API
 ;	O
 finalHeight+=jQuery	O
 (	O
 this	O
 )	O
-.height()	O
+.height()	B-API
 ;	O
 }	O
 );	O
@@ -51014,7 +50389,7 @@ ul.height	O
 (	O
 finalHeight	O
 )	O
-.width	O
+.width	B-API
 (	O
 finalWidth	O
 );	O
@@ -51047,14 +50422,14 @@ them	O
 individually	O
 ,	O
 using	O
-jQuery	B-API
-'	I-API
-s	I-API
-each	I-API
+jQuery	B-Fram
+'	O
+s	O
+each	B-API
 :	O
 
 Try	O
-@codeSnippetRemoved	O
+@c@	O
 
 Similar	O
 to	O
@@ -51103,7 +50478,7 @@ replace	O
 yours	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Storing	O
 string	O
@@ -51287,7 +50662,7 @@ s	O
 the	O
 respective	O
 route	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 '	O
@@ -51295,7 +50670,7 @@ s	O
 the	O
 controller	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 the	O
@@ -51329,7 +50704,7 @@ this	O
 controller	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 it	O
@@ -51338,7 +50713,7 @@ s	O
 showing	O
 an	O
 error	O
-@codeSnippetRemoved	O
+@c@	O
 
 However	O
 ,	O
@@ -51355,7 +50730,7 @@ it	O
 passes	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -51373,7 +50748,7 @@ you	O
 need	O
 Category	O
 model	O
-@codeSnippetRemoved	O
+@c@	O
 
 your	O
 mock	B-Fram
@@ -51404,9 +50779,9 @@ of	O
 an	O
 empty	O
 array	O
-@codeSnippetRemoved	O
+@c@	O
 
-Magento	O
+Magento	B-Fram
 :	O
 Is	O
 it	O
@@ -51708,7 +51083,7 @@ make	O
 something	O
 similar	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 as	O
@@ -51765,7 +51140,7 @@ distributions	O
 histograms	O
 )	O
 with	O
-MCMC	B-API
+MCMC	O
 using	O
 pymc	B-Fram
 ?	O
@@ -51843,7 +51218,7 @@ to	O
 do	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 question	O
@@ -51901,7 +51276,7 @@ generic	O
 function	O
 (	O
 like	O
-GaussFunc	B-API
+GaussFunc	O
 in	O
 my	O
 example	O
@@ -52027,7 +51402,7 @@ was	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 I	O
@@ -52035,7 +51410,7 @@ could	O
 not	O
 construct	O
 a	O
-mc.model	B-API
+mc.model	O
 that	O
 worked	O
 .	O
@@ -52116,7 +51491,7 @@ priors	O
 there	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Important	O
 
@@ -52327,9 +51702,9 @@ a	O
 cursor	O
 when	O
 executing	O
-PL	B-PL
-/	I-PL
-SQL	I-PL
+PL	O
+/	O
+SQL	O
 blocks	O
 as	O
 requested	O
@@ -52624,12 +51999,12 @@ app	O
 my	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 it	O
 give	O
 me	O
-@codeSnippetRemoved	O
+@c@	O
 
 what	O
 is	O
@@ -52684,7 +52059,7 @@ to	O
 your	O
 manifest	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 First	O
 of	O
@@ -52756,13 +52131,13 @@ In	O
 mainfest	O
 file	O
 use	O
-@codeSnippetRemoved	O
+@c@	O
 
 after	O
-@codeSnippetRemoved	O
+@c@	O
 
 as	O
-@codeSnippetRemoved	O
+@c@	O
 
 how	O
 to	O
@@ -52956,7 +52331,7 @@ imgWidth	O
 imgHeight	O
 )	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 designer	O
@@ -52992,7 +52367,7 @@ will	O
 be	O
 generated	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Visual	B-Fram
 studio	I-Fram
@@ -53270,7 +52645,7 @@ not	O
 generate	O
 any	O
 exception	O
-@codeSnippetRemoved	O
+@c@	O
 
 RegardsAdeel	O
 Arshad	O
@@ -53530,7 +52905,7 @@ alright	O
 Failed	O
 to	O
 load	O
-PDF	O
+PDF	B-Stan
 document	O
 
 Unreadable	O
@@ -53709,7 +53084,7 @@ HTML	B-PL
 Code	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 img	B-API
 is	O
@@ -53726,12 +53101,12 @@ PHP	B-PL
 Code	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 JScript	B-PL
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Can	O
 you	O
@@ -55068,7 +54443,7 @@ used	O
 ibatis	O
 Script	O
 Runner	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 there	O
@@ -55129,13 +54504,13 @@ method	O
 (	O
 http://docs.oracle.com/javase/6/docs/api/java/sql/Statement.html	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 if	O
 i	O
 set	O
-@codeSnippetRemoved	O
+@c@	O
 
 behind	O
 stmnt.execute	B-API
@@ -55178,7 +54553,7 @@ in	O
 advance	O
 !	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 can	O
@@ -55199,7 +54574,7 @@ you	O
 out	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Without	O
 having	O
@@ -55226,7 +54601,7 @@ the	O
 script	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 store	O
 image	O
@@ -55454,7 +54829,7 @@ in	O
 textual	O
 form	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Expressing	O
 this	O
@@ -55466,7 +54841,7 @@ jsfiddle	B-Fram
 Experimental	O
 SSCCE	B-Stan
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 guess	O
@@ -55867,14 +55242,14 @@ this	O
 is	O
 slow	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 you	O
 can	O
 expand	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hibernate	B-Fram
 calls	O
@@ -55971,7 +55346,7 @@ database	O
 yet	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Have	O
 I	O
@@ -56003,7 +55378,7 @@ this	O
 exception	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
@@ -56183,13 +55558,13 @@ supporting	O
 queries	O
 such	O
 as	O
-findAll	O
+findAll	B-API
 in	O
 a	O
 new	O
 session	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 That	O
 has	O
@@ -56260,7 +55635,7 @@ valid	O
 index	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 real	O
@@ -56358,7 +55733,7 @@ sort	O
 as	O
 needed	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 http://jsfiddle.net/ExplosionPIlls/ULEFX	O
 
@@ -56433,7 +55808,7 @@ you	O
 .	O
 
 https://graph.facebook.com/JaramSieBrunetkami/photos	O
-@codeSnippetRemoved	O
+@c@	O
 
 Jquery	B-Fram
 -	O
@@ -56476,7 +55851,7 @@ my	O
 data	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Instead	O
 of	O
@@ -56530,7 +55905,7 @@ changing	O
 it	O
 to	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 this	O
@@ -56572,11 +55947,11 @@ instead	O
 of	O
 id	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 try	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 Change	O
 Row	O
@@ -56587,207 +55962,6 @@ data	O
 table	O
 by	O
 Date	O
-
-Today	O
-:	O
-?	O
-
-php	B-PL
-echo	O
-date	O
-(	O
-"	O
-m	O
-/	O
-d	O
-/	O
-Y	O
-")	O
-;	O
-?	O
-
-ph	O
-ISSUED	O
-BOOKS	O
-|	O
-DUE	O
-BOOKS	O
-/	O
-ph	O
-table	O
-border=	O
-"	O
-1	O
-"	O
-cellpadding=	O
-"	O
-3	O
-"	O
-cellspacing=	O
-"	O
-0	O
-"	O
-id=	O
-"	O
-tblissued	O
-"	O
-tr	O
-bgcolor=	O
-"	O
-#CCCCCC	O
-"	O
-th	O
-height=	O
-"	O
-39	O
-"	O
-id	O
-/	O
-th	O
-th	O
-Officer	O
-/	O
-th	O
-th	O
-Member_ID	O
-/	O
-th	O
-th	O
-Book_ID	O
-/	O
-th	O
-th	O
-Issued_date	O
-/	O
-th	O
-th	O
-Due_date	O
-/	O
-th	O
-th	O
-Remarks	O
-/	O
-th	O
-/	O
-tr	O
-?	O
-
-php	B-PL
-do	O
-{	O
-?	O
-
-tr	O
-bgcolor=	O
-"	O
-#FFFFFF	O
-"	O
-td	O
-height=	O
-"	O
-33	O
-"	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['id	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Officer	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Member_ID	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Book_ID	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Issued_date	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Due_date	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-td	O
-?	O
-
-php	B-PL
-echo	O
-$row_rsissuedbooks['Remarks	O
-'	O
-];	O
-?	O
-
-/	O
-td	O
-/	O
-tr	O
-?	O
-
-php	B-PL
-}	O
-while	O
-(	O
-$row_rsissuedbooks	O
-=	O
-mysql_fetch_assoc	B-API
-(	O
-$rsissuedbooks	O
-));	O
-?	O
-
-/	O
-table	O
 
 i	O
 want	O
@@ -56833,12 +56007,12 @@ will	O
 work	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -56894,7 +56068,7 @@ doing	O
 this	O
 with	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 problem	O
@@ -57067,7 +56241,7 @@ around	O
 the	O
 problem	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Basically	O
 ,	O
@@ -57499,7 +56673,7 @@ this.Any	O
 ideas	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 You're	O
 passing	O
@@ -57514,11 +56688,11 @@ function	O
 
 This	O
 line	O
-@codeSnippetRemoved	O
+@c@	O
 
 should	O
 be	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 for	O
@@ -57559,7 +56733,7 @@ function	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 it	O
@@ -57568,7 +56742,7 @@ cleaner	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Add	O
 css	B-PL
@@ -57587,7 +56761,7 @@ submenu	O
 like	O
 below	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 I	O
@@ -57699,7 +56873,7 @@ is	O
 my	O
 full	O
 code	O
-Fiddle	B-Fram
+Fiddle	O
 
 you	O
 simply	O
@@ -57717,7 +56891,7 @@ exclude	O
 all	O
 classes	O
 root-level	O
-@codeSnippetRemoved	O
+@c@	O
 
 check	O
 the	O
@@ -57757,8 +56931,8 @@ solution	O
 :	O
 
 Sample	O
-Fiddle	B-Fram
-@codeSnippetRemoved	O
+Fiddle	O
+@c@	O
 
 In	O
 this	O
@@ -57854,14 +57028,14 @@ your	O
 #main	O
 -menu	O
 list	O
-@codeSnippetRemoved	O
+@c@	O
 
 Modifying	O
 the	O
 css	B-PL
 to	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 DEMO	O
 
@@ -57875,7 +57049,7 @@ my	O
 jquery	B-Fram
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -58223,257 +57397,6 @@ for	O
 login	O
 .	O
 
-Everything	O
-is	O
-being	O
-posted	O
-except	O
-for	O
-the	O
-username	O
-.	O
-
-Is	O
-there	O
-something	O
-I'm	O
-doing	O
-wrong	O
-within	O
-the	O
-placement	O
-of	O
-the	O
-username	O
-variable	O
-edits	O
-?	O
-
-Is	O
-there	O
-something	O
-I'm	O
-missing	O
-that	O
-is	O
-preventing	O
-this	O
-from	O
-being	O
-posted	O
-?	O
-
-@codeSnippetRemoved	O
-
-[	O
-28-Jul-2013	O
-16:05	O
-:	O
-40	O
-America	O
-/	O
-Denver	O
-]	O
-PHP	B-PL
-Parse	O
-error	O
-:	O
-syntax	O
-error	O
-,	O
-unexpected	O
-T_ELSE	O
-in	O
-/	O
-home	O
-/	O
-lear	O
-/	O
-public_html	O
-/	O
-storescripts	O
-/	O
-my_ipn.php	O
-on	O
-line	O
-74	O
-[	O
-28-Jul-2013	O
-21:06	O
-:	O
-37	O
-America	O
-/	O
-Denver	O
-]	O
-PHP	B-PL
-Warning	O
-:	O
-mysqli_query()	B-API
-expects	O
-parameter	O
-1	O
-to	O
-be	O
-mysqli	B-PL
-,	O
-null	O
-given	O
-in	O
-/	O
-home	O
-/	O
-lear	O
-/	O
-public_html	O
-/	O
-storescripts	O
-/	O
-my_ipn.php	O
-on	O
-line	O
-100	O
-[	O
-28-Jul-2013	O
-21:06	O
-:	O
-37	O
-America	O
-/	O
-Denver	O
-]	O
-PHP	B-PL
-Warning	O
-:	O
-mysqli_num_rows()	B-API
-expects	O
-parameter	O
-1	O
-to	O
-be	O
-mysqli_result	B-API
-,	O
-null	O
-given	O
-in	O
-/	O
-home	O
-/	O
-lear	O
-/	O
-public_html	O
-/	O
-storescripts	O
-/	O
-my_ipn.php	O
-on	O
-line	O
-102	O
-
-Edit	O
-:	O
-
-I'vej	O
-ust	O
-updated	O
-the	O
-script	O
-.	O
-
-The	O
-error	O
-I'm	O
-receiving	O
-is	O
-as	O
-follows	O
-:	O
-
-[	O
-28-Jul-2013	O
-22:18	O
-:	O
-33	O
-America	O
-/	O
-Denver	O
-]	O
-PHP	B-PL
-Warning	O
-:	O
-mysqli_fetch_assoc()	B-API
-expects	O
-parameter	O
-1	O
-to	O
-be	O
-mysqli_result	O
-,	O
-null	O
-given	O
-in	O
-/	O
-home	O
-/	O
-learnsit	O
-/	O
-public_html	O
-/	O
-storescripts	O
-/	O
-my_ipn.php	O
-on	O
-line	O
-108	O
-
-Line	O
-108	O
-being	O
-
-while	O
-(	O
-$name_arr	O
-=	O
-mysqli_fetch_assoc	B-API
-(	O
-$result	O
-))	O
-{	O
-
-I	O
-haven't	O
-played	O
-around	O
-with	O
-this	O
-too	O
-much	O
-,	O
-but	O
-the	O
-piece	O
-of	O
-code	O
-which	O
-stands	O
-out	O
-for	O
-me	O
-as	O
-chiefly	O
-suspect	O
-is	O
-:	O
-@codeSnippetRemoved	O
-
-It	O
-should	O
-probably	O
-look	O
-more	O
-like	O
-@codeSnippetRemoved	O
-
 Covering	O
 index	O
 decision	O
@@ -58503,7 +57426,7 @@ on	O
 my	O
 server	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I'm	O
 basically	O
@@ -58552,7 +57475,7 @@ not	O
 being	O
 used	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 ,	O
@@ -58575,7 +57498,7 @@ over	O
 these	O
 fields	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 indeed	O
@@ -58587,7 +57510,7 @@ use	O
 the	O
 index	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 However	O
 ,	O
@@ -58810,7 +57733,7 @@ a	O
 good	O
 chice	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Update	O
 :	O
@@ -59141,7 +58064,7 @@ two	O
 emails	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Maybe	O
 your	O
@@ -59166,7 +58089,7 @@ limitation	O
 something	O
 like	O
 that	O
-@codeSnippetRemoved	O
+@c@	O
 
 Is	O
 this	O
@@ -59200,7 +58123,7 @@ debug	O
 at	O
 this	O
 way	O
-@codeSnippetRemoved	O
+@c@	O
 
 simply	O
 put	O
@@ -59409,7 +58332,7 @@ emails	O
 be	O
 sent	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 deleted	O
@@ -59510,7 +58433,7 @@ could	O
 do	O
 something	O
 like	O
-@codeSnippetRemoved	O
+@c@	O
 
 In	O
 python	B-PL
@@ -59523,7 +58446,7 @@ come	O
 up	O
 with	O
 is	O
-@codeSnippetRemoved	O
+@c@	O
 
 These	O
 are	O
@@ -59642,10 +58565,10 @@ one	O
 might	O
 write	O
 either	O
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
 accomplish	O
@@ -60202,7 +59125,7 @@ point	O
 your	O
 example	O
 code	O
-@codeSnippetRemoved	O
+@c@	O
 
 would	O
 be	O
@@ -60211,7 +59134,7 @@ more	O
 readable	O
 as	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 anyway	O
@@ -60237,7 +59160,7 @@ inefficient	O
 
 A	O
 braindead	O
-@codeSnippetRemoved	O
+@c@	O
 
 Options	O
 for	O
@@ -60364,13 +59287,13 @@ buffer	O
 from	O
 pipe	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Settings	O
 for	O
 media	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Then	O
 reading	O
@@ -60582,7 +59505,7 @@ reproduced	O
 zooming	O
 :	O
 http://www.zdnet.com/blog/burnette/how-to-use-multi-touch-in-android-2-part-3-understanding-touch-events/1775?tag=mantle_skin;content	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -60734,7 +59657,7 @@ to	O
 add	O
 coordinates	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 These	O
 events	O
@@ -60749,7 +59672,7 @@ and	O
 dumped	O
 like	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 you	O
@@ -60812,7 +59735,7 @@ and	O
 Pointer	O
 1	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 you	O
@@ -60938,7 +59861,7 @@ this	O
 should	O
 work	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 -Dan	O
 
@@ -61048,7 +59971,7 @@ zoom	O
 scrolling	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 this	O
@@ -61069,7 +59992,7 @@ the	O
 following	O
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 when	O
 I	O
@@ -61129,7 +60052,7 @@ I	O
 deserialize	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 but	O
 when	O
@@ -61175,14 +60098,14 @@ greatly	O
 appreciated	O
 
 change	O
-@codeSnippetRemoved	O
+@c@	O
 
 to	O
-@codeSnippetRemoved	O
+@c@	O
 
 Try	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 or	O
 similary	O
@@ -61190,7 +60113,7 @@ you	O
 can	O
 try	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 as	O
 you	O
@@ -61264,7 +60187,7 @@ original	O
 array	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 need	O
@@ -61440,7 +60363,7 @@ I	O
 think	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Update	O
 :	O
@@ -61529,7 +60452,7 @@ you	O
 out	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Make	O
 GetAllCandidates	O
@@ -61591,7 +60514,7 @@ of	O
 your	O
 recursion	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 way	O
@@ -61635,7 +60558,7 @@ loop	O
 using	O
 LINQ	B-Fram
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 encrypting	O
 password	O
@@ -62348,7 +61271,7 @@ Please	O
 look	O
 at	O
 my	O
-fiddle	B-Fram
+fiddle	O
 ,	O
 it	O
 '	O
@@ -62365,7 +61288,7 @@ my	O
 site	O
 .	O
 
-Fiddle	B-Fram
+Fiddle	O
 :	O
 http://jsfiddle.net/4vdck	O
 
@@ -62394,7 +61317,7 @@ href	O
 ,	O
 like	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 How	O
 to	O
@@ -62559,11 +61482,11 @@ they	O
 submit	O
 ?	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Jquery	B-Fram
 Script	O
-@codeSnippetRemoved	O
+@c@	O
 
 Link	O
 to	O
@@ -62624,223 +61547,10 @@ look	O
 here	O
 :	O
 
-function	O
-displayVals()	O
-{	O
-var	O
-a	O
-=	O
-$("input[type='radio	O
-'	O
-]:	O
-checked	O
-")	O
-.val()	O
-;	O
-var	O
-b	O
-=	O
-"	O
-I	O
-am	O
-a	O
-"	O
-;	O
-var	O
-checkedValue	O
-=	O
-$	O
-(	O
-"	O
-p	O
-")	O
-.html	O
-(	O
-"	O
-b	O
-I	O
-am	O
-a	O
-/	O
-b	O
-"	O
-+	O
-"	O
-"	O
-+	O
-a	O
-);	O
-var	O
-input	O
-=	O
-$("input[type='text	O
-'	O
-]	O
-")	O
-;	O
-//	O
-you	O
-want	O
-to	O
-add	O
-only	O
-the	O
-value	O
-of	O
-radio	O
-each	O
-time	O
-.	O
-input.val(a);}$("input[type='radio	O
-'	O
-]	O
-")	O
-.change	O
-(	O
-displayVals	O
-);	O
-//	O
-why	O
-execute	O
-this	O
-one	O
-on	O
-dom	O
-ready	O
-??	O
-
-//	O
-displayVals()	O
-;	O
-script	O
-src=	O
-"	O
-https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js	O
-"	O
-/	O
-script	O
-input	O
-type=	O
-"	O
-text	O
-"	O
-onblur=	O
-"	O
-this.placeholder	O
-=	O
-'	O
-my	O
-name	O
-'"	O
-onfocus=	O
-"	O
-this.placeholder	O
-=	O
-''"	O
-placeholder=	O
-"	O
-my	O
-name	O
-"	O
-name=	O
-"	O
-name	O
-"	O
-id=	O
-"	O
-my	O
-name	O
-"	O
-class=	O
-"	O
-InputText	O
-"	O
-input	O
-type=	O
-"	O
-submit	O
-"	O
-value=	O
-"	O
-Submit	O
-"	O
-class=	O
-"	O
-SubmitButton	B-API
-"	O
-br	O
-input	O
-type=	O
-"	O
-radio	O
-"	O
-id=	O
-"	O
-single	O
-"	O
-name=	O
-"	O
-sex	O
-"	O
-value=	O
-"	O
-Boy	O
-"	O
-Boy	O
-nbsp	O
-;	O
-nbsp	O
-;	O
-|	O
-nbsp	O
-;	O
-nbsp	O
-;	O
-input	O
-type=	O
-"	O
-radio	O
-"	O
-id=	O
-"	O
-single	O
-"	O
-name=	O
-"	O
-sex	O
-"	O
-value=	O
-"	O
-Girl	O
-"	O
-Girl	O
-br	O
-br	O
-br	O
-br	O
-p	O
-/	O
-p	O
-select	O
-id=	O
-"	O
-single	O
-"	O
-option	O
-Single	O
-/	O
-option	O
-option	O
-Single2	O
-/	O
-option	O
-/	O
-select	O
-
 Here	O
 a	O
 working	O
-fiddle	B-Fram
+fiddle	O
 :	O
 http://jsfiddle.net/ssbrbsfp/6	O
 
@@ -62856,7 +61566,7 @@ input.val	O
 in	O
 it	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Check	O
 if	O
@@ -62872,21 +61582,21 @@ and	O
 the	O
 p	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 To	O
 validate	O
 before	O
 submit	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 put	O
 it	O
 on	O
 the	O
-submit	O
+submit	B-API
 button	O
 to	O
 show	O
@@ -62901,7 +61611,7 @@ it	O
 in	O
 the	O
 form	O
-submit	O
+submit	B-API
 event	O
 .	O
 
@@ -62915,9 +61625,9 @@ things	O
 
 Remove	O
 the	O
-onblur	O
+onblur	B-API
 and	O
-onfocus	O
+onfocus	B-API
 from	O
 the	O
 input	O
@@ -63150,7 +61860,7 @@ get	O
 messed	O
 up	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 What	O
 you	O
@@ -63196,7 +61906,7 @@ variable	O
 y	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Now	O
 ,	O
@@ -63941,14 +62651,14 @@ ABAB	O
 My	O
 Classes	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 is	O
 the	O
 wrapper	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 and	O
 this	O
@@ -63958,19 +62668,19 @@ used	O
 in	O
 main-app	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 My	O
 output	O
 is	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 should	O
 be	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Can	O
 you	O
@@ -63986,7 +62696,7 @@ believe	O
 the	O
 annotations	O
 on	O
-Wrapper	B-Fram
+Wrapper	O
 are	O
 the	O
 problem	O
@@ -64032,8 +62742,8 @@ access	O
 ,	O
 annotate	O
 the	O
-Wrapper	B-API
-class	I-API
+Wrapper	O
+class	O
 with	O
 @XmlAccessorType	O
 (	O
@@ -64084,7 +62794,7 @@ the	O
 following	O
 snippet	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Time	O
 1	O
@@ -65250,7 +63960,7 @@ the	O
 countdownat	O
 all	O
 in	O
-IE	B-API
+IE	B-Fram
 and	O
 wondered	O
 if	O
@@ -65270,8 +63980,8 @@ would	O
 be	O
 compatible	O
 with	O
-IE	O
-.	B-Fram
+IE	B-Fram
+.	O
 
 Here	O
 '	O
@@ -65281,7 +63991,7 @@ code	O
 i'm	O
 using	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 And	O
 displaying	O
@@ -65289,7 +63999,7 @@ it	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 As	O
 I	O
@@ -65319,229 +64029,6 @@ Thanks	O
 in	O
 advance	O
 .	O
-
-script	O
-type=	O
-"	O
-text	O
-/	O
-javascript	B-PL
-"	O
-...	O
-var	O
-minutes	O
-,	O
-seconds	O
-;	O
-...	O
-
-script	O
-type=	O
-"	O
-text	O
-/	O
-javascript	B-PL
-"	O
-
-var	O
-minutes	O
-,	O
-seconds	O
-;	O
-
-//	O
-set	O
-minutesvar	O
-mins	O
-=	O
-5	O
-;	O
-
-//	O
-calculate	O
-the	O
-seconds	O
-(	O
-don't	O
-change	O
-this	O
-!	O
-unless	O
-time	O
-progresses	O
-at	O
-a	O
-different	O
-speed	O
-for	O
-you	O
-...	O
-)	O
-var	O
-secs	O
-=	O
-mins	O
-*	O
-60	O
-;	O
-
-function	O
-countdown()	O
-{	O
-setTimeout('Decrement	O
-(	O
-)'	O
-,	O
-1000	O
-);	O
-}function	O
-Decrement()	O
-{	O
-minutes	O
-=	O
-document.getElementById	B-API
-(	O
-"	O
-minutes	O
-")	O
-;	O
-seconds	O
-=	O
-document.getElementById	B-API
-(	O
-"	O
-seconds	O
-")	O
-;	O
-//	O
-if	O
-less	O
-than	O
-a	O
-minute	O
-remaining	O
-if	O
-(	O
-seconds	O
-59	O
-)	O
-{	O
-seconds.value	O
-=	O
-secs	O
-;	O
-}	O
-else	O
-{	O
-minutes.value	O
-=	O
-getminutes()	B-API
-;	O
-seconds.value	O
-=	O
-getseconds()	B-API
-;	O
-}	O
-secs	O
---	O
-;	O
-setTimeout('Decrement	O
-(	O
-)'	O
-,	O
-1000	O
-);	O
-
-}	O
-function	O
-getminutes()	B-API
-{	O
-//	O
-minutes	O
-is	O
-seconds	O
-divided	O
-by	O
-60	O
-,	O
-rounded	O
-down	O
-mins	O
-=	O
-Math.floor	B-API
-(	O
-secs	O
-/	O
-60	O
-);	O
-return	O
-mins	O
-;	O
-}function	O
-getseconds()	B-API
-{	O
-//	O
-take	O
-mins	O
-remaining	O
-(	O
-as	O
-seconds	O
-)	O
-away	O
-from	O
-total	O
-seconds	O
-remaining	O
-return	O
-secs-Math.round	O
-(	O
-mins	O
-*	O
-60	O
-);	O
-}	O
-/	O
-script	O
-div	O
-id=	O
-"	O
-timer	O
-"	O
-Time	O
-Ending	O
-In	O
-:	O
-input	O
-id=	O
-"	O
-minutes	O
-"	O
-type=	O
-"	O
-text	O
-"	O
-minutes	O
-and	O
-input	O
-id=	O
-"	O
-seconds	O
-"	O
-type=	O
-"	O
-text	O
-"	O
-seconds	O
-.	O
-
-/	O
-div	O
-script	O
-countdown()	O
-;	O
-/	O
-script	O
 
 jQuery	B-Fram
 tabs	O
@@ -65611,7 +64098,7 @@ basic	O
 HTML	B-PL
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 '	O
@@ -65619,7 +64106,7 @@ s	O
 the	O
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 There	O
 was	O
@@ -65642,7 +64129,7 @@ of	O
 addClass	B-API
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Also	O
 following	O
@@ -65651,13 +64138,13 @@ updated	O
 js	B-PL
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 '	O
 s	O
 Demo	O
-Fiddle	B-Fram
+Fiddle	O
 
 Here	O
 '	O
@@ -65670,7 +64157,7 @@ are	O
 interested	O
 ...	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Have	O
 some	O
@@ -65702,7 +64189,7 @@ href	B-API
 attribute	O
 of	O
 anchor	O
-@codeSnippetRemoved	O
+@c@	O
 
 JS	B-PL
 :	O
@@ -65724,7 +64211,7 @@ classes	O
 also	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Iframe	B-API
 header	O
@@ -65750,7 +64237,7 @@ code	O
 like	O
 this	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 This	O
 file	O
@@ -65863,7 +64350,7 @@ and	O
 the	O
 form	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 also	O
@@ -65884,7 +64371,7 @@ removed	O
 the	O
 line	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Here	O
 is	O
@@ -65895,7 +64382,7 @@ in	O
 the	O
 header	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 The	O
 problems	O
@@ -65991,61 +64478,6 @@ javascript	B-PL
 code	O
 :	O
 
-?	O
-php	B-PL
-
-/	O
-*	O
--------	O
-Your	O
-Php	B-PL
-Code	O
------	O
-*	O
-/	O
-
-\\Replace	O
-this	O
-code	O
-@header	O
-(	O
-location	O
-)	O
-
-echo	B-API
-"	O
-script	O
-"	O
-;	O
-
-echo	B-API
-"	O
-window.location='yourloation	O
-.php	O
-'	O
-;	O
-"	O
-;	O
-
-echo	B-API
-"	O
-/	O
-script	O
-"	O
-;	O
-
-/	O
-*	O
--------	O
-Your	O
-Php	B-PL
-Code	O
------	O
-*	O
-/	O
-
-?	O
-
 hide	O
 and	O
 show	O
@@ -66133,7 +64565,7 @@ displayed	O
 Please	O
 find	O
 the	O
-fiddle	B-Fram
+fiddle	O
 :	O
 http://jsfiddle.net/0p7djjnc/7	O
 .Please	O
@@ -66145,7 +64577,7 @@ changes.Thanks	O
 HTML	B-PL
 code	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Limiting	O
 number	O
@@ -67213,7 +65645,7 @@ along	O
 these	O
 lines	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Initialize	O
 an	O
@@ -67465,15 +65897,15 @@ parts	O
 
 Javascript	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 CSS	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 HTML	B-PL
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 You	O
 could	O
@@ -67510,7 +65942,7 @@ the	O
 previous	O
 script	O
 ):	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hey	O
 Dereleased	O
@@ -67538,17 +65970,17 @@ code	O
 Javascript	B-PL
 logo.js	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 CSS	B-PL
 main.css	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 HTML	B-PL
 index.html	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Select	O
 element	O
@@ -67573,7 +66005,7 @@ alt	I-API
 tags	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 I	O
 cant	O
@@ -67670,7 +66102,7 @@ to	O
 your	O
 selector	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Well	O
 .	O
@@ -67691,7 +66123,7 @@ this	O
 method	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 now	O
 x[0	O
@@ -67751,7 +66183,7 @@ way	O
 somewhat	O
 like	O
 CSS	B-PL
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 you	O
@@ -67778,7 +66210,7 @@ to	O
 this	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 These	O
 2	O
@@ -67882,7 +66314,7 @@ using	O
 the	O
 following	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 it	O
@@ -67912,7 +66344,7 @@ i	O
 also	O
 tried	O
 this	O
-@codeSnippetRemoved	O
+@c@	O
 
 y	O
 this	O
@@ -68285,7 +66717,7 @@ myself	O
 :	O
 "	O
 >	O
-@codeSnippetRemoved	O
+@c@	O
 
 FYI	O
 :	O
@@ -68362,7 +66794,7 @@ function	O
 like	O
 so	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Hope	O
 this	O
@@ -68405,7 +66837,7 @@ page	O
 ?	O
 
 Try	O
-@codeSnippetRemoved	O
+@c@	O
 
 After	O
 looking	O
@@ -68425,8 +66857,7 @@ for	O
 username	O
 =	O
 '	O
-{$username	O
-}	O
+{$username}	O
 '	O
 ,	O
 because	O
@@ -68562,12 +66993,12 @@ line	O
 should	O
 be	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Update	O
 3	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 First	O
 of	O
@@ -68632,7 +67063,7 @@ have	O
 to	O
 be	O
 username	O
-LIKE	O
+LIKE	B-API
 '	O
 {$username}%	O
 '	O
@@ -68694,7 +67125,7 @@ you	O
 do	O
 something	O
 with	O
-LIKE	O
+LIKE	B-API
 {$username}%	O
 ,	O
 you're	O
@@ -68934,7 +67365,7 @@ the	O
 error	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 Many	O
 thanks	O
@@ -69089,7 +67520,7 @@ its	O
 the	O
 script	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 unlink	O
 (	O
@@ -69119,7 +67550,7 @@ to	O
 use	O
 .	O
 
-@codeSnippetRemoved	O
+@c@	O
 
 would	O
 JustWork	O
@@ -69225,7 +67656,7 @@ The	O
 canonical	O
 pattern	O
 is	O
-@codeSnippetRemoved	O
+@c@	O
 
 Note	O
 also	O
@@ -69240,7 +67671,7 @@ enclosing	O
 namespace	O
 ,	O
 ie	O
-@codeSnippetRemoved	O
+@c@	O
 
 HTH	O
 
@@ -69263,7 +67694,7 @@ block	O
 scoped	O
 variables	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 But	O
 this	O
@@ -69296,7 +67727,7 @@ regular	O
 local	O
 variables	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 If	O
 this	O
@@ -69479,12 +67910,12 @@ document	O
 for	O
 table	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
 Writing	O
 to	O
 another	O
 document	O
 :	O
-@codeSnippetRemoved	O
+@c@	O
 
