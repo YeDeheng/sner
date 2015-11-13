@@ -200,7 +200,7 @@ def GetWordClusterFeatures(word, dict):
     #print features
     return features
 
-def GetGazetteerFeatures(word, AndroidClass, AndroidAPI, platforms, frams, stans, PLs, orgs, jQueryUIAPIs):
+def GetGazetteerFeatures(word, AndroidClass, AndroidAPI, platforms, frams, stans, PLs, orgs, jQueryUIAPIs, htmlAPI, javaClass, javaPackage, javaMethod, JavaScriptAPI, CsharpClass, CsharpMethod, pythonModule, pythonMethod, phpAPI, jqueryAPI):
     features = ''
 
     if word.lower() in AndroidClass:
@@ -242,6 +242,62 @@ def GetGazetteerFeatures(word, AndroidClass, AndroidAPI, platforms, frams, stans
         features += 'isJQueryUI\t'
     else:
         features += 'notJQueryUI\t'
+
+    if word in htmlAPI:
+        features += 'isHTMLAPI\t'
+    else:
+        features += 'notHTMLAPI\t'
+
+    if word in javaClass:
+        features += 'isJavaClass\t'
+    else:
+        features += 'notJavaClass\t'
+
+    if word in javaPackage:
+        features += 'isJavaPackage\t'
+    else:
+        features += 'notJavaPackage\t'
+
+    if word in javaMethod:
+        features += 'isJavaMethod\t'
+    else:
+        features += 'notJavaMethod\t'
+
+    if word in JavaScriptAPI:
+        features += 'isJSAPI\t'
+    else:
+        features += 'notJSAPI\t'
+
+    if word in CsharpClass:
+        features += 'isCsharpClass\t'
+    else:
+        features += 'notCsharpClass\t'
+
+    if word in CsharpMethod:
+        features += 'isCsharpMethod\t'
+    else:
+        features += 'notCsharpMethod\t'
+
+    if word in pythonModule:
+        features += 'isPythonModule\t'
+    else:
+        features += 'notPythonModule\t'
+
+    if word in pythonMethod:
+        features += 'isPythonMethod\t'
+    else:
+        features += 'notPythonMethod\t'
+
+    if word in phpAPI:
+        features += 'isPHPAPI\t'
+    else:
+        features += 'notPHPAPI\t'
+
+    if word in jqueryAPI:
+        features += 'isJQAPI\t'
+    else:
+        features += 'notJQAPI\t'
+
     return features
 
 
@@ -318,6 +374,104 @@ if __name__=='__main__':
             jQueryUIAPIs.append(str(line).lower())
     f.close()
 
+    f = open('../gazetteers/HTML/HTMLDOMAPI-noLexical.txt', 'r')
+    htmlAPI = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            htmlAPI.append(line)
+    f.close()
+
+    f = open('../gazetteers/Java8/Java8Classes.txt', 'r')
+    javaClass = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            javaClass.append(line)
+    f.close()
+
+    f = open('../gazetteers/Java8/Java8Packages.txt', 'r')
+    javaPackage = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            javaPackage.append(line)
+    f.close()
+
+    f = open('../gazetteers/Java8/Java8Methods.txt', 'r')
+    javaMethod = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            javaMethod.append(line)
+    f.close()
+
+    f = open('../gazetteers/Java8/Java8Packages.txt', 'r')
+    javaPackage = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            javaPackage.append(line)
+    f.close()
+
+    f = open('../gazetteers/JavaScript/JavaScriptAPIs.txt', 'r')
+    JavaScriptAPI = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            JavaScriptAPI.append(line)
+    f.close()
+
+    f = open('../gazetteers/C#_.NET/class-nodup.txt', 'r')
+    CsharpClass = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            CsharpClass.append(line)
+    f.close()
+
+    f = open('../gazetteers/C#_.NET/method-nodup.txt', 'r')
+    CsharpMethod = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            CsharpMethod.append(line)
+    f.close()
+
+    f = open('../gazetteers/Python/PythonModules.txt', 'r')
+    pythonModule = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            pythonModule.append(line)
+    f.close()
+    
+    f = open('../gazetteers/Python/PythonMethods.txt', 'r')
+    pythonMethod = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            pythonMethod.append(line)
+    f.close()
+
+    f = open('../gazetteers/PHP/PHPAPIs.txt', 'r')
+    phpAPI = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            phpAPI.append(line)
+    f.close()
+    
+    f = open('../gazetteers/JQuery/JQueryAPIs.txt', 'r')
+    jqueryAPI = []
+    for line in f:
+        line = line.rstrip()
+        if line:
+            jqueryAPI.append(line)
+    f.close()
+
+#htmlAPI, javaClass, javaPackage, javaMethod, JavaScriptAPI, CsharpClass, CsharpMethod, pythonModule, pythonMethod, phpAPI, jqueryAPI)
+
     fin = open(sys.argv[1], 'r')
     fout = open(sys.argv[2], 'w')
 
@@ -329,7 +483,7 @@ if __name__=='__main__':
 
             ClusterFeatures = GetWordClusterFeatures(word, word_cluster_dict)
 
-            GazFeatures = GetGazetteerFeatures(word,AndroidClass, AndroidAPI, platforms, frams, stans, pls, orgs, jQueryUIAPIs)
+            GazFeatures = GetGazetteerFeatures(word, AndroidClass, AndroidAPI, platforms, frams, stans, pls, orgs, jQueryUIAPIs, htmlAPI, javaClass, javaPackage, javaMethod, JavaScriptAPI, CsharpClass, CsharpMethod, pythonModule, pythonMethod, phpAPI, jqueryAPI)
 
             allfeatures = word + '\t' + OrthographicFeatures + ClusterFeatures + GazFeatures + label
             fout.write(allfeatures + '\n')
